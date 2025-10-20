@@ -8,6 +8,7 @@ import {
 } from '../types';
 import { ProgressService } from './progressService';
 import { LevelService } from './levelService';
+import { UserLevelService } from './userLevelService';
 
 export class SessionService {
   private static QUESTIONS_PER_SESSION = 20;
@@ -33,36 +34,15 @@ export class SessionService {
     const db = getDatabase();
     const questions: Question[] = [];
 
-    // Get all words from current and previous levels
-    const currentLevel = LevelService.getLevelById(currentLevelId);
-    if (!currentLevel) throw new Error('Level not found');
-
-    // Get all levels ids up to the current level.
-    const availableLevels = db.prepare(`
-      SELECT id FROM levels WHERE level_number <= ?
-    `).all(currentLevel.level_number) as { id: number }[];
-    const levelIds = availableLevels.map(l => l.id);
-
-    // Get all words from these levels
-    const placeholders = levelIds.map(() => '?').join(',');
-    const allWords = db.prepare(`
-      SELECT * FROM words WHERE level_id IN (${placeholders})
-    `).all(...levelIds) as Word[];
-
-    if (allWords.length === 0) {
-      throw new Error(
-        `No words found for level ${currentLevel.level_number}. ` +
-        `Please run 'npm run seed' to populate the database.`
-      );
-    }
+    // Get words for the session (current level + max 3 from previous levels)
+    const allWords = this.getWordsForSession(userId, currentLevelId);
 
     // Weight words by struggle (lower mastery = higher weight)
     const weightedWords: Word[] = [];
     for (const word of allWords) {
-      const mastery = ProgressService.getWordMastery(userId, word.id);
       // Inverse weighting: 0% mastery = 10x, 50% = 5x, 
       // 90% = 1x, 100% = 1x
-      const weight = Math.max(1, Math.round(10 - (mastery / 10)));
+      const weight = Math.max(1, Math.round(10 - (word.mastery / 10)));
       
       for (let i = 0; i < weight; i++) {
         weightedWords.push(word);
@@ -96,6 +76,80 @@ export class SessionService {
     }
 
     return questions;
+  }
+
+  /**
+   * Get words for a session: all current level words + max 3 from previous levels
+   * Previous level words are selected based on lowest mastery
+   * Returns words with mastery already calculated
+   */
+  private static getWordsForSession(
+    userId: number, 
+    currentLevelId: number
+  ): (Word & { mastery: number })[] {
+    const db = getDatabase();
+    
+    // Get current level info
+    const currentLevel = LevelService.getLevelById(currentLevelId);
+    if (!currentLevel) throw new Error('Level not found');
+
+    // Get current level words with mastery
+    const currentLevelWords = this.getWordsWithMastery(userId, [currentLevelId]);
+
+    if (currentLevelWords.length === 0) {
+      throw new Error(
+        `No words found for level ${currentLevel.level_number}. ` +
+        `Please run 'npm run seed' to populate the database.`
+      );
+    }
+
+    // STEP 2: Get previous level words with mastery (limited to 3)
+    const previousLevels = db.prepare(`
+      SELECT id FROM levels WHERE level_number < ?
+    `).all(currentLevel.level_number) as { id: number }[];
+    
+    let previousLevelWords: (Word & { mastery: number })[] = [];
+    if (previousLevels.length > 0) {
+      const previousLevelIds = previousLevels.map(l => l.id);
+      
+      // Get previous level words with mastery (limited to 3 lowest mastery)
+      previousLevelWords = this.getWordsWithMastery(userId, previousLevelIds, 3);
+    }
+
+    // Combine current level words with limited previous level words
+    return [...currentLevelWords, ...previousLevelWords];
+  }
+
+  /**
+   * Gets words with mastery levels for specified level IDs
+   * @param userId - User ID to get mastery for
+   * @param levelIds - Array of level IDs to fetch words from
+   * @param limit - Optional limit for results (sorts by mastery ASC)
+   * @returns Words with mastery levels
+   */
+  private static getWordsWithMastery(
+    userId: number, 
+    levelIds: number[], 
+    limit?: number
+  ): (Word & { mastery: number })[] {
+    const db = getDatabase();
+    
+    if (levelIds.length === 0) return [];
+    
+    const placeholders = levelIds.map(() => '?').join(',');
+    let query = `
+      SELECT w.*, 
+             COALESCE(uwp.mastery_level, 0) as mastery
+      FROM words w
+      LEFT JOIN user_word_progress uwp ON w.id = uwp.word_id AND uwp.user_id = ?
+      WHERE w.level_id IN (${placeholders})
+    `;
+    
+    if (limit) {
+      query += ` ORDER BY mastery ASC LIMIT ${limit}`;
+    }
+    
+    return db.prepare(query).all(userId, ...levelIds) as (Word & { mastery: number })[];
   }
 
   private static createQuestion(
@@ -271,6 +325,9 @@ export class SessionService {
   private static normalizeAnswer(answer: string, shouldStripParens: boolean = false): string {
     let normalized = answer.trim();
     
+    // Convert œ to oe for easier typing (both "sœur" and "soeur" will be accepted)
+    normalized = normalized.replace(/œ/g, 'oe');
+    
     if (shouldStripParens) {
       normalized = normalized
         .replace(/\s*\([^)]*\)/g, '') // Remove (formal/plural) etc
@@ -311,21 +368,11 @@ export class SessionService {
       WHERE id = ?
     `).run(correctCount, passed ? 1 : 0, sessionId);
 
-    // If passed, update user level
-    if (passed) {
-      const level = LevelService.getLevelById(session.level_id);
-      if (level) {
-        const user = db.prepare(
-          'SELECT current_level FROM users WHERE id = ?'
-        ).get(userId) as { current_level: number };
-
-        if (level.level_number >= user.current_level) {
-          db.prepare(`
-            UPDATE users SET current_level = ? WHERE id = ?
-          `).run(level.level_number + 1, userId);
-        }
-      }
-    }
+    // Update mastery for all levels and check if session level newly hit 80%
+    const { newlyHitMastery } = UserLevelService.updateAllLevelMastery(
+      userId, 
+      session.level_id
+    );
 
     // Get incorrect words with examples
     const incorrectWords = answers
@@ -354,6 +401,7 @@ export class SessionService {
       total_questions: session.total_questions,
       passed,
       percentage,
+      newlyHitMastery,
       incorrect_words: incorrectWords
     };
   }
@@ -368,5 +416,6 @@ export class SessionService {
       ORDER BY s.created_at DESC
     `).all(userId) as Session[];
   }
+
 }
 

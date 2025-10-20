@@ -1,0 +1,176 @@
+import { getDatabase } from '../database/connection';
+import { UserLevel } from '../types';
+
+export class UserLevelService {
+  /**
+   * Get or create user level progress for a specific level
+   */
+  static getUserLevel(userId: number, levelId: number): UserLevel {
+    const db = getDatabase();
+    
+    let userLevel = db.prepare(`
+      SELECT * FROM user_levels 
+      WHERE user_id = ? AND level_id = ?
+    `).get(userId, levelId) as UserLevel | undefined;
+    
+    if (!userLevel) {
+      // Create new user level entry
+      const result = db.prepare(`
+        INSERT INTO user_levels (user_id, level_id, mastery, unlocked_at)
+        VALUES (?, ?, 0, CURRENT_TIMESTAMP)
+      `).run(userId, levelId);
+      
+      userLevel = {
+        id: result.lastInsertRowid as number,
+        user_id: userId,
+        level_id: levelId,
+        mastery: 0,
+        unlocked_at: new Date().toISOString(),
+        mastery_hit: null,
+        last_practiced: null
+      };
+    }
+    
+    return userLevel;
+  }
+
+  /**
+   * Get all user levels with their current mastery
+   */
+  static getUserLevels(userId: number): UserLevel[] {
+    const db = getDatabase();
+    
+    return db.prepare(`
+      SELECT ul.*, l.level_number, l.name
+      FROM user_levels ul
+      JOIN levels l ON ul.level_id = l.id
+      WHERE ul.user_id = ?
+      ORDER BY l.level_number
+    `).all(userId) as UserLevel[];
+  }
+
+  /**
+   * Check if a level is unlocked for a user
+   */
+  static isLevelUnlocked(userId: number, levelNumber: number): boolean {
+    const db = getDatabase();
+    
+    // Level 1 is always unlocked
+    if (levelNumber === 1) return true;
+    
+    // Check if previous level has 80% mastery
+    const previousLevel = db.prepare(`
+      SELECT l.id FROM levels l WHERE l.level_number = ?
+    `).get(levelNumber - 1) as { id: number } | undefined;
+    
+    if (!previousLevel) return false;
+    
+    const userLevel = this.getUserLevel(userId, previousLevel.id);
+    return userLevel.mastery >= 80;
+  }
+
+  /**
+   * Update mastery for all levels based on word progress
+   * This should be called after each session
+   */
+  static updateAllLevelMastery(userId: number, sessionLevelId?: number): {
+    newlyHitMastery: boolean;
+    sessionLevelNumber?: number;
+  } {
+    const db = getDatabase();
+    let newlyHitMastery = false;
+    let sessionLevelNumber: number | undefined;
+    
+    // Get session level number if provided
+    if (sessionLevelId) {
+      const sessionLevel = db.prepare('SELECT level_number FROM levels WHERE id = ?').get(sessionLevelId) as { level_number: number } | undefined;
+      sessionLevelNumber = sessionLevel?.level_number;
+    }
+    
+    // Calculate mastery for levels up to current level
+    const levels = db.prepare(`
+      SELECT * FROM levels 
+      WHERE level_number <= ? 
+      ORDER BY level_number
+    `).all(sessionLevelNumber || 1) as any[];
+    
+    for (const level of levels) {
+      const words = db.prepare(`
+        SELECT w.id FROM words w WHERE w.level_id = ?
+      `).all(level.id) as { id: number }[];
+      
+      if (words.length === 0) continue;
+      
+      let totalCorrect = 0;
+      let totalAttempts = 0;
+      
+      // Calculate mastery from word progress
+      for (const word of words) {
+        const progress = db.prepare(`
+          SELECT correct_count, incorrect_count 
+          FROM user_word_progress 
+          WHERE user_id = ? AND word_id = ?
+        `).get(userId, word.id) as { correct_count: number, incorrect_count: number } | undefined;
+        
+        if (progress) {
+          totalCorrect += progress.correct_count;
+          totalAttempts += progress.correct_count + progress.incorrect_count;
+        }
+      }
+      
+      const mastery = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+      
+      // Get current user level to check if this is newly hit mastery
+      const currentUserLevel = this.getUserLevel(userId, level.id);
+      const wasNewlyHit = currentUserLevel.mastery < 80 && mastery >= 80;
+      
+      // Only care about newly hit mastery for the session level
+      if (wasNewlyHit && level.level_number === sessionLevelNumber) {
+        newlyHitMastery = true;
+        
+        // Set mastery_hit timestamp for this level
+        db.prepare(`
+          UPDATE user_levels 
+          SET mastery_hit = CURRENT_TIMESTAMP
+          WHERE user_id = ? AND level_id = ?
+        `).run(userId, level.id);
+        
+        // Unlock the next level
+        const nextLevel = levels.find(l => l.level_number === level.level_number + 1);
+        if (nextLevel) {
+          db.prepare(`
+            INSERT OR REPLACE INTO user_levels 
+            (user_id, level_id, mastery, unlocked_at, mastery_hit, last_practiced)
+            VALUES (?, ?, 0, CURRENT_TIMESTAMP, NULL, NULL)
+          `).run(userId, nextLevel.id);
+        }
+      }
+      
+      // Upsert user level - only update mastery, last_practiced only for session level
+      if (level.level_number === sessionLevelNumber) {
+        // For session level, update mastery and last_practiced
+        db.prepare(`
+          INSERT INTO user_levels 
+          (user_id, level_id, mastery, last_practiced)
+          VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+          ON CONFLICT(user_id, level_id) DO UPDATE SET
+            mastery = excluded.mastery,
+            last_practiced = CURRENT_TIMESTAMP
+        `).run(userId, level.id, mastery);
+      } else {
+        // For other levels, only update mastery
+        db.prepare(`
+          INSERT INTO user_levels 
+          (user_id, level_id, mastery)
+          VALUES (?, ?, ?)
+          ON CONFLICT(user_id, level_id) DO UPDATE SET
+            mastery = excluded.mastery
+        `).run(userId, level.id, mastery);
+      }
+    }
+    
+    return { newlyHitMastery, sessionLevelNumber };
+  }
+
+  
+}

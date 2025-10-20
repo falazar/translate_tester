@@ -44,6 +44,16 @@ export interface UserWordProgress {
   last_reviewed: string | null;
 }
 
+export interface UserLevel {
+  id: number;
+  user_id: number;
+  level_id: number;
+  mastery: number;
+  unlocked_at: string | null;
+  mastery_hit: string | null;
+  last_practiced: string | null;
+}
+
 export interface Session {
   id: number;
   user_id: number;
@@ -80,6 +90,7 @@ export interface SessionResult {
   total_questions: number;
   passed: boolean;
   percentage: number;
+  newlyHitMastery?: boolean;
   incorrect_words: Array<{
     word: Word;
     user_answer: string | null;

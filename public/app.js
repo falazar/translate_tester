@@ -116,13 +116,24 @@ async function showDashboard() {
   window.notifications.addReminderButton();
   
   try {
-    // Get all levels
-    const response = await fetch('/api/levels');
-    const levels = await response.json();
+    // Get all levels with user progress
+    const response = await fetch('/api/levels/user-progress');
+    const levelsWithProgress = await response.json();
+    
+    // Check for newly unlocked levels
+    const previouslyUnlocked = JSON.parse(localStorage.getItem('unlockedLevels') || '[]');
+    const newlyUnlocked = [];
+    
+    // Find newly unlocked levels
+    for (const level of levelsWithProgress) {
+      if (level.is_unlocked && !previouslyUnlocked.includes(level.level_number)) {
+        newlyUnlocked.push(level.level_number);
+      }
+    }
 
     // Display current level (default selection)
     const currentLevel = 
-      levels.find(l => l.level_number === currentUser.current_level);
+      levelsWithProgress.find(l => l.level_number === currentUser.current_level);
     
     if (currentLevel) {
       currentLevelId = currentLevel.id;
@@ -134,60 +145,57 @@ async function showDashboard() {
     const levelsGrid = document.getElementById('levelsGrid');
     levelsGrid.innerHTML = '';
 
-    // Display levels and fetch mastery for unlocked ones (in order)
-    for (const level of levels) {
-      const isUnlocked = level.level_number <= 
-                         currentUser.current_level;
-      const isCurrent = level.level_number === 
-                        currentUser.current_level;
-      
-      const levelItem = document.createElement('div');
-      levelItem.className = `level-item ${isUnlocked ? '' : 'locked'}`;
-      levelItem.dataset.levelId = level.id;
-      
-      // Create initial HTML without mastery
-      levelItem.innerHTML = `
-        <h3>Level ${level.level_number}</h3>
-        <h4>${level.name}</h4>
-        <p>${level.description}</p>
-        <span class="level-status ${isCurrent ? 'current' : 
-          (isUnlocked ? 'unlocked' : 'locked')}">
-          ${isCurrent ? 'Current' : 
-            (isUnlocked ? 'Unlocked' : 'Locked')}
-        </span>
-      `;
-      
-      // Add click handler for unlocked levels
-      if (isUnlocked) {
-        levelItem.style.cursor = 'pointer';
-        levelItem.onclick = () => selectLevel(level);
-        
-        // Fetch mastery for unlocked levels
-        try {
-          const response = await fetch(`/api/levels/${level.id}/mastery`, {
-            headers: { 'Authorization': `Bearer ${currentUser.token}` }
-          });
-          if (response.ok) {
-            const data = await response.json();
-            const mastery = data.mastery;
-            
-            // Update the status span to include mastery
-            const statusSpan = levelItem.querySelector('.level-status');
-            statusSpan.innerHTML = `
-              ${isCurrent ? 'Current' : 'Unlocked'}
-              <span class="mastery-percentage">${mastery}%</span>
-            `;
-          }
-        } catch (error) {
-          console.error('Failed to fetch mastery:', error);
-        }
-      }
-      
-      levelsGrid.appendChild(levelItem);
+    // Display all levels using the pre-calculated data
+    for (const level of levelsWithProgress) {
+      showLevelCard(level);
     }
+    
+    // Show popups for newly unlocked levels
+    for (const levelNum of newlyUnlocked) {
+      setTimeout(() => showLevelUnlockPopup(levelNum), 500);
+    }
+    
+    // Update localStorage with current unlocked levels
+    const currentUnlocked = levelsWithProgress
+      .filter(level => level.is_unlocked)
+      .map(level => level.level_number);
+    localStorage.setItem('unlockedLevels', JSON.stringify(currentUnlocked));
+    
   } catch (error) {
     console.error('Error loading dashboard:', error);
   }
+}
+
+function showLevelCard(level) {
+  const isUnlocked = level.is_unlocked;
+  const mastery = level.mastery;
+  const isCurrent = level.level_number === currentUser.current_level;
+  
+  const levelsGrid = document.getElementById('levelsGrid');
+  const levelItem = document.createElement('div');
+  levelItem.className = `level-item ${isUnlocked ? '' : 'locked'}`;
+  levelItem.dataset.levelId = level.id;
+  
+  // Create HTML with mastery
+  levelItem.innerHTML = `
+    <h3>Level ${level.level_number}</h3>
+    <h4>${level.name}</h4>
+    <p>${level.description}</p>
+    <span class="level-status ${isCurrent ? 'current' : 
+      (isUnlocked ? 'unlocked' : 'locked')}">
+      ${isCurrent ? 'Current' : 
+        (isUnlocked ? 'Unlocked' : 'Locked')}
+      <span class="mastery-percentage">${mastery}%</span>
+    </span>
+  `;
+  
+  // Add click handler for unlocked levels
+  if (isUnlocked) {
+    levelItem.style.cursor = 'pointer';
+    levelItem.onclick = () => selectLevel(level);
+  }
+  
+  levelsGrid.appendChild(levelItem);
 }
 
 function selectLevel(level) {
@@ -222,16 +230,14 @@ async function showWords() {
   }
 
   try {
-    // Fetch words for the selected level
-    const wordsResponse = await fetch(
-      `/api/levels/${selectedLevelId}/words`
-    );
+    // Fetch level with words data
+    const response = await fetch(`/api/levels/${selectedLevelId}`);
     
-    if (!wordsResponse.ok) {
-      throw new Error('Failed to fetch words');
+    if (!response.ok) {
+      throw new Error('Failed to fetch level data');
     }
     
-    const data = await wordsResponse.json();
+    const data = await response.json();
     displayWordsScreen(data);
   } catch (error) {
     console.error('Error loading words:', error);
@@ -309,6 +315,13 @@ function displayWordsScreen(data) {
 }
 
 // Game functions
+function updateGameLevelInfo(level) {
+  const levelInfoElement = document.getElementById('gameLevelInfo');
+  if (levelInfoElement && level) {
+    levelInfoElement.textContent = `Level ${level.level_number}: ${level.name}`;
+  }
+}
+
 async function startSession() {
   try {
     const response = await fetch('/api/sessions/start', {
@@ -324,6 +337,9 @@ async function startSession() {
       currentQuestions = data.questions;
       currentQuestionIndex = 0;
       currentScore = 0;
+      
+      // Update level info display
+      updateGameLevelInfo(data.level);
       
       showScreen('gameScreen');
       displayQuestion();
@@ -546,7 +562,9 @@ function displayResults(results) {
   // Update message
   const message = results.passed 
     ? `You scored ${results.score}/${results.total_questions} and advanced to the next level!`
-    : `You scored ${results.score}/${results.total_questions}. You need 90% to advance.`;
+    : results.percentage >= 70 
+      ? `You scored ${results.score}/${results.total_questions}. Good job!`
+      : `You scored ${results.score}/${results.total_questions}. Try a bit harder!`;
   document.getElementById('resultsMessage').textContent = message;
 
   // Display review items
@@ -595,10 +613,7 @@ function displayResults(results) {
     });
   }
 
-  // Update user info if passed
-  if (results.passed) {
-    currentUser.current_level++;
-  }
+  // Level advancement is now handled by mastery-based unlocking in dashboard
 }
 
 function returnToDashboard() {
@@ -627,5 +642,58 @@ function clearError() {
   const errorDiv = document.getElementById('authError');
   errorDiv.textContent = '';
   errorDiv.classList.remove('active');
+}
+
+function showLevelUnlockPopup(newLevel) {
+  // Create popup overlay
+  const overlay = document.createElement('div');
+  overlay.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  `;
+  
+  // Create popup content
+  const popup = document.createElement('div');
+  popup.style.cssText = `
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 20px;
+  `;
+  
+  popup.innerHTML = `
+    <div style="font-size: 4em; margin-bottom: 20px;">🎉</div>
+    <h2 style="color: #28a745; margin-bottom: 15px;">Level ${newLevel} Unlocked!</h2>
+    <p style="color: #666; margin-bottom: 25px;">
+      Congratulations! You've mastered this level and unlocked the next challenge.
+    </p>
+    <button onclick="this.parentElement.parentElement.remove()" 
+            style="background: #28a745; color: white; border: none; 
+                   padding: 12px 24px; border-radius: 8px; 
+                   font-size: 16px; cursor: pointer;">
+      Awesome!
+    </button>
+  `;
+  
+  overlay.appendChild(popup);
+  document.body.appendChild(overlay);
+  
+  // Auto-close after 5 seconds
+  setTimeout(() => {
+    if (overlay.parentElement) {
+      overlay.remove();
+    }
+  }, 5000);
 }
 

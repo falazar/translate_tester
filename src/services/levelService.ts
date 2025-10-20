@@ -96,29 +96,5 @@ export class LevelService {
     return wordsWithExamples;
   }
 
-  /**
-   * Calculate the average mastery percentage for all words in a level
-   */
-  static getLevelMastery(levelId: number, userId: number): number {
-    const db = getDatabase();
-    
-    // Get all words in this level
-    const words = db.prepare(`
-      SELECT id FROM words WHERE level_id = ?
-    `).all(levelId) as { id: number }[];
-
-    if (words.length === 0) {
-      return 0; // No words = 0% mastery
-    }
-
-    // Calculate average mastery
-    let totalMastery = 0;
-    for (const word of words) {
-      const mastery = ProgressService.getWordMastery(userId, word.id);
-      totalMastery += mastery;
-    }
-
-    return Math.round(totalMastery / words.length);
-  }
 }
 

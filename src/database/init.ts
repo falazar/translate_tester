@@ -13,16 +13,16 @@ function initializeDatabase() {
     const db = getDatabase();
     
     // Drop existing tables to ensure clean schema
-    console.log('Dropping existing tables...');
-    db.exec('PRAGMA foreign_keys = OFF');
-    db.exec('DROP TABLE IF EXISTS session_answers');
-    db.exec('DROP TABLE IF EXISTS sessions');
-    db.exec('DROP TABLE IF EXISTS user_word_progress');
-    db.exec('DROP TABLE IF EXISTS example_sentences');
-    db.exec('DROP TABLE IF EXISTS words');
-    db.exec('DROP TABLE IF EXISTS levels');
-    db.exec('DROP TABLE IF EXISTS users');
-    db.exec('PRAGMA foreign_keys = ON');
+    // console.log('Dropping existing tables...');
+    // db.exec('PRAGMA foreign_keys = OFF');
+    // db.exec('DROP TABLE IF EXISTS session_answers');
+    // db.exec('DROP TABLE IF EXISTS sessions');
+    // db.exec('DROP TABLE IF EXISTS user_word_progress');
+    // db.exec('DROP TABLE IF EXISTS example_sentences');
+    // db.exec('DROP TABLE IF EXISTS words');
+    // db.exec('DROP TABLE IF EXISTS levels');
+    // db.exec('DROP TABLE IF EXISTS users');
+    // db.exec('PRAGMA foreign_keys = ON');
     
     createTables(db);
     console.log('Database initialized successfully!');

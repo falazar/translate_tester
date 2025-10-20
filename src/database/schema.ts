@@ -69,6 +69,22 @@ export function createTables(db: Database.Database): void {
     );
   `);
 
+  // User levels table
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS user_levels (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_id INTEGER NOT NULL,
+      level_id INTEGER NOT NULL,
+      mastery INTEGER DEFAULT 0,
+      unlocked_at DATETIME,
+      mastery_hit DATETIME,
+      last_practiced DATETIME,
+      UNIQUE(user_id, level_id),
+      FOREIGN KEY (user_id) REFERENCES users(id),
+      FOREIGN KEY (level_id) REFERENCES levels(id)
+    );
+  `);
+
   // Sessions table
   db.exec(`
     CREATE TABLE IF NOT EXISTS sessions (
@@ -113,6 +129,11 @@ export function createTables(db: Database.Database): void {
   db.exec(`
     CREATE INDEX IF NOT EXISTS idx_sessions_user 
     ON sessions(user_id);
+  `);
+
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_user_levels 
+    ON user_levels(user_id, level_id);
   `);
 
   console.log('Database tables created successfully');

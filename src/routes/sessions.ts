@@ -1,5 +1,6 @@
 import { Router, Response } from 'express';
 import { SessionService } from '../services/sessionService';
+import { LevelService } from '../services/levelService';
 import { authMiddleware, AuthRequest } from '../middleware/auth';
 
 const router = Router();
@@ -23,11 +24,13 @@ router.post('/start', authMiddleware,
       req.userId!, 
       level_id
     );
+    const level = LevelService.getLevelById(level_id);
 
     res.json({
       session_id: session.id,
       level_id: session.level_id,
       total_questions: session.total_questions,
+      level,
       questions
     });
   } catch (error: any) {
