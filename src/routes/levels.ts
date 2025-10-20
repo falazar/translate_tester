@@ -44,12 +44,29 @@ router.get('/:id/words', authMiddleware,
       return;
     }
 
-    const words = LevelService.getWordsWithExamples(levelId);
+    const words = LevelService.getWordsWithExamples(
+      levelId, 
+      req.userId
+    );
 
     res.json({
       level,
       words
     });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Get level mastery percentage
+router.get('/:id/mastery', authMiddleware, async (req: AuthRequest, res: Response) => {
+  try {
+    const levelId = parseInt(req.params.id);
+    const userId = req.userId!;
+
+    const mastery = LevelService.getLevelMastery(levelId, userId);
+
+    res.json({ mastery });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }

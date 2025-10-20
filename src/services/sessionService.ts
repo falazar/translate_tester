@@ -37,10 +37,10 @@ export class SessionService {
     const currentLevel = LevelService.getLevelById(currentLevelId);
     if (!currentLevel) throw new Error('Level not found');
 
+    // Get all levels ids up to the current level.
     const availableLevels = db.prepare(`
       SELECT id FROM levels WHERE level_number <= ?
     `).all(currentLevel.level_number) as { id: number }[];
-
     const levelIds = availableLevels.map(l => l.id);
 
     // Get all words from these levels
@@ -85,6 +85,7 @@ export class SessionService {
       'multiple_choice'
     ];
 
+    // Pick 20 words randomly and generate questions for them.
     for (let i = 0; i < selectedWords.length; i++) {
       const word = selectedWords[i];
       const typeIndex = Math.floor(Math.random() * 
@@ -209,6 +210,7 @@ export class SessionService {
            w.id !== correctWord.id
     );
 
+    
     // Add 3 random wrong answers
     while (options.length < 4 && sameType.length > 0) {
       const randomIndex = Math.floor(Math.random() * sameType.length);
@@ -235,9 +237,10 @@ export class SessionService {
   ): boolean {
     const db = getDatabase();
     
-    // Normalize answers for comparison
-    const normalizedUser = userAnswer.trim().toLowerCase();
-    const normalizedCorrect = correctAnswer.trim().toLowerCase();
+    // Only strip parentheses for French→English questions
+    const shouldStripParens = questionType === 'fr_to_en';
+    const normalizedUser = this.normalizeAnswer(userAnswer, shouldStripParens);
+    const normalizedCorrect = this.normalizeAnswer(correctAnswer, shouldStripParens);
     const correct = normalizedUser === normalizedCorrect;
 
     // Record answer
@@ -259,6 +262,23 @@ export class SessionService {
     ProgressService.updateProgress(userId, wordId, correct);
 
     return correct;
+  }
+
+  /**
+   * Normalize answers for comparison
+   * Only strip parentheses for French→English questions (where English has complex descriptions)
+   */
+  private static normalizeAnswer(answer: string, shouldStripParens: boolean = false): string {
+    let normalized = answer.trim();
+    
+    if (shouldStripParens) {
+      normalized = normalized
+        .replace(/\s*\([^)]*\)/g, '') // Remove (formal/plural) etc
+        .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+        .trim();
+    }
+    
+    return normalized.toLowerCase();
   }
 
   static getSessionResult(

@@ -34,6 +34,7 @@ export function createTables(db: Database.Database): void {
       word_type TEXT NOT NULL,
       level_id INTEGER NOT NULL,
       gender TEXT,
+      UNIQUE(french, level_id),
       FOREIGN KEY (level_id) REFERENCES levels(id)
     );
   `);
@@ -47,6 +48,7 @@ export function createTables(db: Database.Database): void {
       english_translation TEXT NOT NULL,
       word_to_replace TEXT,
       difficulty TEXT DEFAULT 'simple',
+      UNIQUE(word_id, french_sentence),
       FOREIGN KEY (word_id) REFERENCES words(id)
     );
   `);

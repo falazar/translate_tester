@@ -10,6 +10,7 @@ let selectedLevelId = null;
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
   checkAuth();
+  window.notifications.setupDailyReminders();
 });
 
 // Auth functions
@@ -111,6 +112,9 @@ async function showDashboard() {
   document.getElementById('usernameDisplay').textContent = 
     currentUser.username;
   
+  // Add reminder button
+  window.notifications.addReminderButton();
+  
   try {
     // Get all levels
     const response = await fetch('/api/levels');
@@ -130,7 +134,8 @@ async function showDashboard() {
     const levelsGrid = document.getElementById('levelsGrid');
     levelsGrid.innerHTML = '';
 
-    levels.forEach(level => {
+    // Display levels and fetch mastery for unlocked ones (in order)
+    for (const level of levels) {
       const isUnlocked = level.level_number <= 
                          currentUser.current_level;
       const isCurrent = level.level_number === 
@@ -139,6 +144,8 @@ async function showDashboard() {
       const levelItem = document.createElement('div');
       levelItem.className = `level-item ${isUnlocked ? '' : 'locked'}`;
       levelItem.dataset.levelId = level.id;
+      
+      // Create initial HTML without mastery
       levelItem.innerHTML = `
         <h3>Level ${level.level_number}</h3>
         <h4>${level.name}</h4>
@@ -154,10 +161,30 @@ async function showDashboard() {
       if (isUnlocked) {
         levelItem.style.cursor = 'pointer';
         levelItem.onclick = () => selectLevel(level);
+        
+        // Fetch mastery for unlocked levels
+        try {
+          const response = await fetch(`/api/levels/${level.id}/mastery`, {
+            headers: { 'Authorization': `Bearer ${currentUser.token}` }
+          });
+          if (response.ok) {
+            const data = await response.json();
+            const mastery = data.mastery;
+            
+            // Update the status span to include mastery
+            const statusSpan = levelItem.querySelector('.level-status');
+            statusSpan.innerHTML = `
+              ${isCurrent ? 'Current' : 'Unlocked'}
+              <span class="mastery-percentage">${mastery}%</span>
+            `;
+          }
+        } catch (error) {
+          console.error('Failed to fetch mastery:', error);
+        }
       }
       
       levelsGrid.appendChild(levelItem);
-    });
+    }
   } catch (error) {
     console.error('Error loading dashboard:', error);
   }
@@ -223,9 +250,33 @@ function displayWordsScreen(data) {
   const wordsList = document.getElementById('wordsList');
   wordsList.innerHTML = '';
   
-  words.forEach(word => {
+  words.forEach((word, index) => {
     const wordItem = document.createElement('div');
     wordItem.className = 'word-item';
+    
+    // Progress stats - always show, even if 0%
+    const progress = word.progress || { 
+      correct_count: 0, 
+      incorrect_count: 0, 
+      mastery_level: 0 
+    };
+    
+    const progressHTML = `
+      <div class="word-progress">
+        <span class="progress-correct" 
+              title="Correct answers">
+          ✓ ${progress.correct_count}
+        </span>
+        <span class="progress-incorrect" 
+              title="Incorrect answers">
+          ✗ ${progress.incorrect_count}
+        </span>
+        <span class="progress-mastery" 
+              title="Mastery level">
+          ${progress.mastery_level}%
+        </span>
+      </div>
+    `;
     
     let examplesHTML = '';
     if (word.examples && word.examples.length > 0) {
@@ -243,8 +294,10 @@ function displayWordsScreen(data) {
     wordItem.innerHTML = `
       <div class="word-item-header">
         <div class="word-main">
+          <span class="word-number">${index + 1}.</span>
           <span class="word-french">${word.french}</span>
           <span class="word-english">${word.english}</span>
+          ${progressHTML}
         </div>
         <span class="word-type-badge">${word.word_type}</span>
       </div>
@@ -333,6 +386,11 @@ function displayQuestion() {
     });
     answerArea.appendChild(input);
     input.focus();
+    
+    // Reset input field styling (in case it was disabled from previous question)
+    input.disabled = false;
+    input.style.backgroundColor = '';
+    input.style.color = '';
   }
 
   // Reset buttons and feedback
@@ -383,8 +441,16 @@ async function submitAnswer() {
     }
   }
 
-  // Disable submit button
+  // Disable submit button and input field
   document.getElementById('submitBtn').disabled = true;
+  
+  // Disable and style input field
+  const inputField = document.getElementById('answerInput');
+  if (inputField) {
+    inputField.disabled = true;
+    inputField.style.backgroundColor = '#f0f0f0';
+    inputField.style.color = '#999';
+  }
 
   try {
     const response = await fetch(
