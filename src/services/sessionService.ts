@@ -68,9 +68,26 @@ export class SessionService {
     // Pick 20 words randomly and generate questions for them.
     for (let i = 0; i < selectedWords.length; i++) {
       const word = selectedWords[i];
-      const typeIndex = Math.floor(Math.random() * 
-                                    questionTypes.length);
-      const type = questionTypes[typeIndex];
+      
+      // Give verbs 50% higher chance of fill-in-the-blank exercises
+      let type: Question['type'];
+      if (word.word_type === 'verb') {
+        // For verbs: 50% chance for fill_blank, 16.67% each for others
+        const random = Math.random();
+        if (random < 0.5) {
+          type = 'fill_blank';
+        } else if (random < 0.6667) {
+          type = 'fr_to_en';
+        } else if (random < 0.8333) {
+          type = 'en_to_fr';
+        } else {
+          type = 'multiple_choice';
+        }
+      } else {
+        // For non-verbs: equal 25% chance for each type
+        const typeIndex = Math.floor(Math.random() * questionTypes.length);
+        type = questionTypes[typeIndex];
+      }
 
       questions.push(this.createQuestion(word, type, allWords));
     }

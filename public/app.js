@@ -1,3 +1,14 @@
+// Global Language Configuration
+const baseLanguage = 'English';
+const targetLanguage = 'French';
+
+// Helper functions
+function getLanguageCode(language) {
+  if (language === 'English') return 'en';
+  if (language === 'French') return 'fr';
+  return 'en'; // default
+}
+
 // Global state
 let currentUser = null;
 let currentSession = null;
@@ -285,12 +296,13 @@ function displayWordsScreen(data) {
     `;
     
     let examplesHTML = '';
+    console.log("DEBUG: word.examples", JSON.stringify(word.examples, null, 2));
     if (word.examples && word.examples.length > 0) {
       examplesHTML = `
         <div class="word-examples">
           ${word.examples.map(ex => `
             <div class="word-example">
-              ${ex.french_sentence} → ${ex.english_translation}
+              ${ex[`${targetLanguage.toLowerCase()}_sentence`]} → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
             </div>
           `).join('')}
         </div>
@@ -301,8 +313,8 @@ function displayWordsScreen(data) {
       <div class="word-item-header">
         <div class="word-main">
           <span class="word-number">${index + 1}.</span>
-          <span class="word-french">${word.french}</span>
-          <span class="word-english">${word.english}</span>
+          <span class="word-${targetLanguage.toLowerCase()}">${word[targetLanguage.toLowerCase()]}</span>
+          <span class="word-${baseLanguage.toLowerCase()}">${word[baseLanguage.toLowerCase()]}</span>
           ${progressHTML}
         </div>
         <span class="word-type-badge">${word.word_type}</span>
@@ -429,8 +441,8 @@ function selectOption(button) {
 
 function formatQuestionType(type) {
   const types = {
-    'fr_to_en': 'French → English',
-    'en_to_fr': 'English → French',
+    [`${getLanguageCode(baseLanguage)}_to_${getLanguageCode(targetLanguage)}`]: `${baseLanguage} → ${targetLanguage}`,
+    [`${getLanguageCode(targetLanguage)}_to_${getLanguageCode(baseLanguage)}`]: `${targetLanguage} → ${baseLanguage}`,
     'fill_blank': 'Fill in the Blank',
     'multiple_choice': 'Multiple Choice'
   };
@@ -586,8 +598,8 @@ function displayResults(results) {
             <h4>Example sentences:</h4>
             ${item.examples.map(ex => `
               <div class="example">
-                <div class="french">${ex.french_sentence}</div>
-                <div class="english">→ ${ex.english_translation}</div>
+                <div class="${targetLanguage.toLowerCase()}">${ex[`${targetLanguage.toLowerCase()}_sentence`]}</div>
+                <div class="${baseLanguage.toLowerCase()}">→ ${ex[`${baseLanguage.toLowerCase()}_translation`]}</div>
               </div>
             `).join('')}
           </div>
@@ -595,7 +607,7 @@ function displayResults(results) {
       }
       
       reviewItem.innerHTML = `
-        <h3>${item.word.french} → ${item.word.english}</h3>
+        <h3>${item.word[targetLanguage.toLowerCase()]} → ${item.word[baseLanguage.toLowerCase()]}</h3>
         <div class="answer-info">
           <div class="correct-answer-display">
             <strong>Correct answer:</strong> 
@@ -613,7 +625,6 @@ function displayResults(results) {
     });
   }
 
-  // Level advancement is now handled by mastery-based unlocking in dashboard
 }
 
 function returnToDashboard() {

@@ -612,20 +612,28 @@ function seedDatabase() {
           replace: 'livre' }
       ]},
       { word: 'manger', sentences: [
-        { fr: 'J\'aime manger du pain.', en: 'I like to eat bread.', 
-          replace: 'manger' },
+        { fr: 'Je mange du pain.', en: 'I eat bread.', 
+          replace: 'mange' },
         { fr: 'Nous mangeons ensemble.', en: 'We eat together.', 
           replace: 'mangeons' },
-        { fr: 'Il faut manger des légumes.', 
-          en: 'One must eat vegetables.', replace: 'manger' }
+        { fr: 'Elle mange des légumes.', en: 'She eats vegetables.', 
+          replace: 'mange' },
+        { fr: 'Ils mangent au restaurant.', en: 'They eat at the restaurant.', 
+          replace: 'mangent' },
+        { fr: 'Vous mangez bien.', en: 'You eat well.', 
+          replace: 'mangez' }
       ]},
       { word: 'boire', sentences: [
-        { fr: 'Je veux boire de l\'eau.', 
-          en: 'I want to drink water.', replace: 'boire' },
+        { fr: 'Je bois de l\'eau.', en: 'I drink water.', 
+          replace: 'bois' },
         { fr: 'Elle boit du café.', en: 'She drinks coffee.', 
           replace: 'boit' },
         { fr: 'Nous buvons du vin.', en: 'We drink wine.', 
-          replace: 'buvons' }
+          replace: 'buvons' },
+        { fr: 'Ils boivent du thé.', en: 'They drink tea.', 
+          replace: 'boivent' },
+        { fr: 'Vous buvez souvent.', en: 'You drink often.', 
+          replace: 'buvez' }
       ]},
       { word: 'être', sentences: [
         { fr: 'Je suis étudiant.', en: 'I am a student.', 
@@ -690,12 +698,16 @@ function seedDatabase() {
           replace: 'lit' }
       ]},
       { word: 'dormir', sentences: [
-        { fr: 'J\'aime dormir.', en: 'I like to sleep.', 
-          replace: 'dormir' },
+        { fr: 'Je dors bien.', en: 'I sleep well.', 
+          replace: 'dors' },
         { fr: 'Il dort beaucoup.', en: 'He sleeps a lot.', 
           replace: 'dort' },
         { fr: 'Nous dormons bien.', en: 'We sleep well.', 
-          replace: 'dormons' }
+          replace: 'dormons' },
+        { fr: 'Elles dorment tard.', en: 'They sleep late.', 
+          replace: 'dorment' },
+        { fr: 'Vous dormez peu.', en: 'You sleep little.', 
+          replace: 'dormez' }
       ]},
       { word: 'parler', sentences: [
         { fr: 'Je parle français.', en: 'I speak French.', 
@@ -703,7 +715,11 @@ function seedDatabase() {
         { fr: 'Nous parlons ensemble.', en: 'We speak together.', 
           replace: 'parlons' },
         { fr: 'Elle parle bien.', en: 'She speaks well.', 
-          replace: 'parle' }
+          replace: 'parle' },
+        { fr: 'Ils parlent fort.', en: 'They speak loudly.', 
+          replace: 'parlent' },
+        { fr: 'Vous parlez anglais.', en: 'You speak English.', 
+          replace: 'parlez' }
       ]},
       { word: 'écouter', sentences: [
         { fr: 'J\'écoute de la musique.', en: 'I listen to music.', 
@@ -711,7 +727,11 @@ function seedDatabase() {
         { fr: 'Nous écoutons le professeur.', 
           en: 'We listen to the teacher.', replace: 'écoutons' },
         { fr: 'Il écoute la radio.', en: 'He listens to the radio.', 
-          replace: 'écoute' }
+          replace: 'écoute' },
+        { fr: 'Elles écoutent attentivement.', en: 'They listen carefully.', 
+          replace: 'écoutent' },
+        { fr: 'Vous écoutez bien.', en: 'You listen well.', 
+          replace: 'écoutez' }
       ]},
       { word: 'regarder', sentences: [
         { fr: 'Je regarde la télévision.', en: 'I watch television.', 
@@ -719,7 +739,11 @@ function seedDatabase() {
         { fr: 'Nous regardons un film.', en: 'We watch a movie.', 
           replace: 'regardons' },
         { fr: 'Elle regarde par la fenêtre.', 
-          en: 'She looks out the window.', replace: 'regarde' }
+          en: 'She looks out the window.', replace: 'regarde' },
+        { fr: 'Ils regardent le match.', en: 'They watch the game.', 
+          replace: 'regardent' },
+        { fr: 'Vous regardez souvent.', en: 'You watch often.', 
+          replace: 'regardez' }
       ]},
       { word: 'aimer', sentences: [
         { fr: 'J\'aime le chocolat.', en: 'I love chocolate.', 
@@ -727,7 +751,11 @@ function seedDatabase() {
         { fr: 'Nous aimons voyager.', en: 'We love to travel.', 
           replace: 'aimons' },
         { fr: 'Tu aimes lire.', en: 'You like to read.', 
-          replace: 'aimes' }
+          replace: 'aimes' },
+        { fr: 'Ils aiment la musique.', en: 'They love music.', 
+          replace: 'aiment' },
+        { fr: 'Vous aimez bien.', en: 'You like well.', 
+          replace: 'aimez' }
       ]},
       { word: 'aller', sentences: [
         { fr: 'Je vais à l\'école.', en: 'I go to school.', 
@@ -735,7 +763,11 @@ function seedDatabase() {
         { fr: 'Nous allons au parc.', en: 'We go to the park.', 
           replace: 'allons' },
         { fr: 'Il va bien.', en: 'He is doing well.', 
-          replace: 'va' }
+          replace: 'va' },
+        { fr: 'Elles vont au cinéma.', en: 'They go to the cinema.', 
+          replace: 'vont' },
+        { fr: 'Vous allez souvent.', en: 'You go often.', 
+          replace: 'allez' }
       ]},
       
       // Level 2: People & Places
@@ -847,7 +879,9 @@ function seedDatabase() {
         { fr: 'Elle habite ici.', en: 'She lives here.', 
           replace: 'habite' },
         { fr: 'Ils habitent dans une maison.', 
-          en: 'They live in a house.', replace: 'habitent' }
+          en: 'They live in a house.', replace: 'habitent' },
+        { fr: 'Vous habitez où?', en: 'Where do you live?', 
+          replace: 'habitez' }
       ]},
       { word: 'visiter', sentences: [
         { fr: 'Je visite Paris.', en: 'I visit Paris.', 
@@ -857,7 +891,9 @@ function seedDatabase() {
         { fr: 'Elle visite sa famille.', 
           en: 'She visits her family.', replace: 'visite' },
         { fr: 'Ils visitent la ville.', 
-          en: 'They visit the city.', replace: 'visitent' }
+          en: 'They visit the city.', replace: 'visitent' },
+        { fr: 'Vous visitez souvent.', en: 'You visit often.', 
+          replace: 'visitez' }
       ]},
       { word: 'rencontrer', sentences: [
         { fr: 'Je rencontre un ami.', en: 'I meet a friend.', 
@@ -867,7 +903,9 @@ function seedDatabase() {
         { fr: 'Elle rencontre Paul.', en: 'She meets Paul.', 
           replace: 'rencontre' },
         { fr: 'Ils se rencontrent au parc.', 
-          en: 'They meet at the park.', replace: 'rencontrent' }
+          en: 'They meet at the park.', replace: 'rencontrent' },
+        { fr: 'Vous rencontrez qui?', en: 'Who do you meet?', 
+          replace: 'rencontrez' }
       ]},
       { word: 'connaître', sentences: [
         { fr: 'Je connais Paul.', en: 'I know Paul.', 
@@ -877,7 +915,9 @@ function seedDatabase() {
         { fr: 'Elle connaît mon frère.', 
           en: 'She knows my brother.', replace: 'connaît' },
         { fr: 'Ils connaissent le chemin.', 
-          en: 'They know the way.', replace: 'connaissent' }
+          en: 'They know the way.', replace: 'connaissent' },
+        { fr: 'Vous connaissez bien.', en: 'You know well.', 
+          replace: 'connaissez' }
       ]},
       { word: 'appeler', sentences: [
         { fr: 'Je m\'appelle Marie.', en: 'My name is Marie.', 
@@ -887,7 +927,9 @@ function seedDatabase() {
         { fr: 'Elle appelle sa mère.', 
           en: 'She calls her mother.', replace: 'appelle' },
         { fr: 'Ils appellent le docteur.', 
-          en: 'They call the doctor.', replace: 'appellent' }
+          en: 'They call the doctor.', replace: 'appellent' },
+        { fr: 'Vous appelez souvent.', en: 'You call often.', 
+          replace: 'appelez' }
       ]},
       { word: 'marcher', sentences: [
         { fr: 'Je marche vite.', en: 'I walk fast.', 
@@ -897,7 +939,9 @@ function seedDatabase() {
         { fr: 'Elle marche dans le parc.', 
           en: 'She walks in the park.', replace: 'marche' },
         { fr: 'Ils marchent lentement.', 
-          en: 'They walk slowly.', replace: 'marchent' }
+          en: 'They walk slowly.', replace: 'marchent' },
+        { fr: 'Vous marchez bien.', en: 'You walk well.', 
+          replace: 'marchez' }
       ]},
       { word: 'courir', sentences: [
         { fr: 'Je cours vite.', en: 'I run fast.', 
@@ -907,7 +951,9 @@ function seedDatabase() {
         { fr: 'Elle court tous les jours.', 
           en: 'She runs every day.', replace: 'court' },
         { fr: 'Ils courent ensemble.', 
-          en: 'They run together.', replace: 'courent' }
+          en: 'They run together.', replace: 'courent' },
+        { fr: 'Vous courez souvent.', en: 'You run often.', 
+          replace: 'courez' }
       ]},
       { word: 'venir', sentences: [
         { fr: 'Je viens demain.', en: 'I come tomorrow.', 
@@ -917,7 +963,9 @@ function seedDatabase() {
         { fr: 'Elle vient de Paris.', 
           en: 'She comes from Paris.', replace: 'vient' },
         { fr: 'Ils viennent à huit heures.', 
-          en: 'They come at eight o\'clock.', replace: 'viennent' }
+          en: 'They come at eight o\'clock.', replace: 'viennent' },
+        { fr: 'Vous venez souvent.', en: 'You come often.', 
+          replace: 'venez' }
       ]},
       { word: 'partir', sentences: [
         { fr: 'Je pars demain.', en: 'I leave tomorrow.', 
@@ -927,7 +975,9 @@ function seedDatabase() {
         { fr: 'Elle part ce soir.', 
           en: 'She leaves tonight.', replace: 'part' },
         { fr: 'Ils partent tôt.', en: 'They leave early.', 
-          replace: 'partent' }
+          replace: 'partent' },
+        { fr: 'Vous partez quand?', en: 'When do you leave?', 
+          replace: 'partez' }
       ]},
       { word: 'rester', sentences: [
         { fr: 'Je reste ici.', en: 'I stay here.', 
@@ -937,7 +987,9 @@ function seedDatabase() {
         { fr: 'Elle reste avec moi.', en: 'She stays with me.', 
           replace: 'reste' },
         { fr: 'Ils restent au parc.', 
-          en: 'They stay at the park.', replace: 'restent' }
+          en: 'They stay at the park.', replace: 'restent' },
+        { fr: 'Vous restez longtemps.', en: 'You stay a long time.', 
+          replace: 'restez' }
       ]},
 
       // Level 3: Pronouns & Grammar
@@ -1351,6 +1403,62 @@ function seedDatabase() {
         { fr: 'Nous avons du temps.', en: 'We have time.', replace: 'avons' },
         { fr: 'Il a vingt ans.', en: 'He is twenty years old.', replace: 'a' },
         { fr: 'Vous avez raison.', en: 'You are right.', replace: 'avez' }
+      ]},
+      { word: 'attendre', sentences: [
+        { fr: 'J\'attends le bus.', en: 'I wait for the bus.', replace: 'attends' },
+        { fr: 'Elle attend son ami.', en: 'She waits for her friend.', replace: 'attend' },
+        { fr: 'Nous attendons le train.', en: 'We wait for the train.', replace: 'attendons' },
+        { fr: 'Il attend longtemps.', en: 'He waits a long time.', replace: 'attend' },
+        { fr: 'Vous attendez ici.', en: 'You wait here.', replace: 'attendez' }
+      ]},
+      { word: 'commencer', sentences: [
+        { fr: 'Je commence le travail.', en: 'I start work.', replace: 'commence' },
+        { fr: 'Elle commence à lire.', en: 'She starts reading.', replace: 'commence' },
+        { fr: 'Nous commençons demain.', en: 'We start tomorrow.', replace: 'commençons' },
+        { fr: 'Il commence tôt.', en: 'He starts early.', replace: 'commence' },
+        { fr: 'Vous commencez bien.', en: 'You start well.', replace: 'commencez' }
+      ]},
+      { word: 'finir', sentences: [
+        { fr: 'Je finis le travail.', en: 'I finish work.', replace: 'finis' },
+        { fr: 'Elle finit le livre.', en: 'She finishes the book.', replace: 'finit' },
+        { fr: 'Nous finissons ensemble.', en: 'We finish together.', replace: 'finissons' },
+        { fr: 'Il finit tard.', en: 'He finishes late.', replace: 'finit' },
+        { fr: 'Vous finissez bien.', en: 'You finish well.', replace: 'finissez' }
+      ]},
+      { word: 'durer', sentences: [
+        { fr: 'Le film dure longtemps.', en: 'The movie lasts a long time.', replace: 'dure' },
+        { fr: 'La réunion dure deux heures.', en: 'The meeting lasts two hours.', replace: 'dure' },
+        { fr: 'Nous durons toute la journée.', en: 'We last all day.', replace: 'durons' },
+        { fr: 'Il dure peu de temps.', en: 'It lasts a short time.', replace: 'dure' },
+        { fr: 'Vous durez longtemps.', en: 'You last a long time.', replace: 'durez' }
+      ]},
+      { word: 'changer', sentences: [
+        { fr: 'Je change d\'avis.', en: 'I change my mind.', replace: 'change' },
+        { fr: 'Elle change de robe.', en: 'She changes her dress.', replace: 'change' },
+        { fr: 'Nous changeons de voiture.', en: 'We change cars.', replace: 'changeons' },
+        { fr: 'Il change souvent.', en: 'He changes often.', replace: 'change' },
+        { fr: 'Vous changez bien.', en: 'You change well.', replace: 'changez' }
+      ]},
+      { word: 'pleuvoir', sentences: [
+        { fr: 'Il pleut aujourd\'hui.', en: 'It rains today.', replace: 'pleut' },
+        { fr: 'Il pleut beaucoup.', en: 'It rains a lot.', replace: 'pleut' },
+        { fr: 'Il pleut demain.', en: 'It will rain tomorrow.', replace: 'pleut' },
+        { fr: 'Il pleut souvent ici.', en: 'It rains often here.', replace: 'pleut' },
+        { fr: 'Il pleut en automne.', en: 'It rains in autumn.', replace: 'pleut' }
+      ]},
+      { word: 'neiger', sentences: [
+        { fr: 'Il neige en hiver.', en: 'It snows in winter.', replace: 'neige' },
+        { fr: 'Il neige beaucoup.', en: 'It snows a lot.', replace: 'neige' },
+        { fr: 'Il neige demain.', en: 'It will snow tomorrow.', replace: 'neige' },
+        { fr: 'Il neige souvent ici.', en: 'It snows often here.', replace: 'neige' },
+        { fr: 'Il neige en montagne.', en: 'It snows in the mountains.', replace: 'neige' }
+      ]},
+      { word: 'briller', sentences: [
+        { fr: 'Le soleil brille.', en: 'The sun shines.', replace: 'brille' },
+        { fr: 'Les étoiles brillent.', en: 'The stars shine.', replace: 'brillent' },
+        { fr: 'Nous brillons ensemble.', en: 'We shine together.', replace: 'brillons' },
+        { fr: 'Il brille de bonheur.', en: 'He shines with happiness.', replace: 'brille' },
+        { fr: 'Vous brillez toujours.', en: 'You always shine.', replace: 'brillez' }
       ]},
       { word: 'faire', sentences: [
         { fr: 'Je fais le ménage.', en: 'I do the housework.', replace: 'fais' },
