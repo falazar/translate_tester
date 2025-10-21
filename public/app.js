@@ -370,6 +370,13 @@ async function startSession() {
 function displayQuestion() {
   const question = currentQuestions[currentQuestionIndex];
   
+  // Reset all multiple choice buttons for new question
+  document.querySelectorAll('.option-btn').forEach(btn => {
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    btn.classList.remove('selected');
+  });
+  
   // Update progress
   document.getElementById('currentQuestion').textContent = 
     currentQuestionIndex + 1;
@@ -430,13 +437,21 @@ function displayQuestion() {
 }
 
 function selectOption(button) {
-  // Deselect all options
+  // Deselect all options and re-enable them
   document.querySelectorAll('.option-btn').forEach(btn => {
     btn.classList.remove('selected');
+    btn.disabled = false;
+    btn.style.opacity = '1';
   });
   
   // Select clicked option
   button.classList.add('selected');
+  
+  // Disable all other options
+  document.querySelectorAll('.option-btn:not(.selected)').forEach(btn => {
+    btn.disabled = true;
+    btn.style.opacity = '0.5';
+  });
 }
 
 function formatQuestionType(type) {

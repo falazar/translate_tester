@@ -276,11 +276,17 @@ export class SessionService {
     allWords: Word[]
   ): string[] {
     const options: string[] = [correctWord.english];
-    const sameType = allWords.filter(
+    
+    // First try to find words of the same type
+    let sameType = allWords.filter(
       w => w.word_type === correctWord.word_type && 
            w.id !== correctWord.id
     );
-
+    
+    // If not enough same-type words, expand to all words
+    if (sameType.length < 3) {
+      sameType = allWords.filter(w => w.id !== correctWord.id);
+    }
     
     // Add 3 random wrong answers
     while (options.length < 4 && sameType.length > 0) {
@@ -292,6 +298,16 @@ export class SessionService {
       }
       
       sameType.splice(randomIndex, 1);
+    }
+    
+    // If still not enough options, add generic options
+    if (options.length < 4) {
+      const genericOptions = ['house', 'car', 'book', 'water', 'food', 'time', 'place', 'thing'];
+      for (const option of genericOptions) {
+        if (!options.includes(option) && options.length < 4) {
+          options.push(option);
+        }
+      }
     }
 
     // Shuffle options
@@ -401,7 +417,7 @@ export class SessionService {
 
         const examples = db.prepare(`
           SELECT * FROM example_sentences 
-          WHERE word_id = ? LIMIT 3
+          WHERE word_id = ? 
         `).all(answer.word_id) as ExampleSentence[];
 
         return {

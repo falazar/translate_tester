@@ -101,24 +101,26 @@ export class UserLevelService {
       
       if (words.length === 0) continue;
       
-      let totalCorrect = 0;
-      let totalAttempts = 0;
+      // Calculate mastery from word progress using pre-calculated mastery_level
+      let totalMastery = 0;
+      let wordsWithProgress = 0;
       
-      // Calculate mastery from word progress
       for (const word of words) {
         const progress = db.prepare(`
-          SELECT correct_count, incorrect_count 
+          SELECT mastery_level 
           FROM user_word_progress 
           WHERE user_id = ? AND word_id = ?
-        `).get(userId, word.id) as { correct_count: number, incorrect_count: number } | undefined;
+        `).get(userId, word.id) as { mastery_level: number } | undefined;
         
         if (progress) {
-          totalCorrect += progress.correct_count;
-          totalAttempts += progress.correct_count + progress.incorrect_count;
+          // Use the rolling window mastery calculation from ProgressService
+          totalMastery += progress.mastery_level;
+          wordsWithProgress++;
         }
       }
       
-      const mastery = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+      // Calculate average mastery across all words in the level
+      const mastery = wordsWithProgress > 0 ? Math.round(totalMastery / wordsWithProgress) : 0;
       
       // Get current user level to check if this is newly hit mastery
       const currentUserLevel = this.getUserLevel(userId, level.id);
