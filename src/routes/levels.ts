@@ -32,6 +32,7 @@ router.get('/user-progress', authMiddleware, (req: AuthRequest, res: Response) =
         mastery: userLevel?.mastery || 0,
         unlocked_at: userLevel?.unlocked_at || null,
         mastery_hit: userLevel?.mastery_hit || null,
+        days_to_beat: userLevel?.days_to_beat || null,
         last_practiced: userLevel?.last_practiced || null,
         is_unlocked: isUnlocked
       };

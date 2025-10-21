@@ -1,6 +1,5 @@
 import { getDatabase } from '../database/connection';
 import { Level, Word } from '../types';
-import { ProgressService } from './progressService';
 
 export class LevelService {
   static getAllLevels(): Level[] {
@@ -84,7 +83,7 @@ export class LevelService {
       };
 
       // Clean word object (remove progress fields from root)
-      const { correct_count, incorrect_count, mastery_level, ...cleanWord } = word;
+      const { correct_count: _correct_count, incorrect_count: _incorrect_count, mastery_level: _mastery_level, ...cleanWord } = word;
 
       return {
         ...cleanWord,

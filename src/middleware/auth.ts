@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { AuthService } from '../services/authService';
 
 export interface AuthRequest extends Request {
@@ -25,7 +25,7 @@ export function authMiddleware(
     req.username = decoded.username;
 
     next();
-  } catch (error) {
+  } catch {
     res.status(401).json({ error: 'Invalid token' });
   }
 }

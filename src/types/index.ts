@@ -51,6 +51,7 @@ export interface UserLevel {
   mastery: number;
   unlocked_at: string | null;
   mastery_hit: string | null;
+  days_to_beat: number | null;
   last_practiced: string | null;
 }
 

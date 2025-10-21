@@ -1,13 +1,13 @@
 import { getDatabase } from '../database/connection';
-import { 
-  Word, 
-  Question, 
-  Session, 
-  SessionResult, 
-  ExampleSentence 
+import {
+  ExampleSentence,
+  Question,
+  Session,
+  SessionResult,
+  Word
 } from '../types';
-import { ProgressService } from './progressService';
 import { LevelService } from './levelService';
+import { ProgressService } from './progressService';
 import { UserLevelService } from './userLevelService';
 
 export class SessionService {
@@ -27,11 +27,16 @@ export class SessionService {
     ).get(result.lastInsertRowid) as Session;
   }
 
+  /**
+   * Generate questions for a session
+   * @param userId - User ID
+   * @param currentLevelId - Current level ID
+   * @returns Array of questions
+   */
   static generateQuestions(
     userId: number, 
     currentLevelId: number
   ): Question[] {
-    const db = getDatabase();
     const questions: Question[] = [];
 
     // Get words for the session (current level + max 3 from previous levels)

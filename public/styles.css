@@ -306,6 +306,19 @@ body {
   color: #667eea;
 }
 
+.level-dates {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+}
+
+.level-dates small {
+  display: block;
+  color: #888;
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
+
 /* Game Screen */
 .game-header {
   background: white;
@@ -549,9 +562,15 @@ body {
 
 .review-item .example {
   background: white;
-  padding: 12px;
+  padding: 8px 12px;
   border-radius: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.review-item .example-line {
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.4;
 }
 
 .review-item .example .french {

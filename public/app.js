@@ -187,7 +187,14 @@ function showLevelCard(level) {
   levelItem.className = `level-item ${isUnlocked ? '' : 'locked'}`;
   levelItem.dataset.levelId = level.id;
   
-  // Create HTML with mastery
+  // Format date for display
+  const formatDate = (dateString) => {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+  };
+  
+  // Create HTML with mastery, date unlocked, and days to beat
   levelItem.innerHTML = `
     <h3>Level ${level.level_number}</h3>
     <h4>${level.name}</h4>
@@ -198,6 +205,12 @@ function showLevelCard(level) {
         (isUnlocked ? 'Unlocked' : 'Locked')}
       <span class="mastery-percentage">${mastery}%</span>
     </span>
+    ${isUnlocked ? `
+      <div class="level-dates">
+        <small>Unlocked: ${formatDate(level.unlocked_at)}</small>
+        ${level.days_to_beat ? `<small>Beat in: ${level.days_to_beat} days</small>` : ''}
+      </div>
+    ` : ''}
   `;
   
   // Add click handler for unlocked levels
@@ -613,8 +626,7 @@ function displayResults(results) {
             <h4>Example sentences:</h4>
             ${item.examples.map(ex => `
               <div class="example">
-                <div class="${targetLanguage.toLowerCase()}">${ex[`${targetLanguage.toLowerCase()}_sentence`]}</div>
-                <div class="${baseLanguage.toLowerCase()}">→ ${ex[`${baseLanguage.toLowerCase()}_translation`]}</div>
+                <div class="example-line">${ex[`${targetLanguage.toLowerCase()}_sentence`]} → ${ex[`${baseLanguage.toLowerCase()}_translation`]}</div>
               </div>
             `).join('')}
           </div>

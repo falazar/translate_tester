@@ -1,0 +1,9 @@
+{
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.suggest.autoImports": true,
+  "typescript.validate.enable": true,
+  "typescript.preferences.noSemicolons": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}
