@@ -2,11 +2,68 @@
 const baseLanguage = 'English';
 const targetLanguage = 'French';
 
+// Speech synthesis for pronunciation
+let speechSynthesis = null;
+let speechUtterance = null;
+
+// Initialize speech synthesis
+function initSpeechSynthesis() {
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    speechSynthesis = window.speechSynthesis;
+    console.log('Speech synthesis available');
+  } else {
+    console.log('Speech synthesis not supported');
+  }
+}
+
+// Speak text in target language
+function speakText(text, language = targetLanguage) {
+  if (!speechSynthesis) {
+    console.log('Speech synthesis not available');
+    return;
+  }
+  
+  // Cancel any ongoing speech
+  speechSynthesis.cancel();
+  
+  // Create new utterance
+  speechUtterance = new SpeechSynthesisUtterance(text);
+  
+  // Configure language based on target language
+  speechUtterance.lang = getSpeechLanguageCode(language);
+  
+  speechUtterance.rate = 0.8; // Slightly slower for learning
+  speechUtterance.pitch = 1.0;
+  speechUtterance.volume = 0.8;
+  
+  // Speak
+  speechSynthesis.speak(speechUtterance);
+}
+
+
+// Stop speech
+function stopSpeech() {
+  if (speechSynthesis) {
+    speechSynthesis.cancel();
+  }
+}
+
 // Helper functions
+function escapeForHtml(text) {
+  return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
+}
+
 function getLanguageCode(language) {
   if (language === 'English') return 'en';
   if (language === 'French') return 'fr';
   return 'en'; // default
+}
+
+function getSpeechLanguageCode(language) {
+  if (language === 'French') return 'fr-FR';
+  if (language === 'Spanish') return 'es-ES';
+  if (language === 'German') return 'de-DE';
+  return 'en-US'; // default
 }
 
 // Global state
@@ -20,8 +77,11 @@ let selectedLevelId = null;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+  initSpeechSynthesis();
   checkAuth();
-  window.notifications.setupDailyReminders();
+  if (typeof window !== 'undefined' && window.notifications) {
+    window.notifications.setupDailyReminders();
+  }
 });
 
 // Auth functions
@@ -124,7 +184,9 @@ async function showDashboard() {
     currentUser.username;
   
   // Add reminder button
-  window.notifications.addReminderButton();
+  if (typeof window !== 'undefined' && window.notifications) {
+    window.notifications.addReminderButton();
+  }
   
   try {
     // Get all levels with user progress
@@ -208,6 +270,7 @@ function showLevelCard(level) {
     ${isUnlocked ? `
       <div class="level-dates">
         <small>Unlocked: ${formatDate(level.unlocked_at)}</small>
+        <small>Attempts: ${level.attempts}</small>
         ${level.days_to_beat ? `<small>Beat in: ${level.days_to_beat} days</small>` : ''}
       </div>
     ` : ''}
@@ -315,7 +378,13 @@ function displayWordsScreen(data) {
         <div class="word-examples">
           ${word.examples.map(ex => `
             <div class="word-example">
-              ${ex[`${targetLanguage.toLowerCase()}_sentence`]} → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
+              <span class="french-sentence">
+                ${ex[`${targetLanguage.toLowerCase()}_sentence`]}
+                <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(ex[`${targetLanguage.toLowerCase()}_sentence`])}')" title="Listen to pronunciation">
+                  🔊
+                </button>
+              </span>
+              → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
             </div>
           `).join('')}
         </div>
@@ -326,7 +395,12 @@ function displayWordsScreen(data) {
       <div class="word-item-header">
         <div class="word-main">
           <span class="word-number">${index + 1}.</span>
-          <span class="word-${targetLanguage.toLowerCase()}">${word[targetLanguage.toLowerCase()]}</span>
+          <span class="word-${targetLanguage.toLowerCase()}">
+            ${word[targetLanguage.toLowerCase()]}
+            <button class="speaker-btn" tabindex="-1" onclick="speakText('${escapeForHtml(word[targetLanguage.toLowerCase()])}')" title="Listen to pronunciation">
+              🔊
+            </button>
+          </span>
           <span class="word-${baseLanguage.toLowerCase()}">${word[baseLanguage.toLowerCase()]}</span>
           ${progressHTML}
         </div>
@@ -403,8 +477,68 @@ function displayQuestion() {
   // Display question
   document.getElementById('questionType').textContent = 
     formatQuestionType(question.type);
-  document.getElementById('questionText').innerHTML = 
-    question.question;
+  
+  // Add speaker button to French text in questions and auto-play
+  let questionHTML = question.question;
+  if (question.type === 'fr_to_en') {
+    // Extract target language text from question and add speaker button
+    const questionMatch = question.question.match(/"([^"]+)"/);
+    if (questionMatch) {
+      const targetText = questionMatch[1];
+      questionHTML = question.question.replace(
+        `"${targetText}"`, 
+        `"<span class="french-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button></span>"`
+      );
+      // Auto-play the target language sentence when question loads
+      setTimeout(() => speakText(targetText), 500);
+    }
+  } else if (question.type === 'fill_blank') {
+    // For fill_blank, extract target language sentence after <br> tag
+    const questionMatch = question.question.match(/<br>"([^"]+)"/);
+    if (questionMatch) {
+      const targetText = questionMatch[1];
+      const cleanText = targetText.replace(/_/g, ''); // Remove underscores once
+      const escapedText = escapeForHtml(cleanText); // Escape once
+      
+      questionHTML = question.question.replace(
+        `<br>"${targetText}"`, 
+        `<br>"<span class="french-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}')" title="Listen to pronunciation">🔊</button></span>"`
+      );
+      // Auto-play the target language sentence when question loads
+      setTimeout(() => speakText(cleanText), 500);
+    }
+  } else if (question.type === 'en_to_fr') {
+    // For English to French questions, add speaker button to the target language word in the question
+    const questionMatch = question.question.match(/"([^"]+)"/);
+    if (questionMatch) {
+      const targetText = questionMatch[1];
+      questionHTML = question.question.replace(
+        `"${targetText}"`, 
+        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button>`
+      );
+      // Auto-play the target language word when question loads
+      setTimeout(() => speakText(targetText), 500);
+    }
+  } else if (question.type === 'multiple_choice') {
+    // For multiple choice questions, add speaker button to the target language word in the question
+    const questionMatch = question.question.match(/"([^"]+)"/);
+    if (questionMatch) {
+      const targetText = questionMatch[1];
+      questionHTML = question.question.replace(
+        `"${targetText}"`, 
+        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button>`
+      );
+      // Auto-play the target language word when question loads
+      setTimeout(() => speakText(targetText), 500);
+    }
+  }
+  
+  // Debug: log the question to see the format
+  console.log('Question type:', question.type);
+  console.log('Question text:', question.question);
+  console.log('Final HTML:', questionHTML);
+  
+  document.getElementById('questionText').innerHTML = questionHTML;
 
   // Clear previous answer area
   const answerArea = document.getElementById('answerArea');
@@ -525,7 +659,7 @@ async function submitAnswer() {
 
     if (response.ok) {
       const result = await response.json();
-      displayFeedback(result.correct, question.correct_answer);
+      displayFeedback(result.correct, question.correct_answer, question);
       
       if (result.correct) {
         currentScore++;
@@ -541,15 +675,34 @@ async function submitAnswer() {
   }
 }
 
-function displayFeedback(correct, correctAnswer) {
+function displayFeedback(correct, correctAnswer, question) {
   const feedback = document.getElementById('feedback');
   feedback.className = 'feedback active ' + 
                        (correct ? 'correct' : 'incorrect');
   
-  if (correct) {
-    feedback.textContent = '✓ Correct!';
+  if (question.type === 'fill_blank') {
+    // For fill-in-the-blank, show the complete correct sentence
+    const questionMatch = question.question.match(/<br>"([^"]+)"/);
+    if (questionMatch) {
+      const incompleteSentence = questionMatch[1];
+      const completeSentence = incompleteSentence.replace(/___/g, correctAnswer);
+      
+      if (correct) {
+        feedback.innerHTML = `✓ Correct!<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}')" title="Listen to pronunciation">🔊</button>`;
+      } else {
+        feedback.innerHTML = `✗ Incorrect. The correct answer is: ${correctAnswer}<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}')" title="Listen to pronunciation">🔊</button>`;
+      }
+      
+      // Auto-play the complete French sentence
+      setTimeout(() => speakText(completeSentence.replace(/_/g, '')), 1000);
+    }
   } else {
-    feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}`;
+    // For other question types, show standard feedback
+    if (correct) {
+      feedback.textContent = '✓ Correct!';
+    } else {
+      feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}`;
+    }
   }
 
   // Hide submit, show next
@@ -626,7 +779,15 @@ function displayResults(results) {
             <h4>Example sentences:</h4>
             ${item.examples.map(ex => `
               <div class="example">
-                <div class="example-line">${ex[`${targetLanguage.toLowerCase()}_sentence`]} → ${ex[`${baseLanguage.toLowerCase()}_translation`]}</div>
+                <div class="example-line">
+                  <span class="french-sentence">
+                    ${ex[`${targetLanguage.toLowerCase()}_sentence`]}
+                    <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(ex[`${targetLanguage.toLowerCase()}_sentence`])}')" title="Listen to pronunciation">
+                      🔊
+                    </button>
+                  </span>
+                  → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
+                </div>
               </div>
             `).join('')}
           </div>

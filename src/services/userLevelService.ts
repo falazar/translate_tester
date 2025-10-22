@@ -19,7 +19,7 @@ export class UserLevelService {
    */
   static getOrCreateUserLevel(userId: number, levelId: number): UserLevel {
     const db = getDatabase();
-    
+
     let userLevel = this.getUserLevel(userId, levelId);
     
     if (!userLevel) {
@@ -28,8 +28,8 @@ export class UserLevelService {
       const isUnlocked = levelInfo?.level_number === 1 || this.checkPreviousLevelMastery(userId, levelInfo?.level_number || 1);
       
       const result = db.prepare(`
-        INSERT INTO user_levels (user_id, level_id, mastery, unlocked_at)
-        VALUES (?, ?, 0, ${isUnlocked ? 'CURRENT_TIMESTAMP' : 'NULL'})
+        INSERT INTO user_levels (user_id, level_id, mastery, attempts, unlocked_at)
+        VALUES (?, ?, 0, 0, ${isUnlocked ? 'CURRENT_TIMESTAMP' : 'NULL'})
       `).run(userId, levelId);
       
       userLevel = {
@@ -37,6 +37,7 @@ export class UserLevelService {
         user_id: userId,
         level_id: levelId,
         mastery: 0,
+        attempts: 0,
         unlocked_at: isUnlocked ? new Date().toISOString() : null,
         mastery_hit: null,
         days_to_beat: null,
@@ -132,8 +133,8 @@ export class UserLevelService {
         // For session level, update mastery and last_practiced
         db.prepare(`
           INSERT INTO user_levels 
-          (user_id, level_id, mastery, last_practiced)
-          VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+          (user_id, level_id, mastery, attempts, last_practiced)
+          VALUES (?, ?, ?, 0, CURRENT_TIMESTAMP)
           ON CONFLICT(user_id, level_id) DO UPDATE SET
             mastery = excluded.mastery,
             last_practiced = CURRENT_TIMESTAMP
@@ -142,8 +143,8 @@ export class UserLevelService {
         // For other levels, only update mastery
         db.prepare(`
           INSERT INTO user_levels 
-          (user_id, level_id, mastery)
-          VALUES (?, ?, ?)
+          (user_id, level_id, mastery, attempts)
+          VALUES (?, ?, ?, 0)
           ON CONFLICT(user_id, level_id) DO UPDATE SET
             mastery = excluded.mastery
         `).run(userId, level.id, mastery);
@@ -192,6 +193,23 @@ export class UserLevelService {
     `).get(userId, previousLevel.id) as { mastery: number } | undefined;
     
     return (userLevel?.mastery || 0) >= 80;
+  }
+
+  /**
+   * Increment attempt count for a level when user starts a session
+   */
+  static incrementAttempts(userId: number, levelId: number): void {
+    const db = getDatabase();
+
+    // Ensure user level exists
+    this.getOrCreateUserLevel(userId, levelId);
+    
+    // Increment attempts
+    db.prepare(`
+      UPDATE user_levels 
+      SET attempts = attempts + 1, last_practiced = CURRENT_TIMESTAMP
+      WHERE user_id = ? AND level_id = ?
+    `).run(userId, levelId);
   }
 
   /**
@@ -252,8 +270,8 @@ export class UserLevelService {
     if (nextLevel) {
       db.prepare(`
         INSERT OR REPLACE INTO user_levels 
-        (user_id, level_id, mastery, unlocked_at, mastery_hit, last_practiced)
-        VALUES (?, ?, 0, CURRENT_TIMESTAMP, NULL, NULL)
+        (user_id, level_id, mastery, attempts, unlocked_at, mastery_hit, last_practiced)
+        VALUES (?, ?, 0, 0, CURRENT_TIMESTAMP, NULL, NULL)
       `).run(userId, nextLevel.id);
       
       // Update user's current level to the newly unlocked level

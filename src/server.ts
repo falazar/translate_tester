@@ -1,14 +1,14 @@
-import express from 'express';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
+import express from 'express';
 import path from 'path';
 import { getDatabase } from './database/connection';
 
 // Import routes
 import authRoutes from './routes/auth';
 import levelRoutes from './routes/levels';
-import sessionRoutes from './routes/sessions';
 import progressRoutes from './routes/progress';
+import sessionRoutes from './routes/sessions';
 
 // Load environment variables
 dotenv.config();
@@ -34,7 +34,7 @@ app.use('/api/sessions', sessionRoutes);
 app.use('/api/progress', progressRoutes);
 
 // Serve frontend for all other routes
-app.get('*', (req, res) => {
+app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 

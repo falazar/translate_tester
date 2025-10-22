@@ -49,6 +49,7 @@ export interface UserLevel {
   user_id: number;
   level_id: number;
   mastery: number;
+  attempts: number;
   unlocked_at: string | null;
   mastery_hit: string | null;
   days_to_beat: number | null;

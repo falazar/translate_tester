@@ -319,6 +319,41 @@ body {
   margin-bottom: 2px;
 }
 
+/* Speaker buttons */
+.speaker-btn {
+  background: none;
+  border: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.speaker-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.speaker-btn-small {
+  background: none;
+  border: none;
+  font-size: 0.7em;
+  cursor: pointer;
+  margin-left: 3px;
+  padding: 1px 3px;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+
+.speaker-btn-small:hover {
+  background-color: #f0f0f0;
+}
+
+.french-sentence {
+  display: inline-block;
+}
+
 /* Game Screen */
 .game-header {
   background: white;

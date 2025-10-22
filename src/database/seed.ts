@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { getDatabase, closeDatabase } from './connection';
+import { closeDatabase, getDatabase } from './connection';
 
 dotenv.config();
 
@@ -270,11 +270,11 @@ const WORDS_DATA = [
     level: 6, gender: 'la' },
   { french: 'le pied', english: 'foot', word_type: 'noun', 
     level: 6, gender: 'le' },
-  { french: 'l\'œil', english: 'eye', word_type: 'noun', 
+  { french: 'l\'oeil', english: 'eye', word_type: 'noun', 
     level: 6, gender: 'le' },
   { french: 'la bouche', english: 'mouth', word_type: 'noun', 
     level: 6, gender: 'la' },
-  { french: 'le cœur', english: 'heart', word_type: 'noun', 
+  { french: 'le coeur', english: 'heart', word_type: 'noun', 
     level: 6, gender: 'le' },
   { french: 'le corps', english: 'body', word_type: 'noun', 
     level: 6, gender: 'le' },
@@ -1473,6 +1473,250 @@ function seedDatabase() {
         { fr: 'Nous passons les vacances.', en: 'We spend the holidays.', replace: 'passons' },
         { fr: 'Il passe la journée.', en: 'He spends the day.', replace: 'passe' },
         { fr: 'Vous passez souvent.', en: 'You pass often.', replace: 'passez' }
+      ]},
+
+      // Level 6: Body & Health
+      { word: 'la tête', sentences: [
+        { fr: 'J\'ai mal à la tête.', en: 'I have a headache.', replace: 'tête' },
+        { fr: 'Elle secoue la tête.', en: 'She shakes her head.', replace: 'tête' },
+        { fr: 'La tête est importante.', en: 'The head is important.', replace: 'tête' }
+      ]},
+      { word: 'le bras', sentences: [
+        { fr: 'Il lève le bras.', en: 'He raises his arm.', replace: 'bras' },
+        { fr: 'Mon bras me fait mal.', en: 'My arm hurts.', replace: 'bras' },
+        { fr: 'Le bras est fort.', en: 'The arm is strong.', replace: 'bras' }
+      ]},
+      { word: 'la main', sentences: [
+        { fr: 'Je donne la main.', en: 'I give my hand.', replace: 'main' },
+        { fr: 'Elle serre la main.', en: 'She shakes hands.', replace: 'main' },
+        { fr: 'La main est propre.', en: 'The hand is clean.', replace: 'main' }
+      ]},
+      { word: 'la jambe', sentences: [
+        { fr: 'Il court avec les jambes.', en: 'He runs with his legs.', replace: 'jambes' },
+        { fr: 'Ma jambe est cassée.', en: 'My leg is broken.', replace: 'jambe' },
+        { fr: 'La jambe est longue.', en: 'The leg is long.', replace: 'jambe' }
+      ]},
+      { word: 'le pied', sentences: [
+        { fr: 'Je marche sur le pied.', en: 'I walk on foot.', replace: 'pied' },
+        { fr: 'Il a mal au pied.', en: 'He has a sore foot.', replace: 'pied' },
+        { fr: 'Le pied est petit.', en: 'The foot is small.', replace: 'pied' }
+      ]},
+      { word: 'l\'oeil', sentences: [
+        { fr: 'Je ferme l\'oeil.', en: 'I close my eye.', replace: 'oeil' },
+        { fr: 'L\'oeil voit bien.', en: 'The eye sees well.', replace: 'oeil' },
+        { fr: 'Il a les yeux bleus.', en: 'He has blue eyes.', replace: 'yeux' }
+      ]},
+      { word: 'la bouche', sentences: [
+        { fr: 'Elle ouvre la bouche.', en: 'She opens her mouth.', replace: 'bouche' },
+        { fr: 'La bouche mange.', en: 'The mouth eats.', replace: 'bouche' },
+        { fr: 'Je ferme la bouche.', en: 'I close my mouth.', replace: 'bouche' }
+      ]},
+      { word: 'le coeur', sentences: [
+        { fr: 'Le coeur bat fort.', en: 'The heart beats strongly.', replace: 'coeur' },
+        { fr: 'J\'ai mal au coeur.', en: 'I have heart pain.', replace: 'coeur' },
+        { fr: 'Le coeur est important.', en: 'The heart is important.', replace: 'coeur' }
+      ]},
+      { word: 'le corps', sentences: [
+        { fr: 'Le corps est en forme.', en: 'The body is in shape.', replace: 'corps' },
+        { fr: 'Je prends soin du corps.', en: 'I take care of the body.', replace: 'corps' },
+        { fr: 'Le corps est fort.', en: 'The body is strong.', replace: 'corps' }
+      ]},
+      { word: 'la santé', sentences: [
+        { fr: 'La santé est importante.', en: 'Health is important.', replace: 'santé' },
+        { fr: 'Je prends soin de ma santé.', en: 'I take care of my health.', replace: 'santé' },
+        { fr: 'Bonne santé à vous!', en: 'Good health to you!', replace: 'santé' }
+      ]},
+      { word: 'soigner', sentences: [
+        { fr: 'Je soigne mon enfant.', en: 'I care for my child.', replace: 'soigne' },
+        { fr: 'Elle soigne les malades.', en: 'She cares for the sick.', replace: 'soigne' },
+        { fr: 'Nous soignons bien.', en: 'We care well.', replace: 'soignons' },
+        { fr: 'Il soigne sa blessure.', en: 'He treats his wound.', replace: 'soigne' },
+        { fr: 'Vous soignez avec amour.', en: 'You care with love.', replace: 'soignez' }
+      ]},
+      { word: 'guérir', sentences: [
+        { fr: 'Je guéris rapidement.', en: 'I heal quickly.', replace: 'guéris' },
+        { fr: 'Elle guérit les patients.', en: 'She heals patients.', replace: 'guérit' },
+        { fr: 'Nous guérissons ensemble.', en: 'We heal together.', replace: 'guérissons' },
+        { fr: 'Il guérit de sa maladie.', en: 'He recovers from his illness.', replace: 'guérit' },
+        { fr: 'Vous guérissez bien.', en: 'You heal well.', replace: 'guérissez' }
+      ]},
+      { word: 'sentir', sentences: [
+        { fr: 'Je sens le parfum.', en: 'I smell the perfume.', replace: 'sens' },
+        { fr: 'Elle sent la fleur.', en: 'She smells the flower.', replace: 'sent' },
+        { fr: 'Nous sentons l\'odeur.', en: 'We smell the odor.', replace: 'sentons' },
+        { fr: 'Il sent le danger.', en: 'He feels the danger.', replace: 'sent' },
+        { fr: 'Vous sentez la différence.', en: 'You feel the difference.', replace: 'sentez' }
+      ]},
+      { word: 'toucher', sentences: [
+        { fr: 'Je touche le mur.', en: 'I touch the wall.', replace: 'touche' },
+        { fr: 'Elle touche sa main.', en: 'She touches her hand.', replace: 'touche' },
+        { fr: 'Nous touchons le tissu.', en: 'We touch the fabric.', replace: 'touchons' },
+        { fr: 'Il touche le livre.', en: 'He touches the book.', replace: 'touche' },
+        { fr: 'Vous touchez doucement.', en: 'You touch gently.', replace: 'touchez' }
+      ]},
+      { word: 'voir', sentences: [
+        { fr: 'Je vois le soleil.', en: 'I see the sun.', replace: 'vois' },
+        { fr: 'Elle voit le film.', en: 'She sees the movie.', replace: 'voit' },
+        { fr: 'Nous voyons la mer.', en: 'We see the sea.', replace: 'voyons' },
+        { fr: 'Il voit ses amis.', en: 'He sees his friends.', replace: 'voit' },
+        { fr: 'Vous voyez clairement.', en: 'You see clearly.', replace: 'voyez' }
+      ]},
+      { word: 'entendre', sentences: [
+        { fr: 'J\'entends la musique.', en: 'I hear the music.', replace: 'entends' },
+        { fr: 'Elle entend le bruit.', en: 'She hears the noise.', replace: 'entend' },
+        { fr: 'Nous entendons bien.', en: 'We hear well.', replace: 'entendons' },
+        { fr: 'Il entend la voix.', en: 'He hears the voice.', replace: 'entend' },
+        { fr: 'Vous entendez tout.', en: 'You hear everything.', replace: 'entendez' }
+      ]},
+      { word: 'respirer', sentences: [
+        { fr: 'Je respire profondément.', en: 'I breathe deeply.', replace: 'respire' },
+        { fr: 'Elle respire l\'air frais.', en: 'She breathes fresh air.', replace: 'respire' },
+        { fr: 'Nous respirons ensemble.', en: 'We breathe together.', replace: 'respirons' },
+        { fr: 'Il respire calmement.', en: 'He breathes calmly.', replace: 'respire' },
+        { fr: 'Vous respirez bien.', en: 'You breathe well.', replace: 'respirez' }
+      ]},
+      { word: 'bouger', sentences: [
+        { fr: 'Je bouge beaucoup.', en: 'I move a lot.', replace: 'bouge' },
+        { fr: 'Elle bouge ses bras.', en: 'She moves her arms.', replace: 'bouge' },
+        { fr: 'Nous bougeons ensemble.', en: 'We move together.', replace: 'bougeons' },
+        { fr: 'Il bouge rapidement.', en: 'He moves quickly.', replace: 'bouge' },
+        { fr: 'Vous bougez bien.', en: 'You move well.', replace: 'bougez' }
+      ]},
+      { word: 'tomber', sentences: [
+        { fr: 'Je tombe par terre.', en: 'I fall to the ground.', replace: 'tombe' },
+        { fr: 'Elle tombe de l\'arbre.', en: 'She falls from the tree.', replace: 'tombe' },
+        { fr: 'Nous tombons souvent.', en: 'We fall often.', replace: 'tombons' },
+        { fr: 'Il tombe en marchant.', en: 'He falls while walking.', replace: 'tombe' },
+        { fr: 'Vous tombez rarement.', en: 'You rarely fall.', replace: 'tombez' }
+      ]},
+      { word: 'lever', sentences: [
+        { fr: 'Je lève la main.', en: 'I raise my hand.', replace: 'lève' },
+        { fr: 'Elle lève les yeux.', en: 'She raises her eyes.', replace: 'lève' },
+        { fr: 'Nous levons le drapeau.', en: 'We raise the flag.', replace: 'levons' },
+        { fr: 'Il lève le poids.', en: 'He lifts the weight.', replace: 'lève' },
+        { fr: 'Vous levez bien.', en: 'You lift well.', replace: 'levez' }
+      ]},
+
+      // Level 7: Clothes & Colors
+      { word: 'le vêtement', sentences: [
+        { fr: 'Le vêtement est propre.', en: 'The clothing is clean.', replace: 'vêtement' },
+        { fr: 'J\'achète un vêtement.', en: 'I buy clothing.', replace: 'vêtement' },
+        { fr: 'Le vêtement coûte cher.', en: 'The clothing costs a lot.', replace: 'vêtement' }
+      ]},
+      { word: 'la chemise', sentences: [
+        { fr: 'Je porte une chemise.', en: 'I wear a shirt.', replace: 'chemise' },
+        { fr: 'La chemise est blanche.', en: 'The shirt is white.', replace: 'chemise' },
+        { fr: 'Il achète une chemise.', en: 'He buys a shirt.', replace: 'chemise' }
+      ]},
+      { word: 'le pantalon', sentences: [
+        { fr: 'Le pantalon est noir.', en: 'The pants are black.', replace: 'pantalon' },
+        { fr: 'Je mets le pantalon.', en: 'I put on the pants.', replace: 'pantalon' },
+        { fr: 'Le pantalon est confortable.', en: 'The pants are comfortable.', replace: 'pantalon' }
+      ]},
+      { word: 'la robe', sentences: [
+        { fr: 'Elle porte une robe.', en: 'She wears a dress.', replace: 'robe' },
+        { fr: 'La robe est jolie.', en: 'The dress is pretty.', replace: 'robe' },
+        { fr: 'Je choisis une robe.', en: 'I choose a dress.', replace: 'robe' }
+      ]},
+      { word: 'le chapeau', sentences: [
+        { fr: 'Je mets le chapeau.', en: 'I put on the hat.', replace: 'chapeau' },
+        { fr: 'Le chapeau est rouge.', en: 'The hat is red.', replace: 'chapeau' },
+        { fr: 'Il enlève le chapeau.', en: 'He removes the hat.', replace: 'chapeau' }
+      ]},
+      { word: 'la chaussure', sentences: [
+        { fr: 'La chaussure est neuve.', en: 'The shoe is new.', replace: 'chaussure' },
+        { fr: 'Je lace la chaussure.', en: 'I lace the shoe.', replace: 'chaussure' },
+        { fr: 'Les chaussures sont confortables.', en: 'The shoes are comfortable.', replace: 'chaussures' }
+      ]},
+      { word: 'la couleur', sentences: [
+        { fr: 'La couleur est belle.', en: 'The color is beautiful.', replace: 'couleur' },
+        { fr: 'Je choisis la couleur.', en: 'I choose the color.', replace: 'couleur' },
+        { fr: 'Quelle couleur préférez-vous?', en: 'What color do you prefer?', replace: 'couleur' }
+      ]},
+      { word: 'le rouge', sentences: [
+        { fr: 'Le rouge est vif.', en: 'Red is bright.', replace: 'rouge' },
+        { fr: 'J\'aime le rouge.', en: 'I like red.', replace: 'rouge' },
+        { fr: 'La voiture est rouge.', en: 'The car is red.', replace: 'rouge' }
+      ]},
+      { word: 'le bleu', sentences: [
+        { fr: 'Le bleu est calme.', en: 'Blue is calm.', replace: 'bleu' },
+        { fr: 'Le ciel est bleu.', en: 'The sky is blue.', replace: 'bleu' },
+        { fr: 'Elle porte du bleu.', en: 'She wears blue.', replace: 'bleu' }
+      ]},
+      { word: 'le blanc', sentences: [
+        { fr: 'Le blanc est pur.', en: 'White is pure.', replace: 'blanc' },
+        { fr: 'La neige est blanche.', en: 'The snow is white.', replace: 'blanche' },
+        { fr: 'Je porte du blanc.', en: 'I wear white.', replace: 'blanc' }
+      ]},
+      { word: 'porter', sentences: [
+        { fr: 'Je porte un manteau.', en: 'I wear a coat.', replace: 'porte' },
+        { fr: 'Elle porte une jupe.', en: 'She wears a skirt.', replace: 'porte' },
+        { fr: 'Nous portons des lunettes.', en: 'We wear glasses.', replace: 'portons' },
+        { fr: 'Il porte un costume.', en: 'He wears a suit.', replace: 'porte' },
+        { fr: 'Vous portez bien.', en: 'You wear well.', replace: 'portez' }
+      ]},
+      { word: 'mettre', sentences: [
+        { fr: 'Je mets mes chaussures.', en: 'I put on my shoes.', replace: 'mets' },
+        { fr: 'Elle met sa robe.', en: 'She puts on her dress.', replace: 'met' },
+        { fr: 'Nous mettons nos chapeaux.', en: 'We put on our hats.', replace: 'mettons' },
+        { fr: 'Il met son manteau.', en: 'He puts on his coat.', replace: 'met' },
+        { fr: 'Vous mettez vos gants.', en: 'You put on your gloves.', replace: 'mettez' }
+      ]},
+      { word: 'enlever', sentences: [
+        { fr: 'J\'enlève mes chaussures.', en: 'I take off my shoes.', replace: 'enlève' },
+        { fr: 'Elle enlève son chapeau.', en: 'She takes off her hat.', replace: 'enlève' },
+        { fr: 'Nous enlevons nos manteaux.', en: 'We take off our coats.', replace: 'enlevons' },
+        { fr: 'Il enlève ses lunettes.', en: 'He takes off his glasses.', replace: 'enlève' },
+        { fr: 'Vous enlevez vos gants.', en: 'You take off your gloves.', replace: 'enlevez' }
+      ]},
+      { word: 'essayer', sentences: [
+        { fr: 'J\'essaie cette robe.', en: 'I try on this dress.', replace: 'essaie' },
+        { fr: 'Elle essaie les chaussures.', en: 'She tries on the shoes.', replace: 'essaie' },
+        { fr: 'Nous essayons les pantalons.', en: 'We try on the pants.', replace: 'essayons' },
+        { fr: 'Il essaie le costume.', en: 'He tries on the suit.', replace: 'essaie' },
+        { fr: 'Vous essayez le manteau.', en: 'You try on the coat.', replace: 'essayez' }
+      ]},
+      { word: 'changer', sentences: [
+        { fr: 'Je change de vêtements.', en: 'I change clothes.', replace: 'change' },
+        { fr: 'Elle change de couleur.', en: 'She changes color.', replace: 'change' },
+        { fr: 'Nous changeons d\'avis.', en: 'We change our minds.', replace: 'changeons' },
+        { fr: 'Il change de style.', en: 'He changes style.', replace: 'change' },
+        { fr: 'Vous changez souvent.', en: 'You change often.', replace: 'changez' }
+      ]},
+      { word: 'laver', sentences: [
+        { fr: 'Je lave mes vêtements.', en: 'I wash my clothes.', replace: 'lave' },
+        { fr: 'Elle lave la chemise.', en: 'She washes the shirt.', replace: 'lave' },
+        { fr: 'Nous lavons le linge.', en: 'We wash the laundry.', replace: 'lavons' },
+        { fr: 'Il lave ses mains.', en: 'He washes his hands.', replace: 'lave' },
+        { fr: 'Vous lavez bien.', en: 'You wash well.', replace: 'lavez' }
+      ]},
+      { word: 'sécher', sentences: [
+        { fr: 'Je sèche mes cheveux.', en: 'I dry my hair.', replace: 'sèche' },
+        { fr: 'Elle sèche les vêtements.', en: 'She dries the clothes.', replace: 'sèche' },
+        { fr: 'Nous séchons le linge.', en: 'We dry the laundry.', replace: 'séchons' },
+        { fr: 'Il sèche ses mains.', en: 'He dries his hands.', replace: 'sèche' },
+        { fr: 'Vous séchez rapidement.', en: 'You dry quickly.', replace: 'séchez' }
+      ]},
+      { word: 'repasser', sentences: [
+        { fr: 'Je repasse ma chemise.', en: 'I iron my shirt.', replace: 'repasse' },
+        { fr: 'Elle repasse les vêtements.', en: 'She irons the clothes.', replace: 'repasse' },
+        { fr: 'Nous repassons le linge.', en: 'We iron the laundry.', replace: 'repassons' },
+        { fr: 'Il repasse sa robe.', en: 'He irons his dress.', replace: 'repasse' },
+        { fr: 'Vous repassez bien.', en: 'You iron well.', replace: 'repassez' }
+      ]},
+      { word: 'coudre', sentences: [
+        { fr: 'Je couds un bouton.', en: 'I sew a button.', replace: 'couds' },
+        { fr: 'Elle coud une robe.', en: 'She sews a dress.', replace: 'coud' },
+        { fr: 'Nous cousons ensemble.', en: 'We sew together.', replace: 'cousons' },
+        { fr: 'Il coud rapidement.', en: 'He sews quickly.', replace: 'coud' },
+        { fr: 'Vous cousez bien.', en: 'You sew well.', replace: 'cousez' }
+      ]},
+      { word: 'nettoyer', sentences: [
+        { fr: 'Je nettoie mes chaussures.', en: 'I clean my shoes.', replace: 'nettoie' },
+        { fr: 'Elle nettoie les vêtements.', en: 'She cleans the clothes.', replace: 'nettoie' },
+        { fr: 'Nous nettoyons la maison.', en: 'We clean the house.', replace: 'nettoyons' },
+        { fr: 'Il nettoie sa voiture.', en: 'He cleans his car.', replace: 'nettoie' },
+        { fr: 'Vous nettoyez bien.', en: 'You clean well.', replace: 'nettoyez' }
       ]}
     ];
 

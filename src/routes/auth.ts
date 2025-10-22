@@ -1,6 +1,6 @@
-import { Router, Request, Response } from 'express';
-import { AuthService } from '../services/authService';
+import { Request, Response, Router } from 'express';
 import { authMiddleware, AuthRequest } from '../middleware/auth';
+import { AuthService } from '../services/authService';
 
 const router = Router();
 
@@ -77,7 +77,7 @@ router.post('/login', async (req: Request, res: Response) => {
 });
 
 // Logout
-router.post('/logout', (req: Request, res: Response) => {
+router.post('/logout', (_req: Request, res: Response) => {
   res.clearCookie('token');
   res.json({ message: 'Logged out successfully' });
 });

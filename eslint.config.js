@@ -5,6 +5,21 @@ import tsparser from '@typescript-eslint/parser';
 export default [
   js.configs.recommended,
   {
+    files: ['public/**/*.js'],
+    languageOptions: {
+      globals: {
+        window: 'readonly',
+        document: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+        localStorage: 'readonly',
+        setTimeout: 'readonly',
+        alert: 'readonly',
+        SpeechSynthesisUtterance: 'readonly',
+      },
+    },
+  },
+  {
     files: ['src/**/*.ts'],
     languageOptions: {
       parser: tsparser,

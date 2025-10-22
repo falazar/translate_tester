@@ -1,12 +1,12 @@
-import { Router, Response } from 'express';
+import { Response, Router } from 'express';
+import { authMiddleware, AuthRequest } from '../middleware/auth';
 import { LevelService } from '../services/levelService';
 import { UserLevelService } from '../services/userLevelService';
-import { authMiddleware, AuthRequest } from '../middleware/auth';
 
 const router = Router();
 
 // Get all levels
-router.get('/', authMiddleware, (req: AuthRequest, res: Response) => {
+router.get('/', authMiddleware, (_req: AuthRequest, res: Response) => {
   try {
     const levels = LevelService.getAllLevels();
     res.json(levels);
@@ -30,6 +30,7 @@ router.get('/user-progress', authMiddleware, (req: AuthRequest, res: Response) =
       return {
         ...level,
         mastery: userLevel?.mastery || 0,
+        attempts: userLevel?.attempts || 0,
         unlocked_at: userLevel?.unlocked_at || null,
         mastery_hit: userLevel?.mastery_hit || null,
         days_to_beat: userLevel?.days_to_beat || null,

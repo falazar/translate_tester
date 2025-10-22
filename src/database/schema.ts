@@ -76,6 +76,7 @@ export function createTables(db: Database.Database): void {
       user_id INTEGER NOT NULL,
       level_id INTEGER NOT NULL,
       mastery INTEGER DEFAULT 0,
+      attempts INTEGER DEFAULT 0,
       unlocked_at DATETIME,
       mastery_hit DATETIME,
       last_practiced DATETIME,

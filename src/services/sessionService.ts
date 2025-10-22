@@ -45,9 +45,9 @@ export class SessionService {
     // Weight words by struggle (lower mastery = higher weight)
     const weightedWords: Word[] = [];
     for (const word of allWords) {
-      // Inverse weighting: 0% mastery = 10x, 50% = 5x, 
-      // 90% = 1x, 100% = 1x
-      const weight = Math.max(1, Math.round(10 - (word.mastery / 10)));
+      // Inverse weighting: 0% mastery = 20x, 50% = 10x, 
+      // 90% = 2x, 100% = 2x (doubled for more focus on struggling words)
+      const weight = Math.max(2, Math.round(20 - (word.mastery / 5)));
       
       for (let i = 0; i < weight; i++) {
         weightedWords.push(word);
@@ -227,7 +227,6 @@ export class SessionService {
     const examples = db.prepare(`
       SELECT * FROM example_sentences 
       WHERE word_id = ? 
-      LIMIT 3
     `).all(word.id) as ExampleSentence[];
 
     let sentence: string;
@@ -397,7 +396,7 @@ export class SessionService {
     const percentage = Math.round(
       (correctCount / session.total_questions) * 100
     );
-    const passed = percentage >= 90;
+    const passed = percentage >= 80;
 
     // Update session
     db.prepare(`
@@ -405,6 +404,9 @@ export class SessionService {
       SET score = ?, passed = ?
       WHERE id = ?
     `).run(correctCount, passed ? 1 : 0, sessionId);
+
+    // Increment attempt count for this level when session is completed
+    UserLevelService.incrementAttempts(userId, session.level_id);
 
     // Update mastery for all levels and check if session level newly hit 80%
     const { newlyHitMastery } = UserLevelService.updateAllLevelMastery(
