@@ -700,8 +700,16 @@ function displayFeedback(correct, correctAnswer, question) {
     // For other question types, show standard feedback
     if (correct) {
       feedback.textContent = '✓ Correct!';
+      // Only speak French word for English to French questions
+      if (question.type === 'en_to_fr') {
+        setTimeout(() => speakText(correctAnswer), 1000);
+      }
     } else {
       feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}`;
+      // Only speak French word for English to French questions
+      if (question.type === 'en_to_fr') {
+        setTimeout(() => speakText(correctAnswer), 1000);
+      }
     }
   }
 
