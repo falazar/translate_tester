@@ -1,6 +1,8 @@
 // Global Language Configuration
 const baseLanguage = 'English';
+const baseLanguageCode = getLanguageCode(baseLanguage);
 const targetLanguage = 'French';
+const targetLanguageCode = getLanguageCode(targetLanguage);
 
 // Speech synthesis for pronunciation
 let speechSynthesis = null;
@@ -56,6 +58,8 @@ function escapeForHtml(text) {
 function getLanguageCode(language) {
   if (language === 'English') return 'en';
   if (language === 'French') return 'fr';
+  if (language === 'Spanish') return 'es';
+  if (language === 'German') return 'de';
   return 'en'; // default
 }
 
@@ -397,7 +401,7 @@ function displayWordsScreen(data) {
         <div class="word-examples">
           ${word.examples.map(ex => `
             <div class="word-example">
-              <span class="french-sentence">
+              <span class="target-sentence">
                 ${ex[`${targetLanguage.toLowerCase()}_sentence`]}
                 <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(ex[`${targetLanguage.toLowerCase()}_sentence`])}')" title="Listen to pronunciation">
                   🔊
@@ -497,16 +501,16 @@ function displayQuestion() {
   document.getElementById('questionType').textContent = 
     formatQuestionType(question.type);
   
-  // Add speaker button to French text in questions and auto-play
+  // Add speaker button to target language text in questions and auto-play
   let questionHTML = question.question;
-  if (question.type === 'fr_to_en') {
+  if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
     // Extract target language text from question and add speaker button
     const questionMatch = question.question.match(/"([^"]+)"/);
     if (questionMatch) {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
         `"${targetText}"`, 
-        `"<span class="french-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button></span>"`
+        `"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button></span>"`
       );
       // Auto-play the target language sentence when question loads
       setTimeout(() => speakText(targetText), 500);
@@ -521,13 +525,13 @@ function displayQuestion() {
       
       questionHTML = question.question.replace(
         `<br>"${targetText}"`, 
-        `<br>"<span class="french-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}')" title="Listen to pronunciation">🔊</button></span>"`
+        `<br>"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}')" title="Listen to pronunciation">🔊</button></span>"`
       );
       // Auto-play the target language sentence when question loads
       setTimeout(() => speakText(cleanText), 500);
     }
-  } else if (question.type === 'en_to_fr') {
-    // For English to French questions, add speaker button to the target language word in the question
+  } else if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
+    // For English to target language questions, add speaker button to the target language word in the question
     const questionMatch = question.question.match(/"([^"]+)"/);
     if (questionMatch) {
       const targetText = questionMatch[1];
@@ -720,21 +724,21 @@ function displayFeedback(correct, correctAnswer, question) {
         feedback.innerHTML = `✗ Incorrect. The correct answer is: ${correctAnswer}<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}')" title="Listen to pronunciation">🔊</button>`;
       }
       
-      // Auto-play the complete French sentence
+      // Auto-play the complete target language sentence
       setTimeout(() => speakText(completeSentence.replace(/_/g, '')), 1000);
     }
   } else {
     // For other question types, show standard feedback
     if (correct) {
       feedback.textContent = '✓ Correct!';
-      // Only speak French word for English to French questions
-      if (question.type === 'en_to_fr') {
+      // Only speak target language word for English to target language questions
+      if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
         setTimeout(() => speakText(correctAnswer), 1000);
       }
     } else {
       feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}`;
-      // Only speak French word for English to French questions
-      if (question.type === 'en_to_fr') {
+      // Only speak target language word for English to target language questions
+      if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
         setTimeout(() => speakText(correctAnswer), 1000);
       }
     }
@@ -815,7 +819,7 @@ function displayResults(results) {
             ${item.examples.map(ex => `
               <div class="example">
                 <div class="example-line">
-                  <span class="french-sentence">
+                  <span class="target-sentence">
                     ${ex[`${targetLanguage.toLowerCase()}_sentence`]}
                     <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(ex[`${targetLanguage.toLowerCase()}_sentence`])}')" title="Listen to pronunciation">
                       🔊
