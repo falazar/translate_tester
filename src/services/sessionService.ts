@@ -39,6 +39,9 @@ export class SessionService {
   ): Question[] {
     const questions: Question[] = [];
 
+    // Get level mastery for hints
+    const levelMastery = UserLevelService.getOrCreateUserLevel(userId, currentLevelId).mastery;
+
     // Get words for the session (current level + max 3 from previous levels)
     const allWords = this.getWordsForSession(userId, currentLevelId);
 
@@ -94,7 +97,7 @@ export class SessionService {
         type = questionTypes[typeIndex];
       }
 
-      questions.push(this.createQuestion(word, type, allWords));
+      questions.push(this.createQuestion(word, type, allWords, levelMastery));
     }
 
     return questions;
@@ -177,7 +180,8 @@ export class SessionService {
   private static createQuestion(
     word: Word, 
     type: Question['type'], 
-    allWords: Word[]
+    allWords: Word[],
+    levelMastery: number
   ): Question {
     switch (type) {
       case 'fr_to_en':
@@ -199,7 +203,7 @@ export class SessionService {
         };
 
       case 'fill_blank':
-        return this.createFillBlankQuestion(word);
+        return this.createFillBlankQuestion(word, levelMastery);
 
       case 'multiple_choice':
         const options = this.generateMultipleChoiceOptions(
@@ -220,13 +224,14 @@ export class SessionService {
     }
   }
 
-  private static createFillBlankQuestion(word: Word): Question {
+  private static createFillBlankQuestion(word: Word, levelMastery: number): Question {
     const db = getDatabase();
     
     // Get example sentences for this word
     const examples = db.prepare(`
       SELECT * FROM example_sentences 
       WHERE word_id = ? 
+      ORDER BY id
     `).all(word.id) as ExampleSentence[];
 
     let sentence: string;
@@ -264,12 +269,17 @@ export class SessionService {
       correctAnswer = word.french.replace(/^(le|la|l') /, '');
     }
     
+    // Add root verb hint for verbs when level mastery is low
+    let questionText = `Fill in the blank with "${word.english}":<br>"${sentence}"`;
+    if (word.word_type === 'verb' && levelMastery < 60) {
+      questionText = `Fill in the blank with "${word.english}" (${word.french}):<br>"${sentence}"`;
+    }
+
     return {
       id: word.id,
       word,
       type: 'fill_blank',
-      question: 
-        `Fill in the blank with "${word.english}":<br>"${sentence}"`,
+      question: questionText,
       correct_answer: correctAnswer,
       sentence_context: sentence
     };
@@ -323,6 +333,7 @@ export class SessionService {
     userId: number,
     wordId: number,
     questionType: string,
+    questionText: string,
     userAnswer: string,
     correctAnswer: string
   ): boolean {
@@ -337,13 +348,14 @@ export class SessionService {
     // Record answer
     db.prepare(`
       INSERT INTO session_answers 
-      (session_id, word_id, question_type, user_answer, 
+      (session_id, word_id, question_type, question_text, user_answer, 
        correct_answer, correct)
-      VALUES (?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `).run(
       sessionId, 
       wordId, 
       questionType, 
+      questionText,
       userAnswer, 
       correctAnswer, 
       correct ? 1 : 0
@@ -425,12 +437,15 @@ export class SessionService {
         const examples = db.prepare(`
           SELECT * FROM example_sentences 
           WHERE word_id = ? 
+          ORDER BY id
         `).all(answer.word_id) as ExampleSentence[];
 
         return {
           word,
           user_answer: answer.user_answer,
           correct_answer: answer.correct_answer,
+          question_type: answer.question_type,
+          question_text: answer.question_text,
           examples
         };
       });

@@ -1,4 +1,5 @@
 import { Request, Response, Router } from 'express';
+import { getDatabase } from '../database/connection';
 import { authMiddleware, AuthRequest } from '../middleware/auth';
 import { AuthService } from '../services/authService';
 
@@ -98,6 +99,34 @@ router.get('/me', authMiddleware, (req: AuthRequest, res: Response) => {
       email: user.email,
       current_level: user.current_level
     });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Update current level
+router.post('/update-current-level', authMiddleware, async (req: AuthRequest, res: Response) => {
+  try {
+    const { level } = req.body;
+    const userId = req.userId;
+
+    if (!level) {
+      return res.status(400).json({ error: 'Level number is required' });
+    }
+
+    // Update user's current level
+    const db = getDatabase();
+    const updateResult = db.prepare(`
+      UPDATE users 
+      SET current_level = ?
+      WHERE id = ?
+    `).run(level, userId);
+
+    if (updateResult.changes === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.json({ success: true });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }

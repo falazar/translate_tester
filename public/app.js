@@ -285,7 +285,7 @@ function showLevelCard(level) {
   levelsGrid.appendChild(levelItem);
 }
 
-function selectLevel(level) {
+async function selectLevel(level) {
   // Update selected level
   selectedLevelId = level.id;
   
@@ -306,6 +306,25 @@ function selectLevel(level) {
   );
   if (selectedItem) {
     selectedItem.classList.add('selected');
+  }
+
+  // Save current level to backend
+  try {
+    const response = await fetch('/api/auth/update-current-level', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ level: level.level_number })
+    });
+
+    if (response.ok) {
+      // Update local user object
+      currentUser.current_level = level.level_number;
+      console.log(`Current level set to ${level.level_number}`);
+    } else {
+      console.error('Failed to update current level');
+    }
+  } catch (error) {
+    console.error('Error updating current level:', error);
   }
 }
 
@@ -577,7 +596,11 @@ function displayQuestion() {
 
   // Reset buttons and feedback
   const submitBtn = document.getElementById('submitBtn');
-  submitBtn.style.display = 'block';
+  if (question.type === 'multiple_choice') {
+    submitBtn.style.display = 'none';  // Hide submit button for multiple choice
+  } else {
+    submitBtn.style.display = 'block';  // Show submit button for other question types
+  }
   submitBtn.disabled = false;  // Re-enable submit button
   document.getElementById('nextBtn').style.display = 'none';
   document.getElementById('feedback').classList.remove('active');
@@ -599,6 +622,9 @@ function selectOption(button) {
     btn.disabled = true;
     btn.style.opacity = '0.5';
   });
+  
+  // Auto-submit the answer immediately
+  submitAnswer();
 }
 
 function formatQuestionType(type) {
@@ -651,6 +677,7 @@ async function submitAnswer() {
         body: JSON.stringify({
           word_id: question.word.id,
           question_type: question.type,
+          question_text: question.question,
           user_answer: userAnswer,
           correct_answer: question.correct_answer
         })
@@ -803,7 +830,7 @@ function displayResults(results) {
       }
       
       reviewItem.innerHTML = `
-        <h3>${item.word[targetLanguage.toLowerCase()]} → ${item.word[baseLanguage.toLowerCase()]}</h3>
+        <h3>${item.question_text}</h3>
         <div class="answer-info">
           <div class="correct-answer-display">
             <strong>Correct answer:</strong> 

@@ -71,6 +71,7 @@ export interface SessionAnswer {
   session_id: number;
   word_id: number;
   question_type: string;
+  question_text: string;
   user_answer: string | null;
   correct_answer: string;
   correct: number;
@@ -97,6 +98,8 @@ export interface SessionResult {
     word: Word;
     user_answer: string | null;
     correct_answer: string;
+    question_type: string;
+    question_text: string;
     examples: ExampleSentence[];
   }>;
 }

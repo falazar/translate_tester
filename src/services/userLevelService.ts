@@ -265,14 +265,23 @@ export class UserLevelService {
       ORDER BY level_number
     `).all() as any[];
     
-    // Unlock the next level
+    // Unlock the next level (only if not already unlocked)
     const nextLevel = allLevels.find(l => l.level_number === level.level_number + 1);
     if (nextLevel) {
-      db.prepare(`
-        INSERT OR REPLACE INTO user_levels 
-        (user_id, level_id, mastery, attempts, unlocked_at, mastery_hit, last_practiced)
-        VALUES (?, ?, 0, 0, CURRENT_TIMESTAMP, NULL, NULL)
-      `).run(userId, nextLevel.id);
+      // Check if level is already unlocked
+      const existingLevel = db.prepare(`
+        SELECT unlocked_at FROM user_levels 
+        WHERE user_id = ? AND level_id = ?
+      `).get(userId, nextLevel.id) as { unlocked_at: string | null } | undefined;
+      
+      // Only insert if not already unlocked (preserve original unlock date)
+      if (!existingLevel) {
+        db.prepare(`
+          INSERT INTO user_levels 
+          (user_id, level_id, mastery, attempts, unlocked_at, mastery_hit, last_practiced)
+          VALUES (?, ?, 0, 0, CURRENT_TIMESTAMP, NULL, NULL)
+        `).run(userId, nextLevel.id);
+      }
       
       // Update user's current level to the newly unlocked level
       db.prepare(`

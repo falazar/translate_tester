@@ -72,7 +72,7 @@ export class LevelService {
     // For each word, get its example sentences
     const wordsWithExamples = words.map((word: any) => {
       const examples = db.prepare(
-        'SELECT * FROM example_sentences WHERE word_id = ?'
+        'SELECT * FROM example_sentences WHERE word_id = ? ORDER BY id'
       ).all(word.id);
 
       // Extract progress data

@@ -1,7 +1,7 @@
-import { Router, Response } from 'express';
-import { SessionService } from '../services/sessionService';
-import { LevelService } from '../services/levelService';
+import { Response, Router } from 'express';
 import { authMiddleware, AuthRequest } from '../middleware/auth';
+import { LevelService } from '../services/levelService';
+import { SessionService } from '../services/sessionService';
 
 const router = Router();
 
@@ -44,13 +44,13 @@ router.post('/:sessionId/answer', authMiddleware,
   (req: AuthRequest, res: Response) => {
   try {
     const sessionId = parseInt(req.params.sessionId);
-    const { word_id, question_type, user_answer, correct_answer } = 
+    const { word_id, question_type, question_text, user_answer, correct_answer } = 
       req.body;
 
-    if (!word_id || !question_type || 
+    if (!word_id || !question_type || !question_text || 
         user_answer === undefined || !correct_answer) {
       res.status(400).json({ 
-        error: 'word_id, question_type, user_answer, ' + 
+        error: 'word_id, question_type, question_text, user_answer, ' + 
                'and correct_answer required' 
       });
       return;
@@ -61,6 +61,7 @@ router.post('/:sessionId/answer', authMiddleware,
       req.userId!,
       word_id,
       question_type,
+      question_text,
       user_answer,
       correct_answer
     );

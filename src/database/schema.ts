@@ -108,6 +108,7 @@ export function createTables(db: Database.Database): void {
       session_id INTEGER NOT NULL,
       word_id INTEGER NOT NULL,
       question_type TEXT NOT NULL,
+      question_text TEXT NOT NULL,
       user_answer TEXT,
       correct_answer TEXT NOT NULL,
       correct INTEGER NOT NULL,
