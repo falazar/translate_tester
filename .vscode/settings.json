@@ -4,6 +4,6 @@
   "typescript.validate.enable": true,
   "typescript.preferences.noSemicolons": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   }
 }
