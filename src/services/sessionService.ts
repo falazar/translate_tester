@@ -39,31 +39,11 @@ export class SessionService {
   ): Question[] {
     const questions: Question[] = [];
 
-    // Get level mastery for hints
-    const levelMastery = UserLevelService.getOrCreateUserLevel(userId, currentLevelId).mastery;
-
     // Get words for the session (current level + max 3 from previous levels)
     const allWords = this.getWordsForSession(userId, currentLevelId);
 
-    // Weight words by struggle (lower mastery = higher weight)
-    const weightedWords: Word[] = [];
-    for (const word of allWords) {
-      // Inverse weighting: 0% mastery = 20x, 50% = 10x, 
-      // 90% = 2x, 100% = 2x (doubled for more focus on struggling words)
-      const weight = Math.max(2, Math.round(20 - (word.mastery / 5)));
-      
-      for (let i = 0; i < weight; i++) {
-        weightedWords.push(word);
-      }
-    }
-
-    // Randomly select 20 words (can have duplicates for variety)
-    const selectedWords: Word[] = [];
-    for (let i = 0; i < this.QUESTIONS_PER_SESSION; i++) {
-      const randomIndex = Math.floor(Math.random() * 
-                                      weightedWords.length);
-      selectedWords.push(weightedWords[randomIndex]);
-    }
+    // Get weighted word selection (struggling words appear more frequently)
+    const selectedWords = this.selectWeightedWords(allWords, this.QUESTIONS_PER_SESSION);
 
     // Generate questions of different types
     const questionTypes: Question['type'][] = [
@@ -73,9 +53,26 @@ export class SessionService {
       'multiple_choice'
     ];
 
-    // Pick 20 words randomly and generate questions for them.
+    // Generate questions for selected words.
+    let previousWordId: number | null = null;
+
+    // Get level mastery for hints
+    const levelMastery = UserLevelService.getOrCreateUserLevel(userId, currentLevelId).mastery;
+
     for (let i = 0; i < selectedWords.length; i++) {
-      const word = selectedWords[i];
+      let word = selectedWords[i];
+      let attempts = 0;
+      const maxAttempts = 10;
+      
+      // Ensure we don't use the same word twice in a row
+      while (word.id === previousWordId && attempts < maxAttempts) {
+        // Pick a random different word from the selected words
+        const randomIndex = Math.floor(Math.random() * selectedWords.length);
+        word = selectedWords[randomIndex];
+        attempts++;
+      }
+      
+      previousWordId = word.id;
       
       // Give verbs 50% higher chance of fill-in-the-blank exercises
       let type: Question['type'];
@@ -459,6 +456,33 @@ export class SessionService {
       newlyHitMastery,
       incorrect_words: incorrectWords
     };
+  }
+
+  /**
+   * Select words with weighted probability based on mastery level.
+   * Words with lower mastery are more likely to be selected.
+   */
+  private static selectWeightedWords(words: (Word & { mastery: number })[], count: number): Word[] {
+    // Create weighted list (struggling words appear more frequently)
+    const weightedWords: Word[] = [];
+    for (const word of words) {
+      // Inverse weighting: 0% mastery = 20x, 50% = 10x, 
+      // 90% = 2x, 100% = 2x (doubled for more focus on struggling words)
+      const weight = Math.max(2, Math.round(20 - (word.mastery / 5)));
+      
+      for (let i = 0; i < weight; i++) {
+        weightedWords.push(word);
+      }
+    }
+
+    // Randomly select words from weighted pool
+    const selectedWords: Word[] = [];
+    for (let i = 0; i < count; i++) {
+      const randomIndex = Math.floor(Math.random() * weightedWords.length);
+      selectedWords.push(weightedWords[randomIndex]);
+    }
+    
+    return selectedWords;
   }
 
   static getUserSessions(userId: number): Session[] {

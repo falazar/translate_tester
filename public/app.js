@@ -510,10 +510,12 @@ function displayQuestion() {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
         `"${targetText}"`, 
-        `"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button></span>"`
+        `"<span class="target-sentence">${targetText} 
+        <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" 
+        title="Listen to pronunciation">🔊</button></span>"`
       );
       // Auto-play the target language sentence when question loads
-      setTimeout(() => speakText(targetText), 500);
+      setTimeout(() => speakText(targetText, targetLanguage), 500);
     }
   } else if (question.type === 'fill_blank') {
     // For fill_blank, extract target language sentence after <br> tag
@@ -525,10 +527,10 @@ function displayQuestion() {
       
       questionHTML = question.question.replace(
         `<br>"${targetText}"`, 
-        `<br>"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}')" title="Listen to pronunciation">🔊</button></span>"`
+        `<br>"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span>"`
       );
       // Auto-play the target language sentence when question loads
-      setTimeout(() => speakText(cleanText), 500);
+      setTimeout(() => speakText(cleanText, targetLanguage), 500);
     }
   } else if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
     // For English to target language questions, add speaker button to the target language word in the question
@@ -537,10 +539,10 @@ function displayQuestion() {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
         `"${targetText}"`, 
-        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button>`
+        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`
       );
       // Auto-play the target language word when question loads
-      setTimeout(() => speakText(targetText), 500);
+      setTimeout(() => speakText(targetText, targetLanguage), 500);
     }
   } else if (question.type === 'multiple_choice') {
     // For multiple choice questions, add speaker button to the target language word in the question
@@ -549,10 +551,10 @@ function displayQuestion() {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
         `"${targetText}"`, 
-        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}')" title="Listen to pronunciation">🔊</button>`
+        `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`
       );
       // Auto-play the target language word when question loads
-      setTimeout(() => speakText(targetText), 500);
+      setTimeout(() => speakText(targetText, targetLanguage), 500);
     }
   }
   
@@ -586,6 +588,10 @@ function displayQuestion() {
     input.type = 'text';
     input.id = 'answerInput';
     input.placeholder = 'Type your answer...';
+    input.autocomplete = 'off';
+    input.spellcheck = 'false';
+    input.autocorrect = 'off';
+    input.autocapitalize = 'off';
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') submitAnswer();
     });
@@ -719,27 +725,47 @@ function displayFeedback(correct, correctAnswer, question) {
       const completeSentence = incompleteSentence.replace(/___/g, correctAnswer);
       
       if (correct) {
-        feedback.innerHTML = `✓ Correct!<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}')" title="Listen to pronunciation">🔊</button>`;
+        feedback.innerHTML = `✓ Correct!<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`;
       } else {
-        feedback.innerHTML = `✗ Incorrect. The correct answer is: ${correctAnswer}<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}')" title="Listen to pronunciation">🔊</button>`;
+        const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
+        const rootWord = question.word.french;  // Root/base word
+        const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `<br>(${rootWord})` : '';
+      feedback.innerHTML = `✗ Incorrect. The correct answer is: ${correctAnswer}${mainTermHint}<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`;
       }
       
       // Auto-play the complete target language sentence
-      setTimeout(() => speakText(completeSentence.replace(/_/g, '')), 1000);
+      setTimeout(() => speakText(completeSentence.replace(/_/g, ''), targetLanguage), 1000);
     }
   } else {
     // For other question types, show standard feedback
     if (correct) {
       feedback.textContent = '✓ Correct!';
-      // Only speak target language word for English to target language questions
+      // Speak the correct answer in the appropriate language
       if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
-        setTimeout(() => speakText(correctAnswer), 1000);
+        // Question is in base, answer is in target language
+        setTimeout(() => speakText(correctAnswer, targetLanguage), 1000);
+      } else if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
+        // Question is in target, answer is in base language
+        setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
+      } else if (question.type === 'multiple_choice') {
+        // Question is in target, answer is in base language
+        setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       }
     } else {
-      feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}`;
-      // Only speak target language word for English to target language questions
+      const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
+      const rootWord = question.word.french;  // Root/base word
+      const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `\n(${rootWord})` : '';
+      feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}${mainTermHint}`;
+      // Speak the correct answer in the appropriate language
       if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
-        setTimeout(() => speakText(correctAnswer), 1000);
+        // Question is in base, answer is in target language
+        setTimeout(() => speakText(correctAnswer, targetLanguage), 1000);
+      } else if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
+        // Question is in target, answer is in base language
+        setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
+      } else if (question.type === 'multiple_choice') {
+        // Question is in target, answer is in base language
+        setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       }
     }
   }
@@ -833,12 +859,16 @@ function displayResults(results) {
         `;
       }
       
+      console.log("DEBUG: item", item);
+      const showMainTerm = item.question_type === 'fill_blank' || item.question_type === 'en_to_fr';
+      const rootWord = item.word?.french;  // This is the root/base word from the database
+      const mainTermHint = showMainTerm && rootWord && item.correct_answer !== rootWord ? ` (${rootWord})` : '';
       reviewItem.innerHTML = `
         <h3>${item.question_text}</h3>
         <div class="answer-info">
           <div class="correct-answer-display">
             <strong>Correct answer:</strong> 
-            <span class="correct-text">${item.correct_answer}</span>
+            <span class="correct-text">${item.correct_answer}${mainTermHint}</span>
           </div>
           <div class="user-answer-display">
             <strong>Your answer:</strong> 
