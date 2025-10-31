@@ -102,20 +102,20 @@ export class SessionService {
 
   /**
    * Get words for a session: all current level words + max 3 from previous levels
-   * Previous level words are selected based on lowest mastery
-   * Returns words with mastery already calculated
+   * Previous level words are selected based on lowest attempts, then lowest mastery
+   * Returns words with mastery and attempt counts already calculated
    */
   private static getWordsForSession(
-    userId: number, 
+    userId: number,
     currentLevelId: number
-  ): (Word & { mastery: number })[] {
+  ): (Word & { mastery: number; attempts: number })[] {
     const db = getDatabase();
-    
+
     // Get current level info
     const currentLevel = LevelService.getLevelById(currentLevelId);
     if (!currentLevel) throw new Error('Level not found');
 
-    // Get current level words with mastery
+    // Get current level words with mastery and attempts
     const currentLevelWords = this.getWordsWithMastery(userId, [currentLevelId]);
 
     if (currentLevelWords.length === 0) {
@@ -125,16 +125,16 @@ export class SessionService {
       );
     }
 
-    // STEP 2: Get previous level words with mastery (limited to 3)
+    // STEP 2: Get previous level words with mastery and attempts (limited to 3)
     const previousLevels = db.prepare(`
       SELECT id FROM levels WHERE level_number < ?
     `).all(currentLevel.level_number) as { id: number }[];
-    
-    let previousLevelWords: (Word & { mastery: number })[] = [];
+
+    let previousLevelWords: (Word & { mastery: number; attempts: number })[] = [];
     if (previousLevels.length > 0) {
       const previousLevelIds = previousLevels.map(l => l.id);
-      
-      // Get previous level words with mastery (limited to 3 lowest mastery)
+
+      // Get previous level words with attempts and mastery (limited to 3 lowest attempts)
       previousLevelWords = this.getWordsWithMastery(userId, previousLevelIds, 3);
     }
 
@@ -143,35 +143,43 @@ export class SessionService {
   }
 
   /**
-   * Gets words with mastery levels for specified level IDs
+   * Gets words with mastery levels and attempt counts for specified level IDs
    * @param userId - User ID to get mastery for
    * @param levelIds - Array of level IDs to fetch words from
-   * @param limit - Optional limit for results (sorts by mastery ASC)
-   * @returns Words with mastery levels
+   * @param limit - Optional limit for results (sorts by attempts ASC, then mastery ASC)
+   * @returns Words with mastery levels and attempt counts
    */
   private static getWordsWithMastery(
-    userId: number, 
-    levelIds: number[], 
+    userId: number,
+    levelIds: number[],
     limit?: number
-  ): (Word & { mastery: number })[] {
+  ): (Word & { mastery: number; attempts: number })[] {
     const db = getDatabase();
-    
+
     if (levelIds.length === 0) return [];
-    
+
     const placeholders = levelIds.map(() => '?').join(',');
     let query = `
-      SELECT w.*, 
-             COALESCE(uwp.mastery_level, 0) as mastery
+      SELECT w.*,
+             COALESCE(uwp.mastery_level, 0) as mastery,
+             COALESCE(attempts.total, 0) as attempts
       FROM words w
       LEFT JOIN user_word_progress uwp ON w.id = uwp.word_id AND uwp.user_id = ?
+      LEFT JOIN (
+        SELECT sa.word_id, COUNT(*) as total
+        FROM session_answers sa
+        JOIN sessions s ON sa.session_id = s.id
+        WHERE s.user_id = ?
+        GROUP BY sa.word_id
+      ) attempts ON w.id = attempts.word_id
       WHERE w.level_id IN (${placeholders})
     `;
-    
+
     if (limit) {
-      query += ` ORDER BY mastery ASC LIMIT ${limit}`;
+      query += ` ORDER BY attempts ASC, mastery ASC LIMIT ${limit}`;
     }
-    
-    return db.prepare(query).all(userId, ...levelIds) as (Word & { mastery: number })[];
+
+    return db.prepare(query).all(userId, userId, ...levelIds) as (Word & { mastery: number; attempts: number })[];
   }
 
   private static createQuestion(
@@ -459,18 +467,30 @@ export class SessionService {
   }
 
   /**
-   * Select words with weighted probability based on mastery level.
-   * Words with lower mastery are more likely to be selected.
+   * Select words with weighted probability based on both mastery level and attempt count.
+   * Words with lower mastery get higher priority, then attempt count is considered.
+   * This ensures struggling words appear more frequently than well-mastered ones.
    */
-  private static selectWeightedWords(words: (Word & { mastery: number })[], count: number): Word[] {
-    // Create weighted list (struggling words appear more frequently)
+  private static selectWeightedWords(words: (Word & { mastery: number; attempts: number })[], count: number): Word[] {
+    if (words.length === 0) {
+      return [];
+    }
+
+    // Create weighted list factoring both attempts and mastery
     const weightedWords: Word[] = [];
     for (const word of words) {
-      // Inverse weighting: 0% mastery = 20x, 50% = 10x, 
-      // 90% = 2x, 100% = 2x (doubled for more focus on struggling words)
-      const weight = Math.max(2, Math.round(20 - (word.mastery / 5)));
-      
-      for (let i = 0; i < weight; i++) {
+      // Base weight from mastery: lower mastery = higher weight (max 10x for 0% mastery)
+      // 0% mastery = 10x, 50% = 5x, 90%+ = 1x
+      const masteryWeight = Math.max(1, Math.round(10 - (word.mastery / 10)));
+
+      // Additional weight from attempts: fewer attempts = higher weight (max 4x)
+      // Words with 0 attempts get 4x weight, words with 20+ attempts get 1x weight
+      const attemptWeight = Math.max(1, Math.round(4 - (word.attempts / 5)));
+
+      // Combine weights: mastery weight has more influence
+      const totalWeight = masteryWeight * attemptWeight;
+
+      for (let i = 0; i < totalWeight; i++) {
         weightedWords.push(word);
       }
     }
@@ -481,7 +501,7 @@ export class SessionService {
       const randomIndex = Math.floor(Math.random() * weightedWords.length);
       selectedWords.push(weightedWords[randomIndex]);
     }
-    
+
     return selectedWords;
   }
 

@@ -78,7 +78,21 @@ export class UserLevelService {
     // Level 1 is always unlocked
     if (levelNumber === 1) return true;
     
-    // Check if previous level has 80% mastery
+    // Check if this level is already unlocked (once unlocked, it stays unlocked)
+    const level = db.prepare(`
+      SELECT l.id FROM levels l WHERE l.level_number = ?
+    `).get(levelNumber) as { id: number } | undefined;
+    if (!level) return false;
+    
+    // Check out current user level.
+    const currentUserLevel = this.getUserLevel(userId, level.id);
+    // console.log('DEBUG1: currentUserLevel', currentUserLevel);
+    if (currentUserLevel?.unlocked_at) {
+      // Level is already unlocked - never re-lock it
+      return true;
+    }
+    
+    // Level not yet unlocked - check if previous level meets unlock criteria
     const previousLevel = db.prepare(`
       SELECT l.id FROM levels l WHERE l.level_number = ?
     `).get(levelNumber - 1) as { id: number } | undefined;
@@ -86,7 +100,10 @@ export class UserLevelService {
     if (!previousLevel) return false;
     
     const userLevel = this.getUserLevel(userId, previousLevel.id);
-    return (userLevel?.mastery || 0) >= 80;
+    const hasMastery = (userLevel?.mastery || 0) >= 80;
+    const hasEnoughAttempts = (userLevel?.attempts || 0) >= 6;
+    
+    return hasMastery && hasEnoughAttempts;
   }
 
   /**
@@ -120,7 +137,14 @@ export class UserLevelService {
       
       // Get current user level to check if this is newly hit mastery
       const currentUserLevel = this.getOrCreateUserLevel(userId, level.id);
-      const wasNewlyHit = (currentUserLevel?.mastery || 0) < 80 && mastery >= 80;
+      const attempts = currentUserLevel?.attempts || 0;
+      const previousMastery = currentUserLevel?.mastery || 0;
+      
+      // Only consider mastery as "newly hit" if:
+      // 1. Mastery crosses 80% threshold
+      // 2. User has at least 6 attempts
+      // 3. mastery_hit hasn't been set yet
+      const wasNewlyHit = previousMastery < 80 && mastery >= 80 && attempts >= 6 && !currentUserLevel?.mastery_hit;
       
       // Only care about newly hit mastery for the session level
       if (wasNewlyHit && level.level_number === sessionLevelNumber) {
@@ -175,7 +199,7 @@ export class UserLevelService {
   }
 
   /**
-   * Check if previous level has 80% mastery (helper to avoid circular dependency)
+   * Check if previous level has 80% mastery and at least 6 attempts (helper to avoid circular dependency)
    */
   private static checkPreviousLevelMastery(userId: number, levelNumber: number): boolean {
     if (levelNumber <= 1) return true;
@@ -188,11 +212,14 @@ export class UserLevelService {
     if (!previousLevel) return false;
     
     const userLevel = db.prepare(`
-      SELECT mastery FROM user_levels 
+      SELECT mastery, attempts FROM user_levels 
       WHERE user_id = ? AND level_id = ?
-    `).get(userId, previousLevel.id) as { mastery: number } | undefined;
+    `).get(userId, previousLevel.id) as { mastery: number; attempts: number } | undefined;
     
-    return (userLevel?.mastery || 0) >= 80;
+    const hasMastery = (userLevel?.mastery || 0) >= 80;
+    const hasEnoughAttempts = (userLevel?.attempts || 0) >= 6;
+    
+    return hasMastery && hasEnoughAttempts;
   }
 
   /**
@@ -248,6 +275,7 @@ export class UserLevelService {
 
   /**
    * Handle level mastery achievement - unlock next level and update current level
+   * This is only called when mastery >= 80 AND attempts >= 6
    */
   private static handleLevelMasteryAchieved(userId: number, level: any): void {
     const db = getDatabase();

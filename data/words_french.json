@@ -2045,7 +2045,6 @@
             { "fr": "Je joue à un jeu.", "en": "I play a game.", "replace": "jeu" },
             { "fr": "Ce jeu est difficile.", "en": "This game is difficult.", "replace": "jeu" },
             { "fr": "Il gagne le jeu.", "en": "He wins the game.", "replace": "jeu" },
-            { "fr": "Nous jouons ensemble.", "en": "We play together.", "replace": "jouons" },
             { "fr": "Vous aimez ce jeu?", "en": "Do you like this game?", "replace": "jeu" }
           ]
         },
@@ -2338,7 +2337,7 @@
       "description": "Essential adjectives for describing people, things, and qualities",
       "theme": "adjectives",
       "words": [
-        { "french": "grand", "english": "big/large/tall", "word_type": "adjective", "gender": "le",           "sentences": [
+        { "french": "grand", "english": "big", "word_type": "adjective", "gender": "le",           "sentences": [
             { "fr": "Le chien est grand.", "en": "The dog is big.", "replace": "grand" },
             { "fr": "Il est très grand.", "en": "He is very tall.", "replace": "grand" },
             { "fr": "C'est une grande maison.", "en": "It's a big house.", "replace": "grande" },
@@ -2346,7 +2345,7 @@
             { "fr": "C'est un grand honneur.", "en": "It's a great honor.", "replace": "grand" }
           ]
         },
-        { "french": "petit", "english": "small/little/short", "word_type": "adjective", "gender": "le",           "sentences": [
+        { "french": "petit", "english": "small", "word_type": "adjective", "gender": "le",           "sentences": [
             { "fr": "Le chat est petit.", "en": "The cat is small.", "replace": "petit" },
             { "fr": "Elle est petite.", "en": "She is short.", "replace": "petite" },
             { "fr": "C'est une petite table.", "en": "It's a small table.", "replace": "petite" },
@@ -2402,7 +2401,7 @@
             { "fr": "C'est une triste fin.", "en": "It's a sad ending.", "replace": "triste" }
           ]
         },
-        { "french": "riche", "english": "rich/wealthy", "word_type": "adjective", "gender": null,           "sentences": [
+        { "french": "riche", "english": "rich", "word_type": "adjective", "gender": null,           "sentences": [
             { "fr": "Il est très riche.", "en": "He is very rich.", "replace": "riche" },
             { "fr": "C'est une riche famille.", "en": "It's a rich family.", "replace": "riche" },
             { "fr": "Elle est riche en idées.", "en": "She is full of ideas.", "replace": "riche" },
@@ -2426,7 +2425,7 @@
             { "fr": "Il est facile de comprendre.", "en": "It's easy to understand.", "replace": "facile" }
           ]
         },
-        { "french": "difficile", "english": "difficult/hard", "word_type": "adjective", "gender": null,           "sentences": [
+        { "french": "difficile", "english": "difficult", "word_type": "adjective", "gender": null,           "sentences": [
             { "fr": "C'est difficile à faire.", "en": "It's difficult to do.", "replace": "difficile" },
             { "fr": "C'est une difficile situation.", "en": "It's a difficult situation.", "replace": "difficile" },
             { "fr": "Le test est difficile.", "en": "The test is difficult.", "replace": "difficile" },
@@ -2434,7 +2433,7 @@
             { "fr": "Il fait un choix difficile.", "en": "He makes a difficult choice.", "replace": "difficile" }
           ]
         },
-        { "french": "intelligent", "english": "smart/intelligent", "word_type": "adjective", "gender": null,           "sentences": [
+        { "french": "intelligent", "english": "smart", "word_type": "adjective", "gender": null,           "sentences": [
             { "fr": "Il est très intelligent.", "en": "He is very smart.", "replace": "intelligent" },
             { "fr": "Elle est intelligente.", "en": "She is smart.", "replace": "intelligente" },
             { "fr": "C'est une intelligente solution.", "en": "It's a smart solution.", "replace": "intelligente" },
@@ -2458,7 +2457,7 @@
             { "fr": "Elle préfère la bière froide.", "en": "She prefers cold beer.", "replace": "froide" }
           ]
         },
-        { "french": "chaud", "english": "hot/warm", "word_type": "adjective", "gender": "le",           "sentences": [
+        { "french": "chaud", "english": "hot", "word_type": "adjective", "gender": "le",           "sentences": [
             { "fr": "Il fait chaud en été.", "en": "It's hot in summer.", "replace": "chaud" },
             { "fr": "Le café est chaud.", "en": "The coffee is hot.", "replace": "chaud" },
             { "fr": "J'aime la nourriture chaude.", "en": "I like hot food.", "replace": "chaude" },
@@ -2466,7 +2465,7 @@
             { "fr": "Elle aime boire du thé chaud.", "en": "She likes drinking hot tea.", "replace": "chaud" }
           ]
         },
-        { "french": "beau", "english": "beautiful/handsome", "word_type": "adjective", "gender": "le",           "sentences": [
+        { "french": "beau", "english": "beautiful", "word_type": "adjective", "gender": "le",           "sentences": [
             { "fr": "Il est très beau.", "en": "He is very handsome.", "replace": "beau" },
             { "fr": "Elle est belle.", "en": "She is beautiful.", "replace": "belle" },
             { "fr": "C'est une belle journée.", "en": "It's a beautiful day.", "replace": "belle" },
@@ -2482,7 +2481,7 @@
             { "fr": "Il porte un laid chapeau.", "en": "He wears an ugly hat.", "replace": "laid" }
           ]
         },
-        { "french": "gros", "english": "big/large/fat", "word_type": "adjective", "gender": "le",           "sentences": [
+        { "french": "gros", "english": "large", "word_type": "adjective", "gender": "le",           "sentences": [
             { "fr": "C'est un gros problème.", "en": "It's a big problem.", "replace": "gros" },
             { "fr": "Il mange une grosse pomme.", "en": "He eats a big apple.", "replace": "grosse" },
             { "fr": "Le chat est gros.", "en": "The cat is fat.", "replace": "gros" },
@@ -2650,20 +2649,20 @@
             { "fr": "C'est une solution efficace.", "en": "It's an effective solution.", "replace": "efficace" }
           ]
         },
-        { "french": "orgueilleux", "english": "proud", "word_type": "adjective", "gender": "le",           "sentences": [
-            { "fr": "Je suis orgueilleux.", "en": "I am proud.", "replace": "orgueilleux" },
-            { "fr": "Il semble orgueilleux.", "en": "He seems proud.", "replace": "orgueilleux" },
-            { "fr": "Elle est orgueilleuse.", "en": "She is proud.", "replace": "orgueilleuse" },
-            { "fr": "Ils sont orgueilleux.", "en": "They are proud.", "replace": "orgueilleux" },
-            { "fr": "C'est un homme orgueilleux.", "en": "It's a proud man.", "replace": "orgueilleux" }
-          ]
-        },
         { "french": "content", "english": "happy/pleased", "word_type": "adjective", "gender": null,           "sentences": [
             { "fr": "Je suis content.", "en": "I am happy.", "replace": "content" },
             { "fr": "Il semble content.", "en": "He seems happy.", "replace": "content" },
             { "fr": "Elle est contente.", "en": "She is happy.", "replace": "contente" },
             { "fr": "Ils sont contents.", "en": "They are happy.", "replace": "contents" },
             { "fr": "C'est un homme content.", "en": "It's a happy man.", "replace": "content" }
+          ]
+        },
+        { "french": "fatigué", "english": "tired", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Je suis fatigué.", "en": "I am tired.", "replace": "fatigué" },
+            { "fr": "Il semble fatigué.", "en": "He seems tired.", "replace": "fatigué" },
+            { "fr": "Elle est fatiguée.", "en": "She is tired.", "replace": "fatiguée" },
+            { "fr": "Ils sont fatigués.", "en": "They are tired.", "replace": "fatigués" },
+            { "fr": "C'est un homme fatigué.", "en": "It's a tired man.", "replace": "fatigué" }
           ]
         }
       ]
@@ -2838,4 +2837,3 @@
     }
   ]
 }
-  
