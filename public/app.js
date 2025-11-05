@@ -77,7 +77,72 @@ let currentQuestions = [];
 let currentQuestionIndex = 0;
 let currentScore = 0;
 let currentLevelId = null;
+let activeLevelSet = 1; // 1 for Set 1 (levels 1-12), 2 for Set 2 (levels 13+)
 let selectedLevelId = null;
+
+// Helper function to update tab visual state
+function updateTabState() {
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach((btn, index) => {
+    if (index + 1 === activeLevelSet) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+// Helper function to filter and display levels based on active tab
+function displayFilteredLevels(levelsWithProgress) {
+  // Update tab active state
+  updateTabState();
+
+  // Display levels based on active tab
+  const levelsGrid = document.getElementById('levelsGrid');
+  levelsGrid.innerHTML = '';
+
+  // Filter levels based on active tab
+  const filteredLevels = levelsWithProgress.filter(level => {
+    if (activeLevelSet === 1) {
+      return level.level_number <= 12;
+    } else {
+      return level.level_number > 12;
+    }
+  });
+
+  // Display filtered levels
+  for (const level of filteredLevels) {
+    showLevelCard(level);
+  }
+}
+
+// Tab switching function
+function switchLevelSet(setNumber) {
+  activeLevelSet = setNumber;
+  updateTabState();
+
+  // Get current levels data and redisplay
+  fetch('/api/levels/user-progress')
+    .then(response => response.json())
+    .then(data => {
+      displayFilteredLevels(data);
+    })
+    .catch(error => {
+      console.error('Error switching level set:', error);
+    });
+}
+
+// Menu functions
+function openTesting() {
+  // Go back to regular learning flow - this is already the main dashboard
+  // Maybe just show a confirmation or reset to current level
+  alert('You are already on the main testing/learning page. Start a practice session to test your knowledge!');
+}
+
+function openUploadText() {
+  // Redirect to separate upload text page
+  window.location.href = '/uploadtext.html';
+}
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
@@ -218,14 +283,8 @@ async function showDashboard() {
       selectLevel(currentLevel);
     }
 
-    // Display all levels
-    const levelsGrid = document.getElementById('levelsGrid');
-    levelsGrid.innerHTML = '';
-
-    // Display all levels using the pre-calculated data
-    for (const level of levelsWithProgress) {
-      showLevelCard(level);
-    }
+    // Display levels using helper function
+    displayFilteredLevels(levelsWithProgress);
     
     // Show popups for newly unlocked levels
     for (const levelNum of newlyUnlocked) {
@@ -247,10 +306,19 @@ function showLevelCard(level) {
   const isUnlocked = level.is_unlocked;
   const mastery = level.mastery;
   const isCurrent = level.level_number === currentUser.current_level;
-  
+
   const levelsGrid = document.getElementById('levelsGrid');
   const levelItem = document.createElement('div');
-  levelItem.className = `level-item ${isUnlocked ? '' : 'locked'}`;
+
+  // Determine card color based on mastery
+  let cardClass = `level-item ${isUnlocked ? '' : 'locked'}`;
+  if (mastery >= 90) {
+    cardClass += ' mastery-high';
+  } else if (mastery < 80) {
+    cardClass += ' mastery-low';
+  }
+
+  levelItem.className = cardClass;
   levelItem.dataset.levelId = level.id;
   
   // Format date for display

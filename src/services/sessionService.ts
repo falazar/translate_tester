@@ -483,9 +483,9 @@ export class SessionService {
       // 0% mastery = 10x, 50% = 5x, 90%+ = 1x
       const masteryWeight = Math.max(1, Math.round(10 - (word.mastery / 10)));
 
-      // Additional weight from attempts: fewer attempts = higher weight (max 4x)
-      // Words with 0 attempts get 4x weight, words with 20+ attempts get 1x weight
-      const attemptWeight = Math.max(1, Math.round(4 - (word.attempts / 5)));
+      // Additional weight from attempts: fewer attempts = higher weight (max 9x)
+      // Words with 0 attempts get 9x weight, words with 8+ attempts get 1x weight
+      const attemptWeight = Math.max(1, Math.round(9 - word.attempts));
 
       // Combine weights: mastery weight has more influence
       const totalWeight = masteryWeight * attemptWeight;

@@ -3,6 +3,10 @@ one fill in blank with word missing, one just pronounce.
 
 Add gamifying more things.
 
+TODO TODO Add forms field mostly for verbs to list out all forms
+
+TODO common short phrases also 
+
 Add crossword puzzle and word search.
 
 Story time? needs AI?

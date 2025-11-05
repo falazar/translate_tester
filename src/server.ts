@@ -9,6 +9,7 @@ import authRoutes from './routes/auth';
 import levelRoutes from './routes/levels';
 import progressRoutes from './routes/progress';
 import sessionRoutes from './routes/sessions';
+import textRoutes from './routes/text';
 
 // Load environment variables
 dotenv.config();
@@ -32,6 +33,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/levels', levelRoutes);
 app.use('/api/sessions', sessionRoutes);
 app.use('/api/progress', progressRoutes);
+app.use('/api/text', textRoutes);
 
 // Serve frontend for all other routes
 app.get('*', (_req, res) => {

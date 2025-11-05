@@ -1038,7 +1038,7 @@
             { "fr": "Vous respirez comment?", "en": "How do you breathe?", "replace": "respirez" }
           ]
         },
-        { "french": "soigner", "english": "to take care of/heal", "word_type": "verb", "gender": null,           "sentences": [
+        { "french": "soigner", "english": "to heal", "word_type": "verb", "gender": null,           "sentences": [
             { "fr": "Je soigne le malade.", "en": "I take care of the patient.", "replace": "soigne" },
             { "fr": "Il soigne bien.", "en": "He takes good care.", "replace": "soigne" },
             { "fr": "Elle soigne les enfants.", "en": "She takes care of children.", "replace": "soigne" },
@@ -2433,9 +2433,9 @@
             { "fr": "Il fait un choix difficile.", "en": "He makes a difficult choice.", "replace": "difficile" }
           ]
         },
-        { "french": "intelligent", "english": "smart", "word_type": "adjective", "gender": null,           "sentences": [
-            { "fr": "Il est très intelligent.", "en": "He is very smart.", "replace": "intelligent" },
-            { "fr": "Elle est intelligente.", "en": "She is smart.", "replace": "intelligente" },
+        { "french": "intelligent", "english": "intelligent", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il est très intelligent.", "en": "He is very intelligent.", "replace": "intelligent" },
+            { "fr": "Elle est intelligente.", "en": "She is intelligent.", "replace": "intelligente" },
             { "fr": "C'est une intelligente solution.", "en": "It's a smart solution.", "replace": "intelligente" },
             { "fr": "C'est un enfant très intelligent.", "en": "He is a very intelligent child.", "replace": "intelligent" },
             { "fr": "Il a une approche intelligente.", "en": "He has an intelligent approach.", "replace": "intelligente" }
@@ -2545,7 +2545,7 @@
             { "fr": "Nous espérons demain.", "en": "We hope tomorrow.", "replace": "espérons" }
           ]
         },
-        { "french": "confier", "english": "to trust/confide", "word_type": "verb", "gender": null,           "sentences": [
+        { "french": "confier", "english": "to confide", "word_type": "verb", "gender": null,           "sentences": [
             { "fr": "Je me confie à toi.", "en": "I confide in you.", "replace": "confie" },
             { "fr": "Il se confie facilement.", "en": "He confides easily.", "replace": "confie" },
             { "fr": "Elle se confie souvent.", "en": "She confides often.", "replace": "confie" },
@@ -2649,7 +2649,7 @@
             { "fr": "C'est une solution efficace.", "en": "It's an effective solution.", "replace": "efficace" }
           ]
         },
-        { "french": "content", "english": "happy/pleased", "word_type": "adjective", "gender": null,           "sentences": [
+        { "french": "content", "english": "happy", "word_type": "adjective", "gender": null,           "sentences": [
             { "fr": "Je suis content.", "en": "I am happy.", "replace": "content" },
             { "fr": "Il semble content.", "en": "He seems happy.", "replace": "content" },
             { "fr": "Elle est contente.", "en": "She is happy.", "replace": "contente" },
@@ -2831,6 +2831,398 @@
             { "fr": "La glace fond au soleil.", "en": "The ice melts in the sun.", "replace": "glace" },
             { "fr": "La glace est dure.", "en": "The ice is hard.", "replace": "glace" },
             { "fr": "Je brise la glace.", "en": "I break the ice.", "replace": "glace" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "title": "Health & Medical",
+      "description": "Essential health vocabulary and medical terms",
+      "theme": "health",
+      "words": [
+        { "french": "le médecin", "english": "doctor", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le médecin examine le patient.", "en": "The doctor examines the patient.", "replace": "médecin" },
+            { "fr": "Je vais chez le médecin.", "en": "I go to the doctor.", "replace": "médecin" },
+            { "fr": "Le médecin prescrit des médicaments.", "en": "The doctor prescribes medication.", "replace": "médecin" },
+            { "fr": "Le médecin est très compétent.", "en": "The doctor is very competent.", "replace": "médecin" },
+            { "fr": "Le médecin travaille à l'hôpital.", "en": "The doctor works at the hospital.", "replace": "médecin" }
+          ]
+        },
+        { "french": "l'hôpital", "english": "hospital", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "L'hôpital est moderne.", "en": "The hospital is modern.", "replace": "hôpital" },
+            { "fr": "Elle travaille à l'hôpital.", "en": "She works at the hospital.", "replace": "hôpital" },
+            { "fr": "L'hôpital soigne les malades.", "en": "The hospital treats the sick.", "replace": "hôpital" },
+            { "fr": "L'hôpital a beaucoup de médecins.", "en": "The hospital has many doctors.", "replace": "hôpital" },
+            { "fr": "Nous visitons l'hôpital.", "en": "We visit the hospital.", "replace": "hôpital" }
+          ]
+        },
+        { "french": "la santé", "english": "health", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La santé est importante.", "en": "Health is important.", "replace": "santé" },
+            { "fr": "Il prend soin de sa santé.", "en": "He takes care of his health.", "replace": "santé" },
+            { "fr": "La santé mentale compte aussi.", "en": "Mental health matters too.", "replace": "santé" },
+            { "fr": "La santé publique est essentielle.", "en": "Public health is essential.", "replace": "santé" },
+            { "fr": "Elle étudie la santé.", "en": "She studies health.", "replace": "santé" }
+          ]
+        },
+        { "french": "malade", "english": "sick", "word_type": "adjective", "gender": "",           "sentences": [
+            { "fr": "Il est malade aujourd'hui.", "en": "He is sick today.", "replace": "malade" },
+            { "fr": "Elle reste à la maison car elle est malade.", "en": "She stays home because she is sick.", "replace": "malade" },
+            { "fr": "Les enfants sont souvent malades en hiver.", "en": "Children are often sick in winter.", "replace": "malades" },
+            { "fr": "Il a l'air malade.", "en": "He looks sick.", "replace": "malade" },
+            { "fr": "Le malade doit se reposer.", "en": "The sick person must rest.", "replace": "malade" }
+          ]
+        },
+        { "french": "guérir", "english": "to heal", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Le médecin va guérir le patient.", "en": "The doctor will cure the patient.", "replace": "guérir" },
+            { "fr": "La blessure guérit lentement.", "en": "The wound heals slowly.", "replace": "guérit" },
+            { "fr": "Les médicaments aident à guérir.", "en": "Medications help to heal.", "replace": "guérir" },
+            { "fr": "Elle guérit rapidement.", "en": "She heals quickly.", "replace": "guérit" },
+            { "fr": "Le repos aide à guérir.", "en": "Rest helps to heal.", "replace": "guérir" }
+          ]
+        },
+        { "french": "la fièvre", "english": "fever", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Il a de la fièvre.", "en": "He has a fever.", "replace": "fièvre" },
+            { "fr": "La fièvre est dangereuse.", "en": "Fever is dangerous.", "replace": "fièvre" },
+            { "fr": "Elle mesure la fièvre.", "en": "She measures the fever.", "replace": "fièvre" },
+            { "fr": "La fièvre baisse lentement.", "en": "The fever goes down slowly.", "replace": "fièvre" },
+            { "fr": "La fièvre indique une infection.", "en": "Fever indicates an infection.", "replace": "fièvre" }
+          ]
+        },
+        { "french": "le rhume", "english": "cold", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Il a attrapé un rhume.", "en": "He caught a cold.", "replace": "rhume" },
+            { "fr": "Le rhume dure une semaine.", "en": "The cold lasts a week.", "replace": "rhume" },
+            { "fr": "Elle soigne son rhume.", "en": "She treats her cold.", "replace": "rhume" },
+            { "fr": "Le rhume est contagieux.", "en": "The cold is contagious.", "replace": "rhume" },
+            { "fr": "Il éternue à cause du rhume.", "en": "He sneezes because of the cold.", "replace": "rhume" }
+          ]
+        },
+        { "french": "la grippe", "english": "flu", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Elle a la grippe cette semaine.", "en": "She has the flu this week.", "replace": "grippe" },
+            { "fr": "La grippe est plus grave que le rhume.", "en": "The flu is more serious than a cold.", "replace": "grippe" },
+            { "fr": "Il vaccine contre la grippe.", "en": "He vaccinates against the flu.", "replace": "grippe" },
+            { "fr": "La grippe fatigue beaucoup.", "en": "The flu tires you out a lot.", "replace": "grippe" },
+            { "fr": "Elle reste au lit à cause de la grippe.", "en": "She stays in bed because of the flu.", "replace": "grippe" }
+          ]
+        },
+        { "french": "le rendez-vous", "english": "appointment", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "J'ai un rendez-vous chez le médecin.", "en": "I have an appointment with the doctor.", "replace": "rendez-vous" },
+            { "fr": "Le rendez-vous est à 14h.", "en": "The appointment is at 2 PM.", "replace": "rendez-vous" },
+            { "fr": "Elle annule son rendez-vous.", "en": "She cancels her appointment.", "replace": "rendez-vous" },
+            { "fr": "Le rendez-vous médical est important.", "en": "The medical appointment is important.", "replace": "rendez-vous" },
+            { "fr": "Il prend rendez-vous en ligne.", "en": "He makes an appointment online.", "replace": "rendez-vous" }
+          ]
+        },
+        { "french": "la consultation", "english": "consultation", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La consultation dure 30 minutes.", "en": "The consultation lasts 30 minutes.", "replace": "consultation" },
+            { "fr": "Elle va à la consultation.", "en": "She goes to the consultation.", "replace": "consultation" },
+            { "fr": "La consultation médicale est gratuite.", "en": "The medical consultation is free.", "replace": "consultation" },
+            { "fr": "Le médecin fait la consultation.", "en": "The doctor does the consultation.", "replace": "consultation" },
+            { "fr": "La consultation aide à diagnostiquer.", "en": "The consultation helps to diagnose.", "replace": "consultation" }
+          ]
+        },
+        { "french": "les médicaments", "english": "medications", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Les médicaments sont dans l'armoire.", "en": "The medications are in the cabinet.", "replace": "médicaments" },
+            { "fr": "Il prend ses médicaments.", "en": "He takes his medications.", "replace": "médicaments" },
+            { "fr": "Les médicaments coûtent cher.", "en": "Medications are expensive.", "replace": "médicaments" },
+            { "fr": "Le médecin prescrit les médicaments.", "en": "The doctor prescribes the medications.", "replace": "médicaments" },
+            { "fr": "Les médicaments soulagent la douleur.", "en": "Medications relieve pain.", "replace": "médicaments" }
+          ]
+        },
+        { "french": "reposer", "english": "to rest", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il se repose après le travail.", "en": "He rests after work.", "replace": "repose" },
+            { "fr": "Elle se repose sur le canapé.", "en": "She rests on the couch.", "replace": "repose" },
+            { "fr": "Le malade doit se reposer.", "en": "The sick person must rest.", "replace": "reposer" },
+            { "fr": "Nous nous reposons le weekend.", "en": "We rest on the weekend.", "replace": "reposons" },
+            { "fr": "Il faut se reposer pour guérir.", "en": "You need to rest to heal.", "replace": "reposer" }
+          ]
+        },
+        { "french": "prendre soin", "english": "to take care", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle prend soin de sa santé.", "en": "She takes care of her health.", "replace": "soin" },
+            { "fr": "Il prend soin de sa mère.", "en": "He takes care of his mother.", "replace": "soin" },
+            { "fr": "Nous prenons soin de l'environnement.", "en": "We take care of the environment.", "replace": "soin" },
+            { "fr": "Prenez soin de vous.", "en": "Take care of yourself.", "replace": "soin" },
+            { "fr": "Les parents prennent soin des enfants.", "en": "Parents take care of children.", "replace": "soin" }
+          ]
+        },
+        { "french": "la douleur", "english": "pain", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La douleur est intense.", "en": "The pain is intense.", "replace": "douleur" },
+            { "fr": "Il ressent une douleur.", "en": "He feels pain.", "replace": "douleur" },
+            { "fr": "La douleur disparaît.", "en": "The pain disappears.", "replace": "douleur" },
+            { "fr": "Les médicaments soulagent la douleur.", "en": "Medications relieve the pain.", "replace": "douleur" },
+            { "fr": "Elle supporte la douleur.", "en": "She endures the pain.", "replace": "douleur" }
+          ]
+        },
+        { "french": "le patient", "english": "patient", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le patient attend le médecin.", "en": "The patient waits for the doctor.", "replace": "patient" },
+            { "fr": "Elle est patiente.", "en": "She is patient.", "replace": "patiente" },
+            { "fr": "Le patient guérit vite.", "en": "The patient heals quickly.", "replace": "patient" },
+            { "fr": "Les patients sont dans la salle d'attente.", "en": "The patients are in the waiting room.", "replace": "patients" },
+            { "fr": "Le médecin soigne le patient.", "en": "The doctor treats the patient.", "replace": "patient" }
+          ]
+        },
+        { "french": "la blessure", "english": "injury", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La blessure est grave.", "en": "The injury is serious.", "replace": "blessure" },
+            { "fr": "Il a une blessure au bras.", "en": "He has an injury on his arm.", "replace": "blessure" },
+            { "fr": "La blessure guérit lentement.", "en": "The wound heals slowly.", "replace": "blessure" },
+            { "fr": "Elle soigne sa blessure.", "en": "She treats her wound.", "replace": "blessure" },
+            { "fr": "La blessure fait mal.", "en": "The injury hurts.", "replace": "blessure" }
+          ]
+        },
+        { "french": "traiter", "english": "to treat", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Le médecin traite le malade.", "en": "The doctor treats the sick person.", "replace": "traite" },
+            { "fr": "Elle traite sa blessure.", "en": "She treats her wound.", "replace": "traite" },
+            { "fr": "Nous traitons les patients.", "en": "We treat patients.", "replace": "traitons" },
+            { "fr": "Il faut traiter cette maladie.", "en": "This illness needs to be treated.", "replace": "traiter" },
+            { "fr": "Les médecins traitent les urgences.", "en": "Doctors treat emergencies.", "replace": "traitent" }
+          ]
+        },
+        { "french": "l'infirmier", "english": "nurse", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "L'infirmier aide le médecin.", "en": "The nurse helps the doctor.", "replace": "infirmier" },
+            { "fr": "Elle est infirmière.", "en": "She is a nurse.", "replace": "infirmière" },
+            { "fr": "L'infirmier mesure la température.", "en": "The nurse measures the temperature.", "replace": "infirmier" },
+            { "fr": "Les infirmiers travaillent dur.", "en": "Nurses work hard.", "replace": "infirmiers" },
+            { "fr": "L'infirmière donne les médicaments.", "en": "The nurse gives the medications.", "replace": "infirmière" }
+          ]
+        },
+        { "french": "la température", "english": "temperature", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La température est élevée.", "en": "The temperature is high.", "replace": "température" },
+            { "fr": "Il mesure sa température.", "en": "He measures his temperature.", "replace": "température" },
+            { "fr": "La température baisse.", "en": "The temperature goes down.", "replace": "température" },
+            { "fr": "Quelle est la température?", "en": "What is the temperature?", "replace": "température" },
+            { "fr": "La température normale est 37°C.", "en": "Normal temperature is 37°C.", "replace": "température" }
+          ]
+        },
+        { "french": "la vaccination", "english": "vaccination", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La vaccination protège contre les maladies.", "en": "Vaccination protects against diseases.", "replace": "vaccination" },
+            { "fr": "Il reçoit sa vaccination.", "en": "He receives his vaccination.", "replace": "vaccination" },
+            { "fr": "La vaccination est importante.", "en": "Vaccination is important.", "replace": "vaccination" },
+            { "fr": "Les vaccinations sauvent des vies.", "en": "Vaccinations save lives.", "replace": "vaccinations" },
+            { "fr": "Elle recommande la vaccination.", "en": "She recommends vaccination.", "replace": "vaccination" }
+          ]
+        },
+        { "french": "consulter", "english": "to consult", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il consulte un médecin.", "en": "He consults a doctor.", "replace": "consulte" },
+            { "fr": "Elle consulte son dossier médical.", "en": "She consults her medical file.", "replace": "consulte" },
+            { "fr": "Nous consultons un spécialiste.", "en": "We consult a specialist.", "replace": "consultons" },
+            { "fr": "Les patients consultent régulièrement.", "en": "Patients consult regularly.", "replace": "consultent" },
+            { "fr": "Consulter un médecin est important.", "en": "Consulting a doctor is important.", "replace": "consulter" }
+          ]
+        },
+        { "french": "récupérer", "english": "to recover", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il récupère après l'opération.", "en": "He recovers after the operation.", "replace": "récupère" },
+            { "fr": "Elle récupère vite de sa maladie.", "en": "She recovers quickly from her illness.", "replace": "récupère" },
+            { "fr": "Nous récupérons notre santé.", "en": "We recover our health.", "replace": "récupérons" },
+            { "fr": "Les patients récupèrent bien.", "en": "Patients recover well.", "replace": "récupèrent" },
+            { "fr": "Récupérer prend du temps.", "en": "Recovering takes time.", "replace": "récupérer" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "title": "Education & Learning",
+      "description": "Academic and learning-related vocabulary",
+      "theme": "education",
+      "words": [
+        { "french": "l'université", "english": "university", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "L'université est grande.", "en": "The university is large.", "replace": "université" },
+            { "fr": "Elle étudie à l'université.", "en": "She studies at the university.", "replace": "université" },
+            { "fr": "L'université propose beaucoup de cours.", "en": "The university offers many courses.", "replace": "université" },
+            { "fr": "Il obtient son diplôme à l'université.", "en": "He gets his diploma at the university.", "replace": "université" },
+            { "fr": "L'université organise des conférences.", "en": "The university organizes conferences.", "replace": "université" }
+          ]
+        },
+        { "french": "le cours", "english": "course", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le cours commence à 9h.", "en": "The course starts at 9 AM.", "replace": "cours" },
+            { "fr": "Elle suit un cours de français.", "en": "She takes a French course.", "replace": "cours" },
+            { "fr": "Le cours est intéressant.", "en": "The course is interesting.", "replace": "cours" },
+            { "fr": "Le professeur donne le cours.", "en": "The professor gives the course.", "replace": "cours" },
+            { "fr": "Les étudiants assistent au cours.", "en": "The students attend the course.", "replace": "cours" }
+          ]
+        },
+        { "french": "la note", "english": "grade", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Elle obtient une bonne note.", "en": "She gets a good grade.", "replace": "note" },
+            { "fr": "La note est sur 20.", "en": "The grade is out of 20.", "replace": "note" },
+            { "fr": "Il révise pour avoir une meilleure note.", "en": "He studies to get a better grade.", "replace": "note" },
+            { "fr": "Les notes sont importantes.", "en": "Grades are important.", "replace": "notes" },
+            { "fr": "Le professeur corrige les notes.", "en": "The professor grades the assignments.", "replace": "notes" }
+          ]
+        },
+        { "french": "expliquer", "english": "to explain", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Le professeur explique la leçon.", "en": "The professor explains the lesson.", "replace": "explique" },
+            { "fr": "Elle explique le problème.", "en": "She explains the problem.", "replace": "explique" },
+            { "fr": "Il explique comment faire.", "en": "He explains how to do it.", "replace": "explique" },
+            { "fr": "Nous expliquons la situation.", "en": "We explain the situation.", "replace": "expliquons" },
+            { "fr": "Pouvez-vous m'expliquer?", "en": "Can you explain to me?", "replace": "expliquer" }
+          ]
+        },
+        { "french": "la recherche", "english": "research", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La recherche scientifique est importante.", "en": "Scientific research is important.", "replace": "recherche" },
+            { "fr": "Elle fait de la recherche universitaire.", "en": "She does university research.", "replace": "recherche" },
+            { "fr": "La recherche médicale sauve des vies.", "en": "Medical research saves lives.", "replace": "recherche" },
+            { "fr": "Il publie ses recherches.", "en": "He publishes his research.", "replace": "recherches" },
+            { "fr": "La recherche demande du temps.", "en": "Research requires time.", "replace": "recherche" }
+          ]
+        },
+        { "french": "le diplôme", "english": "diploma", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Elle obtient son diplôme.", "en": "She gets her diploma.", "replace": "diplôme" },
+            { "fr": "Le diplôme universitaire est prestigieux.", "en": "The university diploma is prestigious.", "replace": "diplôme" },
+            { "fr": "Il travaille dur pour son diplôme.", "en": "He works hard for his diploma.", "replace": "diplôme" },
+            { "fr": "Le diplôme ouvre des portes.", "en": "The diploma opens doors.", "replace": "diplôme" },
+            { "fr": "Elle accroche son diplôme au mur.", "en": "She hangs her diploma on the wall.", "replace": "diplôme" }
+          ]
+        },
+        { "french": "la bibliothèque", "english": "library", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La bibliothèque universitaire est grande.", "en": "The university library is large.", "replace": "bibliothèque" },
+            { "fr": "Elle étudie à la bibliothèque.", "en": "She studies at the library.", "replace": "bibliothèque" },
+            { "fr": "La bibliothèque a beaucoup de livres.", "en": "The library has many books.", "replace": "bibliothèque" },
+            { "fr": "Il emprunte des livres à la bibliothèque.", "en": "He borrows books from the library.", "replace": "bibliothèque" },
+            { "fr": "La bibliothèque est ouverte tard.", "en": "The library is open late.", "replace": "bibliothèque" }
+          ]
+        },
+        { "french": "les études", "english": "studies", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Les études universitaires durent longtemps.", "en": "University studies last a long time.", "replace": "études" },
+            { "fr": "Elle continue ses études.", "en": "She continues her studies.", "replace": "études" },
+            { "fr": "Les études sont importantes pour l'avenir.", "en": "Studies are important for the future.", "replace": "études" },
+            { "fr": "Il finance ses études.", "en": "He finances his studies.", "replace": "études" },
+            { "fr": "Les études supérieures coûtent cher.", "en": "Higher education is expensive.", "replace": "études" }
+          ]
+        },
+        { "french": "l'éducation", "english": "education", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "L'éducation est essentielle.", "en": "Education is essential.", "replace": "éducation" },
+            { "fr": "L'éducation des enfants est prioritaire.", "en": "Children's education is a priority.", "replace": "éducation" },
+            { "fr": "Elle travaille dans l'éducation.", "en": "She works in education.", "replace": "éducation" },
+            { "fr": "L'éducation nationale organise l'école.", "en": "National education organizes schools.", "replace": "éducation" },
+            { "fr": "L'éducation permet le progrès.", "en": "Education enables progress.", "replace": "éducation" }
+          ]
+        },
+        { "french": "comprendre", "english": "to understand", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle comprend la leçon.", "en": "She understands the lesson.", "replace": "comprend" },
+            { "fr": "Il comprend difficilement.", "en": "He understands with difficulty.", "replace": "comprend" },
+            { "fr": "Nous comprenons l'importance.", "en": "We understand the importance.", "replace": "comprenons" },
+            { "fr": "Les étudiants comprennent bien.", "en": "The students understand well.", "replace": "comprennent" },
+            { "fr": "Comprendre est essentiel.", "en": "Understanding is essential.", "replace": "comprendre" }
+          ]
+        },
+        { "french": "présenter", "english": "to present", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle présente son projet.", "en": "She presents her project.", "replace": "présente" },
+            { "fr": "Il présente ses recherches.", "en": "He presents his research.", "replace": "présente" },
+            { "fr": "Nous présentons nos idées.", "en": "We present our ideas.", "replace": "présentons" },
+            { "fr": "Les étudiants présentent leurs travaux.", "en": "Students present their work.", "replace": "présentent" },
+            { "fr": "Présenter demande de la confiance.", "en": "Presenting requires confidence.", "replace": "présenter" }
+          ]
+        },
+        { "french": "réviser", "english": "to review", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle révise ses notes.", "en": "She reviews her notes.", "replace": "révise" },
+            { "fr": "Il révise avant l'examen.", "en": "He reviews before the exam.", "replace": "révise" },
+            { "fr": "Nous révisons le vocabulaire.", "en": "We review the vocabulary.", "replace": "révisons" },
+            { "fr": "Les étudiants révisent ensemble.", "en": "Students review together.", "replace": "révisent" },
+            { "fr": "Réviser est important.", "en": "Reviewing is important.", "replace": "réviser" }
+          ]
+        },
+        { "french": "discuter", "english": "to discuss", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ils discutent du projet.", "en": "They discuss the project.", "replace": "discutent" },
+            { "fr": "Nous discutons en classe.", "en": "We discuss in class.", "replace": "discutons" },
+            { "fr": "Elle discute avec le professeur.", "en": "She discusses with the professor.", "replace": "discute" },
+            { "fr": "Les étudiants discutent leurs idées.", "en": "Students discuss their ideas.", "replace": "discutent" },
+            { "fr": "Discuter aide à comprendre.", "en": "Discussing helps to understand.", "replace": "discuter" }
+          ]
+        },
+        { "french": "analyser", "english": "to analyze", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle analyse le texte.", "en": "She analyzes the text.", "replace": "analyse" },
+            { "fr": "Il analyse les données.", "en": "He analyzes the data.", "replace": "analyse" },
+            { "fr": "Nous analysons le problème.", "en": "We analyze the problem.", "replace": "analysons" },
+            { "fr": "Les étudiants analysent leurs résultats.", "en": "Students analyze their results.", "replace": "analysent" },
+            { "fr": "Analyser aide à comprendre.", "en": "Analyzing helps to understand.", "replace": "analyser" }
+          ]
+        },
+        { "french": "participer", "english": "to participate", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle participe au débat.", "en": "She participates in the debate.", "replace": "participe" },
+            { "fr": "Il participe activement.", "en": "He participates actively.", "replace": "participe" },
+            { "fr": "Nous participons à la discussion.", "en": "We participate in the discussion.", "replace": "participons" },
+            { "fr": "Les étudiants participent en classe.", "en": "Students participate in class.", "replace": "participent" },
+            { "fr": "Participer est encouragé.", "en": "Participating is encouraged.", "replace": "participer" }
+          ]
+        },
+        { "french": "l'élève", "english": "student", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "L'élève écoute le professeur.", "en": "The student listens to the teacher.", "replace": "élève" },
+            { "fr": "Elle est une bonne élève.", "en": "She is a good student.", "replace": "élève" },
+            { "fr": "Les élèves étudient dur.", "en": "Students study hard.", "replace": "élèves" },
+            { "fr": "L'élève pose une question.", "en": "The student asks a question.", "replace": "élève" },
+            { "fr": "Les élèves apprennent beaucoup.", "en": "Students learn a lot.", "replace": "élèves" }
+          ]
+        },
+        { "french": "la conférence", "english": "conference/lecture", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La conférence est intéressante.", "en": "The conference is interesting.", "replace": "conférence" },
+            { "fr": "Il donne une conférence.", "en": "He gives a conference.", "replace": "conférence" },
+            { "fr": "La conférence attire beaucoup de monde.", "en": "The conference attracts many people.", "replace": "conférence" },
+            { "fr": "Elle assiste à la conférence.", "en": "She attends the conference.", "replace": "conférence" },
+            { "fr": "La conférence dure deux heures.", "en": "The conference lasts two hours.", "replace": "conférence" }
+          ]
+        },
+        { "french": "la thèse", "english": "thesis", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Elle écrit sa thèse de doctorat.", "en": "She writes her doctoral thesis.", "replace": "thèse" },
+            { "fr": "La thèse est un travail universitaire.", "en": "The thesis is university work.", "replace": "thèse" },
+            { "fr": "Il défend sa thèse.", "en": "He defends his thesis.", "replace": "thèse" },
+            { "fr": "La thèse demande beaucoup de recherche.", "en": "The thesis requires a lot of research.", "replace": "thèse" },
+            { "fr": "Elle soutient sa thèse.", "en": "She defends her thesis.", "replace": "thèse" }
+          ]
+        },
+        { "french": "la matière", "english": "subject", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La matière est difficile.", "en": "The subject is difficult.", "replace": "matière" },
+            { "fr": "Il étudie plusieurs matières.", "en": "He studies several subjects.", "replace": "matières" },
+            { "fr": "La matière principale est le français.", "en": "The main subject is French.", "replace": "matière" },
+            { "fr": "Les matières scolaires sont variées.", "en": "School subjects are varied.", "replace": "matières" },
+            { "fr": "Elle excelle dans cette matière.", "en": "She excels in this subject.", "replace": "matière" }
+          ]
+        },
+        { "french": "la connaissance", "english": "knowledge", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La connaissance est précieuse.", "en": "Knowledge is precious.", "replace": "connaissance" },
+            { "fr": "Il acquiert des connaissances.", "en": "He acquires knowledge.", "replace": "connaissances" },
+            { "fr": "La connaissance s'accumule.", "en": "Knowledge accumulates.", "replace": "connaissance" },
+            { "fr": "Les connaissances sont importantes.", "en": "Knowledge is important.", "replace": "connaissances" },
+            { "fr": "Elle partage ses connaissances.", "en": "She shares her knowledge.", "replace": "connaissances" }
+          ]
+        },
+        { "french": "la réussite", "english": "success", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La réussite scolaire est importante.", "en": "Academic success is important.", "replace": "réussite" },
+            { "fr": "Il célèbre sa réussite.", "en": "He celebrates his success.", "replace": "réussite" },
+            { "fr": "La réussite demande du travail.", "en": "Success requires work.", "replace": "réussite" },
+            { "fr": "Elle vise la réussite.", "en": "She aims for success.", "replace": "réussite" },
+            { "fr": "La réussite est méritée.", "en": "Success is deserved.", "replace": "réussite" }
+          ]
+        },
+        { "french": "l'effort", "english": "effort", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "L'effort est nécessaire.", "en": "Effort is necessary.", "replace": "effort" },
+            { "fr": "Il fait beaucoup d'effort.", "en": "He makes a lot of effort.", "replace": "effort" },
+            { "fr": "L'effort paie toujours.", "en": "Effort always pays off.", "replace": "effort" },
+            { "fr": "Les efforts sont récompensés.", "en": "Efforts are rewarded.", "replace": "efforts" },
+            { "fr": "Elle apprécie l'effort.", "en": "She appreciates the effort.", "replace": "effort" }
+          ]
+        },
+        { "french": "la présentation", "english": "presentation", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La présentation est bien préparée.", "en": "The presentation is well prepared.", "replace": "présentation" },
+            { "fr": "Il fait une présentation orale.", "en": "He gives an oral presentation.", "replace": "présentation" },
+            { "fr": "La présentation dure 10 minutes.", "en": "The presentation lasts 10 minutes.", "replace": "présentation" },
+            { "fr": "Elle utilise PowerPoint pour sa présentation.", "en": "She uses PowerPoint for her presentation.", "replace": "présentation" },
+            { "fr": "La présentation impressionne le public.", "en": "The presentation impresses the audience.", "replace": "présentation" }
+          ]
+        },
+        { "french": "l'intelligence", "english": "intelligence", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "L'intelligence est un don.", "en": "Intelligence is a gift.", "replace": "intelligence" },
+            { "fr": "Il a beaucoup d'intelligence.", "en": "He has a lot of intelligence.", "replace": "intelligence" },
+            { "fr": "L'intelligence artificielle évolue.", "en": "Artificial intelligence is evolving.", "replace": "intelligence" },
+            { "fr": "Son intelligence l'aide.", "en": "His intelligence helps him.", "replace": "intelligence" },
+            { "fr": "L'intelligence n'est pas tout.", "en": "Intelligence is not everything.", "replace": "intelligence" }
+          ]
+        },
+        { "french": "la créativité", "english": "creativity", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La créativité est importante en art.", "en": "Creativity is important in art.", "replace": "créativité" },
+            { "fr": "Elle a beaucoup de créativité.", "en": "She has a lot of creativity.", "replace": "créativité" },
+            { "fr": "La créativité permet d'innover.", "en": "Creativity allows innovation.", "replace": "créativité" },
+            { "fr": "Son projet montre de la créativité.", "en": "Her project shows creativity.", "replace": "créativité" },
+            { "fr": "La créativité est encouragée.", "en": "Creativity is encouraged.", "replace": "créativité" }
           ]
         }
       ]
