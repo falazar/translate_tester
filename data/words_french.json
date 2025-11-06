@@ -3226,6 +3226,515 @@
           ]
         }
       ]
+    },
+    {
+      "level_number": 17,
+      "level_name": "Communication & Daily Life",
+      "suggestions": "Focus on expressing opinions, describing routines, and social interactions",
+      "words": [
+        { "french": "bien", "english": "well/good", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Il travaille bien.", "en": "He works well.", "replace": "bien" },
+            { "fr": "Ça va bien.", "en": "I'm doing well.", "replace": "bien" },
+            { "fr": "Elle chante bien.", "en": "She sings well.", "replace": "bien" },
+            { "fr": "C'est bien fait.", "en": "It's well done.", "replace": "bien" },
+            { "fr": "Merci bien.", "en": "Thank you very much.", "replace": "bien" }
+          ]
+        },
+        { "french": "comme", "english": "like/as", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Comme il pleut, restons à la maison.", "en": "Since it's raining, let's stay home.", "replace": "Comme" },
+            { "fr": "Blanc comme neige.", "en": "White as snow.", "replace": "comme" },
+            { "fr": "Comme d'habitude.", "en": "As usual.", "replace": "comme" },
+            { "fr": "Agis comme un adulte.", "en": "Act like an adult.", "replace": "comme" },
+            { "fr": "Comme tu veux.", "en": "As you wish.", "replace": "comme" }
+          ]
+        },
+        { "french": "même", "english": "same/even", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "C'est la même chose.", "en": "It's the same thing.", "replace": "même" },
+            { "fr": "Même lui le sait.", "en": "Even he knows it.", "replace": "Même" },
+            { "fr": "À même le sol.", "en": "On the ground itself.", "replace": "même" },
+            { "fr": "De même.", "en": "Likewise.", "replace": "même" },
+            { "fr": "Moi-même.", "en": "Myself.", "replace": "même" }
+          ]
+        },
+        { "french": "moi", "english": "me", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "C'est pour moi.", "en": "It's for me.", "replace": "moi" },
+            { "fr": "Moi, je pense que...", "en": "I think that...", "replace": "Moi" },
+            { "fr": "À moi!", "en": "My turn!", "replace": "moi" },
+            { "fr": "Chez moi.", "en": "At my place.", "replace": "moi" },
+            { "fr": "Pour moi.", "en": "For me.", "replace": "moi" }
+          ]
+        },
+        { "french": "cela", "english": "this/that", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Cela m'intéresse.", "en": "That interests me.", "replace": "Cela" },
+            { "fr": "Cela dit...", "en": "That said...", "replace": "Cela" },
+            { "fr": "Avant cela.", "en": "Before that.", "replace": "cela" },
+            { "fr": "Malgré cela.", "en": "Despite that.", "replace": "cela" },
+            { "fr": "Cela suffit.", "en": "That's enough.", "replace": "Cela" }
+          ]
+        },
+        { "french": "après", "english": "after", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Après le dîner.", "en": "After dinner.", "replace": "Après" },
+            { "fr": "Après tout.", "en": "After all.", "replace": "après" },
+            { "fr": "Après avoir mangé.", "en": "After eating.", "replace": "après" },
+            { "fr": "D'après lui.", "en": "According to him.", "replace": "après" },
+            { "fr": "Après-demain.", "en": "The day after tomorrow.", "replace": "Après" }
+          ]
+        },
+        { "french": "autre", "english": "other", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "L'autre côté.", "en": "The other side.", "replace": "autre" },
+            { "fr": "Les autres.", "en": "The others.", "replace": "autres" },
+            { "fr": "Autre chose.", "en": "Something else.", "replace": "Autre" },
+            { "fr": "D'un autre côté.", "en": "On the other hand.", "replace": "autre" },
+            { "fr": "Tout autre.", "en": "Any other.", "replace": "autre" }
+          ]
+        },
+        { "french": "tout", "english": "all", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Tout le monde.", "en": "Everyone.", "replace": "Tout" },
+            { "fr": "Pas du tout.", "en": "Not at all.", "replace": "tout" },
+            { "fr": "Tout à fait.", "en": "Quite/Exactly.", "replace": "tout" },
+            { "fr": "En tout.", "en": "In total.", "replace": "tout" },
+            { "fr": "Tout simplement.", "en": "Simply.", "replace": "tout" }
+          ]
+        },
+        { "french": "quand", "english": "when", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Quand arrives-tu?", "en": "When are you arriving?", "replace": "Quand" },
+            { "fr": "Quand même.", "en": "Even so.", "replace": "quand" },
+            { "fr": "Depuis quand?", "en": "Since when?", "replace": "quand" },
+            { "fr": "Quand il fait beau.", "en": "When the weather is nice.", "replace": "Quand" },
+            { "fr": "Quand tu veux.", "en": "Whenever you want.", "replace": "quand" }
+          ]
+        },
+        { "french": "jamais", "english": "never", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Jamais de la vie.", "en": "Never in my life.", "replace": "Jamais" },
+            { "fr": "Ne... jamais.", "en": "Never.", "replace": "jamais" },
+            { "fr": "Plus jamais.", "en": "Never again.", "replace": "jamais" },
+            { "fr": "À jamais.", "en": "Forever.", "replace": "jamais" },
+            { "fr": "Jamais content.", "en": "Never satisfied.", "replace": "Jamais" }
+          ]
+        },
+        { "french": "répondre", "english": "to answer/reply", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Répondre à une question.", "en": "To answer a question.", "replace": "Répondre" },
+            { "fr": "Il ne répond pas.", "en": "He doesn't answer.", "replace": "répond" },
+            { "fr": "Réponds-moi.", "en": "Answer me.", "replace": "Réponds" },
+            { "fr": "Répondre au téléphone.", "en": "To answer the phone.", "replace": "Répondre" },
+            { "fr": "Elle répond toujours.", "en": "She always answers.", "replace": "répond" }
+          ]
+        },
+        { "french": "écrire", "english": "to write", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Écrire une lettre.", "en": "To write a letter.", "replace": "Écrire" },
+            { "fr": "J'écris bien.", "en": "I write well.", "replace": "écris" },
+            { "fr": "Écrivez clairement.", "en": "Write clearly.", "replace": "Écrivez" },
+            { "fr": "Écrire un roman.", "en": "To write a novel.", "replace": "Écrire" },
+            { "fr": "Il écrit vite.", "en": "He writes fast.", "replace": "écrit" }
+          ]
+        },
+        { "french": "donner", "english": "to give", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Donner un cadeau.", "en": "To give a gift.", "replace": "Donner" },
+            { "fr": "Il donne beaucoup.", "en": "He gives a lot.", "replace": "donne" },
+            { "fr": "Donne-moi ça.", "en": "Give me that.", "replace": "Donne" },
+            { "fr": "Donner des conseils.", "en": "To give advice.", "replace": "Donner" },
+            { "fr": "Elle donne tout.", "en": "She gives everything.", "replace": "donne" }
+          ]
+        },
+        { "french": "mettre", "english": "to put", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Mettre la table.", "en": "To set the table.", "replace": "Mettre" },
+            { "fr": "Je mets mon manteau.", "en": "I put on my coat.", "replace": "mets" },
+            { "fr": "Mets ça là.", "en": "Put that there.", "replace": "Mets" },
+            { "fr": "Mettre en pratique.", "en": "To put into practice.", "replace": "Mettre" },
+            { "fr": "Il met du temps.", "en": "He takes time.", "replace": "met" }
+          ]
+        },
+        { "french": "la réponse", "english": "answer/reply", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Quelle est la réponse?", "en": "What is the answer?", "replace": "réponse" },
+            { "fr": "Attendre une réponse.", "en": "To wait for an answer.", "replace": "réponse" },
+            { "fr": "La réponse est simple.", "en": "The answer is simple.", "replace": "réponse" },
+            { "fr": "Donner une réponse.", "en": "To give an answer.", "replace": "réponse" },
+            { "fr": "La bonne réponse.", "en": "The right answer.", "replace": "réponse" }
+          ]
+        },
+        { "french": "la question", "english": "question", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Poser une question.", "en": "To ask a question.", "replace": "question" },
+            { "fr": "Quelle question?", "en": "What question?", "replace": "question" },
+            { "fr": "La question est difficile.", "en": "The question is difficult.", "replace": "question" },
+            { "fr": "Répondre à la question.", "en": "To answer the question.", "replace": "question" },
+            { "fr": "Question importante.", "en": "Important question.", "replace": "question" }
+          ]
+        },
+        { "french": "la journée", "english": "day", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Toute la journée.", "en": "All day.", "replace": "journée" },
+            { "fr": "Bonne journée.", "en": "Have a good day.", "replace": "journée" },
+            { "fr": "La journée est longue.", "en": "The day is long.", "replace": "journée" },
+            { "fr": "Pendant la journée.", "en": "During the day.", "replace": "journée" },
+            { "fr": "Fin de journée.", "en": "End of day.", "replace": "journée" }
+          ]
+        },
+        { "french": "quelque chose", "english": "something", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Quelque chose d'intéressant.", "en": "Something interesting.", "replace": "quelque chose" },
+            { "fr": "Il y a quelque chose.", "en": "There is something.", "replace": "quelque chose" },
+            { "fr": "Quelque chose ne va pas.", "en": "Something is wrong.", "replace": "quelque chose" },
+            { "fr": "Dis-moi quelque chose.", "en": "Tell me something.", "replace": "quelque chose" },
+            { "fr": "Quelque chose de beau.", "en": "Something beautiful.", "replace": "quelque chose" }
+          ]
+        },
+        { "french": "quelqu'un", "english": "someone/somebody", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Quelqu'un a appelé.", "en": "Someone called.", "replace": "Quelqu'un" },
+            { "fr": "Il y a quelqu'un.", "en": "There is someone.", "replace": "quelqu'un" },
+            { "fr": "Quelqu'un d'autre.", "en": "Someone else.", "replace": "quelqu'un" },
+            { "fr": "Attendre quelqu'un.", "en": "To wait for someone.", "replace": "quelqu'un" },
+            { "fr": "Quelqu'un de spécial.", "en": "Someone special.", "replace": "quelqu'un" }
+          ]
+        },
+        { "french": "pourquoi", "english": "why", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Pourquoi pas?", "en": "Why not?", "replace": "Pourquoi" },
+            { "fr": "Je ne sais pas pourquoi.", "en": "I don't know why.", "replace": "pourquoi" },
+            { "fr": "Pourquoi tu ris?", "en": "Why are you laughing?", "replace": "pourquoi" },
+            { "fr": "C'est pourquoi.", "en": "That's why.", "replace": "pourquoi" },
+            { "fr": "Pourquoi maintenant?", "en": "Why now?", "replace": "pourquoi" }
+          ]
+        },
+        { "french": "comment", "english": "how", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Comment allez-vous?", "en": "How are you?", "replace": "Comment" },
+            { "fr": "Comment faire?", "en": "How to do it?", "replace": "comment" },
+            { "fr": "Comment ça marche?", "en": "How does it work?", "replace": "comment" },
+            { "fr": "Comment tu t'appelles?", "en": "What's your name?", "replace": "comment" },
+            { "fr": "Et comment!", "en": "And how!", "replace": "comment" }
+          ]
+        },
+        { "french": "où", "english": "where", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Où allez-vous?", "en": "Where are you going?", "replace": "Où" },
+            { "fr": "D'où venez-vous?", "en": "Where are you from?", "replace": "où" },
+            { "fr": "Où est-ce?", "en": "Where is it?", "replace": "où" },
+            { "fr": "Partout où.", "en": "Everywhere where.", "replace": "où" },
+            { "fr": "N'importe où.", "en": "Anywhere.", "replace": "où" }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 18,
+      "level_name": "Essential Connectors",
+      "suggestions": "Focus on prepositions, pronouns, and conjunctions that connect ideas and build sentences",
+      "words": [
+        { "french": "dans", "english": "in/into", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Il est dans la cuisine en ce moment.", "en": "He is in the kitchen right now.", "replace": "dans" },
+            { "fr": "Pouvez-vous mettre ça dans le sac?", "en": "Can you put that in the bag?", "replace": "dans" },
+            { "fr": "Nous partirons dans deux jours.", "en": "We will leave in two days.", "replace": "dans" },
+            { "fr": "Elle aime marcher dans la rue principale.", "en": "She likes to walk in the main street.", "replace": "dans" },
+            { "fr": "Dans ce cas, nous devons attendre.", "en": "In this case, we must wait.", "replace": "dans" }
+          ]
+        },
+        { "french": "en", "english": "in/on", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "J'aimerais voyager en France cet été.", "en": "I would like to travel to France this summer.", "replace": "en" },
+            { "fr": "Il parle couramment en français.", "en": "He speaks fluently in French.", "replace": "en" },
+            { "fr": "Nous partons généralement en été.", "en": "We usually leave in summer.", "replace": "en" },
+            { "fr": "Il est plus rapide de voyager en train.", "en": "It is faster to travel by train.", "replace": "en" },
+            { "fr": "Heureusement, elle est en bonne santé.", "en": "Fortunately, she is in good health.", "replace": "en" }
+          ]
+        },
+        { "french": "sur", "english": "on/upon", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Le livre est posé sur la table.", "en": "The book is placed on the table.", "replace": "sur" },
+            { "fr": "J'ai trouvé cette information sur Internet.", "en": "I found this information on the Internet.", "replace": "sur" },
+            { "fr": "Vous pouvez compter sur moi.", "en": "You can count on me.", "replace": "sur" },
+            { "fr": "Sur ce, je vous souhaite bonne journée.", "en": "With that, I wish you a good day.", "replace": "sur" },
+            { "fr": "Il était sur le point de partir.", "en": "He was on the point of leaving.", "replace": "sur" }
+          ]
+        },
+        { "french": "pour", "english": "for", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "J'ai acheté ce cadeau pour toi.", "en": "I bought this gift for you.", "replace": "pour" },
+            { "fr": "Il travaille dur pour gagner sa vie.", "en": "He works hard to earn his living.", "replace": "pour" },
+            { "fr": "Pour quoi faire ce travail?", "en": "What is this work for?", "replace": "pour" },
+            { "fr": "Le rendez-vous est prévu pour demain.", "en": "The appointment is scheduled for tomorrow.", "replace": "pour" },
+            { "fr": "Pour être honnête, je ne suis pas d'accord.", "en": "To be honest, I don't agree.", "replace": "pour" }
+          ]
+        },
+        { "french": "avec", "english": "with", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Avec plaisir, je vous aiderai.", "en": "With pleasure, I will help you.", "replace": "avec" },
+            { "fr": "Venez dîner avec nous ce soir.", "en": "Come have dinner with us tonight.", "replace": "avec" },
+            { "fr": "Je prends toujours mon café avec lait.", "en": "I always take my coffee with milk.", "replace": "avec" },
+            { "fr": "Je suis tout à fait d'accord avec toi.", "en": "I completely agree with you.", "replace": "avec" },
+            { "fr": "Avec le temps, tout devient plus facile.", "en": "With time, everything becomes easier.", "replace": "avec" }
+          ]
+        },
+        { "french": "vers", "english": "towards", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Nous marchons vers la maison maintenant.", "en": "We are walking towards the house now.", "replace": "vers" },
+            { "fr": "Il rentrera vers midi pour déjeuner.", "en": "He will return around noon for lunch.", "replace": "vers" },
+            { "fr": "Elle se tourna vers son ami pour demander.", "en": "She turned towards her friend to ask.", "replace": "vers" },
+            { "fr": "Nous regardons toujours vers l'avenir.", "en": "We always look towards the future.", "replace": "vers" },
+            { "fr": "Le film se dirige vers la fin.", "en": "The movie is heading towards the end.", "replace": "vers" }
+          ]
+        },
+        { "french": "me", "english": "me", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Chaque matin, il me regarde avec un sourire.", "en": "Every morning, he looks at me with a smile.", "replace": "me" },
+            { "fr": "Pouvez-vous me donner ça s'il vous plaît?", "en": "Can you give me that please?", "replace": "me" },
+            { "fr": "Parle-moi de tes projets d'avenir.", "en": "Tell me about your future plans.", "replace": "me" },
+            { "fr": "Il me faut plus de temps pour réfléchir.", "en": "I need more time to think.", "replace": "me" },
+            { "fr": "Viens avec moi au parc cet après-midi.", "en": "Come with me to the park this afternoon.", "replace": "moi" }
+          ]
+        },
+        { "french": "se", "english": "oneself", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Tous les matins, il se lave le visage.", "en": "Every morning, he washes his face.", "replace": "se" },
+            { "fr": "Elle s'habille toujours avec élégance.", "en": "She always dresses with elegance.", "replace": "s" },
+            { "fr": "Les amis se parlent tous les jours.", "en": "Friends talk to each other every day.", "replace": "se" },
+            { "fr": "Il faut se reposer après une longue journée.", "en": "One must rest after a long day.", "replace": "se" },
+            { "fr": "Pourquoi se souvient-il toujours de ça?", "en": "Why does he always remember that?", "replace": "se" }
+          ]
+        },
+        { "french": "y", "english": "there", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Je vais y réfléchir ce soir.", "en": "I'm going to think about it tonight.", "replace": "y" },
+            { "fr": "Il y a beaucoup de monde dans la salle.", "en": "There are many people in the room.", "replace": "y" },
+            { "fr": "Vous devriez y penser sérieusement.", "en": "You should think about it seriously.", "replace": "y" },
+            { "fr": "J'y pense souvent pendant mes voyages.", "en": "I think about it often during my travels.", "replace": "y" },
+            { "fr": "Vas-y maintenant, tu es prêt!", "en": "Go ahead now, you are ready!", "replace": "y" }
+          ]
+        },
+        { "french": "lui", "english": "him/her", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Je lui ai parlé hier au téléphone.", "en": "I spoke to him/her yesterday on the phone.", "replace": "lui" },
+            { "fr": "Pouvez-vous lui donner ce message?", "en": "Can you give him/her this message?", "replace": "lui" },
+            { "fr": "Ce livre appartient à lui.", "en": "This book belongs to him/her.", "replace": "lui" },
+            { "fr": "Parle-lui de tes problèmes.", "en": "Talk to him/her about your problems.", "replace": "lui" },
+            { "fr": "Lui et moi sommes de bons amis.", "en": "Him/her and me are good friends.", "replace": "lui" }
+          ]
+        },
+        { "french": "ses", "english": "his/her", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Ses amis.", "en": "His/her friends.", "replace": "ses" },
+            { "fr": "Ses livres.", "en": "His/her books.", "replace": "ses" },
+            { "fr": "Ses idées.", "en": "His/her ideas.", "replace": "ses" },
+            { "fr": "Ses parents.", "en": "His/her parents.", "replace": "ses" },
+            { "fr": "Ses projets.", "en": "His/her projects.", "replace": "ses" }
+          ]
+        },
+        { "french": "et", "english": "and", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Toi et moi.", "en": "You and me.", "replace": "et" },
+            { "fr": "Pain et beurre.", "en": "Bread and butter.", "replace": "et" },
+            { "fr": "Un et un font deux.", "en": "One and one make two.", "replace": "et" },
+            { "fr": "De plus en plus.", "en": "More and more.", "replace": "plus" },
+            { "fr": "Ni l'un ni l'autre.", "en": "Neither one nor the other.", "replace": "ni" }
+          ]
+        },
+        { "french": "que", "english": "that", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Je pense que oui.", "en": "I think that yes.", "replace": "que" },
+            { "fr": "Plus que jamais.", "en": "More than ever.", "replace": "que" },
+            { "fr": "Il est plus grand que moi.", "en": "He is taller than me.", "replace": "que" },
+            { "fr": "Que faire?", "en": "What to do?", "replace": "que" },
+            { "fr": "Ne... que.", "en": "Only.", "replace": "que" }
+          ]
+        },
+        { "french": "mais", "english": "but", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Oui, mais non.", "en": "Yes, but no.", "replace": "mais" },
+            { "fr": "Pas moi, mais lui.", "en": "Not me, but him.", "replace": "mais" },
+            { "fr": "Mais enfin!", "en": "But finally!", "replace": "mais" },
+            { "fr": "Mais si!", "en": "But yes!", "replace": "mais" },
+            { "fr": "Mais pourquoi?", "en": "But why?", "replace": "mais" }
+          ]
+        },
+        { "french": "ne", "english": "not", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ne pas fumer.", "en": "Not to smoke.", "replace": "ne" },
+            { "fr": "Ne... plus.", "en": "No more.", "replace": "plus" },
+            { "fr": "Ne... jamais.", "en": "Never.", "replace": "jamais" },
+            { "fr": "Ne... que.", "en": "Only.", "replace": "que" },
+            { "fr": "Ne... personne.", "en": "No one.", "replace": "personne" }
+          ]
+        },
+        { "french": "si", "english": "if", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Si tu veux.", "en": "If you want.", "replace": "si" },
+            { "fr": "Et si on allait?", "en": "What if we went?", "replace": "si" },
+            { "fr": "Si seulement.", "en": "If only.", "replace": "si" },
+            { "fr": "Comme si.", "en": "As if.", "replace": "si" },
+            { "fr": "Si ce n'est.", "en": "Except.", "replace": "si" }
+          ]
+        },
+        { "french": "plus", "english": "more", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Plus de pain.", "en": "More bread.", "replace": "plus" },
+            { "fr": "De plus en plus.", "en": "More and more.", "replace": "plus" },
+            { "fr": "Plus tard.", "en": "Later.", "replace": "plus" },
+            { "fr": "Ne... plus.", "en": "No more.", "replace": "plus" },
+            { "fr": "Plus que ça.", "en": "More than that.", "replace": "plus" }
+          ]
+        },
+        { "french": "rien", "english": "nothing", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Rien du tout.", "en": "Nothing at all.", "replace": "rien" },
+            { "fr": "Il n'y a rien.", "en": "There is nothing.", "replace": "rien" },
+            { "fr": "Rien à dire.", "en": "Nothing to say.", "replace": "rien" },
+            { "fr": "Pour rien.", "en": "For nothing.", "replace": "rien" },
+            { "fr": "Rien de spécial.", "en": "Nothing special.", "replace": "rien" }
+          ]
+        },
+        { "french": "de", "english": "of/from", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Un verre d'eau.", "en": "A glass of water.", "replace": "d" },
+            { "fr": "Faire de son mieux.", "en": "To do one's best.", "replace": "de" },
+            { "fr": "De Paris.", "en": "From Paris.", "replace": "de" },
+            { "fr": "Penser de quelqu'un.", "en": "To think of someone.", "replace": "de" },
+            { "fr": "De plus en plus.", "en": "More and more.", "replace": "de" }
+          ]
+        },
+        { "french": "les", "english": "the", "word_type": "article", "gender": null,           "sentences": [
+            { "fr": "Les enfants.", "en": "The children.", "replace": "les" },
+            { "fr": "Les livres.", "en": "The books.", "replace": "les" },
+            { "fr": "Les uns et les autres.", "en": "Some and others.", "replace": "les" },
+            { "fr": "Tous les jours.", "en": "Every day.", "replace": "tous" },
+            { "fr": "Les miens.", "en": "Mine.", "replace": "les" }
+          ]
+        }
+      ]
+    },
+    {
+      "level_number": 19,
+      "level_name": "Advanced Expressions",
+      "suggestions": "Focus on complex sentence structures and advanced vocabulary for sophisticated communication",
+      "words": [
+        { "french": "puisque", "english": "since", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Puisque tu insistes tellement, nous irons au restaurant.", "en": "Since you insist so much, we will go to the restaurant.", "replace": "Puisque" },
+            { "fr": "Puisqu'il pleut ce matin, prenez votre parapluie.", "en": "Since it's raining this morning, take your umbrella.", "replace": "Puisqu" },
+            { "fr": "Puisque c'est comme ça, je vais partir maintenant.", "en": "Since that's how it is, I will leave now.", "replace": "Puisque" },
+            { "fr": "Puisque tu le dis, je te crois sur parole.", "en": "Since you say so, I believe you on your word.", "replace": "Puisque" },
+            { "fr": "Puisqu'on en parle, as-tu des nouvelles de Marie?", "en": "Since we're talking about it, do you have news from Marie?", "replace": "Puisqu" }
+          ]
+        },
+        { "french": "cependant", "english": "however", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Cependant, nous devons continuer notre travail.", "en": "However, we must continue our work.", "replace": "Cependant" },
+            { "fr": "Il est fatigué, cependant il continue à travailler.", "en": "He is tired, however he continues to work.", "replace": "cependant" },
+            { "fr": "Cependant, il y a un problème avec ce projet.", "en": "However, there is a problem with this project.", "replace": "Cependant" },
+            { "fr": "Malgré cela, cependant, l'espoir reste.", "en": "Despite that, however, hope remains.", "replace": "cependant" },
+            { "fr": "Cependant, je suis d'accord avec votre proposition.", "en": "However, I agree with your proposal.", "replace": "Cependant" }
+          ]
+        },
+        { "french": "ainsi", "english": "so", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ainsi soit-il, nous commencerons demain.", "en": "So be it, we will start tomorrow.", "replace": "Ainsi" },
+            { "fr": "Il travaille dur et ainsi obtient de bons résultats.", "en": "He works hard and thus obtains good results.", "replace": "ainsi" },
+            { "fr": "Ainsi que prévu, la réunion commence à 14h.", "en": "As planned, the meeting starts at 2 PM.", "replace": "ainsi" },
+            { "fr": "Pour ainsi dire, c'est une catastrophe totale.", "en": "So to speak, it's a total catastrophe.", "replace": "ainsi" },
+            { "fr": "Ainsi va la vie, pleine de surprises.", "en": "Such is life, full of surprises.", "replace": "Ainsi" }
+          ]
+        },
+        { "french": "davantage", "english": "more", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "J'aimerais en savoir encore davantage sur ce sujet.", "en": "I would like to know even more about this subject.", "replace": "davantage" },
+            { "fr": "Il nous faut davantage de temps pour finir.", "en": "We need more time to finish.", "replace": "davantage" },
+            { "fr": "Ce projet mérite davantage que ça.", "en": "This project deserves more than that.", "replace": "davantage" },
+            { "fr": "Pour davantage de sécurité, fermez la porte.", "en": "For more security, close the door.", "replace": "davantage" },
+            { "fr": "Nous devons faire davantage d'efforts collectifs.", "en": "We must make more collective efforts.", "replace": "davantage" }
+          ]
+        },
+        { "french": "tandis que", "english": "while", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Tandis que je travaille à mon bureau, elle lit un livre.", "en": "While I work at my desk, she reads a book.", "replace": "Tandis" },
+            { "fr": "Tandis qu'il pleut dehors, nous restons à l'intérieur.", "en": "While it rains outside, we stay inside.", "replace": "tandis" },
+            { "fr": "Elle danse avec grâce, tandis que lui chante magnifiquement.", "en": "She dances gracefully, while he sings magnificently.", "replace": "tandis" },
+            { "fr": "Tandis que c'est encore possible, réservez vos places.", "en": "While it's still possible, reserve your seats.", "replace": "tandis" },
+            { "fr": "Au contraire de ce qu'on pense, tandis que la vérité est différente.", "en": "Contrary to what one thinks, while the truth is different.", "replace": "tandis" }
+          ]
+        },
+        { "french": "parce que", "english": "because", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Je ne peux pas venir parce que j'ai beaucoup de travail.", "en": "I cannot come because I have a lot of work.", "replace": "parce" },
+            { "fr": "Nous sortons parce qu'il fait beau aujourd'hui.", "en": "We go out because the weather is nice today.", "replace": "parce" },
+            { "fr": "Je viens te voir parce que tu me manques beaucoup.", "en": "I come to see you because I miss you a lot.", "replace": "parce" },
+            { "fr": "Il a réussi parce qu'il a travaillé dur tous les jours.", "en": "He succeeded because he worked hard every day.", "replace": "parce" },
+            { "fr": "Simplement parce que j'aime cette musique, je l'écoute souvent.", "en": "Simply because I love this music, I listen to it often.", "replace": "parce" }
+          ]
+        },
+        { "french": "bien que", "english": "although", "word_type": "conjunction", "gender": null,           "sentences": [
+            { "fr": "Bien qu'il pleuve très fort, nous irons nous promener.", "en": "Although it rains very hard, we will go for a walk.", "replace": "Bien" },
+            { "fr": "Bien que très fatigué, il continue son travail.", "en": "Although very tired, he continues his work.", "replace": "bien" },
+            { "fr": "Elle vient nous voir bien qu'elle soit très occupée.", "en": "She comes to see us although she's very busy.", "replace": "bien" },
+            { "fr": "Bien qu'extrêmement important, ce projet prend du temps.", "en": "Although extremely important, this project takes time.", "replace": "bien" },
+            { "fr": "Malgré tout, bien qu'on ait essayé plusieurs fois.", "en": "Despite everything, although we tried several times.", "replace": "bien" }
+          ]
+        },
+        { "french": "puis", "english": "then", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Nous irons au cinéma et puis nous mangerons une pizza.", "en": "We will go to the cinema and then we will eat a pizza.", "replace": "puis" },
+            { "fr": "Il a travaillé dur, puis il s'est reposé.", "en": "He worked hard, then he rested.", "replace": "puis" },
+            { "fr": "D'abord nous étudions, puis nous sortons.", "en": "First we study, then we go out.", "replace": "puis" },
+            { "fr": "Tout se passait bien, puis soudain tout a changé.", "en": "Everything was going well, then suddenly everything changed.", "replace": "puis" },
+            { "fr": "Nous avons parlé longtemps et puis c'est tout.", "en": "We talked for a long time and that's all.", "replace": "puis" }
+          ]
+        },
+        { "french": "enfin", "english": "finally", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Après trois heures d'attente, nous sommes enfin arrivés.", "en": "After three hours of waiting, we finally arrived.", "replace": "enfin" },
+            { "fr": "Enfin seuls dans cette grande maison vide.", "en": "Finally alone in this big empty house.", "replace": "enfin" },
+            { "fr": "Le projet est enfin terminé après des mois de travail.", "en": "The project is finally finished after months of work.", "replace": "enfin" },
+            { "fr": "Il est enfin possible de réserver nos billets.", "en": "It is finally possible to reserve our tickets.", "replace": "enfin" },
+            { "fr": "Enfin et surtout, nous devons penser à l'avenir.", "en": "Finally and above all, we must think about the future.", "replace": "enfin" }
+          ]
+        },
+        { "french": "trop", "english": "too/too much", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Il est arrivé trop tard pour voir le début du film.", "en": "He arrived too late to see the beginning of the film.", "replace": "trop" },
+            { "fr": "Ne mange pas trop de chocolat, c'est mauvais pour toi.", "en": "Don't eat too much chocolate, it's bad for you.", "replace": "trop" },
+            { "fr": "Il y a trop de bruit dans cette rue la nuit.", "en": "There is too much noise in this street at night.", "replace": "trop" },
+            { "fr": "Cette robe est trop belle pour être portée seulement une fois.", "en": "This dress is too beautiful to be worn only once.", "replace": "trop" },
+            { "fr": "Ce problème est trop difficile pour moi seul.", "en": "This problem is too difficult for me alone.", "replace": "trop" }
+          ]
+        },
+        { "french": "encore", "english": "more/yet", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Pouvez-vous répéter ça encore une fois s'il vous plaît?", "en": "Can you repeat that once more please?", "replace": "encore" },
+            { "fr": "Le film n'est pas encore terminé, il reste 10 minutes.", "en": "The film is not yet finished, there are 10 minutes left.", "replace": "encore" },
+            { "fr": "Voulez-vous encore du café ou préférez-vous du thé?", "en": "Do you want more coffee or would you prefer tea?", "replace": "encore" },
+            { "fr": "Cette solution est encore mieux que la précédente.", "en": "This solution is even better than the previous one.", "replace": "encore" },
+            { "fr": "Il fait toujours encore très froid en hiver ici.", "en": "It is still very cold in winter here.", "replace": "encore" }
+          ]
+        },
+        { "french": "déjà", "english": "already", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "As-tu déjà fini tes devoirs pour demain?", "en": "Have you already finished your homework for tomorrow?", "replace": "déjà" },
+            { "fr": "Ne pars pas déjà, il n'est que 8 heures!", "en": "Don't leave already, it's only 8 o'clock!", "replace": "déjà" },
+            { "fr": "J'ai déjà vu ce film trois fois cette année.", "en": "I have already seen this film three times this year.", "replace": "déjà" },
+            { "fr": "C'est déjà beaucoup d'efforts pour une journée.", "en": "That's already a lot of effort for one day.", "replace": "déjà" },
+            { "fr": "Il est déjà tard, nous devrions rentrer.", "en": "It is already late, we should go home.", "replace": "déjà" }
+          ]
+        },
+        { "french": "vraiment", "english": "really", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ce tableau est vraiment beau, j'adore les couleurs.", "en": "This painting is really beautiful, I love the colors.", "replace": "vraiment" },
+            { "fr": "Vraiment? Tu penses que c'est une bonne idée?", "en": "Really? You think that's a good idea?", "replace": "vraiment" },
+            { "fr": "Je ne suis pas vraiment sûr de ma décision.", "en": "I'm not really sure about my decision.", "replace": "vraiment" },
+            { "fr": "Cette découverte est vraiment importante pour la science.", "en": "This discovery is really important for science.", "replace": "vraiment" },
+            { "fr": "Il cuisine vraiment très bien, ses plats sont délicieux.", "en": "He really cooks very well, his dishes are delicious.", "replace": "vraiment" }
+          ]
+        },
+        { "french": "tellement", "english": "so much", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ce paysage est tellement beau qu'il me coupe le souffle.", "en": "This landscape is so beautiful that it takes my breath away.", "replace": "tellement" },
+            { "fr": "Je ne suis pas tellement intéressé par ce sujet.", "en": "I'm not so much interested in this subject.", "replace": "tellement" },
+            { "fr": "Il y a tellement de monde dans ce restaurant ce soir.", "en": "There are so many people in this restaurant tonight.", "replace": "tellement" },
+            { "fr": "Après cette longue marche, je suis tellement fatigué.", "en": "After this long walk, I am so tired.", "replace": "tellement" },
+            { "fr": "Cette nouvelle voiture est tellement mieux que l'ancienne.", "en": "This new car is so much better than the old one.", "replace": "tellement" }
+          ]
+        },
+        { "french": "surtout", "english": "especially", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ne fais surtout pas cette erreur, c'est très important.", "en": "Especially don't make this mistake, it's very important.", "replace": "surtout" },
+            { "fr": "J'aime surtout le matin quand le soleil se lève.", "en": "I especially like the morning when the sun rises.", "replace": "surtout" },
+            { "fr": "Il faut faire attention surtout quand il fait froid.", "en": "You must be careful especially when it's cold.", "replace": "surtout" },
+            { "fr": "Et surtout, n'oubliez pas de fermer la porte.", "en": "And above all, don't forget to close the door.", "replace": "surtout" },
+            { "fr": "Ce cadeau est surtout pour toi, mon cher ami.", "en": "This gift is especially for you, my dear friend.", "replace": "surtout" }
+          ]
+        },
+        { "french": "presque", "english": "almost", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Le projet est presque fini, il ne reste que quelques détails.", "en": "The project is almost finished, there are only a few details left.", "replace": "presque" },
+            { "fr": "Il y a presque rien dans ce placard vide.", "en": "There is almost nothing in this empty closet.", "replace": "presque" },
+            { "fr": "Elle vient nous voir presque tous les week-ends.", "en": "She comes to see us almost every weekend.", "replace": "presque" },
+            { "fr": "Ces deux tableaux sont presque pareils en style.", "en": "These two paintings are almost the same in style.", "replace": "presque" },
+            { "fr": "Cette énigme est presque impossible à résoudre.", "en": "This riddle is almost impossible to solve.", "replace": "presque" }
+          ]
+        },
+        { "french": "soudain", "english": "suddenly", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Soudain, il se mit à pleuvoir très fort dehors.", "en": "Suddenly, it started raining very hard outside.", "replace": "Soudain" },
+            { "fr": "Tout à coup, la lumière s'est éteinte dans la salle.", "en": "All of a sudden, the light went out in the room.", "replace": "soudain" },
+            { "fr": "Il est devenu soudainement riche après avoir gagné au loto.", "en": "He suddenly became rich after winning the lottery.", "replace": "soudain" },
+            { "fr": "Un oiseau est apparu soudain dans le ciel bleu.", "en": "A bird suddenly appeared in the blue sky.", "replace": "soudain" },
+            { "fr": "La pièce est devenue soudain silencieuse quand il entra.", "en": "The room suddenly became silent when he entered.", "replace": "soudain" }
+          ]
+        },
+        { "french": "malheureusement", "english": "unfortunately", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Malheureusement, il pleut trop pour sortir aujourd'hui.", "en": "Unfortunately, it rains too much to go out today.", "replace": "malheureusement" },
+            { "fr": "Malheureusement, la réponse est non pour cette fois.", "en": "Unfortunately, the answer is no for this time.", "replace": "malheureusement" },
+            { "fr": "C'est malheureusement vrai que le projet a échoué.", "en": "It's unfortunately true that the project failed.", "replace": "malheureusement" },
+            { "fr": "Malheureusement pour lui, il a raté son examen.", "en": "Unfortunately for him, he failed his exam.", "replace": "malheureusement" },
+            { "fr": "Cette décision est malheureusement nécessaire pour avancer.", "en": "This decision is unfortunately necessary to move forward.", "replace": "malheureusement" }
+          ]
+        },
+        { "french": "heureusement", "english": "fortunately", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Heureusement, il fait beau pour notre pique-nique.", "en": "Fortunately, the weather is nice for our picnic.", "replace": "heureusement" },
+            { "fr": "Heureusement que tu as pensé à apporter ton parapluie!", "en": "Fortunately you thought to bring your umbrella!", "replace": "heureusement" },
+            { "fr": "Très heureusement, nous avons trouvé une solution rapide.", "en": "Very fortunately, we found a quick solution.", "replace": "heureusement" },
+            { "fr": "Heureusement pour nous, le train n'avait pas de retard.", "en": "Fortunately for us, the train was not delayed.", "replace": "heureusement" },
+            { "fr": "Il est heureusement possible de changer nos billets.", "en": "It is fortunately possible to change our tickets.", "replace": "heureusement" }
+          ]
+        }
+      ]
     }
   ]
 }
