@@ -119,6 +119,8 @@ function displayFilteredLevels(levelsWithProgress) {
 // Tab switching function
 function switchLevelSet(setNumber) {
   activeLevelSet = setNumber;
+  // Save the current set to localStorage
+  localStorage.setItem('activeLevelSet', setNumber.toString());
   updateTabState();
 
   // Get current levels data and redisplay
@@ -248,15 +250,24 @@ async function logout() {
 // Dashboard functions
 async function showDashboard() {
   showScreen('dashboardScreen');
-  
-  document.getElementById('usernameDisplay').textContent = 
+
+  document.getElementById('usernameDisplay').textContent =
     currentUser.username;
-  
+
   // Add reminder button
   if (typeof window !== 'undefined' && window.notifications) {
     window.notifications.addReminderButton();
   }
-  
+
+  // Load saved active level set from localStorage
+  const savedSet = localStorage.getItem('activeLevelSet');
+  if (savedSet && (savedSet === '1' || savedSet === '2')) {
+    activeLevelSet = parseInt(savedSet);
+  }
+
+  // Update tab visual state to match loaded set
+  updateTabState();
+
   try {
     // Get all levels with user progress
     const response = await fetch('/api/levels/user-progress');
