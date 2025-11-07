@@ -3228,9 +3228,10 @@
       ]
     },
     {
-      "level_number": 17,
-      "level_name": "Communication & Daily Life",
-      "suggestions": "Focus on expressing opinions, describing routines, and social interactions",
+      "level": 19,
+      "title": "Communication & Daily Life",
+      "description": "Focus on expressing opinions, describing routines, and social interactions",
+      "theme": "communication",
       "words": [
         { "french": "bien", "english": "well/good", "word_type": "adverb", "gender": null,           "sentences": [
             { "fr": "Il travaille bien.", "en": "He works well.", "replace": "bien" },
@@ -3320,14 +3321,6 @@
             { "fr": "Elle répond toujours.", "en": "She always answers.", "replace": "répond" }
           ]
         },
-        { "french": "écrire", "english": "to write", "word_type": "verb", "gender": null,           "sentences": [
-            { "fr": "Écrire une lettre.", "en": "To write a letter.", "replace": "Écrire" },
-            { "fr": "J'écris bien.", "en": "I write well.", "replace": "écris" },
-            { "fr": "Écrivez clairement.", "en": "Write clearly.", "replace": "Écrivez" },
-            { "fr": "Écrire un roman.", "en": "To write a novel.", "replace": "Écrire" },
-            { "fr": "Il écrit vite.", "en": "He writes fast.", "replace": "écrit" }
-          ]
-        },
         { "french": "donner", "english": "to give", "word_type": "verb", "gender": null,           "sentences": [
             { "fr": "Donner un cadeau.", "en": "To give a gift.", "replace": "Donner" },
             { "fr": "Il donne beaucoup.", "en": "He gives a lot.", "replace": "donne" },
@@ -3376,7 +3369,7 @@
             { "fr": "Quelque chose de beau.", "en": "Something beautiful.", "replace": "quelque chose" }
           ]
         },
-        { "french": "quelqu'un", "english": "someone/somebody", "word_type": "pronoun", "gender": null,           "sentences": [
+        { "french": "quelqu'un", "english": "someone", "word_type": "pronoun", "gender": null,           "sentences": [
             { "fr": "Quelqu'un a appelé.", "en": "Someone called.", "replace": "Quelqu'un" },
             { "fr": "Il y a quelqu'un.", "en": "There is someone.", "replace": "quelqu'un" },
             { "fr": "Quelqu'un d'autre.", "en": "Someone else.", "replace": "quelqu'un" },
@@ -3411,9 +3404,10 @@
       ]
     },
     {
-      "level_number": 18,
-      "level_name": "Essential Connectors",
-      "suggestions": "Focus on prepositions, pronouns, and conjunctions that connect ideas and build sentences",
+      "level": 20,
+      "title": "Essential Connectors",
+      "description": "Focus on prepositions, pronouns, and conjunctions that connect ideas and build sentences",
+      "theme": "grammar",
       "words": [
         { "french": "dans", "english": "in/into", "word_type": "preposition", "gender": null,           "sentences": [
             { "fr": "Il est dans la cuisine en ce moment.", "en": "He is in the kitchen right now.", "replace": "dans" },
@@ -3578,9 +3572,10 @@
       ]
     },
     {
-      "level_number": 19,
-      "level_name": "Advanced Expressions",
-      "suggestions": "Focus on complex sentence structures and advanced vocabulary for sophisticated communication",
+      "level": 21,
+      "title": "Advanced Expressions",
+      "description": "Focus on complex sentence structures and advanced vocabulary for sophisticated communication",
+      "theme": "advanced",
       "words": [
         { "french": "puisque", "english": "since", "word_type": "conjunction", "gender": null,           "sentences": [
             { "fr": "Puisque tu insistes tellement, nous irons au restaurant.", "en": "Since you insist so much, we will go to the restaurant.", "replace": "Puisque" },

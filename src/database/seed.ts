@@ -94,6 +94,7 @@ function seedDatabase() {
       if (!levelRow) {
         throw new Error(`Level ${word.level} not found`);
       }
+      console.log(`Upserting word: ${word.french} - ${word.english} - ${word.word_type} - ${levelRow.id} - ${word.gender}`);
 
       upsertWord.run(
         word.french,

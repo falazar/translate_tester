@@ -77,7 +77,16 @@ export class TextService {
 
     // Process each word and aggregate by base word
     wordCountMap.forEach((count, word) => {
-      const wordMapping = wordLevels.get(word);
+      let wordMapping = wordLevels.get(word);
+
+      // If word not found directly, try normalized verb infinitive
+      if (!wordMapping) {
+        const normalizedWord = this.normalizeVerbToInfinitive(word);
+        if (normalizedWord !== word) {
+          wordMapping = wordLevels.get(normalizedWord);
+        }
+      }
+
       if (wordMapping) {
         // This word is known - aggregate under its base word
         const baseWord = wordMapping.baseWord;
@@ -205,6 +214,94 @@ export class TextService {
   }
 
   /**
+   * Attempt to convert a conjugated verb form to its infinitive
+   * @param word - The conjugated verb form
+   * @returns The infinitive form if recognized, otherwise the original word
+   */
+  private static normalizeVerbToInfinitive(word: string): string {
+    const lowerWord = word.toLowerCase();
+
+    // Common -er verbs conjugations
+    if (lowerWord.endsWith('e') && !lowerWord.endsWith('se') && !lowerWord.endsWith('le') && !lowerWord.endsWith('ne')) {
+      return lowerWord + 'r';
+    }
+    if (lowerWord.endsWith('es')) {
+      return lowerWord.slice(0, -1) + 'r';
+    }
+    if (lowerWord.endsWith('ons')) {
+      return lowerWord.slice(0, -3) + 'r';
+    }
+    if (lowerWord.endsWith('ez')) {
+      return lowerWord.slice(0, -2) + 'r';
+    }
+    if (lowerWord.endsWith('ent')) {
+      return lowerWord.slice(0, -3) + 'r';
+    }
+
+    // Common -ir verbs conjugations
+    if (lowerWord.endsWith('is')) {
+      return lowerWord.slice(0, -2) + 'ir';
+    }
+    if (lowerWord.endsWith('it')) {
+      return lowerWord.slice(0, -2) + 'ir';
+    }
+    if (lowerWord.endsWith('issons')) {
+      return lowerWord.slice(0, -6) + 'ir';
+    }
+    if (lowerWord.endsWith('issez')) {
+      return lowerWord.slice(0, -5) + 'ir';
+    }
+    if (lowerWord.endsWith('issent')) {
+      return lowerWord.slice(0, -6) + 'ir';
+    }
+
+    // Common -re verbs conjugations
+    if (lowerWord.endsWith('s') && !lowerWord.endsWith('is') && !lowerWord.endsWith('as') && !lowerWord.endsWith('es')) {
+      return lowerWord.slice(0, -1) + 're';
+    }
+    if (lowerWord.endsWith('ds')) {
+      return lowerWord.slice(0, -2) + 're';
+    }
+    if (lowerWord.endsWith('ons') && lowerWord.length > 3) {
+      // Check if it's not an -er verb (already handled above)
+      return lowerWord.slice(0, -3) + 're';
+    }
+    if (lowerWord.endsWith('ez') && lowerWord.length > 2) {
+      // Check if it's not an -er verb
+      return lowerWord.slice(0, -2) + 're';
+    }
+    if (lowerWord.endsWith('ent') && lowerWord.length > 3) {
+      // Check if it's not an -er verb
+      return lowerWord.slice(0, -3) + 're';
+    }
+
+    // Common irregular verbs
+    if (lowerWord === 'suis') return 'être';
+    if (lowerWord === 'es') return 'être';
+    if (lowerWord === 'est') return 'être';
+    if (lowerWord === 'sommes') return 'être';
+    if (lowerWord === 'êtes') return 'être';
+    if (lowerWord === 'sont') return 'être';
+
+    if (lowerWord === 'ai') return 'avoir';
+    if (lowerWord === 'as') return 'avoir';
+    if (lowerWord === 'a') return 'avoir';
+    if (lowerWord === 'avons') return 'avoir';
+    if (lowerWord === 'avez') return 'avoir';
+    if (lowerWord === 'ont') return 'avoir';
+
+    if (lowerWord === 'suis') return 'aller';
+    if (lowerWord === 'vas') return 'aller';
+    if (lowerWord === 'va') return 'aller';
+    if (lowerWord === 'allons') return 'aller';
+    if (lowerWord === 'allez') return 'aller';
+    if (lowerWord === 'vont') return 'aller';
+
+    // Return original word if no pattern matches
+    return word;
+  }
+
+  /**
    * Add word mapping to map
    */
   private static addWordMapping(wordLevels: Map<string, { level: number; baseWord: string }>, word: string, level: number, baseWord: string): void {
@@ -234,8 +331,78 @@ export class TextService {
   private static highlightKnownWords(text: string, knownWords: string[]): string {
     let highlightedText = text;
     if (knownWords.length > 0) {
-      // Sort by length descending to avoid partial matches
-      const sortedKnownWords = knownWords.sort((a, b) => b.length - a.length);
+      // Create a set of all words that should be highlighted (including normalized forms)
+      const wordsToHighlight = new Set<string>(knownWords);
+
+      // Add potential conjugated forms that would normalize to known infinitives
+      knownWords.forEach(word => {
+        // For verbs, add common conjugated forms
+        if (word.endsWith('er') || word.endsWith('ir') || word.endsWith('re')) {
+          // Add some common conjugations
+          const stem = word.slice(0, -2); // Remove 'er', 'ir', or 're'
+
+          // -er verbs
+          if (word.endsWith('er')) {
+            wordsToHighlight.add(stem + 'e');    // je mange
+            wordsToHighlight.add(stem + 'es');   // tu manges
+            wordsToHighlight.add(stem + 'ons');  // nous mangeons
+            wordsToHighlight.add(stem + 'ez');   // vous mangez
+            wordsToHighlight.add(stem + 'ent');  // ils mangent
+          }
+
+          // -ir verbs
+          if (word.endsWith('ir')) {
+            wordsToHighlight.add(stem + 'is');     // tu finis
+            wordsToHighlight.add(stem + 'it');     // il finit
+            wordsToHighlight.add(stem + 'issons'); // nous finissons
+            wordsToHighlight.add(stem + 'issez');  // vous finissez
+            wordsToHighlight.add(stem + 'issent'); // ils finissent
+          }
+
+          // -re verbs
+          if (word.endsWith('re')) {
+            wordsToHighlight.add(stem + 's');    // tu vends
+            wordsToHighlight.add(stem + 'ds');   // il vend (some verbs)
+            wordsToHighlight.add(stem + 'ons');  // nous vendons
+            wordsToHighlight.add(stem + 'ez');   // vous vendez
+            wordsToHighlight.add(stem + 'ent');  // ils vendent
+          }
+        }
+
+        // Add irregular verb forms for common verbs
+        if (word === 'être') {
+          wordsToHighlight.add('suis');
+          wordsToHighlight.add('es');
+          wordsToHighlight.add('est');
+          wordsToHighlight.add('sommes');
+          wordsToHighlight.add('êtes');
+          wordsToHighlight.add('sont');
+        }
+        if (word === 'avoir') {
+          wordsToHighlight.add('ai');
+          wordsToHighlight.add('as');
+          wordsToHighlight.add('a');
+          wordsToHighlight.add('avons');
+          wordsToHighlight.add('avez');
+          wordsToHighlight.add('ont');
+        }
+        if (word === 'aller') {
+          wordsToHighlight.add('vas');
+          wordsToHighlight.add('va');
+          wordsToHighlight.add('allons');
+          wordsToHighlight.add('allez');
+          wordsToHighlight.add('vont');
+        }
+        if (word === 'faire') {
+          wordsToHighlight.add('fais');
+          wordsToHighlight.add('fait');
+          wordsToHighlight.add('faisons');
+          wordsToHighlight.add('faites');
+          wordsToHighlight.add('font');
+        }
+      });
+
+      const sortedKnownWords = Array.from(wordsToHighlight).sort((a, b) => b.length - a.length);
 
       // Process in chunks to avoid regex size limits (JavaScript regex can handle ~1000-2000 alternatives efficiently)
       const CHUNK_SIZE = 500;
