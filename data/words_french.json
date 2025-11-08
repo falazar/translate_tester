@@ -3500,9 +3500,7 @@
         { "french": "et", "english": "and", "word_type": "conjunction", "gender": null,           "sentences": [
             { "fr": "Toi et moi.", "en": "You and me.", "replace": "et" },
             { "fr": "Pain et beurre.", "en": "Bread and butter.", "replace": "et" },
-            { "fr": "Un et un font deux.", "en": "One and one make two.", "replace": "et" },
-            { "fr": "De plus en plus.", "en": "More and more.", "replace": "plus" },
-            { "fr": "Ni l'un ni l'autre.", "en": "Neither one nor the other.", "replace": "ni" }
+            { "fr": "Un et un font deux.", "en": "One and one make two.", "replace": "et" }
           ]
         },
         { "french": "que", "english": "that", "word_type": "conjunction", "gender": null,           "sentences": [
@@ -3565,7 +3563,7 @@
             { "fr": "Les enfants.", "en": "The children.", "replace": "les" },
             { "fr": "Les livres.", "en": "The books.", "replace": "les" },
             { "fr": "Les uns et les autres.", "en": "Some and others.", "replace": "les" },
-            { "fr": "Tous les jours.", "en": "Every day.", "replace": "tous" },
+            { "fr": "Tous les jours.", "en": "Every day.", "replace": "les" },
             { "fr": "Les miens.", "en": "Mine.", "replace": "les" }
           ]
         }
@@ -3601,7 +3599,7 @@
             { "fr": "Ainsi va la vie, pleine de surprises.", "en": "Such is life, full of surprises.", "replace": "Ainsi" }
           ]
         },
-        { "french": "davantage", "english": "more", "word_type": "adverb", "gender": null,           "sentences": [
+        { "french": "davantage", "english": "more(formal)", "word_type": "adverb", "gender": null,           "sentences": [
             { "fr": "J'aimerais en savoir encore davantage sur ce sujet.", "en": "I would like to know even more about this subject.", "replace": "davantage" },
             { "fr": "Il nous faut davantage de temps pour finir.", "en": "We need more time to finish.", "replace": "davantage" },
             { "fr": "Ce projet mérite davantage que ça.", "en": "This project deserves more than that.", "replace": "davantage" },
@@ -3707,7 +3705,6 @@
         },
         { "french": "soudain", "english": "suddenly", "word_type": "adverb", "gender": null,           "sentences": [
             { "fr": "Soudain, il se mit à pleuvoir très fort dehors.", "en": "Suddenly, it started raining very hard outside.", "replace": "Soudain" },
-            { "fr": "Tout à coup, la lumière s'est éteinte dans la salle.", "en": "All of a sudden, the light went out in the room.", "replace": "soudain" },
             { "fr": "Il est devenu soudainement riche après avoir gagné au loto.", "en": "He suddenly became rich after winning the lottery.", "replace": "soudain" },
             { "fr": "Un oiseau est apparu soudain dans le ciel bleu.", "en": "A bird suddenly appeared in the blue sky.", "replace": "soudain" },
             { "fr": "La pièce est devenue soudain silencieuse quand il entra.", "en": "The room suddenly became silent when he entered.", "replace": "soudain" }
@@ -3727,6 +3724,886 @@
             { "fr": "Très heureusement, nous avons trouvé une solution rapide.", "en": "Very fortunately, we found a quick solution.", "replace": "heureusement" },
             { "fr": "Heureusement pour nous, le train n'avait pas de retard.", "en": "Fortunately for us, the train was not delayed.", "replace": "heureusement" },
             { "fr": "Il est heureusement possible de changer nos billets.", "en": "It is fortunately possible to change our tickets.", "replace": "heureusement" }
+          ]
+        },
+        { "french": "toujours", "english": "always", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Elle est toujours souriante et pleine d'énergie.", "en": "She is always smiling and full of energy.", "replace": "toujours" },
+            { "fr": "Nous sommes toujours là pour vous aider en cas de besoin.", "en": "We are always here to help you if you need it.", "replace": "toujours" },
+            { "fr": "Comme toujours, il arrive exactement à l'heure.", "en": "As always, he arrives exactly on time.", "replace": "toujours" },
+            { "fr": "Il travaille toujours très dur pour réussir ses projets.", "en": "He always works very hard to succeed in his projects.", "replace": "toujours" },
+            { "fr": "Malgré les difficultés, elle reste toujours optimiste.", "en": "Despite the difficulties, she remains always optimistic.", "replace": "toujours" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "title": "People & Counting",
+      "description": "Essential vocabulary for talking about people and numbers",
+      "theme": "people_counting",
+      "words": [
+        { "french": "femme", "english": "woman", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La femme porte une belle robe rouge.", "en": "The woman is wearing a beautiful red dress.", "replace": "femme" },
+            { "fr": "Cette femme travaille comme médecin.", "en": "This woman works as a doctor.", "replace": "femme" },
+            { "fr": "La femme sourit à son enfant.", "en": "The woman smiles at her child.", "replace": "femme" },
+            { "fr": "Une femme intelligente et courageuse.", "en": "An intelligent and courageous woman.", "replace": "femme" },
+            { "fr": "La femme parle trois langues différentes.", "en": "The woman speaks three different languages.", "replace": "femme" }
+          ]
+        },
+        { "french": "fille", "english": "girl/daughter", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La fille joue dans le jardin avec son chien.", "en": "The girl plays in the garden with her dog.", "replace": "fille" },
+            { "fr": "Ma fille aime beaucoup la musique classique.", "en": "My daughter really likes classical music.", "replace": "fille" },
+            { "fr": "Cette fille est très sportive et rapide.", "en": "This girl is very athletic and fast.", "replace": "fille" },
+            { "fr": "La fille aide sa mère à préparer le dîner.", "en": "The girl helps her mother prepare dinner.", "replace": "fille" },
+            { "fr": "Sa fille étudie les mathématiques à l'université.", "en": "His daughter studies mathematics at university.", "replace": "fille" }
+          ]
+        },
+        { "french": "gens", "english": "people", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Les gens marchent rapidement dans la rue.", "en": "People walk quickly in the street.", "replace": "gens" },
+            { "fr": "Beaucoup de gens aiment voyager en été.", "en": "Many people like to travel in summer.", "replace": "gens" },
+            { "fr": "Ces gens sont très gentils et accueillants.", "en": "These people are very kind and welcoming.", "replace": "gens" },
+            { "fr": "Les gens parlent différentes langues ici.", "en": "People speak different languages here.", "replace": "gens" },
+            { "fr": "Tous les gens ont besoin d'amis proches.", "en": "All people need close friends.", "replace": "gens" }
+          ]
+        },
+        { "french": "leur", "english": "their", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Les enfants aiment beaucoup leur jardin.", "en": "The children really like their garden.", "replace": "leur" },
+            { "fr": "Ils montrent leur nouveau appartement aux amis.", "en": "They show their new apartment to friends.", "replace": "leur" },
+            { "fr": "Nous respectons leur décision importante.", "en": "We respect their important decision.", "replace": "leur" },
+            { "fr": "Les étudiants finissent leur travail scolaire.", "en": "The students finish their school work.", "replace": "leur" },
+            { "fr": "Elle explique leur projet aux collègues.", "en": "She explains their project to colleagues.", "replace": "leur" }
+          ]
+        },
+        { "french": "toi", "english": "you", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Toi, tu es toujours très ponctuel.", "en": "You, you are always very punctual.", "replace": "toi" },
+            { "fr": "C'est toi qui as préparé ce délicieux repas.", "en": "It's you who prepared this delicious meal.", "replace": "toi" },
+            { "fr": "Toi et moi, nous sommes de bons amis.", "en": "You and I, we are good friends.", "replace": "toi" },
+            { "fr": "Je pense souvent à toi pendant les vacances.", "en": "I often think of you during vacations.", "replace": "toi" },
+            { "fr": "Toi, tu comprends toujours mes problèmes.", "en": "You, you always understand my problems.", "replace": "toi" }
+          ]
+        },
+        { "french": "te", "english": "you", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Je te vois souvent au café du coin.", "en": "I see you often at the corner café.", "replace": "te" },
+            { "fr": "Il te téléphone tous les soirs à 20h.", "en": "He calls you every evening at 8 PM.", "replace": "te" },
+            { "fr": "Nous te proposons cette belle opportunité.", "en": "We offer you this beautiful opportunity.", "replace": "te" },
+            { "fr": "Elle te montre ses nouvelles photos.", "en": "She shows you her new photos.", "replace": "te" },
+            { "fr": "Je te donne ce livre intéressant à lire.", "en": "I give you this interesting book to read.", "replace": "te" }
+          ]
+        },
+        { "french": "on", "english": "one/we", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "On dit que le temps change souvent ici.", "en": "One says that the weather changes often here.", "replace": "on" },
+            { "fr": "On mange bien dans ce restaurant français.", "en": "One eats well in this French restaurant.", "replace": "on" },
+            { "fr": "On apprend beaucoup en voyageant partout.", "en": "One learns a lot by traveling everywhere.", "replace": "on" },
+            { "fr": "Comment on fait pour aller à la gare?", "en": "How does one get to the train station?", "replace": "on" },
+            { "fr": "On devrait partir tôt demain matin.", "en": "One should leave early tomorrow morning.", "replace": "on" }
+          ]
+        },
+        { "french": "deux", "english": "two", "word_type": "number", "gender": null,           "sentences": [
+            { "fr": "J'ai deux frères et une sœur cadette.", "en": "I have two brothers and one younger sister.", "replace": "deux" },
+            { "fr": "Il faut deux heures pour finir ce travail.", "en": "It takes two hours to finish this work.", "replace": "deux" },
+            { "fr": "Nous avons visité deux musées intéressants.", "en": "We visited two interesting museums.", "replace": "deux" },
+            { "fr": "Elle a deux belles robes dans son armoire.", "en": "She has two beautiful dresses in her wardrobe.", "replace": "deux" },
+            { "fr": "Deux enfants jouent dans le parc voisin.", "en": "Two children play in the neighboring park.", "replace": "deux" }
+          ]
+        },
+        { "french": "trois", "english": "three", "word_type": "number", "gender": null,           "sentences": [
+            { "fr": "Il y a trois saisons principales en France.", "en": "There are three main seasons in France.", "replace": "trois" },
+            { "fr": "Nous avons invité trois amis à dîner.", "en": "We invited three friends for dinner.", "replace": "trois" },
+            { "fr": "Trois cafés et deux croissants, s'il vous plaît.", "en": "Three coffees and two croissants, please.", "replace": "trois" },
+            { "fr": "Elle travaille trois jours par semaine ici.", "en": "She works three days a week here.", "replace": "trois" },
+            { "fr": "Trois étudiants participent au projet spécial.", "en": "Three students participate in the special project.", "replace": "trois" }
+          ]
+        },
+        { "french": "quelque", "english": "some", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il y a quelque chose d'intéressant ici.", "en": "There is something interesting here.", "replace": "quelque" },
+            { "fr": "Quelques amis viennent nous rendre visite.", "en": "Some friends are coming to visit us.", "replace": "quelque" },
+            { "fr": "Elle a quelques idées pour améliorer le projet.", "en": "She has some ideas to improve the project.", "replace": "quelque" },
+            { "fr": "Quelques minutes suffisent pour comprendre.", "en": "Some minutes are enough to understand.", "replace": "quelque" },
+            { "fr": "Il reste quelque espoir malgré les difficultés.", "en": "There remains some hope despite the difficulties.", "replace": "quelque" }
+          ]
+        },
+        { "french": "moins", "english": "less", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Ce travail prend moins de temps que prévu.", "en": "This work takes less time than expected.", "replace": "moins" },
+            { "fr": "Il fait moins froid aujourd'hui qu'hier.", "en": "It is less cold today than yesterday.", "replace": "moins" },
+            { "fr": "Moins de bruit permet de mieux se concentrer.", "en": "Less noise allows better concentration.", "replace": "moins" },
+            { "fr": "Elle mange moins de sucre maintenant.", "en": "She eats less sugar now.", "replace": "moins" },
+            { "fr": "Il y a moins de monde dans les rues ce soir.", "en": "There are fewer people in the streets tonight.", "replace": "moins" }
+          ]
+        },
+        { "french": "première", "english": "first", "word_type": "adjective", "gender": "la",           "sentences": [
+            { "fr": "C'est sa première fois à Paris cette année.", "en": "It's her first time in Paris this year.", "replace": "première" },
+            { "fr": "La première leçon est toujours la plus importante.", "en": "The first lesson is always the most important.", "replace": "première" },
+            { "fr": "Elle a gagné la première place au concours.", "en": "She won first place in the competition.", "replace": "première" },
+            { "fr": "C'est la première fois que je visite ce musée.", "en": "It's the first time I visit this museum.", "replace": "première" },
+            { "fr": "La première étape du voyage est très belle.", "en": "The first stage of the trip is very beautiful.", "replace": "première" }
+          ]
+        },
+        { "french": "taire", "english": "to keep quiet", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il faut taire cette information secrète.", "en": "One must keep this secret information quiet.", "replace": "taire" },
+            { "fr": "Elle sait taire ses opinions quand nécessaire.", "en": "She knows how to keep her opinions quiet when necessary.", "replace": "taire" },
+            { "fr": "Tais-toi et écoute attentivement la leçon.", "en": "Keep quiet and listen carefully to the lesson.", "replace": "taire" },
+            { "fr": "Il vaut mieux taire certains secrets de famille.", "en": "It's better to keep certain family secrets quiet.", "replace": "taire" },
+            { "fr": "Les enfants doivent taire leurs disputes bruyantes.", "en": "Children must keep their noisy arguments quiet.", "replace": "taire" }
+          ]
+        },
+        { "french": "rentrer", "english": "to return", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je rentre chez moi après le travail.", "en": "I return home after work.", "replace": "rentre" },
+            { "fr": "Il faut rentrer avant la nuit tombée.", "en": "One must return before nightfall.", "replace": "rentrer" },
+            { "fr": "Nous rentrons de voyage demain matin.", "en": "We return from our trip tomorrow morning.", "replace": "rentrons" },
+            { "fr": "Elle rentre tard du bureau ce soir.", "en": "She returns late from the office tonight.", "replace": "rentre" },
+            { "fr": "Les enfants doivent rentrer pour le dîner.", "en": "The children must return for dinner.", "replace": "rentrer" }
+          ]
+        },
+        { "french": "ressembler", "english": "to resemble", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle ressemble beaucoup à sa mère.", "en": "She resembles her mother a lot.", "replace": "ressemble" },
+            { "fr": "Ce tableau ressemble à une œuvre de Picasso.", "en": "This painting resembles a work by Picasso.", "replace": "ressemble" },
+            { "fr": "Tu ressembles à ton père quand tu souris.", "en": "You resemble your father when you smile.", "replace": "ressembles" },
+            { "fr": "Ces deux villes se ressemblent énormément.", "en": "These two cities resemble each other enormously.", "replace": "ressemblent" },
+            { "fr": "Il ressemble à un acteur célèbre du cinéma.", "en": "He resembles a famous movie actor.", "replace": "ressemble" }
+          ]
+        },
+        { "french": "recevoir", "english": "to receive", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je reçois souvent des lettres de mes amis.", "en": "I often receive letters from my friends.", "replace": "reçois" },
+            { "fr": "Elle a reçu un beau cadeau pour son anniversaire.", "en": "She received a beautiful gift for her birthday.", "replace": "reçu" },
+            { "fr": "Nous recevons des visiteurs importants demain.", "en": "We are receiving important visitors tomorrow.", "replace": "recevons" },
+            { "fr": "Il reçoit toujours de bonnes notes à l'école.", "en": "He always receives good grades at school.", "replace": "reçoit" },
+            { "fr": "Vous recevrez une réponse dans quelques jours.", "en": "You will receive a response in a few days.", "replace": "recevrez" }
+          ]
+        },
+        { "french": "laisser", "english": "to let/leave", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Laisse-moi t'aider avec tes bagages.", "en": "Let me help you with your luggage.", "replace": "Laisse" },
+            { "fr": "Elle laisse toujours ses clés sur la table.", "en": "She always leaves her keys on the table.", "replace": "laisse" },
+            { "fr": "Nous laissons les enfants jouer dans le jardin.", "en": "We let the children play in the garden.", "replace": "laissons" },
+            { "fr": "Il laisse son travail à 17h chaque jour.", "en": "He leaves his work at 5 PM every day.", "replace": "laisse" },
+            { "fr": "Ne laisse pas la porte ouverte, s'il te plaît.", "en": "Don't leave the door open, please.", "replace": "laisse" }
+          ]
+        },
+        { "french": "accepter", "english": "to accept", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "J'accepte ton invitation avec plaisir.", "en": "I accept your invitation with pleasure.", "replace": "accepte" },
+            { "fr": "Elle accepte toujours les défis difficiles.", "en": "She always accepts difficult challenges.", "replace": "accepte" },
+            { "fr": "Nous acceptons votre proposition commerciale.", "en": "We accept your business proposal.", "replace": "acceptons" },
+            { "fr": "Il n'accepte pas facilement les critiques.", "en": "He doesn't easily accept criticism.", "replace": "accepte" },
+            { "fr": "Acceptez-vous de m'accompagner au cinéma?", "en": "Do you accept to accompany me to the cinema?", "replace": "Acceptez" }
+          ]
+        },
+        { "french": "refuser", "english": "to refuse", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je refuse poliment leur invitation.", "en": "I politely refuse their invitation.", "replace": "refuse" },
+            { "fr": "Elle refuse toujours de manger des légumes.", "en": "She always refuses to eat vegetables.", "replace": "refuse" },
+            { "fr": "Nous refusons cette offre trop basse.", "en": "We refuse this offer that's too low.", "replace": "refusons" },
+            { "fr": "Il refuse d'admettre ses erreurs.", "en": "He refuses to admit his mistakes.", "replace": "refuse" },
+            { "fr": "Ne refusez pas cette opportunité unique.", "en": "Don't refuse this unique opportunity.", "replace": "refusez" }
+          ]
+        },
+        { "french": "l'homme", "english": "man", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Cet homme travaille dur tous les jours.", "en": "This man works hard every day.", "replace": "homme" },
+            { "fr": "L'homme est arrivé à l'heure au rendez-vous.", "en": "The man arrived on time for the appointment.", "replace": "homme" },
+            { "fr": "Mon père est un homme très gentil.", "en": "My father is a very kind man.", "replace": "homme" },
+            { "fr": "Cet homme aide toujours ses voisins.", "en": "This man always helps his neighbors.", "replace": "homme" },
+            { "fr": "L'homme portait un chapeau élégant.", "en": "The man wore an elegant hat.", "replace": "homme" }
+          ]
+        },
+        { "french": "le garçon", "english": "boy", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le garçon joue au football dans le parc.", "en": "The boy plays soccer in the park.", "replace": "garçon" },
+            { "fr": "Ce garçon est très intelligent et curieux.", "en": "This boy is very intelligent and curious.", "replace": "garçon" },
+            { "fr": "Le garçon aide sa mère à la cuisine.", "en": "The boy helps his mother in the kitchen.", "replace": "garçon" },
+            { "fr": "Mon petit garçon aime les histoires.", "en": "My little boy loves stories.", "replace": "garçon" },
+            { "fr": "Le garçon court très vite.", "en": "The boy runs very fast.", "replace": "garçon" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "title": "Location & Position",
+      "description": "Essential prepositions and location words for describing where things are",
+      "theme": "location_position",
+      "words": [
+        { "french": "au", "english": "to the", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Je vais au cinéma ce soir avec mes amis.", "en": "I am going to the cinema tonight with my friends.", "replace": "au" },
+            { "fr": "Le livre est au milieu de la table.", "en": "The book is in the middle of the table.", "replace": "au" },
+            { "fr": "Nous habitons au centre-ville de Paris.", "en": "We live in the city center of Paris.", "replace": "au" },
+            { "fr": "Il travaille au bureau jusqu'à 18h.", "en": "He works at the office until 6 PM.", "replace": "au" },
+            { "fr": "Les enfants jouent au jardin derrière la maison.", "en": "The children play in the garden behind the house.", "replace": "au" }
+          ]
+        },
+        { "french": "du", "english": "of the", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Voici du pain frais pour le petit-déjeuner.", "en": "Here is some fresh bread for breakfast.", "replace": "du" },
+            { "fr": "Il revient du marché avec des légumes.", "en": "He returns from the market with vegetables.", "replace": "du" },
+            { "fr": "C'est du vin rouge de Bordeaux.", "en": "It's red wine from Bordeaux.", "replace": "du" },
+            { "fr": "Elle sort du bureau à 17h tous les jours.", "en": "She leaves the office at 5 PM every day.", "replace": "du" },
+            { "fr": "Nous mangeons du fromage avec plaisir.", "en": "We eat cheese with pleasure.", "replace": "du" }
+          ]
+        },
+        { "french": "par", "english": "by/through", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Il passe par la porte principale chaque matin.", "en": "He passes through the main door every morning.", "replace": "par" },
+            { "fr": "Nous voyageons par le train cette fois.", "en": "We travel by train this time.", "replace": "par" },
+            { "fr": "Le vent souffle par la fenêtre ouverte.", "en": "The wind blows through the open window.", "replace": "par" },
+            { "fr": "Elle apprend par cœur tous ses poèmes.", "en": "She learns all her poems by heart.", "replace": "par" },
+            { "fr": "Par beau temps, nous sortons nous promener.", "en": "In good weather, we go out for a walk.", "replace": "par" }
+          ]
+        },
+        { "french": "sous", "english": "under", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Le chat dort sous le lit confortable.", "en": "The cat sleeps under the comfortable bed.", "replace": "sous" },
+            { "fr": "Les clés sont sous le livre sur la table.", "en": "The keys are under the book on the table.", "replace": "sous" },
+            { "fr": "Il travaille sous la pluie battante.", "en": "He works under the pouring rain.", "replace": "sous" },
+            { "fr": "Les poissons nagent sous l'eau claire.", "en": "The fish swim under the clear water.", "replace": "sous" },
+            { "fr": "Sous ce grand arbre, nous nous reposons.", "en": "Under this big tree, we rest.", "replace": "sous" }
+          ]
+        },
+        { "french": "avant", "english": "before", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Avant le dîner, nous prenons l'apéritif.", "en": "Before dinner, we have an aperitif.", "replace": "avant" },
+            { "fr": "Il faut arriver avant 20h pour la réunion.", "en": "One must arrive before 8 PM for the meeting.", "replace": "avant" },
+            { "fr": "Avant tout, nous devons vérifier les documents.", "en": "Above all, we must check the documents.", "replace": "avant" },
+            { "fr": "Elle est partie avant la fin du film.", "en": "She left before the end of the movie.", "replace": "avant" },
+            { "fr": "Avant de dormir, il lit toujours un livre.", "en": "Before sleeping, he always reads a book.", "replace": "avant" }
+          ]
+        },
+        { "french": "chez", "english": "at the home of", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Nous dînons chez nos grands-parents dimanche.", "en": "We have dinner at our grandparents' house on Sunday.", "replace": "chez" },
+            { "fr": "Elle travaille chez un avocat célèbre.", "en": "She works for a famous lawyer.", "replace": "chez" },
+            { "fr": "Venez chez moi pour prendre le café.", "en": "Come to my house to have coffee.", "replace": "chez" },
+            { "fr": "Chez les Français, c'est une tradition importante.", "en": "Among the French, it's an important tradition.", "replace": "chez" },
+            { "fr": "Il habite chez ses parents pendant les vacances.", "en": "He lives at his parents' house during vacations.", "replace": "chez" }
+          ]
+        },
+        { "french": "aux", "english": "to the", "word_type": "preposition", "gender": null,           "sentences": [
+            { "fr": "Nous allons aux États-Unis cet été.", "en": "We are going to the United States this summer.", "replace": "aux" },
+            { "fr": "Les enfants jouent aux jeux vidéo.", "en": "The children play video games.", "replace": "aux" },
+            { "fr": "Elle répond aux questions des journalistes.", "en": "She answers the journalists' questions.", "replace": "aux" },
+            { "fr": "Nous participons aux cours de danse le samedi.", "en": "We participate in dance classes on Saturday.", "replace": "aux" },
+            { "fr": "Il s'intéresse aux sciences et à la technologie.", "en": "He is interested in sciences and technology.", "replace": "aux" }
+          ]
+        },
+        { "french": "lieu", "english": "place", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Ce restaurant est un lieu très agréable.", "en": "This restaurant is a very pleasant place.", "replace": "lieu" },
+            { "fr": "Au lieu de sortir, restons à la maison.", "en": "Instead of going out, let's stay at home.", "replace": "lieu" },
+            { "fr": "C'est le lieu idéal pour une fête d'anniversaire.", "en": "It's the ideal place for a birthday party.", "replace": "lieu" },
+            { "fr": "Ils cherchent un lieu calme pour travailler.", "en": "They are looking for a quiet place to work.", "replace": "lieu" },
+            { "fr": "Ce lieu historique attire beaucoup de touristes.", "en": "This historic place attracts many tourists.", "replace": "lieu" }
+          ]
+        },
+        { "french": "sol", "english": "ground/floor", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le chat dort sur le sol chaud de la cuisine.", "en": "The cat sleeps on the warm kitchen floor.", "replace": "sol" },
+            { "fr": "Le sol de cette région est très fertile.", "en": "The soil of this region is very fertile.", "replace": "sol" },
+            { "fr": "Nettoie le sol avant que les invités arrivent.", "en": "Clean the floor before the guests arrive.", "replace": "sol" },
+            { "fr": "Les enfants jouent sur le sol du salon.", "en": "The children play on the living room floor.", "replace": "sol" },
+            { "fr": "Le sol est couvert de neige en hiver.", "en": "The ground is covered with snow in winter.", "replace": "sol" }
+          ]
+        },
+        { "french": "véranda", "english": "veranda", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Nous prenons le café sur la véranda chaque matin.", "en": "We have coffee on the veranda every morning.", "replace": "véranda" },
+            { "fr": "La véranda offre une belle vue sur le jardin.", "en": "The veranda offers a beautiful view of the garden.", "replace": "véranda" },
+            { "fr": "Il fait bon s'asseoir sur la véranda en été.", "en": "It's nice to sit on the veranda in summer.", "replace": "véranda" },
+            { "fr": "La véranda est décorée de plantes vertes.", "en": "The veranda is decorated with green plants.", "replace": "véranda" },
+            { "fr": "Nous dînons souvent sur la véranda les soirs d'été.", "en": "We often dine on the veranda on summer evenings.", "replace": "véranda" }
+          ]
+        },
+        { "french": "entrer", "english": "to enter", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Entrez dans cette belle maison ancienne.", "en": "Enter this beautiful old house.", "replace": "Entrez" },
+            { "fr": "Elle entre dans la salle de classe à 8h.", "en": "She enters the classroom at 8 AM.", "replace": "entre" },
+            { "fr": "Nous entrons dans une nouvelle ère technologique.", "en": "We are entering a new technological era.", "replace": "entrons" },
+            { "fr": "Il entre toujours par la porte principale.", "en": "He always enters through the main door.", "replace": "entre" },
+            { "fr": "Entrez sans frapper, la porte est ouverte.", "en": "Come in without knocking, the door is open.", "replace": "Entrez" }
+          ]
+        },
+        { "french": "sortir", "english": "to go out/exit", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je sors faire les courses tous les samedis.", "en": "I go out shopping every Saturday.", "replace": "sors" },
+            { "fr": "Elle sort de la maison à 7h du matin.", "en": "She leaves the house at 7 AM.", "replace": "sort" },
+            { "fr": "Nous sortons dîner au restaurant ce soir.", "en": "We are going out to dinner at the restaurant tonight.", "replace": "sortons" },
+            { "fr": "Il sort toujours son chien le soir.", "en": "He always takes his dog out in the evening.", "replace": "sort" },
+            { "fr": "Ne sortez pas sans votre manteau, il fait froid.", "en": "Don't go out without your coat, it's cold.", "replace": "sortez" }
+          ]
+        },
+        { "french": "tomber", "english": "to fall", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Attention, ne tombez pas dans l'escalier!", "en": "Be careful, don't fall down the stairs!", "replace": "tombez" },
+            { "fr": "La pluie tombe doucement sur les toits.", "en": "The rain falls gently on the roofs.", "replace": "tombe" },
+            { "fr": "Elle tombe souvent amoureuse des mauvaises personnes.", "en": "She often falls in love with the wrong people.", "replace": "tombe" },
+            { "fr": "Les feuilles tombent des arbres en automne.", "en": "The leaves fall from the trees in autumn.", "replace": "tombent" },
+            { "fr": "Il tombe malade chaque hiver.", "en": "He falls ill every winter.", "replace": "tombe" }
+          ]
+        },
+        { "french": "se lever", "english": "to get up", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je me lève tôt tous les matins à 6h.", "en": "I get up early every morning at 6 AM.", "replace": "lève" },
+            { "fr": "Elle se lève toujours du bon pied.", "en": "She always gets up on the right side of the bed.", "replace": "lève" },
+            { "fr": "Nous nous levons quand le professeur entre.", "en": "We stand up when the teacher enters.", "replace": "levons" },
+            { "fr": "Il se lève lentement après sa sieste.", "en": "He gets up slowly after his nap.", "replace": "lève" },
+            { "fr": "Levez-vous quand on vous présente quelqu'un.", "en": "Stand up when someone is introduced to you.", "replace": "Levez" }
+          ]
+        },
+        { "french": "s'asseoir", "english": "to sit down", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Asseyez-vous à côté de votre ami.", "en": "Sit down next to your friend.", "replace": "Asseyez" },
+            { "fr": "Elle s'assoit toujours au premier rang.", "en": "She always sits in the front row.", "replace": "assoit" },
+            { "fr": "Nous nous asseyons autour de la table.", "en": "We sit around the table.", "replace": "asseyons" },
+            { "fr": "Il s'assoit sur le banc du parc.", "en": "He sits on the park bench.", "replace": "assoit" },
+            { "fr": "Ne vous asseyez pas sur cette chaise fragile.", "en": "Don't sit on this fragile chair.", "replace": "asseyez" }
+          ]
+        },
+        { "french": "se coucher", "english": "to go to bed", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je me couche tôt pour être en forme.", "en": "I go to bed early to be in good shape.", "replace": "couche" },
+            { "fr": "Elle se couche toujours après minuit.", "en": "She always goes to bed after midnight.", "replace": "couche" },
+            { "fr": "Nous nous couchons quand les enfants dorment.", "en": "We go to bed when the children are asleep.", "replace": "couchons" },
+            { "fr": "Il se couche sur le canapé pour regarder la télé.", "en": "He lies down on the couch to watch TV.", "replace": "couche" },
+            { "fr": "Couche-toi maintenant, il est tard.", "en": "Go to bed now, it's late.", "replace": "Couche" }
+          ]
+        },
+        { "french": "se promener", "english": "to take a walk", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je me promène souvent dans le parc le dimanche.", "en": "I often take a walk in the park on Sundays.", "replace": "promène" },
+            { "fr": "Elle se promène avec son chien tous les soirs.", "en": "She takes a walk with her dog every evening.", "replace": "promène" },
+            { "fr": "Nous nous promenons le long de la rivière.", "en": "We take a walk along the river.", "replace": "promenons" },
+            { "fr": "Ils se promènent en ville pendant les vacances.", "en": "They take walks in the city during vacations.", "replace": "promènent" },
+            { "fr": "Promenons-nous dans les bois cet après-midi.", "en": "Let's take a walk in the woods this afternoon.", "replace": "Promenons" }
+          ]
+        },
+        { "french": "se dépêcher", "english": "to hurry", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Dépêche-toi, nous allons être en retard!", "en": "Hurry up, we're going to be late!", "replace": "Dépêche" },
+            { "fr": "Elle se dépêche toujours pour arriver à l'heure.", "en": "She always hurries to arrive on time.", "replace": "dépêche" },
+            { "fr": "Nous nous dépêchons de finir nos devoirs.", "en": "We hurry to finish our homework.", "replace": "dépêchons" },
+            { "fr": "Il se dépêche de rentrer chez lui.", "en": "He hurries to get home.", "replace": "dépêche" },
+            { "fr": "Ne vous dépêchez pas, prenez votre temps.", "en": "Don't hurry, take your time.", "replace": "dépêchez" }
+          ]
+        },
+        { "french": "continuer", "english": "to continue", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Continuez votre travail sans vous arrêter.", "en": "Continue your work without stopping.", "replace": "Continuez" },
+            { "fr": "Elle continue ses études malgré les difficultés.", "en": "She continues her studies despite the difficulties.", "replace": "continue" },
+            { "fr": "Nous continuons notre voyage vers le sud.", "en": "We continue our trip southward.", "replace": "continuons" },
+            { "fr": "Il continue à fumer malgré les avertissements.", "en": "He continues to smoke despite the warnings.", "replace": "continue" },
+            { "fr": "Le film continue après une courte pause.", "en": "The movie continues after a short break.", "replace": "continue" }
+          ]
+        },
+        { "french": "arrêter", "english": "to stop", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Arrêtez de parler pendant le film!", "en": "Stop talking during the movie!", "replace": "Arrêtez" },
+            { "fr": "Elle arrête de fumer depuis six mois.", "en": "She has stopped smoking for six months.", "replace": "arrête" },
+            { "fr": "Nous arrêtons notre travail à 17h.", "en": "We stop our work at 5 PM.", "replace": "arrêtons" },
+            { "fr": "Il arrête sa voiture devant la maison.", "en": "He stops his car in front of the house.", "replace": "arrête" },
+            { "fr": "N'arrêtez pas maintenant, vous y êtes presque.", "en": "Don't stop now, you're almost there.", "replace": "arrêtez" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "title": "Time & Questions",
+      "description": "Words for expressing time and asking questions in French",
+      "theme": "time_questions",
+      "words": [
+        { "french": "alors", "english": "then/so", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Il pleuvait, alors nous sommes restés à la maison.", "en": "It was raining, so we stayed at home.", "replace": "alors" },
+            { "fr": "Alors, qu'est-ce que tu veux faire ce soir?", "en": "So, what do you want to do tonight?", "replace": "alors" },
+            { "fr": "Nous avons fini le travail, alors nous pouvons partir.", "en": "We finished the work, so we can leave.", "replace": "alors" },
+            { "fr": "Alors comme ça, tu pars en voyage demain.", "en": "So you're leaving on a trip tomorrow.", "replace": "alors" },
+            { "fr": "Il était fatigué, alors il s'est couché tôt.", "en": "He was tired, so he went to bed early.", "replace": "alors" }
+          ]
+        },
+        { "french": "ensuite", "english": "then/next", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Nous allons au cinéma, ensuite nous dînerons.", "en": "We are going to the cinema, then we will have dinner.", "replace": "ensuite" },
+            { "fr": "D'abord nous étudions, ensuite nous nous amusons.", "en": "First we study, then we have fun.", "replace": "ensuite" },
+            { "fr": "Il a travaillé dur, ensuite il s'est reposé.", "en": "He worked hard, then he rested.", "replace": "ensuite" },
+            { "fr": "Nous ferons les courses, ensuite nous rentrerons.", "en": "We will do the shopping, then we will return home.", "replace": "ensuite" },
+            { "fr": "Elle a parlé longtemps, ensuite elle a écouté.", "en": "She spoke for a long time, then she listened.", "replace": "ensuite" }
+          ]
+        },
+        { "french": "parfois", "english": "sometimes", "word_type": "adverb", "gender": null,           "sentences": [
+            { "fr": "Parfois je me lève tôt le matin.", "en": "Sometimes I get up early in the morning.", "replace": "parfois" },
+            { "fr": "Il pleut parfois pendant l'été ici.", "en": "It sometimes rains during the summer here.", "replace": "parfois" },
+            { "fr": "Parfois nous allons au restaurant le week-end.", "en": "Sometimes we go to the restaurant on weekends.", "replace": "parfois" },
+            { "fr": "Elle est parfois très fatiguée après le travail.", "en": "She is sometimes very tired after work.", "replace": "parfois" },
+            { "fr": "Parfois les enfants font trop de bruit.", "en": "Sometimes the children make too much noise.", "replace": "parfois" }
+          ]
+        },
+        { "french": "moment", "english": "moment", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Ce moment est très important pour nous.", "en": "This moment is very important to us.", "replace": "moment" },
+            { "fr": "Attends un moment, s'il te plaît.", "en": "Wait a moment, please.", "replace": "moment" },
+            { "fr": "Au bon moment, tout s'arrange.", "en": "At the right moment, everything works out.", "replace": "moment" },
+            { "fr": "Ce moment de silence est agréable.", "en": "This moment of silence is pleasant.", "replace": "moment" },
+            { "fr": "Nous nous souvenons de ce beau moment.", "en": "We remember this beautiful moment.", "replace": "moment" }
+          ]
+        },
+        { "french": "début", "english": "beginning", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Au début du film, c'était très intéressant.", "en": "At the beginning of the movie, it was very interesting.", "replace": "début" },
+            { "fr": "Le début de l'année scolaire est toujours excitant.", "en": "The beginning of the school year is always exciting.", "replace": "début" },
+            { "fr": "Depuis le début, nous travaillons ensemble.", "en": "Since the beginning, we have been working together.", "replace": "début" },
+            { "fr": "Le début du printemps est magnifique ici.", "en": "The beginning of spring is magnificent here.", "replace": "début" },
+            { "fr": "Du début à la fin, l'histoire est captivante.", "en": "From beginning to end, the story is captivating.", "replace": "début" }
+          ]
+        },
+        { "french": "qu", "english": "that/what", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Qu'est-ce que tu fais ce week-end?", "en": "What are you doing this weekend?", "replace": "qu" },
+            { "fr": "Il ne sait pas qu'il a gagné le prix.", "en": "He doesn't know that he won the prize.", "replace": "qu" },
+            { "fr": "Qu'est-ce qu'il y a dans cette boîte?", "en": "What is there in this box?", "replace": "qu" },
+            { "fr": "Je sais qu'elle viendra demain.", "en": "I know that she will come tomorrow.", "replace": "qu" },
+            { "fr": "Qu'est-ce que vous voulez manger?", "en": "What do you want to eat?", "replace": "qu" }
+          ]
+        },
+        { "french": "qui", "english": "who", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "Qui est-ce qui vient à la fête ce soir?", "en": "Who is coming to the party tonight?", "replace": "qui" },
+            { "fr": "La personne qui travaille dur réussit toujours.", "en": "The person who works hard always succeeds.", "replace": "qui" },
+            { "fr": "Qui a mangé le dernier biscuit?", "en": "Who ate the last cookie?", "replace": "qui" },
+            { "fr": "C'est lui qui a préparé le dîner.", "en": "It's him who prepared dinner.", "replace": "qui" },
+            { "fr": "Qui peut m'aider avec ces exercices?", "en": "Who can help me with these exercises?", "replace": "qui" }
+          ]
+        },
+        { "french": "quoi", "english": "what", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "De quoi parlez-vous en ce moment?", "en": "What are you talking about right now?", "replace": "quoi" },
+            { "fr": "Il n'y a pas de quoi s'inquiéter.", "en": "There is nothing to worry about.", "replace": "quoi" },
+            { "fr": "À quoi penses-tu en ce moment?", "en": "What are you thinking about right now?", "replace": "quoi" },
+            { "fr": "Sur quoi travailles-tu actuellement?", "en": "What are you working on currently?", "replace": "quoi" },
+            { "fr": "Il n'y a rien à quoi se raccrocher.", "en": "There is nothing to hold onto.", "replace": "quoi" }
+          ]
+        },
+        { "french": "dont", "english": "whose/of which", "word_type": "pronoun", "gender": null,           "sentences": [
+            { "fr": "La maison dont le toit est rouge est belle.", "en": "The house whose roof is red is beautiful.", "replace": "dont" },
+            { "fr": "C'est le livre dont je t'ai parlé hier.", "en": "It's the book I told you about yesterday.", "replace": "dont" },
+            { "fr": "L'homme dont la voiture est garée là est mon voisin.", "en": "The man whose car is parked there is my neighbor.", "replace": "dont" },
+            { "fr": "Voici la personne dont l'aide nous est précieuse.", "en": "Here is the person whose help is precious to us.", "replace": "dont" },
+            { "fr": "Le projet dont nous discutons est important.", "en": "The project we are discussing is important.", "replace": "dont" }
+          ]
+        },
+        { "french": "laquelle", "english": "which/whom", "word_type": "pronoun", "gender": "la",           "sentences": [
+            { "fr": "Laquelle de ces robes préfères-tu?", "en": "Which of these dresses do you prefer?", "replace": "laquelle" },
+            { "fr": "C'est la maison dans laquelle j'ai grandi.", "en": "It's the house in which I grew up.", "replace": "laquelle" },
+            { "fr": "Laquelle des deux options choisis-tu?", "en": "Which of the two options do you choose?", "replace": "laquelle" },
+            { "fr": "Voici la personne avec laquelle je travaille.", "en": "Here is the person with whom I work.", "replace": "laquelle" },
+            { "fr": "Laquelle de ces solutions est la meilleure?", "en": "Which of these solutions is the best?", "replace": "laquelle" }
+          ]
+        },
+        { "french": "suivre", "english": "to follow", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Suivez ce chemin pour arriver au village.", "en": "Follow this path to arrive at the village.", "replace": "Suivez" },
+            { "fr": "Elle suit un régime alimentaire strict.", "en": "She follows a strict diet.", "replace": "suit" },
+            { "fr": "Nous suivons les instructions du professeur.", "en": "We follow the teacher's instructions.", "replace": "suivons" },
+            { "fr": "Il suit toujours son intuition.", "en": "He always follows his intuition.", "replace": "suit" },
+            { "fr": "Suivez-moi, je connais le chemin.", "en": "Follow me, I know the way.", "replace": "Suivez" }
+          ]
+        },
+        { "french": "devenir", "english": "to become", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Elle veut devenir médecin plus tard.", "en": "She wants to become a doctor later.", "replace": "devenir" },
+            { "fr": "Il devient de plus en plus impatient.", "en": "He becomes more and more impatient.", "replace": "devient" },
+            { "fr": "Nous devenons amis après des années.", "en": "We become friends after years.", "replace": "devenons" },
+            { "fr": "Le temps devient plus froid en hiver.", "en": "The weather becomes colder in winter.", "replace": "devient" },
+            { "fr": "Que deviendrez-vous dans le futur?", "en": "What will you become in the future?", "replace": "deviendrez" }
+          ]
+        },
+        { "french": "gagner", "english": "to win/earn", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il gagne toujours aux jeux de société.", "en": "He always wins at board games.", "replace": "gagne" },
+            { "fr": "Elle gagne bien sa vie comme avocate.", "en": "She earns a good living as a lawyer.", "replace": "gagne" },
+            { "fr": "Nous gagnons du temps avec cette nouvelle méthode.", "en": "We save time with this new method.", "replace": "gagnons" },
+            { "fr": "Ils gagnent le match de football dimanche.", "en": "They win the soccer match on Sunday.", "replace": "gagnent" },
+            { "fr": "Gagnez-vous assez d'argent avec ce travail?", "en": "Do you earn enough money with this job?", "replace": "Gagnez" }
+          ]
+        },
+        { "french": "compter", "english": "to count", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Il apprend à compter jusqu'à cent.", "en": "He is learning to count to one hundred.", "replace": "compter" },
+            { "fr": "Elle compte toujours sur ses amis.", "en": "She always counts on her friends.", "replace": "compte" },
+            { "fr": "Nous comptons les jours jusqu'aux vacances.", "en": "We count the days until vacation.", "replace": "comptons" },
+            { "fr": "Comptez-vous voyager cet été?", "en": "Are you planning to travel this summer?", "replace": "Comptez" },
+            { "fr": "Il compte devenir riche un jour.", "en": "He plans to become rich one day.", "replace": "compte" }
+          ]
+        },
+        { "french": "couper", "english": "to cut", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Coupez le pain en tranches fines.", "en": "Cut the bread into thin slices.", "replace": "Coupez" },
+            { "fr": "Elle se coupe les cheveux tous les mois.", "en": "She cuts her hair every month.", "replace": "coupe" },
+            { "fr": "Nous coupons le gazon chaque semaine.", "en": "We cut the grass every week.", "replace": "coupons" },
+            { "fr": "Il coupe toujours son steak en petits morceaux.", "en": "He always cuts his steak into small pieces.", "replace": "coupe" },
+            { "fr": "Ne coupez pas les fleurs du jardin.", "en": "Don't cut the flowers from the garden.", "replace": "coupez" }
+          ]
+        },
+        { "french": "casser", "english": "to break", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Attention, ne cassez pas ce vase fragile!", "en": "Be careful, don't break this fragile vase!", "replace": "cassez" },
+            { "fr": "Elle casse toujours ses lunettes.", "en": "She always breaks her glasses.", "replace": "casse" },
+            { "fr": "Nous cassons les œufs pour faire une omelette.", "en": "We break the eggs to make an omelet.", "replace": "cassons" },
+            { "fr": "Il casse la glace avec un marteau.", "en": "He breaks the ice with a hammer.", "replace": "casse" },
+            { "fr": "Le vent casse souvent les branches des arbres.", "en": "The wind often breaks the tree branches.", "replace": "casse" }
+          ]
+        },
+        { "french": "nettoyer", "english": "to clean", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Nettoyez votre chambre avant de sortir.", "en": "Clean your room before going out.", "replace": "Nettoyez" },
+            { "fr": "Elle nettoie la maison tous les week-ends.", "en": "She cleans the house every weekend.", "replace": "nettoie" },
+            { "fr": "Nous nettoyons nos vélos après chaque sortie.", "en": "We clean our bikes after each ride.", "replace": "nettoyons" },
+            { "fr": "Il nettoie ses lunettes avec un chiffon.", "en": "He cleans his glasses with a cloth.", "replace": "nettoie" },
+            { "fr": "Nettoyons d'abord la cuisine ensemble.", "en": "Let's clean the kitchen first together.", "replace": "Nettoyons" }
+          ]
+        },
+        { "french": "décider", "english": "to decide", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Décidez-vous enfin de ce que vous voulez!", "en": "Finally decide what you want!", "replace": "Décidez" },
+            { "fr": "Elle décide toujours seule de ses projets.", "en": "She always decides alone about her projects.", "replace": "décide" },
+            { "fr": "Nous décidons de partir en vacances.", "en": "We decide to go on vacation.", "replace": "décidons" },
+            { "fr": "Il décide d'apprendre le français.", "en": "He decides to learn French.", "replace": "décide" },
+            { "fr": "À vous de décider maintenant.", "en": "It's up to you to decide now.", "replace": "décider" }
+          ]
+        },
+        { "french": "oublier", "english": "to forget", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "J'oublie toujours mes clés à la maison.", "en": "I always forget my keys at home.", "replace": "oublie" },
+            { "fr": "Elle oublie facilement les dates importantes.", "en": "She easily forgets important dates.", "replace": "oublie" },
+            { "fr": "Nous oublions parfois nos bonnes résolutions.", "en": "We sometimes forget our good resolutions.", "replace": "oublions" },
+            { "fr": "Il oublie de fermer la porte derrière lui.", "en": "He forgets to close the door behind him.", "replace": "oublie" },
+            { "fr": "N'oubliez pas d'éteindre la lumière.", "en": "Don't forget to turn off the light.", "replace": "oubliez" }
+          ]
+        },
+        { "french": "se souvenir", "english": "to remember", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Je me souviens de notre première rencontre.", "en": "I remember our first meeting.", "replace": "souviens" },
+            { "fr": "Elle se souvient toujours de son enfance.", "en": "She always remembers her childhood.", "replace": "souvient" },
+            { "fr": "Nous nous souvenons de nos voyages passés.", "en": "We remember our past trips.", "replace": "souvenons" },
+            { "fr": "Il se souvient de tout ce qu'il apprend.", "en": "He remembers everything he learns.", "replace": "souvient" },
+            { "fr": "Souvenez-vous de fermer la porte à clé.", "en": "Remember to lock the door.", "replace": "Souvenez" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "title": "Emotions & Feelings",
+      "description": "Expressing emotions, feelings, and personality traits in French",
+      "theme": "emotions_feelings",
+      "words": [
+        { "french": "énervé", "english": "annoyed", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Je suis énervé par le bruit constant.", "en": "I am annoyed by the constant noise.", "replace": "énervé" },
+            { "fr": "Elle est énervée contre son frère.", "en": "She is annoyed with her brother.", "replace": "énervée" },
+            { "fr": "Nous sommes énervés par les retards.", "en": "We are annoyed by the delays.", "replace": "énervés" },
+            { "fr": "Il devient énervé quand il a faim.", "en": "He becomes annoyed when he is hungry.", "replace": "énervé" },
+            { "fr": "Ne sois pas énervé, c'est juste un petit problème.", "en": "Don't be annoyed, it's just a small problem.", "replace": "énervé" }
+          ]
+        },
+        { "french": "calme", "english": "calm", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il reste calme même dans les situations difficiles.", "en": "He stays calm even in difficult situations.", "replace": "calme" },
+            { "fr": "Elle a un tempérament très calme.", "en": "She has a very calm temperament.", "replace": "calme" },
+            { "fr": "La mer est calme ce matin.", "en": "The sea is calm this morning.", "replace": "calme" },
+            { "fr": "Restez calme, tout va bien se passer.", "en": "Stay calm, everything will be fine.", "replace": "calme" },
+            { "fr": "Il parle d'une voix calme et posée.", "en": "He speaks in a calm and steady voice.", "replace": "calme" }
+          ]
+        },
+        { "french": "inquiet", "english": "worried", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Je suis inquiet pour l'avenir de mes enfants.", "en": "I am worried about my children's future.", "replace": "inquiet" },
+            { "fr": "Elle est inquiète avant les résultats.", "en": "She is worried before the results.", "replace": "inquiète" },
+            { "fr": "Nous sommes inquiets pour notre ami malade.", "en": "We are worried about our sick friend.", "replace": "inquiets" },
+            { "fr": "Il a l'air inquiet depuis quelques jours.", "en": "He looks worried for a few days.", "replace": "inquiet" },
+            { "fr": "Ne soyez pas inquiet, tout ira bien.", "en": "Don't be worried, everything will be fine.", "replace": "inquiet" }
+          ]
+        },
+        { "french": "courageux", "english": "courageous", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il est courageux face au danger.", "en": "He is brave in the face of danger.", "replace": "courageux" },
+            { "fr": "Elle a été courageuse pendant sa maladie.", "en": "She was courageous during her illness.", "replace": "courageuse" },
+            { "fr": "Les pompiers sont courageux tous les jours.", "en": "Firefighters are courageous every day.", "replace": "courageux" },
+            { "fr": "Soyez courageux et dites la vérité.", "en": "Be courageous and tell the truth.", "replace": "courageux" },
+            { "fr": "C'est un homme courageux et déterminé.", "en": "He is a brave and determined man.", "replace": "courageux" }
+          ]
+        },
+        { "french": "gentil", "english": "kind", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il est toujours gentil avec tout le monde.", "en": "He is always kind to everyone.", "replace": "gentil" },
+            { "fr": "Elle est gentille et aide ses voisins.", "en": "She is kind and helps her neighbors.", "replace": "gentille" },
+            { "fr": "Mes amis sont gentils et attentionnés.", "en": "My friends are kind and considerate.", "replace": "gentils" },
+            { "fr": "Soyez gentil avec les animaux.", "en": "Be kind to animals.", "replace": "gentil" },
+            { "fr": "C'est une personne gentille et généreuse.", "en": "She is a kind and generous person.", "replace": "gentille" }
+          ]
+        },
+        { "french": "méchant", "english": "mean", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Ce garçon est méchant avec ses camarades.", "en": "This boy is mean to his classmates.", "replace": "méchant" },
+            { "fr": "Elle a été méchante sans raison.", "en": "She was mean without reason.", "replace": "méchante" },
+            { "fr": "Le chat est méchant quand il a faim.", "en": "The cat is mean when he is hungry.", "replace": "méchant" },
+            { "fr": "Ne soyez pas méchant avec votre sœur.", "en": "Don't be mean to your sister.", "replace": "méchant" },
+            { "fr": "Il fait semblant d'être méchant mais il est doux.", "en": "He pretends to be mean but he is gentle.", "replace": "méchant" }
+          ]
+        },
+        { "french": "amusant", "english": "amusing", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Ce film est très amusant à regarder.", "en": "This movie is very funny to watch.", "replace": "amusant" },
+            { "fr": "Elle raconte des histoires amusantes.", "en": "She tells amusing stories.", "replace": "amusantes" },
+            { "fr": "La fête était amusante et réussie.", "en": "The party was fun and successful.", "replace": "amusante" },
+            { "fr": "Il est amusant quand il imite les professeurs.", "en": "He is funny when he imitates teachers.", "replace": "amusant" },
+            { "fr": "Ce jeu est amusant pour toute la famille.", "en": "This game is fun for the whole family.", "replace": "amusant" }
+          ]
+        },
+        { "french": "sérieux", "english": "serious", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il est très sérieux dans son travail.", "en": "He is very serious in his work.", "replace": "sérieux" },
+            { "fr": "Elle a un air sérieux et concentré.", "en": "She has a serious and focused look.", "replace": "sérieux" },
+            { "fr": "Soyez sérieux pendant la réunion.", "en": "Be serious during the meeting.", "replace": "sérieux" },
+            { "fr": "C'est un problème sérieux qui nécessite attention.", "en": "It's a serious problem that requires attention.", "replace": "sérieux" },
+            { "fr": "Les étudiants sérieux réussissent leurs examens.", "en": "Serious students pass their exams.", "replace": "sérieux" }
+          ]
+        },
+        { "french": "patient", "english": "patient", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Le médecin est patient avec ses patients.", "en": "The doctor is patient with his patients.", "replace": "patient" },
+            { "fr": "Elle est patiente quand elle enseigne.", "en": "She is patient when she teaches.", "replace": "patiente" },
+            { "fr": "Soyez patient, votre tour arrive bientôt.", "en": "Be patient, your turn is coming soon.", "replace": "patient" },
+            { "fr": "Il faut être patient pour apprendre le français.", "en": "You need to be patient to learn French.", "replace": "patient" },
+            { "fr": "Les parents patients élèvent mieux leurs enfants.", "en": "Patient parents raise their children better.", "replace": "patients" }
+          ]
+        },
+        { "french": "timide", "english": "timid", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Elle est timide et n'ose pas parler en public.", "en": "She is shy and doesn't dare speak in public.", "replace": "timide" },
+            { "fr": "Il était timide quand il était enfant.", "en": "He was shy when he was a child.", "replace": "timide" },
+            { "fr": "Ne soyez pas timide, dites ce que vous pensez.", "en": "Don't be shy, say what you think.", "replace": "timide" },
+            { "fr": "Les enfants timides ont besoin d'encouragement.", "en": "Shy children need encouragement.", "replace": "timides" },
+            { "fr": "Elle est timide mais très intelligente.", "en": "She is shy but very intelligent.", "replace": "timide" }
+          ]
+        },
+        { "french": "paresseux", "english": "lazy", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Il est paresseux et ne fait jamais le ménage.", "en": "He is lazy and never does the cleaning.", "replace": "paresseux" },
+            { "fr": "Elle était paresseuse pendant les vacances.", "en": "She was lazy during vacation.", "replace": "paresseuse" },
+            { "fr": "Ne soyez pas paresseux, faites du sport.", "en": "Don't be lazy, do sports.", "replace": "paresseux" },
+            { "fr": "Les étudiants paresseux ratent leurs examens.", "en": "Lazy students fail their exams.", "replace": "paresseux" },
+            { "fr": "Il est paresseux mais très créatif.", "en": "He is lazy but very creative.", "replace": "paresseux" }
+          ]
+        },
+        { "french": "curieux", "english": "curious", "word_type": "adjective", "gender": null,           "sentences": [
+            { "fr": "Les enfants sont naturellement curieux.", "en": "Children are naturally curious.", "replace": "curieux" },
+            { "fr": "Elle est curieuse d'apprendre de nouvelles choses.", "en": "She is curious to learn new things.", "replace": "curieuse" },
+            { "fr": "Il pose des questions curieuses en classe.", "en": "He asks curious questions in class.", "replace": "curieuses" },
+            { "fr": "Soyez curieux et explorez le monde.", "en": "Be curious and explore the world.", "replace": "curieux" },
+            { "fr": "Les scientifiques sont curieux par nature.", "en": "Scientists are curious by nature.", "replace": "curieux" }
+          ]
+        },
+        { "french": "inquiéter", "english": "to worry", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Cette situation m'inquiète beaucoup.", "en": "This situation worries me a lot.", "replace": "inquiète" },
+            { "fr": "Ne t'inquiète pas, tout va bien se passer.", "en": "Don't worry, everything will be fine.", "replace": "inquiète" },
+            { "fr": "Ses problèmes de santé inquiètent sa famille.", "en": "His health problems worry his family.", "replace": "inquiètent" },
+            { "fr": "Il est inquiet avant les examens.", "en": "He is worried before exams.", "replace": "inquiet" },
+            { "fr": "Cette nouvelle nous inquiète tous.", "en": "This news worries us all.", "replace": "inquiète" }
+          ]
+        },
+        { "french": "fâcher", "english": "to anger", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Son attitude me fâche énormément.", "en": "His attitude angers me enormously.", "replace": "fâche" },
+            { "fr": "Ne te fâche pas pour si peu.", "en": "Don't get angry over so little.", "replace": "fâche" },
+            { "fr": "Cette décision fâche tous les employés.", "en": "This decision angers all employees.", "replace": "fâche" },
+            { "fr": "Il se fâche facilement quand il perd.", "en": "He gets angry easily when he loses.", "replace": "fâche" },
+            { "fr": "Son retard me fâche beaucoup.", "en": "His delay angers me a lot.", "replace": "fâche" }
+          ]
+        },
+        { "french": "calmer", "english": "to calm", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Essaie de calmer les enfants excités.", "en": "Try to calm the excited children.", "replace": "calmer" },
+            { "fr": "La musique douce calme mes nerfs.", "en": "Soft music calms my nerves.", "replace": "calme" },
+            { "fr": "Il faut calmer la situation avant qu'elle empire.", "en": "We need to calm the situation before it gets worse.", "replace": "calmer" },
+            { "fr": "Respire profondément pour te calmer.", "en": "Breathe deeply to calm yourself.", "replace": "calmer" },
+            { "fr": "Ses paroles calmes calment tout le monde.", "en": "His calm words calm everyone.", "replace": "calment" }
+          ]
+        },
+        { "french": "amuser", "english": "to amuse", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ses blagues amusent toujours l'assemblée.", "en": "His jokes always amuse the audience.", "replace": "amusent" },
+            { "fr": "Ce film nous amuse beaucoup.", "en": "This movie amuses us a lot.", "replace": "amuse" },
+            { "fr": "Les enfants s'amusent au parc.", "en": "The children amuse themselves in the park.", "replace": "amusent" },
+            { "fr": "Son histoire drôle amuse tout le monde.", "en": "His funny story amuses everyone.", "replace": "amuse" },
+            { "fr": "Essaie de l'amuser avec des jeux.", "en": "Try to amuse him with games.", "replace": "amuser" }
+          ]
+        },
+        { "french": "fatiguer", "english": "to tire", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ce travail me fatigue énormément.", "en": "This work tires me enormously.", "replace": "fatigue" },
+            { "fr": "Les enfants fatiguent vite après l'école.", "en": "The children tire quickly after school.", "replace": "fatiguent" },
+            { "fr": "Ne te fatigue pas trop au travail.", "en": "Don't tire yourself too much at work.", "replace": "fatigue" },
+            { "fr": "Cette chaleur me fatigue rapidement.", "en": "This heat tires me quickly.", "replace": "fatigue" },
+            { "fr": "Le voyage nous a fatigués.", "en": "The trip has tired us.", "replace": "fatigués" }
+          ]
+        },
+        { "french": "ennuyer", "english": "to bore", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ce film m'ennuie profondément.", "en": "This movie bores me deeply.", "replace": "ennuie" },
+            { "fr": "Les leçons longues ennuient les élèves.", "en": "Long lessons bore the students.", "replace": "ennuient" },
+            { "fr": "Ne m'ennuie pas avec tes histoires.", "en": "Don't bore me with your stories.", "replace": "ennuie" },
+            { "fr": "Cette attente nous ennuie beaucoup.", "en": "This waiting bores us a lot.", "replace": "ennuie" },
+            { "fr": "Il s'ennuie facilement quand il est seul.", "en": "He bores easily when he is alone.", "replace": "ennuie" }
+          ]
+        },
+        { "french": "surprendre", "english": "to surprise", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Sa visite inattendue nous surprend.", "en": "His unexpected visit surprises us.", "replace": "surprend" },
+            { "fr": "Cette nouvelle me surprend beaucoup.", "en": "This news surprises me a lot.", "replace": "surprend" },
+            { "fr": "Il aime surprendre ses amis avec des cadeaux.", "en": "He likes to surprise his friends with gifts.", "replace": "surprendre" },
+            { "fr": "La question du professeur surprend les élèves.", "en": "The teacher's question surprises the students.", "replace": "surprend" },
+            { "fr": "Ne me surprends pas comme ça!", "en": "Don't surprise me like that!", "replace": "surprends" }
+          ]
+        },
+        { "french": "intéresser", "english": "to interest", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ce sujet m'intéresse énormément.", "en": "This subject interests me enormously.", "replace": "intéresse" },
+            { "fr": "La science intéresse beaucoup les enfants.", "en": "Science interests children a lot.", "replace": "intéresse" },
+            { "fr": "Ses histoires intéressent tout le monde.", "en": "His stories interest everyone.", "replace": "intéressent" },
+            { "fr": "Cette offre pourrait t'intéresser.", "en": "This offer might interest you.", "replace": "intéresser" },
+            { "fr": "Le sport ne l'intéresse pas du tout.", "en": "Sports don't interest him at all.", "replace": "intéresse" }
+          ]
+        },
+        { "french": "déranger", "english": "to disturb", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Excusez-moi de vous déranger.", "en": "Excuse me for disturbing you.", "replace": "déranger" },
+            { "fr": "Le bruit dérange ma concentration.", "en": "The noise disturbs my concentration.", "replace": "dérange" },
+            { "fr": "Ne dérange pas ton frère qui travaille.", "en": "Don't disturb your brother who is working.", "replace": "dérange" },
+            { "fr": "Cette interruption nous dérange beaucoup.", "en": "This interruption disturbs us a lot.", "replace": "dérange" },
+            { "fr": "Il dérange toujours les autres en classe.", "en": "He always disturbs others in class.", "replace": "dérange" }
+          ]
+        },
+        { "french": "gêner", "english": "to bother", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Cette situation me gêne énormément.", "en": "This situation bothers me enormously.", "replace": "gêne" },
+            { "fr": "Le soleil dans les yeux me gêne.", "en": "The sun in my eyes bothers me.", "replace": "gêne" },
+            { "fr": "Ne te gêne pas pour demander de l'aide.", "en": "Don't hesitate to ask for help.", "replace": "gêne" },
+            { "fr": "Sa présence me gêne un peu.", "en": "His presence bothers me a little.", "replace": "gêne" },
+            { "fr": "Cette question semble le gêner.", "en": "This question seems to bother him.", "replace": "gêner" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "title": "Food & Dining",
+      "description": "Vocabulary for food, meals, cooking, and dining experiences",
+      "theme": "food_dining",
+      "words": [
+        { "french": "le restaurant", "english": "restaurant", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Nous dînons dans un restaurant italien ce soir.", "en": "We are dining in an Italian restaurant tonight.", "replace": "restaurant" },
+            { "fr": "Ce restaurant est connu pour sa cuisine française.", "en": "This restaurant is known for its French cuisine.", "replace": "restaurant" },
+            { "fr": "Le restaurant ouvre à 19h tous les jours.", "en": "The restaurant opens at 7 PM every day.", "replace": "restaurant" },
+            { "fr": "Elle travaille comme serveuse dans un restaurant.", "en": "She works as a waitress in a restaurant.", "replace": "restaurant" },
+            { "fr": "Ce restaurant propose des plats végétariens.", "en": "This restaurant offers vegetarian dishes.", "replace": "restaurant" }
+          ]
+        },
+        { "french": "le menu", "english": "menu", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Pouvez-vous nous apporter le menu, s'il vous plaît?", "en": "Can you bring us the menu, please?", "replace": "menu" },
+            { "fr": "Le menu du jour coûte 15 euros.", "en": "The daily menu costs 15 euros.", "replace": "menu" },
+            { "fr": "Ce restaurant a un menu spécial pour enfants.", "en": "This restaurant has a special menu for children.", "replace": "menu" },
+            { "fr": "Regardez le menu et choisissez votre plat.", "en": "Look at the menu and choose your dish.", "replace": "menu" },
+            { "fr": "Le menu comprend entrée, plat et dessert.", "en": "The menu includes appetizer, main course and dessert.", "replace": "menu" }
+          ]
+        },
+        { "french": "le plat", "english": "dish", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Ce plat sent délicieusement bon.", "en": "This dish smells deliciously good.", "replace": "plat" },
+            { "fr": "Le plat principal est du poulet rôti.", "en": "The main dish is roast chicken.", "replace": "plat" },
+            { "fr": "Elle prépare des plats traditionnels français.", "en": "She prepares traditional French dishes.", "replace": "plats" },
+            { "fr": "Ce plat est trop épicé pour moi.", "en": "This dish is too spicy for me.", "replace": "plat" },
+            { "fr": "Le cuisinier présente son nouveau plat.", "en": "The chef presents his new dish.", "replace": "plat" }
+          ]
+        },
+        { "french": "la boisson", "english": "drink", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Quelle boisson désirez-vous avec votre repas?", "en": "What drink would you like with your meal?", "replace": "boisson" },
+            { "fr": "Les boissons sont comprises dans le menu.", "en": "Drinks are included in the menu.", "replace": "boissons" },
+            { "fr": "Cette boisson est trop sucrée à mon goût.", "en": "This drink is too sweet for my taste.", "replace": "boisson" },
+            { "fr": "Il commande toujours la même boisson.", "en": "He always orders the same drink.", "replace": "boisson" },
+            { "fr": "Les boissons fraîches sont indispensables en été.", "en": "Cold drinks are essential in summer.", "replace": "boissons" }
+          ]
+        },
+        { "french": "le dessert", "english": "dessert", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le dessert préféré des enfants est la glace.", "en": "Children's favorite dessert is ice cream.", "replace": "dessert" },
+            { "fr": "Ce restaurant propose des desserts maison.", "en": "This restaurant offers homemade desserts.", "replace": "desserts" },
+            { "fr": "Elle refuse le dessert parce qu'elle n'a plus faim.", "en": "She refuses dessert because she's no longer hungry.", "replace": "dessert" },
+            { "fr": "Le dessert était délicieux et bien présenté.", "en": "The dessert was delicious and well presented.", "replace": "dessert" },
+            { "fr": "Préparez-vous un dessert léger pour finir le repas.", "en": "Prepare yourself a light dessert to finish the meal.", "replace": "dessert" }
+          ]
+        },
+        { "french": "la eau", "english": "water", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "L'eau est essentielle pour la vie.", "en": "Water is essential for life.", "replace": "eau" },
+            { "fr": "Cette eau minérale vient des Alpes.", "en": "This mineral water comes from the Alps.", "replace": "eau" },
+            { "fr": "Buvez de l'eau pendant le repas.", "en": "Drink water during the meal.", "replace": "eau" },
+            { "fr": "L'eau bout à 100 degrés Celsius.", "en": "Water boils at 100 degrees Celsius.", "replace": "eau" },
+            { "fr": "L'eau de pluie est douce et pure.", "en": "Rain water is soft and pure.", "replace": "eau" }
+          ]
+        },
+        { "french": "le jus", "english": "juice", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le jus d'orange est riche en vitamine C.", "en": "Orange juice is rich in vitamin C.", "replace": "jus" },
+            { "fr": "Elle boit du jus de pomme tous les matins.", "en": "She drinks apple juice every morning.", "replace": "jus" },
+            { "fr": "Ce jus est fait maison sans conservateurs.", "en": "This juice is homemade without preservatives.", "replace": "jus" },
+            { "fr": "Préférez-vous le jus ou l'eau?", "en": "Do you prefer juice or water?", "replace": "jus" },
+            { "fr": "Les jus de fruits sont délicieux en été.", "en": "Fruit juices are delicious in summer.", "replace": "jus" }
+          ]
+        },
+        { "french": "la salade", "english": "salad", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "Cette salade composée est très fraîche.", "en": "This composed salad is very fresh.", "replace": "salade" },
+            { "fr": "La salade verte est bonne pour la santé.", "en": "Green salad is good for health.", "replace": "salade" },
+            { "fr": "Préparez une salade avec des tomates et concombres.", "en": "Prepare a salad with tomatoes and cucumbers.", "replace": "salade" },
+            { "fr": "La salade de fruits est un dessert léger.", "en": "Fruit salad is a light dessert.", "replace": "salade" },
+            { "fr": "Cette salade est assaisonnée avec une vinaigrette.", "en": "This salad is dressed with a vinaigrette.", "replace": "salade" }
+          ]
+        },
+        { "french": "la soupe", "english": "soup", "word_type": "noun", "gender": "la",           "sentences": [
+            { "fr": "La soupe chaude est parfaite pour l'hiver.", "en": "Hot soup is perfect for winter.", "replace": "soupe" },
+            { "fr": "Cette soupe de légumes est faite maison.", "en": "This vegetable soup is homemade.", "replace": "soupe" },
+            { "fr": "La soupe à l'oignon est une spécialité française.", "en": "Onion soup is a French specialty.", "replace": "soupe" },
+            { "fr": "Buvez votre soupe lentement pour l'apprécier.", "en": "Drink your soup slowly to enjoy it.", "replace": "soupe" },
+            { "fr": "La soupe est servie avec du pain croustillant.", "en": "The soup is served with crispy bread.", "replace": "soupe" }
+          ]
+        },
+        { "french": "le riz", "english": "rice", "word_type": "noun", "gender": "le",           "sentences": [
+            { "fr": "Le riz complet est plus nutritif que le riz blanc.", "en": "Brown rice is more nutritious than white rice.", "replace": "riz" },
+            { "fr": "Ce plat de riz accompagne parfaitement le curry.", "en": "This rice dish perfectly accompanies the curry.", "replace": "riz" },
+            { "fr": "Elle cuisine du riz basmati pour le dîner.", "en": "She cooks basmati rice for dinner.", "replace": "riz" },
+            { "fr": "Le riz est cultivé dans de nombreux pays asiatiques.", "en": "Rice is grown in many Asian countries.", "replace": "riz" },
+            { "fr": "Préparez du riz pilaf avec des oignons et des raisins.", "en": "Prepare pilaf rice with onions and raisins.", "replace": "riz" }
+          ]
+        },
+        { "french": "les pâtes", "english": "pasta", "word_type": "noun", "gender": "les",           "sentences": [
+            { "fr": "Les pâtes italiennes sont délicieuses avec une sauce tomate.", "en": "Italian pasta is delicious with tomato sauce.", "replace": "pâtes" },
+            { "fr": "Elle prépare des pâtes fraîches tous les dimanches.", "en": "She prepares fresh pasta every Sunday.", "replace": "pâtes" },
+            { "fr": "Ces pâtes sont cuites al dente parfaitement.", "en": "These pasta are cooked al dente perfectly.", "replace": "pâtes" },
+            { "fr": "Les pâtes sont un plat rapide et nourrissant.", "en": "Pasta is a quick and nourishing dish.", "replace": "pâtes" },
+            { "fr": "Préférez-vous les pâtes ou le riz?", "en": "Do you prefer pasta or rice?", "replace": "pâtes" }
+          ]
+        },
+        { "french": "perdre", "english": "to lose", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "J'ai perdu mes clés ce matin.", "en": "I lost my keys this morning.", "replace": "perdu" },
+            { "fr": "Elle perd toujours ses lunettes.", "en": "She always loses her glasses.", "replace": "perd" },
+            { "fr": "Nous perdons du temps avec cette méthode.", "en": "We lose time with this method.", "replace": "perdons" },
+            { "fr": "Il perd patience facilement.", "en": "He loses patience easily.", "replace": "perd" },
+            { "fr": "Ne perdez pas espoir, continuez!", "en": "Don't lose hope, continue!", "replace": "perdez" }
+          ]
+        },
+        { "french": "rappeler", "english": "to recall", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Rappelez-moi votre numéro de téléphone.", "en": "Recall your phone number to me.", "replace": "Rappelez" },
+            { "fr": "Cette musique me rappelle mon enfance.", "en": "This music recalls my childhood to me.", "replace": "rappelle" },
+            { "fr": "Il rappelle toujours les règles importantes.", "en": "He always recalls the important rules.", "replace": "rappelle" },
+            { "fr": "Rappelez-vous de fermer la porte.", "en": "Remember to close the door.", "replace": "Rappelez" },
+            { "fr": "Cette odeur rappelle de bons souvenirs.", "en": "This smell recalls good memories.", "replace": "rappelle" }
+          ]
+        },
+        { "french": "montrer", "english": "to show", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Montrez-moi votre nouveau téléphone.", "en": "Show me your new phone.", "replace": "Montrez" },
+            { "fr": "Elle montre toujours beaucoup de patience.", "en": "She always shows a lot of patience.", "replace": "montre" },
+            { "fr": "Nous montrons notre travail au professeur.", "en": "We show our work to the teacher.", "replace": "montrons" },
+            { "fr": "Il montre ses photos de voyage.", "en": "He shows his travel photos.", "replace": "montre" },
+            { "fr": "Montre-moi comment faire cet exercice.", "en": "Show me how to do this exercise.", "replace": "Montre" }
+          ]
+        },
+        { "french": "apporter", "english": "to bring", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Apportez votre livre en classe demain.", "en": "Bring your book to class tomorrow.", "replace": "Apportez" },
+            { "fr": "Elle apporte toujours des cadeaux.", "en": "She always brings gifts.", "replace": "apporte" },
+            { "fr": "Nous apportons de l'aide aux personnes âgées.", "en": "We bring help to elderly people.", "replace": "apportons" },
+            { "fr": "Il apporte des preuves de son innocence.", "en": "He brings proof of his innocence.", "replace": "apporte" },
+            { "fr": "Apporte-moi un verre d'eau, s'il te plaît.", "en": "Bring me a glass of water, please.", "replace": "Apporte" }
+          ]
+        },
+        { "french": "emporter", "english": "to take away", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Emportez vos déchets avec vous.", "en": "Take your trash with you.", "replace": "Emportez" },
+            { "fr": "Le vent emporte les feuilles mortes.", "en": "The wind carries away the dead leaves.", "replace": "emporte" },
+            { "fr": "Nous emportons des souvenirs de ce voyage.", "en": "We take memories from this trip.", "replace": "emportons" },
+            { "fr": "Elle emporte toujours trop de bagages.", "en": "She always takes too much luggage.", "replace": "emporte" },
+            { "fr": "L'inondation emporte tout sur son passage.", "en": "The flood carries everything in its path.", "replace": "emporte" }
+          ]
+        },
+        { "french": "emmener", "english": "to take someone", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Emmène-moi au cinéma ce soir.", "en": "Take me to the cinema tonight.", "replace": "Emmène" },
+            { "fr": "Elle emmène ses enfants à l'école.", "en": "She takes her children to school.", "replace": "emmène" },
+            { "fr": "Nous emmenons nos amis en promenade.", "en": "We take our friends for a walk.", "replace": "emmenons" },
+            { "fr": "Il emmène son chien chez le vétérinaire.", "en": "He takes his dog to the vet.", "replace": "emmène" },
+            { "fr": "Emmenez-moi voir ce spectacle.", "en": "Take me to see this show.", "replace": "Emmenez" }
+          ]
+        },
+        { "french": "ramener", "english": "to bring back", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Ramène-moi mes affaires de l'école.", "en": "Bring my things back from school.", "replace": "Ramène" },
+            { "fr": "Elle ramène toujours des cadeaux de voyage.", "en": "She always brings gifts back from trips.", "replace": "ramène" },
+            { "fr": "Nous ramenons les enfants à la maison.", "en": "We bring the children back home.", "replace": "ramenons" },
+            { "fr": "Il ramène ses amis après la fête.", "en": "He brings his friends back after the party.", "replace": "ramène" },
+            { "fr": "Ramenez-moi ce livre demain.", "en": "Bring this book back to me tomorrow.", "replace": "Ramenez" }
+          ]
+        },
+        { "french": "offrir", "english": "to offer", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Offrez-lui ce cadeau pour son anniversaire.", "en": "Offer him this gift for his birthday.", "replace": "Offrez" },
+            { "fr": "Elle offre toujours son aide aux autres.", "en": "She always offers her help to others.", "replace": "offre" },
+            { "fr": "Nous offrons nos services gratuitement.", "en": "We offer our services free of charge.", "replace": "offrons" },
+            { "fr": "Il offre des fleurs à sa mère.", "en": "He offers flowers to his mother.", "replace": "offre" },
+            { "fr": "Offre-moi un café, s'il te plaît.", "en": "Offer me a coffee, please.", "replace": "Offre" }
+          ]
+        },
+        { "french": "partager", "english": "to share", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Partagez votre nourriture avec vos amis.", "en": "Share your food with your friends.", "replace": "Partagez" },
+            { "fr": "Elle partage ses secrets avec moi.", "en": "She shares her secrets with me.", "replace": "partage" },
+            { "fr": "Nous partageons les responsabilités.", "en": "We share the responsibilities.", "replace": "partageons" },
+            { "fr": "Il partage son temps entre travail et loisirs.", "en": "He shares his time between work and leisure.", "replace": "partage" },
+            { "fr": "Partageons ce gâteau ensemble.", "en": "Let's share this cake together.", "replace": "Partageons" }
+          ]
+        },
+        { "french": "promettre", "english": "to promise", "word_type": "verb", "gender": null,           "sentences": [
+            { "fr": "Promettez-moi de revenir bientôt.", "en": "Promise me to come back soon.", "replace": "Promettez" },
+            { "fr": "Elle promet toujours de tenir ses promesses.", "en": "She always promises to keep her promises.", "replace": "promet" },
+            { "fr": "Nous promettons de faire de notre mieux.", "en": "We promise to do our best.", "replace": "promettons" },
+            { "fr": "Il promet de m'aider demain.", "en": "He promises to help me tomorrow.", "replace": "promet" },
+            { "fr": "Promets-moi que tu seras prudent.", "en": "Promise me that you'll be careful.", "replace": "Promets" }
           ]
         }
       ]

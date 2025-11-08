@@ -134,7 +134,7 @@ body {
 #highlightedText {
   line-height: 1.6;
   font-size: 1.1em;
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 .highlighted-word {

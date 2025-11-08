@@ -941,7 +941,12 @@ function displayResults(results) {
       console.log("DEBUG: item", item);
       const showMainTerm = item.question_type === 'fill_blank' || item.question_type === 'en_to_fr';
       const rootWord = item.word?.french;  // This is the root/base word from the database
-      const mainTermHint = showMainTerm && rootWord && item.correct_answer !== rootWord ? ` (${rootWord})` : '';
+      // const mainTermHint = showMainTerm && rootWord     
+      // && item.correct_answer.toLowerCase() !== rootWord.toLowerCase() ? ` (${rootWord})` : '';
+      let mainTermHint = '';
+      if (showMainTerm && rootWord && item.correct_answer.toLowerCase() !== rootWord.toLowerCase()) {
+        mainTermHint = ` (${rootWord})`;
+      }
       reviewItem.innerHTML = `
         <h3>${item.question_text}</h3>
         <div class="answer-info">

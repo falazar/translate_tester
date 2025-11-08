@@ -231,8 +231,9 @@ export class SessionService {
 
   private static createFillBlankQuestion(word: Word, levelMastery: number): Question {
     const db = getDatabase();
-    
+
     // Get example sentences for this word
+    // TEMP DEBUGS
     const examples = db.prepare(`
       SELECT * FROM example_sentences 
       WHERE word_id = ? 
@@ -257,7 +258,7 @@ export class SessionService {
       
       // Create regex (handles accents, apostrophes)
       const wordPattern = new RegExp(
-        `(?<=\\s|^|')${escapedWord}(?=\\s|\\.|,|!|\\?|'|$)`, 
+        `(?<=\\s|^|'|[-])${escapedWord}(?=\\s|\\.|,|!|\\?|'|[-]|$)`, 
         'gi'
       );
       
