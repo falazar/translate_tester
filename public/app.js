@@ -55,6 +55,42 @@ function escapeForHtml(text) {
   return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
 }
 
+// Calculate Levenshtein distance between two strings
+function levenshteinDistance(a, b) {
+  const matrix = [];
+
+  // Initialize matrix
+  for (let i = 0; i <= b.length; i++) {
+    matrix[i] = [i];
+  }
+  for (let j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+
+  // Fill matrix
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j - 1] + 1, // substitution
+          matrix[i][j - 1] + 1,     // insertion
+          matrix[i - 1][j] + 1      // deletion
+        );
+      }
+    }
+  }
+
+  return matrix[b.length][a.length];
+}
+
+// Check if answer is very close (off by just 1 character)
+function isCloseMatch(userAnswer, correctAnswer) {
+  const distance = levenshteinDistance(userAnswer.toLowerCase(), correctAnswer.toLowerCase());
+  return distance === 1 && Math.abs(userAnswer.length - correctAnswer.length) <= 1;
+}
+
 function getLanguageCode(language) {
   if (language === 'English') return 'en';
   if (language === 'French') return 'fr';
@@ -77,7 +113,7 @@ let currentQuestions = [];
 let currentQuestionIndex = 0;
 let currentScore = 0;
 let currentLevelId = null;
-let activeLevelSet = 1; // 1 for Set 1 (levels 1-12), 2 for Set 2 (levels 13+)
+let activeLevelSet = 1; // 1 for Set 1 (levels 1-12), 2 for Set 2 (levels 13-24), 3 for Set 3 (levels 25+)
 let selectedLevelId = null;
 
 // Helper function to update tab visual state
@@ -105,9 +141,12 @@ function displayFilteredLevels(levelsWithProgress) {
   const filteredLevels = levelsWithProgress.filter(level => {
     if (activeLevelSet === 1) {
       return level.level_number <= 12;
-    } else {
-      return level.level_number > 12;
+    } else if (activeLevelSet === 2) {
+      return level.level_number > 12 && level.level_number < 25;
+    } else if (activeLevelSet === 3) {
+      return level.level_number >= 25;
     }
+    return true; // fallback
   });
 
   // Display filtered levels
@@ -261,7 +300,7 @@ async function showDashboard() {
 
   // Load saved active level set from localStorage
   const savedSet = localStorage.getItem('activeLevelSet');
-  if (savedSet && (savedSet === '1' || savedSet === '2')) {
+  if (savedSet && (savedSet === '1' || savedSet === '2' || savedSet === '3')) {
     activeLevelSet = parseInt(savedSet);
   }
 
@@ -588,10 +627,10 @@ function displayQuestion() {
     if (questionMatch) {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
-        `"${targetText}"`, 
-        `"<span class="target-sentence">${targetText} 
-        <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" 
-        title="Listen to pronunciation">🔊</button></span>"`
+        `"${targetText}"`,
+        `<span class="target-sentence">"${targetText}"
+        <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')"
+        title="Listen to pronunciation">🔊</button></span>`
       );
       // Auto-play the target language sentence when question loads
       setTimeout(() => speakText(targetText, targetLanguage), 500);
@@ -605,8 +644,8 @@ function displayQuestion() {
       const escapedText = escapeForHtml(cleanText); // Escape once
       
       questionHTML = question.question.replace(
-        `<br>"${targetText}"`, 
-        `<br>"<span class="target-sentence">${targetText} <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span>"`
+        `<br>"${targetText}"`,
+        `<br><span class="target-sentence">"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span>`
       );
       // Auto-play the target language sentence when question loads
       setTimeout(() => speakText(cleanText, targetLanguage), 500);
@@ -775,7 +814,7 @@ async function submitAnswer() {
 
     if (response.ok) {
       const result = await response.json();
-      displayFeedback(result.correct, question.correct_answer, question);
+      displayFeedback(result.correct, question.correct_answer, question, userAnswer);
       
       if (result.correct) {
         currentScore++;
@@ -791,59 +830,70 @@ async function submitAnswer() {
   }
 }
 
-function displayFeedback(correct, correctAnswer, question) {
+function displayFeedback(correct, correctAnswer, question, userAnswer = '') {
   const feedback = document.getElementById('feedback');
   feedback.className = 'feedback active ' + 
                        (correct ? 'correct' : 'incorrect');
   
+  // Always extract the English sentence if available
+  let englishSentence = '';
+  if (question.english_translation) {
+    englishSentence = question.english_translation;
+  }
+
   if (question.type === 'fill_blank') {
     // For fill-in-the-blank, show the complete correct sentence
     const questionMatch = question.question.match(/<br>"([^"]+)"/);
     if (questionMatch) {
       const incompleteSentence = questionMatch[1];
       const completeSentence = incompleteSentence.replace(/___/g, correctAnswer);
-      
       if (correct) {
-        feedback.innerHTML = `✓ Correct!<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`;
+        feedback.innerHTML = `✓ Correct!<br><br><strong>Complete sentence:</strong><br>
+          <span class="target-sentence">
+            "${completeSentence}" 
+            <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>
+          </span>
+          <br>
+          <span class="sentence-en">${englishSentence}</span>
+        `;
       } else {
         const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
         const rootWord = question.word.french;  // Root/base word
         const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `<br>(${rootWord})` : '';
-      feedback.innerHTML = `✗ Incorrect. The correct answer is: ${correctAnswer}${mainTermHint}<br><br><strong>Complete sentence:</strong><br>"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`;
+        // Check if user was very close (off by just 1 character)
+        const closeMatch = isCloseMatch(userAnswer, correctAnswer);
+        const feedbackPrefix = closeMatch ? '🤏 So close! The correct answer is:' : '✗ Incorrect. The correct answer is:';
+        feedback.innerHTML = `${feedbackPrefix} ${correctAnswer}${mainTermHint}<br><br><strong>Complete sentence:</strong><br><span class="target-sentence">"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span><br><span class="sentence-en">${englishSentence}</span>`;
       }
-      
       // Auto-play the complete target language sentence
       setTimeout(() => speakText(completeSentence.replace(/_/g, ''), targetLanguage), 1000);
     }
   } else {
-    // For other question types, show standard feedback
+    // For other question types, show standard feedback, but include English sentence below
     if (correct) {
-      feedback.textContent = '✓ Correct!';
+      feedback.innerHTML = `✓ Correct!<br><br><strong>Answer:</strong> ${correctAnswer}<br><span class="sentence-en">${englishSentence}</span>`;
       // Speak the correct answer in the appropriate language
       if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
-        // Question is in base, answer is in target language
         setTimeout(() => speakText(correctAnswer, targetLanguage), 1000);
       } else if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
-        // Question is in target, answer is in base language
         setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       } else if (question.type === 'multiple_choice') {
-        // Question is in target, answer is in base language
         setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       }
     } else {
       const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
       const rootWord = question.word.french;  // Root/base word
       const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `\n(${rootWord})` : '';
-      feedback.textContent = `✗ Incorrect. The correct answer is: ${correctAnswer}${mainTermHint}`;
+      // Check if user was very close (off by just 1 character)
+      const closeMatch = isCloseMatch(userAnswer, correctAnswer);
+      const feedbackPrefix = closeMatch ? '🤏 So close! The correct answer is:' : '✗ Incorrect. The correct answer is:';
+      feedback.innerHTML = `${feedbackPrefix} ${correctAnswer}${mainTermHint}<br><span class="sentence-en">${englishSentence}</span>`;
       // Speak the correct answer in the appropriate language
       if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
-        // Question is in base, answer is in target language
         setTimeout(() => speakText(correctAnswer, targetLanguage), 1000);
       } else if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
-        // Question is in target, answer is in base language
         setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       } else if (question.type === 'multiple_choice') {
-        // Question is in target, answer is in base language
         setTimeout(() => speakText(correctAnswer, baseLanguage), 1000);
       }
     }

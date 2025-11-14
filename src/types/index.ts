@@ -85,6 +85,7 @@ export interface Question {
   correct_answer: string;
   options?: string[];
   sentence_context?: string;
+  english_translation?: string;
 }
 
 export interface SessionResult {

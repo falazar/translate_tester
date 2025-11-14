@@ -94,7 +94,8 @@ export class SessionService {
         type = questionTypes[typeIndex];
       }
 
-      questions.push(this.createQuestion(word, type, allWords, levelMastery));
+      const question = this.createQuestion(word, type, allWords, levelMastery);
+      questions.push(question);
     }
 
     return questions;
@@ -242,6 +243,7 @@ export class SessionService {
 
     let sentence: string;
     let correctAnswer: string;
+    let english_translation: string = '';
     
     if (examples.length > 0) {
       // Use a random example sentence
@@ -265,7 +267,7 @@ export class SessionService {
       // Replace the word with blank
       sentence = example.french_sentence.replace(wordPattern, '___');
       correctAnswer = wordToBlank;
-      
+      english_translation  = example.english_translation || '';
     } else {
       // Fallback to simple sentence
       const article = word.gender || '';
@@ -281,13 +283,16 @@ export class SessionService {
       questionText = `Fill in the blank with "${word.english}" (${word.french}):<br>"${sentence}"`;
     }
 
+
+    // a full question response.
     return {
       id: word.id,
       word,
       type: 'fill_blank',
       question: questionText,
       correct_answer: correctAnswer,
-      sentence_context: sentence
+      sentence_context: sentence,
+      english_translation: english_translation
     };
   }
 
