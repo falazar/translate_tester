@@ -44,16 +44,13 @@ export class TextService {
       return { plainWordFrequencies: [], wordFrequencies: [], totalWords: 0, uniqueWords: 0, uniqueKnownWords: 0, unknownWords: 0, percentageKnown: 0, highlightedProcessedText: '' };
     }
 
-    // Step 1: Remove all HTML tags
-    const textWithoutHtml = text.replace(/<[^>]*>/g, '');
+    // Normalize text to NFC to ensure consistent character representation.
+    text = text.normalize('NFC');
+    console.log('   \n\n');
 
-    // Step 2: Break into words using regex that matches French characters and special chars
-    let words = textWithoutHtml.match(/\b[a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+\b/g) || [];
-
-    if (words.length === 0) {
-      // Try the more complex regex for compound words
-      words = textWithoutHtml.match(/[a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+(?:[''-][a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+)*/g) || [];
-    }
+    // Clean and tokenize text
+    const { textWithoutHtml, words } = TextService.cleanAndTokenizeText(text);
+    // if (false) console.log("DEBUG words =", words.slice(0, 20)); 
 
     // Step 3: Count word frequencies
     const wordCountMap = new Map<string, number>();
@@ -61,6 +58,7 @@ export class TextService {
       const lowerWord = word.toLowerCase();
       wordCountMap.set(lowerWord, (wordCountMap.get(lowerWord) || 0) + 1);
     });
+    // if (debug) console.log('DEBUG Counted word frequencies:', JSON.stringify(Array.from(wordCountMap.entries())), 'unique words');
 
     // Step 4: Create plain word frequencies (sorted by frequency)
     const plainWordFrequencies = Array.from(wordCountMap.entries())
@@ -68,6 +66,7 @@ export class TextService {
       .sort((a, b) => b.count - a.count); // Sort by frequency descending
 
     console.log('Created plain word frequencies:', plainWordFrequencies.length, 'items');
+    // if (debug) console.log('DEBUG Plain word frequencies sample:', JSON.stringify(plainWordFrequencies.slice(0, 20)));
 
     // Step 5: Load word levels data from database
     const wordLevels = this.loadWordLevels();
@@ -154,6 +153,33 @@ export class TextService {
       percentageKnown,
       highlightedProcessedText
     };
+  }
+
+  /**
+   * Clean text (remove HTML, normalize, etc.) and tokenize into words
+   * @param text - Raw input text
+   * @returns Object with cleaned text and array of words
+   */
+  static cleanAndTokenizeText(text: string): { textWithoutHtml: string, words: string[] } {
+    // Step 1: Remove all HTML tags
+    let textWithoutHtml = text.replace(/<[^>]*>/g, '');
+
+    textWithoutHtml = textWithoutHtml.replace(/[’‘`´]/g, "'");
+
+    // Remove all non-ASCII characters except French accented letters and common punctuation
+    // Keeps: a-z, A-Z, 0-9, whitespace, . , ; : ! ? ' " ( ) - and French accented letters àâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ
+    textWithoutHtml = textWithoutHtml.replace(/[^a-zA-Z0-9\s.,;:!?'"()\-àâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]/g, '');
+
+    // Remove all line breaks (convert to space or remove)
+    textWithoutHtml = textWithoutHtml.replace(/[\r\n]+/g, ' ');
+
+    // Remove l' etc. (French elision)
+    let textForWords = textWithoutHtml.replace(/(^| )(j|l|n|d|m)'/gi, ' ');
+
+    // Tokenize: match French words, including elisions and hyphens
+    let words = textForWords.match(/[a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+(?:['’-][a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+)*/g) || [];
+
+    return { textWithoutHtml, words };
   }
 
   /**
