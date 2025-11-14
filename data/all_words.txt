@@ -1,0 +1,597 @@
+# All unique French words extracted from the SQLite database
+accepter
+acheter
+aimer
+ainsi
+aller
+alors
+amusant
+amuser
+analyser
+animer
+anxieux
+août
+appeler
+applaudir
+apporter
+apprendre
+après
+arriver
+arrêter
+assembler
+attendre
+au
+aujourd'hui
+aussi
+autre
+aux
+avant
+avec
+avoir
+avril
+bavarder
+beau
+beaucoup
+bien
+bien que
+blanc
+bleu
+boire
+bon
+briller
+calme
+calmer
+casser
+ce
+cela
+cependant
+ces
+cette
+changer
+chanter
+chaud
+chercher
+chez
+choisir
+collaborer
+collecter
+coller
+commander
+comme
+commencer
+comment
+comprendre
+compter
+conduire
+confier
+confus
+connaître
+construire
+consulter
+content
+continuer
+couper
+courageux
+courir
+craindre
+croire
+créatif
+créer
+cuisiner
+curieux
+célébrer
+dans
+danser
+davantage
+de
+demander
+des
+descendre
+dessiner
+deux
+devenir
+devoir
+difficile
+dimanche
+dire
+diriger
+discuter
+donner
+dont
+dormir
+du
+durer
+début
+débuter
+décembre
+décider
+décorer
+découper
+déjà
+déménager
+déranger
+déçu
+efficace
+elle
+elles
+embaucher
+emmener
+emporter
+en
+encore
+enfin
+ennuyer
+enrouler
+enseigner
+ensuite
+entendre
+entrer
+espérer
+essayer
+et
+expliquer
+explorer
+facile
+faire
+fatiguer
+fatigué
+fermer
+fier
+finir
+fixer
+froid
+frustré
+fâcher
+féliciter
+février
+gagner
+gentil
+goûter
+grand
+gros
+guérir
+gérer
+gêner
+habiter
+heureusement
+heureux
+honteux
+il
+illuminer
+ils
+important
+inquiet
+inquiétant
+inquiéter
+installer
+intelligent
+intéresser
+inviter
+jamais
+janvier
+jaune
+je
+jeudi
+jeune
+jouer
+jouir
+joyeuse
+joyeux
+juillet
+juin
+l'ami
+l'animal
+l'année
+l'après-midi
+l'arbre
+l'argile
+l'armoire
+l'avion
+l'aéroport
+l'eau
+l'effort
+l'examen
+l'heure
+l'homme
+l'hôpital
+l'infirmier
+l'intelligence
+l'océan
+l'oeil
+l'orage
+l'ordinateur
+l'oreille
+l'université
+l'école
+l'éducation
+l'élève
+l'étoile
+l'étudiant
+la
+la bibliothèque
+la blessure
+la boisson
+la bouche
+la bougie
+la branche
+la cascade
+la ceinture
+la chaise
+la chambre
+la chaussure
+la chemise
+la colle
+la conférence
+la connaissance
+la consultation
+la créativité
+la cuisine
+la danse
+la douleur
+la eau
+la femme
+la fenêtre
+la feuille
+la ficelle
+la fille
+la fièvre
+la fleur
+la forêt
+la fête
+la gare
+la glace
+la grippe
+la jambe
+la journée
+la leçon
+la lune
+la main
+la maison
+la matière
+la mer
+la montagne
+la montre
+la musique
+la mère
+la neige
+la note
+la nuit
+la pause
+la peau
+la perle
+la photo
+la pierre
+la piste de danse
+la plante
+la pluie
+la porte
+la promotion
+la présentation
+la question
+la recherche
+la rivière
+la robe
+la roche
+la route
+la rue
+la réponse
+la réunion
+la réussite
+la salade
+la salle
+la santé
+la semaine
+la soeur
+la soupe
+la surprise
+la table
+la température
+la tenue
+la terre
+la thèse
+la toile
+la tâche
+la tête
+la vaccination
+la viande
+la ville
+la voiture
+la véranda
+laid
+laisser
+laquelle
+laver
+le
+le ballon
+le billet
+le bras
+le bureau
+le bus
+le cadeau
+le café
+le canapé
+le champ
+le chapeau
+le chat
+le chien
+le cinéma
+le coeur
+le collègue
+le concert
+le contrat
+le cours
+le dessert
+le diplôme
+le dos
+le film
+le fromage
+le fruit
+le frère
+le garçon
+le gens
+le gâteau
+le jeu
+le jour
+le jus
+le lac
+le lit
+le livre
+le loisir
+le légume
+le manteau
+le matin
+le menu
+le meuble
+le miroir
+le mois
+le moment
+le motif
+le mur
+le médecin
+le nez
+le nombre
+le nuage
+le pain
+le pantalon
+le papier
+le parc
+le patient
+le patron
+le pays
+le pied
+le pinceau
+le plat
+le poisson
+le professeur
+le projet
+le père
+le rendez-vous
+le repas
+le restaurant
+le rhume
+le riz
+le ruban
+le sable
+le sac
+le salaire
+le salon
+le sang
+le soir
+le soleil
+le sport
+le stage
+le stylo
+le temps
+le thé
+le tissu
+le toast
+le toit
+le train
+le travail
+le téléphone
+le vent
+le ventre
+le vin
+le voyage
+le vélo
+le vêtement
+les
+les médicaments
+les pâtes
+les études
+leur
+licencier
+lieu
+lire
+louer
+lui
+lundi
+l’entretien
+l’invité(e)
+ma
+mai
+maintenant
+mais
+malade
+malheureusement
+manger
+marcher
+mardi
+mars
+mauvais
+me
+mercredi
+mettre
+modeler
+moi
+moins
+mon
+monter
+montrer
+méchant
+même
+nager
+ne
+neiger
+nerveux
+nettoyer
+noir
+nous
+nouveau
+novembre
+négocier
+octobre
+offrir
+on
+organiser
+oublier
+ouvrir
+où
+par
+parce que
+paresseux
+parfois
+parler
+partager
+participer
+partir
+passer
+patient
+pauvre
+payer
+peindre
+penser
+perdre
+petit
+peu
+planifier
+pleurer
+pleuvoir
+plier
+plus
+porter
+pour
+pourquoi
+pouvoir
+première
+prendre
+prendre soin
+presque
+profiter
+promettre
+promouvoir
+préférer
+préparer
+présenter
+puis
+puisque
+qu
+quand
+que
+quelqu'un
+quelque
+quelque chose
+qui
+quoi
+ramener
+ranger
+rappeler
+recevoir
+refuser
+regarder
+rencontrer
+rentrer
+reposer
+respirer
+ressembler
+rester
+riche
+rien
+rire
+rouge
+récupérer
+rédiger
+réparer
+répondre
+réserver
+réussir
+réviser
+s'amuser
+s'asseoir
+sa
+samedi
+satisfait
+sauter
+savoir
+savourer
+sculpter
+se
+se coucher
+se dépêcher
+se lever
+se promener
+se souvenir
+sembler
+sentir
+septembre
+servir
+ses
+si
+soigner
+sol
+son
+sortir
+soudain
+sourire
+sous
+suivre
+sur
+surprendre
+surpris
+surtout
+sérieux
+ta
+taire
+tandis que
+te
+tellement
+tenir
+terminer
+timide
+toi
+tomber
+ton
+toucher
+toujours
+tout
+traiter
+travailler
+tresser
+trinquer
+triste
+trois
+trop
+trouver
+très
+tu
+un
+une
+vendre
+vendredi
+venir
+vernir
+vers
+vert
+vieux
+visiter
+voir
+vouloir
+vous
+voyager
+vraiment
+y
+écouter
+écrire
+énervé
+étudier
+être

@@ -2526,7 +2526,8 @@
             { "fr": "Il pleure de joie.", "en": "He cries with joy.", "replace": "pleure" },
             { "fr": "Elle pleure des larmes.", "en": "She cries tears.", "replace": "pleure" },
             { "fr": "Ils pleurent ensemble.", "en": "They cry together.", "replace": "pleurent" },
-            { "fr": "Nous pleurons demain.", "en": "We cry tomorrow.", "replace": "pleurons" }
+            { "fr": "Nous pleurons demain.", "en": "We cry tomorrow.", "replace": "pleurons" },
+            { "fr": "Vous pleurez souvent.", "en": "You cry often.", "replace": "pleurez" }
           ]
         },
         { "french": "craindre", "english": "to fear", "word_type": "verb", "gender": null,           "sentences": [
@@ -4635,6 +4636,742 @@
             { "fr": "Promets-moi que tu seras prudent.", "en": "Promise me that you'll be careful.", "replace": "Promets" }
           ]
         }
+      ]
+    },
+    {
+      "level": 27,
+      "title": "Workplace",
+      "description": "Vocabulary for workplace, jobs, and office life",
+      "theme": "workplace",
+      "words": [
+        { "french": "embaucher", "english": "to hire", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'embauche un nouvel employé.", "en": "I hire a new employee.", "replace": "embauche" },
+          { "fr": "Il embauche souvent des stagiaires.", "en": "He hires interns often.", "replace": "embauche" },
+          { "fr": "Elle embauche pour le poste de secrétaire.", "en": "She hires for the secretary position.", "replace": "embauche" },
+          { "fr": "Ils embauchent de nouveaux travailleurs.", "en": "They hire new workers.", "replace": "embauchent" },
+          { "fr": "Nous embauchons chaque année.", "en": "We hire every year.", "replace": "embauchons" },
+          { "fr": "Vous embauchez des experts?", "en": "Do you hire experts?", "replace": "embauchez" }
+        ] },
+        { "french": "licencier", "english": "to fire", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je licencie un employé.", "en": "I fire an employee.", "replace": "licencie" },
+          { "fr": "Il licencie rarement.", "en": "He rarely fires.", "replace": "licencie" },
+          { "fr": "Elle licencie pour faute grave.", "en": "She fires for serious misconduct.", "replace": "licencie" },
+          { "fr": "Ils licencient plusieurs personnes.", "en": "They fire several people.", "replace": "licencient" },
+          { "fr": "Nous licencions en cas de crise.", "en": "We fire in times of crisis.", "replace": "licencions" },
+          { "fr": "Vous licenciez qui?", "en": "Who do you fire?", "replace": "licenciez" }
+        ] },
+        { "french": "gérer", "english": "to manage", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je gère une équipe.", "en": "I manage a team.", "replace": "gère" },
+          { "fr": "Il gère le projet.", "en": "He manages the project.", "replace": "gère" },
+          { "fr": "Elle gère le budget.", "en": "She manages the budget.", "replace": "gère" },
+          { "fr": "Ils gèrent plusieurs départements.", "en": "They manage several departments.", "replace": "gèrent" },
+          { "fr": "Nous gérons ensemble.", "en": "We manage together.", "replace": "gérons" },
+          { "fr": "Vous gérez bien la situation.", "en": "You manage the situation well.", "replace": "gérez" }
+        ] },
+        { "french": "négocier", "english": "to negotiate", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je négocie le contrat.", "en": "I negotiate the contract.", "replace": "négocie" },
+          { "fr": "Il négocie avec les clients.", "en": "He negotiates with clients.", "replace": "négocie" },
+          { "fr": "Elle négocie le salaire.", "en": "She negotiates the salary.", "replace": "négocie" },
+          { "fr": "Ils négocient les conditions.", "en": "They negotiate the terms.", "replace": "négocient" },
+          { "fr": "Nous négocions ensemble.", "en": "We negotiate together.", "replace": "négocions" },
+          { "fr": "Vous négociez souvent?", "en": "Do you negotiate often?", "replace": "négociez" }
+        ] },
+        { "french": "diriger", "english": "to lead", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je dirige une entreprise.", "en": "I lead a company.", "replace": "dirige" },
+          { "fr": "Il dirige le département.", "en": "He leads the department.", "replace": "dirige" },
+          { "fr": "Elle dirige l'équipe.", "en": "She leads the team.", "replace": "dirige" },
+          { "fr": "Ils dirigent plusieurs projets.", "en": "They lead several projects.", "replace": "dirigent" },
+          { "fr": "Nous dirigeons ensemble.", "en": "We lead together.", "replace": "dirigeons" },
+          { "fr": "Vous dirigez bien?", "en": "Do you lead well?", "replace": "dirigez" }
+        ] },
+        { "french": "collaborer", "english": "to collaborate", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je collabore avec mes collègues.", "en": "I collaborate with my colleagues.", "replace": "collabore" },
+          { "fr": "Il collabore sur ce projet.", "en": "He collaborates on this project.", "replace": "collabore" },
+          { "fr": "Elle collabore avec l'équipe.", "en": "She collaborates with the team.", "replace": "collabore" },
+          { "fr": "Ils collaborent souvent.", "en": "They collaborate often.", "replace": "collaborent" },
+          { "fr": "Nous collaborons régulièrement.", "en": "We collaborate regularly.", "replace": "collaborons" },
+          { "fr": "Vous collaborez sur ce dossier?", "en": "Are you collaborating on this file?", "replace": "collaborez" }
+        ] },
+        { "french": "promouvoir", "english": "to promote", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je promeus un employé.", "en": "I promote an employee.", "replace": "promeus" },
+          { "fr": "Il promeut souvent les meilleurs.", "en": "He often promotes the best.", "replace": "promeut" },
+          { "fr": "Elle promeut la diversité.", "en": "She promotes diversity.", "replace": "promeut" },
+          { "fr": "Ils promeuvent l'égalité.", "en": "They promote equality.", "replace": "promeuvent" },
+          { "fr": "Nous promouvons le respect.", "en": "We promote respect.", "replace": "promouvons" },
+          { "fr": "Vous promouvez qui?", "en": "Who do you promote?", "replace": "promouvez" }
+        ] },
+        { "french": "rédiger", "english": "to draft", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je rédige un rapport.", "en": "I draft a report.", "replace": "rédige" },
+          { "fr": "Il rédige des contrats.", "en": "He drafts contracts.", "replace": "rédige" },
+          { "fr": "Elle rédige une lettre.", "en": "She drafts a letter.", "replace": "rédige" },
+          { "fr": "Ils rédigent les documents.", "en": "They draft the documents.", "replace": "rédigent" },
+          { "fr": "Nous rédigeons ensemble.", "en": "We draft together.", "replace": "rédigeons" },
+          { "fr": "Vous rédigez ce texte?", "en": "Are you drafting this text?", "replace": "rédigez" }
+        ] },
+        { "french": "planifier", "english": "to plan/schedule", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je planifie la semaine.", "en": "I plan the week.", "replace": "planifie" },
+          { "fr": "Il planifie les réunions.", "en": "He plans the meetings.", "replace": "planifie" },
+          { "fr": "Elle planifie le projet.", "en": "She plans the project.", "replace": "planifie" },
+          { "fr": "Ils planifient les tâches.", "en": "They plan the tasks.", "replace": "planifient" },
+          { "fr": "Nous planifions ensemble.", "en": "We plan together.", "replace": "planifions" },
+          { "fr": "Vous planifiez bien?", "en": "Do you plan well?", "replace": "planifiez" }
+        ] },
+        { "french": "le patron", "english": "boss", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le patron arrive tôt.", "en": "The boss arrives early.", "replace": "patron" },
+          { "fr": "J'écoute mon patron.", "en": "I listen to my boss.", "replace": "patron" },
+          { "fr": "Le patron prend des décisions.", "en": "The boss makes decisions.", "replace": "patron" },
+          { "fr": "Le patron organise une réunion chaque semaine.", "en": "The boss organizes a meeting every week.", "replace": "patron" },
+          { "fr": "Tout le monde respecte le patron.", "en": "Everyone respects the boss.", "replace": "patron" }
+        ] },
+        { "french": "le collègue", "english": "colleague", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Mon collègue est sympathique.", "en": "My colleague is friendly.", "replace": "collègue" },
+          { "fr": "Je travaille avec mes collègues.", "en": "I work with my colleagues.", "replace": "collègues" },
+          { "fr": "Un collègue m'aide souvent.", "en": "A colleague often helps me.", "replace": "collègue" },
+          { "fr": "J'ai rencontré un nouveau collègue aujourd'hui.", "en": "I met a new colleague today.", "replace": "collègue" },
+          { "fr": "Les collègues partagent des idées.", "en": "Colleagues share ideas.", "replace": "collègues" }
+        ] },
+        { "french": "la réunion", "english": "meeting", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La réunion commence à 9h.", "en": "The meeting starts at 9am.", "replace": "réunion" },
+          { "fr": "Nous avons une réunion demain.", "en": "We have a meeting tomorrow.", "replace": "réunion" },
+          { "fr": "La réunion est importante.", "en": "The meeting is important.", "replace": "réunion" },
+          { "fr": "La réunion dure une heure.", "en": "The meeting lasts an hour.", "replace": "réunion" },
+          { "fr": "Je prépare la salle de réunion.", "en": "I prepare the meeting room.", "replace": "réunion" }
+        ] },
+        { "french": "le salaire", "english": "salary", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le salaire est versé chaque mois.", "en": "The salary is paid every month.", "replace": "salaire" },
+          { "fr": "Son salaire a augmenté.", "en": "His salary increased.", "replace": "salaire" },
+          { "fr": "Je discute de mon salaire.", "en": "I discuss my salary.", "replace": "salaire" },
+          { "fr": "Le salaire dépend de l'expérience.", "en": "The salary depends on experience.", "replace": "salaire" },
+          { "fr": "Ils attendent une augmentation de salaire.", "en": "They expect a salary increase.", "replace": "salaire" }
+        ] },
+        { "french": "le contrat", "english": "contract", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le contrat est signé.", "en": "The contract is signed.", "replace": "contrat" },
+          { "fr": "Je lis le contrat.", "en": "I read the contract.", "replace": "contrat" },
+          { "fr": "Le contrat dure un an.", "en": "The contract lasts one year.", "replace": "contrat" },
+          { "fr": "Le contrat commence en janvier.", "en": "The contract starts in January.", "replace": "contrat" },
+          { "fr": "Chaque employé signe un contrat.", "en": "Each employee signs a contract.", "replace": "contrat" }
+        ] },
+        { "french": "la pause", "english": "break", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La pause est à midi.", "en": "The break is at noon.", "replace": "pause" },
+          { "fr": "Je prends une pause.", "en": "I take a break.", "replace": "pause" },
+          { "fr": "La pause dure dix minutes.", "en": "The break lasts ten minutes.", "replace": "pause" },
+          { "fr": "Nous faisons une pause café.", "en": "We take a coffee break.", "replace": "pause" },
+          { "fr": "La pause est bien méritée.", "en": "The break is well deserved.", "replace": "pause" }
+        ] },
+        { "french": "la tâche", "english": "task", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La tâche est difficile.", "en": "The task is difficult.", "replace": "tâche" },
+          { "fr": "Je termine ma tâche.", "en": "I finish my task.", "replace": "tâche" },
+          { "fr": "Chaque tâche a une priorité.", "en": "Each task has a priority.", "replace": "tâche" },
+          { "fr": "La tâche doit être accomplie aujourd'hui.", "en": "The task must be completed today.", "replace": "tâche" },
+          { "fr": "Il a oublié une tâche importante.", "en": "He forgot an important task.", "replace": "tâche" }
+        ] },
+        { "french": "l’entretien", "english": "interview", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "L'entretien est prévu demain.", "en": "The interview is scheduled for tomorrow.", "replace": "entretien" },
+          { "fr": "Je prépare mon entretien.", "en": "I prepare my interview.", "replace": "entretien" },
+          { "fr": "L'entretien a duré une heure.", "en": "The interview lasted an hour.", "replace": "entretien" },
+          { "fr": "L'entretien se passe bien.", "en": "The interview is going well.", "replace": "entretien" },
+          { "fr": "Un entretien peut être stressant.", "en": "An interview can be stressful.", "replace": "entretien" }
+        ] },
+        { "french": "la promotion", "english": "promotion", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "Elle a reçu une promotion.", "en": "She received a promotion.", "replace": "promotion" },
+          { "fr": "La promotion est méritée.", "en": "The promotion is deserved.", "replace": "promotion" },
+          { "fr": "Il vise une promotion cette année.", "en": "He aims for a promotion this year.", "replace": "promotion" },
+          { "fr": "La promotion apporte de nouvelles responsabilités.", "en": "The promotion brings new responsibilities.", "replace": "promotion" },
+          { "fr": "Une promotion peut motiver les employés.", "en": "A promotion can motivate employees.", "replace": "promotion" }
+        ] },
+        { "french": "le stage", "english": "internship", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Je fais un stage en entreprise.", "en": "I do an internship in a company.", "replace": "stage" },
+          { "fr": "Le stage dure trois mois.", "en": "The internship lasts three months.", "replace": "stage" },
+          { "fr": "Elle a trouvé un stage à Paris.", "en": "She found an internship in Paris.", "replace": "stage" },
+          { "fr": "Le stage est obligatoire pour valider le diplôme.", "en": "The internship is required to validate the degree.", "replace": "stage" },
+          { "fr": "Il commence son stage la semaine prochaine.", "en": "He starts his internship next week.", "replace": "stage" }
+        ] }
+      ]
+    },
+    {
+      "level": 28,
+      "title": "At the Party",
+      "description": "Vocabulary for parties and celebrations",
+      "theme": "party",
+      "words": [
+        { "french": "inviter", "english": "to invite", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'invite mes amis.", "en": "I invite my friends.", "replace": "invite" },
+          { "fr": "Il invite tout le monde.", "en": "He invites everyone.", "replace": "invite" },
+          { "fr": "Elle invite sa famille.", "en": "She invites her family.", "replace": "invite" },
+          { "fr": "Ils invitent leurs voisins.", "en": "They invite their neighbors.", "replace": "invitent" },
+          { "fr": "Nous invitons nos collègues.", "en": "We invite our colleagues.", "replace": "invitons" },
+          { "fr": "Vous invitez des invités?", "en": "Are you inviting guests?", "replace": "invitez" }
+        ] },
+        { "french": "célébrer", "english": "to celebrate", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je célèbre mon anniversaire.", "en": "I celebrate my birthday.", "replace": "célèbre" },
+          { "fr": "Il célèbre une victoire.", "en": "He celebrates a victory.", "replace": "célèbre" },
+          { "fr": "Elle célèbre la réussite.", "en": "She celebrates success.", "replace": "célèbre" },
+          { "fr": "Ils célèbrent ensemble.", "en": "They celebrate together.", "replace": "célèbrent" },
+          { "fr": "Nous célébrons la fête.", "en": "We celebrate the party.", "replace": "célébrons" },
+          { "fr": "Vous célébrez souvent?", "en": "Do you celebrate often?", "replace": "célébrez" }
+        ] },
+        { "french": "trinquer", "english": "to toast", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je trinque avec mes amis.", "en": "I toast with my friends.", "replace": "trinque" },
+          { "fr": "Il trinque à la santé.", "en": "He toasts to health.", "replace": "trinque" },
+          { "fr": "Elle trinque avec sa famille.", "en": "She toasts with her family.", "replace": "trinque" },
+          { "fr": "Ils trinquent ensemble.", "en": "They toast together.", "replace": "trinquent" },
+          { "fr": "Nous trinquons à l'amitié.", "en": "We toast to friendship.", "replace": "trinquons" },
+          { "fr": "Vous trinquez à quoi?", "en": "What are you toasting to?", "replace": "trinquez" }
+        ] },
+        { "french": "applaudir", "english": "to applaud", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'applaudis le discours.", "en": "I applaud the speech.", "replace": "applaudis" },
+          { "fr": "Il applaudit fort.", "en": "He applauds loudly.", "replace": "applaudit" },
+          { "fr": "Elle applaudit la chanson.", "en": "She applauds the song.", "replace": "applaudit" },
+          { "fr": "Ils applaudissent après le spectacle.", "en": "They applaud after the show.", "replace": "applaudissent" },
+          { "fr": "Nous applaudissons ensemble.", "en": "We applaud together.", "replace": "applaudissons" },
+          { "fr": "Vous applaudissez les artistes?", "en": "Do you applaud the performers?", "replace": "applaudissez" }
+        ] },
+        { "french": "bavarder", "english": "to chat", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je bavarde avec mes amis.", "en": "I chat with my friends.", "replace": "bavarde" },
+          { "fr": "Il bavarde beaucoup.", "en": "He chats a lot.", "replace": "bavarde" },
+          { "fr": "Elle bavarde pendant la fête.", "en": "She chats during the party.", "replace": "bavarde" },
+          { "fr": "Ils bavardent ensemble.", "en": "They chat together.", "replace": "bavardent" },
+          { "fr": "Nous bavardons après le repas.", "en": "We chat after the meal.", "replace": "bavardons" },
+          { "fr": "Vous bavardez trop!", "en": "You chat too much!", "replace": "bavardez" }
+        ] },
+        { "french": "féliciter", "english": "to congratulate", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je félicite le gagnant.", "en": "I congratulate the winner.", "replace": "félicite" },
+          { "fr": "Il félicite son ami.", "en": "He congratulates his friend.", "replace": "félicite" },
+          { "fr": "Elle félicite sa sœur.", "en": "She congratulates her sister.", "replace": "félicite" },
+          { "fr": "Ils félicitent les organisateurs.", "en": "They congratulate the organizers.", "replace": "félicitent" },
+          { "fr": "Nous félicitons les invités.", "en": "We congratulate the guests.", "replace": "félicitons" },
+          { "fr": "Vous félicitez les enfants?", "en": "Do you congratulate the children?", "replace": "félicitez" }
+        ] },
+        { "french": "illuminer", "english": "to light up", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'illumine la pièce.", "en": "I light up the room.", "replace": "illumine" },
+          { "fr": "Il illumine la scène.", "en": "He lights up the stage.", "replace": "illumine" },
+          { "fr": "Elle illumine la soirée.", "en": "She lights up the evening.", "replace": "illumine" },
+          { "fr": "Ils illuminent la fête.", "en": "They light up the party.", "replace": "illuminent" },
+          { "fr": "Nous illuminons la salle.", "en": "We light up the hall.", "replace": "illuminons" },
+          { "fr": "Vous illuminez la maison?", "en": "Do you light up the house?", "replace": "illuminez" }
+        ] },
+        { "french": "animer", "english": "to host", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'anime la soirée.", "en": "I host the evening.", "replace": "anime" },
+          { "fr": "Il anime le jeu.", "en": "He hosts the game.", "replace": "anime" },
+          { "fr": "Elle anime la fête.", "en": "She hosts the party.", "replace": "anime" },
+          { "fr": "Ils animent le spectacle.", "en": "They host the show.", "replace": "animent" },
+          { "fr": "Nous animons la réunion.", "en": "We host the meeting.", "replace": "animons" },
+          { "fr": "Vous animez souvent?", "en": "Do you host often?", "replace": "animez" }
+        ] },
+        { "french": "savourer", "english": "to savor", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je savoure le gâteau.", "en": "I savor the cake.", "replace": "savoure" },
+          { "fr": "Il savoure chaque bouchée.", "en": "He savors every bite.", "replace": "savoure" },
+          { "fr": "Elle savoure la musique.", "en": "She savors the music.", "replace": "savoure" },
+          { "fr": "Ils savourent le repas.", "en": "They savor the meal.", "replace": "savourent" },
+          { "fr": "Nous savourons ce moment.", "en": "We savor this moment.", "replace": "savournons" },
+          { "fr": "Vous savourez la fête?", "en": "Are you savoring the party?", "replace": "savourez" }
+        ] },
+        { "french": "le cadeau", "english": "gift", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "J'offre un cadeau.", "en": "I give a gift.", "replace": "cadeau" },
+          { "fr": "Le cadeau est emballé.", "en": "The gift is wrapped.", "replace": "cadeau" },
+          { "fr": "Elle reçoit un cadeau.", "en": "She receives a gift.", "replace": "cadeau" },
+          { "fr": "Les cadeaux sont sur la table.", "en": "The gifts are on the table.", "replace": "cadeaux" },
+          { "fr": "Ce cadeau est pour toi.", "en": "This gift is for you.", "replace": "cadeau" }
+        ] },
+        { "french": "le gâteau", "english": "cake", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le gâteau est délicieux.", "en": "The cake is delicious.", "replace": "gâteau" },
+          { "fr": "Je coupe le gâteau.", "en": "I cut the cake.", "replace": "gâteau" },
+          { "fr": "Il prépare un gâteau.", "en": "He prepares a cake.", "replace": "gâteau" },
+          { "fr": "Le gâteau a trois étages.", "en": "The cake has three layers.", "replace": "gâteau" },
+          { "fr": "Nous mangeons du gâteau.", "en": "We eat cake.", "replace": "gâteau" }
+        ] },
+        { "french": "l’invité(e)", "english": "guest", "word_type": "noun", "gender": "le/la", "sentences": [
+          { "fr": "L'invité arrive à l'heure.", "en": "The guest arrives on time.", "replace": "invité" },
+          { "fr": "Les invités sont nombreux.", "en": "There are many guests.", "replace": "invités" },
+          { "fr": "Chaque invité reçoit un cadeau.", "en": "Each guest receives a gift.", "replace": "invité" },
+          { "fr": "L'invitée porte une belle robe.", "en": "The (female) guest wears a beautiful dress.", "replace": "invitée" },
+          { "fr": "Un invité spécial est attendu.", "en": "A special guest is expected.", "replace": "invité" }
+        ] },
+        { "french": "la piste de danse", "english": "dance floor", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La piste de danse est pleine.", "en": "The dance floor is full.", "replace": "piste" },
+          { "fr": "Ils dansent sur la piste de danse.", "en": "They dance on the dance floor.", "replace": "piste" },
+          { "fr": "La piste de danse est grande.", "en": "The dance floor is big.", "replace": "piste" },
+          { "fr": "La piste de danse brille sous les lumières.", "en": "The dance floor shines under the lights.", "replace": "piste" },
+          { "fr": "Je regarde la piste de danse.", "en": "I look at the dance floor.", "replace": "piste" }
+        ] },
+        { "french": "le ballon", "english": "balloon", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le ballon est rouge.", "en": "The balloon is red.", "replace": "ballon" },
+          { "fr": "Les enfants jouent avec les ballons.", "en": "The children play with the balloons.", "replace": "ballons" },
+          { "fr": "Un ballon s'est envolé.", "en": "A balloon flew away.", "replace": "ballon" },
+          { "fr": "Je gonfle un ballon.", "en": "I inflate a balloon.", "replace": "ballon" },
+          { "fr": "Le ballon éclate soudainement.", "en": "The balloon suddenly bursts.", "replace": "ballon" }
+        ] },
+        { "french": "le toast", "english": "toast", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Il porte un toast.", "en": "He makes a toast.", "replace": "toast" },
+          { "fr": "Le toast est émouvant.", "en": "The toast is moving.", "replace": "toast" },
+          { "fr": "Je fais un toast pour les mariés.", "en": "I make a toast for the newlyweds.", "replace": "toast" },
+          { "fr": "Tout le monde écoute le toast.", "en": "Everyone listens to the toast.", "replace": "toast" },
+          { "fr": "Le toast commence la soirée.", "en": "The toast starts the evening.", "replace": "toast" }
+        ] },
+        { "french": "joyeuse", "english": "joyful", "word_type": "adjective", "gender": "feminine", "sentences": [
+          { "fr": "Elle est joyeuse aujourd'hui.", "en": "She is joyful today.", "replace": "joyeuse" },
+          { "fr": "La fête est joyeuse.", "en": "The party is joyful.", "replace": "joyeuse" },
+          { "fr": "Une ambiance joyeuse règne.", "en": "A joyful atmosphere prevails.", "replace": "joyeuse" },
+          { "fr": "Les enfants sont joyeuses.", "en": "The girls are joyful.", "replace": "joyeuses" },
+          { "fr": "Elle devient joyeuse en dansant.", "en": "She becomes joyful while dancing.", "replace": "joyeuse" }
+        ] },
+        { "french": "la surprise", "english": "surprise", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "C'est une grande surprise.", "en": "It's a big surprise.", "replace": "surprise" },
+          { "fr": "La surprise est réussie.", "en": "The surprise is successful.", "replace": "surprise" },
+          { "fr": "Ils préparent une surprise.", "en": "They prepare a surprise.", "replace": "surprise" },
+          { "fr": "Je n'aime pas les surprises.", "en": "I don't like surprises.", "replace": "surprises" },
+          { "fr": "Quelle surprise agréable!", "en": "What a pleasant surprise!", "replace": "surprise" }
+        ] },
+        { "french": "la bougie", "english": "candle", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La bougie est allumée.", "en": "The candle is lit.", "replace": "bougie" },
+          { "fr": "Je souffle la bougie.", "en": "I blow out the candle.", "replace": "bougie" },
+          { "fr": "Il y a cinq bougies sur le gâteau.", "en": "There are five candles on the cake.", "replace": "bougies" },
+          { "fr": "La bougie sent bon.", "en": "The candle smells good.", "replace": "bougie" },
+          { "fr": "Les bougies décorent la table.", "en": "The candles decorate the table.", "replace": "bougies" }
+        ] },
+        { "french": "la tenue", "english": "outfit", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "Sa tenue est élégante.", "en": "Her outfit is elegant.", "replace": "tenue" },
+          { "fr": "Je choisis une tenue pour la fête.", "en": "I choose an outfit for the party.", "replace": "tenue" },
+          { "fr": "Il porte une tenue colorée.", "en": "He wears a colorful outfit.", "replace": "tenue" },
+          { "fr": "La tenue est assortie aux chaussures.", "en": "The outfit matches the shoes.", "replace": "tenue" },
+          { "fr": "Les tenues sont variées.", "en": "The outfits are varied.", "replace": "tenues" }
+        ] }
+      ]
+    },
+    {
+      "level": 29,
+      "title": "Arts and Crafts",
+      "description": "Vocabulary for arts, crafts, and creative activities",
+      "theme": "arts_crafts",
+      "words": [
+        { "french": "découper", "english": "to cut", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je découpe du papier.", "en": "I cut paper.", "replace": "découpe" },
+          { "fr": "Il découpe une forme.", "en": "He cuts a shape.", "replace": "découpe" },
+          { "fr": "Elle découpe des images.", "en": "She cuts images.", "replace": "découpe" },
+          { "fr": "Ils découpent ensemble.", "en": "They cut together.", "replace": "découpent" },
+          { "fr": "Nous découpons des motifs.", "en": "We cut patterns.", "replace": "découpons" },
+          { "fr": "Vous découpez bien?", "en": "Do you cut well?", "replace": "découpez" }
+        ] },
+        { "french": "coller", "english": "to glue", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je colle la feuille.", "en": "I glue the sheet.", "replace": "colle" },
+          { "fr": "Il colle le papier.", "en": "He glues the paper.", "replace": "colle" },
+          { "fr": "Elle colle les perles.", "en": "She glues the beads.", "replace": "colle" },
+          { "fr": "Ils collent les photos.", "en": "They glue the photos.", "replace": "collent" },
+          { "fr": "Nous collons les rubans.", "en": "We glue the ribbons.", "replace": "collons" },
+          { "fr": "Vous collez quoi?", "en": "What are you gluing?", "replace": "collez" }
+        ] },
+        { "french": "tresser", "english": "to braid", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je tresse un bracelet.", "en": "I braid a bracelet.", "replace": "tresse" },
+          { "fr": "Il tresse la ficelle.", "en": "He braids the string.", "replace": "tresse" },
+          { "fr": "Elle tresse ses cheveux.", "en": "She braids her hair.", "replace": "tresse" },
+          { "fr": "Ils tressent des paniers.", "en": "They braid baskets.", "replace": "tressent" },
+          { "fr": "Nous tressons ensemble.", "en": "We braid together.", "replace": "tressons" },
+          { "fr": "Vous tressez bien?", "en": "Do you braid well?", "replace": "tressez" }
+        ] },
+        { "french": "modeler", "english": "to shape", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je modèle l'argile.", "en": "I shape the clay.", "replace": "modèle" },
+          { "fr": "Il modèle une figurine.", "en": "He shapes a figurine.", "replace": "modèle" },
+          { "fr": "Elle modèle un animal.", "en": "She shapes an animal.", "replace": "modèle" },
+          { "fr": "Ils modèlent des objets.", "en": "They shape objects.", "replace": "modèlent" },
+          { "fr": "Nous modelons ensemble.", "en": "We shape together.", "replace": "modelons" },
+          { "fr": "Vous modelez quoi?", "en": "What are you shaping?", "replace": "modelez" }
+        ] },
+        { "french": "sculpter", "english": "to sculpt", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je sculpte une statue.", "en": "I sculpt a statue.", "replace": "sculpte" },
+          { "fr": "Il sculpte le bois.", "en": "He sculpts wood.", "replace": "sculpte" },
+          { "fr": "Elle sculpte la pierre.", "en": "She sculpts stone.", "replace": "sculpte" },
+          { "fr": "Ils sculptent ensemble.", "en": "They sculpt together.", "replace": "sculptent" },
+          { "fr": "Nous sculptons des formes.", "en": "We sculpt shapes.", "replace": "sculptons" },
+          { "fr": "Vous sculptez quoi?", "en": "What are you sculpting?", "replace": "sculptez" }
+        ] },
+        { "french": "assembler", "english": "to assemble", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'assemble les pièces.", "en": "I assemble the pieces.", "replace": "assemble" },
+          { "fr": "Il assemble un modèle.", "en": "He assembles a model.", "replace": "assemble" },
+          { "fr": "Elle assemble les éléments.", "en": "She assembles the elements.", "replace": "assemble" },
+          { "fr": "Ils assemblent un puzzle.", "en": "They assemble a puzzle.", "replace": "assemblent" },
+          { "fr": "Nous assemblons ensemble.", "en": "We assemble together.", "replace": "assemblons" },
+          { "fr": "Vous assemblez quoi?", "en": "What are you assembling?", "replace": "assemblez" }
+        ] },
+        { "french": "vernir", "english": "to varnish", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je vernis la table.", "en": "I varnish the table.", "replace": "vernis" },
+          { "fr": "Il vernit le bois.", "en": "He varnishes the wood.", "replace": "vernit" },
+          { "fr": "Elle vernit la sculpture.", "en": "She varnishes the sculpture.", "replace": "vernit" },
+          { "fr": "Ils vernissent les meubles.", "en": "They varnish the furniture.", "replace": "vernissent" },
+          { "fr": "Nous vernissons ensemble.", "en": "We varnish together.", "replace": "vernissons" },
+          { "fr": "Vous vernissez quoi?", "en": "What are you varnishing?", "replace": "vernissez" }
+        ] },
+        { "french": "enrouler", "english": "to roll", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'enroule le fil.", "en": "I roll the thread.", "replace": "enroule" },
+          { "fr": "Il enroule la ficelle.", "en": "He rolls the string.", "replace": "enroule" },
+          { "fr": "Elle enroule le ruban.", "en": "She rolls the ribbon.", "replace": "enroule" },
+          { "fr": "Ils enroulent le motif.", "en": "They roll the pattern.", "replace": "enroulent" },
+          { "fr": "Nous enroulons la laine.", "en": "We roll the wool.", "replace": "enroulons" },
+          { "fr": "Vous enroulez le tissu?", "en": "Do you roll the fabric?", "replace": "enroulez" }
+        ] },
+        { "french": "fixer", "english": "to fasten", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je fixe la feuille.", "en": "I fasten the sheet.", "replace": "fixe" },
+          { "fr": "Il fixe le dessin au mur.", "en": "He fastens the drawing to the wall.", "replace": "fixe" },
+          { "fr": "Elle fixe le ruban.", "en": "She fastens the ribbon.", "replace": "fixe" },
+          { "fr": "Ils fixent les perles.", "en": "They fasten the beads.", "replace": "fixent" },
+          { "fr": "Nous fixons la toile.", "en": "We fasten the canvas.", "replace": "fixons" },
+          { "fr": "Vous fixez le motif?", "en": "Do you fasten the pattern?", "replace": "fixez" }
+        ] },
+        { "french": "le pinceau", "english": "paintbrush", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le pinceau est propre.", "en": "The paintbrush is clean.", "replace": "pinceau" },
+          { "fr": "J'utilise un pinceau.", "en": "I use a paintbrush.", "replace": "pinceau" },
+          { "fr": "Le pinceau est mouillé.", "en": "The paintbrush is wet.", "replace": "pinceau" },
+          { "fr": "Les pinceaux sont rangés.", "en": "The paintbrushes are put away.", "replace": "pinceaux" }
+        ] },
+        { "french": "la colle", "english": "glue", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La colle est forte.", "en": "The glue is strong.", "replace": "colle" },
+          { "fr": "J'achète de la colle.", "en": "I buy glue.", "replace": "colle" },
+          { "fr": "La colle sèche vite.", "en": "The glue dries quickly.", "replace": "colle" },
+          { "fr": "La colle colle bien.", "en": "The glue sticks well.", "replace": "colle" }
+        ] },
+        { "french": "la ficelle", "english": "string", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La ficelle est fine.", "en": "The string is thin.", "replace": "ficelle" },
+          { "fr": "J'utilise de la ficelle.", "en": "I use string.", "replace": "ficelle" },
+          { "fr": "La ficelle attache le paquet.", "en": "The string ties the package.", "replace": "ficelle" },
+          { "fr": "Les ficelles sont longues.", "en": "The strings are long.", "replace": "ficelles" }
+        ] },
+        { "french": "la perle", "english": "bead", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La perle est bleue.", "en": "The bead is blue.", "replace": "perle" },
+          { "fr": "J'ajoute une perle.", "en": "I add a bead.", "replace": "perle" },
+          { "fr": "Les perles brillent.", "en": "The beads shine.", "replace": "perles" },
+          { "fr": "La perle roule sur la table.", "en": "The bead rolls on the table.", "replace": "perle" }
+        ] },
+        { "french": "l'argile", "english": "clay", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'argile est molle.", "en": "The clay is soft.", "replace": "argile" },
+          { "fr": "Je façonne l'argile.", "en": "I shape the clay.", "replace": "argile" },
+          { "fr": "L'argile sèche à l'air.", "en": "The clay dries in the air.", "replace": "argile" },
+          { "fr": "L'argile colle aux mains.", "en": "The clay sticks to the hands.", "replace": "argile" }
+        ] },
+        { "french": "le tissu", "english": "fabric", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le tissu est doux.", "en": "The fabric is soft.", "replace": "tissu" },
+          { "fr": "Je coupe le tissu.", "en": "I cut the fabric.", "replace": "tissu" },
+          { "fr": "Le tissu est coloré.", "en": "The fabric is colorful.", "replace": "tissu" },
+          { "fr": "Les tissus sont variés.", "en": "The fabrics are varied.", "replace": "tissus" }
+        ] },
+        { "french": "le ruban", "english": "ribbon", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le ruban est rouge.", "en": "The ribbon is red.", "replace": "ruban" },
+          { "fr": "J'attache le ruban.", "en": "I tie the ribbon.", "replace": "ruban" },
+          { "fr": "Le ruban brille.", "en": "The ribbon shines.", "replace": "ruban" },
+          { "fr": "Les rubans décorent la boîte.", "en": "The ribbons decorate the box.", "replace": "rubans" }
+        ] },
+        { "french": "la toile", "english": "canvas", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La toile est blanche.", "en": "The canvas is white.", "replace": "toile" },
+          { "fr": "Je peins sur la toile.", "en": "I paint on the canvas.", "replace": "toile" },
+          { "fr": "La toile sèche.", "en": "The canvas dries.", "replace": "toile" },
+          { "fr": "Les toiles sont exposées.", "en": "The canvases are displayed.", "replace": "toiles" }
+        ] },
+        { "french": "le motif", "english": "pattern", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le motif est simple.", "en": "The pattern is simple.", "replace": "motif" },
+          { "fr": "Je choisis un motif.", "en": "I choose a pattern.", "replace": "motif" },
+          { "fr": "Le motif change.", "en": "The pattern changes.", "replace": "motif" },
+          { "fr": "Les motifs sont variés.", "en": "The patterns are varied.", "replace": "motifs" }
+        ] },
+        { "french": "créatif", "english": "creative", "word_type": "adjective", "gender": "masculine", "sentences": [
+          { "fr": "Il est créatif.", "en": "He is creative.", "replace": "créatif" },
+          { "fr": "Un projet créatif.", "en": "A creative project.", "replace": "créatif" },
+          { "fr": "Cet enfant est créatif.", "en": "This child is creative.", "replace": "créatif" },
+          { "fr": "Les élèves sont créatifs.", "en": "The students are creative.", "replace": "créatifs" }
+        ] }
+      ]
+    }
+    ,
+    {
+      "level": 30,
+      "title": "Advanced Core Expansion",
+      "description": "Higher frequency abstract verbs and everyday nouns",
+      "theme": "advanced_core",
+      "words": [
+        { "french": "résoudre", "english": "solve", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je résous le problème.", "en": "I solve the problem.", "replace": "résous" },
+          { "fr": "Il résout un exercice.", "en": "He solves an exercise.", "replace": "résout" },
+          { "fr": "Elle résout vite.", "en": "She solves quickly.", "replace": "résout" },
+          { "fr": "Ils résolvent les énigmes.", "en": "They solve the riddles.", "replace": "résolvent" },
+          { "fr": "Nous résolvons ensemble.", "en": "We solve together.", "replace": "résolvons" },
+          { "fr": "Vous résolvez ce cas?", "en": "Are you solving this case?", "replace": "résolvez" }
+        ] },
+        { "french": "traduire", "english": "translate", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je traduis le texte.", "en": "I translate the text.", "replace": "traduis" },
+          { "fr": "Il traduit une phrase.", "en": "He translates a sentence.", "replace": "traduit" },
+          { "fr": "Elle traduit rapidement.", "en": "She translates quickly.", "replace": "traduit" },
+          { "fr": "Ils traduisent des documents.", "en": "They translate documents.", "replace": "traduisent" },
+          { "fr": "Nous traduisons ensemble.", "en": "We translate together.", "replace": "traduisons" },
+          { "fr": "Vous traduisez ce mot?", "en": "Are you translating this word?", "replace": "traduisez" }
+        ] },
+        { "french": "soutenir", "english": "support", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je soutiens mon ami.", "en": "I support my friend.", "replace": "soutiens" },
+          { "fr": "Il soutient son équipe.", "en": "He supports his team.", "replace": "soutient" },
+          { "fr": "Elle soutient la décision.", "en": "She supports the decision.", "replace": "soutient" },
+          { "fr": "Ils soutiennent le projet.", "en": "They support the project.", "replace": "soutiennent" },
+          { "fr": "Nous soutenons un groupe.", "en": "We support a group.", "replace": "soutenons" },
+          { "fr": "Vous soutenez cette cause?", "en": "Do you support this cause?", "replace": "soutenez" }
+        ] },
+        { "french": "éviter", "english": "avoid", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'évite le danger.", "en": "I avoid danger.", "replace": "évite" },
+          { "fr": "Il évite une erreur.", "en": "He avoids a mistake.", "replace": "évite" },
+          { "fr": "Elle évite la foule.", "en": "She avoids the crowd.", "replace": "évite" },
+          { "fr": "Ils évitent les questions.", "en": "They avoid the questions.", "replace": "évitent" },
+          { "fr": "Nous évitons cela.", "en": "We avoid that.", "replace": "évitons" },
+          { "fr": "Vous évitez ce sujet?", "en": "Are you avoiding this subject?", "replace": "évitez" }
+        ] },
+        { "french": "améliorer", "english": "improve", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'améliore mon français.", "en": "I improve my French.", "replace": "améliore" },
+          { "fr": "Il améliore son travail.", "en": "He improves his work.", "replace": "améliore" },
+          { "fr": "Elle améliore un projet.", "en": "She improves a project.", "replace": "améliore" },
+          { "fr": "Ils améliorent la méthode.", "en": "They improve the method.", "replace": "améliorent" },
+          { "fr": "Nous améliorons nos résultats.", "en": "We improve our results.", "replace": "améliorons" },
+          { "fr": "Vous améliorez la qualité?", "en": "Are you improving the quality?", "replace": "améliorez" }
+        ] },
+        { "french": "développer", "english": "develop", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je développe une idée.", "en": "I develop an idea.", "replace": "développe" },
+          { "fr": "Il développe un projet.", "en": "He develops a project.", "replace": "développe" },
+          { "fr": "Elle développe ses compétences.", "en": "She develops her skills.", "replace": "développe" },
+          { "fr": "Ils développent une application.", "en": "They develop an app.", "replace": "développent" },
+          { "fr": "Nous développons ensemble.", "en": "We develop together.", "replace": "développons" },
+          { "fr": "Vous développez ce produit?", "en": "Are you developing this product?", "replace": "développez" }
+        ] },
+        { "french": "fournir", "english": "provide", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je fournis des exemples.", "en": "I provide examples.", "replace": "fournis" },
+          { "fr": "Il fournit une réponse.", "en": "He provides an answer.", "replace": "fournit" },
+          { "fr": "Elle fournit de l'aide.", "en": "She provides help.", "replace": "fournit" },
+          { "fr": "Ils fournissent un service.", "en": "They provide a service.", "replace": "fournissent" },
+          { "fr": "Nous fournissons des données.", "en": "We provide data.", "replace": "fournissons" },
+          { "fr": "Vous fournissez tout?", "en": "Do you provide everything?", "replace": "fournissez" }
+        ] },
+        { "french": "atteindre", "english": "reach", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'atteins mon objectif.", "en": "I reach my goal.", "replace": "atteins" },
+          { "fr": "Il atteint le sommet.", "en": "He reaches the summit.", "replace": "atteint" },
+          { "fr": "Elle atteint la limite.", "en": "She reaches the limit.", "replace": "atteint" },
+          { "fr": "Ils atteignent un niveau.", "en": "They reach a level.", "replace": "atteignent" },
+          { "fr": "Nous atteignons le but.", "en": "We reach the target.", "replace": "atteignons" },
+          { "fr": "Vous atteignez ce résultat?", "en": "Do you reach this result?", "replace": "atteignez" }
+        ] },
+        { "french": "remplacer", "english": "replace", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je remplace un mot.", "en": "I replace a word.", "replace": "remplace" },
+          { "fr": "Il remplace une pièce.", "en": "He replaces a part.", "replace": "remplace" },
+          { "fr": "Elle remplace le vieux livre.", "en": "She replaces the old book.", "replace": "remplace" },
+          { "fr": "Ils remplacent le système.", "en": "They replace the system.", "replace": "remplacent" },
+          { "fr": "Nous remplaçons le fichier.", "en": "We replace the file.", "replace": "remplaçons" },
+          { "fr": "Vous remplacez cet objet?", "en": "Are you replacing this object?", "replace": "remplacez" }
+        ] },
+        { "french": "posséder", "english": "own", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je possède une voiture.", "en": "I own a car.", "replace": "possède" },
+          { "fr": "Il possède une maison.", "en": "He owns a house.", "replace": "possède" },
+          { "fr": "Elle possède un talent.", "en": "She possesses a talent.", "replace": "possède" },
+          { "fr": "Ils possèdent des biens.", "en": "They own property.", "replace": "possèdent" },
+          { "fr": "Nous possédons peu.", "en": "We own little.", "replace": "possédons" },
+          { "fr": "Vous possédez ça?", "en": "Do you own that?", "replace": "possédez" }
+        ] },
+        { "french": "l'argent", "english": "money", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "L'argent est utile.", "en": "Money is useful.", "replace": "argent" },
+          { "fr": "Je garde mon argent.", "en": "I keep my money.", "replace": "argent" },
+          { "fr": "Il économise son argent.", "en": "He saves his money.", "replace": "argent" }
+        ] },
+        { "french": "la carte", "english": "card", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La carte est sur la table.", "en": "The card is on the table.", "replace": "carte" },
+          { "fr": "Je lis la carte.", "en": "I read the map.", "replace": "carte" },
+          { "fr": "Il montre une carte.", "en": "He shows a card.", "replace": "carte" }
+        ] },
+        { "french": "le chemin", "english": "path", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le chemin est long.", "en": "The path is long.", "replace": "chemin" },
+          { "fr": "Je suis le chemin.", "en": "I follow the path.", "replace": "chemin" },
+          { "fr": "Ils marchent sur le chemin.", "en": "They walk on the path.", "replace": "chemin" }
+        ] },
+        { "french": "le doute", "english": "doubt", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le doute existe.", "en": "Doubt exists.", "replace": "doute" },
+          { "fr": "J'efface mon doute.", "en": "I erase my doubt.", "replace": "doute" },
+          { "fr": "Il exprime un doute.", "en": "He expresses a doubt.", "replace": "doute" }
+        ] },
+        { "french": "le drapeau", "english": "flag", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le drapeau est haut.", "en": "The flag is high.", "replace": "drapeau" },
+          { "fr": "Je regarde le drapeau.", "en": "I look at the flag.", "replace": "drapeau" },
+          { "fr": "Il porte un drapeau.", "en": "He carries a flag.", "replace": "drapeau" }
+        ] },
+        { "french": "la couleur", "english": "color", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La couleur change.", "en": "The color changes.", "replace": "couleur" },
+          { "fr": "Je choisis une couleur.", "en": "I choose a color.", "replace": "couleur" },
+          { "fr": "Cette couleur est vive.", "en": "This color is bright.", "replace": "couleur" }
+        ] },
+        { "french": "le déjeuner", "english": "lunch", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le déjeuner est prêt.", "en": "Lunch is ready.", "replace": "déjeuner" },
+          { "fr": "Je prends mon déjeuner.", "en": "I have my lunch.", "replace": "déjeuner" },
+          { "fr": "Ils partagent le déjeuner.", "en": "They share lunch.", "replace": "déjeuner" }
+        ] },
+        { "french": "la lettre", "english": "letter", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La lettre arrive.", "en": "The letter arrives.", "replace": "lettre" },
+          { "fr": "J'écris une lettre.", "en": "I write a letter.", "replace": "lettre" },
+          { "fr": "Il lit la lettre.", "en": "He reads the letter.", "replace": "lettre" }
+        ] },
+        { "french": "l'objet", "english": "object", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "L'objet tombe.", "en": "The object falls.", "replace": "objet" },
+          { "fr": "Je tiens l'objet.", "en": "I hold the object.", "replace": "objet" },
+          { "fr": "Il cherche un objet.", "en": "He looks for an object.", "replace": "objet" }
+        ] },
+        { "french": "l'ombre", "english": "shadow", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "L'ombre est longue.", "en": "The shadow is long.", "replace": "ombre" },
+          { "fr": "Je vois une ombre.", "en": "I see a shadow.", "replace": "ombre" },
+          { "fr": "Il marche dans l'ombre.", "en": "He walks in the shadow.", "replace": "ombre" }
+        ] }
+      ]
+    },
+    {
+      "level": 31,
+      "title": "Advanced Verbs & Nouns",
+      "description": "Challenging verbs and nouns for Level 31.",
+      "theme": "expansion",
+      "words": [
+        { "french": "falloir", "english": "to be necessary", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Il faut étudier pour réussir.", "en": "It is necessary to study to succeed.", "replace": "faut" },
+          { "fr": "Il faut partir maintenant.", "en": "We must leave now.", "replace": "faut" },
+          { "fr": "Il faut du temps.", "en": "Time is needed.", "replace": "faut" },
+          { "fr": "Il faut écouter le professeur.", "en": "You must listen to the teacher.", "replace": "faut" },
+          { "fr": "Il faut finir les devoirs.", "en": "Homework must be finished.", "replace": "faut" },
+          { "fr": "Il faut de la patience.", "en": "Patience is required.", "replace": "faut" }
+        ] },
+        { "french": "rendre", "english": "to give back", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je rends le livre à la bibliothèque.", "en": "I return the book to the library.", "replace": "rends" },
+          { "fr": "Il rend visite à ses parents.", "en": "He visits his parents.", "replace": "rend" },
+          { "fr": "Elle rend la clé.", "en": "She gives back the key.", "replace": "rend" },
+          { "fr": "Nous rendons hommage au héros.", "en": "We pay tribute to the hero.", "replace": "rendons" },
+          { "fr": "Vous rendez les devoirs.", "en": "You hand in the homework.", "replace": "rendez" },
+          { "fr": "Ils rendent la monnaie.", "en": "They give back the change.", "replace": "rendent" }
+        ] },
+        { "french": "paraître", "english": "to appear", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Il paraît fatigué.", "en": "He seems tired.", "replace": "paraît" },
+          { "fr": "Cela paraît difficile.", "en": "That seems difficult.", "replace": "paraît" },
+          { "fr": "Elle paraît heureuse.", "en": "She appears happy.", "replace": "paraît" },
+          { "fr": "Le livre paraît aujourd'hui.", "en": "The book is published today.", "replace": "paraît" },
+          { "fr": "Ils paraissent surpris.", "en": "They seem surprised.", "replace": "paraissent" },
+          { "fr": "Tu parais calme.", "en": "You seem calm.", "replace": "parais" }
+        ] },
+        { "french": "vivre", "english": "to live", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je vis en France.", "en": "I live in France.", "replace": "vis" },
+          { "fr": "Il vit seul.", "en": "He lives alone.", "replace": "vit" },
+          { "fr": "Nous vivons ensemble.", "en": "We live together.", "replace": "vivons" },
+          { "fr": "Vous vivez en ville.", "en": "You live in the city.", "replace": "vivez" },
+          { "fr": "Ils vivent heureux.", "en": "They live happily.", "replace": "vivent" },
+          { "fr": "Elle vit une belle vie.", "en": "She lives a beautiful life.", "replace": "vit" }
+        ] },
+        { "french": "revenir", "english": "to come back", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je reviens demain.", "en": "I come back tomorrow.", "replace": "reviens" },
+          { "fr": "Il revient de Paris.", "en": "He returns from Paris.", "replace": "revient" },
+          { "fr": "Nous revenons tard.", "en": "We come back late.", "replace": "revenons" },
+          { "fr": "Vous revenez souvent.", "en": "You come back often.", "replace": "revenez" },
+          { "fr": "Ils reviennent ensemble.", "en": "They return together.", "replace": "reviennent" },
+          { "fr": "Elle revient à la maison.", "en": "She comes back home.", "replace": "revient" }
+        ] },
+        { "french": "mourir", "english": "to die", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Il meurt de rire.", "en": "He dies of laughter.", "replace": "meurt" },
+          { "fr": "Elle meurt jeune.", "en": "She dies young.", "replace": "meurt" },
+          { "fr": "Ils meurent ensemble.", "en": "They die together.", "replace": "meurent" },
+          { "fr": "Nous mourons de faim.", "en": "We are starving (lit. dying of hunger).", "replace": "mourons" },
+          { "fr": "Vous mourez de soif.", "en": "You are dying of thirst.", "replace": "mourez" },
+          { "fr": "Je meurs d'envie.", "en": "I am dying to (do something).", "replace": "meurs" }
+        ] },
+        { "french": "jeter", "english": "to throw", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Je jette la balle.", "en": "I throw the ball.", "replace": "jette" },
+          { "fr": "Il jette un coup d'œil.", "en": "He glances (throws a look).", "replace": "jette" },
+          { "fr": "Elle jette les déchets.", "en": "She throws away the trash.", "replace": "jette" },
+          { "fr": "Nous jetons l'ancre.", "en": "We drop the anchor.", "replace": "jetons" },
+          { "fr": "Vous jetez la serviette.", "en": "You throw in the towel.", "replace": "jetez" },
+          { "fr": "Ils jettent des fleurs.", "en": "They throw flowers.", "replace": "jettent" }
+        ] },
+        { "french": "valoir", "english": "to be worth", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "Ça vaut la peine.", "en": "It's worth it.", "replace": "vaut" },
+          { "fr": "Il vaut mieux partir.", "en": "It's better to leave.", "replace": "vaut" },
+          { "fr": "Ce livre vaut cher.", "en": "This book is valuable.", "replace": "vaut" },
+          { "fr": "Ils valent beaucoup.", "en": "They are worth a lot.", "replace": "valent" },
+          { "fr": "Nous valons autant.", "en": "We are worth as much.", "replace": "valons" },
+          { "fr": "Tu vaux plus que ça.", "en": "You are worth more than that.", "replace": "vaux" }
+        ] },
+        { "french": "produire", "english": "to produce", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "L'usine produit des voitures.", "en": "The factory produces cars.", "replace": "produit" },
+          { "fr": "Ils produisent du fromage.", "en": "They produce cheese.", "replace": "produisent" },
+          { "fr": "Nous produisons de l'énergie.", "en": "We produce energy.", "replace": "produisons" },
+          { "fr": "Je produis un film.", "en": "I produce a film.", "replace": "produis" },
+          { "fr": "Vous produisez des résultats.", "en": "You produce results.", "replace": "produisez" },
+          { "fr": "Elle produit des idées.", "en": "She produces ideas.", "replace": "produit" }
+        ] },
+        { "french": "utiliser", "english": "to use", "word_type": "verb", "gender": null, "sentences": [
+          { "fr": "J'utilise un ordinateur.", "en": "I use a computer.", "replace": "utilise" },
+          { "fr": "Il utilise une carte.", "en": "He uses a map.", "replace": "utilise" },
+          { "fr": "Nous utilisons des outils.", "en": "We use tools.", "replace": "utilisons" },
+          { "fr": "Vous utilisez ce logiciel.", "en": "You use this software.", "replace": "utilisez" },
+          { "fr": "Ils utilisent la voiture.", "en": "They use the car.", "replace": "utilisent" }
+        ] },
+        { "french": "le cheveu", "english": "hair", "word_type": "noun", "gender": "le", "sentences": [
+          { "fr": "Le cheveu est long.", "en": "The hair is long.", "replace": "cheveu" },
+          { "fr": "Je brosse le cheveu.", "en": "I brush the hair.", "replace": "cheveu" },
+          { "fr": "Un cheveu tombe.", "en": "A hair falls.", "replace": "cheveu" },
+          { "fr": "Il trouve un cheveu.", "en": "He finds a hair.", "replace": "cheveu" },
+          { "fr": "Elle coupe le cheveu.", "en": "She cuts the hair.", "replace": "cheveu" }
+        ] },
+        { "french": "la clé", "english": "key", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La clé est sur la table.", "en": "The key is on the table.", "replace": "clé" },
+          { "fr": "Je cherche la clé.", "en": "I look for the key.", "replace": "clé" },
+          { "fr": "Il perd la clé.", "en": "He loses the key.", "replace": "clé" },
+          { "fr": "Nous utilisons la clé.", "en": "We use the key.", "replace": "clé" },
+          { "fr": "Elle donne la clé.", "en": "She gives the key.", "replace": "clé" }
+        ] },
+        { "french": "la colline", "english": "hill", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La colline est verte.", "en": "The hill is green.", "replace": "colline" },
+          { "fr": "Je monte la colline.", "en": "I climb the hill.", "replace": "colline" },
+          { "fr": "Il voit la colline.", "en": "He sees the hill.", "replace": "colline" },
+          { "fr": "Nous habitons près de la colline.", "en": "We live near the hill.", "replace": "colline" },
+          { "fr": "Elle descend la colline.", "en": "She goes down the hill.", "replace": "colline" }
+        ] },
+        { "french": "la dent", "english": "tooth", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La dent est blanche.", "en": "The tooth is white.", "replace": "dent" },
+          { "fr": "Je brosse la dent.", "en": "I brush the tooth.", "replace": "dent" },
+          { "fr": "Il perd une dent.", "en": "He loses a tooth.", "replace": "dent" },
+          { "fr": "Nous soignons la dent.", "en": "We treat the tooth.", "replace": "dent" },
+          { "fr": "Elle montre la dent.", "en": "She shows the tooth.", "replace": "dent" }
+        ] },
+        { "french": "l'église", "english": "church", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "L'église est ancienne.", "en": "The church is old.", "replace": "église" },
+          { "fr": "Je visite l'église.", "en": "I visit the church.", "replace": "église" },
+          { "fr": "Il entre dans l'église.", "en": "He enters the church.", "replace": "église" },
+          { "fr": "Nous chantons à l'église.", "en": "We sing at church.", "replace": "église" },
+          { "fr": "Elle prie à l'église.", "en": "She prays at church.", "replace": "église" }
+        ] },
+        { "french": "l'encre", "english": "ink", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'encre est bleue.", "en": "The ink is blue.", "replace": "encre" },
+          { "fr": "Je verse l'encre.", "en": "I pour the ink.", "replace": "encre" },
+          { "fr": "Il utilise l'encre.", "en": "He uses the ink.", "replace": "encre" },
+          { "fr": "Nous achetons de l'encre.", "en": "We buy ink.", "replace": "encre" },
+          { "fr": "Elle tache avec l'encre.", "en": "She stains with ink.", "replace": "encre" }
+        ] },
+        { "french": "l'épaule", "english": "shoulder", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'épaule est douloureuse.", "en": "The shoulder is sore.", "replace": "épaule" },
+          { "fr": "Je masse l'épaule.", "en": "I massage the shoulder.", "replace": "épaule" },
+          { "fr": "Il blesse l'épaule.", "en": "He injures the shoulder.", "replace": "épaule" },
+          { "fr": "Nous levons l'épaule.", "en": "We raise the shoulder.", "replace": "épaule" },
+          { "fr": "Elle touche l'épaule.", "en": "She touches the shoulder.", "replace": "épaule" }
+        ] },
+        { "french": "l'escalier", "english": "staircase", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'escalier est raide.", "en": "The staircase is steep.", "replace": "escalier" },
+          { "fr": "Je monte l'escalier.", "en": "I go up the stairs.", "replace": "escalier" },
+          { "fr": "Il descend l'escalier.", "en": "He goes down the stairs.", "replace": "escalier" },
+          { "fr": "Nous nettoyons l'escalier.", "en": "We clean the staircase.", "replace": "escalier" },
+          { "fr": "Elle construit un escalier.", "en": "She builds a staircase.", "replace": "escalier" }
+        ] },
+        { "french": "l'espoir", "english": "hope", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'espoir est fort.", "en": "Hope is strong.", "replace": "espoir" },
+          { "fr": "Je garde l'espoir.", "en": "I keep hope.", "replace": "espoir" },
+          { "fr": "Il perd l'espoir.", "en": "He loses hope.", "replace": "espoir" },
+          { "fr": "Nous partageons l'espoir.", "en": "We share hope.", "replace": "espoir" },
+          { "fr": "Elle donne de l'espoir.", "en": "She gives hope.", "replace": "espoir" }
+        ] },
+        { "french": "l'étagère", "english": "shelf", "word_type": "noun", "gender": "l'", "sentences": [
+          { "fr": "L'étagère est pleine.", "en": "The shelf is full.", "replace": "étagère" },
+          { "fr": "Je range les livres sur l'étagère.", "en": "I put books on the shelf.", "replace": "étagère" },
+          { "fr": "Il construit une étagère.", "en": "He builds a shelf.", "replace": "étagère" },
+          { "fr": "Nous nettoyons l'étagère.", "en": "We clean the shelf.", "replace": "étagère" },
+          { "fr": "Elle achète une étagère.", "en": "She buys a shelf.", "replace": "étagère" }
+        ] }
       ]
     }
   ]
