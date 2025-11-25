@@ -4708,7 +4708,7 @@
           { "fr": "Nous rédigeons ensemble.", "en": "We draft together.", "replace": "rédigeons" },
           { "fr": "Vous rédigez ce texte?", "en": "Are you drafting this text?", "replace": "rédigez" }
         ] },
-        { "french": "planifier", "english": "to plan/schedule", "word_type": "verb", "gender": null, "sentences": [
+  { "french": "planifier", "english": "to plan", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je planifie la semaine.", "en": "I plan the week.", "replace": "planifie" },
           { "fr": "Il planifie les réunions.", "en": "He plans the meetings.", "replace": "planifie" },
           { "fr": "Elle planifie le projet.", "en": "She plans the project.", "replace": "planifie" },
@@ -4765,7 +4765,7 @@
           { "fr": "La tâche doit être accomplie aujourd'hui.", "en": "The task must be completed today.", "replace": "tâche" },
           { "fr": "Il a oublié une tâche importante.", "en": "He forgot an important task.", "replace": "tâche" }
         ] },
-        { "french": "l’entretien", "english": "interview", "word_type": "noun", "gender": "le", "sentences": [
+        { "french": "l'entretien", "english": "interview", "word_type": "noun", "gender": "le", "sentences": [
           { "fr": "L'entretien est prévu demain.", "en": "The interview is scheduled for tomorrow.", "replace": "entretien" },
           { "fr": "Je prépare mon entretien.", "en": "I prepare my interview.", "replace": "entretien" },
           { "fr": "L'entretien a duré une heure.", "en": "The interview lasted an hour.", "replace": "entretien" },
@@ -4863,7 +4863,7 @@
           { "fr": "Il savoure chaque bouchée.", "en": "He savors every bite.", "replace": "savoure" },
           { "fr": "Elle savoure la musique.", "en": "She savors the music.", "replace": "savoure" },
           { "fr": "Ils savourent le repas.", "en": "They savor the meal.", "replace": "savourent" },
-          { "fr": "Nous savourons ce moment.", "en": "We savor this moment.", "replace": "savournons" },
+          { "fr": "Nous savourons ce moment.", "en": "We savor this moment.", "replace": "savourons" },
           { "fr": "Vous savourez la fête?", "en": "Are you savoring the party?", "replace": "savourez" }
         ] },
         { "french": "le cadeau", "english": "gift", "word_type": "noun", "gender": "le", "sentences": [
@@ -4880,7 +4880,7 @@
           { "fr": "Le gâteau a trois étages.", "en": "The cake has three layers.", "replace": "gâteau" },
           { "fr": "Nous mangeons du gâteau.", "en": "We eat cake.", "replace": "gâteau" }
         ] },
-        { "french": "l’invité(e)", "english": "guest", "word_type": "noun", "gender": "le/la", "sentences": [
+        { "french": "l'invité", "english": "guest", "word_type": "noun", "gender": "le/la", "sentences": [
           { "fr": "L'invité arrive à l'heure.", "en": "The guest arrives on time.", "replace": "invité" },
           { "fr": "Les invités sont nombreux.", "en": "There are many guests.", "replace": "invités" },
           { "fr": "Chaque invité reçoit un cadeau.", "en": "Each guest receives a gift.", "replace": "invité" },
@@ -4928,6 +4928,13 @@
           { "fr": "Il y a cinq bougies sur le gâteau.", "en": "There are five candles on the cake.", "replace": "bougies" },
           { "fr": "La bougie sent bon.", "en": "The candle smells good.", "replace": "bougie" },
           { "fr": "Les bougies décorent la table.", "en": "The candles decorate the table.", "replace": "bougies" }
+        ] },
+        { "french": "la lampe", "english": "lamp", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La lampe éclaire la pièce.", "en": "The lamp lights up the room.", "replace": "lampe" },
+          { "fr": "J'allume la lampe pour lire.", "en": "I turn on the lamp to read.", "replace": "lampe" },
+          { "fr": "La lampe est sur la table.", "en": "The lamp is on the table.", "replace": "lampe" },
+          { "fr": "Il achète une nouvelle lampe.", "en": "He buys a new lamp.", "replace": "lampe" },
+          { "fr": "La lampe ne fonctionne plus.", "en": "The lamp no longer works.", "replace": "lampe" }
         ] },
         { "french": "la tenue", "english": "outfit", "word_type": "noun", "gender": "la", "sentences": [
           { "fr": "Sa tenue est élégante.", "en": "Her outfit is elegant.", "replace": "tenue" },
@@ -5214,7 +5221,15 @@
           { "fr": "L'ombre est longue.", "en": "The shadow is long.", "replace": "ombre" },
           { "fr": "Je vois une ombre.", "en": "I see a shadow.", "replace": "ombre" },
           { "fr": "Il marche dans l'ombre.", "en": "He walks in the shadow.", "replace": "ombre" }
+        ] },
+        { "french": "la maladie", "english": "illness", "word_type": "noun", "gender": "la", "sentences": [
+          { "fr": "La maladie est contagieuse.", "en": "The illness is contagious.", "replace": "maladie" },
+          { "fr": "Il guérit de sa maladie.", "en": "He recovers from his illness.", "replace": "maladie" },
+          { "fr": "La maladie dure longtemps.", "en": "The illness lasts a long time.", "replace": "maladie" },
+          { "fr": "Elle craint la maladie.", "en": "She fears illness.", "replace": "maladie" },
+          { "fr": "La maladie empêche d'aller à l'école.", "en": "The illness prevents going to school.", "replace": "maladie" }
         ] }
+
       ]
     },
     {
@@ -5678,7 +5693,1577 @@
           { "fr": "Vous réfléchissez à quoi?", "en": "What are you thinking about?", "replace": "réfléchissez" }
         ] }
       ]
-    }
+    },
+    {
+  "level": 34,
+  "title": "Beauty and Grooming",
+  "description": "Vocabulary for Beauty and Grooming",
+  "theme": "beauty_and_grooming",
+  "words": [
+    { "french": "les cheveux", "english": "hair", "word_type": "noun", "gender": "les", "sentences": [
+      { "fr": "Les cheveux sont longs.", "en": "The hair is long.", "replace": "cheveux" },
+      { "fr": "Je brosse mes cheveux.", "en": "I brush my hair.", "replace": "cheveux" },
+      { "fr": "Ses cheveux brillent.", "en": "Her hair shines.", "replace": "cheveux" },
+      { "fr": "Il coupe ses cheveux.", "en": "He cuts his hair.", "replace": "cheveux" },
+      { "fr": "Nous lavons les cheveux.", "en": "We wash the hair.", "replace": "cheveux" }
+    ] },
+    { "french": "les lèvres", "english": "lips", "word_type": "noun", "gender": "les", "sentences": [
+      { "fr": "Les lèvres sont rouges.", "en": "The lips are red.", "replace": "lèvres" },
+      { "fr": "Je mets du rouge à lèvres.", "en": "I put on lipstick.", "replace": "lèvres" },
+      { "fr": "Elle sourit avec ses lèvres.", "en": "She smiles with her lips.", "replace": "lèvres" },
+      { "fr": "Il embrasse ses lèvres.", "en": "He kisses her lips.", "replace": "lèvres" },
+      { "fr": "Nous hydratons les lèvres.", "en": "We moisturize the lips.", "replace": "lèvres" }
+    ] },
+    { "french": "le cou", "english": "neck", "word_type": "noun", "gender": "le", "sentences": [
+      { "fr": "Le cou est fragile.", "en": "The neck is fragile.", "replace": "cou" },
+      { "fr": "Je masse le cou.", "en": "I massage the neck.", "replace": "cou" },
+      { "fr": "Elle porte un collier au cou.", "en": "She wears a necklace on her neck.", "replace": "cou" },
+      { "fr": "Il tourne le cou.", "en": "He turns his neck.", "replace": "cou" },
+      { "fr": "Nous étirons le cou.", "en": "We stretch the neck.", "replace": "cou" }
+    ] },
+    { "french": "la silhouette", "english": "silhouette", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La silhouette est fine.", "en": "The silhouette is slim.", "replace": "silhouette" },
+      { "fr": "Je dessine une silhouette.", "en": "I draw a silhouette.", "replace": "silhouette" },
+      { "fr": "Elle admire sa silhouette.", "en": "She admires her silhouette.", "replace": "silhouette" },
+      { "fr": "Il voit une silhouette.", "en": "He sees a silhouette.", "replace": "silhouette" },
+      { "fr": "Nous changeons de silhouette.", "en": "We change silhouette.", "replace": "silhouette" }
+    ] },
+    { "french": "le gant", "english": "glove", "word_type": "noun", "gender": "le", "sentences": [
+      { "fr": "Le gant est propre.", "en": "The glove is clean.", "replace": "gant" },
+      { "fr": "Je porte un gant.", "en": "I wear a glove.", "replace": "gant" },
+      { "fr": "Elle enlève le gant.", "en": "She removes the glove.", "replace": "gant" },
+      { "fr": "Il cherche son gant.", "en": "He looks for his glove.", "replace": "gant" },
+      { "fr": "Nous achetons des gants.", "en": "We buy gloves.", "replace": "gants" }
+    ] },
+    { "french": "la mariée", "english": "bride", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La mariée est belle.", "en": "The bride is beautiful.", "replace": "mariée" },
+      { "fr": "Je vois la mariée.", "en": "I see the bride.", "replace": "mariée" },
+      { "fr": "Elle salue la mariée.", "en": "She greets the bride.", "replace": "mariée" },
+      { "fr": "Il félicite la mariée.", "en": "He congratulates the bride.", "replace": "mariée" },
+      { "fr": "Nous attendons la mariée.", "en": "We wait for the bride.", "replace": "mariée" }
+    ] },
+    { "french": "les ongles", "english": "nails", "word_type": "noun", "gender": "les", "sentences": [
+      { "fr": "Les ongles sont courts.", "en": "The nails are short.", "replace": "ongles" },
+      { "fr": "Je lime mes ongles.", "en": "I file my nails.", "replace": "ongles" },
+      { "fr": "Elle peint ses ongles.", "en": "She paints her nails.", "replace": "ongles" },
+      { "fr": "Il coupe ses ongles.", "en": "He cuts his nails.", "replace": "ongles" },
+      { "fr": "Nous montrons nos ongles.", "en": "We show our nails.", "replace": "ongles" }
+    ] },
+    { "french": "la brosse", "english": "brush", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La brosse est neuve.", "en": "The brush is new.", "replace": "brosse" },
+      { "fr": "Je prends la brosse.", "en": "I take the brush.", "replace": "brosse" },
+      { "fr": "Elle utilise la brosse.", "en": "She uses the brush.", "replace": "brosse" },
+      { "fr": "Il nettoie avec la brosse.", "en": "He cleans with the brush.", "replace": "brosse" },
+      { "fr": "Nous partageons la brosse.", "en": "We share the brush.", "replace": "brosse" }
+    ] },
+    { "french": "le parfum", "english": "perfume", "word_type": "noun", "gender": "le", "sentences": [
+      { "fr": "Le parfum sent bon.", "en": "The perfume smells good.", "replace": "parfum" },
+      { "fr": "Je choisis un parfum.", "en": "I choose a perfume.", "replace": "parfum" },
+      { "fr": "Elle porte du parfum.", "en": "She wears perfume.", "replace": "parfum" },
+      { "fr": "Il achète du parfum.", "en": "He buys perfume.", "replace": "parfum" },
+      { "fr": "Nous testons le parfum.", "en": "We test the perfume.", "replace": "parfum" }
+    ] },
+    { "french": "le rasoir", "english": "razor", "word_type": "noun", "gender": "le", "sentences": [
+      { "fr": "Le rasoir est neuf.", "en": "The razor is new.", "replace": "rasoir" },
+      { "fr": "Je prends le rasoir.", "en": "I take the razor.", "replace": "rasoir" },
+      { "fr": "Elle utilise le rasoir.", "en": "She uses the razor.", "replace": "rasoir" },
+      { "fr": "Il nettoie le rasoir.", "en": "He cleans the razor.", "replace": "rasoir" },
+      { "fr": "Nous partageons le rasoir.", "en": "We share the razor.", "replace": "rasoir" }
+    ] },
+    { "french": "coiffer", "english": "to do hair", "word_type": "verb", "sentences": [
+      { "fr": "Je me coiffe chaque matin.", "en": "I do my hair every morning.", "replace": "coiffe" },
+      { "fr": "Il se coiffe vite.", "en": "He does his hair quickly.", "replace": "coiffe" },
+      { "fr": "Elle se coiffe bien.", "en": "She does her hair well.", "replace": "coiffe" },
+      { "fr": "Nous nous coiffons ensemble.", "en": "We do our hair together.", "replace": "coiffons" },
+      { "fr": "Vous vous coiffez?", "en": "Are you doing your hair?", "replace": "coiffez" },
+      { "fr": "Ils se coiffent avant de sortir.", "en": "They do their hair before going out.", "replace": "coiffent" }
+    ] },
+    { "french": "maquiller", "english": "to put on makeup", "word_type": "verb", "sentences": [
+      { "fr": "Je me maquille chaque matin.", "en": "I put on makeup every morning.", "replace": "maquille" },
+      { "fr": "Il se maquille vite.", "en": "He puts on makeup quickly.", "replace": "maquille" },
+      { "fr": "Elle se maquille bien.", "en": "She puts on makeup well.", "replace": "maquille" },
+      { "fr": "Nous nous maquillons ensemble.", "en": "We put on makeup together.", "replace": "maquillons" },
+      { "fr": "Vous vous maquillez?", "en": "Are you putting on makeup?", "replace": "maquillez" },
+      { "fr": "Ils se maquillent avant de sortir.", "en": "They put on makeup before going out.", "replace": "maquillent" }
+    ] },
+    { "french": "masser", "english": "to massage", "word_type": "verb", "sentences": [
+      { "fr": "Je masse le cou.", "en": "I massage the neck.", "replace": "masse" },
+      { "fr": "Il masse les épaules.", "en": "He massages the shoulders.", "replace": "masse" },
+      { "fr": "Elle masse les pieds.", "en": "She massages the feet.", "replace": "masse" },
+      { "fr": "Nous massons le dos.", "en": "We massage the back.", "replace": "massons" },
+      { "fr": "Vous massez bien.", "en": "You massage well.", "replace": "massez" },
+      { "fr": "Ils massent ensemble.", "en": "They massage together.", "replace": "massent" }
+    ] },
+    { "french": "tricoter", "english": "to knit", "word_type": "verb", "sentences": [
+      { "fr": "Je tricote une écharpe.", "en": "I knit a scarf.", "replace": "tricote" },
+      { "fr": "Il tricote vite.", "en": "He knits quickly.", "replace": "tricote" },
+      { "fr": "Elle tricote bien.", "en": "She knits well.", "replace": "tricote" },
+      { "fr": "Nous tricotons ensemble.", "en": "We knit together.", "replace": "tricotons" },
+      { "fr": "Vous tricotez?", "en": "Are you knitting?", "replace": "tricotez" },
+      { "fr": "Ils tricotent des pulls.", "en": "They knit sweaters.", "replace": "tricotent" }
+    ] },
+    { "french": "coudre", "english": "to sew", "word_type": "verb", "sentences": [
+      { "fr": "Je couds un bouton.", "en": "I sew a button.", "replace": "couds" },
+      { "fr": "Il coud vite.", "en": "He sews quickly.", "replace": "coud" },
+      { "fr": "Elle coud bien.", "en": "She sews well.", "replace": "coud" },
+      { "fr": "Nous cousons ensemble.", "en": "We sew together.", "replace": "cousons" },
+      { "fr": "Vous cousez?", "en": "Are you sewing?", "replace": "cousez" },
+      { "fr": "Ils cousent des vêtements.", "en": "They sew clothes.", "replace": "cousent" }
+    ] },
+    { "french": "broder", "english": "to embroider", "word_type": "verb", "sentences": [
+      { "fr": "Je brode une nappe.", "en": "I embroider a tablecloth.", "replace": "brode" },
+      { "fr": "Il brode vite.", "en": "He embroiders quickly.", "replace": "brode" },
+      { "fr": "Elle brode bien.", "en": "She embroiders well.", "replace": "brode" },
+      { "fr": "Nous brodons ensemble.", "en": "We embroider together.", "replace": "brodons" },
+      { "fr": "Vous brodez?", "en": "Are you embroidering?", "replace": "brodez" },
+      { "fr": "Ils brodent des motifs.", "en": "They embroider patterns.", "replace": "brodent" }
+    ] },
+    { "french": "repasser", "english": "to iron", "word_type": "verb", "sentences": [
+      { "fr": "Je repasse une chemise.", "en": "I iron a shirt.", "replace": "repasse" },
+      { "fr": "Il repasse vite.", "en": "He irons quickly.", "replace": "repasse" },
+      { "fr": "Elle repasse bien.", "en": "She irons well.", "replace": "repasse" },
+      { "fr": "Nous repassons ensemble.", "en": "We iron together.", "replace": "repassons" },
+      { "fr": "Vous repassez?", "en": "Are you ironing?", "replace": "repassez" },
+      { "fr": "Ils repassent les vêtements.", "en": "They iron the clothes.", "replace": "repassent" }
+    ] },
+{
+	"french": "la pince à épiler", "english": "tweezers", "word_type": "noun", "sentences": [
+		{ "fr": "J'utilise la pince à épiler pour mes sourcils.", "en": "I use the tweezers for my eyebrows.", "replace": "pince à épiler" },
+		{ "fr": "Elle cherche sa pince à épiler.", "en": "She is looking for her tweezers.", "replace": "pince à épiler" },
+		{ "fr": "La pince à épiler est en métal.", "en": "The tweezers are made of metal.", "replace": "pince à épiler" },
+		{ "fr": "Il nettoie la pince à épiler après usage.", "en": "He cleans the tweezers after use.", "replace": "pince à épiler" },
+		{ "fr": "La pince à épiler est dans la trousse.", "en": "The tweezers are in the kit.", "replace": "pince à épiler" }
+	]
+},
+{
+	"french": "le fard", "english": "blush", "word_type": "noun", "sentences": [
+		{ "fr": "Elle applique le fard sur ses joues.", "en": "She applies blush on her cheeks.", "replace": "fard" },
+		{ "fr": "Le fard donne bonne mine.", "en": "Blush gives a healthy glow.", "replace": "fard" },
+		{ "fr": "J'achète un nouveau fard.", "en": "I buy a new blush.", "replace": "fard" },
+		{ "fr": "Le fard est rose clair.", "en": "The blush is light pink.", "replace": "fard" },
+		{ "fr": "Elle perd son fard dans la salle de bain.", "en": "She loses her blush in the bathroom.", "replace": "fard" }
+	]
+},
+{
+	"french": "la lotion", "english": "lotion", "word_type": "noun", "sentences": [
+		{ "fr": "Je mets de la lotion après la douche.", "en": "I put on lotion after the shower.", "replace": "lotion" },
+		{ "fr": "La lotion hydrate la peau.", "en": "The lotion moisturizes the skin.", "replace": "lotion" },
+		{ "fr": "Il préfère une lotion sans parfum.", "en": "He prefers a fragrance-free lotion.", "replace": "lotion" },
+		{ "fr": "La lotion est dans le flacon bleu.", "en": "The lotion is in the blue bottle.", "replace": "lotion" },
+		{ "fr": "Elle partage sa lotion avec sa sœur.", "en": "She shares her lotion with her sister.", "replace": "lotion" }
+	]
+},
+{
+	"french": "le miroir de poche", "english": "compact mirror", "word_type": "noun", "sentences": [
+		{ "fr": "J'ai un miroir de poche dans mon sac.", "en": "I have a compact mirror in my bag.", "replace": "miroir de poche" },
+		{ "fr": "Le miroir de poche est rond.", "en": "The compact mirror is round.", "replace": "miroir de poche" },
+		{ "fr": "Elle utilise le miroir de poche pour se maquiller.", "en": "She uses the compact mirror to put on makeup.", "replace": "miroir de poche" },
+		{ "fr": "Le miroir de poche est cassé.", "en": "The compact mirror is broken.", "replace": "miroir de poche" },
+		{ "fr": "Il offre un miroir de poche à sa mère.", "en": "He gives a compact mirror to his mother.", "replace": "miroir de poche" }
+	]
+}
+
+  ]
+},
+{
+	"level": 35,
+	"title": "At the Park",
+	"description": "Vocabulary and example sentences for the park theme.",
+	"theme": "park",
+	"words": [
+		 { "french": "autour", "english": "around", "word_type": "preposition", "sentences": [
+			 { "fr": "Les enfants courent autour du banc.", "en": "The children run around the bench.", "replace": "autour" },
+			 { "fr": "Il y a des arbres autour du parc.", "en": "There are trees around the park.", "replace": "autour" },
+			 { "fr": "Nous marchons autour de la fontaine.", "en": "We walk around the fountain.", "replace": "autour" },
+			 { "fr": "Le sentier fait le tour autour du lac.", "en": "The path goes around the lake.", "replace": "autour" },
+			 { "fr": "Des fleurs poussent autour de la pelouse.", "en": "Flowers grow around the lawn.", "replace": "autour" }
+		 ] },
+		 { "french": "la clôture", "english": "fence", "word_type": "noun", "sentences": [
+			 { "fr": "La clôture entoure le parc.", "en": "The fence surrounds the park.", "replace": "clôture" },
+			 { "fr": "Le ballon est passé par-dessus la clôture.", "en": "The ball went over the fence.", "replace": "clôture" },
+			 { "fr": "La clôture est en bois.", "en": "The fence is made of wood.", "replace": "clôture" },
+			 { "fr": "Il peint la clôture blanche.", "en": "He paints the fence white.", "replace": "clôture" },
+			 { "fr": "Des fleurs poussent près de la clôture.", "en": "Flowers grow near the fence.", "replace": "clôture" }
+		 ] },
+		 { "french": "le coup", "english": "blow", "word_type": "noun", "sentences": [
+			 { "fr": "Il a reçu un coup de ballon.", "en": "He got hit by a ball.", "replace": "coup" },
+			 { "fr": "Un coup de vent a fait tomber les feuilles.", "en": "A gust of wind blew down the leaves.", "replace": "coup" },
+			 { "fr": "J'ai entendu un coup soudain.", "en": "I heard a sudden blow.", "replace": "coup" },
+			 { "fr": "Le coup de sifflet commence le jeu.", "en": "The whistle blow starts the game.", "replace": "coup" },
+			 { "fr": "Il donne un coup de pied dans le ballon.", "en": "He kicks the ball.", "replace": "coup" }
+		 ] },
+		 { "french": "la frontière", "english": "border", "word_type": "noun", "sentences": [
+			 { "fr": "La rivière est la frontière du parc.", "en": "The river is the border of the park.", "replace": "frontière" },
+			 { "fr": "La clôture marque la frontière.", "en": "The fence marks the border.", "replace": "frontière" },
+			 { "fr": "Nous marchons jusqu'à la frontière du jardin.", "en": "We walk to the edge of the garden.", "replace": "frontière" },
+			 { "fr": "Les arbres forment une frontière naturelle.", "en": "The trees form a natural border.", "replace": "frontière" },
+			 { "fr": "Le sentier longe la frontière du parc.", "en": "The path runs along the border of the park.", "replace": "frontière" }
+		 ] },
+		 { "french": "la place", "english": "place", "word_type": "noun", "sentences": [
+			{ "fr": "La place est grande.", "en": "The square is big.", "replace": "place" },
+			{ "fr": "Je vais à la place.", "en": "I go to the square.", "replace": "place" }
+		] },
+		 { "french": "nos", "english": "our", "word_type": "possessive adjective", "sentences": [
+			{ "fr": "Nous sommes amis.", "en": "We are friends.", "replace": "Nous" },
+			{ "fr": "Nous mangeons ensemble.", "en": "We eat together.", "replace": "Nous" },
+			{ "fr": "Nous parlons français.", "en": "We speak French.", "replace": "Nous" },
+			{ "fr": "Nous allons au cinéma.", "en": "We go to the movies.", "replace": "Nous" }
+		] },
+		 { "french": "tes", "english": "your", "word_type": "possessive adjective", "sentences": [
+			{ "fr": "Tu es gentil.", "en": "You are kind.", "replace": "Tu" },
+			{ "fr": "Tu manges bien.", "en": "You eat well.", "replace": "Tu" },
+			{ "fr": "Tu parles anglais.", "en": "You speak English.", "replace": "Tu" },
+			{ "fr": "Tu vas où?", "en": "Where are you going?", "replace": "Tu" }
+		] },
+		 { "french": "jardiner", "english": "garden", "word_type": "verb", "sentences": [
+			{ "fr": "Je jardine dans le parc.", "en": "I garden in the park.", "replace": "jardine" },
+			{ "fr": "Tu jardines avec ta mère.", "en": "You garden with your mother.", "replace": "jardines" },
+			{ "fr": "Il jardine chaque week-end.", "en": "He gardens every weekend.", "replace": "jardine" },
+			{ "fr": "Nous jardinons ensemble.", "en": "We garden together.", "replace": "jardinons" },
+			{ "fr": "Vous jardinez près de la fontaine.", "en": "You garden near the fountain.", "replace": "jardinez" },
+			{ "fr": "Elles jardinent dans la pelouse.", "en": "They garden on the lawn.", "replace": "jardinent" }
+		] },
+		 { "french": "bricoler", "english": "do DIY", "word_type": "verb", "sentences": [
+			{ "fr": "Je bricole une cabane.", "en": "I do DIY on a hut.", "replace": "bricole" },
+			{ "fr": "Tu bricoles souvent.", "en": "You do DIY often.", "replace": "bricoles" },
+			{ "fr": "Elle bricole dans le jardin.", "en": "She does DIY in the garden.", "replace": "bricole" },
+			{ "fr": "Nous bricolons le week-end.", "en": "We do DIY on weekends.", "replace": "bricolons" },
+			{ "fr": "Vous bricolez avec vos amis.", "en": "You do DIY with your friends.", "replace": "bricolez" },
+			{ "fr": "Ils bricolent à la maison.", "en": "They do DIY at home.", "replace": "bricolent" }
+		] },
+		 { "french": "skier", "english": "ski", "word_type": "verb", "sentences": [
+			{ "fr": "Je skie en hiver.", "en": "I ski in winter.", "replace": "skie" },
+			{ "fr": "Tu skies très bien.", "en": "You ski very well.", "replace": "skies" },
+			{ "fr": "Il skie à la montagne.", "en": "He skis in the mountains.", "replace": "skie" },
+			{ "fr": "Nous skions ensemble.", "en": "We ski together.", "replace": "skions" },
+			{ "fr": "Vous skiez vite.", "en": "You ski fast.", "replace": "skiez" },
+			{ "fr": "Elles skient chaque année.", "en": "They ski every year.", "replace": "skient" }
+		] },
+		 { "french": "patiner", "english": "skate", "word_type": "verb", "sentences": [
+			{ "fr": "Je patine sur la glace.", "en": "I skate on the ice.", "replace": "patine" },
+			{ "fr": "Tu patines au parc.", "en": "You skate at the park.", "replace": "patines" },
+			{ "fr": "On patine ensemble.", "en": "We skate together.", "replace": "patine" },
+			{ "fr": "Nous patinons tous les jours.", "en": "We skate every day.", "replace": "patinons" },
+			{ "fr": "Vous patinez bien.", "en": "You skate well.", "replace": "patinez" },
+			{ "fr": "Ils patinent vite.", "en": "They skate fast.", "replace": "patinent" }
+		] },
+		 { "french": "arroser", "english": "water", "word_type": "verb", "sentences": [
+			{ "fr": "J'arrose les plantes.", "en": "I water the plants.", "replace": "arrose" },
+			{ "fr": "Tu arroses les fleurs.", "en": "You water the flowers.", "replace": "arroses" },
+			{ "fr": "Il arrose le jardin.", "en": "He waters the garden.", "replace": "arrose" },
+			{ "fr": "Nous arrosons la pelouse.", "en": "We water the lawn.", "replace": "arrosons" },
+			{ "fr": "Vous arrosez les arbres.", "en": "You water the trees.", "replace": "arrosez" },
+			{ "fr": "Elles arrosent les plantes vertes.", "en": "They water the green plants.", "replace": "arrosent" }
+		] },
+		 { "french": "tailler", "english": "prune", "word_type": "verb", "sentences": [
+			{ "fr": "Je taille la haie.", "en": "I prune the hedge.", "replace": "taille" },
+			{ "fr": "Tu tailles les arbres.", "en": "You prune the trees.", "replace": "tailles" },
+			{ "fr": "Il taille les rosiers.", "en": "He prunes the rosebushes.", "replace": "taille" },
+			{ "fr": "Nous taillons les buissons.", "en": "We prune the bushes.", "replace": "taillons" },
+			{ "fr": "Vous taillez les plantes.", "en": "You prune the plants.", "replace": "taillez" },
+			{ "fr": "Ils taillent les arbres du parc.", "en": "They prune the park's trees.", "replace": "taillent" }
+		] },
+		 { "french": "récolter", "english": "harvest", "word_type": "verb", "sentences": [
+			{ "fr": "Je récolte des fruits.", "en": "I harvest fruits.", "replace": "récolte" },
+			{ "fr": "Tu récoltes les légumes.", "en": "You harvest the vegetables.", "replace": "récoltes" },
+			{ "fr": "Elle récolte des fleurs.", "en": "She harvests flowers.", "replace": "récolte" },
+			{ "fr": "Nous récoltons ensemble.", "en": "We harvest together.", "replace": "récoltons" },
+			{ "fr": "Vous récoltez beaucoup.", "en": "You harvest a lot.", "replace": "récoltez" },
+			{ "fr": "Ils récoltent les pommes.", "en": "They harvest apples.", "replace": "récoltent" }
+		] },
+		 { "french": "filmer", "english": "film", "word_type": "verb", "sentences": [
+			{ "fr": "Je filme le parc.", "en": "I film the park.", "replace": "filme" },
+			{ "fr": "Tu filmes la fontaine.", "en": "You film the fountain.", "replace": "filmes" },
+			{ "fr": "Il filme les enfants.", "en": "He films the children.", "replace": "filme" },
+			{ "fr": "Nous filmons la fête.", "en": "We film the party.", "replace": "filmons" },
+			{ "fr": "Vous filmez la scène.", "en": "You film the scene.", "replace": "filmez" },
+			{ "fr": "Elles filment les oiseaux.", "en": "They film the birds.", "replace": "filment" }
+		] },
+		 { "french": "enregistrer", "english": "record", "word_type": "verb", "sentences": [
+			{ "fr": "J'enregistre un son.", "en": "I record a sound.", "replace": "enregistre" },
+			{ "fr": "Tu enregistres la vidéo.", "en": "You record the video.", "replace": "enregistres" },
+			{ "fr": "Il enregistre la chanson.", "en": "He records the song.", "replace": "enregistre" },
+			{ "fr": "Nous enregistrons le concert.", "en": "We record the concert.", "replace": "enregistrons" },
+			{ "fr": "Vous enregistrez tout.", "en": "You record everything.", "replace": "enregistrez" },
+			{ "fr": "Ils enregistrent les bruits du parc.", "en": "They record the park's sounds.", "replace": "enregistrent" }
+		] },
+		 { "french": "semer", "english": "sow", "word_type": "verb", "sentences": [
+			{ "fr": "Je sème des graines.", "en": "I sow seeds.", "replace": "sème" },
+			{ "fr": "Tu sèmes des fleurs.", "en": "You sow flowers.", "replace": "sèmes" },
+			{ "fr": "Elle sème dans le jardin.", "en": "She sows in the garden.", "replace": "sème" },
+			{ "fr": "Nous semons ensemble.", "en": "We sow together.", "replace": "semons" },
+			{ "fr": "Vous semez au printemps.", "en": "You sow in spring.", "replace": "semez" },
+			{ "fr": "Ils sèment des légumes.", "en": "They sow vegetables.", "replace": "sèment" }
+		] },
+		 { "french": "le banc", "english": "bench", "word_type": "noun", "sentences": [
+			 { "fr": "Je m'assois sur le banc.", "en": "I sit on the bench.", "replace": "banc" },
+			 { "fr": "Le banc est sous l'arbre.", "en": "The bench is under the tree.", "replace": "banc" },
+			 { "fr": "Deux personnes dorment sur le banc.", "en": "Two people are sleeping on the bench.", "replace": "banc" },
+			 { "fr": "Le banc est en bois.", "en": "The bench is made of wood.", "replace": "banc" },
+			 { "fr": "Nous mangeons sur le banc.", "en": "We eat on the bench.", "replace": "banc" }
+		 ] },
+		 { "french": "la pelouse", "english": "lawn", "word_type": "noun", "sentences": [
+			 { "fr": "La pelouse est verte.", "en": "The lawn is green.", "replace": "pelouse" },
+			 { "fr": "Les enfants jouent sur la pelouse.", "en": "The children play on the lawn.", "replace": "pelouse" },
+			 { "fr": "Nous pique-niquons sur la pelouse.", "en": "We picnic on the lawn.", "replace": "pelouse" },
+			 { "fr": "La pelouse est bien tondue.", "en": "The lawn is well mowed.", "replace": "pelouse" },
+			 { "fr": "Des fleurs poussent dans la pelouse.", "en": "Flowers grow in the lawn.", "replace": "pelouse" }
+		 ] },
+		 { "french": "la fontaine", "english": "fountain", "word_type": "noun", "sentences": [
+			 { "fr": "La fontaine coule dans le parc.", "en": "The fountain flows in the park.", "replace": "fontaine" },
+			 { "fr": "Les enfants jouent près de la fontaine.", "en": "The children play near the fountain.", "replace": "fontaine" },
+			 { "fr": "La fontaine est très ancienne.", "en": "The fountain is very old.", "replace": "fontaine" },
+			 { "fr": "Nous jetons une pièce dans la fontaine.", "en": "We throw a coin in the fountain.", "replace": "fontaine" },
+			 { "fr": "La fontaine brille au soleil.", "en": "The fountain shines in the sun.", "replace": "fontaine" }
+		 ] },
+		 { "french": "le sentier", "english": "path", "word_type": "noun", "sentences": [
+			 { "fr": "Le sentier traverse le parc.", "en": "The path goes through the park.", "replace": "sentier" },
+			 { "fr": "Nous marchons sur le sentier.", "en": "We walk on the path.", "replace": "sentier" },
+			 { "fr": "Le sentier est couvert de feuilles.", "en": "The path is covered with leaves.", "replace": "sentier" },
+			 { "fr": "Un sentier mène à la rivière.", "en": "A path leads to the river.", "replace": "sentier" },
+			 { "fr": "Le sentier est étroit ici.", "en": "The path is narrow here.", "replace": "sentier" }
+		 ] },
+		 { "french": "le papillon", "english": "butterfly", "word_type": "noun", "sentences": [
+			 { "fr": "Un papillon vole au-dessus des fleurs.", "en": "A butterfly flies above the flowers.", "replace": "papillon" },
+			 { "fr": "Le papillon est jaune et noir.", "en": "The butterfly is yellow and black.", "replace": "papillon" },
+			 { "fr": "Je regarde le papillon sur la pelouse.", "en": "I watch the butterfly on the lawn.", "replace": "papillon" },
+			 { "fr": "Des papillons volent dans le parc.", "en": "Butterflies fly in the park.", "replace": "papillons" },
+			 { "fr": "Le papillon se pose sur une fleur.", "en": "The butterfly lands on a flower.", "replace": "papillon" }
+		 ] }
+	]
+},
+{
+	"level": 36,
+	"title": "Prison Break",
+	"description": "Vocabulary and example sentences for the prison break theme.",
+	"theme": "prison break",
+	"words": [
+		 { "french": "le dossier", "english": "file", "word_type": "noun", "sentences": [
+			 { "fr": "Le dossier est sur la table du gardien.", "en": "The file is on the guard's table.", "replace": "dossier" },
+			 { "fr": "J'ai caché le dossier dans la cellule.", "en": "I hid the file in the cell.", "replace": "dossier" },
+			 { "fr": "Le dossier contient des plans secrets.", "en": "The file contains secret plans.", "replace": "dossier" },
+			 { "fr": "Ils cherchent le dossier perdu.", "en": "They are looking for the lost file.", "replace": "dossier" },
+			 { "fr": "Le dossier est très important pour l'évasion.", "en": "The file is very important for the escape.", "replace": "dossier" }
+		 ] },
+		 { "french": "les gardes", "english": "guards", "word_type": "noun", "sentences": [
+			 { "fr": "Les gardes surveillent la prison.", "en": "The guards watch the prison.", "replace": "gardes" },
+			 { "fr": "Un des gardes a vu l'évasion.", "en": "One of the guards saw the escape.", "replace": "gardes" },
+			 { "fr": "Les gardes portent des uniformes bleus.", "en": "The guards wear blue uniforms.", "replace": "gardes" },
+			 { "fr": "Les gardes discutent près de la tour.", "en": "The guards talk near the tower.", "replace": "gardes" },
+			 { "fr": "Les gardes ferment la porte chaque soir.", "en": "The guards lock the door every evening.", "replace": "gardes" }
+		 ] },
+		 { "french": "l'alarme", "english": "alarm", "word_type": "noun", "sentences": [
+			 { "fr": "L'alarme sonne dans toute la prison.", "en": "The alarm rings throughout the prison.", "replace": "alarme" },
+			 { "fr": "Ils ont déclenché l'alarme par accident.", "en": "They set off the alarm by accident.", "replace": "alarme" },
+			 { "fr": "L'alarme est très forte.", "en": "The alarm is very loud.", "replace": "alarme" },
+			 { "fr": "Quand l'alarme retentit, tout le monde court.", "en": "When the alarm sounds, everyone runs.", "replace": "alarme" },
+			 { "fr": "L'alarme signale une évasion.", "en": "The alarm signals an escape.", "replace": "alarme" }
+		 ] },
+		 { "french": "l'arme", "english": "weapon", "word_type": "noun", "sentences": [
+			 { "fr": "Il cache l'arme sous le lit.", "en": "He hides the weapon under the bed.", "replace": "arme" },
+			 { "fr": "L'arme est chargée.", "en": "The weapon is loaded.", "replace": "arme" },
+			 { "fr": "Ils trouvent une arme dans le tunnel.", "en": "They find a weapon in the tunnel.", "replace": "arme" },
+			 { "fr": "L'arme appartient au garde.", "en": "The weapon belongs to the guard.", "replace": "arme" },
+			 { "fr": "Il utilise l'arme pour menacer.", "en": "He uses the weapon to threaten.", "replace": "arme" }
+		 ] },
+		 { "french": "le pistolet", "english": "pistol", "word_type": "noun", "sentences": [
+			 { "fr": "Le pistolet est caché dans le sac.", "en": "The pistol is hidden in the bag.", "replace": "pistolet" },
+			 { "fr": "Il prend le pistolet du garde.", "en": "He takes the guard's pistol.", "replace": "pistolet" },
+			 { "fr": "Le pistolet fait beaucoup de bruit.", "en": "The pistol makes a lot of noise.", "replace": "pistolet" },
+			 { "fr": "Elle vise avec le pistolet.", "en": "She aims with the pistol.", "replace": "pistolet" },
+			 { "fr": "Le pistolet tombe par terre.", "en": "The pistol falls to the ground.", "replace": "pistolet" }
+		 ] },
+		 { "french": "le camion", "english": "truck", "word_type": "noun", "sentences": [
+			 { "fr": "Le camion attend devant la prison.", "en": "The truck waits in front of the prison.", "replace": "camion" },
+			 { "fr": "Ils montent dans le camion pour fuir.", "en": "They get in the truck to escape.", "replace": "camion" },
+			 { "fr": "Le camion démarre rapidement.", "en": "The truck starts quickly.", "replace": "camion" },
+			 { "fr": "Un garde conduit le camion.", "en": "A guard drives the truck.", "replace": "camion" },
+			 { "fr": "Le camion est plein de caisses.", "en": "The truck is full of crates.", "replace": "camion" }
+		 ] },
+		 { "french": "la tour", "english": "tower", "word_type": "noun", "sentences": [
+			 { "fr": "La tour surveille toute la cour.", "en": "The tower watches over the whole yard.", "replace": "tour" },
+			 { "fr": "Un garde est dans la tour.", "en": "A guard is in the tower.", "replace": "tour" },
+			 { "fr": "La tour est très haute.", "en": "The tower is very tall.", "replace": "tour" },
+			 { "fr": "Ils grimpent la tour la nuit.", "en": "They climb the tower at night.", "replace": "tour" },
+			 { "fr": "La lumière brille dans la tour.", "en": "The light shines in the tower.", "replace": "tour" }
+		 ] },
+		 { "french": "le bruit", "english": "noise", "word_type": "noun", "sentences": [
+			 { "fr": "Le bruit réveille les gardes.", "en": "The noise wakes up the guards.", "replace": "bruit" },
+			 { "fr": "Il y a un bruit étrange dans le tunnel.", "en": "There is a strange noise in the tunnel.", "replace": "bruit" },
+			 { "fr": "Le bruit vient de la cour.", "en": "The noise comes from the yard.", "replace": "bruit" },
+			 { "fr": "Un bruit fort retentit la nuit.", "en": "A loud noise sounds at night.", "replace": "bruit" },
+			 { "fr": "Ils écoutent le bruit derrière la porte.", "en": "They listen to the noise behind the door.", "replace": "bruit" }
+		 ] },
+		 { "french": "contre", "english": "against", "word_type": "preposition", "sentences": [
+			 { "fr": "Il se cache contre le mur.", "en": "He hides against the wall.", "replace": "contre" },
+			 { "fr": "Ils luttent contre le temps.", "en": "They fight against time.", "replace": "contre" },
+			 { "fr": "Le plan est contre les règles.", "en": "The plan is against the rules.", "replace": "contre" },
+			 { "fr": "Elle est contre l'évasion.", "en": "She is against the escape.", "replace": "contre" },
+			 { "fr": "Le camion est garé contre la clôture.", "en": "The truck is parked against the fence.", "replace": "contre" }
+		 ] },
+		 { "french": "les phares", "english": "headlights", "word_type": "noun", "sentences": [
+			 { "fr": "Les phares éclairent la route.", "en": "The headlights light up the road.", "replace": "phares" },
+			 { "fr": "Il éteint les phares du camion.", "en": "He turns off the truck's headlights.", "replace": "phares" },
+			 { "fr": "Les phares brillent dans la nuit.", "en": "The headlights shine in the night.", "replace": "phares" },
+			 { "fr": "Les phares révèlent la sortie du tunnel.", "en": "The headlights reveal the tunnel exit.", "replace": "phares" },
+			 { "fr": "Un garde voit les phares au loin.", "en": "A guard sees the headlights in the distance.", "replace": "phares" }
+		 ] },
+		 { "french": "seule", "english": "alone", "word_type": "adjective", "sentences": [
+			 { "fr": "Elle est seule dans la cellule.", "en": "She is alone in the cell.", "replace": "seule" },
+			 { "fr": "Il marche seul dans le couloir.", "en": "He walks alone in the hallway.", "replace": "seul" },
+			 { "fr": "La tour est seule dans la cour.", "en": "The tower is alone in the yard.", "replace": "seule" },
+			 { "fr": "Je me sens seule ici.", "en": "I feel alone here.", "replace": "seule" },
+			 { "fr": "Elle mange seule ce soir.", "en": "She eats alone tonight.", "replace": "seule" }
+		 ] },
+		 { "french": "pas", "english": "not", "word_type": "adverb", "sentences": [
+			 { "fr": "Il n'est pas là.", "en": "He is not here.", "replace": "pas" },
+			 { "fr": "Ce n'est pas facile de s'évader.", "en": "It is not easy to escape.", "replace": "pas" },
+			 { "fr": "Je ne veux pas rester.", "en": "I do not want to stay.", "replace": "pas" },
+			 { "fr": "Ils ne dorment pas la nuit.", "en": "They do not sleep at night.", "replace": "pas" },
+			 { "fr": "Ce n'est pas le bon tunnel.", "en": "This is not the right tunnel.", "replace": "pas" }
+		 ] },
+		 { "french": "c'est", "english": "it is", "word_type": "expression", "sentences": [
+			 { "fr": "C'est le moment de partir.", "en": "It is time to leave.", "replace": "C'est" },
+			 { "fr": "C'est dangereux ici.", "en": "It is dangerous here.", "replace": "C'est" },
+			 { "fr": "C'est la clé de la liberté.", "en": "It is the key to freedom.", "replace": "C'est" },
+			 { "fr": "C'est un plan risqué.", "en": "It is a risky plan.", "replace": "C'est" },
+			 { "fr": "C'est la dernière chance.", "en": "It is the last chance.", "replace": "C'est" }
+		 ] },
+		 { "french": "c'était", "english": "it was", "word_type": "expression", "sentences": [
+			 { "fr": "C'était une nuit sombre.", "en": "It was a dark night.", "replace": "C'était" },
+			 { "fr": "C'était le signal pour agir.", "en": "It was the signal to act.", "replace": "C'était" },
+			 { "fr": "C'était trop tard pour revenir.", "en": "It was too late to return.", "replace": "C'était" },
+			 { "fr": "C'était un bruit étrange.", "en": "It was a strange noise.", "replace": "C'était" },
+			 { "fr": "C'était la fin de la garde.", "en": "It was the end of the shift.", "replace": "C'était" }
+		 ] },
+		 { "french": "détester", "english": "hate", "word_type": "verb", "sentences": [
+			 { "fr": "Je déteste cette prison.", "en": "I hate this prison.", "replace": "déteste" },
+			 { "fr": "Tu détestes les menottes.", "en": "You hate the handcuffs.", "replace": "détestes" },
+			 { "fr": "Il déteste attendre la nuit.", "en": "He hates waiting for the night.", "replace": "déteste" },
+			 { "fr": "Nous détestons le bruit de l'alarme.", "en": "We hate the sound of the alarm.", "replace": "détestons" },
+			 { "fr": "Vous détestez les gardes stricts.", "en": "You hate the strict guards.", "replace": "détestez" },
+			 { "fr": "Ils détestent être seuls.", "en": "They hate being alone.", "replace": "détestent" }
+		 ] },
+		 { "french": "les intentions", "english": "intentions", "word_type": "noun", "sentences": [
+			 { "fr": "Ses intentions sont secrètes.", "en": "His intentions are secret.", "replace": "intentions" },
+			 { "fr": "Ils doutent de ses intentions.", "en": "They doubt his intentions.", "replace": "intentions" },
+			 { "fr": "Les intentions du chef sont claires.", "en": "The leader's intentions are clear.", "replace": "intentions" },
+			 { "fr": "Je ne comprends pas ses intentions.", "en": "I do not understand his intentions.", "replace": "intentions" },
+			 { "fr": "Les intentions changent pendant l'évasion.", "en": "Intentions change during the escape.", "replace": "intentions" }
+		 ] },
+		 { "french": "chaque", "english": "each", "word_type": "adjective", "sentences": [
+			 { "fr": "Chaque garde a une clé.", "en": "Each guard has a key.", "replace": "chaque" },
+			 { "fr": "Chaque nuit, ils planifient.", "en": "Each night, they plan.", "replace": "chaque" },
+			 { "fr": "Chaque prisonnier rêve de liberté.", "en": "Each prisoner dreams of freedom.", "replace": "chaque" },
+			 { "fr": "Chaque bruit compte.", "en": "Each noise matters.", "replace": "chaque" },
+			 { "fr": "Chaque détail est important.", "en": "Each detail is important.", "replace": "chaque" }
+		 ] },
+		 { "french": "eux", "english": "them", "word_type": "pronoun", "sentences": [
+			 { "fr": "Je les ai vus, eux, près du tunnel.", "en": "I saw them near the tunnel.", "replace": "eux" },
+			 { "fr": "Les gardes cherchent eux partout.", "en": "The guards look for them everywhere.", "replace": "eux" },
+			 { "fr": "Nous comptons sur eux pour l'évasion.", "en": "We count on them for the escape.", "replace": "eux" },
+			 { "fr": "Il parle souvent d'eux.", "en": "He often talks about them.", "replace": "eux" },
+			 { "fr": "Sans eux, le plan échoue.", "en": "Without them, the plan fails.", "replace": "eux" }
+		 ] },
+		 { "french": "l'évasion", "english": "escape", "word_type": "noun", "sentences": [
+			 { "fr": "L'évasion commence à minuit.", "en": "The escape begins at midnight.", "replace": "évasion" },
+			 { "fr": "Ils préparent l'évasion depuis des semaines.", "en": "They have been preparing the escape for weeks.", "replace": "évasion" },
+			 { "fr": "L'évasion est risquée.", "en": "The escape is risky.", "replace": "évasion" },
+			 { "fr": "Tout le monde parle de l'évasion.", "en": "Everyone talks about the escape.", "replace": "évasion" },
+			 { "fr": "L'évasion échoue à cause de l'alarme.", "en": "The escape fails because of the alarm.", "replace": "évasion" }
+		 ] },
+		 { "french": "le tunnel", "english": "tunnel", "word_type": "noun", "sentences": [
+			 { "fr": "Le tunnel est très long.", "en": "The tunnel is very long.", "replace": "tunnel" },
+			 { "fr": "Ils creusent un tunnel sous la prison.", "en": "They dig a tunnel under the prison.", "replace": "tunnel" },
+			 { "fr": "Le tunnel mène à la liberté.", "en": "The tunnel leads to freedom.", "replace": "tunnel" },
+			 { "fr": "Un bruit étrange vient du tunnel.", "en": "A strange noise comes from the tunnel.", "replace": "tunnel" },
+			 { "fr": "Le tunnel s'effondre soudainement.", "en": "The tunnel suddenly collapses.", "replace": "tunnel" }
+		 ] },
+		 { "french": "les menottes", "english": "handcuffs", "word_type": "noun", "sentences": [
+			 { "fr": "Les menottes sont trop serrées.", "en": "The handcuffs are too tight.", "replace": "menottes" },
+			 { "fr": "Il enlève les menottes rapidement.", "en": "He removes the handcuffs quickly.", "replace": "menottes" },
+			 { "fr": "Les gardes vérifient les menottes.", "en": "The guards check the handcuffs.", "replace": "menottes" },
+			 { "fr": "Les menottes tombent par terre.", "en": "The handcuffs fall to the ground.", "replace": "menottes" },
+			 { "fr": "Elle cache les menottes sous le lit.", "en": "She hides the handcuffs under the bed.", "replace": "menottes" }
+		 ] }
+	]
+},
+
+{
+	"level": 37,
+	"title": "Camping Weekend",
+	"description": "Vocabulary and example sentences for the camping weekend theme.",
+	"theme": "camping weekend",
+	"words": [
+		 { "french": "le mari", "english": "husband", "word_type": "noun", "sentences": [
+			 { "fr": "Le mari prépare le feu de camp.", "en": "The husband prepares the campfire.", "replace": "mari" },
+			 { "fr": "Mon mari aime camper en montagne.", "en": "My husband likes to camp in the mountains.", "replace": "mari" },
+			 { "fr": "Le mari monte la tente.", "en": "The husband sets up the tent.", "replace": "mari" },
+			 { "fr": "Le mari porte le sac de couchage.", "en": "The husband carries the sleeping bag.", "replace": "mari" },
+			 { "fr": "Le mari utilise la boussole.", "en": "The husband uses the compass.", "replace": "mari" }
+		 ] },
+		 { "french": "le nom", "english": "name", "word_type": "noun", "sentences": [
+			 { "fr": "Écris ton nom sur la tente.", "en": "Write your name on the tent.", "replace": "nom" },
+			 { "fr": "Le nom du camping est Soleil.", "en": "The name of the campsite is Soleil.", "replace": "nom" },
+			 { "fr": "Je cherche le nom du sentier.", "en": "I am looking for the name of the trail.", "replace": "nom" },
+			 { "fr": "Son nom est sur la liste.", "en": "His name is on the list.", "replace": "nom" },
+			 { "fr": "Le nom est écrit sur la lampe de poche.", "en": "The name is written on the flashlight.", "replace": "nom" }
+		 ] },
+		 { "french": "surfer", "english": "surf", "word_type": "verb", "sentences": [
+			 { "fr": "Je surfe sur le lac le matin.", "en": "I surf on the lake in the morning.", "replace": "surfe" },
+			 { "fr": "Tu surfes avec tes amis.", "en": "You surf with your friends.", "replace": "surfes" },
+			 { "fr": "Il surfe chaque été.", "en": "He surfs every summer.", "replace": "surfe" },
+			 { "fr": "Nous surfons après le déjeuner.", "en": "We surf after lunch.", "replace": "surfon" },
+			 { "fr": "Vous surfez sur la grande vague.", "en": "You surf on the big wave.", "replace": "surfez" },
+			 { "fr": "Elles surfent tôt le matin.", "en": "They surf early in the morning.", "replace": "surfent" }
+		 ] },
+		 { "french": "plonger", "english": "dive", "word_type": "verb", "sentences": [
+			 { "fr": "Je plonge dans la rivière.", "en": "I dive into the river.", "replace": "plonge" },
+			 { "fr": "Tu plonges du rocher.", "en": "You dive from the rock.", "replace": "plonges" },
+			 { "fr": "Il plonge sous l'eau.", "en": "He dives underwater.", "replace": "plonge" },
+			 { "fr": "Nous plongeons ensemble.", "en": "We dive together.", "replace": "plongeons" },
+			 { "fr": "Vous plongez dans le lac.", "en": "You dive into the lake.", "replace": "plongez" },
+			 { "fr": "Elles plongent chaque soir.", "en": "They dive every evening.", "replace": "plongent" }
+		 ] },
+		 { "french": "escalader", "english": "climb", "word_type": "verb", "sentences": [
+			 { "fr": "J'escalade la montagne.", "en": "I climb the mountain.", "replace": "escalade" },
+			 { "fr": "Tu escalades le rocher.", "en": "You climb the rock.", "replace": "escalades" },
+			 { "fr": "Il escalade un arbre.", "en": "He climbs a tree.", "replace": "escalade" },
+			 { "fr": "Nous escaladons la colline.", "en": "We climb the hill.", "replace": "escaladons" },
+			 { "fr": "Vous escaladez la falaise.", "en": "You climb the cliff.", "replace": "escaladez" },
+			 { "fr": "Elles escaladent les rochers.", "en": "They climb the rocks.", "replace": "escaladent" }
+		 ] },
+		 { "french": "randonner", "english": "hike", "word_type": "verb", "sentences": [
+			 { "fr": "Je randonne dans la forêt.", "en": "I hike in the forest.", "replace": "randonne" },
+			 { "fr": "Tu randonnes chaque week-end.", "en": "You hike every weekend.", "replace": "randonnes" },
+			 { "fr": "Il randonne avec son chien.", "en": "He hikes with his dog.", "replace": "randonne" },
+			 { "fr": "Nous randonnons en groupe.", "en": "We hike as a group.", "replace": "randonnons" },
+			 { "fr": "Vous randonnez sur le sentier.", "en": "You hike on the trail.", "replace": "randonnez" },
+			 { "fr": "Elles randonnent tôt le matin.", "en": "They hike early in the morning.", "replace": "randonnent" }
+		 ] },
+		 { "french": "camper", "english": "camp", "word_type": "verb", "sentences": [
+			 { "fr": "Je campe près du lac.", "en": "I camp near the lake.", "replace": "campe" },
+			 { "fr": "Tu campes avec ta famille.", "en": "You camp with your family.", "replace": "campes" },
+			 { "fr": "Il campe sous les étoiles.", "en": "He camps under the stars.", "replace": "campe" },
+			 { "fr": "Nous campons dans la forêt.", "en": "We camp in the forest.", "replace": "campons" },
+			 { "fr": "Vous campez en montagne.", "en": "You camp in the mountains.", "replace": "campez" },
+			 { "fr": "Elles campent tout l'été.", "en": "They camp all summer.", "replace": "campent" }
+		 ] },
+		 { "french": "pêcher", "english": "fish", "word_type": "verb", "sentences": [
+			 { "fr": "Je pêche dans la rivière.", "en": "I fish in the river.", "replace": "pêche" },
+			 { "fr": "Tu pêches avec ton père.", "en": "You fish with your father.", "replace": "pêches" },
+			 { "fr": "Il pêche tous les matins.", "en": "He fishes every morning.", "replace": "pêche" },
+			 { "fr": "Nous pêchons près du pont.", "en": "We fish near the bridge.", "replace": "pêchons" },
+			 { "fr": "Vous pêchez au bord du lac.", "en": "You fish at the lake's edge.", "replace": "pêchez" },
+			 { "fr": "Elles pêchent en silence.", "en": "They fish in silence.", "replace": "pêchent" }
+		 ] },
+		 { "french": "chasser", "english": "hunt", "word_type": "verb", "sentences": [
+			 { "fr": "Je chasse dans la forêt.", "en": "I hunt in the forest.", "replace": "chasse" },
+			 { "fr": "Tu chasses avec ton oncle.", "en": "You hunt with your uncle.", "replace": "chasses" },
+			 { "fr": "Il chasse le matin.", "en": "He hunts in the morning.", "replace": "chasse" },
+			 { "fr": "Nous chassons ensemble.", "en": "We hunt together.", "replace": "chassons" },
+			 { "fr": "Vous chassez le week-end.", "en": "You hunt on weekends.", "replace": "chassez" },
+			 { "fr": "Elles chassent près de la rivière.", "en": "They hunt near the river.", "replace": "chassent" }
+		 ] },
+		 { "french": "cueillir", "english": "pick", "word_type": "verb", "sentences": [
+			 { "fr": "Je cueille des fleurs.", "en": "I pick flowers.", "replace": "cueille" },
+			 { "fr": "Tu cueilles des champignons.", "en": "You pick mushrooms.", "replace": "cueilles" },
+			 { "fr": "Il cueille des baies.", "en": "He picks berries.", "replace": "cueille" },
+			 { "fr": "Nous cueillons des fruits.", "en": "We pick fruits.", "replace": "cueillons" },
+			 { "fr": "Vous cueillez des herbes.", "en": "You pick herbs.", "replace": "cueillez" },
+			 { "fr": "Elles cueillent des plantes sauvages.", "en": "They pick wild plants.", "replace": "cueillent" }
+		 ] },
+		 { "french": "diffuser", "english": "broadcast", "word_type": "verb", "sentences": [
+			 { "fr": "Je diffuse la musique au camp.", "en": "I broadcast music at the camp.", "replace": "diffuse" },
+			 { "fr": "Tu diffuses les nouvelles.", "en": "You broadcast the news.", "replace": "diffuses" },
+			 { "fr": "Il diffuse un message important.", "en": "He broadcasts an important message.", "replace": "diffuse" },
+			 { "fr": "Nous diffusons un film le soir.", "en": "We broadcast a movie in the evening.", "replace": "diffusons" },
+			 { "fr": "Vous diffusez la météo.", "en": "You broadcast the weather.", "replace": "diffusez" },
+			 { "fr": "Elles diffusent des chansons.", "en": "They broadcast songs.", "replace": "diffusent" }
+		 ] },
+		 { "french": "le feu", "english": "campfire", "word_type": "noun", "sentences": [
+			 { "fr": "Le feu réchauffe tout le monde.", "en": "The campfire warms everyone.", "replace": "feu" },
+			 { "fr": "Nous faisons cuire des marshmallows sur le feu.", "en": "We roast marshmallows on the campfire.", "replace": "feu" },
+			 { "fr": "Le feu brille dans la nuit.", "en": "The campfire shines in the night.", "replace": "feu" },
+			 { "fr": "Ils chantent autour du feu.", "en": "They sing around the campfire.", "replace": "feu" },
+			 { "fr": "Le feu crépite doucement.", "en": "The campfire crackles softly.", "replace": "feu" }
+		 ] },
+		 { "french": "la tente", "english": "tent", "word_type": "noun", "sentences": [
+			 { "fr": "La tente est verte.", "en": "The tent is green.", "replace": "tente" },
+			 { "fr": "Nous dormons dans la tente.", "en": "We sleep in the tent.", "replace": "tente" },
+			 { "fr": "La tente est facile à monter.", "en": "The tent is easy to set up.", "replace": "tente" },
+			 { "fr": "Il range ses affaires dans la tente.", "en": "He puts his things in the tent.", "replace": "tente" },
+			 { "fr": "La tente est près du feu.", "en": "The tent is near the campfire.", "replace": "tente" }
+		 ] },
+		 { "french": "le sac de couchage", "english": "sleeping bag", "word_type": "noun", "sentences": [
+			 { "fr": "Le sac de couchage est chaud.", "en": "The sleeping bag is warm.", "replace": "sac de couchage" },
+			 { "fr": "Je glisse dans mon sac de couchage.", "en": "I slip into my sleeping bag.", "replace": "sac de couchage" },
+			 { "fr": "Le sac de couchage est bleu.", "en": "The sleeping bag is blue.", "replace": "sac de couchage" },
+			 { "fr": "Il range le sac de couchage dans la tente.", "en": "He puts the sleeping bag in the tent.", "replace": "sac de couchage" },
+			 { "fr": "Le sac de couchage est léger.", "en": "The sleeping bag is light.", "replace": "sac de couchage" }
+		 ] },
+		 { "french": "la lampe de poche", "english": "flashlight", "word_type": "noun", "sentences": [
+			 { "fr": "La lampe de poche éclaire la nuit.", "en": "The flashlight lights up the night.", "replace": "lampe de poche" },
+			 { "fr": "Je cherche ma lampe de poche.", "en": "I am looking for my flashlight.", "replace": "lampe de poche" },
+			 { "fr": "La lampe de poche est sous le sac.", "en": "The flashlight is under the bag.", "replace": "lampe de poche" },
+			 { "fr": "Il utilise la lampe de poche dans la tente.", "en": "He uses the flashlight in the tent.", "replace": "lampe de poche" },
+			 { "fr": "La lampe de poche a besoin de piles.", "en": "The flashlight needs batteries.", "replace": "lampe de poche" }
+		 ] },
+		 { "french": "la boussole", "english": "compass", "word_type": "noun", "sentences": [
+			 { "fr": "La boussole indique le nord.", "en": "The compass shows north.", "replace": "boussole" },
+			 { "fr": "J'utilise la boussole pour randonner.", "en": "I use the compass to hike.", "replace": "boussole" },
+			 { "fr": "La boussole est dans la poche.", "en": "The compass is in the pocket.", "replace": "boussole" },
+			 { "fr": "Il vérifie la boussole souvent.", "en": "He checks the compass often.", "replace": "boussole" },
+			 { "fr": "La boussole aide à ne pas se perdre.", "en": "The compass helps not to get lost.", "replace": "boussole" }
+		 ] },
+		 { "french": "le réchaud", "english": "camp stove", "word_type": "noun", "sentences": [
+			 { "fr": "Le réchaud chauffe la soupe.", "en": "The camp stove heats the soup.", "replace": "réchaud" },
+			 { "fr": "Nous cuisinons sur le réchaud.", "en": "We cook on the camp stove.", "replace": "réchaud" },
+			 { "fr": "Le réchaud est facile à utiliser.", "en": "The camp stove is easy to use.", "replace": "réchaud" },
+			 { "fr": "Il nettoie le réchaud après le repas.", "en": "He cleans the camp stove after the meal.", "replace": "réchaud" },
+			 { "fr": "Le réchaud est petit et léger.", "en": "The camp stove is small and light.", "replace": "réchaud" }
+		 ] },
+     {
+	"french": "la gourde", "english": "water bottle", "word_type": "noun", "sentences": [
+		{ "fr": "Je remplis ma gourde avant la randonnée.", "en": "I fill my water bottle before the hike.", "replace": "gourde" },
+		{ "fr": "La gourde garde l'eau fraîche.", "en": "The water bottle keeps the water cool.", "replace": "gourde" },
+		{ "fr": "Il oublie sa gourde à la maison.", "en": "He forgets his water bottle at home.", "replace": "gourde" },
+		{ "fr": "La gourde est en métal.", "en": "The water bottle is made of metal.", "replace": "gourde" },
+		{ "fr": "Elle partage sa gourde avec son ami.", "en": "She shares her water bottle with her friend.", "replace": "gourde" }
+	]
+},
+{
+	"french": "le hamac", "english": "hammock", "word_type": "noun", "sentences": [
+		{ "fr": "Je me repose dans le hamac.", "en": "I rest in the hammock.", "replace": "hamac" },
+		{ "fr": "Le hamac est suspendu entre deux arbres.", "en": "The hammock is hung between two trees.", "replace": "hamac" },
+		{ "fr": "Elle lit un livre dans le hamac.", "en": "She reads a book in the hammock.", "replace": "hamac" },
+		{ "fr": "Le hamac bouge avec le vent.", "en": "The hammock moves with the wind.", "replace": "hamac" },
+		{ "fr": "Il achète un nouveau hamac pour l'été.", "en": "He buys a new hammock for the summer.", "replace": "hamac" }
+	]
+},
+{
+	"french": "la moustiquaire", "english": "mosquito net", "word_type": "noun", "sentences": [
+		{ "fr": "Nous installons la moustiquaire avant de dormir.", "en": "We set up the mosquito net before sleeping.", "replace": "moustiquaire" },
+		{ "fr": "La moustiquaire protège des insectes.", "en": "The mosquito net protects from insects.", "replace": "moustiquaire" },
+		{ "fr": "Il répare la moustiquaire déchirée.", "en": "He repairs the torn mosquito net.", "replace": "moustiquaire" },
+		{ "fr": "La moustiquaire est blanche.", "en": "The mosquito net is white.", "replace": "moustiquaire" },
+		{ "fr": "Elle range la moustiquaire dans le sac.", "en": "She puts the mosquito net in the bag.", "replace": "moustiquaire" }
+	]
+},
+{
+	"french": "la casserole", "english": "cooking pot", "word_type": "noun", "sentences": [
+		{ "fr": "Je fais bouillir de l'eau dans la casserole.", "en": "I boil water in the cooking pot.", "replace": "casserole" },
+		{ "fr": "La casserole est sur le feu.", "en": "The cooking pot is on the fire.", "replace": "casserole" },
+		{ "fr": "Il lave la casserole après le repas.", "en": "He washes the cooking pot after the meal.", "replace": "casserole" },
+		{ "fr": "La casserole est en aluminium.", "en": "The cooking pot is made of aluminum.", "replace": "casserole" },
+		{ "fr": "Elle prépare la soupe dans la casserole.", "en": "She prepares soup in the cooking pot.", "replace": "casserole" }
+	]
+}
+    ]
+},
+
+{
+	"level": 38,
+	"title": "Grocery Shopping",
+	"description": "Vocabulary and example sentences for the grocery shopping theme.",
+	"theme": "grocery shopping",
+	"words": [
+		 { "french": "le panier", "english": "basket", "word_type": "noun", "sentences": [
+			 { "fr": "Je prends un panier à l'entrée.", "en": "I take a basket at the entrance.", "replace": "panier" },
+			 { "fr": "Le panier est plein de fruits.", "en": "The basket is full of fruit.", "replace": "panier" },
+			 { "fr": "Elle porte le panier au rayon légumes.", "en": "She carries the basket to the vegetable aisle.", "replace": "panier" },
+			 { "fr": "Le panier est léger aujourd'hui.", "en": "The basket is light today.", "replace": "panier" },
+			 { "fr": "Il oublie son panier à la caisse.", "en": "He forgets his basket at the checkout.", "replace": "panier" }
+		 ] },
+		 { "french": "la caisse", "english": "checkout", "word_type": "noun", "sentences": [
+			 { "fr": "Je fais la queue à la caisse.", "en": "I wait in line at the checkout.", "replace": "caisse" },
+			 { "fr": "La caisse est rapide aujourd'hui.", "en": "The checkout is fast today.", "replace": "caisse" },
+			 { "fr": "Il paie à la caisse centrale.", "en": "He pays at the main checkout.", "replace": "caisse" },
+			 { "fr": "La caisse ferme à 20 heures.", "en": "The checkout closes at 8 p.m.", "replace": "caisse" },
+			 { "fr": "Elle oublie son sac à la caisse.", "en": "She forgets her bag at the checkout.", "replace": "caisse" }
+		 ] },
+		 { "french": "le charriot", "english": "shopping cart", "word_type": "noun", "sentences": [
+			 { "fr": "Le charriot est devant le magasin.", "en": "The shopping cart is in front of the store.", "replace": "charriot" },
+			 { "fr": "Je pousse le charriot dans les rayons.", "en": "I push the shopping cart through the aisles.", "replace": "charriot" },
+			 { "fr": "Le charriot est lourd.", "en": "The shopping cart is heavy.", "replace": "charriot" },
+			 { "fr": "Il met les courses dans le charriot.", "en": "He puts the groceries in the cart.", "replace": "charriot" },
+			 { "fr": "Un enfant joue avec le charriot.", "en": "A child plays with the shopping cart.", "replace": "charriot" }
+		 ] },
+		 { "french": "l'étiquette", "english": "label", "word_type": "noun", "sentences": [
+			 { "fr": "Je lis l'étiquette du produit.", "en": "I read the product label.", "replace": "étiquette" },
+			 { "fr": "L'étiquette indique le prix.", "en": "The label shows the price.", "replace": "étiquette" },
+			 { "fr": "Il colle une étiquette sur la boîte.", "en": "He sticks a label on the box.", "replace": "étiquette" },
+			 { "fr": "L'étiquette est rouge.", "en": "The label is red.", "replace": "étiquette" },
+			 { "fr": "Elle change l'étiquette du rayon.", "en": "She changes the aisle label.", "replace": "étiquette" }
+		 ] },
+		 { "french": "le rayon", "english": "aisle", "word_type": "noun", "sentences": [
+			 { "fr": "Je cherche le rayon des fruits.", "en": "I look for the fruit aisle.", "replace": "rayon" },
+			 { "fr": "Le rayon est bien rangé.", "en": "The aisle is tidy.", "replace": "rayon" },
+			 { "fr": "Il y a du lait dans ce rayon.", "en": "There is milk in this aisle.", "replace": "rayon" },
+			 { "fr": "Le rayon des promotions est à gauche.", "en": "The sale aisle is on the left.", "replace": "rayon" },
+			 { "fr": "Elle passe dans chaque rayon.", "en": "She goes through every aisle.", "replace": "rayon" }
+		 ] },
+		 { "french": "le reçu", "english": "receipt", "word_type": "noun", "sentences": [
+			 { "fr": "Je garde le reçu après l'achat.", "en": "I keep the receipt after the purchase.", "replace": "reçu" },
+			 { "fr": "Le reçu est dans mon sac.", "en": "The receipt is in my bag.", "replace": "reçu" },
+			 { "fr": "Il vérifie le reçu à la sortie.", "en": "He checks the receipt at the exit.", "replace": "reçu" },
+			 { "fr": "Le reçu est très long.", "en": "The receipt is very long.", "replace": "reçu" },
+			 { "fr": "Elle perd souvent son reçu.", "en": "She often loses her receipt.", "replace": "reçu" }
+		 ] },
+		 { "french": "l'emballage", "english": "packaging", "word_type": "noun", "sentences": [
+			 { "fr": "L'emballage est en plastique.", "en": "The packaging is plastic.", "replace": "emballage" },
+			 { "fr": "Je jette l'emballage après usage.", "en": "I throw away the packaging after use.", "replace": "emballage" },
+			 { "fr": "L'emballage protège le produit.", "en": "The packaging protects the product.", "replace": "emballage" },
+			 { "fr": "Il lit l'emballage pour les instructions.", "en": "He reads the packaging for instructions.", "replace": "emballage" },
+			 { "fr": "Elle recycle l'emballage.", "en": "She recycles the packaging.", "replace": "emballage" }
+		 ] },
+		 { "french": "peser", "english": "to weigh", "word_type": "verb", "sentences": [
+			 { "fr": "Je pèse les pommes sur la balance.", "en": "I weigh the apples on the scale.", "replace": "pèse" },
+			 { "fr": "Tu pèses les légumes avant de payer.", "en": "You weigh the vegetables before paying.", "replace": "pèses" },
+			 { "fr": "Il pèse le fromage au rayon.", "en": "He weighs the cheese at the aisle.", "replace": "pèse" },
+			 { "fr": "Nous pesons les fruits ensemble.", "en": "We weigh the fruit together.", "replace": "pesons" },
+			 { "fr": "Vous pesez la viande à la boucherie.", "en": "You weigh the meat at the butcher's.", "replace": "pesez" },
+			 { "fr": "Elles pèsent les sacs de riz.", "en": "They weigh the bags of rice.", "replace": "pèsent" }
+		 ] },
+		 { "french": "le caissier", "english": "cashier", "word_type": "noun", "sentences": [
+			 { "fr": "Le caissier scanne les articles.", "en": "The cashier scans the items.", "replace": "caissier" },
+			 { "fr": "Je dis bonjour au caissier.", "en": "I say hello to the cashier.", "replace": "caissier" },
+			 { "fr": "Le caissier rend la monnaie.", "en": "The cashier gives the change.", "replace": "caissier" },
+			 { "fr": "Elle attend le caissier.", "en": "She waits for the cashier.", "replace": "caissier" },
+			 { "fr": "Le caissier ferme sa caisse.", "en": "The cashier closes his register.", "replace": "caissier" }
+		 ] },
+		 { "french": "déballer", "english": "to unpack", "word_type": "verb", "sentences": [
+			 { "fr": "Je déballe les courses à la maison.", "en": "I unpack the groceries at home.", "replace": "déballe" },
+			 { "fr": "Tu déballes les fruits du sac.", "en": "You unpack the fruit from the bag.", "replace": "déballes" },
+			 { "fr": "Il déballe les produits frais.", "en": "He unpacks the fresh products.", "replace": "déballe" },
+			 { "fr": "Nous déballons tout ensemble.", "en": "We unpack everything together.", "replace": "déballons" },
+			 { "fr": "Vous déballez les paquets.", "en": "You unpack the packages.", "replace": "déballez" },
+			 { "fr": "Elles déballent les légumes.", "en": "They unpack the vegetables.", "replace": "déballent" }
+		 ] },
+		 { "french": "scanner", "english": "to scan", "word_type": "verb", "sentences": [
+			 { "fr": "Je scanne le code-barres.", "en": "I scan the barcode.", "replace": "scanne" },
+			 { "fr": "Tu scannes les articles rapidement.", "en": "You scan the items quickly.", "replace": "scannes" },
+			 { "fr": "Il scanne le reçu.", "en": "He scans the receipt.", "replace": "scanne" },
+			 { "fr": "Nous scannons les produits au self-service.", "en": "We scan the products at self-checkout.", "replace": "scannons" },
+			 { "fr": "Vous scannez la carte de fidélité.", "en": "You scan the loyalty card.", "replace": "scannez" },
+			 { "fr": "Elles scannent les codes pour les promotions.", "en": "They scan the codes for sales.", "replace": "scannent" }
+		 ] },
+		 { "french": "emballer", "english": "to wrap", "word_type": "verb", "sentences": [
+			 { "fr": "J'emballe les cadeaux.", "en": "I wrap the gifts.", "replace": "emballe" },
+			 { "fr": "Tu emballes les courses.", "en": "You wrap the groceries.", "replace": "emballes" },
+			 { "fr": "Il emballe la viande dans du papier.", "en": "He wraps the meat in paper.", "replace": "emballe" },
+			 { "fr": "Nous emballons les produits fragiles.", "en": "We wrap the fragile products.", "replace": "emballons" },
+			 { "fr": "Vous emballez les légumes.", "en": "You wrap the vegetables.", "replace": "emballez" },
+			 { "fr": "Elles emballent les fruits pour le voyage.", "en": "They wrap the fruit for the trip.", "replace": "emballent" }
+		 ] },
+		 { "french": "vérifier", "english": "to check", "word_type": "verb", "sentences": [
+			 { "fr": "Je vérifie la liste de courses.", "en": "I check the shopping list.", "replace": "vérifie" },
+			 { "fr": "Tu vérifies les prix.", "en": "You check the prices.", "replace": "vérifies" },
+			 { "fr": "Il vérifie la date de péremption.", "en": "He checks the expiration date.", "replace": "vérifie" },
+			 { "fr": "Nous vérifions le ticket de caisse.", "en": "We check the receipt.", "replace": "vérifions" },
+			 { "fr": "Vous vérifiez les promotions.", "en": "You check the sales.", "replace": "vérifiez" },
+			 { "fr": "Elles vérifient les sacs avant de partir.", "en": "They check the bags before leaving.", "replace": "vérifient" }
+		 ] },
+		 { "french": "empiler", "english": "to stack", "word_type": "verb", "sentences": [
+			 { "fr": "J'empile les boîtes sur l'étagère.", "en": "I stack the boxes on the shelf.", "replace": "empile" },
+			 { "fr": "Tu empiles les paniers.", "en": "You stack the baskets.", "replace": "empiles" },
+			 { "fr": "Il empile les produits dans le charriot.", "en": "He stacks the products in the cart.", "replace": "empile" },
+			 { "fr": "Nous empilons les caisses à la réserve.", "en": "We stack the crates in the storage room.", "replace": "empilons" },
+			 { "fr": "Vous empilez les articles à la caisse.", "en": "You stack the items at the checkout.", "replace": "empilez" },
+			 { "fr": "Elles empilent les paquets de riz.", "en": "They stack the rice packets.", "replace": "empilent" }
+		 ] },
+		 { "french": "zapper", "english": "to skip/zap", "word_type": "verb", "sentences": [
+			 { "fr": "Je zappe les publicités.", "en": "I skip the ads.", "replace": "zappe" },
+			 { "fr": "Tu zappes les produits chers.", "en": "You skip the expensive products.", "replace": "zappes" },
+			 { "fr": "Il zappe les rayons inutiles.", "en": "He skips the unnecessary aisles.", "replace": "zappe" },
+			 { "fr": "Nous zappons les files d'attente.", "en": "We skip the lines.", "replace": "zappons" },
+			 { "fr": "Vous zappez les étapes.", "en": "You skip the steps.", "replace": "zappez" },
+			 { "fr": "Elles zappent les promotions du jour.", "en": "They skip today's sales.", "replace": "zappent" }
+		 ] },
+		 { "french": "cliquer", "english": "to click", "word_type": "verb", "sentences": [
+			 { "fr": "Je clique sur le bouton 'payer'.", "en": "I click on the 'pay' button.", "replace": "clique" },
+			 { "fr": "Tu cliques pour ajouter au panier.", "en": "You click to add to the basket.", "replace": "cliques" },
+			 { "fr": "Il clique sur la promotion.", "en": "He clicks on the sale.", "replace": "clique" },
+			 { "fr": "Nous cliquons pour imprimer le reçu.", "en": "We click to print the receipt.", "replace": "cliquons" },
+			 { "fr": "Vous cliquez sur l'étiquette.", "en": "You click on the label.", "replace": "cliquez" },
+			 { "fr": "Elles cliquent sur les produits en ligne.", "en": "They click on the products online.", "replace": "cliquent" }
+		 ] },
+		 { "french": "imprimer", "english": "to print", "word_type": "verb", "sentences": [
+			 { "fr": "J'imprime le reçu.", "en": "I print the receipt.", "replace": "imprime" },
+			 { "fr": "Tu imprimes la liste de courses.", "en": "You print the shopping list.", "replace": "imprimes" },
+			 { "fr": "Il imprime les étiquettes.", "en": "He prints the labels.", "replace": "imprime" },
+			 { "fr": "Nous imprimons les bons de réduction.", "en": "We print the coupons.", "replace": "imprimons" },
+			 { "fr": "Vous imprimez les factures.", "en": "You print the invoices.", "replace": "imprimez" },
+			 { "fr": "Elles impriment les tickets à la caisse.", "en": "They print the tickets at the checkout.", "replace": "impriment" }
+		 ] },
+		 { "french": "soupirer", "english": "to sigh", "word_type": "verb", "sentences": [
+			 { "fr": "Je soupire en voyant la file d'attente.", "en": "I sigh when I see the line.", "replace": "soupire" },
+			 { "fr": "Tu soupires à la caisse.", "en": "You sigh at the checkout.", "replace": "soupires" },
+			 { "fr": "Il soupire parce que c'est cher.", "en": "He sighs because it's expensive.", "replace": "soupire" },
+			 { "fr": "Nous soupirons en attendant.", "en": "We sigh while waiting.", "replace": "soupirons" },
+			 { "fr": "Vous soupirez après les courses.", "en": "You sigh after shopping.", "replace": "soupirez" },
+			 { "fr": "Elles soupirent devant les rayons vides.", "en": "They sigh in front of the empty aisles.", "replace": "soupirent" }
+		 ] },
+		 { "french": "frapper", "english": "to knock, to hit", "word_type": "verb", "sentences": [
+			 { "fr": "Je frappe à la porte du magasin.", "en": "I knock on the store door.", "replace": "frappe" },
+			 { "fr": "Tu frappes sur la caisse.", "en": "You knock on the checkout.", "replace": "frappes" },
+			 { "fr": "Il frappe le sac par accident.", "en": "He hits the bag by accident.", "replace": "frappe" },
+			 { "fr": "Nous frappons à la fenêtre.", "en": "We knock on the window.", "replace": "frappons" },
+			 { "fr": "Vous frappez la sonnette.", "en": "You hit the bell.", "replace": "frappez" },
+			 { "fr": "Elles frappent les boîtes pour les ouvrir.", "en": "They hit the boxes to open them.", "replace": "frappent" }
+		 ] },
+		 { "french": "ramasser", "english": "to pick up", "word_type": "verb", "sentences": [
+			 { "fr": "Je ramasse les produits tombés.", "en": "I pick up the fallen products.", "replace": "ramasse" },
+			 { "fr": "Tu ramasses les pièces de monnaie.", "en": "You pick up the coins.", "replace": "ramasses" },
+			 { "fr": "Il ramasse le ticket par terre.", "en": "He picks up the ticket from the floor.", "replace": "ramasse" },
+			 { "fr": "Nous ramassons les sacs ensemble.", "en": "We pick up the bags together.", "replace": "ramassons" },
+			 { "fr": "Vous ramassez les paniers vides.", "en": "You pick up the empty baskets.", "replace": "ramassez" },
+			 { "fr": "Elles ramassent les fruits au sol.", "en": "They pick up the fruit on the ground.", "replace": "ramassent" }
+		 ] }
+	]
+},
+
+{
+	"level": 39,
+	"title": "At the Doctor’s Office",
+	"description": "Vocabulary and example sentences for the doctor's office theme.",
+	"theme": "doctor's office",
+	"words": [
+		 { "french": "l'ordonnance", "english": "prescription", "word_type": "noun", "sentences": [
+			 { "fr": "Le médecin écrit une ordonnance.", "en": "The doctor writes a prescription.", "replace": "ordonnance" },
+			 { "fr": "Je donne l'ordonnance au pharmacien.", "en": "I give the prescription to the pharmacist.", "replace": "ordonnance" },
+			 { "fr": "L'ordonnance est pour des antibiotiques.", "en": "The prescription is for antibiotics.", "replace": "ordonnance" },
+			 { "fr": "Il a perdu son ordonnance.", "en": "He lost his prescription.", "replace": "ordonnance" },
+			 { "fr": "L'ordonnance est valable une semaine.", "en": "The prescription is valid for one week.", "replace": "ordonnance" }
+		 ] },
+		 { "french": "le symptôme", "english": "symptom", "word_type": "noun", "sentences": [
+			 { "fr": "La fièvre est un symptôme.", "en": "Fever is a symptom.", "replace": "symptôme" },
+			 { "fr": "Il décrit ses symptômes au médecin.", "en": "He describes his symptoms to the doctor.", "replace": "symptômes" },
+			 { "fr": "Les symptômes changent chaque jour.", "en": "The symptoms change every day.", "replace": "symptômes" },
+			 { "fr": "Un symptôme courant est la toux.", "en": "A common symptom is coughing.", "replace": "symptôme" },
+			 { "fr": "Elle surveille ses symptômes.", "en": "She monitors her symptoms.", "replace": "symptômes" }
+		 ] },
+		 { "french": "le diagnostic", "english": "diagnosis", "word_type": "noun", "sentences": [
+			 { "fr": "Le diagnostic est rapide.", "en": "The diagnosis is quick.", "replace": "diagnostic" },
+			 { "fr": "Le médecin annonce le diagnostic.", "en": "The doctor announces the diagnosis.", "replace": "diagnostic" },
+			 { "fr": "Un bon diagnostic aide la guérison.", "en": "A good diagnosis helps recovery.", "replace": "diagnostic" },
+			 { "fr": "Il attend le diagnostic final.", "en": "He is waiting for the final diagnosis.", "replace": "diagnostic" },
+			 { "fr": "Le diagnostic est parfois difficile.", "en": "The diagnosis is sometimes difficult.", "replace": "diagnostic" }
+		 ] },
+		 { "french": "ausculter", "english": "to examine", "word_type": "verb", "sentences": [
+			 { "fr": "Je t'ausculte avec le stéthoscope.", "en": "I examine you with the stethoscope.", "replace": "ausculte" },
+			 { "fr": "Tu auscultes le patient.", "en": "You examine the patient.", "replace": "auscultes" },
+			 { "fr": "Le médecin ausculte l'enfant.", "en": "The doctor examines the child.", "replace": "ausculte" },
+			 { "fr": "Nous auscultons les malades.", "en": "We examine the sick.", "replace": "auscultons" },
+			 { "fr": "Vous auscultez les patients chaque matin.", "en": "You examine the patients every morning.", "replace": "auscultez" },
+			 { "fr": "Ils auscultent les nouveaux arrivants.", "en": "They examine the new arrivals.", "replace": "auscultent" }
+		 ] },
+		 { "french": "la tension", "english": "blood pressure", "word_type": "noun", "sentences": [
+			 { "fr": "La tension est normale.", "en": "The blood pressure is normal.", "replace": "tension" },
+			 { "fr": "Il mesure sa tension chaque matin.", "en": "He measures his blood pressure every morning.", "replace": "tension" },
+			 { "fr": "La tension est trop élevée.", "en": "The blood pressure is too high.", "replace": "tension" },
+			 { "fr": "Le médecin surveille la tension.", "en": "The doctor monitors the blood pressure.", "replace": "tension" },
+			 { "fr": "Elle note la tension sur le dossier.", "en": "She notes the blood pressure on the file.", "replace": "tension" }
+		 ] },
+		 { "french": "le vaccin", "english": "vaccine", "word_type": "noun", "sentences": [
+			 { "fr": "Le vaccin protège contre la grippe.", "en": "The vaccine protects against the flu.", "replace": "vaccin" },
+			 { "fr": "Je reçois un vaccin chaque année.", "en": "I get a vaccine every year.", "replace": "vaccin" },
+			 { "fr": "Le vaccin est obligatoire.", "en": "The vaccine is mandatory.", "replace": "vaccin" },
+			 { "fr": "Il prépare le vaccin pour l'enfant.", "en": "He prepares the vaccine for the child.", "replace": "vaccin" },
+			 { "fr": "Elle a peur du vaccin.", "en": "She is afraid of the vaccine.", "replace": "vaccin" }
+		 ] },
+		 { "french": "le stéthoscope", "english": "stethoscope", "word_type": "noun", "sentences": [
+			 { "fr": "Le médecin utilise un stéthoscope.", "en": "The doctor uses a stethoscope.", "replace": "stéthoscope" },
+			 { "fr": "Le stéthoscope est sur la table.", "en": "The stethoscope is on the table.", "replace": "stéthoscope" },
+			 { "fr": "Il nettoie le stéthoscope après chaque patient.", "en": "He cleans the stethoscope after each patient.", "replace": "stéthoscope" },
+			 { "fr": "Le stéthoscope est froid.", "en": "The stethoscope is cold.", "replace": "stéthoscope" },
+			 { "fr": "Elle écoute le cœur avec le stéthoscope.", "en": "She listens to the heart with the stethoscope.", "replace": "stéthoscope" }
+		 ] },
+		 { "french": "la salle d'attente", "english": "waiting room", "word_type": "noun", "sentences": [
+			 { "fr": "La salle d'attente est pleine.", "en": "The waiting room is full.", "replace": "salle d'attente" },
+			 { "fr": "Je lis un magazine dans la salle d'attente.", "en": "I read a magazine in the waiting room.", "replace": "salle d'attente" },
+			 { "fr": "La salle d'attente est calme.", "en": "The waiting room is quiet.", "replace": "salle d'attente" },
+			 { "fr": "Il attend son tour dans la salle d'attente.", "en": "He waits his turn in the waiting room.", "replace": "salle d'attente" },
+			 { "fr": "La salle d'attente a des chaises confortables.", "en": "The waiting room has comfortable chairs.", "replace": "salle d'attente" }
+		 ] },
+		 { "french": "la guérison", "english": "recovery", "word_type": "noun", "sentences": [
+			 { "fr": "La guérison est rapide.", "en": "The recovery is quick.", "replace": "guérison" },
+			 { "fr": "Il espère une guérison complète.", "en": "He hopes for a full recovery.", "replace": "guérison" },
+			 { "fr": "La guérison prend du temps.", "en": "Recovery takes time.", "replace": "guérison" },
+			 { "fr": "Le médecin surveille la guérison.", "en": "The doctor monitors the recovery.", "replace": "guérison" },
+			 { "fr": "Elle parle de sa guérison.", "en": "She talks about her recovery.", "replace": "guérison" }
+		 ] },
+		 { "french": "examiner", "english": "to examine", "word_type": "verb", "sentences": [
+			 { "fr": "Je t'examine pour la fièvre.", "en": "I examine you for fever.", "replace": "examine" },
+			 { "fr": "Tu examines le patient attentivement.", "en": "You examine the patient carefully.", "replace": "examines" },
+			 { "fr": "Il examine la gorge de l'enfant.", "en": "He examines the child's throat.", "replace": "examine" },
+			 { "fr": "Nous examinons les résultats ensemble.", "en": "We examine the results together.", "replace": "examinons" },
+			 { "fr": "Vous examinez les radios.", "en": "You examine the x-rays.", "replace": "examinez" },
+			 { "fr": "Elles examinent les symptômes.", "en": "They examine the symptoms.", "replace": "examinent" }
+		 ] },
+		 { "french": "diagnostiquer", "english": "to diagnose", "word_type": "verb", "sentences": [
+			 { "fr": "Je diagnostique la maladie.", "en": "I diagnose the illness.", "replace": "diagnostique" },
+			 { "fr": "Tu diagnostiques rapidement.", "en": "You diagnose quickly.", "replace": "diagnostiques" },
+			 { "fr": "Il diagnostique une infection.", "en": "He diagnoses an infection.", "replace": "diagnostique" },
+			 { "fr": "Nous diagnostiquons ensemble.", "en": "We diagnose together.", "replace": "diagnostiquons" },
+			 { "fr": "Vous diagnostiquez le patient.", "en": "You diagnose the patient.", "replace": "diagnostiquez" },
+			 { "fr": "Elles diagnostiquent la cause.", "en": "They diagnose the cause.", "replace": "diagnostiquent" }
+		 ] },
+		 { "french": "prescrire", "english": "to prescribe", "word_type": "verb", "sentences": [
+			 { "fr": "Je prescris des médicaments.", "en": "I prescribe medicine.", "replace": "prescris" },
+			 { "fr": "Tu prescris un repos.", "en": "You prescribe rest.", "replace": "prescris" },
+			 { "fr": "Il prescrit des antibiotiques.", "en": "He prescribes antibiotics.", "replace": "prescrit" },
+			 { "fr": "Nous prescrivons un traitement.", "en": "We prescribe a treatment.", "replace": "prescrivons" },
+			 { "fr": "Vous prescrivez une analyse.", "en": "You prescribe a test.", "replace": "prescrivez" },
+			 { "fr": "Elles prescrivent des vitamines.", "en": "They prescribe vitamins.", "replace": "prescrivent" }
+		 ] },
+		 { "french": "stériliser", "english": "to sterilize", "word_type": "verb", "sentences": [
+			 { "fr": "Je stérilise les instruments.", "en": "I sterilize the instruments.", "replace": "stérilise" },
+			 { "fr": "Tu stérilises la salle.", "en": "You sterilize the room.", "replace": "stérilises" },
+			 { "fr": "Il stérilise le matériel.", "en": "He sterilizes the equipment.", "replace": "stérilise" },
+			 { "fr": "Nous stérilisons les outils.", "en": "We sterilize the tools.", "replace": "stérilisons" },
+			 { "fr": "Vous stérilisez les gants.", "en": "You sterilize the gloves.", "replace": "stérilisez" },
+			 { "fr": "Elles stérilisent les tables.", "en": "They sterilize the tables.", "replace": "stérilisent" }
+		 ] },
+		 { "french": "noter", "english": "to note", "word_type": "verb", "sentences": [
+			 { "fr": "Je note la température.", "en": "I note the temperature.", "replace": "note" },
+			 { "fr": "Tu notes les symptômes.", "en": "You note the symptoms.", "replace": "notes" },
+			 { "fr": "Il note le diagnostic.", "en": "He notes the diagnosis.", "replace": "note" },
+			 { "fr": "Nous notons les résultats.", "en": "We note the results.", "replace": "notons" },
+			 { "fr": "Vous notez les rendez-vous.", "en": "You note the appointments.", "replace": "notez" },
+			 { "fr": "Elles notent les prescriptions.", "en": "They note the prescriptions.", "replace": "notent" }
+		 ] },
+		 { "french": "observer", "english": "to observe", "word_type": "verb", "sentences": [
+			 { "fr": "J'observe les réactions du patient.", "en": "I observe the patient's reactions.", "replace": "observe" },
+			 { "fr": "Tu observes les symptômes.", "en": "You observe the symptoms.", "replace": "observes" },
+			 { "fr": "Il observe la guérison.", "en": "He observes the recovery.", "replace": "observe" },
+			 { "fr": "Nous observons les résultats.", "en": "We observe the results.", "replace": "observons" },
+			 { "fr": "Vous observez les enfants.", "en": "You observe the children.", "replace": "observez" },
+			 { "fr": "Elles observent le médecin.", "en": "They observe the doctor.", "replace": "observent" }
+		 ] },
+		 { "french": "chuchoter", "english": "to whisper", "word_type": "verb", "sentences": [
+			 { "fr": "Je chuchote dans la salle d'attente.", "en": "I whisper in the waiting room.", "replace": "chuchote" },
+			 { "fr": "Tu chuchotes à l'infirmière.", "en": "You whisper to the nurse.", "replace": "chuchotes" },
+			 { "fr": "Il chuchote au médecin.", "en": "He whispers to the doctor.", "replace": "chuchote" },
+			 { "fr": "Nous chuchotons pour ne pas déranger.", "en": "We whisper so as not to disturb.", "replace": "chuchotons" },
+			 { "fr": "Vous chuchotez pendant la consultation.", "en": "You whisper during the appointment.", "replace": "chuchotez" },
+			 { "fr": "Elles chuchotent entre elles.", "en": "They whisper to each other.", "replace": "chuchotent" }
+		 ] },
+		 { "french": "grimper", "english": "to climb", "word_type": "verb", "sentences": [
+			 { "fr": "Je grimpe sur la table d'examen.", "en": "I climb onto the examination table.", "replace": "grimpe" },
+			 { "fr": "Tu grimpes sur la chaise.", "en": "You climb on the chair.", "replace": "grimpes" },
+			 { "fr": "Il grimpe sur le lit d'hôpital.", "en": "He climbs on the hospital bed.", "replace": "grimpe" },
+			 { "fr": "Nous grimpons les escaliers de la clinique.", "en": "We climb the clinic stairs.", "replace": "grimpons" },
+			 { "fr": "Vous grimpez sur le tabouret.", "en": "You climb on the stool.", "replace": "grimpez" },
+			 { "fr": "Elles grimpent sur le banc de la salle d'attente.", "en": "They climb on the waiting room bench.", "replace": "grimpent" }
+		 ] },
+		 { "french": "glisser", "english": "to slip, to slide", "word_type": "verb", "sentences": [
+			 { "fr": "Je glisse sur le sol mouillé.", "en": "I slip on the wet floor.", "replace": "glisse" },
+			 { "fr": "Tu glisses sur le tapis.", "en": "You slide on the carpet.", "replace": "glisses" },
+			 { "fr": "Il glisse en sortant de la douche.", "en": "He slips coming out of the shower.", "replace": "glisse" },
+			 { "fr": "Nous glissons sur le carrelage.", "en": "We slide on the tiles.", "replace": "glissons" },
+			 { "fr": "Vous glissez dans le couloir.", "en": "You slide in the hallway.", "replace": "glissez" },
+			 { "fr": "Elles glissent sur la rampe.", "en": "They slide on the railing.", "replace": "glissent" }
+		 ] },
+		 { "french": "siffler", "english": "to whistle", "word_type": "verb", "sentences": [
+			 { "fr": "Je siffle en attendant le médecin.", "en": "I whistle while waiting for the doctor.", "replace": "siffle" },
+			 { "fr": "Tu siffles dans la salle d'attente.", "en": "You whistle in the waiting room.", "replace": "siffles" },
+			 { "fr": "Il siffle une chanson.", "en": "He whistles a song.", "replace": "siffle" },
+			 { "fr": "Nous sifflons ensemble.", "en": "We whistle together.", "replace": "sifflons" },
+			 { "fr": "Vous sifflez doucement.", "en": "You whistle softly.", "replace": "sifflez" },
+			 { "fr": "Elles sifflent pour s'amuser.", "en": "They whistle for fun.", "replace": "sifflent" }
+		 ] },
+{
+	"french": "la piqûre", "english": "injection", "word_type": "noun", "sentences": [
+		{ "fr": "Le médecin fait une piqûre au patient.", "en": "The doctor gives the patient an injection.", "replace": "piqûre" },
+		{ "fr": "La piqûre est rapide.", "en": "The injection is quick.", "replace": "piqûre" },
+		{ "fr": "Je crains la piqûre.", "en": "I am afraid of the injection.", "replace": "piqûre" },
+		{ "fr": "La piqûre laisse une petite marque.", "en": "The injection leaves a small mark.", "replace": "piqûre" },
+		{ "fr": "Il prépare la piqûre avec soin.", "en": "He prepares the injection carefully.", "replace": "piqûre" }
+	]
+},
+{
+	"french": "le pansement", "english": "bandage", "word_type": "noun", "sentences": [
+		{ "fr": "Je mets un pansement sur la blessure.", "en": "I put a bandage on the wound.", "replace": "pansement" },
+		{ "fr": "Le pansement protège la coupure.", "en": "The bandage protects the cut.", "replace": "pansement" },
+		{ "fr": "Il change le pansement chaque jour.", "en": "He changes the bandage every day.", "replace": "pansement" },
+		{ "fr": "Le pansement est blanc.", "en": "The bandage is white.", "replace": "pansement" },
+		{ "fr": "Elle enlève le pansement doucement.", "en": "She removes the bandage gently.", "replace": "pansement" }
+	]
+},
+{
+	"french": "la béquille", "english": "crutch", "word_type": "noun", "sentences": [
+		{ "fr": "Il marche avec une béquille.", "en": "He walks with a crutch.", "replace": "béquille" },
+		{ "fr": "La béquille aide à se déplacer.", "en": "The crutch helps to move around.", "replace": "béquille" },
+		{ "fr": "Je trouve la béquille dans le placard.", "en": "I find the crutch in the closet.", "replace": "béquille" },
+		{ "fr": "La béquille est en aluminium.", "en": "The crutch is made of aluminum.", "replace": "béquille" },
+		{ "fr": "Elle ajuste la béquille à sa taille.", "en": "She adjusts the crutch to her size.", "replace": "béquille" }
+	]
+}
+
+    ]
+},
+
+{
+	"level": 40,
+	"title": "Traveling by Train",
+	"description": "Vocabulary and example sentences for the traveling by train theme.",
+	"theme": "traveling by train",
+	"words": [
+		 { "french": "le quai", "english": "platform", "word_type": "noun", "sentences": [
+			 { "fr": "J'attends le train sur le quai.", "en": "I wait for the train on the platform.", "replace": "quai" },
+			 { "fr": "Le quai est bondé ce matin.", "en": "The platform is crowded this morning.", "replace": "quai" },
+			 { "fr": "Le train arrive au quai numéro deux.", "en": "The train arrives at platform number two.", "replace": "quai" },
+			 { "fr": "Nous descendons sur le quai.", "en": "We get off on the platform.", "replace": "quai" },
+			 { "fr": "Le quai est long et étroit.", "en": "The platform is long and narrow.", "replace": "quai" }
+		 ] },
+		 { "french": "le composteur", "english": "ticket validator", "word_type": "noun", "sentences": [
+			 { "fr": "Je cherche le composteur à l'entrée.", "en": "I look for the ticket validator at the entrance.", "replace": "composteur" },
+			 { "fr": "Le composteur est jaune.", "en": "The ticket validator is yellow.", "replace": "composteur" },
+			 { "fr": "Il oublie de passer son billet au composteur.", "en": "He forgets to put his ticket in the validator.", "replace": "composteur" },
+			 { "fr": "Le composteur est en panne.", "en": "The ticket validator is out of order.", "replace": "composteur" },
+			 { "fr": "Elle utilise le composteur avant de monter.", "en": "She uses the ticket validator before boarding.", "replace": "composteur" }
+		 ] },
+		 { "french": "le wagon", "english": "carriage", "word_type": "noun", "sentences": [
+			 { "fr": "Je monte dans le wagon de tête.", "en": "I get in the front carriage.", "replace": "wagon" },
+			 { "fr": "Le wagon est confortable.", "en": "The carriage is comfortable.", "replace": "wagon" },
+			 { "fr": "Il y a beaucoup de monde dans le wagon.", "en": "There are many people in the carriage.", "replace": "wagon" },
+			 { "fr": "Le wagon est réservé aux familles.", "en": "The carriage is reserved for families.", "replace": "wagon" },
+			 { "fr": "Nous changeons de wagon à la prochaine station.", "en": "We change carriages at the next station.", "replace": "wagon" }
+		 ] },
+		 { "french": "la correspondance", "english": "connection", "word_type": "noun", "sentences": [
+			 { "fr": "Je dois prendre une correspondance à Lyon.", "en": "I have to make a connection in Lyon.", "replace": "correspondance" },
+			 { "fr": "La correspondance est rapide.", "en": "The connection is quick.", "replace": "correspondance" },
+			 { "fr": "Nous ratons la correspondance.", "en": "We miss the connection.", "replace": "correspondance" },
+			 { "fr": "La correspondance est à la même gare.", "en": "The connection is at the same station.", "replace": "correspondance" },
+			 { "fr": "Il attend la correspondance sur le quai.", "en": "He waits for the connection on the platform.", "replace": "correspondance" }
+		 ] },
+		 { "french": "le contrôleur", "english": "ticket inspector", "word_type": "noun", "sentences": [
+			 { "fr": "Le contrôleur vérifie les billets.", "en": "The ticket inspector checks the tickets.", "replace": "contrôleur" },
+			 { "fr": "Je montre mon billet au contrôleur.", "en": "I show my ticket to the inspector.", "replace": "contrôleur" },
+			 { "fr": "Le contrôleur porte un uniforme bleu.", "en": "The inspector wears a blue uniform.", "replace": "contrôleur" },
+			 { "fr": "Il parle avec le contrôleur.", "en": "He talks with the ticket inspector.", "replace": "contrôleur" },
+			 { "fr": "Le contrôleur passe dans chaque wagon.", "en": "The inspector goes through each carriage.", "replace": "contrôleur" }
+		 ] },
+		 { "french": "l'horaire", "english": "schedule", "word_type": "noun", "sentences": [
+			 { "fr": "Je consulte l'horaire du train.", "en": "I check the train schedule.", "replace": "horaire" },
+			 { "fr": "L'horaire change pendant les vacances.", "en": "The schedule changes during the holidays.", "replace": "horaire" },
+			 { "fr": "Il regarde l'horaire sur l'affiche.", "en": "He looks at the schedule on the board.", "replace": "horaire" },
+			 { "fr": "L'horaire est affiché à l'entrée.", "en": "The schedule is posted at the entrance.", "replace": "horaire" },
+			 { "fr": "Nous suivons l'horaire strictement.", "en": "We follow the schedule strictly.", "replace": "horaire" }
+		 ] },
+		 { "french": "le retard", "english": "delay", "word_type": "noun", "sentences": [
+			 { "fr": "Le train a du retard.", "en": "The train is delayed.", "replace": "retard" },
+			 { "fr": "Le retard est de dix minutes.", "en": "The delay is ten minutes.", "replace": "retard" },
+			 { "fr": "Il s'excuse pour le retard.", "en": "He apologizes for the delay.", "replace": "retard" },
+			 { "fr": "Le retard cause des problèmes.", "en": "The delay causes problems.", "replace": "retard" },
+			 { "fr": "Nous attendons à cause du retard.", "en": "We wait because of the delay.", "replace": "retard" }
+		 ] },
+		 { "french": "la locomotive", "english": "locomotive", "word_type": "noun", "sentences": [
+			 { "fr": "La locomotive tire les wagons.", "en": "The locomotive pulls the carriages.", "replace": "locomotive" },
+			 { "fr": "La locomotive est très puissante.", "en": "The locomotive is very powerful.", "replace": "locomotive" },
+			 { "fr": "Il photographie la locomotive.", "en": "He photographs the locomotive.", "replace": "locomotive" },
+			 { "fr": "La locomotive s'arrête à la gare.", "en": "The locomotive stops at the station.", "replace": "locomotive" },
+			 { "fr": "Nous admirons la vieille locomotive.", "en": "We admire the old locomotive.", "replace": "locomotive" }
+		 ] },
+		 { "french": "le terminus", "english": "last stop", "word_type": "noun", "sentences": [
+			 { "fr": "Le train arrive au terminus.", "en": "The train arrives at the last stop.", "replace": "terminus" },
+			 { "fr": "Nous descendons au terminus.", "en": "We get off at the last stop.", "replace": "terminus" },
+			 { "fr": "Le terminus est à Paris.", "en": "The last stop is in Paris.", "replace": "terminus" },
+			 { "fr": "Il attend au terminus.", "en": "He waits at the last stop.", "replace": "terminus" },
+			 { "fr": "Le terminus est loin d'ici.", "en": "The last stop is far from here.", "replace": "terminus" }
+		 ] },
+		 { "french": "embarquer", "english": "to board", "word_type": "verb", "sentences": [
+			 { "fr": "J'embarque dans le train.", "en": "I board the train.", "replace": "embarque" },
+			 { "fr": "Tu embarques avec ta famille.", "en": "You board with your family.", "replace": "embarques" },
+			 { "fr": "Il embarque à la première station.", "en": "He boards at the first station.", "replace": "embarque" },
+			 { "fr": "Nous embarquons tous ensemble.", "en": "We all board together.", "replace": "embarquons" },
+			 { "fr": "Vous embarquez rapidement.", "en": "You board quickly.", "replace": "embarquez" },
+			 { "fr": "Elles embarquent dans le dernier wagon.", "en": "They board in the last carriage.", "replace": "embarquent" }
+		 ] },
+		 { "french": "composter", "english": "to validate", "word_type": "verb", "sentences": [
+			 { "fr": "Je composte mon billet avant d'embarquer.", "en": "I validate my ticket before boarding.", "replace": "composte" },
+			 { "fr": "Tu compostes toujours tes billets.", "en": "You always validate your tickets.", "replace": "compostes" },
+			 { "fr": "Il composte à la gare.", "en": "He validates at the station.", "replace": "composte" },
+			 { "fr": "Nous compostons ensemble.", "en": "We validate together.", "replace": "compostons" },
+			 { "fr": "Vous compostez à l'entrée.", "en": "You validate at the entrance.", "replace": "compostez" },
+			 { "fr": "Elles compostent leurs billets.", "en": "They validate their tickets.", "replace": "compostent" }
+		 ] },
+		 { "french": "signaler", "english": "to signal", "word_type": "verb", "sentences": [
+			 { "fr": "Je signale un problème au contrôleur.", "en": "I signal a problem to the inspector.", "replace": "signale" },
+			 { "fr": "Tu signales un retard.", "en": "You signal a delay.", "replace": "signales" },
+			 { "fr": "Il signale la prochaine station.", "en": "He signals the next station.", "replace": "signale" },
+			 { "fr": "Nous signalons un bagage oublié.", "en": "We signal a forgotten bag.", "replace": "signalons" },
+			 { "fr": "Vous signalez une panne.", "en": "You signal a breakdown.", "replace": "signalez" },
+			 { "fr": "Elles signalent la fin du trajet.", "en": "They signal the end of the journey.", "replace": "signalent" }
+		 ] },
+		 { "french": "pointer", "english": "to clock in/out", "word_type": "verb", "sentences": [
+			 { "fr": "Je pointe à la gare chaque matin.", "en": "I clock in at the station every morning.", "replace": "pointe" },
+			 { "fr": "Tu pointes avant de monter dans le train.", "en": "You clock in before boarding the train.", "replace": "pointes" },
+			 { "fr": "Il pointe à la sortie.", "en": "He clocks out at the exit.", "replace": "pointe" },
+			 { "fr": "Nous pointons ensemble.", "en": "We clock in together.", "replace": "pointons" },
+			 { "fr": "Vous pointez à l'arrivée.", "en": "You clock in at arrival.", "replace": "pointez" },
+			 { "fr": "Elles pointent à la fin du trajet.", "en": "They clock out at the end of the journey.", "replace": "pointent" }
+		 ] },
+		 { "french": "valider", "english": "to validate", "word_type": "verb", "sentences": [
+			 { "fr": "Je valide mon billet.", "en": "I validate my ticket.", "replace": "valide" },
+			 { "fr": "Tu valides la réservation.", "en": "You validate the reservation.", "replace": "valides" },
+			 { "fr": "Il valide le ticket à la machine.", "en": "He validates the ticket at the machine.", "replace": "valide" },
+			 { "fr": "Nous validons les billets ensemble.", "en": "We validate the tickets together.", "replace": "validons" },
+			 { "fr": "Vous validez à l'entrée.", "en": "You validate at the entrance.", "replace": "validez" },
+			 { "fr": "Elles valident avant d'embarquer.", "en": "They validate before boarding.", "replace": "valident" }
+		 ] },
+		 { "french": "afficher", "english": "to display", "word_type": "verb", "sentences": [
+			 { "fr": "J'affiche l'horaire sur le tableau.", "en": "I display the schedule on the board.", "replace": "affiche" },
+			 { "fr": "Tu affiches les informations.", "en": "You display the information.", "replace": "affiches" },
+			 { "fr": "Il affiche le retard du train.", "en": "He displays the train delay.", "replace": "affiche" },
+			 { "fr": "Nous affichons les destinations.", "en": "We display the destinations.", "replace": "affichons" },
+			 { "fr": "Vous affichez les horaires à la gare.", "en": "You display the schedules at the station.", "replace": "affichez" },
+			 { "fr": "Elles affichent les prix des billets.", "en": "They display the ticket prices.", "replace": "affichent" }
+		 ] },
+		 { "french": "bâiller", "english": "to yawn", "word_type": "verb", "sentences": [
+			 { "fr": "Je bâille dans le train du matin.", "en": "I yawn on the morning train.", "replace": "bâille" },
+			 { "fr": "Tu bâilles en attendant le départ.", "en": "You yawn while waiting for departure.", "replace": "bâilles" },
+			 { "fr": "Il bâille parce qu'il est fatigué.", "en": "He yawns because he is tired.", "replace": "bâille" },
+			 { "fr": "Nous bâillons tous ensemble.", "en": "We all yawn together.", "replace": "bâillons" },
+			 { "fr": "Vous bâillez discrètement.", "en": "You yawn discreetly.", "replace": "bâillez" },
+			 { "fr": "Elles bâillent pendant le trajet.", "en": "They yawn during the journey.", "replace": "bâillent" }
+		 ] },
+		 { "french": "éternuer", "english":  "to sneeze", "word_type": "verb", "sentences": [
+			 { "fr": "J'éternue dans le wagon.", "en": "I sneeze in the carriage.", "replace": "éternue" },
+			 { "fr": "Tu éternues souvent.", "en": "You sneeze often.", "replace": "éternues" },
+			 { "fr": "Il éternue à cause de la poussière.", "en": "He sneezes because of the dust.", "replace": "éternue" },
+			 { "fr": "Nous éternuons en même temps.", "en": "We sneeze at the same time.", "replace": "éternuons" },
+			 { "fr": "Vous éternuez dans la salle d'attente.", "en": "You sneeze in the waiting room.", "replace": "éternuez" },
+			 { "fr": "Elles éternuent quand il fait froid.", "en": "They sneeze when it's cold.", "replace": "éternuent" }
+		 ] },
+		 { "french": "la poussière", "english": "dust", "word_type": "noun", "sentences": [
+			 { "fr": "Il y a de la poussière sur le siège.", "en": "There is dust on the seat.", "replace": "poussière" },
+			 { "fr": "La poussière vole dans le wagon.", "en": "The dust flies in the carriage.", "replace": "poussière" },
+			 { "fr": "Je nettoie la poussière avant de m'asseoir.", "en": "I clean the dust before sitting down.", "replace": "poussière" },
+			 { "fr": "La poussière me fait éternuer.", "en": "The dust makes me sneeze.", "replace": "poussière" },
+			 { "fr": "Le contrôleur enlève la poussière.", "en": "The inspector removes the dust.", "replace": "poussière" }
+		 ] },
+		 { "french": "le plafond", "english": "ceiling", "word_type": "noun", "sentences": [
+			 { "fr": "Le plafond du wagon est haut.", "en": "The carriage ceiling is high.", "replace": "plafond" },
+			 { "fr": "Je regarde le plafond en attendant.", "en": "I look at the ceiling while waiting.", "replace": "plafond" },
+			 { "fr": "Le plafond est décoré.", "en": "The ceiling is decorated.", "replace": "plafond" },
+			 { "fr": "Il y a une lumière au plafond.", "en": "There is a light on the ceiling.", "replace": "plafond" },
+			 { "fr": "La poussière tombe du plafond.", "en": "Dust falls from the ceiling.", "replace": "plafond" }
+		 ] },
+{
+	"french": "la voie", "english": "track", "word_type": "noun", "sentences": [
+		{ "fr": "Le train part de la voie trois.", "en": "The train leaves from track three.", "replace": "voie" },
+		{ "fr": "La voie est libre.", "en": "The track is clear.", "replace": "voie" },
+		{ "fr": "Je cherche la bonne voie.", "en": "I look for the right track.", "replace": "voie" },
+		{ "fr": "La voie est en travaux.", "en": "The track is under construction.", "replace": "voie" },
+		{ "fr": "Elle attend sur la voie.", "en": "She waits on the track.", "replace": "voie" }
+	]
+},
+{
+	"french": "le compartiment", "english": "compartment", "word_type": "noun", "sentences": [
+		{ "fr": "Je range ma valise dans le compartiment.", "en": "I put my suitcase in the compartment.", "replace": "compartiment" },
+		{ "fr": "Le compartiment est plein.", "en": "The compartment is full.", "replace": "compartiment" },
+		{ "fr": "Il dort dans le compartiment du train.", "en": "He sleeps in the train compartment.", "replace": "compartiment" },
+		{ "fr": "Le compartiment a une fenêtre.", "en": "The compartment has a window.", "replace": "compartiment" },
+		{ "fr": "Elle nettoie le compartiment avant le départ.", "en": "She cleans the compartment before departure.", "replace": "compartiment" }
+	]
+},
+{
+	"french": "le signal", "english": "signal", "word_type": "noun", "sentences": [
+		{ "fr": "Le signal est rouge.", "en": "The signal is red.", "replace": "signal" },
+		{ "fr": "J'attends le signal pour traverser.", "en": "I wait for the signal to cross.", "replace": "signal" },
+		{ "fr": "Le signal change de couleur.", "en": "The signal changes color.", "replace": "signal" },
+		{ "fr": "Il regarde le signal depuis la fenêtre.", "en": "He looks at the signal from the window.", "replace": "signal" },
+		{ "fr": "Le signal indique l'arrêt du train.", "en": "The signal indicates the train stop.", "replace": "signal" }
+	]
+}
+
+    ]
+},
+
+{
+	"level": 41,
+	"title": "At a Restaurant",
+	"description": "Vocabulary and example sentences for the restaurant theme.",
+	"theme": "restaurant",
+	"words": [
+		 { "french": "le serveur", "english": "waiter", "word_type": "noun", "sentences": [
+			 { "fr": "Le serveur prend notre commande.", "en": "The waiter takes our order.", "replace": "serveur" },
+			 { "fr": "J'appelle le serveur pour l'addition.", "en": "I call the waiter for the bill.", "replace": "serveur" },
+			 { "fr": "Le serveur est très poli.", "en": "The waiter is very polite.", "replace": "serveur" },
+			 { "fr": "Le serveur apporte les boissons.", "en": "The waiter brings the drinks.", "replace": "serveur" },
+			 { "fr": "Nous remercions le serveur.", "en": "We thank the waiter.", "replace": "serveur" }
+		 ] },
+		 { "french": "le menu du jour", "english": "daily special", "word_type": "noun", "sentences": [
+			 { "fr": "Je choisis le menu du jour.", "en": "I choose the daily special.", "replace": "menu du jour" },
+			 { "fr": "Le menu du jour change chaque semaine.", "en": "The daily special changes every week.", "replace": "menu du jour" },
+			 { "fr": "Le serveur recommande le menu du jour.", "en": "The waiter recommends the daily special.", "replace": "menu du jour" },
+			 { "fr": "Le menu du jour est délicieux.", "en": "The daily special is delicious.", "replace": "menu du jour" },
+			 { "fr": "Nous partageons le menu du jour.", "en": "We share the daily special.", "replace": "menu du jour" }
+		 ] },
+		 { "french": "l'addition", "english": "bill", "word_type": "noun", "sentences": [
+			 { "fr": "Je demande l'addition au serveur.", "en": "I ask the waiter for the bill.", "replace": "addition" },
+			 { "fr": "L'addition est sur la table.", "en": "The bill is on the table.", "replace": "addition" },
+			 { "fr": "Nous partageons l'addition.", "en": "We split the bill.", "replace": "addition" },
+			 { "fr": "L'addition est correcte.", "en": "The bill is correct.", "replace": "addition" },
+			 { "fr": "Il paie l'addition en espèces.", "en": "He pays the bill in cash.", "replace": "addition" }
+		 ] },
+		 { "french": "le pourboire", "english": "tip", "word_type": "noun", "sentences": [
+			 { "fr": "Je laisse un pourboire au serveur.", "en": "I leave a tip for the waiter.", "replace": "pourboire" },
+			 { "fr": "Le pourboire est généreux.", "en": "The tip is generous.", "replace": "pourboire" },
+			 { "fr": "Il oublie de donner le pourboire.", "en": "He forgets to give the tip.", "replace": "pourboire" },
+			 { "fr": "Nous ajoutons le pourboire à l'addition.", "en": "We add the tip to the bill.", "replace": "pourboire" },
+			 { "fr": "Le pourboire est inclus.", "en": "The tip is included.", "replace": "pourboire" }
+		 ] },
+		 { "french": "la réservation", "english": "reservation", "word_type": "noun", "sentences": [
+			 { "fr": "J'ai une réservation pour deux personnes.", "en": "I have a reservation for two.", "replace": "réservation" },
+			 { "fr": "La réservation est à 20 heures.", "en": "The reservation is at 8 p.m.", "replace": "réservation" },
+			 { "fr": "Nous confirmons la réservation.", "en": "We confirm the reservation.", "replace": "réservation" },
+			 { "fr": "La réservation est au nom de Martin.", "en": "The reservation is under the name Martin.", "replace": "réservation" },
+			 { "fr": "Il annule la réservation.", "en": "He cancels the reservation.", "replace": "réservation" }
+		 ] },
+		 { "french": "le couvert", "english": "place setting", "word_type": "noun", "sentences": [
+			 { "fr": "Le serveur apporte le couvert.", "en": "The waiter brings the place setting.", "replace": "couvert" },
+			 { "fr": "Il manque un couvert.", "en": "A place setting is missing.", "replace": "couvert" },
+			 { "fr": "Je place le couvert sur la table.", "en": "I put the place setting on the table.", "replace": "couvert" },
+			 { "fr": "Le couvert est propre.", "en": "The place setting is clean.", "replace": "couvert" },
+			 { "fr": "Nous changeons le couvert entre les plats.", "en": "We change the place setting between courses.", "replace": "couvert" }
+		 ] },
+		 { "french": "la carafe d'eau", "english": "water pitcher", "word_type": "noun", "sentences": [
+			 { "fr": "Je demande une carafe d'eau.", "en": "I ask for a water pitcher.", "replace": "carafe d'eau" },
+			 { "fr": "La carafe d'eau est fraîche.", "en": "The water pitcher is cold.", "replace": "carafe d'eau" },
+			 { "fr": "Le serveur remplit la carafe d'eau.", "en": "The waiter fills the water pitcher.", "replace": "carafe d'eau" },
+			 { "fr": "La carafe d'eau est sur la table.", "en": "The water pitcher is on the table.", "replace": "carafe d'eau" },
+			 { "fr": "Nous partageons la carafe d'eau.", "en": "We share the water pitcher.", "replace": "carafe d'eau" }
+		 ] },
+		 { "french": "l'entrée", "english": "starter", "word_type": "noun", "sentences": [
+			 { "fr": "Je prends une soupe en entrée.", "en": "I have soup as a starter.", "replace": "entrée" },
+			 { "fr": "L'entrée est servie rapidement.", "en": "The starter is served quickly.", "replace": "entrée" },
+			 { "fr": "Nous partageons l'entrée.", "en": "We share the starter.", "replace": "entrée" },
+			 { "fr": "L'entrée est froide.", "en": "The starter is cold.", "replace": "entrée" },
+			 { "fr": "Il commande une salade en entrée.", "en": "He orders a salad as a starter.", "replace": "entrée" }
+		 ] },
+		 { "french": "le plat principal", "english": "main course", "word_type": "noun", "sentences": [
+			 { "fr": "Le plat principal est du poisson.", "en": "The main course is fish.", "replace": "plat principal" },
+			 { "fr": "Je préfère le plat principal végétarien.", "en": "I prefer the vegetarian main course.", "replace": "plat principal" },
+			 { "fr": "Le plat principal arrive après l'entrée.", "en": "The main course comes after the starter.", "replace": "plat principal" },
+			 { "fr": "Nous partageons le plat principal.", "en": "We share the main course.", "replace": "plat principal" },
+			 { "fr": "Le plat principal est délicieux.", "en": "The main course is delicious.", "replace": "plat principal" }
+		 ] },
+		 { "french": "dresser", "english": "to set the table", "word_type": "verb", "sentences": [
+			 { "fr": "Je dresse la table pour le dîner.", "en": "I set the table for dinner.", "replace": "dresse" },
+			 { "fr": "Tu dresses la table avec soin.", "en": "You set the table carefully.", "replace": "dresses" },
+			 { "fr": "Il dresse la table avant l'arrivée des invités.", "en": "He sets the table before the guests arrive.", "replace": "dresse" },
+			 { "fr": "Nous dressons la table ensemble.", "en": "We set the table together.", "replace": "dressons" },
+			 { "fr": "Vous dressez la table pour la fête.", "en": "You set the table for the party.", "replace": "dressez" },
+			 { "fr": "Elles dressent la table rapidement.", "en": "They set the table quickly.", "replace": "dressent" }
+		 ] },
+		 { "french": "mijoter", "english": "to simmer", "word_type": "verb", "sentences": [
+			 { "fr": "Je mijote une sauce maison.", "en": "I simmer a homemade sauce.", "replace": "mijote" },
+			 { "fr": "Tu mijotes la soupe doucement.", "en": "You simmer the soup gently.", "replace": "mijotes" },
+			 { "fr": "Il mijote le plat principal.", "en": "He simmers the main course.", "replace": "mijote" },
+			 { "fr": "Nous mijotons le ragoût.", "en": "We simmer the stew.", "replace": "mijotons" },
+			 { "fr": "Vous mijotez les légumes.", "en": "You simmer the vegetables.", "replace": "mijotez" },
+			 { "fr": "Elles mijotent la sauce toute la journée.", "en": "They simmer the sauce all day.", "replace": "mijotent" }
+		 ] },
+		 { "french": "déguster", "english": "to savor", "word_type": "verb", "sentences": [
+			 { "fr": "Je déguste un bon vin.", "en": "I savor a good wine.", "replace": "déguste" },
+			 { "fr": "Tu dégustes le dessert.", "en": "You savor the dessert.", "replace": "dégustes" },
+			 { "fr": "Il déguste chaque bouchée.", "en": "He savors every bite.", "replace": "déguste" },
+			 { "fr": "Nous dégustons le plat principal.", "en": "We savor the main course.", "replace": "dégustons" },
+			 { "fr": "Vous dégustez les fromages.", "en": "You savor the cheeses.", "replace": "dégustez" },
+			 { "fr": "Elles dégustent le menu du jour.", "en": "They savor the daily special.", "replace": "dégustent" }
+		 ] },
+		 { "french": "recommander", "english": "to recommend", "word_type": "verb", "sentences": [
+			 { "fr": "Je recommande le plat du jour.", "en": "I recommend the daily special.", "replace": "recommande" },
+			 { "fr": "Tu recommandes ce restaurant.", "en": "You recommend this restaurant.", "replace": "recommandes" },
+			 { "fr": "Il recommande un dessert maison.", "en": "He recommends a homemade dessert.", "replace": "recommande" },
+			 { "fr": "Nous recommandons la soupe.", "en": "We recommend the soup.", "replace": "recommandons" },
+			 { "fr": "Vous recommandez ce vin.", "en": "You recommend this wine.", "replace": "recommandez" },
+			 { "fr": "Elles recommandent le menu du jour.", "en": "They recommend the daily special.", "replace": "recommandent" }
+		 ] },
+		 { "french": "mélanger", "english": "to mix", "word_type": "verb", "sentences": [
+			 { "fr": "Je mélange la salade.", "en": "I mix the salad.", "replace": "mélange" },
+			 { "fr": "Tu mélanges les ingrédients.", "en": "You mix the ingredients.", "replace": "mélanges" },
+			 { "fr": "Il mélange la soupe.", "en": "He mixes the soup.", "replace": "mélange" },
+			 { "fr": "Nous mélangeons la pâte.", "en": "We mix the dough.", "replace": "mélangeons" },
+			 { "fr": "Vous mélangez les sauces.", "en": "You mix the sauces.", "replace": "mélangez" },
+			 { "fr": "Elles mélangent les fruits.", "en": "They mix the fruits.", "replace": "mélangent" }
+		 ] },
+		 { "french": "la poignée", "english": "handle", "word_type": "noun", "sentences": [
+			 { "fr": "Je tiens la poignée de la porte.", "en": "I hold the door handle.", "replace": "poignée" },
+			 { "fr": "La poignée est cassée.", "en": "The handle is broken.", "replace": "poignée" },
+			 { "fr": "Il répare la poignée.", "en": "He repairs the handle.", "replace": "poignée" },
+			 { "fr": "La poignée est en métal.", "en": "The handle is made of metal.", "replace": "poignée" },
+			 { "fr": "Nous nettoyons la poignée.", "en": "We clean the handle.", "replace": "poignée" }
+		 ] },
+		 { "french": "le couloir", "english": "hallway", "word_type": "noun", "sentences": [
+			 { "fr": "Le serveur marche dans le couloir.", "en": "The waiter walks in the hallway.", "replace": "couloir" },
+			 { "fr": "Le couloir est étroit.", "en": "The hallway is narrow.", "replace": "couloir" },
+			 { "fr": "Je traverse le couloir.", "en": "I cross the hallway.", "replace": "couloir" },
+			 { "fr": "Le couloir mène à la cuisine.", "en": "The hallway leads to the kitchen.", "replace": "couloir" },
+			 { "fr": "Nous attendons dans le couloir.", "en": "We wait in the hallway.", "replace": "couloir" }
+		 ] },
+		 { "french": "la couverture", "english": "blanket", "word_type": "noun", "sentences": [
+			 { "fr": "Je demande une couverture supplémentaire.", "en": "I ask for an extra blanket.", "replace": "couverture" },
+			 { "fr": "La couverture est douce.", "en": "The blanket is soft.", "replace": "couverture" },
+			 { "fr": "Il plie la couverture.", "en": "He folds the blanket.", "replace": "couverture" },
+			 { "fr": "La couverture est sur la chaise.", "en": "The blanket is on the chair.", "replace": "couverture" },
+			 { "fr": "Nous partageons la couverture.", "en": "We share the blanket.", "replace": "couverture" }
+		 ] },
+		 { "french": "le tiroir", "english": "drawer", "word_type": "noun", "sentences": [
+			 { "fr": "J'ouvre le tiroir pour prendre une cuillère.", "en": "I open the drawer to get a spoon.", "replace": "tiroir" },
+			 { "fr": "Le tiroir est plein de couverts.", "en": "The drawer is full of cutlery.", "replace": "tiroir" },
+			 { "fr": "Il ferme le tiroir doucement.", "en": "He closes the drawer gently.", "replace": "tiroir" },
+			 { "fr": "Le tiroir est sous le plan de travail.", "en": "The drawer is under the counter.", "replace": "tiroir" },
+			 { "fr": "Nous rangeons les serviettes dans le tiroir.", "en": "We put the napkins in the drawer.", "replace": "tiroir" }
+		 ] },
+		 { "french": "la boue", "english": "mud", "word_type": "noun", "sentences": [
+			 { "fr": "Il y a de la boue près de l'entrée.", "en": "There is mud near the entrance.", "replace": "boue" },
+			 { "fr": "La boue salit le sol du restaurant.", "en": "The mud dirties the restaurant floor.", "replace": "boue" },
+			 { "fr": "Je nettoie la boue avec une serpillière.", "en": "I clean the mud with a mop.", "replace": "boue" },
+			 { "fr": "La boue colle aux chaussures.", "en": "The mud sticks to the shoes.", "replace": "boue" },
+			 { "fr": "Nous évitons la boue en entrant.", "en": "We avoid the mud when entering.", "replace": "boue" }
+		 ] },
+{
+	"french": "la serviette", "english": "napkin", "word_type": "noun", "sentences": [
+		{ "fr": "Je plie la serviette sur la table.", "en": "I fold the napkin on the table.", "replace": "serviette" },
+		{ "fr": "La serviette est blanche.", "en": "The napkin is white.", "replace": "serviette" },
+		{ "fr": "Il utilise une serviette en papier.", "en": "He uses a paper napkin.", "replace": "serviette" },
+		{ "fr": "La serviette tombe par terre.", "en": "The napkin falls on the floor.", "replace": "serviette" },
+		{ "fr": "Elle achète de nouvelles serviettes.", "en": "She buys new napkins.", "replace": "serviette" }
+	]
+},
+{
+	"french": "la nappe", "english": "tablecloth", "word_type": "noun", "sentences": [
+		{ "fr": "Je pose la nappe sur la table.", "en": "I put the tablecloth on the table.", "replace": "nappe" },
+		{ "fr": "La nappe est propre.", "en": "The tablecloth is clean.", "replace": "nappe" },
+		{ "fr": "Il repasse la nappe.", "en": "He irons the tablecloth.", "replace": "nappe" },
+		{ "fr": "La nappe a des motifs fleuris.", "en": "The tablecloth has floral patterns.", "replace": "nappe" },
+		{ "fr": "Elle change la nappe chaque semaine.", "en": "She changes the tablecloth every week.", "replace": "nappe" }
+	]
+},
+{
+	"french": "le plateau", "english": "tray", "word_type": "noun", "sentences": [
+		{ "fr": "Je porte le plateau avec les verres.", "en": "I carry the tray with the glasses.", "replace": "plateau" },
+		{ "fr": "Le plateau est en argent.", "en": "The tray is made of silver.", "replace": "plateau" },
+		{ "fr": "Il nettoie le plateau après le repas.", "en": "He cleans the tray after the meal.", "replace": "plateau" },
+		{ "fr": "Le plateau glisse sur la table.", "en": "The tray slides on the table.", "replace": "plateau" },
+		{ "fr": "Elle décore le plateau pour la fête.", "en": "She decorates the tray for the party.", "replace": "plateau" }
+	]
+},
+{
+	"french": "la carte des vins", "english": "wine list", "word_type": "noun", "sentences": [
+		{ "fr": "Je consulte la carte des vins.", "en": "I look at the wine list.", "replace": "carte des vins" },
+		{ "fr": "La carte des vins est variée.", "en": "The wine list is varied.", "replace": "carte des vins" },
+		{ "fr": "Il choisit un vin de la carte.", "en": "He chooses a wine from the list.", "replace": "carte des vins" },
+		{ "fr": "La carte des vins est en français.", "en": "The wine list is in French.", "replace": "carte des vins" },
+		{ "fr": "Elle recommande la carte des vins.", "en": "She recommends the wine list.", "replace": "carte des vins" }
+	]
+},
+{
+	"french": "le sommelier", "english": "wine steward", "word_type": "noun", "sentences": [
+		{ "fr": "Le sommelier conseille le client.", "en": "The wine steward advises the customer.", "replace": "sommelier" },
+		{ "fr": "Je parle avec le sommelier.", "en": "I speak with the wine steward.", "replace": "sommelier" },
+		{ "fr": "Le sommelier sert le vin.", "en": "The wine steward serves the wine.", "replace": "sommelier" },
+		{ "fr": "Il étudie pour devenir sommelier.", "en": "He studies to become a wine steward.", "replace": "sommelier" },
+		{ "fr": "Elle écoute les conseils du sommelier.", "en": "She listens to the wine steward's advice.", "replace": "sommelier" }
+	]
+}
+
+    ]
+},
+
+{
+	"level": 42,
+	"title": "Weather and Seasons",
+	"description": "Vocabulary and example sentences for the weather and seasons theme.",
+	"theme": "weather and seasons",
+	"words": [
+		 { "french": "la bruine", "english": "drizzle", "word_type": "noun", "sentences": [
+			 { "fr": "La bruine tombe doucement ce matin.", "en": "The drizzle falls gently this morning.", "replace": "bruine" },
+			 { "fr": "Je marche sous la bruine.", "en": "I walk in the drizzle.", "replace": "bruine" },
+			 { "fr": "La bruine rend les routes glissantes.", "en": "The drizzle makes the roads slippery.", "replace": "bruine" },
+			 { "fr": "La bruine cache le soleil.", "en": "The drizzle hides the sun.", "replace": "bruine" },
+			 { "fr": "Nous aimons la bruine d'automne.", "en": "We like the autumn drizzle.", "replace": "bruine" }
+		 ] },
+		 { "french": "la canicule", "english": "heatwave", "word_type": "noun", "sentences": [
+			 { "fr": "La canicule dure depuis trois jours.", "en": "The heatwave has lasted for three days.", "replace": "canicule" },
+			 { "fr": "Nous souffrons pendant la canicule.", "en": "We suffer during the heatwave.", "replace": "canicule" },
+			 { "fr": "La canicule est annoncée à la météo.", "en": "The heatwave is announced in the weather forecast.", "replace": "canicule" },
+			 { "fr": "La canicule rend les nuits difficiles.", "en": "The heatwave makes the nights difficult.", "replace": "canicule" },
+			 { "fr": "Il boit beaucoup d'eau pendant la canicule.", "en": "He drinks a lot of water during the heatwave.", "replace": "canicule" }
+		 ] },
+		 { "french": "la gelée", "english": "frost", "word_type": "noun", "sentences": [
+			 { "fr": "La gelée recouvre les champs le matin.", "en": "Frost covers the fields in the morning.", "replace": "gelée" },
+			 { "fr": "Je glisse sur la gelée.", "en": "I slip on the frost.", "replace": "gelée" },
+			 { "fr": "La gelée abîme les plantes.", "en": "Frost damages the plants.", "replace": "gelée" },
+			 { "fr": "La gelée est blanche et brillante.", "en": "The frost is white and shiny.", "replace": "gelée" },
+			 { "fr": "Nous attendons que la gelée fonde.", "en": "We wait for the frost to melt.", "replace": "gelée" }
+		 ] },
+		 { "french": "l'éclaircie", "english": "sunny spell", "word_type": "noun", "sentences": [
+			 { "fr": "Une éclaircie apparaît après la pluie.", "en": "A sunny spell appears after the rain.", "replace": "éclaircie" },
+			 { "fr": "Nous profitons de l'éclaircie pour sortir.", "en": "We enjoy the sunny spell to go out.", "replace": "éclaircie" },
+			 { "fr": "L'éclaircie dure peu de temps.", "en": "The sunny spell doesn't last long.", "replace": "éclaircie" },
+			 { "fr": "Il prend des photos pendant l'éclaircie.", "en": "He takes photos during the sunny spell.", "replace": "éclaircie" },
+			 { "fr": "L'éclaircie illumine le jardin.", "en": "The sunny spell lights up the garden.", "replace": "éclaircie" }
+		 ] },
+		 { "french": "la rafale", "english": "gust", "word_type": "noun", "sentences": [
+			 { "fr": "Une rafale de vent secoue les arbres.", "en": "A gust of wind shakes the trees.", "replace": "rafale" },
+			 { "fr": "La rafale fait claquer la porte.", "en": "The gust slams the door.", "replace": "rafale" },
+			 { "fr": "Je me protège de la rafale.", "en": "I protect myself from the gust.", "replace": "rafale" },
+			 { "fr": "La rafale soulève la poussière.", "en": "The gust lifts the dust.", "replace": "rafale" },
+			 { "fr": "Nous courons avant la prochaine rafale.", "en": "We run before the next gust.", "replace": "rafale" }
+		 ] },
+		 { "french": "la grêle", "english": "hail", "word_type": "noun", "sentences": [
+			 { "fr": "La grêle tombe fort sur le toit.", "en": "The hail falls hard on the roof.", "replace": "grêle" },
+			 { "fr": "Nous entendons la grêle frapper les fenêtres.", "en": "We hear the hail hitting the windows.", "replace": "grêle" },
+			 { "fr": "La grêle abîme les voitures.", "en": "The hail damages the cars.", "replace": "grêle" },
+			 { "fr": "Il ramasse la grêle dans le jardin.", "en": "He picks up the hail in the garden.", "replace": "grêle" },
+			 { "fr": "La grêle surprend les passants.", "en": "The hail surprises the passersby.", "replace": "grêle" }
+		 ] },
+		 { "french": "la bruine", "english": "mist", "word_type": "noun", "sentences": [
+			 { "fr": "La bruine recouvre la vallée.", "en": "The mist covers the valley.", "replace": "bruine" },
+			 { "fr": "Nous marchons dans la bruine du matin.", "en": "We walk in the morning mist.", "replace": "bruine" },
+			 { "fr": "La bruine rend la route invisible.", "en": "The mist makes the road invisible.", "replace": "bruine" },
+			 { "fr": "Il observe la bruine depuis la fenêtre.", "en": "He observes the mist from the window.", "replace": "bruine" },
+			 { "fr": "La bruine disparaît au soleil.", "en": "The mist disappears in the sun.", "replace": "bruine" }
+		 ] },
+		 { "french": "la saison", "english": "season", "word_type": "noun", "sentences": [
+			 { "fr": "L'été est ma saison préférée.", "en": "Summer is my favorite season.", "replace": "saison" },
+			 { "fr": "Chaque saison a son charme.", "en": "Each season has its charm.", "replace": "saison" },
+			 { "fr": "La saison des pluies commence.", "en": "The rainy season begins.", "replace": "saison" },
+			 { "fr": "Nous changeons d'activités selon la saison.", "en": "We change activities according to the season.", "replace": "saison" },
+			 { "fr": "La saison hivernale est froide.", "en": "The winter season is cold.", "replace": "saison" }
+		 ] },
+		 { "french": "la prévision", "english": "forecast", "word_type": "noun", "sentences": [
+			 { "fr": "La prévision annonce de la pluie.", "en": "The forecast calls for rain.", "replace": "prévision" },
+			 { "fr": "Je regarde la prévision chaque matin.", "en": "I check the forecast every morning.", "replace": "prévision" },
+			 { "fr": "La prévision est optimiste pour demain.", "en": "The forecast is optimistic for tomorrow.", "replace": "prévision" },
+			 { "fr": "La prévision change souvent.", "en": "The forecast changes often.", "replace": "prévision" },
+			 { "fr": "Nous suivons la prévision pour planifier.", "en": "We follow the forecast to plan.", "replace": "prévision" }
+		 ] },
+		 { "french": "dégeler", "english": "to thaw", "word_type": "verb", "sentences": [
+			 { "fr": "Je dégèle la viande au soleil.", "en": "I thaw the meat in the sun.", "replace": "dégèle" },
+			 { "fr": "Tu dégèles la glace du pare-brise.", "en": "You thaw the ice on the windshield.", "replace": "dégèles" },
+			 { "fr": "Il dégèle le sol au printemps.", "en": "He thaws the ground in spring.", "replace": "dégèle" },
+			 { "fr": "Nous dégelons les aliments.", "en": "We thaw the food.", "replace": "dégelons" },
+			 { "fr": "Vous dégelez les fenêtres.", "en": "You thaw the windows.", "replace": "dégelez" },
+			 { "fr": "Elles dégèlent la neige sur le toit.", "en": "They thaw the snow on the roof.", "replace": "dégèlent" }
+		 ] },
+		 { "french": "fondre", "english": "to melt", "word_type": "verb", "sentences": [
+			 { "fr": "Je fonds sous la chaleur.", "en": "I melt in the heat.", "replace": "fonds" },
+			 { "fr": "Tu fonds le chocolat pour le gâteau.", "en": "You melt the chocolate for the cake.", "replace": "fonds" },
+			 { "fr": "Il fond la neige avec de l'eau chaude.", "en": "He melts the snow with hot water.", "replace": "fond" },
+			 { "fr": "Nous fondons la cire pour les bougies.", "en": "We melt the wax for candles.", "replace": "fondons" },
+			 { "fr": "Vous fondez le beurre dans la poêle.", "en": "You melt the butter in the pan.", "replace": "fondez" },
+			 { "fr": "Elles fondent de joie au printemps.", "en": "They melt with joy in spring.", "replace": "fondent" }
+		 ] },
+		 { "french": "souffler", "english": "to blow", "word_type": "verb", "sentences": [
+			 { "fr": "Je souffle sur la bougie.", "en": "I blow on the candle.", "replace": "souffle" },
+			 { "fr": "Tu souffles dans le vent froid.", "en": "You blow in the cold wind.", "replace": "souffles" },
+			 { "fr": "Il souffle fort aujourd'hui.", "en": "He blows hard today.", "replace": "souffle" },
+			 { "fr": "Nous soufflons les feuilles mortes.", "en": "We blow the dead leaves.", "replace": "soufflons" },
+			 { "fr": "Vous soufflez sur la soupe chaude.", "en": "You blow on the hot soup.", "replace": "soufflez" },
+			 { "fr": "Elles soufflent pour faire de la musique.", "en": "They blow to make music.", "replace": "soufflent" }
+		 ] },
+		 { "french": "ruisseler", "english": "to stream", "word_type": "verb", "sentences": [
+			 { "fr": "L'eau ruisselle sur les vitres.", "en": "Water streams down the windows.", "replace": "ruisselle" },
+			 { "fr": "Tu ruisselles de sueur après la course.", "en": "You stream with sweat after running.", "replace": "ruisselles" },
+			 { "fr": "Il ruisselle sous la pluie.", "en": "He streams under the rain.", "replace": "ruisselle" },
+			 { "fr": "Nous ruisselons après la baignade.", "en": "We stream after swimming.", "replace": "ruisselons" },
+			 { "fr": "Vous ruisseliez sous le soleil d'été.", "en": "You streamed under the summer sun.", "replace": "ruisseliez" },
+			 { "fr": "Elles ruissellent dans la chaleur.", "en": "They stream in the heat.", "replace": "ruissellent" }
+		 ] },
+		 { "french": "rafraîchir", "english": "to cool down", "word_type": "verb", "sentences": [
+			 { "fr": "Je me rafraîchis à l'ombre.", "en": "I cool down in the shade.", "replace": "rafraîchis" },
+			 { "fr": "Tu rafraîchis la pièce avec un ventilateur.", "en": "You cool down the room with a fan.", "replace": "rafraîchis" },
+			 { "fr": "Il rafraîchit la boisson avec des glaçons.", "en": "He cools down the drink with ice cubes.", "replace": "rafraîchit" },
+			 { "fr": "Nous rafraîchissons la maison le soir.", "en": "We cool down the house in the evening.", "replace": "rafraîchissons" },
+			 { "fr": "Vous rafraîchissez le jardin avec de l'eau.", "en": "You cool down the garden with water.", "replace": "rafraîchissez" },
+			 { "fr": "Elles rafraîchissent leurs visages.", "en": "They cool down their faces.", "replace": "rafraîchissent" }
+		 ] },
+		 { "french": "varier", "english": "to vary", "word_type": "verb", "sentences": [
+			 { "fr": "Le temps varie chaque jour.", "en": "The weather varies every day.", "replace": "varie" },
+			 { "fr": "Tu varies tes activités selon la saison.", "en": "You vary your activities according to the season.", "replace": "varies" },
+			 { "fr": "Il varie son emploi du temps.", "en": "He varies his schedule.", "replace": "varie" },
+			 { "fr": "Nous varions les menus en été.", "en": "We vary the menus in summer.", "replace": "varions" },
+			 { "fr": "Vous variez les vêtements selon la météo.", "en": "You vary your clothes according to the weather.", "replace": "variez" },
+			 { "fr": "Elles varient les destinations de vacances.", "en": "They vary their holiday destinations.", "replace": "varient" }
+		 ] },
+		 { "french": "le rocher", "english": "boulder", "word_type": "noun", "sentences": [
+			 { "fr": "Le rocher est couvert de mousse après la pluie.", "en": "The boulder is covered with moss after the rain.", "replace": "rocher" },
+			 { "fr": "Je grimpe sur le rocher en été.", "en": "I climb on the boulder in summer.", "replace": "rocher" },
+			 { "fr": "Le rocher chauffe au soleil.", "en": "The boulder heats up in the sun.", "replace": "rocher" },
+			 { "fr": "Nous pique-niquons près du rocher.", "en": "We picnic near the boulder.", "replace": "rocher" },
+			 { "fr": "Il dessine le rocher sous la neige.", "en": "He draws the boulder under the snow.", "replace": "rocher" }
+		 ] },
+		 { "french": "le bouton", "english": "button", "word_type": "noun", "sentences": [
+			 { "fr": "Le bouton de mon manteau tombe en hiver.", "en": "The button on my coat falls off in winter.", "replace": "bouton" },
+			 { "fr": "Je couds le bouton sous la pluie.", "en": "I sew the button in the rain.", "replace": "bouton" },
+			 { "fr": "Le bouton est gelé le matin.", "en": "The button is frozen in the morning.", "replace": "bouton" },
+			 { "fr": "Nous cherchons le bouton perdu dans la neige.", "en": "We look for the lost button in the snow.", "replace": "bouton" },
+			 { "fr": "Il appuie sur le bouton pour allumer la lumière.", "en": "He presses the button to turn on the light.", "replace": "bouton" }
+		 ] },
+{
+	"french": "la rosée", "english": "dew", "word_type": "noun", "sentences": [
+		{ "fr": "La rosée brille sur l'herbe le matin.", "en": "The dew glistens on the grass in the morning.", "replace": "rosée" },
+		{ "fr": "Je marche pieds nus dans la rosée.", "en": "I walk barefoot in the dew.", "replace": "rosée" },
+		{ "fr": "La rosée disparaît au soleil.", "en": "The dew disappears in the sun.", "replace": "rosée" },
+		{ "fr": "La rosée rafraîchit l'air.", "en": "The dew cools the air.", "replace": "rosée" },
+		{ "fr": "Les fleurs sont couvertes de rosée.", "en": "The flowers are covered with dew.", "replace": "rosée" }
+	]
+},
+{
+	"french": "la tempête", "english": "storm", "word_type": "noun", "sentences": [
+		{ "fr": "La tempête approche de la côte.", "en": "The storm is approaching the coast.", "replace": "tempête" },
+		{ "fr": "Nous restons à l'abri pendant la tempête.", "en": "We stay sheltered during the storm.", "replace": "tempête" },
+		{ "fr": "La tempête fait tomber les arbres.", "en": "The storm knocks down trees.", "replace": "tempête" },
+		{ "fr": "Il observe la tempête par la fenêtre.", "en": "He watches the storm through the window.", "replace": "tempête" },
+		{ "fr": "La tempête dure toute la nuit.", "en": "The storm lasts all night.", "replace": "tempête" }
+	]
+},
+{
+	"french": "le brouillard", "english": "fog", "word_type": "noun", "sentences": [
+		{ "fr": "Le brouillard recouvre la ville.", "en": "The fog covers the city.", "replace": "brouillard" },
+		{ "fr": "Je conduis lentement dans le brouillard.", "en": "I drive slowly in the fog.", "replace": "brouillard" },
+		{ "fr": "Le brouillard est épais ce matin.", "en": "The fog is thick this morning.", "replace": "brouillard" },
+		{ "fr": "Il attend que le brouillard se lève.", "en": "He waits for the fog to lift.", "replace": "brouillard" },
+		{ "fr": "Le brouillard cache les montagnes.", "en": "The fog hides the mountains.", "replace": "brouillard" }
+	]
+},
+{
+	"french": "la sécheresse", "english": "drought", "word_type": "noun", "sentences": [
+		{ "fr": "La sécheresse dure depuis des mois.", "en": "The drought has lasted for months.", "replace": "sécheresse" },
+		{ "fr": "Les plantes souffrent de la sécheresse.", "en": "The plants suffer from the drought.", "replace": "sécheresse" },
+		{ "fr": "La sécheresse vide les rivières.", "en": "The drought empties the rivers.", "replace": "sécheresse" },
+		{ "fr": "Il parle de la sécheresse à la radio.", "en": "He talks about the drought on the radio.", "replace": "sécheresse" },
+		{ "fr": "La sécheresse inquiète les agriculteurs.", "en": "The drought worries the farmers.", "replace": "sécheresse" }
+	]
+},
+{
+	"french": "l'averse", "english": "shower/rainfall", "word_type": "noun", "sentences": [
+		{ "fr": "L'averse commence soudainement.", "en": "The shower starts suddenly.", "replace": "averse" },
+		{ "fr": "Je cours sous l'averse.", "en": "I run in the shower.", "replace": "averse" },
+		{ "fr": "L'averse mouille tout le monde.", "en": "The shower gets everyone wet.", "replace": "averse" },
+		{ "fr": "Il attend la fin de l'averse.", "en": "He waits for the shower to end.", "replace": "averse" },
+		{ "fr": "L'averse rafraîchit l'air.", "en": "The shower cools the air.", "replace": "averse" }
+	]
+},
+{
+	"french": "l'arc-en-ciel", "english": "rainbow", "word_type": "noun", "sentences": [
+		{ "fr": "Un arc-en-ciel apparaît après la pluie.", "en": "A rainbow appears after the rain.", "replace": "arc-en-ciel" },
+		{ "fr": "Je prends une photo de l'arc-en-ciel.", "en": "I take a picture of the rainbow.", "replace": "arc-en-ciel" },
+		{ "fr": "L'arc-en-ciel a sept couleurs.", "en": "The rainbow has seven colors.", "replace": "arc-en-ciel" },
+		{ "fr": "Il cherche l'arc-en-ciel dans le ciel.", "en": "He looks for the rainbow in the sky.", "replace": "arc-en-ciel" },
+		{ "fr": "L'arc-en-ciel brille au-dessus des champs.", "en": "The rainbow shines above the fields.", "replace": "arc-en-ciel" }
+	]
+}
+    ]
+}
+
+
 
 
   ]

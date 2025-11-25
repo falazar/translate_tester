@@ -230,6 +230,7 @@ export class SessionService {
     }
   }
 
+  // Create a fill-in-the-blank question for a word.
   private static createFillBlankQuestion(word: Word, levelMastery: number): Question {
     const db = getDatabase();
 
@@ -296,6 +297,7 @@ export class SessionService {
     };
   }
 
+  // Generate multiple choice options: correct answer + 3 wrong answers
   private static generateMultipleChoiceOptions(
     correctWord: Word, 
     allWords: Word[]
@@ -339,6 +341,7 @@ export class SessionService {
     return options.sort(() => Math.random() - 0.5);
   }
 
+  // Record user's answer and update progress.
   static recordAnswer(
     sessionId: number,
     userId: number,
@@ -437,7 +440,7 @@ export class SessionService {
       session.level_id
     );
 
-    // Get incorrect words with examples
+    // Get incorrect words with examples and Google search links
     const incorrectWords = answers
       .filter(a => a.correct === 0)
       .map(answer => {
@@ -451,13 +454,26 @@ export class SessionService {
           ORDER BY id
         `).all(answer.word_id) as ExampleSentence[];
 
+        // Generate Google search links for feedback.
+        const dictQuery = encodeURIComponent(`define french word ${word.french}`);
+        const dictLink = `<a href="https://www.google.com/search?udm=50&q=${dictQuery}" target="_blank">Dictionary</a>`;
+        const vocabQuery = encodeURIComponent(`Where does french word ${word.french} come from?`);
+        const vocabLink = ` | <a href="https://www.google.com/search?udm=50&q=${vocabQuery}" target="_blank">French Roots</a>`;
+        let conjugationLink = '';
+        if (word.word_type === 'verb') {
+          const conjQuery = encodeURIComponent(`How do we conjugate french word ${word.french}?`);
+          conjugationLink = ` | <a href="https://www.google.com/search?udm=50&q=${conjQuery}" target="_blank">Conjugations</a>`;
+        }
+        const google_links = dictLink + vocabLink + conjugationLink;
+
         return {
           word,
           user_answer: answer.user_answer,
           correct_answer: answer.correct_answer,
           question_type: answer.question_type,
           question_text: answer.question_text,
-          examples
+          examples,
+          google_links
         };
       });
 

@@ -139,14 +139,9 @@ function displayFilteredLevels(levelsWithProgress) {
 
   // Filter levels based on active tab
   const filteredLevels = levelsWithProgress.filter(level => {
-    if (activeLevelSet === 1) {
-      return level.level_number <= 12;
-    } else if (activeLevelSet === 2) {
-      return level.level_number > 12 && level.level_number < 25;
-    } else if (activeLevelSet === 3) {
-      return level.level_number >= 25;
-    }
-    return true; // fallback
+    const setStart = (activeLevelSet - 1) * 12 + 1;
+    const setEnd = activeLevelSet * 12;
+    return level.level_number >= setStart && level.level_number <= setEnd;
   });
 
   // Display filtered levels
@@ -934,6 +929,7 @@ async function showResults() {
   }
 }
 
+// Display results details for all tries. 
 function displayResults(results) {
   // Update title
   document.getElementById('resultsTitle').textContent = 
@@ -948,7 +944,7 @@ function displayResults(results) {
 
   // Update message
   const message = results.passed 
-    ? `You scored ${results.score}/${results.total_questions} and advanced to the next level!`
+    ? `You scored ${results.score}/${results.total_questions}! Great job!`
     : results.percentage >= 70 
       ? `You scored ${results.score}/${results.total_questions}. Good job!`
       : `You scored ${results.score}/${results.total_questions}. Try a bit harder!`;
@@ -1007,6 +1003,9 @@ function displayResults(results) {
           <div class="user-answer-display">
             <strong>Your answer:</strong> 
             <span class="wrong-text">${item.user_answer || '(blank)'}</span>
+          </div>
+          <div class="google-links" style="margin-top:8px;">
+            ${item.google_links || ''}
           </div>
         </div>
         ${examplesHTML}
