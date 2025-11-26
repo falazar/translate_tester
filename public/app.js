@@ -116,11 +116,36 @@ let currentLevelId = null;
 let activeLevelSet = 1; // 1 for Set 1 (levels 1-12), 2 for Set 2 (levels 13-24), 3 for Set 3 (levels 25+)
 let selectedLevelId = null;
 
-// Helper function to update tab visual state
+// Dynamically generate level set tabs based on the number of levels
+async function generateLevelSetTabs() {
+  try {
+    const response = await fetch('/api/levels');
+    const levels = await response.json();
+    const maxLevel = Math.max(...levels.map(l => l.level_number));
+    const numSets = Math.ceil(maxLevel / 12);
+    const levelTabs = document.getElementById('levelTabs');
+    if (!levelTabs) return;
+    levelTabs.innerHTML = '';
+    for (let i = 1; i <= numSets; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'tab-btn' + (i === activeLevelSet ? ' active' : '');
+      btn.textContent = `Set ${i}`;
+      btn.onclick = function() { switchLevelSet(i); };
+      levelTabs.appendChild(btn);
+    }
+  } catch (err) {
+    console.error('Error generating level set tabs:', err);
+  }
+}
+
+
+// Helper function to update the active state of level set tabs
 function updateTabState() {
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  tabButtons.forEach((btn, index) => {
-    if (index + 1 === activeLevelSet) {
+  const levelTabs = document.getElementById('levelTabs');
+  if (!levelTabs) return;
+  const buttons = levelTabs.querySelectorAll('button.tab-btn');
+  buttons.forEach((btn, idx) => {
+    if (idx === activeLevelSet - 1) {
       btn.classList.add('active');
     } else {
       btn.classList.remove('active');
@@ -155,8 +180,7 @@ function switchLevelSet(setNumber) {
   activeLevelSet = setNumber;
   // Save the current set to localStorage
   localStorage.setItem('activeLevelSet', setNumber.toString());
-  updateTabState();
-
+  generateLevelSetTabs();
   // Get current levels data and redisplay
   fetch('/api/levels/user-progress')
     .then(response => response.json())
@@ -184,6 +208,7 @@ function openUploadText() {
 document.addEventListener('DOMContentLoaded', () => {
   initSpeechSynthesis();
   checkAuth();
+  generateLevelSetTabs();
   if (typeof window !== 'undefined' && window.notifications) {
     window.notifications.setupDailyReminders();
   }

@@ -4498,14 +4498,6 @@
             { "fr": "Préparez-vous un dessert léger pour finir le repas.", "en": "Prepare yourself a light dessert to finish the meal.", "replace": "dessert" }
           ]
         },
-        { "french": "la eau", "english": "water", "word_type": "noun", "gender": "la",           "sentences": [
-            { "fr": "L'eau est essentielle pour la vie.", "en": "Water is essential for life.", "replace": "eau" },
-            { "fr": "Cette eau minérale vient des Alpes.", "en": "This mineral water comes from the Alps.", "replace": "eau" },
-            { "fr": "Buvez de l'eau pendant le repas.", "en": "Drink water during the meal.", "replace": "eau" },
-            { "fr": "L'eau bout à 100 degrés Celsius.", "en": "Water boils at 100 degrees Celsius.", "replace": "eau" },
-            { "fr": "L'eau de pluie est douce et pure.", "en": "Rain water is soft and pure.", "replace": "eau" }
-          ]
-        },
         { "french": "le jus", "english": "juice", "word_type": "noun", "gender": "le",           "sentences": [
             { "fr": "Le jus d'orange est riche en vitamine C.", "en": "Orange juice is rich in vitamin C.", "replace": "jus" },
             { "fr": "Elle boit du jus de pomme tous les matins.", "en": "She drinks apple juice every morning.", "replace": "jus" },
@@ -5092,7 +5084,7 @@
       "description": "Higher frequency abstract verbs and everyday nouns",
       "theme": "advanced_core",
       "words": [
-        { "french": "résoudre", "english": "solve", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "résoudre", "english": "to solve", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je résous le problème.", "en": "I solve the problem.", "replace": "résous" },
           { "fr": "Il résout un exercice.", "en": "He solves an exercise.", "replace": "résout" },
           { "fr": "Elle résout vite.", "en": "She solves quickly.", "replace": "résout" },
@@ -5100,7 +5092,7 @@
           { "fr": "Nous résolvons ensemble.", "en": "We solve together.", "replace": "résolvons" },
           { "fr": "Vous résolvez ce cas?", "en": "Are you solving this case?", "replace": "résolvez" }
         ] },
-        { "french": "traduire", "english": "translate", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "traduire", "english": "to translate", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je traduis le texte.", "en": "I translate the text.", "replace": "traduis" },
           { "fr": "Il traduit une phrase.", "en": "He translates a sentence.", "replace": "traduit" },
           { "fr": "Elle traduit rapidement.", "en": "She translates quickly.", "replace": "traduit" },
@@ -5108,7 +5100,7 @@
           { "fr": "Nous traduisons ensemble.", "en": "We translate together.", "replace": "traduisons" },
           { "fr": "Vous traduisez ce mot?", "en": "Are you translating this word?", "replace": "traduisez" }
         ] },
-        { "french": "soutenir", "english": "support", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "soutenir", "english": "to support", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je soutiens mon ami.", "en": "I support my friend.", "replace": "soutiens" },
           { "fr": "Il soutient son équipe.", "en": "He supports his team.", "replace": "soutient" },
           { "fr": "Elle soutient la décision.", "en": "She supports the decision.", "replace": "soutient" },
@@ -5116,7 +5108,7 @@
           { "fr": "Nous soutenons un groupe.", "en": "We support a group.", "replace": "soutenons" },
           { "fr": "Vous soutenez cette cause?", "en": "Do you support this cause?", "replace": "soutenez" }
         ] },
-        { "french": "éviter", "english": "avoid", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "éviter", "english": "to avoid", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "J'évite le danger.", "en": "I avoid danger.", "replace": "évite" },
           { "fr": "Il évite une erreur.", "en": "He avoids a mistake.", "replace": "évite" },
           { "fr": "Elle évite la foule.", "en": "She avoids the crowd.", "replace": "évite" },
@@ -5124,7 +5116,7 @@
           { "fr": "Nous évitons cela.", "en": "We avoid that.", "replace": "évitons" },
           { "fr": "Vous évitez ce sujet?", "en": "Are you avoiding this subject?", "replace": "évitez" }
         ] },
-        { "french": "améliorer", "english": "improve", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "améliorer", "english": "to improve", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "J'améliore mon français.", "en": "I improve my French.", "replace": "améliore" },
           { "fr": "Il améliore son travail.", "en": "He improves his work.", "replace": "améliore" },
           { "fr": "Elle améliore un projet.", "en": "She improves a project.", "replace": "améliore" },
@@ -5132,7 +5124,7 @@
           { "fr": "Nous améliorons nos résultats.", "en": "We improve our results.", "replace": "améliorons" },
           { "fr": "Vous améliorez la qualité?", "en": "Are you improving the quality?", "replace": "améliorez" }
         ] },
-        { "french": "développer", "english": "develop", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "développer", "english": "to develop", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je développe une idée.", "en": "I develop an idea.", "replace": "développe" },
           { "fr": "Il développe un projet.", "en": "He develops a project.", "replace": "développe" },
           { "fr": "Elle développe ses compétences.", "en": "She develops her skills.", "replace": "développe" },
@@ -5140,7 +5132,7 @@
           { "fr": "Nous développons ensemble.", "en": "We develop together.", "replace": "développons" },
           { "fr": "Vous développez ce produit?", "en": "Are you developing this product?", "replace": "développez" }
         ] },
-        { "french": "fournir", "english": "provide", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "fournir", "english": "to provide", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je fournis des exemples.", "en": "I provide examples.", "replace": "fournis" },
           { "fr": "Il fournit une réponse.", "en": "He provides an answer.", "replace": "fournit" },
           { "fr": "Elle fournit de l'aide.", "en": "She provides help.", "replace": "fournit" },
@@ -5148,7 +5140,7 @@
           { "fr": "Nous fournissons des données.", "en": "We provide data.", "replace": "fournissons" },
           { "fr": "Vous fournissez tout?", "en": "Do you provide everything?", "replace": "fournissez" }
         ] },
-        { "french": "atteindre", "english": "reach", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "atteindre", "english": "to reach", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "J'atteins mon objectif.", "en": "I reach my goal.", "replace": "atteins" },
           { "fr": "Il atteint le sommet.", "en": "He reaches the summit.", "replace": "atteint" },
           { "fr": "Elle atteint la limite.", "en": "She reaches the limit.", "replace": "atteint" },
@@ -5156,7 +5148,7 @@
           { "fr": "Nous atteignons le but.", "en": "We reach the target.", "replace": "atteignons" },
           { "fr": "Vous atteignez ce résultat?", "en": "Do you reach this result?", "replace": "atteignez" }
         ] },
-        { "french": "remplacer", "english": "replace", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "remplacer", "english": "to replace", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je remplace un mot.", "en": "I replace a word.", "replace": "remplace" },
           { "fr": "Il remplace une pièce.", "en": "He replaces a part.", "replace": "remplace" },
           { "fr": "Elle remplace le vieux livre.", "en": "She replaces the old book.", "replace": "remplace" },
@@ -5164,7 +5156,7 @@
           { "fr": "Nous remplaçons le fichier.", "en": "We replace the file.", "replace": "remplaçons" },
           { "fr": "Vous remplacez cet objet?", "en": "Are you replacing this object?", "replace": "remplacez" }
         ] },
-        { "french": "posséder", "english": "own", "word_type": "verb", "gender": null, "sentences": [
+        { "french": "posséder", "english": "to own", "word_type": "verb", "gender": null, "sentences": [
           { "fr": "Je possède une voiture.", "en": "I own a car.", "replace": "possède" },
           { "fr": "Il possède une maison.", "en": "He owns a house.", "replace": "possède" },
           { "fr": "Elle possède un talent.", "en": "She possesses a talent.", "replace": "possède" },
@@ -5904,18 +5896,18 @@
 			{ "fr": "Je vais à la place.", "en": "I go to the square.", "replace": "place" }
 		] },
 		 { "french": "nos", "english": "our", "word_type": "possessive adjective", "sentences": [
-			{ "fr": "Nous sommes amis.", "en": "We are friends.", "replace": "Nous" },
-			{ "fr": "Nous mangeons ensemble.", "en": "We eat together.", "replace": "Nous" },
-			{ "fr": "Nous parlons français.", "en": "We speak French.", "replace": "Nous" },
-			{ "fr": "Nous allons au cinéma.", "en": "We go to the movies.", "replace": "Nous" }
+			{ "fr": "Nos amis arrivent ce soir.", "en": "Our friends are arriving tonight.", "replace": "Nos" },
+			{ "fr": "Nous avons oublié nos clés.", "en": "We forgot our keys.", "replace": "nos" },
+			{ "fr": "Nos enfants jouent dans le jardin.", "en": "Our children are playing in the garden.", "replace": "Nos" },
+			{ "fr": "Où sont nos livres?", "en": "Where are our books?", "replace": "nos" }
 		] },
 		 { "french": "tes", "english": "your", "word_type": "possessive adjective", "sentences": [
-			{ "fr": "Tu es gentil.", "en": "You are kind.", "replace": "Tu" },
-			{ "fr": "Tu manges bien.", "en": "You eat well.", "replace": "Tu" },
-			{ "fr": "Tu parles anglais.", "en": "You speak English.", "replace": "Tu" },
-			{ "fr": "Tu vas où?", "en": "Where are you going?", "replace": "Tu" }
+			{ "fr": "Tes chaussures sont sous la table.", "en": "Your shoes are under the table.", "replace": "Tes" },
+			{ "fr": "J'aime tes idées.", "en": "I like your ideas.", "replace": "tes" },
+			{ "fr": "Tes parents sont très gentils.", "en": "Your parents are very kind.", "replace": "Tes" },
+			{ "fr": "Où sont tes devoirs?", "en": "Where is your homework?", "replace": "tes" }
 		] },
-		 { "french": "jardiner", "english": "garden", "word_type": "verb", "sentences": [
+     { "french": "jardiner", "english": "to garden", "word_type": "verb", "sentences": [
 			{ "fr": "Je jardine dans le parc.", "en": "I garden in the park.", "replace": "jardine" },
 			{ "fr": "Tu jardines avec ta mère.", "en": "You garden with your mother.", "replace": "jardines" },
 			{ "fr": "Il jardine chaque week-end.", "en": "He gardens every weekend.", "replace": "jardine" },
@@ -5923,7 +5915,7 @@
 			{ "fr": "Vous jardinez près de la fontaine.", "en": "You garden near the fountain.", "replace": "jardinez" },
 			{ "fr": "Elles jardinent dans la pelouse.", "en": "They garden on the lawn.", "replace": "jardinent" }
 		] },
-		 { "french": "bricoler", "english": "do DIY", "word_type": "verb", "sentences": [
+		 { "french": "bricoler", "english": "to do DIY", "word_type": "verb", "sentences": [
 			{ "fr": "Je bricole une cabane.", "en": "I do DIY on a hut.", "replace": "bricole" },
 			{ "fr": "Tu bricoles souvent.", "en": "You do DIY often.", "replace": "bricoles" },
 			{ "fr": "Elle bricole dans le jardin.", "en": "She does DIY in the garden.", "replace": "bricole" },
@@ -5931,7 +5923,7 @@
 			{ "fr": "Vous bricolez avec vos amis.", "en": "You do DIY with your friends.", "replace": "bricolez" },
 			{ "fr": "Ils bricolent à la maison.", "en": "They do DIY at home.", "replace": "bricolent" }
 		] },
-		 { "french": "skier", "english": "ski", "word_type": "verb", "sentences": [
+		 { "french": "skier", "english": "to ski", "word_type": "verb", "sentences": [
 			{ "fr": "Je skie en hiver.", "en": "I ski in winter.", "replace": "skie" },
 			{ "fr": "Tu skies très bien.", "en": "You ski very well.", "replace": "skies" },
 			{ "fr": "Il skie à la montagne.", "en": "He skis in the mountains.", "replace": "skie" },
@@ -5939,7 +5931,7 @@
 			{ "fr": "Vous skiez vite.", "en": "You ski fast.", "replace": "skiez" },
 			{ "fr": "Elles skient chaque année.", "en": "They ski every year.", "replace": "skient" }
 		] },
-		 { "french": "patiner", "english": "skate", "word_type": "verb", "sentences": [
+		 { "french": "patiner", "english": "to skate", "word_type": "verb", "sentences": [
 			{ "fr": "Je patine sur la glace.", "en": "I skate on the ice.", "replace": "patine" },
 			{ "fr": "Tu patines au parc.", "en": "You skate at the park.", "replace": "patines" },
 			{ "fr": "On patine ensemble.", "en": "We skate together.", "replace": "patine" },
@@ -5947,7 +5939,7 @@
 			{ "fr": "Vous patinez bien.", "en": "You skate well.", "replace": "patinez" },
 			{ "fr": "Ils patinent vite.", "en": "They skate fast.", "replace": "patinent" }
 		] },
-		 { "french": "arroser", "english": "water", "word_type": "verb", "sentences": [
+		 { "french": "arroser", "english": "to water", "word_type": "verb", "sentences": [
 			{ "fr": "J'arrose les plantes.", "en": "I water the plants.", "replace": "arrose" },
 			{ "fr": "Tu arroses les fleurs.", "en": "You water the flowers.", "replace": "arroses" },
 			{ "fr": "Il arrose le jardin.", "en": "He waters the garden.", "replace": "arrose" },
@@ -5955,7 +5947,7 @@
 			{ "fr": "Vous arrosez les arbres.", "en": "You water the trees.", "replace": "arrosez" },
 			{ "fr": "Elles arrosent les plantes vertes.", "en": "They water the green plants.", "replace": "arrosent" }
 		] },
-		 { "french": "tailler", "english": "prune", "word_type": "verb", "sentences": [
+		 { "french": "tailler", "english": "to prune", "word_type": "verb", "sentences": [
 			{ "fr": "Je taille la haie.", "en": "I prune the hedge.", "replace": "taille" },
 			{ "fr": "Tu tailles les arbres.", "en": "You prune the trees.", "replace": "tailles" },
 			{ "fr": "Il taille les rosiers.", "en": "He prunes the rosebushes.", "replace": "taille" },
@@ -5963,7 +5955,7 @@
 			{ "fr": "Vous taillez les plantes.", "en": "You prune the plants.", "replace": "taillez" },
 			{ "fr": "Ils taillent les arbres du parc.", "en": "They prune the park's trees.", "replace": "taillent" }
 		] },
-		 { "french": "récolter", "english": "harvest", "word_type": "verb", "sentences": [
+		 { "french": "récolter", "english": "to harvest", "word_type": "verb", "sentences": [
 			{ "fr": "Je récolte des fruits.", "en": "I harvest fruits.", "replace": "récolte" },
 			{ "fr": "Tu récoltes les légumes.", "en": "You harvest the vegetables.", "replace": "récoltes" },
 			{ "fr": "Elle récolte des fleurs.", "en": "She harvests flowers.", "replace": "récolte" },
@@ -5971,7 +5963,7 @@
 			{ "fr": "Vous récoltez beaucoup.", "en": "You harvest a lot.", "replace": "récoltez" },
 			{ "fr": "Ils récoltent les pommes.", "en": "They harvest apples.", "replace": "récoltent" }
 		] },
-		 { "french": "filmer", "english": "film", "word_type": "verb", "sentences": [
+		 { "french": "filmer", "english": "to film", "word_type": "verb", "sentences": [
 			{ "fr": "Je filme le parc.", "en": "I film the park.", "replace": "filme" },
 			{ "fr": "Tu filmes la fontaine.", "en": "You film the fountain.", "replace": "filmes" },
 			{ "fr": "Il filme les enfants.", "en": "He films the children.", "replace": "filme" },
@@ -5979,7 +5971,7 @@
 			{ "fr": "Vous filmez la scène.", "en": "You film the scene.", "replace": "filmez" },
 			{ "fr": "Elles filment les oiseaux.", "en": "They film the birds.", "replace": "filment" }
 		] },
-		 { "french": "enregistrer", "english": "record", "word_type": "verb", "sentences": [
+		 { "french": "enregistrer", "english": "to record", "word_type": "verb", "sentences": [
 			{ "fr": "J'enregistre un son.", "en": "I record a sound.", "replace": "enregistre" },
 			{ "fr": "Tu enregistres la vidéo.", "en": "You record the video.", "replace": "enregistres" },
 			{ "fr": "Il enregistre la chanson.", "en": "He records the song.", "replace": "enregistre" },
@@ -5987,7 +5979,7 @@
 			{ "fr": "Vous enregistrez tout.", "en": "You record everything.", "replace": "enregistrez" },
 			{ "fr": "Ils enregistrent les bruits du parc.", "en": "They record the park's sounds.", "replace": "enregistrent" }
 		] },
-		 { "french": "semer", "english": "sow", "word_type": "verb", "sentences": [
+		 { "french": "semer", "english": "to sow", "word_type": "verb", "sentences": [
 			{ "fr": "Je sème des graines.", "en": "I sow seeds.", "replace": "sème" },
 			{ "fr": "Tu sèmes des fleurs.", "en": "You sow flowers.", "replace": "sèmes" },
 			{ "fr": "Elle sème dans le jardin.", "en": "She sows in the garden.", "replace": "sème" },
@@ -6136,7 +6128,7 @@
 			 { "fr": "C'était un bruit étrange.", "en": "It was a strange noise.", "replace": "C'était" },
 			 { "fr": "C'était la fin de la garde.", "en": "It was the end of the shift.", "replace": "C'était" }
 		 ] },
-		 { "french": "détester", "english": "hate", "word_type": "verb", "sentences": [
+		 { "french": "détester", "english": "to hate", "word_type": "verb", "sentences": [
 			 { "fr": "Je déteste cette prison.", "en": "I hate this prison.", "replace": "déteste" },
 			 { "fr": "Tu détestes les menottes.", "en": "You hate the handcuffs.", "replace": "détestes" },
 			 { "fr": "Il déteste attendre la nuit.", "en": "He hates waiting for the night.", "replace": "déteste" },
@@ -6209,7 +6201,7 @@
 			 { "fr": "Son nom est sur la liste.", "en": "His name is on the list.", "replace": "nom" },
 			 { "fr": "Le nom est écrit sur la lampe de poche.", "en": "The name is written on the flashlight.", "replace": "nom" }
 		 ] },
-		 { "french": "surfer", "english": "surf", "word_type": "verb", "sentences": [
+		 { "french": "surfer", "english": "to surf", "word_type": "verb", "sentences": [
 			 { "fr": "Je surfe sur le lac le matin.", "en": "I surf on the lake in the morning.", "replace": "surfe" },
 			 { "fr": "Tu surfes avec tes amis.", "en": "You surf with your friends.", "replace": "surfes" },
 			 { "fr": "Il surfe chaque été.", "en": "He surfs every summer.", "replace": "surfe" },
@@ -6217,7 +6209,7 @@
 			 { "fr": "Vous surfez sur la grande vague.", "en": "You surf on the big wave.", "replace": "surfez" },
 			 { "fr": "Elles surfent tôt le matin.", "en": "They surf early in the morning.", "replace": "surfent" }
 		 ] },
-		 { "french": "plonger", "english": "dive", "word_type": "verb", "sentences": [
+		 { "french": "plonger", "english": "to dive", "word_type": "verb", "sentences": [
 			 { "fr": "Je plonge dans la rivière.", "en": "I dive into the river.", "replace": "plonge" },
 			 { "fr": "Tu plonges du rocher.", "en": "You dive from the rock.", "replace": "plonges" },
 			 { "fr": "Il plonge sous l'eau.", "en": "He dives underwater.", "replace": "plonge" },
@@ -6225,7 +6217,7 @@
 			 { "fr": "Vous plongez dans le lac.", "en": "You dive into the lake.", "replace": "plongez" },
 			 { "fr": "Elles plongent chaque soir.", "en": "They dive every evening.", "replace": "plongent" }
 		 ] },
-		 { "french": "escalader", "english": "climb", "word_type": "verb", "sentences": [
+		 { "french": "escalader", "english": "to climb", "word_type": "verb", "sentences": [
 			 { "fr": "J'escalade la montagne.", "en": "I climb the mountain.", "replace": "escalade" },
 			 { "fr": "Tu escalades le rocher.", "en": "You climb the rock.", "replace": "escalades" },
 			 { "fr": "Il escalade un arbre.", "en": "He climbs a tree.", "replace": "escalade" },
@@ -6233,7 +6225,7 @@
 			 { "fr": "Vous escaladez la falaise.", "en": "You climb the cliff.", "replace": "escaladez" },
 			 { "fr": "Elles escaladent les rochers.", "en": "They climb the rocks.", "replace": "escaladent" }
 		 ] },
-		 { "french": "randonner", "english": "hike", "word_type": "verb", "sentences": [
+		 { "french": "randonner", "english": "to hike", "word_type": "verb", "sentences": [
 			 { "fr": "Je randonne dans la forêt.", "en": "I hike in the forest.", "replace": "randonne" },
 			 { "fr": "Tu randonnes chaque week-end.", "en": "You hike every weekend.", "replace": "randonnes" },
 			 { "fr": "Il randonne avec son chien.", "en": "He hikes with his dog.", "replace": "randonne" },
@@ -6241,7 +6233,7 @@
 			 { "fr": "Vous randonnez sur le sentier.", "en": "You hike on the trail.", "replace": "randonnez" },
 			 { "fr": "Elles randonnent tôt le matin.", "en": "They hike early in the morning.", "replace": "randonnent" }
 		 ] },
-		 { "french": "camper", "english": "camp", "word_type": "verb", "sentences": [
+		 { "french": "camper", "english": "to camp", "word_type": "verb", "sentences": [
 			 { "fr": "Je campe près du lac.", "en": "I camp near the lake.", "replace": "campe" },
 			 { "fr": "Tu campes avec ta famille.", "en": "You camp with your family.", "replace": "campes" },
 			 { "fr": "Il campe sous les étoiles.", "en": "He camps under the stars.", "replace": "campe" },
@@ -6249,7 +6241,7 @@
 			 { "fr": "Vous campez en montagne.", "en": "You camp in the mountains.", "replace": "campez" },
 			 { "fr": "Elles campent tout l'été.", "en": "They camp all summer.", "replace": "campent" }
 		 ] },
-		 { "french": "pêcher", "english": "fish", "word_type": "verb", "sentences": [
+		 { "french": "pêcher", "english": "to fish", "word_type": "verb", "sentences": [
 			 { "fr": "Je pêche dans la rivière.", "en": "I fish in the river.", "replace": "pêche" },
 			 { "fr": "Tu pêches avec ton père.", "en": "You fish with your father.", "replace": "pêches" },
 			 { "fr": "Il pêche tous les matins.", "en": "He fishes every morning.", "replace": "pêche" },
@@ -6257,7 +6249,7 @@
 			 { "fr": "Vous pêchez au bord du lac.", "en": "You fish at the lake's edge.", "replace": "pêchez" },
 			 { "fr": "Elles pêchent en silence.", "en": "They fish in silence.", "replace": "pêchent" }
 		 ] },
-		 { "french": "chasser", "english": "hunt", "word_type": "verb", "sentences": [
+		 { "french": "chasser", "english": "to hunt", "word_type": "verb", "sentences": [
 			 { "fr": "Je chasse dans la forêt.", "en": "I hunt in the forest.", "replace": "chasse" },
 			 { "fr": "Tu chasses avec ton oncle.", "en": "You hunt with your uncle.", "replace": "chasses" },
 			 { "fr": "Il chasse le matin.", "en": "He hunts in the morning.", "replace": "chasse" },
@@ -6265,7 +6257,7 @@
 			 { "fr": "Vous chassez le week-end.", "en": "You hunt on weekends.", "replace": "chassez" },
 			 { "fr": "Elles chassent près de la rivière.", "en": "They hunt near the river.", "replace": "chassent" }
 		 ] },
-		 { "french": "cueillir", "english": "pick", "word_type": "verb", "sentences": [
+		 { "french": "cueillir", "english": "to pick", "word_type": "verb", "sentences": [
 			 { "fr": "Je cueille des fleurs.", "en": "I pick flowers.", "replace": "cueille" },
 			 { "fr": "Tu cueilles des champignons.", "en": "You pick mushrooms.", "replace": "cueilles" },
 			 { "fr": "Il cueille des baies.", "en": "He picks berries.", "replace": "cueille" },
@@ -6273,7 +6265,7 @@
 			 { "fr": "Vous cueillez des herbes.", "en": "You pick herbs.", "replace": "cueillez" },
 			 { "fr": "Elles cueillent des plantes sauvages.", "en": "They pick wild plants.", "replace": "cueillent" }
 		 ] },
-		 { "french": "diffuser", "english": "broadcast", "word_type": "verb", "sentences": [
+		 { "french": "diffuser", "english": "to broadcast", "word_type": "verb", "sentences": [
 			 { "fr": "Je diffuse la musique au camp.", "en": "I broadcast music at the camp.", "replace": "diffuse" },
 			 { "fr": "Tu diffuses les nouvelles.", "en": "You broadcast the news.", "replace": "diffuses" },
 			 { "fr": "Il diffuse un message important.", "en": "He broadcasts an important message.", "replace": "diffuse" },

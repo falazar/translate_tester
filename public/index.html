@@ -87,10 +87,8 @@
           </div>
         </div>
 
-        <div class="level-tabs">
-          <button class="tab-btn active" onclick="switchLevelSet(1)">Set 1</button>
-          <button class="tab-btn" onclick="switchLevelSet(2)">Set 2</button>
-          <button class="tab-btn" onclick="switchLevelSet(3)">Set 3</button>
+        <div class="level-tabs" id="levelTabs">
+          <!-- Level set buttons will be generated dynamically -->
         </div>
         <div class="levels-grid" id="levelsGrid">
           <!-- Levels will be populated here -->
@@ -182,6 +180,26 @@
 
   <script src="/notifications.js"></script>
   <script src="/app.js"></script>
+  <script>
+    // Dynamically generate level set tabs based on the number of levels
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('/api/levels')
+        .then(response => response.json())
+        .then(levels => {
+          const maxLevel = Math.max(...levels.map(l => l.level_number));
+          const numSets = Math.ceil(maxLevel / 12);
+          const levelTabs = document.getElementById('levelTabs');
+          levelTabs.innerHTML = '';
+          for (let i = 1; i <= numSets; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'tab-btn' + (i === 1 ? ' active' : '');
+            btn.textContent = `Set ${i}`;
+            btn.onclick = function() { switchLevelSet(i); };
+            levelTabs.appendChild(btn);
+          }
+        });
+    });
+  </script>
 </body>
 </html>
 
