@@ -6205,7 +6205,7 @@
 			 { "fr": "Je surfe sur le lac le matin.", "en": "I surf on the lake in the morning.", "replace": "surfe" },
 			 { "fr": "Tu surfes avec tes amis.", "en": "You surf with your friends.", "replace": "surfes" },
 			 { "fr": "Il surfe chaque été.", "en": "He surfs every summer.", "replace": "surfe" },
-			 { "fr": "Nous surfons après le déjeuner.", "en": "We surf after lunch.", "replace": "surfon" },
+			 { "fr": "Nous surfons après le déjeuner.", "en": "We surf after lunch.", "replace": "surfons" },
 			 { "fr": "Vous surfez sur la grande vague.", "en": "You surf on the big wave.", "replace": "surfez" },
 			 { "fr": "Elles surfent tôt le matin.", "en": "They surf early in the morning.", "replace": "surfent" }
 		 ] },
@@ -6496,7 +6496,7 @@
 			 { "fr": "Vous soupirez après les courses.", "en": "You sigh after shopping.", "replace": "soupirez" },
 			 { "fr": "Elles soupirent devant les rayons vides.", "en": "They sigh in front of the empty aisles.", "replace": "soupirent" }
 		 ] },
-		 { "french": "frapper", "english": "to knock, to hit", "word_type": "verb", "sentences": [
+		 { "french": "frapper", "english": "to knock", "word_type": "verb", "sentences": [
 			 { "fr": "Je frappe à la porte du magasin.", "en": "I knock on the store door.", "replace": "frappe" },
 			 { "fr": "Tu frappes sur la caisse.", "en": "You knock on the checkout.", "replace": "frappes" },
 			 { "fr": "Il frappe le sac par accident.", "en": "He hits the bag by accident.", "replace": "frappe" },
@@ -6585,14 +6585,6 @@
 			 { "fr": "Le médecin surveille la guérison.", "en": "The doctor monitors the recovery.", "replace": "guérison" },
 			 { "fr": "Elle parle de sa guérison.", "en": "She talks about her recovery.", "replace": "guérison" }
 		 ] },
-		 { "french": "examiner", "english": "to examine", "word_type": "verb", "sentences": [
-			 { "fr": "Je t'examine pour la fièvre.", "en": "I examine you for fever.", "replace": "examine" },
-			 { "fr": "Tu examines le patient attentivement.", "en": "You examine the patient carefully.", "replace": "examines" },
-			 { "fr": "Il examine la gorge de l'enfant.", "en": "He examines the child's throat.", "replace": "examine" },
-			 { "fr": "Nous examinons les résultats ensemble.", "en": "We examine the results together.", "replace": "examinons" },
-			 { "fr": "Vous examinez les radios.", "en": "You examine the x-rays.", "replace": "examinez" },
-			 { "fr": "Elles examinent les symptômes.", "en": "They examine the symptoms.", "replace": "examinent" }
-		 ] },
 		 { "french": "diagnostiquer", "english": "to diagnose", "word_type": "verb", "sentences": [
 			 { "fr": "Je diagnostique la maladie.", "en": "I diagnose the illness.", "replace": "diagnostique" },
 			 { "fr": "Tu diagnostiques rapidement.", "en": "You diagnose quickly.", "replace": "diagnostiques" },
@@ -6649,7 +6641,7 @@
 			 { "fr": "Vous grimpez sur le tabouret.", "en": "You climb on the stool.", "replace": "grimpez" },
 			 { "fr": "Elles grimpent sur le banc de la salle d'attente.", "en": "They climb on the waiting room bench.", "replace": "grimpent" }
 		 ] },
-		 { "french": "glisser", "english": "to slip, to slide", "word_type": "verb", "sentences": [
+		 { "french": "glisser", "english": "to slide", "word_type": "verb", "sentences": [
 			 { "fr": "Je glisse sur le sol mouillé.", "en": "I slip on the wet floor.", "replace": "glisse" },
 			 { "fr": "Tu glisses sur le tapis.", "en": "You slide on the carpet.", "replace": "glisses" },
 			 { "fr": "Il glisse en sortant de la douche.", "en": "He slips coming out of the shower.", "replace": "glisse" },
@@ -6773,7 +6765,7 @@
 			 { "fr": "Vous embarquez rapidement.", "en": "You board quickly.", "replace": "embarquez" },
 			 { "fr": "Elles embarquent dans le dernier wagon.", "en": "They board in the last carriage.", "replace": "embarquent" }
 		 ] },
-		 { "french": "composter", "english": "to validate", "word_type": "verb", "sentences": [
+		 { "french": "composter", "english": "to stamp a ticket", "word_type": "verb", "sentences": [
 			 { "fr": "Je composte mon billet avant d'embarquer.", "en": "I validate my ticket before boarding.", "replace": "composte" },
 			 { "fr": "Tu compostes toujours tes billets.", "en": "You always validate your tickets.", "replace": "compostes" },
 			 { "fr": "Il composte à la gare.", "en": "He validates at the station.", "replace": "composte" },
@@ -7024,7 +7016,7 @@
 		{ "fr": "La serviette est blanche.", "en": "The napkin is white.", "replace": "serviette" },
 		{ "fr": "Il utilise une serviette en papier.", "en": "He uses a paper napkin.", "replace": "serviette" },
 		{ "fr": "La serviette tombe par terre.", "en": "The napkin falls on the floor.", "replace": "serviette" },
-		{ "fr": "Elle achète de nouvelles serviettes.", "en": "She buys new napkins.", "replace": "serviette" }
+		{ "fr": "Elle achète de nouvelles serviettes.", "en": "She buys new napkins.", "replace": "serviettes" }
 	]
 },
 {
@@ -7235,7 +7227,7 @@
 	]
 },
 {
-	"french": "l'averse", "english": "shower/rainfall", "word_type": "noun", "sentences": [
+	"french": "l'averse", "english": "shower", "word_type": "noun", "sentences": [
 		{ "fr": "L'averse commence soudainement.", "en": "The shower starts suddenly.", "replace": "averse" },
 		{ "fr": "Je cours sous l'averse.", "en": "I run in the shower.", "replace": "averse" },
 		{ "fr": "L'averse mouille tout le monde.", "en": "The shower gets everyone wet.", "replace": "averse" },
