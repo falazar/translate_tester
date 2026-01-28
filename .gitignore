@@ -7,3 +7,8 @@ data/*.db-shm
 data/*.db-wal
 coverage/
 
+# Large textbook PDFs (keep locally, don't push to GitHub)
+*.pdf
+public/French_101/resources/*.pdf
+public/French_101/resources/textbook_extracted.txt
+
