@@ -1,0 +1,310 @@
+{
+  "level": 51,
+  "title": "Space & Science",
+  "theme": "Vocabulary from Group 3",
+  "words": [
+    {
+      "french": "fonctionne",
+      "english": "works",
+      "word_type": "verb",
+      "root": "fonctionner",
+      "sentences": [
+        { "fr": "Je fonctionne sous pression.", "en": "I work under pressure.", "replace": "fonctionne" },
+        { "fr": "Tu fonctionnes correctement.", "en": "You work properly.", "replace": "fonctionnes" },
+        { "fr": "Il fonctionne encore.", "en": "It still works.", "replace": "fonctionne" },
+        { "fr": "Nous fonctionnons en équipe.", "en": "We work as a team.", "replace": "fonctionnons" },
+        { "fr": "Vous fonctionnez bien.", "en": "You work well.", "replace": "fonctionnez" },
+        { "fr": "Ils fonctionnent à plein régime.", "en": "They work at full capacity.", "replace": "fonctionnent" }
+      ]
+    },
+    {
+      "french": "consiste",
+      "english": "consists",
+      "word_type": "verb",
+      "root": "consister",
+      "sentences": [
+        { "fr": "Je consiste en deux parties.", "en": "I consist of two parts.", "replace": "consiste" },
+        { "fr": "Tu consistes en étapes simples.", "en": "You consist of simple steps.", "replace": "consistes" },
+        { "fr": "Cela consiste à tester.", "en": "It consists in testing.", "replace": "consiste" },
+        { "fr": "Nous consistons en modules.", "en": "We consist of modules.", "replace": "consistons" },
+        { "fr": "Vous consistez en sections.", "en": "You consist of sections.", "replace": "consistez" },
+        { "fr": "Ils consistent en phases.", "en": "They consist of phases.", "replace": "consistent" }
+      ]
+    },
+    {
+      "french": "survivre",
+      "english": "to survive",
+      "word_type": "verb",
+      "root": "survivre",
+      "sentences": [
+        { "fr": "Je survis au froid.", "en": "I survive the cold.", "replace": "survis" },
+        { "fr": "Tu survis avec peu.", "en": "You survive with little.", "replace": "survis" },
+        { "fr": "Il survit difficilement.", "en": "He survives with difficulty.", "replace": "survit" },
+        { "fr": "Nous survivons ensemble.", "en": "We survive together.", "replace": "survivons" },
+        { "fr": "Vous survivez à l'hiver.", "en": "You survive the winter.", "replace": "survivez" },
+        { "fr": "Ils survivent malgré tout.", "en": "They survive despite everything.", "replace": "survivent" }
+      ]
+    },
+    {
+      "french": "les vaisseaux",
+      "english": "vessels",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Un vaisseau arrive.", "en": "A vessel arrives.", "replace": "vaisseau" },
+        { "fr": "Le vaisseau repart.", "en": "The vessel leaves again.", "replace": "vaisseau" },
+        { "fr": "Ce vaisseau est grand.", "en": "This vessel is large.", "replace": "vaisseau" },
+        { "fr": "Les vaisseaux s'approchent.", "en": "The vessels approach.", "replace": "vaisseaux" },
+        { "fr": "Deux vaisseaux attendent.", "en": "Two vessels wait.", "replace": "vaisseaux" },
+        { "fr": "Tous les vaisseaux partent.", "en": "All vessels depart.", "replace": "vaisseaux" }
+      ]
+    },
+    {
+      "french": "les blastocystes",
+      "english": "blastocysts",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Un blastocyste se forme.", "en": "A blastocyst forms.", "replace": "blastocyste" },
+        { "fr": "Le blastocyste évolue.", "en": "The blastocyst evolves.", "replace": "blastocyste" },
+        { "fr": "Ce blastocyste est sain.", "en": "This blastocyst is healthy.", "replace": "blastocyste" },
+        { "fr": "Les blastocystes croissent.", "en": "Blastocysts grow.", "replace": "blastocystes" },
+        { "fr": "Des blastocystes apparaissent.", "en": "Blastocysts appear.", "replace": "blastocystes" },
+        { "fr": "Tous les blastocystes changent.", "en": "All blastocysts change.", "replace": "blastocystes" }
+      ]
+    },
+    {
+      "french": "le processus",
+      "english": "process",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le processus commence.", "en": "The process begins.", "replace": "processus" },
+        { "fr": "Un processus clair.", "en": "A clear process.", "replace": "processus" },
+        { "fr": "Ce processus dure.", "en": "This process lasts.", "replace": "processus" },
+        { "fr": "Les processus varient.", "en": "Processes vary.", "replace": "processus" },
+        { "fr": "Des processus parallèles.", "en": "Parallel processes.", "replace": "processus" },
+        { "fr": "Tous les processus comptent.", "en": "All processes matter.", "replace": "processus" }
+      ]
+    },
+    {
+      "french": "la procédure",
+      "english": "procedure",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La procédure est simple.", "en": "The procedure is simple.", "replace": "procédure" },
+        { "fr": "Une procédure stricte.", "en": "A strict procedure.", "replace": "procédure" },
+        { "fr": "Cette procédure s'applique.", "en": "This procedure applies.", "replace": "procédure" },
+        { "fr": "Les procédures changent.", "en": "Procedures change.", "replace": "procédures" },
+        { "fr": "Plusieurs procédures existent.", "en": "Several procedures exist.", "replace": "procédures" },
+        { "fr": "Toutes les procédures évoluent.", "en": "All procedures evolve.", "replace": "procédures" }
+      ]
+    },
+    {
+      "french": "le domaine",
+      "english": "field",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le domaine progresse.", "en": "The field progresses.", "replace": "domaine" },
+        { "fr": "Un domaine vaste.", "en": "A vast field.", "replace": "domaine" },
+        { "fr": "Ce domaine change.", "en": "This field changes.", "replace": "domaine" },
+        { "fr": "Les domaines évoluent.", "en": "Fields evolve.", "replace": "domaines" },
+        { "fr": "Plusieurs domaines voisins.", "en": "Several neighboring fields.", "replace": "domaines" },
+        { "fr": "Tous les domaines avancent.", "en": "All fields advance.", "replace": "domaines" }
+      ]
+    },
+    {
+      "french": "les ressources",
+      "english": "resources",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Une ressource manque.", "en": "A resource is lacking.", "replace": "ressource" },
+        { "fr": "La ressource suffit.", "en": "The resource is enough.", "replace": "ressource" },
+        { "fr": "Cette ressource aide.", "en": "This resource helps.", "replace": "ressource" },
+        { "fr": "Les ressources augmentent.", "en": "Resources increase.", "replace": "ressources" },
+        { "fr": "Des ressources diverses.", "en": "Diverse resources.", "replace": "ressources" },
+        { "fr": "Toutes les ressources comptent.", "en": "All resources matter.", "replace": "ressources" }
+      ]
+    },
+    {
+      "french": "les risques",
+      "english": "risks",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Un risque apparaît.", "en": "A risk appears.", "replace": "risque" },
+        { "fr": "Le risque augmente.", "en": "The risk increases.", "replace": "risque" },
+        { "fr": "Ce risque diminue.", "en": "This risk decreases.", "replace": "risque" },
+        { "fr": "Les risques persistent.", "en": "Risks persist.", "replace": "risques" },
+        { "fr": "Des risques connus.", "en": "Known risks.", "replace": "risques" },
+        { "fr": "Tous les risques comptent.", "en": "All risks matter.", "replace": "risques" }
+      ]
+    },
+    {
+      "french": "l'expansion",
+      "english": "expansion",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "L'expansion commence.", "en": "The expansion begins.", "replace": "expansion" },
+        { "fr": "Une expansion rapide.", "en": "A rapid expansion.", "replace": "expansion" },
+        { "fr": "Cette expansion continue.", "en": "This expansion continues.", "replace": "expansion" },
+        { "fr": "Les expansions varient.", "en": "Expansions vary.", "replace": "expansions" },
+        { "fr": "Des expansions locales.", "en": "Local expansions.", "replace": "expansions" },
+        { "fr": "Toutes les expansions cessent.", "en": "All expansions cease.", "replace": "expansions" }
+      ]
+    },
+    {
+      "french": "la mission",
+      "english": "mission",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La mission démarre.", "en": "The mission starts.", "replace": "mission" },
+        { "fr": "Une mission claire.", "en": "A clear mission.", "replace": "mission" },
+        { "fr": "Cette mission échoue.", "en": "This mission fails.", "replace": "mission" },
+        { "fr": "Les missions réussissent.", "en": "Missions succeed.", "replace": "missions" },
+        { "fr": "Plusieurs missions reviennent.", "en": "Several missions return.", "replace": "missions" },
+        { "fr": "Toutes les missions changent.", "en": "All missions change.", "replace": "missions" }
+      ]
+    },
+    {
+      "french": "depuis",
+      "english": "since / from",
+      "word_type": "preposition",
+      "sentences": [
+        { "fr": "Depuis hier, tout va bien.", "en": "Since yesterday, all is well.", "replace": "Depuis" },
+        { "fr": "Depuis ce jour.", "en": "Since that day.", "replace": "Depuis" },
+        { "fr": "Depuis longtemps.", "en": "For a long time.", "replace": "Depuis" },
+        { "fr": "Depuis nos débuts.", "en": "Since our beginnings.", "replace": "Depuis" },
+        { "fr": "Depuis la mission.", "en": "Since the mission.", "replace": "Depuis" },
+        { "fr": "Depuis la base.", "en": "From the base.", "replace": "Depuis" }
+      ]
+    },
+    {
+      "french": "lorsque",
+      "english": "when",
+      "word_type": "conjunction",
+      "sentences": [
+        { "fr": "Lorsque il arrive.", "en": "When he arrives.", "replace": "Lorsque" },
+        { "fr": "Lorsque tu pars.", "en": "When you leave.", "replace": "Lorsque" },
+        { "fr": "Lorsque nous commençons.", "en": "When we start.", "replace": "Lorsque" },
+        { "fr": "Lorsque vous essayez.", "en": "When you try.", "replace": "Lorsque" },
+        { "fr": "Lorsque ils reviennent.", "en": "When they come back.", "replace": "Lorsque" },
+        { "fr": "Lorsque cela change.", "en": "When it changes.", "replace": "Lorsque" }
+      ]
+    },
+    {
+      "french": "au-delà",
+      "english": "beyond",
+      "word_type": "adverb",
+      "sentences": [
+        { "fr": "Au-delà de la ligne.", "en": "Beyond the line.", "replace": "Au-delà" },
+        { "fr": "Au-delà du champ.", "en": "Beyond the field.", "replace": "Au-delà" },
+        { "fr": "Au-delà des rêves.", "en": "Beyond dreams.", "replace": "Au-delà" },
+        { "fr": "Au-delà du connu.", "en": "Beyond the known.", "replace": "Au-delà" },
+        { "fr": "Au-delà des risques.", "en": "Beyond risks.", "replace": "Au-delà" },
+        { "fr": "Au-delà, on continue.", "en": "Beyond, we continue.", "replace": "Au-delà" }
+      ]
+    },
+    {
+      "french": "simple",
+      "english": "simple",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un cas simple.", "en": "A simple case.", "replace": "simple" },
+        { "fr": "Un test simple.", "en": "A simple test.", "replace": "simple" },
+        { "fr": "Une règle simple.", "en": "A simple rule.", "replace": "simple" },
+        { "fr": "Des étapes simples.", "en": "Simple steps.", "replace": "simples" },
+        { "fr": "Des idées simples.", "en": "Simple ideas.", "replace": "simples" },
+        { "fr": "Tous restent simples.", "en": "All stay simple.", "replace": "simples" }
+      ]
+    },
+    {
+      "french": "immédiatement connu",
+      "english": "immediately known",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Un résultat immédiatement connu.", "en": "A result immediately known.", "replace": "immédiatement connu" },
+        { "fr": "Un fait immédiatement connu.", "en": "A fact immediately known.", "replace": "immédiatement connu" },
+        { "fr": "Un danger immédiatement connu.", "en": "A danger immediately known.", "replace": "immédiatement connu" },
+        { "fr": "Des détails immédiatement connus.", "en": "Details immediately known.", "replace": "immédiatement connus" },
+        { "fr": "Des noms immédiatement connus.", "en": "Names immediately known.", "replace": "immédiatement connus" },
+        { "fr": "Tous immédiatement connus.", "en": "All immediately known.", "replace": "immédiatement connus" }
+      ]
+    },
+    {
+      "french": "connu",
+      "english": "known",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un auteur connu.", "en": "A known author.", "replace": "connu" },
+        { "fr": "Un lieu connu.", "en": "A known place.", "replace": "connu" },
+        { "fr": "Un risque connu.", "en": "A known risk.", "replace": "connu" },
+        { "fr": "Des faits connus.", "en": "Known facts.", "replace": "connus" },
+        { "fr": "Des noms connus.", "en": "Known names.", "replace": "connus" },
+        { "fr": "Tous très connus.", "en": "All very well-known.", "replace": "connus" }
+      ]
+    },
+    {
+      "french": "immédiatement",
+      "english": "immediately",
+      "word_type": "adverb",
+      "sentences": [
+        { "fr": "Reviens immédiatement.", "en": "Come back immediately.", "replace": "immédiatement" },
+        { "fr": "Réponds immédiatement.", "en": "Answer immediately.", "replace": "immédiatement" },
+        { "fr": "Pars immédiatement.", "en": "Leave immediately.", "replace": "immédiatement" },
+        { "fr": "Agissez immédiatement.", "en": "Act immediately.", "replace": "immédiatement" },
+        { "fr": "Commencez immédiatement.", "en": "Start immediately.", "replace": "immédiatement" },
+        { "fr": "Reprenez immédiatement.", "en": "Resume immediately.", "replace": "immédiatement" }
+      ]
+    },
+    {
+      "french": "signifie",
+      "english": "means",
+      "word_type": "verb",
+      "root": "signifier",
+      "sentences": [
+        { "fr": "Je signifie mon accord.", "en": "I signify my agreement.", "replace": "signifie" },
+        { "fr": "Tu signifies la fin.", "en": "You signify the end.", "replace": "signifies" },
+        { "fr": "Cela signifie quelque chose.", "en": "That means something.", "replace": "signifie" },
+        { "fr": "Nous signifions clairement.", "en": "We mean clearly.", "replace": "signifions" },
+        { "fr": "Vous signifiez un choix.", "en": "You indicate a choice.", "replace": "signifiez" },
+        { "fr": "Ils signifient un risque.", "en": "They mean a risk.", "replace": "signifient" }
+      ]
+    },
+    {
+      "french": "la fusée",
+      "english": "rocket",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La fusée décolle.", "en": "The rocket takes off.", "replace": "fusée" },
+        { "fr": "Une fusée rapide.", "en": "A fast rocket.", "replace": "fusée" },
+        { "fr": "Cette fusée est prête.", "en": "This rocket is ready.", "replace": "fusée" },
+        { "fr": "Les fusées sont puissantes.", "en": "Rockets are powerful.", "replace": "fusées" },
+        { "fr": "Deux fusées attendent.", "en": "Two rockets await.", "replace": "fusées" },
+        { "fr": "Toutes les fusées partent.", "en": "All the rockets leave.", "replace": "fusées" }
+      ]
+    },
+    {
+      "french": "le lancement",
+      "english": "launch",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le lancement commence.", "en": "The launch begins.", "replace": "lancement" },
+        { "fr": "Un lancement réussi.", "en": "A successful launch.", "replace": "lancement" },
+        { "fr": "Ce lancement est risqué.", "en": "This launch is risky.", "replace": "lancement" },
+        { "fr": "Les lancements continuent.", "en": "Launches continue.", "replace": "lancements" },
+        { "fr": "Plusieurs lancements échouent.", "en": "Several launches fail.", "replace": "lancements" },
+        { "fr": "Tous les lancements comptent.", "en": "All launches matter.", "replace": "lancements" }
+      ]
+    },
+    {
+      "french": "les ingénieurs",
+      "english": "engineers",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Un ingénieur arrive.", "en": "An engineer arrives.", "replace": "ingénieur" },
+        { "fr": "L'ingénieur vérifie.", "en": "The engineer checks.", "replace": "ingénieur" },
+        { "fr": "Cet ingénieur dirige.", "en": "This engineer leads.", "replace": "ingénieur" },
+        { "fr": "Les ingénieurs coordonnent.", "en": "Engineers coordinate.", "replace": "ingénieurs" },
+        { "fr": "Ces ingénieurs testent.", "en": "These engineers test.", "replace": "ingénieurs" },
+        { "fr": "Tous les ingénieurs travaillent.", "en": "All engineers work.", "replace": "ingénieurs" }
+      ]
+    }
+  ]
+}

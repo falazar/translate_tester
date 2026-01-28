@@ -1,0 +1,172 @@
+{
+  "level": 50,
+  "title": "Emotions and States",
+  "description": "Vocabulary for Emotions & States",
+  "theme": "emotions_and_states",
+  "words": [
+    { "french": "importe", "english": "it matters", "word_type": "verb/impersonal", "sentences": [
+      { "fr": "Peu importe le jour.", "en": "The day doesn't matter much.", "replace": "importe" },
+      { "fr": "Ça importe vraiment.", "en": "It really matters.", "replace": "importe" },
+      { "fr": "Qui importe ici?", "en": "Who matters here?", "replace": "importe" },
+      { "fr": "Rien n'importe maintenant.", "en": "Nothing matters now.", "replace": "importe" },
+      { "fr": "Ce détail importe peu.", "en": "This detail matters little.", "replace": "importe" }
+    ] },
+    { "french": "appris", "english": "learned", "word_type": "verb", "root": "apprendre", "sentences": [
+      { "fr": "J'ai appris une leçon.", "en": "I learned a lesson.", "replace": "ai appris" },
+      { "fr": "Tu as appris vite.", "en": "You learned quickly.", "replace": "as appris" },
+      { "fr": "Il a appris tard.", "en": "He learned late.", "replace": "a appris" },
+      { "fr": "Nous avons appris ensemble.", "en": "We learned together.", "replace": "avons appris" },
+      { "fr": "Vous avez appris beaucoup.", "en": "You learned a lot.", "replace": "avez appris" },
+      { "fr": "Ils ont appris enfin.", "en": "They learned at last.", "replace": "ont appris" }
+    ] },
+    { "french": "compris", "english": "understood", "word_type": "verb", "root": "comprendre", "sentences": [
+      { "fr": "J'ai compris l'idée.", "en": "I understood the idea.", "replace": "ai compris" },
+      { "fr": "Tu as compris vite.", "en": "You understood quickly.", "replace": "as compris" },
+      { "fr": "Elle a compris tard.", "en": "She understood late.", "replace": "a compris" },
+      { "fr": "Nous avons compris ensemble.", "en": "We understood together.", "replace": "avons compris" },
+      { "fr": "Vous avez compris maintenant.", "en": "You understood now.", "replace": "avez compris" },
+      { "fr": "Ils ont compris finalement.", "en": "They finally understood.", "replace": "ont compris" }
+    ] },
+    { "french": "entendu", "english": "heard", "word_type": "verb", "root": "entendre", "sentences": [
+      { "fr": "J'ai entendu un son.", "en": "I heard a sound.", "replace": "ai entendu" },
+      { "fr": "Tu as entendu la cloche.", "en": "You heard the bell.", "replace": "as entendu" },
+      { "fr": "Il a entendu des pas.", "en": "He heard footsteps.", "replace": "a entendu" },
+      { "fr": "Nous avons entendu la nouvelle.", "en": "We heard the news.", "replace": "avons entendu" },
+      { "fr": "Vous avez entendu aussi.", "en": "You heard as well.", "replace": "avez entendu" },
+      { "fr": "Ils ont entendu tard.", "en": "They heard late.", "replace": "ont entendu" }
+    ] },
+    { "french": "la conscience", "english": "conscience", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La conscience le guide.", "en": "Conscience guides him.", "replace": "conscience" },
+      { "fr": "Il prend conscience de tout.", "en": "He becomes aware of everything.", "replace": "conscience" },
+      { "fr": "Des consciences différentes.", "en": "Different consciences.", "replace": "consciences" },
+      { "fr": "Perdre conscience soudain.", "en": "Lose consciousness suddenly.", "replace": "conscience" },
+      { "fr": "Avoir bonne conscience.", "en": "Have a clear conscience.", "replace": "conscience" }
+    ] },
+    { "french": "la confiance", "english": "confidence", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La confiance revient.", "en": "Confidence returns.", "replace": "confiance" },
+      { "fr": "Ils ont confiance.", "en": "They have confidence.", "replace": "confiance" },
+      { "fr": "Gagner la confiance.", "en": "Gain confidence.", "replace": "confiance" },
+      { "fr": "Perdre la confiance.", "en": "Lose confidence.", "replace": "confiance" },
+      { "fr": "Confiances différentes.", "en": "Different confidences.", "replace": "confiances" }
+    ] },
+    { "french": "le ressenti", "english": "feeling", "word_type": "noun", "gender": "le", "sentences": [
+      { "fr": "Le ressenti est positif.", "en": "The feeling is positive.", "replace": "ressenti" },
+      { "fr": "Parler du ressenti.", "en": "Talk about the feeling.", "replace": "ressenti" },
+      { "fr": "Ressentis différents.", "en": "Different feelings.", "replace": "ressentis" },
+      { "fr": "Un ressenti personnel.", "en": "A personal feeling.", "replace": "ressenti" },
+      { "fr": "Ressenti très fort.", "en": "Very strong feeling.", "replace": "ressenti" }
+    ] },
+    { "french": "l'impression", "english": "impression", "word_type": "noun", "gender": "l'", "sentences": [
+      { "fr": "J'ai l'impression de rêver.", "en": "I have the impression I'm dreaming.", "replace": "impression" },
+      { "fr": "Une bonne impression.", "en": "A good impression.", "replace": "impression" },
+      { "fr": "Des impressions opposées.", "en": "Opposite impressions.", "replace": "impressions" },
+      { "fr": "Mauvaise impression au début.", "en": "Bad impression at first.", "replace": "impression" },
+      { "fr": "Première impression utile.", "en": "Useful first impression.", "replace": "impression" }
+    ] },
+    { "french": "l'équilibre", "english": "balance", "word_type": "noun", "gender": "l'", "sentences": [
+      { "fr": "L'équilibre est fragile.", "en": "Balance is fragile.", "replace": "équilibre" },
+      { "fr": "Trouver l'équilibre.", "en": "Find balance.", "replace": "équilibre" },
+      { "fr": "Équilibres différents.", "en": "Different balances.", "replace": "équilibres" },
+      { "fr": "Perdre l'équilibre souvent.", "en": "Lose balance often.", "replace": "équilibre" },
+      { "fr": "Bon équilibre ici.", "en": "Good balance here.", "replace": "équilibre" }
+    ] },
+    { "french": "la sécurité", "english": "security", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La sécurité d'abord.", "en": "Safety first.", "replace": "sécurité" },
+      { "fr": "Assurer la sécurité.", "en": "Ensure security.", "replace": "sécurité" },
+      { "fr": "Mesures de sécurité.", "en": "Security measures.", "replace": "sécurité" },
+      { "fr": "Sécurité renforcée ici.", "en": "Enhanced security here.", "replace": "sécurité" },
+      { "fr": "Manque de sécurité.", "en": "Lack of security.", "replace": "sécurité" }
+    ] },
+    { "french": "la forme", "english": "shape", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La forme est simple.", "en": "The shape is simple.", "replace": "forme" },
+      { "fr": "Changer de forme.", "en": "Change shape.", "replace": "forme" },
+      { "fr": "Formes variées.", "en": "Various shapes.", "replace": "formes" },
+      { "fr": "Même forme partout.", "en": "Same shape everywhere.", "replace": "forme" },
+      { "fr": "La forme reste claire.", "en": "The shape remains clear.", "replace": "forme" }
+    ] },
+    { "french": "la chance", "english": "luck", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La chance sourit.", "en": "Luck smiles.", "replace": "chance" },
+      { "fr": "Bonne chance aujourd'hui.", "en": "Good luck today.", "replace": "chance" },
+      { "fr": "Des chances égales.", "en": "Equal chances.", "replace": "chances" },
+      { "fr": "Avoir de la chance.", "en": "To be lucky.", "replace": "chance" },
+      { "fr": "Petite chance seulement.", "en": "Only a little luck.", "replace": "chance" }
+    ] },
+    { "french": "la partie", "english": "part", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La partie est courte.", "en": "The part is short.", "replace": "partie" },
+      { "fr": "Première partie.", "en": "First part.", "replace": "partie" },
+      { "fr": "Des parties utiles.", "en": "Useful parts.", "replace": "parties" },
+      { "fr": "Petite partie ici.", "en": "Small part here.", "replace": "partie" },
+      { "fr": "Partie centrale claire.", "en": "Clear central part.", "replace": "partie" }
+    ] },
+    { "french": "la séquence", "english": "sequence", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La séquence commence.", "en": "The sequence begins.", "replace": "séquence" },
+      { "fr": "Petite séquence ici.", "en": "Small sequence here.", "replace": "séquence" },
+      { "fr": "Des séquences claires.", "en": "Clear sequences.", "replace": "séquences" },
+      { "fr": "Fin de séquence.", "en": "End of sequence.", "replace": "séquence" },
+      { "fr": "Séquence utile maintenant.", "en": "Useful sequence now.", "replace": "séquence" }
+    ] },
+    { "french": "la mesure", "english": "measure", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La mesure est précise.", "en": "The measure is precise.", "replace": "mesure" },
+      { "fr": "Prendre une mesure.", "en": "Take a measure.", "replace": "mesure" },
+      { "fr": "Des mesures utiles.", "en": "Useful measures.", "replace": "mesures" },
+      { "fr": "Petite mesure ici.", "en": "Small measure here.", "replace": "mesure" },
+      { "fr": "Mesure exacte maintenant.", "en": "Exact measure now.", "replace": "mesure" }
+    ] },
+    { "french": "la nourriture", "english": "food", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La nourriture arrive.", "en": "The food arrives.", "replace": "nourriture" },
+      { "fr": "Préparer la nourriture.", "en": "Prepare the food.", "replace": "nourriture" },
+      { "fr": "Des nourritures simples.", "en": "Simple foods.", "replace": "nourritures" },
+      { "fr": "La nourriture manque.", "en": "Food is missing.", "replace": "nourriture" },
+      { "fr": "Bonne nourriture ici.", "en": "Good food here.", "replace": "nourriture" }
+    ] },
+    { "french": "la phase", "english": "phase", "word_type": "noun", "gender": "la", "sentences": [
+      { "fr": "La phase commence.", "en": "The phase begins.", "replace": "phase" },
+      { "fr": "Nouvelle phase.", "en": "New phase.", "replace": "phase" },
+      { "fr": "Phases courtes.", "en": "Short phases.", "replace": "phases" },
+      { "fr": "Première phase ici.", "en": "First phase here.", "replace": "phase" },
+      { "fr": "Phase finale demain.", "en": "Final phase tomorrow.", "replace": "phase" }
+    ] },
+    { "french": "les personnes", "english": "people", "word_type": "noun", "gender": "les", "sentences": [
+      { "fr": "Les personnes arrivent.", "en": "People arrive.", "replace": "personnes" },
+      { "fr": "Personnes en confiance.", "en": "People with confidence.", "replace": "personnes" },
+      { "fr": "Des personnes utiles.", "en": "Useful people.", "replace": "personnes" },
+      { "fr": "Peu de personnes.", "en": "Few people.", "replace": "personnes" },
+      { "fr": "Toutes ces personnes.", "en": "All these people.", "replace": "personnes" }
+    ] },
+    { "french": "plusieurs", "english": "several", "word_type": "adjective", "sentences": [
+      { "fr": "Plusieurs idées.", "en": "Several ideas.", "replace": "plusieurs" },
+      { "fr": "Plusieurs personnes viennent.", "en": "Several people are coming.", "replace": "plusieurs" },
+      { "fr": "J'ai plusieurs chances.", "en": "I have several chances.", "replace": "plusieurs" },
+      { "fr": "Plusieurs projets ici.", "en": "Several projects here.", "replace": "plusieurs" },
+      { "fr": "Voir plusieurs cas.", "en": "See several cases.", "replace": "plusieurs" }
+    ] },
+    { "french": "toutes", "english": "all (fem. pl.)", "word_type": "adjective", "sentences": [
+      { "fr": "Toutes les mesures.", "en": "All the measures.", "replace": "toutes" },
+      { "fr": "Toutes les personnes.", "en": "All the people.", "replace": "toutes" },
+      { "fr": "Toutes ces phases.", "en": "All these phases.", "replace": "toutes" },
+      { "fr": "Toutes sont utiles.", "en": "All are useful.", "replace": "toutes" },
+      { "fr": "Toutes bien choisies.", "en": "All well chosen.", "replace": "toutes" }
+    ] },
+    { "french": "utile", "english": "useful", "word_type": "adjective", "sentences": [
+      { "fr": "Un outil utile.", "en": "A useful tool.", "replace": "utile" },
+      { "fr": "Mesures utiles ici.", "en": "Useful measures here.", "replace": "utiles" },
+      { "fr": "Très utile parfois.", "en": "Very useful sometimes.", "replace": "utile" },
+      { "fr": "Peu utile aujourd'hui.", "en": "Not very useful today.", "replace": "utile" },
+      { "fr": "Toujours utile ici.", "en": "Always useful here.", "replace": "utile" }
+    ] },
+    { "french": "en confiance", "english": "with confidence", "word_type": "phrase", "sentences": [
+      { "fr": "Ils parlent en confiance.", "en": "They speak with confidence.", "replace": "en confiance" },
+      { "fr": "Nous travaillons en confiance.", "en": "We work with confidence.", "replace": "en confiance" },
+      { "fr": "En confiance, ils avancent.", "en": "With confidence, they move forward.", "replace": "En confiance" },
+      { "fr": "Agir en confiance.", "en": "Act with confidence.", "replace": "en confiance" },
+      { "fr": "Parler seulement en confiance.", "en": "Speak only with confidence.", "replace": "en confiance" }
+    ] },
+    { "french": "conçus", "english": "designed", "word_type": "adjective/pp", "root": "concevoir", "sentences": [
+      { "fr": "Produits conçus ici.", "en": "Products designed here.", "replace": "conçus" },
+      { "fr": "Systèmes bien conçus.", "en": "Well-designed systems.", "replace": "conçus" },
+      { "fr": "Objets conçus par eux.", "en": "Objects designed by them.", "replace": "conçus" },
+      { "fr": "Plans conçus ensemble.", "en": "Plans designed together.", "replace": "conçus" },
+      { "fr": "Outils conçus récemment.", "en": "Tools designed recently.", "replace": "conçus" }
+    ] }
+  ]
+}

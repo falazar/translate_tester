@@ -1,0 +1,258 @@
+{
+  "level": 52,
+  "title": "Mixed A",
+  "theme": "Vocabulary from Group 4",
+  "words": [
+    {
+      "french": "serait",
+      "english": "would be",
+      "word_type": "verb",
+      "root": "être",
+      "sentences": [
+        { "fr": "Je serais ravi.", "en": "I would be delighted.", "replace": "serais" },
+        { "fr": "Tu serais surpris.", "en": "You would be surprised.", "replace": "serais" },
+        { "fr": "Il serait tard.", "en": "It would be late.", "replace": "serait" },
+        { "fr": "Nous serions prêts.", "en": "We would be ready.", "replace": "serions" },
+        { "fr": "Vous seriez d'accord.", "en": "You would agree.", "replace": "seriez" },
+        { "fr": "Ils seraient contents.", "en": "They would be happy.", "replace": "seraient" }
+      ]
+    },
+    {
+      "french": "puisse",
+      "english": "may/can (subj.)",
+      "word_type": "verb",
+      "root": "pouvoir",
+      "sentences": [
+        { "fr": "Il faut que je puisse entrer.", "en": "I must be able to enter.", "replace": "puisse" },
+        { "fr": "Il faut que tu puisses venir.", "en": "You must be able to come.", "replace": "puisses" },
+        { "fr": "Il faut qu'il puisse aider.", "en": "He must be able to help.", "replace": "puisse" },
+        { "fr": "Il faut que nous puissions essayer.", "en": "We must be able to try.", "replace": "puissions" },
+        { "fr": "Il faut que vous puissiez rester.", "en": "You must be able to stay.", "replace": "puissiez" },
+        { "fr": "Il faut qu'ils puissent répondre.", "en": "They must be able to respond.", "replace": "puissent" }
+      ]
+    },
+    {
+      "french": "les milliers",
+      "english": "thousands",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Un millier arrive.", "en": "A thousand arrives.", "replace": "millier" },
+        { "fr": "Le millier manque.", "en": "The thousand is missing.", "replace": "millier" },
+        { "fr": "Ce millier suffit.", "en": "This thousand is enough.", "replace": "millier" },
+        { "fr": "Des milliers viennent.", "en": "Thousands come.", "replace": "milliers" },
+        { "fr": "Plusieurs milliers partent.", "en": "Several thousands leave.", "replace": "milliers" },
+        { "fr": "Tous les milliers comptent.", "en": "All thousands count.", "replace": "milliers" }
+      ]
+    },
+    {
+      "french": "l'instant",
+      "english": "moment",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "L'instant arrive.", "en": "The moment arrives.", "replace": "instant" },
+        { "fr": "Un instant bref.", "en": "A brief moment.", "replace": "instant" },
+        { "fr": "Cet instant s'enfuit.", "en": "This moment slips away.", "replace": "instant" },
+        { "fr": "Les instants passent.", "en": "Moments pass.", "replace": "instants" },
+        { "fr": "Quelques instants suffisent.", "en": "A few moments suffice.", "replace": "instants" },
+        { "fr": "Tous les instants comptent.", "en": "All moments matter.", "replace": "instants" }
+      ]
+    },
+    {
+      "french": "le passage",
+      "english": "passage",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le passage s'ouvre.", "en": "The passage opens.", "replace": "passage" },
+        { "fr": "Un passage étroit.", "en": "A narrow passage.", "replace": "passage" },
+        { "fr": "Ce passage mène ailleurs.", "en": "This passage leads elsewhere.", "replace": "passage" },
+        { "fr": "Les passages changent.", "en": "Passages change.", "replace": "passages" },
+        { "fr": "Plusieurs passages existent.", "en": "Several passages exist.", "replace": "passages" },
+        { "fr": "Tous les passages restent.", "en": "All passages remain.", "replace": "passages" }
+      ]
+    },
+    {
+      "french": "la veille",
+      "english": "the day before / eve",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La veille, il part.", "en": "The day before, he leaves.", "replace": "veille" },
+        { "fr": "Une veille calme.", "en": "A calm eve.", "replace": "veille" },
+        { "fr": "Cette veille compte.", "en": "This eve matters.", "replace": "veille" },
+        { "fr": "Les veilles passent.", "en": "Eves pass.", "replace": "veilles" },
+        { "fr": "Plusieurs veilles se suivent.", "en": "Several eves follow one another.", "replace": "veilles" },
+        { "fr": "Toutes les veilles restent.", "en": "All eves remain.", "replace": "veilles" }
+      ]
+    },
+    {
+      "french": "le verre",
+      "english": "glass",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le verre casse.", "en": "The glass breaks.", "replace": "verre" },
+        { "fr": "Un verre plein.", "en": "A full glass.", "replace": "verre" },
+        { "fr": "Ce verre est propre.", "en": "This glass is clean.", "replace": "verre" },
+        { "fr": "Les verres brillent.", "en": "Glasses shine.", "replace": "verres" },
+        { "fr": "Plusieurs verres manquent.", "en": "Several glasses are missing.", "replace": "verres" },
+        { "fr": "Tous les verres lavent.", "en": "All glasses get washed.", "replace": "verres" }
+      ]
+    },
+    {
+      "french": "le doigt",
+      "english": "finger",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le doigt bouge.", "en": "The finger moves.", "replace": "doigt" },
+        { "fr": "Un doigt blessé.", "en": "An injured finger.", "replace": "doigt" },
+        { "fr": "Ce doigt pointe.", "en": "This finger points.", "replace": "doigt" },
+        { "fr": "Les doigts tremblent.", "en": "Fingers tremble.", "replace": "doigts" },
+        { "fr": "Mes doigts froids.", "en": "My cold fingers.", "replace": "doigts" },
+        { "fr": "Tous les doigts travaillent.", "en": "All fingers work.", "replace": "doigts" }
+      ]
+    },
+    {
+      "french": "le pouce",
+      "english": "thumb",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le pouce lève.", "en": "The thumb goes up.", "replace": "pouce" },
+        { "fr": "Un pouce bandé.", "en": "A bandaged thumb.", "replace": "pouce" },
+        { "fr": "Ce pouce appuie.", "en": "This thumb presses.", "replace": "pouce" },
+        { "fr": "Les pouces fatiguent.", "en": "Thumbs get tired.", "replace": "pouces" },
+        { "fr": "Mes pouces glissent.", "en": "My thumbs slip.", "replace": "pouces" },
+        { "fr": "Tous les pouces bougent.", "en": "All thumbs move.", "replace": "pouces" }
+      ]
+    },
+    {
+      "french": "à",
+      "english": "at / to",
+      "word_type": "preposition",
+      "sentences": [
+        { "fr": "À la maison.", "en": "At home.", "replace": "À" },
+        { "fr": "À midi.", "en": "At noon.", "replace": "À" },
+        { "fr": "À Paris.", "en": "In Paris.", "replace": "À" },
+        { "fr": "À nos côtés.", "en": "At our side.", "replace": "À" },
+        { "fr": "À votre service.", "en": "At your service.", "replace": "À" },
+        { "fr": "À toute vitesse.", "en": "At full speed.", "replace": "À" }
+      ]
+    },
+    {
+      "french": "quel",
+      "english": "which / what",
+      "word_type": "determiner",
+      "sentences": [
+        { "fr": "Quel livre choisis-tu?", "en": "Which book do you choose?", "replace": "Quel" },
+        { "fr": "Quel endroit préfères-tu?", "en": "Which place do you prefer?", "replace": "Quel" },
+        { "fr": "Quel moment convient?", "en": "Which moment suits?", "replace": "Quel" },
+        { "fr": "Quels projets mènes-tu?", "en": "Which projects do you lead?", "replace": "Quels" },
+        { "fr": "Quelles routes prends-tu?", "en": "Which roads do you take?", "replace": "Quelles" },
+        { "fr": "Quels choix restent?", "en": "Which choices remain?", "replace": "Quels" }
+      ]
+    },
+    {
+      "french": "lequel",
+      "english": "which one",
+      "word_type": "pronoun",
+      "sentences": [
+        { "fr": "Lequel veux-tu?", "en": "Which one do you want?", "replace": "Lequel" },
+        { "fr": "Lequel convient?", "en": "Which one fits?", "replace": "Lequel" },
+        { "fr": "Lequel manque?", "en": "Which one is missing?", "replace": "Lequel" },
+        { "fr": "Lesquels préfères-tu?", "en": "Which ones do you prefer?", "replace": "Lesquels" },
+        { "fr": "Lesquelles choisis-tu?", "en": "Which ones do you choose?", "replace": "Lesquelles" },
+        { "fr": "Lesquels restent?", "en": "Which ones remain?", "replace": "Lesquels" }
+      ]
+    },
+    {
+      "french": "à quel point",
+      "english": "to what extent",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "À quel point c'est dur?", "en": "How hard is it?", "replace": "À quel point" },
+        { "fr": "À quel point tu l'aimes?", "en": "How much do you love it?", "replace": "À quel point" },
+        { "fr": "À quel point est-ce urgent?", "en": "How urgent is it?", "replace": "À quel point" },
+        { "fr": "À quel point nous avançons?", "en": "How far are we progressing?", "replace": "À quel point" },
+        { "fr": "À quel point vous changez?", "en": "How much do you change?", "replace": "À quel point" },
+        { "fr": "À quel point ils s'impliquent?", "en": "How much do they get involved?", "replace": "À quel point" }
+      ]
+    },
+    {
+      "french": "lequel choisir",
+      "english": "which one to choose",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Lequel choisir aujourd'hui?", "en": "Which one to choose today?", "replace": "Lequel choisir" },
+        { "fr": "Lequel choisir pour toi?", "en": "Which one to choose for you?", "replace": "Lequel choisir" },
+        { "fr": "Lequel choisir finalement?", "en": "Which one to choose finally?", "replace": "Lequel choisir" },
+        { "fr": "Lesquels choisir demain?", "en": "Which ones to choose tomorrow?", "replace": "Lesquels choisir" },
+        { "fr": "Lesquelles choisir ici?", "en": "Which ones to choose here?", "replace": "Lesquelles choisir" },
+        { "fr": "Lesquels choisir ensemble?", "en": "Which ones to choose together?", "replace": "Lesquels choisir" }
+      ]
+    },
+    {
+      "french": "pourrait",
+      "english": "could",
+      "word_type": "verb",
+      "root": "pouvoir",
+      "sentences": [
+        { "fr": "Je pourrais venir.", "en": "I could come.", "replace": "pourrais" },
+        { "fr": "Tu pourrais aider.", "en": "You could help.", "replace": "pourrais" },
+        { "fr": "Il pourrait rester.", "en": "He could stay.", "replace": "pourrait" },
+        { "fr": "Nous pourrions essayer.", "en": "We could try.", "replace": "pourrions" },
+        { "fr": "Vous pourriez expliquer.", "en": "You could explain.", "replace": "pourriez" },
+        { "fr": "Ils pourraient partir.", "en": "They could leave.", "replace": "pourraient" }
+      ]
+    },
+    {
+      "french": "garder",
+      "english": "to keep",
+      "word_type": "verb",
+      "root": "garder",
+      "sentences": [
+        { "fr": "Je garde un secret.", "en": "I keep a secret.", "replace": "garde" },
+        { "fr": "Tu gardes la clé.", "en": "You keep the key.", "replace": "gardes" },
+        { "fr": "Il garde sa place.", "en": "He keeps his seat.", "replace": "garde" },
+        { "fr": "Nous gardons le rythme.", "en": "We keep the rhythm.", "replace": "gardons" },
+        { "fr": "Vous gardez la voiture.", "en": "You keep the car.", "replace": "gardez" },
+        { "fr": "Ils gardent des souvenirs.", "en": "They keep memories.", "replace": "gardent" }
+      ]
+    },
+    {
+      "french": "la pièce",
+      "english": "room",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La pièce est claire.", "en": "The room is bright.", "replace": "pièce" },
+        { "fr": "Une pièce tranquille.", "en": "A quiet room.", "replace": "pièce" },
+        { "fr": "Cette pièce donne au jardin.", "en": "This room faces the garden.", "replace": "pièce" },
+        { "fr": "Les pièces sont petites.", "en": "The rooms are small.", "replace": "pièces" },
+        { "fr": "Plusieurs pièces communiquent.", "en": "Several rooms connect.", "replace": "pièces" },
+        { "fr": "Toutes les pièces chauffent.", "en": "All the rooms are heating.", "replace": "pièces" }
+      ]
+    },
+    {
+      "french": "les épaules",
+      "english": "shoulders",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Une épaule douloureuse.", "en": "A sore shoulder.", "replace": "épaule" },
+        { "fr": "Mon épaule droite.", "en": "My right shoulder.", "replace": "épaule" },
+        { "fr": "Cette épaule guérit.", "en": "This shoulder heals.", "replace": "épaule" },
+        { "fr": "Les épaules se détendent.", "en": "Shoulders relax.", "replace": "épaules" },
+        { "fr": "Mes épaules fatiguent.", "en": "My shoulders get tired.", "replace": "épaules" },
+        { "fr": "Toutes les épaules baissent.", "en": "All shoulders lower.", "replace": "épaules" }
+      ]
+    },
+    {
+      "french": "voilà",
+      "english": "here you go",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Voilà la réponse.", "en": "Here is the answer.", "replace": "Voilà" },
+        { "fr": "Voilà la clé.", "en": "Here is the key.", "replace": "Voilà" },
+        { "fr": "Voilà pour vous.", "en": "Here you go.", "replace": "Voilà" },
+        { "fr": "Et voilà le résultat.", "en": "And here is the result.", "replace": "voilà" },
+        { "fr": "Voilà qui est fait.", "en": "There, it's done.", "replace": "Voilà" },
+        { "fr": "Voilà tout.", "en": "That's all.", "replace": "Voilà" }
+      ]
+    }
+  ]
+}

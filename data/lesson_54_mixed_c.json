@@ -1,0 +1,195 @@
+{
+  "level": 54,
+  "title": "Mixed C",
+  "theme": "Vocabulary from Group 6",
+  "words": [
+    { "french": "veuillez", "english": "please (formal)", "word_type": "phrase", "sentences": [
+      { "fr": "Veuillez patienter.", "en": "Please wait.", "replace": "Veuillez" },
+      { "fr": "Veuillez entrer.", "en": "Please enter.", "replace": "Veuillez" },
+      { "fr": "Veuillez fermer la porte.", "en": "Please close the door.", "replace": "Veuillez" },
+      { "fr": "Veuillez remplir ce champ.", "en": "Please fill in this field.", "replace": "Veuillez" },
+      { "fr": "Veuillez vous asseoir.", "en": "Please sit down.", "replace": "Veuillez" },
+      { "fr": "Veuillez ne pas toucher.", "en": "Please do not touch.", "replace": "Veuillez" }
+    ] },
+
+    { "french": "ai-je", "english": "do I have?", "word_type": "phrase", "sentences": [
+      { "fr": "Ai-je le temps?", "en": "Do I have time?", "replace": "Ai-je" },
+      { "fr": "Ai-je raison?", "en": "Am I right?", "replace": "Ai-je" },
+      { "fr": "Ai-je une chance?", "en": "Do I have a chance?", "replace": "Ai-je" },
+      { "fr": "Ai-je votre adresse?", "en": "Do I have your address?", "replace": "Ai-je" },
+      { "fr": "Ai-je le choix?", "en": "Do I have a choice?", "replace": "Ai-je" },
+      { "fr": "Ai-je assez?", "en": "Do I have enough?", "replace": "Ai-je" }
+    ] },
+
+    { "french": "a-t-elle", "english": "does she have?", "word_type": "phrase", "sentences": [
+      { "fr": "A-t-elle faim?", "en": "Is she hungry?", "replace": "A-t-elle" },
+      { "fr": "A-t-elle le temps?", "en": "Does she have time?", "replace": "A-t-elle" },
+      { "fr": "A-t-elle une idée?", "en": "Does she have an idea?", "replace": "A-t-elle" },
+      { "fr": "A-t-elle une voiture?", "en": "Does she have a car?", "replace": "A-t-elle" },
+      { "fr": "A-t-elle des nouvelles?", "en": "Does she have news?", "replace": "A-t-elle" },
+      { "fr": "A-t-elle une solution?", "en": "Does she have a solution?", "replace": "A-t-elle" }
+    ] },
+
+    { "french": "fut", "english": "was (literary past)", "word_type": "verb", "root": "être", "sentences": [
+      { "fr": "Je fus surpris.", "en": "I was surprised.", "replace": "fus" },
+      { "fr": "Tu fus content.", "en": "You were happy.", "replace": "fus" },
+      { "fr": "Il fut roi.", "en": "He was king.", "replace": "fut" },
+      { "fr": "Nous fûmes témoins.", "en": "We were witnesses.", "replace": "fûmes" },
+      { "fr": "Vous fûtes présents.", "en": "You were present.", "replace": "fûtes" },
+      { "fr": "Ils furent sages.", "en": "They were wise.", "replace": "furent" }
+    ] },
+
+    { "french": "le cas", "english": "case", "word_type": "noun", "sentences": [
+      { "fr": "Le cas est simple.", "en": "The case is simple.", "replace": "cas" },
+      { "fr": "Un cas urgent.", "en": "An urgent case.", "replace": "cas" },
+      { "fr": "Ce cas change.", "en": "This case changes.", "replace": "cas" },
+      { "fr": "Les cas similaires existent.", "en": "Similar cases exist.", "replace": "cas" },
+      { "fr": "Plusieurs cas reviennent.", "en": "Several cases return.", "replace": "cas" },
+      { "fr": "Tous les cas comptent.", "en": "All cases matter.", "replace": "cas" }
+    ] },
+
+    { "french": "la vie", "english": "life", "word_type": "noun", "sentences": [
+      { "fr": "La vie continue.", "en": "Life goes on.", "replace": "vie" },
+      { "fr": "Une vie paisible.", "en": "A peaceful life.", "replace": "vie" },
+      { "fr": "Cette vie change.", "en": "This life changes.", "replace": "vie" },
+      { "fr": "Les vies s'entrecroisent.", "en": "Lives intersect.", "replace": "vies" },
+      { "fr": "Plusieurs vies s'améliorent.", "en": "Several lives improve.", "replace": "vies" },
+      { "fr": "Toutes les vies comptent.", "en": "All lives matter.", "replace": "vies" }
+    ] },
+
+    { "french": "les rêves", "english": "dreams", "word_type": "noun", "sentences": [
+      { "fr": "Un rêve étrange.", "en": "A strange dream.", "replace": "rêve" },
+      { "fr": "Le rêve disparaît.", "en": "The dream disappears.", "replace": "rêve" },
+      { "fr": "Ce rêve revient.", "en": "This dream returns.", "replace": "rêve" },
+      { "fr": "Les rêves s'envolent.", "en": "Dreams fly away.", "replace": "rêves" },
+      { "fr": "Mes rêves changent.", "en": "My dreams change.", "replace": "rêves" },
+      { "fr": "Tous les rêves inspirent.", "en": "All dreams inspire.", "replace": "rêves" }
+    ] },
+
+    { "french": "propre", "english": "own / clean", "word_type": "adjective", "sentences": [
+      { "fr": "Ma propre idée.", "en": "My own idea.", "replace": "propre" },
+      { "fr": "Une table propre.", "en": "A clean table.", "replace": "propre" },
+      { "fr": "Une chambre propre.", "en": "A clean room.", "replace": "propre" },
+      { "fr": "Des mains propres.", "en": "Clean hands.", "replace": "propres" },
+      { "fr": "Des vêtements propres.", "en": "Clean clothes.", "replace": "propres" },
+      { "fr": "Tous propres maintenant.", "en": "All clean now.", "replace": "propres" }
+    ] },
+
+    { "french": "troisième", "english": "third", "word_type": "adjective", "sentences": [
+      { "fr": "Le troisième essai.", "en": "The third try.", "replace": "troisième" },
+      { "fr": "La troisième page.", "en": "The third page.", "replace": "troisième" },
+      { "fr": "La troisième option.", "en": "The third option.", "replace": "troisième" },
+      { "fr": "Les troisièmes places.", "en": "Third places.", "replace": "troisièmes" },
+      { "fr": "Les troisièmes lignes.", "en": "Third lines.", "replace": "troisièmes" },
+      { "fr": "Toutes troisièmes ici.", "en": "All are third here.", "replace": "troisièmes" }
+    ] },
+
+    { "french": "quelle", "english": "which / what (fem.)", "word_type": "determiner", "sentences": [
+      { "fr": "Quelle route prends-tu?", "en": "Which road do you take?", "replace": "Quelle" },
+      { "fr": "Quelle page lis-tu?", "en": "Which page do you read?", "replace": "Quelle" },
+      { "fr": "Quelle heure est-il?", "en": "What time is it?", "replace": "Quelle" },
+      { "fr": "Quelles routes suivent-ils?", "en": "Which roads do they follow?", "replace": "Quelles" },
+      { "fr": "Quelles pages gardes-tu?", "en": "Which pages do you keep?", "replace": "Quelles" },
+      { "fr": "Quelles options restent?", "en": "Which options remain?", "replace": "Quelles" }
+    ] },
+
+    { "french": "réveillé", "english": "awake", "word_type": "adjective", "sentences": [
+      { "fr": "Je suis réveillé tôt.", "en": "I am awake early.", "replace": "réveillé" },
+      { "fr": "Tu restes réveillé longtemps.", "en": "You stay awake for long.", "replace": "réveillé" },
+      { "fr": "Il paraît réveillé.", "en": "He seems awake.", "replace": "réveillé" },
+      { "fr": "Elles sont réveillées.", "en": "They (fem.) are awake.", "replace": "réveillées" },
+      { "fr": "Nous sommes réveillés.", "en": "We are awake.", "replace": "réveillés" },
+      { "fr": "Ils restent réveillés.", "en": "They stay awake.", "replace": "réveillés" }
+    ] },
+
+    { "french": "seulement", "english": "only", "word_type": "adverb", "sentences": [
+      { "fr": "Je veux seulement essayer.", "en": "I only want to try.", "replace": "seulement" },
+      { "fr": "Tu viens seulement demain.", "en": "You only come tomorrow.", "replace": "seulement" },
+      { "fr": "Il parle seulement ici.", "en": "He speaks only here.", "replace": "seulement" },
+      { "fr": "Nous restons seulement aujourd'hui.", "en": "We stay only today.", "replace": "seulement" },
+      { "fr": "Vous invitez seulement eux.", "en": "You invite only them.", "replace": "seulement" },
+      { "fr": "Ils prennent seulement ça.", "en": "They take only that.", "replace": "seulement" }
+    ] },
+
+    { "french": "pour la vie", "english": "for life", "word_type": "phrase", "sentences": [
+      { "fr": "Un souvenir pour la vie.", "en": "A memory for life.", "replace": "pour la vie" },
+      { "fr": "Un choix pour la vie.", "en": "A choice for life.", "replace": "pour la vie" },
+      { "fr": "Un ami pour la vie.", "en": "A friend for life.", "replace": "pour la vie" },
+      { "fr": "Des liens pour la vie.", "en": "Bonds for life.", "replace": "pour la vie" },
+      { "fr": "Des marques pour la vie.", "en": "Marks for life.", "replace": "pour la vie" },
+      { "fr": "Tout reste pour la vie.", "en": "Everything remains for life.", "replace": "pour la vie" }
+    ] },
+
+    { "french": "la minute", "english": "minute", "word_type": "noun", "sentences": [
+      { "fr": "La minute passe.", "en": "The minute passes.", "replace": "minute" },
+      { "fr": "Une minute courte.", "en": "A short minute.", "replace": "minute" },
+      { "fr": "Cette minute s'allonge.", "en": "This minute lengthens.", "replace": "minute" },
+      { "fr": "Les minutes défilent.", "en": "Minutes go by.", "replace": "minutes" },
+      { "fr": "Plusieurs minutes restent.", "en": "Several minutes remain.", "replace": "minutes" },
+      { "fr": "Toutes les minutes comptent.", "en": "All minutes matter.", "replace": "minutes" }
+    ] },
+
+    { "french": "extérieur", "english": "exterior", "word_type": "adjective", "sentences": [
+      { "fr": "Le mur extérieur.", "en": "The exterior wall.", "replace": "extérieur" },
+      { "fr": "Le jardin extérieur.", "en": "The exterior garden.", "replace": "extérieur" },
+      { "fr": "Le côté extérieur.", "en": "The outside side.", "replace": "extérieur" },
+      { "fr": "Des murs extérieurs.", "en": "Exterior walls.", "replace": "extérieurs" },
+      { "fr": "Des côtés extérieurs.", "en": "Outside sides.", "replace": "extérieurs" },
+      { "fr": "Tous extérieurs ici.", "en": "All outside here.", "replace": "extérieurs" }
+    ] },
+
+    { "french": "mieux", "english": "better", "word_type": "adverb", "sentences": [
+      { "fr": "Je fais mieux.", "en": "I do better.", "replace": "mieux" },
+      { "fr": "Tu dors mieux.", "en": "You sleep better.", "replace": "mieux" },
+      { "fr": "Il va mieux.", "en": "He is better.", "replace": "mieux" },
+      { "fr": "Nous travaillons mieux.", "en": "We work better.", "replace": "mieux" },
+      { "fr": "Vous chantez mieux.", "en": "You sing better.", "replace": "mieux" },
+      { "fr": "Ils jouent mieux.", "en": "They play better.", "replace": "mieux" }
+    ] },
+
+    { "french": "entière", "english": "entire (fem.)", "word_type": "adjective", "sentences": [
+      { "fr": "La journée entière.", "en": "The entire day.", "replace": "entière" },
+      { "fr": "La page entière.", "en": "The entire page.", "replace": "entière" },
+      { "fr": "La maison entière.", "en": "The entire house.", "replace": "entière" },
+      { "fr": "Des sections entières.", "en": "Entire sections.", "replace": "entières" },
+      { "fr": "Des heures entières.", "en": "Whole hours.", "replace": "entières" },
+      { "fr": "Toutes entières ici.", "en": "All entire here.", "replace": "entières" }
+    ] },
+
+    { "french": "long", "english": "long", "word_type": "adjective", "sentences": [
+      { "fr": "Un chemin long.", "en": "A long path.", "replace": "long" },
+      { "fr": "Un hiver long.", "en": "A long winter.", "replace": "long" },
+      { "fr": "Un film trop long.", "en": "A film too long.", "replace": "long" },
+      { "fr": "Des jours longs.", "en": "Long days.", "replace": "longs" },
+      { "fr": "Des mois longs.", "en": "Long months.", "replace": "longs" },
+      { "fr": "Tous trop longs.", "en": "All too long.", "replace": "longs" }
+    ] },
+
+    { "french": "assise", "english": "seated (fem.)", "word_type": "adjective", "sentences": [
+      { "fr": "Elle est assise ici.", "en": "She is seated here.", "replace": "assise" },
+      { "fr": "Elle reste assise.", "en": "She stays seated.", "replace": "assise" },
+      { "fr": "Elle paraît assise.", "en": "She appears seated.", "replace": "assise" },
+      { "fr": "Des femmes assises attendent.", "en": "Seated women wait.", "replace": "assises" },
+      { "fr": "Plusieurs personnes assises lisent.", "en": "Several seated people read.", "replace": "assises" },
+      { "fr": "Toutes assises maintenant.", "en": "All seated now.", "replace": "assises" }
+    ] },
+
+    { "french": "rêves sans fin", "english": "dreams without end", "word_type": "phrase", "sentences": [
+      { "fr": "Des rêves sans fin reviennent.", "en": "Dreams without end return.", "replace": "rêves sans fin" },
+      { "fr": "Des rêves sans fin s'effacent.", "en": "Dreams without end fade.", "replace": "rêves sans fin" },
+      { "fr": "Des rêves sans fin inspirent.", "en": "Dreams without end inspire.", "replace": "rêves sans fin" },
+      { "fr": "Ces rêves sans fin durent.", "en": "These dreams without end last.", "replace": "rêves sans fin" },
+      { "fr": "Mes rêves sans fin changent.", "en": "My endless dreams change.", "replace": "rêves sans fin" },
+      { "fr": "Tous ces rêves sans fin.", "en": "All those endless dreams.", "replace": "rêves sans fin" }
+    ] },
+
+    { "french": "minute très longue", "english": "very long minute", "word_type": "phrase", "sentences": [
+      { "fr": "Une minute très longue commence.", "en": "A very long minute begins.", "replace": "minute très longue" },
+      { "fr": "Cette minute très longue dure.", "en": "This very long minute lasts.", "replace": "minute très longue" },
+      { "fr": "La minute très longue s'étire.", "en": "The very long minute stretches.", "replace": "minute très longue" },
+      { "fr": "Des minutes très longues passent.", "en": "Very long minutes pass.", "replace": "minutes très longues" },
+      { "fr": "Plusieurs minutes très longues restent.", "en": "Several very long minutes remain.", "replace": "minutes très longues" },
+      { "fr": "Toutes les minutes très longues pèsent.", "en": "All very long minutes feel heavy.", "replace": "minutes très longues" }
+    ] }
+  ]
+}

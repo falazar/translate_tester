@@ -1,0 +1,175 @@
+{
+  "level": 55,
+  "title": "Mixed D",
+  "theme": "Vocabulary from Group 7",
+  "words": [
+    { "french": "avorter", "english": "to abort", "word_type": "verb", "root": "avorter", "sentences": [
+      { "fr": "J'avorte la mission.", "en": "I abort the mission.", "replace": "avorte" },
+      { "fr": "Tu avortes l'essai.", "en": "You abort the trial.", "replace": "avortes" },
+      { "fr": "Il avorte le projet.", "en": "He aborts the project.", "replace": "avorte" },
+      { "fr": "Nous avortons le plan.", "en": "We abort the plan.", "replace": "avortons" },
+      { "fr": "Vous avortez l'action.", "en": "You abort the action.", "replace": "avortez" },
+      { "fr": "Ils avortent l'opération.", "en": "They abort the operation.", "replace": "avortent" }
+    ] },
+    { "french": "empêcher", "english": "to prevent", "word_type": "verb", "root": "empêcher", "sentences": [
+      { "fr": "J'empêche l'erreur.", "en": "I prevent the error.", "replace": "empêche" },
+      { "fr": "Tu empêches la chute.", "en": "You prevent the fall.", "replace": "empêches" },
+      { "fr": "Il empêche le risque.", "en": "He prevents the risk.", "replace": "empêche" },
+      { "fr": "Nous empêchons les pertes.", "en": "We prevent losses.", "replace": "empêchons" },
+      { "fr": "Vous empêchez l'accident.", "en": "You prevent the accident.", "replace": "empêchez" },
+      { "fr": "Ils empêchent les dégâts.", "en": "They prevent damage.", "replace": "empêchent" }
+    ] },
+    { "french": "regardai", "english": "I looked", "word_type": "verb", "root": "regarder", "sentences": [
+      { "fr": "Je regardai au loin.", "en": "I looked far away.", "replace": "regardai" },
+      { "fr": "Tu regardas la mer.", "en": "You looked at the sea.", "replace": "regardas" },
+      { "fr": "Il regarda le ciel.", "en": "He looked at the sky.", "replace": "regarda" },
+      { "fr": "Nous regardâmes ensemble.", "en": "We looked together.", "replace": "regardâmes" },
+      { "fr": "Vous regardâtes ensuite.", "en": "You looked next.", "replace": "regardâtes" },
+      { "fr": "Ils regardèrent l'horizon.", "en": "They looked at the horizon.", "replace": "regardèrent" }
+    ] },
+    { "french": "réveiller", "english": "to wake up", "word_type": "verb", "root": "se réveiller", "sentences": [
+      { "fr": "Je me réveille tôt.", "en": "I wake up early.", "replace": "me réveille" },
+      { "fr": "Tu te réveilles vite.", "en": "You wake up quickly.", "replace": "te réveilles" },
+      { "fr": "Il se réveille lentement.", "en": "He wakes up slowly.", "replace": "se réveille" },
+      { "fr": "Nous nous réveillons ensemble.", "en": "We wake up together.", "replace": "nous réveillons" },
+      { "fr": "Vous vous réveillez tard.", "en": "You wake up late.", "replace": "vous réveillez" },
+      { "fr": "Ils se réveillent enfin.", "en": "They finally wake up.", "replace": "se réveillent" }
+    ] },
+    { "french": "le morceau", "english": "piece", "word_type": "noun", "sentences": [
+      { "fr": "Le morceau tombe.", "en": "The piece falls.", "replace": "morceau" },
+      { "fr": "Un morceau petit.", "en": "A small piece.", "replace": "morceau" },
+      { "fr": "Ce morceau manque.", "en": "This piece is missing.", "replace": "morceau" },
+      { "fr": "Les morceaux s'ajoutent.", "en": "Pieces are added.", "replace": "morceaux" },
+      { "fr": "Plusieurs morceaux restent.", "en": "Several pieces remain.", "replace": "morceaux" },
+      { "fr": "Tous les morceaux changent.", "en": "All pieces change.", "replace": "morceaux" }
+    ] },
+    { "french": "le choc", "english": "shock", "word_type": "noun", "sentences": [
+      { "fr": "Le choc arrive.", "en": "The shock arrives.", "replace": "choc" },
+      { "fr": "Un choc fort.", "en": "A strong shock.", "replace": "choc" },
+      { "fr": "Ce choc passe.", "en": "This shock passes.", "replace": "choc" },
+      { "fr": "Les chocs s'accumulent.", "en": "Shocks accumulate.", "replace": "chocs" },
+      { "fr": "Plusieurs chocs marquent.", "en": "Several shocks leave a mark.", "replace": "chocs" },
+      { "fr": "Tous les chocs cessent.", "en": "All shocks cease.", "replace": "chocs" }
+    ] },
+    { "french": "l'espace", "english": "space", "word_type": "noun", "sentences": [
+      { "fr": "L'espace s'étend.", "en": "Space expands.", "replace": "espace" },
+      { "fr": "Un espace vide.", "en": "An empty space.", "replace": "espace" },
+      { "fr": "Cet espace manque.", "en": "This space is lacking.", "replace": "espace" },
+      { "fr": "Les espaces se remplissent.", "en": "Spaces fill up.", "replace": "espaces" },
+      { "fr": "Plusieurs espaces changent.", "en": "Several spaces change.", "replace": "espaces" },
+      { "fr": "Tous les espaces restent.", "en": "All spaces remain.", "replace": "espaces" }
+    ] },
+    { "french": "l'entraînement", "english": "training", "word_type": "noun", "sentences": [
+      { "fr": "L'entraînement commence.", "en": "Training begins.", "replace": "entraînement" },
+      { "fr": "Un entraînement dur.", "en": "A hard training.", "replace": "entraînement" },
+      { "fr": "Cet entraînement aide.", "en": "This training helps.", "replace": "entraînement" },
+      { "fr": "Les entraînements progressent.", "en": "Trainings progress.", "replace": "entraînements" },
+      { "fr": "Plusieurs entraînements cessent.", "en": "Several trainings stop.", "replace": "entraînements" },
+      { "fr": "Tous les entraînements comptent.", "en": "All trainings matter.", "replace": "entraînements" }
+    ] },
+    { "french": "les informations", "english": "information", "word_type": "noun", "sentences": [
+      { "fr": "Une information manque.", "en": "One piece of information is missing.", "replace": "information" },
+      { "fr": "L'information circule.", "en": "Information circulates.", "replace": "information" },
+      { "fr": "Cette information suffit.", "en": "This information suffices.", "replace": "information" },
+      { "fr": "Les informations arrivent.", "en": "Information arrives.", "replace": "informations" },
+      { "fr": "Plusieurs informations aident.", "en": "Several pieces of information help.", "replace": "informations" },
+      { "fr": "Toutes les informations comptent.", "en": "All information matters.", "replace": "informations" }
+    ] },
+    { "french": "l'avortement", "english": "abortion", "word_type": "noun", "sentences": [
+      { "fr": "L'avortement existe.", "en": "Abortion exists.", "replace": "avortement" },
+      { "fr": "Un avortement tardif.", "en": "A late abortion.", "replace": "avortement" },
+      { "fr": "Cet avortement choque.", "en": "This abortion shocks.", "replace": "avortement" },
+      { "fr": "Les avortements divisent.", "en": "Abortions divide.", "replace": "avortements" },
+      { "fr": "Plusieurs avortements cessent.", "en": "Several abortions cease.", "replace": "avortements" },
+      { "fr": "Tous les avortements marquent.", "en": "All abortions leave a mark.", "replace": "avortements" }
+    ] },
+    { "french": "les côtés", "english": "sides", "word_type": "noun", "sentences": [
+      { "fr": "Un côté glisse.", "en": "One side slips.", "replace": "côté" },
+      { "fr": "Le côté droit.", "en": "The right side.", "replace": "côté" },
+      { "fr": "Ce côté casse.", "en": "This side breaks.", "replace": "côté" },
+      { "fr": "Les côtés se touchent.", "en": "The sides touch.", "replace": "côtés" },
+      { "fr": "Plusieurs côtés penchent.", "en": "Several sides tilt.", "replace": "côtés" },
+      { "fr": "Tous les côtés restent.", "en": "All sides remain.", "replace": "côtés" }
+    ] },
+    { "french": "la viabilité", "english": "viability", "word_type": "noun", "sentences": [
+      { "fr": "La viabilité augmente.", "en": "Viability increases.", "replace": "viabilité" },
+      { "fr": "Une viabilité faible.", "en": "Low viability.", "replace": "viabilité" },
+      { "fr": "Cette viabilité change.", "en": "This viability changes.", "replace": "viabilité" },
+      { "fr": "Les viabilités varient.", "en": "Viabilities vary.", "replace": "viabilités" },
+      { "fr": "Plusieurs viabilités restent.", "en": "Several viabilities remain.", "replace": "viabilités" },
+      { "fr": "Toutes les viabilités comptent.", "en": "All viabilities matter.", "replace": "viabilités" }
+    ] },
+    { "french": "ça", "english": "that / it", "word_type": "pronoun", "sentences": [
+      { "fr": "Ça va bien.", "en": "It's going well.", "replace": "Ça" },
+      { "fr": "Ça suffit.", "en": "That's enough.", "replace": "Ça" },
+      { "fr": "Ça change.", "en": "It changes.", "replace": "Ça" },
+      { "fr": "Ça arrive.", "en": "It happens.", "replace": "Ça" },
+      { "fr": "Ça commence.", "en": "It starts.", "replace": "Ça" },
+      { "fr": "Ça finit.", "en": "It ends.", "replace": "Ça" }
+    ] },
+    { "french": "ceux", "english": "those", "word_type": "pronoun", "sentences": [
+      { "fr": "Ceux qui restent.", "en": "Those who stay.", "replace": "Ceux" },
+      { "fr": "Ceux qui partent.", "en": "Those who leave.", "replace": "Ceux" },
+      { "fr": "Ceux qui parlent.", "en": "Those who speak.", "replace": "Ceux" },
+      { "fr": "Ceux-là viennent.", "en": "Those there come.", "replace": "Ceux" },
+      { "fr": "Ceux-ci restent.", "en": "These ones stay.", "replace": "Ceux" },
+      { "fr": "Ceux de gauche.", "en": "Those on the left.", "replace": "Ceux" }
+    ] },
+    { "french": "depuis", "english": "since / from", "word_type": "preposition", "sentences": [
+      { "fr": "Depuis hier.", "en": "Since yesterday.", "replace": "Depuis" },
+      { "fr": "Depuis ce matin.", "en": "Since this morning.", "replace": "Depuis" },
+      { "fr": "Depuis le début.", "en": "Since the beginning.", "replace": "Depuis" },
+      { "fr": "Depuis nos essais.", "en": "Since our tests.", "replace": "Depuis" },
+      { "fr": "Depuis la pause.", "en": "Since the break.", "replace": "Depuis" },
+      { "fr": "Depuis l'entraînement.", "en": "Since the training.", "replace": "Depuis" }
+    ] },
+    { "french": "pourtant", "english": "yet / however", "word_type": "adverb", "sentences": [
+      { "fr": "Pourtant, ça va.", "en": "Yet, it's okay.", "replace": "Pourtant" },
+      { "fr": "Pourtant, il reste.", "en": "Yet, he stays.", "replace": "Pourtant" },
+      { "fr": "Pourtant, nous venons.", "en": "Yet, we come.", "replace": "Pourtant" },
+      { "fr": "Pourtant, vous essayez.", "en": "Yet, you try.", "replace": "Pourtant" },
+      { "fr": "Pourtant, ils passent.", "en": "Yet, they pass.", "replace": "Pourtant" },
+      { "fr": "Pourtant, tout continue.", "en": "Yet, everything continues.", "replace": "Pourtant" }
+    ] },
+    { "french": "étroit", "english": "narrow", "word_type": "adjective", "sentences": [
+      { "fr": "Un passage étroit.", "en": "A narrow passage.", "replace": "étroit" },
+      { "fr": "Un chemin étroit.", "en": "A narrow path.", "replace": "étroit" },
+      { "fr": "Un couloir étroit.", "en": "A narrow corridor.", "replace": "étroit" },
+      { "fr": "Des rues étroites.", "en": "Narrow streets.", "replace": "étroites" },
+      { "fr": "Des portes étroites.", "en": "Narrow doors.", "replace": "étroites" },
+      { "fr": "Toutes très étroites.", "en": "All very narrow.", "replace": "étroites" }
+    ] },
+    { "french": "depuis l'entraînement", "english": "since training", "word_type": "phrase", "sentences": [
+      { "fr": "Depuis l'entraînement, ça va.", "en": "Since training, it's okay.", "replace": "Depuis l'entraînement" },
+      { "fr": "Depuis l'entraînement, il reste.", "en": "Since training, he stays.", "replace": "Depuis l'entraînement" },
+      { "fr": "Depuis l'entraînement, nous tenons.", "en": "Since training, we hold on.", "replace": "Depuis l'entraînement" },
+      { "fr": "Depuis l'entraînement, vous progressez.", "en": "Since training, you progress.", "replace": "Depuis l'entraînement" },
+      { "fr": "Depuis l'entraînement, ils avancent.", "en": "Since training, they advance.", "replace": "Depuis l'entraînement" },
+      { "fr": "Depuis l'entraînement, tout change.", "en": "Since training, everything changes.", "replace": "Depuis l'entraînement" }
+    ] },
+    { "french": "pourtant ça va", "english": "yet it's okay", "word_type": "phrase", "sentences": [
+      { "fr": "Pourtant ça va aujourd'hui.", "en": "Yet it's okay today.", "replace": "Pourtant ça va" },
+      { "fr": "Pourtant ça va bien.", "en": "Yet it's going well.", "replace": "Pourtant ça va" },
+      { "fr": "Pourtant ça va ici.", "en": "Yet it's okay here.", "replace": "Pourtant ça va" },
+      { "fr": "Pourtant ça va pour nous.", "en": "Yet it's okay for us.", "replace": "Pourtant ça va" },
+      { "fr": "Pourtant ça va pour vous.", "en": "Yet it's okay for you.", "replace": "Pourtant ça va" },
+      { "fr": "Pourtant ça va encore.", "en": "Yet it's still okay.", "replace": "Pourtant ça va" }
+    ] },
+    { "french": "choc très fort", "english": "very strong shock", "word_type": "phrase", "sentences": [
+      { "fr": "Un choc très fort arrive.", "en": "A very strong shock occurs.", "replace": "choc très fort" },
+      { "fr": "Ce choc très fort passe.", "en": "This very strong shock passes.", "replace": "choc très fort" },
+      { "fr": "Le choc très fort cesse.", "en": "The very strong shock ceases.", "replace": "choc très fort" },
+      { "fr": "Des chocs très forts reviennent.", "en": "Very strong shocks return.", "replace": "chocs très forts" },
+      { "fr": "Plusieurs chocs très forts marquent.", "en": "Several very strong shocks leave a mark.", "replace": "chocs très forts" },
+      { "fr": "Tous les chocs très forts cessent.", "en": "All very strong shocks cease.", "replace": "chocs très forts" }
+    ] },
+    { "french": "morceau tout petit", "english": "very small piece", "word_type": "phrase", "sentences": [
+      { "fr": "Un morceau tout petit tombe.", "en": "A very small piece falls.", "replace": "morceau tout petit" },
+      { "fr": "Ce morceau tout petit casse.", "en": "This very small piece breaks.", "replace": "morceau tout petit" },
+      { "fr": "Le morceau tout petit manque.", "en": "The very small piece is missing.", "replace": "morceau tout petit" },
+      { "fr": "Des morceaux tout petits s'ajoutent.", "en": "Very small pieces are added.", "replace": "morceaux tout petits" },
+      { "fr": "Plusieurs morceaux tout petits restent.", "en": "Several very small pieces remain.", "replace": "morceaux tout petits" },
+      { "fr": "Tous les morceaux tout petits changent.", "en": "All very small pieces change.", "replace": "morceaux tout petits" }
+    ] }
+  ]
+}
