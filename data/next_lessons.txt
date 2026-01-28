@@ -4,111 +4,6 @@
       "description": "Vocabulary for Lesson 33",
       "theme": "misc",
       "words": [
-        { "french": "le fort", "english": "fort", "word_type": "noun", "gender": "le", "sentences": [
-          { "fr": "Le `fort` est ancien.", "en": "The fort is old.", "replace": "fort" },
-          { "fr": "Je visite le fort.", "en": "I visit the fort.", "replace": "fort" },
-          { "fr": "Le fort domine la ville.", "en": "The fort overlooks the city.", "replace": "fort" },
-          { "fr": "Il construit un fort.", "en": "He builds a fort.", "replace": "fort" },
-          { "fr": "Nous défendons le fort.", "en": "We defend the fort.", "replace": "fort" }
-        ] },
-        { "french": "le monde", "english": "world", "word_type": "noun", "gender": "le", "sentences": [
-          { "fr": "Le monde est vaste.", "en": "The world is vast.", "replace": "monde" },
-          { "fr": "Je découvre le monde.", "en": "I discover the world.", "replace": "monde" },
-          { "fr": "Le monde change.", "en": "The world changes.", "replace": "monde" },
-          { "fr": "Il voyage dans le monde.", "en": "He travels the world.", "replace": "monde" },
-          { "fr": "Nous aimons le monde.", "en": "We love the world.", "replace": "monde" }
-        ] },
-        { "french": "le visage", "english": "face", "word_type": "noun", "gender": "le", "sentences": [
-          { "fr": "Le visage est souriant.", "en": "The face is smiling.", "replace": "visage" },
-          { "fr": "Je lave mon visage.", "en": "I wash my face.", "replace": "visage" },
-          { "fr": "Le visage change.", "en": "The face changes.", "replace": "visage" },
-          { "fr": "Il dessine un visage.", "en": "He draws a face.", "replace": "visage" },
-          { "fr": "Nous voyons son visage.", "en": "We see his face.", "replace": "visage" }
-        ] },
-        { "french": "la fois", "english": "time", "word_type": "noun", "gender": "la", "sentences": [
-          { "fr": "La première fois.", "en": "The first time.", "replace": "fois" },
-          { "fr": "Je viens chaque fois.", "en": "I come every time.", "replace": "fois" },
-          { "fr": "La fois suivante.", "en": "The next time.", "replace": "fois" },
-          { "fr": "Il oublie une fois.", "en": "He forgets once.", "replace": "fois" },
-          { "fr": "Nous gagnons cette fois.", "en": "We win this time.", "replace": "fois" }
-        ] },
-        { "french": "le argument", "english": "argument", "word_type": "noun", "gender": "le", "sentences": [
-          { "fr": "L'argument est fort.", "en": "The argument is strong.", "replace": "argument" },
-          { "fr": "Je présente un argument.", "en": "I present an argument.", "replace": "argument" },
-          { "fr": "L'argument change tout.", "en": "The argument changes everything.", "replace": "argument" },
-          { "fr": "Il écoute l'argument.", "en": "He listens to the argument.", "replace": "argument" },
-          { "fr": "Nous discutons l'argument.", "en": "We discuss the argument.", "replace": "argument" }
-        ] },
-        { "french": "la miséricorde", "english": "mercy", "word_type": "noun", "gender": "la", "sentences": [
-          { "fr": "La miséricorde est grande.", "en": "Mercy is great.", "replace": "miséricorde" },
-          { "fr": "Je demande la miséricorde.", "en": "I ask for mercy.", "replace": "miséricorde" },
-          { "fr": "La miséricorde sauve.", "en": "Mercy saves.", "replace": "miséricorde" },
-          { "fr": "Il montre de la miséricorde.", "en": "He shows mercy.", "replace": "miséricorde" },
-          { "fr": "Nous offrons la miséricorde.", "en": "We offer mercy.", "replace": "miséricorde" }
-        ] },
-        { "french": "l'affaire", "english": "affair", "word_type": "noun", "gender": "la", "sentences": [
-          { "fr": "L'affaire est sérieuse.", "en": "The matter is serious.", "replace": "affaire" },
-          { "fr": "Je traite l'affaire.", "en": "I handle the matter.", "replace": "affaire" },
-          { "fr": "L'affaire avance.", "en": "The affair progresses.", "replace": "affaire" },
-          { "fr": "Il parle de l'affaire.", "en": "He talks about the affair.", "replace": "affaire" },
-          { "fr": "Nous suivons l'affaire.", "en": "We follow the matter.", "replace": "affaire" }
-        ] },
-        { "french": "la raison", "english": "reason", "word_type": "noun", "gender": "la", "sentences": [
-          { "fr": "La raison est claire.", "en": "The reason is clear.", "replace": "raison" },
-          { "fr": "Je cherche la raison.", "en": "I look for the reason.", "replace": "raison" },
-          { "fr": "La raison change.", "en": "The reason changes.", "replace": "raison" },
-          { "fr": "Il explique la raison.", "en": "He explains the reason.", "replace": "raison" },
-          { "fr": "Nous comprenons la raison.", "en": "We understand the reason.", "replace": "raison" }
-        ] },
-        { "french": "légèrement", "english": "lightly", "word_type": "adverb", "sentences": [
-          { "fr": "Il touche légèrement.", "en": "He touches lightly.", "replace": "légèrement" },
-          { "fr": "Elle parle légèrement.", "en": "She speaks lightly.", "replace": "légèrement" },
-          { "fr": "Le vent souffle légèrement.", "en": "The wind blows lightly.", "replace": "légèrement" },
-          { "fr": "Je marche légèrement.", "en": "I walk lightly.", "replace": "légèrement" },
-          { "fr": "Nous rions légèrement.", "en": "We laugh lightly.", "replace": "légèrement" }
-        ] },
-        { "french": "tard", "english": "late", "word_type": "adverb", "sentences": [
-          { "fr": "Il arrive tard.", "en": "He arrives late.", "replace": "tard" },
-          { "fr": "Je me couche tard.", "en": "I go to bed late.", "replace": "tard" },
-          { "fr": "Elle travaille tard.", "en": "She works late.", "replace": "tard" },
-          { "fr": "Nous mangeons tard.", "en": "We eat late.", "replace": "tard" },
-          { "fr": "Ils rentrent tard.", "en": "They come home late.", "replace": "tard" }
-        ] },
-        { "french": "ici", "english": "here", "word_type": "other", "sentences": [
-          { "fr": "Je suis ici.", "en": "I am here.", "replace": "ici" },
-          { "fr": "Il reste ici.", "en": "He stays here.", "replace": "ici" },
-          { "fr": "Nous mangeons ici.", "en": "We eat here.", "replace": "ici" },
-          { "fr": "Elle travaille ici.", "en": "She works here.", "replace": "ici" },
-          { "fr": "Tout le monde est ici.", "en": "Everyone is here.", "replace": "ici" }
-        ] },
-        { "french": "devant", "english": "in front", "word_type": "other", "sentences": [
-          { "fr": "Je suis devant la porte.", "en": "I am in front of the door.", "replace": "devant" },
-          { "fr": "Il attend devant la maison.", "en": "He waits in front of the house.", "replace": "devant" },
-          { "fr": "Nous sommes devant l'école.", "en": "We are in front of the school.", "replace": "devant" },
-          { "fr": "Elle se tient devant la classe.", "en": "She stands in front of the class.", "replace": "devant" },
-          { "fr": "Le chat est devant la fenêtre.", "en": "The cat is in front of the window.", "replace": "devant" }
-        ] },
-        { "french": "sans", "english": "without", "word_type": "other", "sentences": [
-          { "fr": "Je pars sans toi.", "en": "I leave without you.", "replace": "sans" },
-          { "fr": "Il mange sans pain.", "en": "He eats without bread.", "replace": "sans" },
-          { "fr": "Nous sortons sans manteau.", "en": "We go out without a coat.", "replace": "sans" },
-          { "fr": "Elle travaille sans bruit.", "en": "She works without noise.", "replace": "sans" },
-          { "fr": "Ils vivent sans peur.", "en": "They live without fear.", "replace": "sans" }
-        ] },
-        { "french": "non", "english": "no/not", "word_type": "other", "sentences": [
-          { "fr": "Non, merci.", "en": "No, thank you.", "replace": "non" },
-          { "fr": "Il dit non.", "en": "He says no.", "replace": "non" },
-          { "fr": "Non, je ne veux pas.", "en": "No, I don't want to.", "replace": "non" },
-          { "fr": "Non, ce n'est pas possible.", "en": "No, it's not possible.", "replace": "non" },
-          { "fr": "Non, elle n'est pas là.", "en": "No, she is not here.", "replace": "non" }
-        ] },
-        { "french": "ou", "english": "or", "word_type": "other", "sentences": [
-          { "fr": "Café ou thé?", "en": "Coffee or tea?", "replace": "ou" },
-          { "fr": "Il part ou il reste.", "en": "He leaves or he stays.", "replace": "ou" },
-          { "fr": "Nous mangeons ici ou là.", "en": "We eat here or there.", "replace": "ou" },
-          { "fr": "Elle veut du pain ou du riz.", "en": "She wants bread or rice.", "replace": "ou" },
-          { "fr": "Oui ou non?", "en": "Yes or no?", "replace": "ou" }
-        ] },
         { "french": "oui", "english": "yes", "word_type": "other", "sentences": [
           { "fr": "Oui, c'est vrai.", "en": "Yes, it's true.", "replace": "oui" },
           { "fr": "Il répond oui.", "en": "He answers yes.", "replace": "oui" },
@@ -116,62 +11,30 @@
           { "fr": "Oui, elle est là.", "en": "Yes, she is here.", "replace": "oui" },
           { "fr": "Oui, nous venons.", "en": "Yes, we are coming.", "replace": "oui" }
         ] },
-        { "french": "argumenter", "english": "to argue", "word_type": "verb", "sentences": [
-          { "fr": "Je n'aime pas argumenter.", "en": "I don't like to argue.", "replace": "argumenter" },
-          { "fr": "Il argumente souvent.", "en": "He argues often.", "replace": "argumente" },
-          { "fr": "Elle argumente bien.", "en": "She argues well.", "replace": "argumente" },
-          { "fr": "Ils argumentent ensemble.", "en": "They argue together.", "replace": "argumentent" },
-          { "fr": "Nous argumentons demain.", "en": "We argue tomorrow.", "replace": "argumentons" },
-          { "fr": "Vous argumentez sur quoi?", "en": "What do you argue about?", "replace": "argumentez" }
+        { "french": "aider", "english": "to help", "word_type": "verb", "root": "aider", "sentences": [
+          { "fr": "J'aide souvent.", "en": "I help often.", "replace": "aide" },
+          { "fr": "Tous aident ensemble.", "en": "Everyone helps together.", "replace": "aident" }
+          { "fr": "Il aide ses amis en difficulté.", "en": "He helps his friends in difficulty.", "replace": "aide" },
+          { "fr": "Elle aide à la cuisine.", "en": "She helps in the kitchen.", "replace": "aide" },
+          { "fr": "Nous aidons les personnes âgées.", "en": "We help the elderly.", "replace": "aidons" },
+          { "fr": "Vous aidez beaucoup.", "en": "You help a lot.", "replace": "aidez" },
+          { "fr": "Ils s'aident mutuellement.", "en": "They help each other.", "replace": "aident" },
         ] },
-        { "french": "pardonner", "english": "to forgive", "word_type": "verb", "sentences": [
-          { "fr": "Je pardonne facilement.", "en": "I forgive easily.", "replace": "pardonne" },
-          { "fr": "Il pardonne à son frère.", "en": "He forgives his brother.", "replace": "pardonne" },
-          { "fr": "Elle pardonne tout.", "en": "She forgives everything.", "replace": "pardonne" },
-          { "fr": "Ils pardonnent ensemble.", "en": "They forgive together.", "replace": "pardonnent" },
-          { "fr": "Nous pardonnons demain.", "en": "We forgive tomorrow.", "replace": "pardonnons" },
-          { "fr": "Vous pardonnez qui?", "en": "Who do you forgive?", "replace": "pardonnez" }
+        { "french": "passé", "english": "passed", "word_type": "verb", "root": "passer", "sentences": [
+          { "fr": "Il est passé.", "en": "He has passed.", "replace": "passé" },
+          { "fr": "Le temps passé.", "en": "The past time.", "replace": "passé" },
+          { "fr": "Elle a passé.", "en": "She has passed.", "replace": "passé" },
+          { "fr": "Passé composé.", "en": "Past tense.", "replace": "passé" },
+          { "fr": "Il passe.", "en": "He passes.", "replace": "passe" }
         ] },
-        { "french": "raisonner", "english": "to reason", "word_type": "verb", "sentences": [
-          { "fr": "Je raisonne calmement.", "en": "I reason calmly.", "replace": "raisonne" },
-          { "fr": "Il raisonne bien.", "en": "He reasons well.", "replace": "raisonne" },
-          { "fr": "Elle raisonne vite.", "en": "She reasons quickly.", "replace": "raisonne" },
-          { "fr": "Ils raisonnent ensemble.", "en": "They reason together.", "replace": "raisonnent" },
-          { "fr": "Nous raisonnons demain.", "en": "We reason tomorrow.", "replace": "raisonnons" },
-          { "fr": "Vous raisonnez sur quoi?", "en": "What do you reason about?", "replace": "raisonnez" }
-        ] },
-        { "french": "réfléchir", "english": "to reflect", "word_type": "verb", "sentences": [
-          { "fr": "Je réfléchis souvent.", "en": "I reflect often.", "replace": "réfléchis" },
-          { "fr": "Il réfléchit avant d'agir.", "en": "He thinks before acting.", "replace": "réfléchit" },
-          { "fr": "Elle réfléchit bien.", "en": "She thinks well.", "replace": "réfléchit" },
-          { "fr": "Ils réfléchissent ensemble.", "en": "They reflect together.", "replace": "réfléchissent" },
-          { "fr": "Nous réfléchissons demain.", "en": "We reflect tomorrow.", "replace": "réfléchissons" },
-          { "fr": "Vous réfléchissez à quoi?", "en": "What are you thinking about?", "replace": "réfléchissez" }
-        ] }
       ]
-    }
-	
-	
-### 1. Beauty and Grooming
-les cheveux hair
-les lèvres lips
-le cou neck
-la silhouette silhouette
-coiffer
-maquiller
-masser
-tricoter
-coudre
-broder
-repasser
-le gant glove
-la mariée married
-photographier
-ça that
-jusqu'au until the
-les ongles nails
-la brosse brush
-le parfum perfume
-le rasoir razor
+   }
+
+For each level, create hte json lesson with 6 examples in the same order as our example here
+and 6 example sentences for the other types. 
+For past tense verbs, keep it in the phrase. 
+For nouns include at least one singular and one plural.
+
+
 
 

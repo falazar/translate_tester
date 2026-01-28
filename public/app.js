@@ -318,19 +318,22 @@ async function showDashboard() {
     window.notifications.addReminderButton();
   }
 
-  // Load saved active level set from localStorage
-  const savedSet = localStorage.getItem('activeLevelSet');
-  if (savedSet && (savedSet === '1' || savedSet === '2' || savedSet === '3')) {
-    activeLevelSet = parseInt(savedSet);
-  }
-
-  // Update tab visual state to match loaded set
-  updateTabState();
-
   try {
     // Get all levels with user progress
     const response = await fetch('/api/levels/user-progress');
     const levelsWithProgress = await response.json();
+    
+    // Calculate set for current level
+    const currentLevelNum = currentUser.current_level || 1;
+    const currentSet = Math.ceil(currentLevelNum / 12);
+    activeLevelSet = currentSet;
+    localStorage.setItem('activeLevelSet', currentSet.toString());
+    
+    // Generate level set tabs
+    await generateLevelSetTabs();
+    
+    // Update tab visual state
+    updateTabState();
     
     // Check for newly unlocked levels
     const previouslyUnlocked = JSON.parse(localStorage.getItem('unlockedLevels') || '[]');

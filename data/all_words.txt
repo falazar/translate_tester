@@ -1,12 +1,15 @@
-# All unique French words extracted from the SQLite database
 accepter
 acheter
+afficher
+aider
 aimer
 ainsi
+ajouter
 aller
 alors
 amusant
 amuser
+améliorer
 analyser
 animer
 anxieux
@@ -16,43 +19,72 @@ applaudir
 apporter
 apprendre
 après
+argumenter
 arriver
+arroser
 arrêter
 assembler
+assis
+atteindre
 attendre
 au
+au-dessus
+aucune
 aujourd'hui
+ausculter
 aussi
+autour
 autre
 aux
+avaient
+avais
+avait
 avant
 avec
+avions
 avoir
+avoir le cafard
 avril
 bavarder
 beau
 beaucoup
 bien
 bien que
+bien sûr
 blanc
 bleu
 boire
 bon
+bricoler
 briller
+broder
+bâiller
+c'est
+c'est-à-dire
+c'était
 calme
 calmer
+camper
 casser
 ce
 cela
 cependant
+certains
 ces
 cette
+chacun
 changer
 chanter
+chaque
+chasser
 chaud
 chercher
 chez
 choisir
+chuchoter
+cinq cents
+cliquer
+coiffer
 collaborer
 collecter
 coller
@@ -60,16 +92,20 @@ commander
 comme
 commencer
 comment
+composter
 comprendre
 compter
 conduire
 confier
 confus
 connaître
+conseiller
 construire
 consulter
 content
 continuer
+contre
+coudre
 couper
 courageux
 courir
@@ -77,68 +113,100 @@ craindre
 croire
 créatif
 créer
+cueillir
 cuisiner
 curieux
 célébrer
 dans
+dans la boue
 danser
 davantage
 de
+de la pluie
 demander
+demandé
+derrière
 des
 descendre
 dessiner
 deux
+devant
 devenir
 devoir
+diagnostiquer
 difficile
+diffuser
 dimanche
 dire
 diriger
+dis
 discuter
 donner
 dont
 dormir
+dresser
 du
 durer
+déballer
 début
 débuter
 décembre
 décider
+déclaré
 décorer
 découper
+dégeler
+déguster
 déjà
 déménager
 déranger
+détester
+développer
 déçu
+dû
 efficace
 elle
 elles
+emballer
+embarquer
 embaucher
 emmener
+empiler
 emporter
 en
+en fait
 encore
 enfin
 ennuyer
+enregistrer
 enrouler
 enseigner
 ensuite
 entendre
 entrer
+escalader
 espérer
 essayer
+est-ce
 et
+eux
 expliquer
 explorer
 facile
 faire
+faire la tête
+falloir
 fatiguer
 fatigué
 fermer
 fier
+filmer
 finir
+fit
 fixer
+fondre
+fournir
+frapper
 froid
 frustré
 fâcher
@@ -146,8 +214,10 @@ féliciter
 février
 gagner
 gentil
+glisser
 goûter
 grand
+grimper
 gros
 guérir
 gérer
@@ -155,11 +225,15 @@ gêner
 habiter
 heureusement
 heureux
+hocha la tête
 honteux
+ici
 il
 illuminer
 ils
+imaginer
 important
+imprimer
 inquiet
 inquiétant
 inquiéter
@@ -169,8 +243,11 @@ intéresser
 inviter
 jamais
 janvier
+jardiner
 jaune
 je
+je ne sais pas
+jeter
 jeudi
 jeune
 jouer
@@ -179,157 +256,305 @@ joyeuse
 joyeux
 juillet
 juin
+juste
+l'addition
+l'affaire
+l'air
+l'alarme
 l'ami
 l'animal
 l'année
 l'après-midi
 l'arbre
+l'arc-en-ciel
+l'argent
 l'argile
+l'arme
 l'armoire
+l'autre côté
+l'averse
 l'avion
 l'aéroport
 l'eau
 l'effort
+l'emballage
+l'encre
+l'entretien
+l'entrée
+l'escalier
+l'espoir
 l'examen
+l'herbe
 l'heure
 l'homme
+l'horaire
 l'hôpital
+l'idée
 l'infirmier
 l'intelligence
+l'invité
+l'objet
 l'océan
 l'oeil
+l'oiseau
+l'ombre
 l'orage
 l'ordinateur
+l'ordonnance
 l'oreille
 l'université
+l'éclaircie
 l'école
 l'éducation
+l'église
 l'élève
+l'épaule
+l'étagère
+l'étiquette
 l'étoile
 l'étudiant
+l'évasion
 la
+la base
 la bibliothèque
 la blessure
 la boisson
 la bouche
+la boue
 la bougie
+la boussole
 la branche
+la brosse
+la bruine
+la béquille
+la caisse
+la canicule
+la carafe d'eau
+la carte
+la carte des vins
 la cascade
+la casserole
 la ceinture
 la chaise
 la chambre
 la chaussure
 la chemise
+la chose
+la clé
+la clôture
 la colle
+la colline
+la colonie
 la conférence
 la connaissance
+la construction
 la consultation
+la correspondance
+la couleur
+la couverture
 la créativité
 la cuisine
+la cuve
 la danse
+la dent
+la direction
 la douleur
-la eau
+la face
+la falaise
 la femme
 la fenêtre
 la feuille
 la ficelle
 la fille
+la fin
 la fièvre
 la fleur
+la fois
+la fontaine
+la formation
 la forêt
+la foule
+la frontière
+la fumée
 la fête
 la gare
+la gelée
 la glace
+la gourde
 la grippe
+la grêle
+la guérison
 la jambe
+la jeune fille
 la journée
+la lampe
+la lampe de poche
+la lettre
 la leçon
+la locomotive
+la lotion
+la lumière
 la lune
 la main
 la maison
+la maladie
+la mariée
 la matière
 la mer
+la miséricorde
+la moitié
 la montagne
 la montre
+la mort
+la moustiquaire
 la musique
 la mère
+la même chose
+la naissance
+la nappe
 la neige
 la note
 la nuit
+la nuit dernière
 la pause
 la peau
+la pelouse
 la perle
+la peur
 la photo
 la pierre
+la pince à épiler
+la piqûre
 la piste de danse
+la place
 la plante
+la planète
 la pluie
+la poignée
+la pomme
 la porte
+la poussière
+la première fois
 la promotion
 la présentation
+la prévision
 la question
+la rafale
+la raison
 la recherche
 la rivière
 la robe
 la roche
+la rosée
 la route
 la rue
 la réponse
+la réservation
 la réunion
 la réussite
+la saison
 la salade
 la salle
+la salle d'attente
 la santé
 la semaine
+la serviette
+la silhouette
+la situation
 la soeur
+la sortie
 la soupe
 la surprise
+la sécheresse
 la table
 la température
+la tempête
+la tension
+la tente
 la tenue
 la terre
 la thèse
 la toile
+la tour
+la toute
 la tâche
 la tête
 la vaccination
 la viande
 la ville
+la voie
 la voiture
+la voix
 la véranda
 laid
 laisser
 laquelle
 laver
 le
+le argument
 le ballon
+le banc
+le besoin
 le billet
+le bouton
 le bras
+le brouillard
+le bruit
 le bureau
 le bus
 le cadeau
 le café
+le caissier
+le camion
 le canapé
+le cerveau
 le champ
 le chapeau
+le charriot
 le chat
+le chemin
+le cheveu
 le chien
 le cinéma
 le coeur
 le collègue
+le compartiment
+le composteur
 le concert
+le conseiller
 le contrat
+le contrôleur
+le corps
+le cou
+le coude
+le couloir
+le coup
 le cours
+le couvert
+le côté
 le dessert
+le diagnostic
 le diplôme
 le dos
+le dossier
+le doute
+le drapeau
+le déjeuner
+le désert
+le fard
+le feu
 le film
+le folklore
+le fort
 le fromage
 le fruit
 le frère
+le gant
 le garçon
 le gens
+le groupe
 le gâteau
+le hamac
 le jeu
 le jour
 le jus
@@ -339,191 +564,312 @@ le livre
 le loisir
 le légume
 le manteau
+le mari
 le matin
 le menu
+le menu du jour
 le meuble
 le miroir
+le miroir de poche
+le module
 le mois
 le moment
+le monde
 le motif
 le mur
 le médecin
 le nez
+le nom
 le nombre
 le nuage
 le pain
+le panier
+le pansement
 le pantalon
 le papier
+le papillon
 le parc
+le parfum
 le patient
 le patron
 le pays
 le pied
 le pinceau
+le pistolet
+le plafond
 le plat
+le plat principal
+le plateau
 le poisson
+le pourboire
+le problème
 le professeur
 le projet
 le père
+le quai
+le rasoir
+le rayon
+le regard
 le rendez-vous
 le repas
 le restaurant
+le retard
+le reçu
 le rhume
 le riz
+le rocher
 le ruban
+le réchaud
 le sable
 le sac
+le sac de couchage
 le salaire
 le salon
 le sang
+le sentier
+le serveur
+le signal
+le signe
 le soir
 le soleil
+le sommelier
+le sourcil
 le sport
 le stage
 le stylo
+le stéthoscope
+le symptôme
 le temps
+le terminus
 le thé
+le tiroir
 le tissu
 le toast
 le toit
+le tracteur
 le train
 le travail
+le tunnel
 le téléphone
+le vaccin
 le vent
 le ventre
 le vin
+le visage
 le voyage
 le vélo
 le vêtement
+le wagon
 les
+les années
+les ans
+les centaines
+les cheveux
+les choses
+les colons
+les cris
+les enfants
+les flammes
+les gardes
+les genoux
+les histoires
+les intentions
+les lèvres
+les machines
+les menottes
 les médicaments
+les ongles
+les phares
 les pâtes
 les études
 leur
+leurs
+leva
+leva les mains
 licencier
 lieu
 lire
 louer
 lui
 lundi
-l’entretien
-l’invité(e)
+légèrement
 ma
 mai
 maintenant
 mais
+mal
 malade
 malheureusement
 manger
+maquiller
 marcher
 mardi
 mars
+masser
 mauvais
 me
 mercredi
 mettre
+mijoter
+mme
 modeler
 moi
 moins
 mon
 monter
 montrer
+mourir
 méchant
+mélanger
 même
 nager
 ne
 neiger
 nerveux
 nettoyer
+ni
 noir
+non
+nos
+noter
 nous
 nouveau
 novembre
+nus
 négocier
+observer
 octobre
 offrir
 on
 organiser
+ou
 oublier
+oui
 ouvrir
 où
 par
+par exemple
+paraître
 parce que
+pardonner
 paresseux
 parfois
 parler
+parmi
 partager
 participer
 partir
+pas
 passer
+passé
 patient
+patiner
 pauvre
 payer
 peindre
+pendant
 penser
 perdre
+peser
 petit
 peu
+peut-être
+pile ou face
 planifier
 pleurer
 pleuvoir
 plier
+plonger
 plus
+plutôt
+pointer
 porter
+posséder
 pour
 pourquoi
 pouvoir
 première
 prendre
 prendre soin
+prescrire
 presque
+produire
 profiter
 promettre
 promouvoir
+protéger
+près
 préférer
 préparer
 présenter
 puis
 puisque
+pêcher
 qu
+qu'elle
+qu'il
+qu'ils
+qu'on
 quand
 que
 quelqu'un
 quelque
 quelque chose
+quelques
 qui
+quinze
 quoi
+rafraîchir
+raisonner
+ramasser
 ramener
+randonner
 ranger
 rappeler
 recevoir
+recommander
 refuser
 regarder
+regardé
+remplacer
 rencontrer
+rendre
 rentrer
+repasser
 reposer
 respirer
 ressembler
 rester
+revenir
 riche
 rien
 rire
 rouge
+ruisseler
+récolter
 récupérer
 rédiger
+réfléchir
 réparer
 répondre
 réserver
+résoudre
 réussir
 réviser
 s'amuser
 s'asseoir
+s'est
+s'il
+s'il vous plaît
+s'était
 sa
 samedi
+sans
 satisfait
 sauter
 savoir
 savourer
+scanner
 sculpter
 se
 se coucher
@@ -531,42 +877,70 @@ se dépêcher
 se lever
 se promener
 se souvenir
+se tourna vers
+secoua
+secoua la tête
+semblait
 sembler
+semer
 sentir
 septembre
+sera
 servir
 ses
+seule
 si
+siffler
+signaler
+skier
 soigner
 sol
 son
 sortir
 soudain
+souffler
+soupirer
 sourire
 sous
+sous la pluie
+soutenir
+stériliser
 suivre
 sur
+surfer
 surprendre
 surpris
 surtout
 sérieux
+sûr
 ta
+tailler
 taire
 tandis que
+tant
+tard
 te
 tellement
 tenir
 terminer
+tes
 timide
 toi
 tomber
 ton
 toucher
 toujours
+tourna
+tous
 tout
+tout cela
+tout le monde
+traduire
 traiter
 travailler
+travers
 tresser
+tricoter
 trinquer
 triste
 trois
@@ -576,22 +950,1887 @@ très
 tu
 un
 une
+utiliser
+valider
+valoir
+varier
 vendre
 vendredi
 venir
 vernir
 vers
 vert
+viable
 vieux
 visiter
+vivre
 voir
+vos
+votre
 vouloir
 vous
 voyager
 vraiment
+vu
+vérifier
 y
+zapper
+à bientôt
+à côté
+à propos
 écouter
 écrire
 énervé
+étais
+était
+éternuer
+étions
 étudier
+été
+éviter
 être
+chat
+chien
+maison
+livre
+table
+chaise
+chaises
+pain
+eau
+porte
+lit
+mange
+mangent
+mangeons
+mangez
+bois
+boit
+boivent
+buvons
+buvez
+dors
+dort
+dorment
+dormons
+dormez
+parle
+parlent
+parlons
+parlez
+écoute
+écoutent
+écoutons
+écoutez
+regarde
+regardent
+regardons
+regardez
+aime
+aiment
+aimons
+aimez
+ai
+a
+ont
+avons
+avez
+suis
+est
+sont
+sommes
+êtes
+vais
+va
+vont
+allons
+allez
+mère
+père
+frère
+soeur
+ami
+ville
+pays
+rue
+parc
+école
+habite
+habitent
+habitons
+habitez
+visite
+visitent
+visitons
+visitez
+rencontre
+rencontrent
+rencontrons
+rencontrez
+connais
+connaît
+connaissent
+connaissons
+connaissez
+appelle
+appellent
+appelons
+appelez
+marche
+marchent
+marchons
+marchez
+cours
+court
+courent
+courons
+courez
+viens
+vient
+viennent
+venons
+venez
+pars
+part
+partent
+partons
+partez
+reste
+restent
+restons
+restez
+Je
+Tu
+Il
+Elle
+Nous
+Vous
+Ils
+Elles
+Mon
+Ma
+Ton
+Ta
+Son
+Sa
+Ce
+Cette
+Ces
+Un
+Une
+Des
+Le
+La
+fromage
+fruit
+fruits
+légume
+légumes
+viande
+poisson
+vin
+café
+thé
+repas
+cuisine
+cuisinent
+cuisinons
+cuisinez
+prépare
+préparent
+préparons
+préparez
+goûte
+goûtent
+goûtons
+goûtez
+commande
+commandent
+commandons
+commandez
+sers
+sert
+servent
+servons
+servez
+achète
+achètent
+achetons
+achetez
+vends
+vend
+vendent
+vendons
+vendez
+paie
+paient
+payons
+payez
+choisis
+choisit
+choisissent
+choisissons
+choisissez
+préfère
+préfèrent
+préférons
+préférez
+jour
+nuit
+semaine
+mois
+année
+temps
+soleil
+pluie
+vent
+neige
+attends
+attend
+attendent
+attendons
+attendez
+commence
+commencent
+commençons
+commencez
+finis
+finit
+finissent
+finissons
+finissez
+dure
+durent
+durons
+durez
+change
+changent
+changeons
+changez
+pleut
+brille
+brillent
+brillons
+brillez
+fais
+fait
+font
+faisons
+faites
+passe
+passent
+passons
+passez
+tête
+bras
+main
+mains
+jambes
+jambe
+pieds
+pied
+oeil
+yeux
+oreille
+oreilles
+nez
+bouche
+coeur
+sens
+sent
+sentent
+sentons
+sentez
+vois
+voit
+voient
+voyons
+voyez
+entends
+entend
+entendent
+entendons
+entendez
+touche
+touchent
+touchons
+touchez
+respire
+respirent
+respirons
+respirez
+soigne
+soignent
+soignons
+soignez
+vêtement
+vêtements
+chemise
+chemises
+pantalon
+pantalons
+robe
+robes
+chaussure
+chaussures
+chapeau
+chapeaux
+manteau
+manteaux
+ceinture
+ceintures
+sac
+sacs
+montre
+montres
+bleue
+verte
+noire
+blanche
+portent
+portons
+portez
+essaie
+essaient
+essayons
+essayez
+lave
+lavent
+lavons
+lavez
+plie
+plient
+plions
+pliez
+chambre
+salon
+salle
+mur
+murs
+fenêtre
+fenêtres
+toit
+meuble
+meubles
+canapé
+armoire
+miroir
+ouvre
+ouvrent
+ouvrons
+ouvrez
+ferme
+ferment
+fermons
+fermez
+range
+rangent
+rangeons
+rangez
+décore
+décorent
+décorons
+décorez
+construis
+construit
+construisent
+construisons
+construisez
+répare
+réparent
+réparons
+réparez
+peins
+peint
+peignent
+peignons
+peignez
+loue
+louent
+louons
+louez
+déménage
+déménagent
+déménageons
+déménagez
+installe
+installent
+installons
+installez
+nombre
+nombres
+matin
+après-midi
+soir
+fleur
+fleurs
+arbre
+animal
+heure
+téléphone
+dit
+disent
+disons
+dites
+dois
+doit
+doivent
+devons
+devez
+veux
+veut
+veulent
+voulons
+voulez
+peux
+peut
+peuvent
+pouvons
+pouvez
+sais
+sait
+savent
+savons
+savez
+tiens
+tient
+tiennent
+tenons
+tenez
+crois
+croit
+croient
+croyons
+croyez
+semble
+semblent
+semblons
+semblez
+demande
+demandent
+demandons
+demandez
+pense
+pensent
+pensons
+pensez
+voiture
+train
+avion
+bus
+vélo
+route
+gare
+aéroport
+billet
+billets
+voyage
+voyagent
+voyageons
+voyagez
+conduis
+conduit
+conduisent
+conduisons
+conduisez
+prends
+prend
+prennent
+prenons
+prenez
+monte
+montent
+montons
+montez
+descends
+descend
+descendent
+descendons
+descendez
+arrive
+arrivent
+arrivons
+arrivez
+explore
+explorent
+explorons
+explorez
+réserve
+réservent
+réservons
+réservez
+cherche
+cherchent
+cherchons
+cherchez
+trouve
+trouvent
+trouvons
+trouvez
+travail
+bureau
+étudiant
+étudiants
+professeur
+leçon
+examen
+stylo
+stylos
+papier
+ordinateur
+projet
+travaille
+travaillent
+travaillons
+travaillez
+étudie
+étudient
+étudions
+étudiez
+apprends
+apprend
+apprennent
+apprenons
+apprenez
+enseigne
+enseignent
+enseignons
+enseignez
+écris
+écrit
+écrivent
+écrivons
+écrivez
+lis
+lisent
+lisons
+lisez
+réussis
+réussit
+réussissent
+réussissons
+réussissez
+organise
+organisent
+organisons
+organisez
+crée
+créent
+créons
+créez
+loisir
+loisirs
+sport
+musique
+film
+jeu
+danse
+dansons
+photo
+photos
+concert
+cinéma
+fête
+fêtes
+joue
+jouent
+jouons
+jouez
+dansent
+dansez
+chante
+chantent
+chantons
+chantez
+dessine
+dessinent
+dessinons
+dessinez
+nage
+nagent
+nageons
+nagez
+saute
+sautent
+sautons
+sautez
+ris
+rit
+rient
+rions
+riez
+m'amuse
+s'amuse
+s'amusent
+nous amusons
+vous amusez
+profite
+profitent
+profitons
+profitez
+Lundi
+Mardi
+Mercredi
+Jeudi
+Vendredi
+Samedi
+Dimanche
+Janvier
+Février
+Mars
+Avril
+Mai
+Juin
+Juillet
+Août
+Septembre
+Octobre
+Décembre
+Aujourd'hui
+termine
+terminent
+terminons
+terminez
+débute
+débutent
+débutons
+débutez
+dos
+ventre
+peau
+sang
+collecte
+collectent
+collectons
+collectez
+grande
+grands
+petite
+petites
+bonne
+Bon
+mauvaise
+mauvaises
+jeunes
+vieille
+vieilles
+heureuse
+pauvres
+intelligente
+nouvelle
+nouveaux
+froide
+froides
+chaude
+belle
+beaux
+laide
+laides
+grosse
+importante
+souris
+sourit
+sourient
+sourions
+jouis
+jouit
+jouissent
+jouissons
+pleure
+pleurent
+pleurons
+crains
+craint
+craignent
+craignons
+espère
+espèrent
+espérons
+confie
+confient
+confions
+inquiète
+inquiétants
+nerveuse
+déçue
+déçus
+fière
+fiers
+satisfaite
+satisfaits
+frustrée
+frustrés
+frustrant
+confuse
+surprise
+honteuse
+anxieuse
+efficaces
+mer
+cascade
+orage
+océan
+forêt
+rivière
+montagne
+lac
+sable
+pierre
+terre
+nuage
+nuages
+étoile
+étoiles
+lune
+plante
+feuille
+feuilles
+roche
+branche
+champ
+glace
+contente
+contents
+fatiguée
+fatigués
+médecin
+hôpital
+santé
+malades
+guérit
+fièvre
+rhume
+grippe
+rendez-vous
+consultation
+médicaments
+repose
+reposons
+soin
+douleur
+patiente
+patients
+blessure
+traite
+traitons
+traitent
+infirmier
+infirmière
+infirmiers
+température
+vaccination
+vaccinations
+consulte
+consultons
+consultent
+récupère
+récupérons
+récupèrent
+université
+note
+notes
+explique
+expliquons
+recherche
+recherches
+diplôme
+bibliothèque
+études
+éducation
+comprend
+comprenons
+comprennent
+présente
+présentons
+présentent
+révise
+révisons
+révisent
+discutent
+discutons
+discute
+analyse
+analysons
+analysent
+participe
+participons
+participent
+élève
+élèves
+conférence
+thèse
+matière
+matières
+connaissance
+connaissances
+réussite
+effort
+efforts
+présentation
+intelligence
+créativité
+Comme
+Même
+Moi
+Cela
+Après
+autres
+Autre
+Tout
+Quand
+Jamais
+Répondre
+répond
+Réponds
+Donner
+donne
+Donne
+Mettre
+mets
+Mets
+met
+réponse
+question
+journée
+Quelqu'un
+Pourquoi
+Comment
+Où
+s
+personne
+d
+Puisque
+Puisqu
+Cependant
+Ainsi
+Tandis
+tandis
+parce
+Bien
+Soudain
+femme
+fille
+gens
+rentre
+rentrons
+ressemble
+ressembles
+ressemblent
+reçois
+reçu
+recevons
+reçoit
+recevrez
+Laisse
+laisse
+laissons
+accepte
+acceptons
+Acceptez
+refuse
+refusons
+refusez
+véranda
+Entrez
+entre
+entrons
+sors
+sort
+sortons
+sortez
+tombez
+tombe
+tombent
+lève
+levons
+Levez
+Asseyez
+assoit
+asseyons
+asseyez
+couche
+couchons
+Couche
+promène
+promenons
+promènent
+Promenons
+Dépêche
+dépêche
+dépêchons
+dépêchez
+Continuez
+continue
+continuons
+Arrêtez
+arrête
+arrêtons
+arrêtez
+moment
+Suivez
+suit
+suivons
+devient
+devenons
+deviendrez
+gagne
+gagnons
+gagnent
+Gagnez
+compte
+comptons
+Comptez
+Coupez
+coupe
+coupons
+coupez
+cassez
+casse
+cassons
+Nettoyez
+nettoie
+nettoyons
+Nettoyons
+Décidez
+décide
+décidons
+oublie
+oublions
+oubliez
+souviens
+souvient
+souvenons
+Souvenez
+homme
+garçon
+deviens
+énervée
+énervés
+inquiets
+courageuse
+gentille
+gentils
+méchante
+amusantes
+amusante
+timides
+paresseuse
+curieuse
+curieuses
+inquiètent
+fâche
+calment
+amuse
+amusent
+fatigue
+fatiguent
+ennuie
+ennuient
+surprends
+surprend
+intéresse
+intéressent
+dérange
+gêne
+restaurant
+menu
+plat
+plats
+boisson
+boissons
+dessert
+desserts
+jus
+salade
+soupe
+riz
+pâtes
+perds
+perdu
+perd
+perdons
+perdez
+rappelle
+Rappelez
+Montrez
+montrons
+Montre
+apporte
+Apportez
+apportons
+Apporte
+emporte
+Emportez
+emportons
+emmène
+Emmène
+emmenons
+Emmenez
+ramène
+Ramène
+ramenons
+Ramenez
+offre
+Offrez
+offrons
+Offre
+partage
+Partagez
+partageons
+Partageons
+promets
+Promettez
+promet
+promettons
+Promets
+pleurez
+embauche
+embauchent
+embauchons
+embauchez
+licencie
+licencient
+licencions
+licenciez
+gère
+gèrent
+gérons
+gérez
+négocie
+négocient
+négocions
+négociez
+dirige
+dirigent
+dirigeons
+dirigez
+collabore
+collaborent
+collaborons
+collaborez
+promeus
+promeut
+promeuvent
+promouvons
+promouvez
+rédige
+rédigent
+rédigeons
+rédigez
+planifie
+planifient
+planifions
+planifiez
+patron
+collègue
+collègues
+réunion
+salaire
+contrat
+pause
+tâche
+entretien
+promotion
+stage
+invite
+invitent
+invitons
+invitez
+célèbre
+célèbrent
+célébrons
+célébrez
+trinque
+trinquent
+trinquons
+trinquez
+applaudis
+applaudit
+applaudissent
+applaudissons
+applaudissez
+bavarde
+bavardent
+bavardons
+bavardez
+félicite
+félicitent
+félicitons
+félicitez
+illumine
+illuminent
+illuminons
+illuminez
+anime
+animent
+animons
+animez
+savoure
+savourent
+savourons
+savourez
+cadeau
+cadeaux
+gâteau
+invité
+invités
+invitée
+piste
+ballon
+ballons
+toast
+joyeuses
+surprises
+bougie
+bougies
+tenue
+tenues
+découpe
+découpent
+découpons
+découpez
+colle
+collent
+collons
+collez
+tresse
+tressent
+tressons
+tressez
+modèle
+modèlent
+modelons
+modelez
+sculpte
+sculptent
+sculptons
+sculptez
+assemble
+assemblent
+assemblons
+assemblez
+vernis
+vernit
+vernissent
+vernissons
+vernissez
+enroule
+enroulent
+enroulons
+enroulez
+fixe
+fixent
+fixons
+fixez
+pinceau
+pinceaux
+ficelle
+ficelles
+perle
+perles
+argile
+tissu
+tissus
+ruban
+rubans
+toile
+toiles
+motif
+motifs
+créatifs
+résous
+résout
+résolvent
+résolvons
+résolvez
+traduis
+traduit
+traduisent
+traduisons
+traduisez
+soutiens
+soutient
+soutiennent
+soutenons
+soutenez
+évite
+évitent
+évitons
+évitez
+améliore
+améliorent
+améliorons
+améliorez
+développe
+développent
+développons
+développez
+fournis
+fournit
+fournissent
+fournissons
+fournissez
+atteins
+atteint
+atteignent
+atteignons
+atteignez
+remplace
+remplacent
+remplaçons
+remplacez
+possède
+possèdent
+possédons
+possédez
+argent
+carte
+chemin
+doute
+drapeau
+couleur
+déjeuner
+lettre
+objet
+ombre
+faut
+rends
+rend
+rendons
+rendez
+rendent
+paraît
+paraissent
+parais
+vis
+vit
+vivons
+vivez
+vivent
+reviens
+revient
+revenons
+revenez
+reviennent
+meurt
+meurent
+mourons
+mourez
+meurs
+jette
+jetons
+jetez
+jettent
+vaut
+valent
+valons
+vaux
+produit
+produisent
+produisons
+produis
+produisez
+utilise
+utilisons
+utilisez
+utilisent
+cheveu
+clé
+colline
+dent
+église
+encre
+épaule
+escalier
+espoir
+étagère
+chose
+pomme
+pommes
+regard
+voix
+folklore
+air
+histoires
+fin
+justes
+conseille
+conseillent
+conseillons
+conseillez
+ajoute
+ajoutent
+ajoutons
+ajoutez
+imagine
+imaginent
+imaginons
+imaginez
+protège
+protègent
+protégeons
+protégez
+fort
+monde
+visage
+fois
+argument
+miséricorde
+affaire
+raison
+argumente
+argumentent
+argumentons
+argumentez
+pardonne
+pardonnent
+pardonnons
+pardonnez
+raisonne
+raisonnent
+raisonnons
+raisonnez
+réfléchis
+réfléchit
+réfléchissent
+réfléchissons
+réfléchissez
+lampe
+maladie
+cheveux
+lèvres
+cou
+silhouette
+gant
+gants
+mariée
+ongles
+brosse
+parfum
+rasoir
+coiffe
+coiffons
+coiffez
+coiffent
+maquille
+maquillons
+maquillez
+maquillent
+masse
+massons
+massez
+massent
+tricote
+tricotons
+tricotez
+tricotent
+couds
+coud
+cousons
+cousez
+cousent
+brode
+brodons
+brodez
+brodent
+repasse
+repassons
+repassez
+repassent
+clôture
+coup
+frontière
+place
+jardine
+jardines
+jardinons
+jardinez
+jardinent
+bricole
+bricoles
+bricolons
+bricolez
+bricolent
+skie
+skies
+skions
+skiez
+skient
+patine
+patines
+patinons
+patinez
+patinent
+arrose
+arroses
+arrosons
+arrosez
+arrosent
+taille
+tailles
+taillons
+taillez
+taillent
+récolte
+récoltes
+récoltons
+récoltez
+récoltent
+filme
+filmes
+filmons
+filmez
+filment
+enregistre
+enregistres
+enregistrons
+enregistrez
+enregistrent
+sème
+sèmes
+semons
+semez
+sèment
+banc
+pelouse
+fontaine
+sentier
+papillon
+papillons
+dossier
+gardes
+alarme
+arme
+pistolet
+camion
+tour
+bruit
+phares
+seul
+C'est
+C'était
+déteste
+détestes
+détestons
+détestez
+détestent
+intentions
+évasion
+tunnel
+menottes
+mari
+nom
+surfe
+surfes
+surfons
+surfez
+surfent
+plonge
+plonges
+plongeons
+plongez
+plongent
+escalade
+escalades
+escaladons
+escaladez
+escaladent
+randonne
+randonnes
+randonnons
+randonnez
+randonnent
+campe
+campes
+campons
+campez
+campent
+pêche
+pêches
+pêchons
+pêchez
+pêchent
+chasse
+chasses
+chassons
+chassez
+chassent
+cueille
+cueilles
+cueillons
+cueillez
+cueillent
+diffuse
+diffuses
+diffusons
+diffusez
+diffusent
+feu
+tente
+sac de couchage
+lampe de poche
+boussole
+réchaud
+panier
+caisse
+charriot
+étiquette
+rayon
+emballage
+pèse
+pèses
+pesons
+pesez
+pèsent
+caissier
+déballe
+déballes
+déballons
+déballez
+déballent
+scanne
+scannes
+scannons
+scannez
+scannent
+emballe
+emballes
+emballons
+emballez
+emballent
+vérifie
+vérifies
+vérifions
+vérifiez
+vérifient
+empile
+empiles
+empilons
+empilez
+empilent
+zappe
+zappes
+zappons
+zappez
+zappent
+clique
+cliques
+cliquons
+cliquez
+cliquent
+imprime
+imprimes
+imprimons
+imprimez
+impriment
+soupire
+soupires
+soupirons
+soupirez
+soupirent
+frappe
+frappes
+frappons
+frappez
+frappent
+ramasse
+ramasses
+ramassons
+ramassez
+ramassent
+ordonnance
+symptôme
+symptômes
+diagnostic
+ausculte
+auscultes
+auscultons
+auscultez
+auscultent
+tension
+vaccin
+stéthoscope
+salle d'attente
+guérison
+diagnostique
+diagnostiques
+diagnostiquons
+diagnostiquez
+diagnostiquent
+prescris
+prescrit
+prescrivons
+prescrivez
+prescrivent
+stérilise
+stérilises
+stérilisons
+stérilisez
+stérilisent
+notons
+notez
+notent
+observe
+observes
+observons
+observez
+observent
+chuchote
+chuchotes
+chuchotons
+chuchotez
+chuchotent
+grimpe
+grimpes
+grimpons
+grimpez
+grimpent
+glisse
+glisses
+glissons
+glissez
+glissent
+siffle
+siffles
+sifflons
+sifflez
+sifflent
+quai
+composteur
+wagon
+correspondance
+contrôleur
+horaire
+retard
+locomotive
+terminus
+embarque
+embarques
+embarquons
+embarquez
+embarquent
+composte
+compostes
+compostons
+compostez
+compostent
+signale
+signales
+signalons
+signalez
+signalent
+pointe
+pointes
+pointons
+pointez
+pointent
+valide
+valides
+validons
+validez
+valident
+affiche
+affiches
+affichons
+affichez
+affichent
+bâille
+bâilles
+bâillons
+bâillez
+bâillent
+éternue
+éternues
+éternuons
+éternuez
+éternuent
+poussière
+plafond
+serveur
+menu du jour
+addition
+pourboire
+réservation
+couvert
+carafe d'eau
+entrée
+plat principal
+dresse
+dresses
+dressons
+dressez
+dressent
+mijote
+mijotes
+mijotons
+mijotez
+mijotent
+déguste
+dégustes
+dégustons
+dégustez
+dégustent
+recommande
+recommandes
+recommandons
+recommandez
+recommandent
+mélange
+mélanges
+mélangeons
+mélangez
+mélangent
+poignée
+couloir
+couverture
+tiroir
+boue
+bruine
+canicule
+gelée
+éclaircie
+rafale
+grêle
+saison
+prévision
+dégèle
+dégèles
+dégelons
+dégelez
+dégèlent
+fonds
+fond
+fondons
+fondez
+fondent
+souffle
+souffles
+soufflons
+soufflez
+soufflent
+ruisselle
+ruisselles
+ruisselons
+ruisseliez
+ruissellent
+rafraîchis
+rafraîchit
+rafraîchissons
+rafraîchissez
+rafraîchissent
+varie
+varies
+varions
+variez
+varient
+rocher
+bouton
+pince à épiler
+fard
+lotion
+miroir de poche
+gourde
+hamac
+moustiquaire
+casserole
+piqûre
+pansement
+béquille
+voie
+compartiment
+signal
+serviette
+serviettes
+nappe
+plateau
+carte des vins
+sommelier
+rosée
+tempête
+brouillard
+sécheresse
+averse
+arc-en-ciel
+Nos
+Tes
+ans
+années
+centaines
+moitié
+aviez
+dîmes
+dîtes
+corps
+cerveau
+genoux
+coude
+sourcil
+enfants
+hochèrent la tête
+hochâmes la tête
+hochâtes la tête
+naissance
+nu
+nue
+mort
+secouèrent la tête
+secouâmes la tête
+secouâtes la tête
+levèrent
+levâmes
+levâtes
+secouèrent
+secouâmes
+secouâtes
+semblaient
+semblions
+sembliez
+étiez
+étaient
+base
+colonie
+colons
+construction
+cuve
+cuves
+planète
+foule
+fumée
+flammes
+lumière
+machines
+module
+modules
+tracteur
+tracteurs
+aide
+aidons
+aidez
+aident
+tournèrent
+tournâmes
+tournâtes
+besoin
+choses
+côté
+cris
+direction
+formation
+groupe
+problème
+signe
+situation
+idée
+peur
+toute
+face
+sortie
+jeune fille
+levèrent les mains
+a le cafard
+le cafard
+fait la tête
+oiseau
+herbe
+désert
+falaise
