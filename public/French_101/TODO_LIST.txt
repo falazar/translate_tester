@@ -1,0 +1,198 @@
+FRENCH 101 - COURSE PLANNING TODO LIST
+=====================================
+Target: A2 CEFR Level by end of course
+Total Contact Hours: 80 (16 weeks × 5 days × 1 hour)
+Expected Homework: 1 hour per day
+Methodology: BLENDED (grammar + communication + tasks)
+
+=====================================
+SECTION 1: COURSE STRUCTURE [IN PROGRESS]
+=====================================
+✓ Semester: 16 weeks, 5 days/week, 1 hour per session = 80 hours
+✓ Learning Objective: Reach A2 CEFR level (conversational fluency, near novel-reading)
+✓ Homework: 1 hour daily expected
+✓ Methodology: Blended approach (systematic grammar + communicative practice + tasks)
+
+REMAINING DECISIONS:
+- [ ] Week-by-week calendar with topics (see WEEK_BY_WEEK_PLAN.txt)
+- [x] Review weeks: 1 break week after midterm (Week 9)
+- [x] Extra study time for midterm/final prep weeks
+- [ ] Course calendar finalized (see COURSE_CALENDAR.txt)
+
+NOTES - CEFR Testing:
+Official credited exams for A1/A2 certification:
+- DELF A1 & DELF A2 (Diplôme d'Études en Langue Française) - most recognized globally
+- TCF (Test de Connaissance du Français) - levels indicated on score
+- TEF (Test d'Évaluation de Français) - Canadian preferred
+✓ YES: Align course with DELF A2 exam format
+✓ Sample exams available from France Éducation International
+✓ Goal: Students prepared to pass DELF A2 by end of course (realistic with 80 hours)
+
+=====================================
+SECTION 2: TEXTBOOK SELECTION [DECIDED]
+=====================================
+✓ PRIMARY TEXTBOOK: Chez nous: Branché sur le monde francophone (Pearson, 5th ed 2019)
+✓ SECONDARY/BACKUP: Vis-à-vis (McGraw-Hill, 7th edition)
+✓ Digital Platform: MyLab French (Pearson)
+✓ See TEXTBOOK_ANALYSIS.txt for complete chapter breakdown and coverage plan
+✓ See UNIVERSITY_COMPARISON.txt for adoption details
+
+Purchase Info:
+- Pearson.com/chez-nous
+- ISBN: 978-0135338919
+- Price: $200-240 with MyLab access
+- Rental options available
+
+Rationale: Most modern option (2022), used at Berkeley/Columbia/Penn/Brown/Duke,
+excellent cultural diversity (global Francophone), strong communicative approach
+aligned with A2 goals, engaging for students, robust MyLab platform
+
+TEXTBOOK COVERAGE PLAN:
+- Chapters covered: Preliminary + Chapters 1-9 (Week 1-15)
+- Perfect alignment with A2/DELF requirements
+- Chapters 10-12 saved for French 102
+- See TEXTBOOK_ANALYSIS.txt for:
+  * Complete table of contents
+  * Weekly chapter mapping
+  * DELF A2 alignment analysis
+  * Purchase links and pricing
+  * MyLab platform details
+
+TO COMPLETE:
+- [ ] Obtain instructor desk copy from Pearson
+- [ ] Review instructor's manual for pacing
+- [ ] Map textbook chapters to weekly lesson plans
+- [ ] Determine which exercises to assign vs skip
+- [ ] Plan MyLab homework schedule
+- [ ] Integrate textbook themes with character storylines
+
+=====================================
+SECTION 3: ASSESSMENT STRUCTURE [MOSTLY DECIDED]
+=====================================
+✓ Diagnostic placement test: First day
+✓ Weekly quizzes: Friday end of class, 15 minutes, cumulative, mixed format
+✓ Major exams: 2 only (midterm Week 8, final Week 16)
+✓ Oral assessments: 4 individual assessments (student-to-professor)
+  - Week 4: Introduction/interview (5 min)
+  - Week 8: Midterm oral (8-10 min) 
+  - Week 12: Presentation on chosen topic (5-7 min)
+  - Week 16: Final oral interview - DELF A2 format (10-15 min)
+    ✓ Writing component: Weekly journal entries (100-250 words, part of Writing grade)
+✓ Participation: Homework completion (60-70%) + Class engagement (30-40%)
+
+GRADING BREAKDOWN (FINALIZED):
+- Quizzes: 18%
+- Midterm Exam: 22%
+- Final Exam: 28%
+- Oral Assessments: 12% (4 orals)
+- Writing/Journal: 10%
+- Participation/Homework: 10%
+TOTAL: 100%
+
+PARTICIPATION TRACKING:
+✓ Homework turn-in: Primary component (did they submit?)
+✓ Class engagement: Active speaking, pair work, preparedness
+✓ Method: Weekly checklist + engagement observations
+
+JOURNAL DETAILS:
+✓ Frequency: Weekly (due Mondays)
+✓ Length: 100-150 words (Weeks 1-8), 200-250 words (Weeks 9-16)
+✓ Format: Structured prompts related to week's theme
+✓ Grading: Part of Writing grade (10%), focus on communication over perfection
+
+TO DETAIL:
+- [ ] Create rubrics for each oral assessment
+- [ ] Design journal prompt template for each week
+- [ ] Create participation tracking spreadsheet
+
+=====================================
+SECTION 4: CONVERSATIONAL GOALS [DECIDED]
+=====================================
+✓ Target: More advanced than typical A2
+✓ Students should approach "reading simple novels" level
+✓ Strong emphasis on conversation and comprehension
+
+Expected abilities by Week 16:
+- All A2 conversational topics (see CEFR descriptors)
+- Begin reading adapted literary texts
+- Discuss familiar topics with some detail
+- Write short coherent texts on familiar subjects
+
+TO DEFINE:
+- [ ] Specific conversational topic progression
+- [ ] Reading material difficulty curve
+- [ ] Speaking practice: daily? partner work structure?
+
+=====================================
+SECTION 5: CONTENT DEVELOPMENT
+=====================================
+- [ ] Outline weekly themes and topics
+- [ ] Develop lecture materials
+- [ ] Create lesson plans
+- [ ] Design practice activities and exercises
+- [ ] Build vocabulary lists by topic
+- [ ] Prepare grammar progression sequence
+
+=====================================
+SECTION 6: MATERIALS & RESOURCES
+=====================================
+- [ ] Supplementary reading materials
+- [ ] Audio/video resources
+- [ ] Digital/interactive components
+- [ ] Handouts and worksheets
+- [ ] Cultural content integration (lighter but included)
+- [ ] Authentic materials (articles, videos, songs)
+- [ ] Reference materials (grammar guides, verb conjugation charts)
+
+=====================================
+SECTION 7: CHARACTER CAST & NARRATIVE THEME
+=====================================
+✓ Create recurring characters throughout course materials
+✓ James (the student/learner) - American in Paris, personalized, addressable
+✓ Build ongoing storylines that develop each week
+✓ Setting: Paris
+
+INITIAL CHARACTER ROSTER:
+- James - American student learning French in Paris
+- Sophie - French exchange student, patient but sarcastic conversation partner
+- Marcel - Older café owner, philosophical, speaks slowly
+- Chloé - Tech-savvy millennial, uses modern slang
+- Pierre - James's clumsy French roommate, creates chaos
+- Madame Dubois - Strict neighbor who corrects grammar
+
+TO DEVELOP:
+- [ ] Finalize James's personality and background
+- [ ] Add/refine additional characters as needed
+- [ ] Define character relationships and dynamics
+- [ ] Map recurring Parisian locations (café, apartment, métro, etc.)
+- [ ] Create story arcs for each unit/week
+
+PURPOSE: Make grammar/vocab exercises more engaging with familiar faces
+
+=====================================
+SECTION 8: SUPPLEMENTARY RESOURCES
+=====================================
+✓ Online lectures identified (see ONLINE_LECTURES_RESOURCES.txt)
+✓ DELF A2 exam structure documented (see DELF_A2_CONTENT_ANALYSIS.txt)
+✓ University adoption research complete (see UNIVERSITY_COMPARISON.txt)
+
+PRIMARY VIDEO RESOURCES:
+- Yale "French in Action" episodes (free)
+- Easy French YouTube channel (authentic content)
+- Learn French with Alexa (grammar supplements)
+
+PRACTICE MATERIALS:
+- TV5MONDE exercises
+- RFI Savoirs audio
+- InnerFrench podcast
+- FUN-MOOC modules
+
+TO DEVELOP:
+- [ ] Weekly video assignment schedule
+- [ ] Integration plan for multimedia resources
+- [ ] Student resource guide document
+
+=====================================
+CURRENT DISCUSSION:
+=====================================
+Ready to begin detailed weekly content planning

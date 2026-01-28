@@ -1,0 +1,476 @@
+CHEZ NOUS: BRANCHÉ SUR LE MONDE FRANCOPHONE
+============================================
+Textbook Analysis & Implementation Plan
+5th Edition (2019) - Pearson
+
+Source: Pearson official website and textbook preview
+URL: https://www.pearson.com/en-us/subject-catalog/p/chez-nous-branche-sur-le-monde-francophone/P200000006167
+
+Note: Page numbers are approximate based on 5th edition table of contents.
+Full page ranges will be confirmed upon receiving physical copy.
+
+============================================
+PURCHASE INFORMATION
+============================================
+
+TEXTBOOK:
+Title: Chez nous: Branché sur le monde francophone (5th Edition)
+Publisher: Pearson Education
+ISBN-13: 978-0135338919
+Publication Date: 2019
+Format: Hardcover + MyLab French access
+
+WHERE TO BUY:
+- Pearson official: pearson.com/chez-nous
+- Amazon: amazon.com/dp/0135338913
+- Campus bookstore
+- Rental options available
+
+PRICING (Approximate):
+- New with MyLab: $200-240
+- Rental: $100-150 (semester)
+- Digital only (MyLab): $120-160
+- Used (without code): $80-120 (need to buy MyLab separately)
+
+COMPONENTS:
+1. Student textbook
+2. MyLab French online platform (homework, activities, videos)
+3. Student Activities Manual (workbook/lab manual)
+4. Audio/video resources (included with MyLab)
+
+INSTRUCTOR RESOURCES:
+- Instructor's Resource Manual
+- Test bank
+- PowerPoint slides
+- Sample syllabi and lesson plans
+- Answer keys
+
+============================================
+TABLE OF CONTENTS (CORRECTED FROM ACTUAL TEXTBOOK)
+============================================
+
+CHAPITRE PRÉLIMINAIRE: Présentons-nous!
+Pages: 2-27
+- French alphabet and pronunciation
+- Greetings and polite expressions
+- Numbers 0-100
+- Classroom commands
+- French-speaking world overview
+
+CHAPTER 1: Ma famille et moi
+Pages: 28-61
+Grammar:
+- Subject pronouns and -ER verbs
+- Articles (definite and indefinite)
+- Adjective agreement
+- Negation with ne...pas
+
+Vocabulary:
+- Family members
+- Physical descriptions
+- Personality traits
+- Numbers 100+
+
+Cultural Topics:
+- French families
+- Francophone diversity
+
+CHAPTER 2: Voici mes amis
+Pages: 62-93
+Grammar:
+- Possessive adjectives
+- -IR and -RE verbs
+- Questions with est-ce que
+- Adjectives (position, special forms)
+
+Vocabulary:
+- Friends and relationships
+- Character traits
+- Ages and birthdays
+- Leisure activities
+
+Cultural Topics:
+- Friendship in French culture
+- Youth culture in France
+
+CHAPTER 3: Études et professions
+Pages: 94-127
+Grammar:
+- ALLER, FAIRE, and other irregular verbs
+- Future proche (near future)
+- Contractions with à and de
+- Question words (qui, quand, où, pourquoi, comment)
+
+Vocabulary:
+- School subjects
+- Professions and careers
+- University life
+- Time expressions
+
+Cultural Topics:
+- French education system
+- Francophone universities
+
+CHAPTER 4: Métro, boulot, dodo
+Pages: 128-161
+Grammar:
+- Reflexive verbs
+- Telling time
+- Adverbs
+- Imperative mood
+
+Vocabulary:
+- Daily routines
+- Morning/evening activities
+- Hygiene and grooming
+- Schedules
+
+Cultural Topics:
+- French daily life
+- Work-life balance
+
+CHAPTER 5: Du marché à la table
+Pages: 162-197
+Grammar:
+- Partitive articles (du, de la, des)
+- Quantity expressions
+- -OIR verbs (vouloir, pouvoir, devoir)
+- Imperative with pronouns
+
+Vocabulary:
+- Food and beverages
+- Shopping at the market
+- Meals and dining
+- Quantities and containers
+
+Cultural Topics:
+- French cuisine
+- Markets and shopping habits
+- Francophone food traditions
+
+CHAPTER 6: Nous sommes chez nous
+Pages: 198-231
+Grammar:
+- Passé composé with AVOIR
+- Passé composé with ÊTRE
+- Negative in passé composé
+- Questions in passé composé
+
+Vocabulary:
+- Housing and lodging
+- Rooms and furniture
+- Household chores
+- Moving and settling in
+
+Cultural Topics:
+- French homes and apartments
+- Housing in Francophone countries
+
+CHAPTER 7: Activités par tous les temps
+Pages: 232-265
+Grammar:
+- Imparfait (imperfect tense)
+- Passé composé vs. imparfait
+- Weather expressions
+- Seasons and dates
+
+Vocabulary:
+- Weather and seasons
+- Outdoor activities
+- Sports and recreation
+- Seasonal activities
+
+Cultural Topics:
+- French holidays and celebrations
+- Regional activities
+
+CHAPTER 8: Voyageons!
+Pages: 266-299
+Grammar:
+- Simple future tense
+- Conditional (politeness)
+- Prepositions with places
+- Geographic terms
+
+Vocabulary:
+- Travel and transportation
+- Hotels and accommodations
+- Directions and locations
+- Vacation activities
+
+Cultural Topics:
+- French travel destinations
+- Francophone tourism
+
+CHAPTER 9: Nos relations interpersonnelles
+Pages: 300-335
+Grammar:
+- Direct and indirect object pronouns
+- Verbs like DIRE, LIRE, ÉCRIRE
+- Comparative and superlative
+- Demonstrative adjectives
+
+Vocabulary:
+- Relationships and emotions
+- Love and friendship
+- Communication (phone, email, letter)
+- Celebrations and events
+
+Cultural Topics:
+- French relationships and dating
+- Social interactions
+
+CHAPTER 10: La santé et le bien-être
+Pages: 336-371
+Grammar:
+- Subjunctive mood (introduction)
+- Il faut que + subjunctive
+- Irregular subjunctive forms
+- Body parts and reflexive verbs
+
+Vocabulary:
+- Health and illness
+- Body parts
+- Doctor's office and pharmacy
+- Sports and fitness
+
+Cultural Topics:
+- French healthcare system
+- Wellness and lifestyle
+
+CHAPTER 11: Arts et médias
+Pages: 372-407
+Grammar:
+- Subjunctive (continued)
+- Relative pronouns (qui, que, où, dont)
+- Object pronouns (review and advanced)
+- Past subjunctive
+
+Vocabulary:
+- Arts and culture
+- Cinema and entertainment
+- Media and news
+- Technology and communication
+
+Cultural Topics:
+- French cinema and arts
+- Media landscape in Francophone world
+
+Total Pages: ~407 pages + appendices (Total book: 517 pages)
+
+============================================
+COVERAGE PLAN FOR FRENCH 101
+============================================
+
+OUR 16-WEEK COURSE SHOULD COVER:
+
+DEFINITELY INCLUDE (Core A1-A2 Material):
+✓ Preliminary Chapter (Week 1)
+✓ Chapter 1: Ma famille et moi (Week 1-2)
+✓ Chapter 2: Voici mes amis (Week 2-3)
+✓ Chapter 3: Études et professions (Week 3-4)
+✓ Chapter 4: Métro, boulot, dodo (Week 5)
+✓ Chapter 5: Du marché à la table (Week 6)
+✓ Chapter 6: Nous sommes chez nous (Week 7-10) - PASSÉ COMPOSÉ
+✓ Chapter 7: Les relations personnelles (Week 10-12) - IMPARFAIT
+✓ Chapter 8: Du marché au restaurant (Week 12-13)
+✓ Chapter 9: Voyageons! (Week 13-14) - FUTURE TENSE
+
+STRETCH GOALS (If time permits):
+- Chapter 10: La santé (Week 15) - Selected sections
+
+SAVE FOR FRENCH 102:
+- Chapters 11-12 (Too advanced for A2)
+
+ESTIMATED COVERAGE:
+Chapters Preliminary + 1-9 = Perfect for A2 level
+Chapters 10-12 = Continue in next course
+
+============================================
+ALIGNMENT WITH DELF A2
+============================================
+
+Chez nous chapters align well with DELF A2 requirements:
+
+GRAMMAR COVERAGE:
+✓ Present tense (Chapters 1-3)
+✓ Near future (Chapter 3)
+✓ Reflexive verbs (Chapter 4)
+✓ Passé composé (Chapter 6) ★ CRITICAL
+✓ Imparfait (Chapter 7) ★ CRITICAL
+✓ Future tense (Chapter 9) ★ CRITICAL
+✓ Partitive articles (Chapter 5)
+✓ Object pronouns (Chapters 7-8)
+✓ Comparatives/superlatives (Chapter 8)
+✓ Relative pronouns (Chapter 8)
+
+VOCABULARY THEMES (DELF A2 required):
+✓ Personal identification (Prelim, Ch 1)
+✓ Family and relationships (Ch 1, 7)
+✓ Daily routines (Ch 4)
+✓ Food and dining (Ch 5, 8)
+✓ Housing (Ch 6)
+✓ School/work (Ch 3)
+✓ Leisure activities (Ch 2, 11)
+✓ Travel (Ch 9)
+✓ Shopping (Ch 5)
+✓ Health (Ch 10)
+
+STRONG ALIGNMENT: Chapters 1-9 cover all DELF A2 essentials!
+
+============================================
+WEEKLY CHAPTER MAPPING (PRELIMINARY)
+============================================
+
+Week 1: Prelim + Chapter 1 (first half)
+Week 2: Chapter 1 (second half) + Chapter 2 (first half)
+Week 3: Chapter 2 (second half) + Chapter 3 (first half)
+Week 4: Chapter 3 (second half) + ORAL 1
+Week 5: Chapter 4 (complete)
+Week 6: Chapter 5 (complete)
+Week 7: Chapter 6 (first half - passé composé intro)
+Week 8: MIDTERM (Review Chapters 1-6)
+Week 9: BREAK WEEK (light review)
+Week 10: Chapter 6 (second half - passé composé mastery)
+Week 11: Chapter 7 (first half - imparfait intro)
+Week 12: Chapter 7 (second half) + ORAL 3
+Week 13: Chapter 8 (complete)
+Week 14: Chapter 9 + DELF PRACTICE
+Week 15: Review + Selected Chapter 10 topics
+Week 16: FINAL EXAM
+
+PACING: ~1.5 chapters per week average
+ADJUSTED FOR: Midterm, break, oral assessments
+
+============================================
+MYLAB FRENCH PLATFORM
+============================================
+
+Features:
+- Auto-graded homework exercises
+- Audio recordings for pronunciation
+- Video segments with comprehension questions
+- Cultural modules
+- Gradebook integration
+- Mobile app available
+
+Homework Assignment Strategy:
+- 3-4 exercises per week (20-30 min each)
+- Due before each class
+- Counts toward participation/homework grade
+- Students get immediate feedback
+
+Advantages:
++ Reduces instructor grading burden
++ Students can repeat for mastery
++ Authentic audio/video integrated
++ Tracks student progress
+
+Considerations:
+- Requires access code ($)
+- Students need reliable internet
+- Some students prefer paper workbooks
+
+============================================
+CULTURAL CONTENT INTEGRATION
+============================================
+
+Chez nous Strength: Francophone Diversity
+
+Each chapter includes:
+- "Observons" video segments (authentic interviews)
+- "Écoutons" audio activities (real French speakers)
+- Cultural readings from various Francophone countries
+- Photos and realia from France, Quebec, Africa, Caribbean
+
+Our Integration:
+- Use these to supplement character-based materials
+- James can "visit" different Francophone regions
+- Expose students to accent variety
+- Broaden perspective beyond Parisian French
+
+Week 9 Cultural Week Ideas:
+- Watch chapter cultural videos
+- Explore Francophone music
+- Sample different Francophone cuisines (if possible)
+- Guest speaker from Francophone community?
+
+============================================
+SUPPLEMENTARY MATERIALS NEEDED
+============================================
+
+In addition to Chez nous, we will need:
+1. DELF A2 practice materials
+2. Easy French videos (free)
+3. Learn French with Alexa videos (free)
+4. RFI Savoirs audio (free)
+5. Our custom character-driven exercises
+6. Weekly journal prompts
+7. Quiz templates
+8. Oral assessment rubrics
+
+Chez nous provides foundation, we add:
++ Character storylines (James in Paris)
++ DELF-specific practice
++ Additional authentic materials
++ Personalized vocabulary
+
+============================================
+INSTRUCTOR NOTES
+============================================
+
+Strengths of Chez nous for Our Course:
+✓ Perfect grammar progression for A2
+✓ Communicative activities built-in
+✓ Cultural authenticity
+✓ Modern, engaging content
+✓ Strong digital platform
+✓ Used at top universities (Berkeley, etc.)
+✓ Textbook alone could get students to A2
+
+Our Value-Add:
++ DELF A2 alignment and practice
++ Character-driven narrative (James & friends)
++ Personalized to student (James)
++ Video integration (Alexa, Easy French)
++ Weekly structure optimized for intensive course
+
+Potential Challenges:
+- Fast pacing (9 chapters in 16 weeks)
+- Need to supplement with DELF materials
+- Some exercises may need adaptation
+- Balance textbook with our custom content
+
+Solution:
+- Use textbook for structure and grammar
+- Supplement with our materials for engagement
+- Skip some textbook activities, focus on essentials
+- Prioritize DELF-aligned content
+
+============================================
+TO DO FOR TEXTBOOK INTEGRATION
+============================================
+
+- [ ] Obtain desk copy from Pearson
+- [ ] Review instructor's manual for pacing suggestions
+- [ ] Map each textbook chapter to our weekly plan
+- [ ] Identify which exercises to assign vs. skip
+- [ ] Create supplementary materials to fill gaps
+- [ ] Align textbook vocab with DELF A2 requirements
+- [ ] Plan how to integrate character storylines with chapters
+- [ ] Determine MyLab homework schedule
+- [ ] Create quiz bank that complements textbook
+- [ ] Design journal prompts that connect to chapter themes
+
+============================================
+NOTES
+============================================
+
+Decision: Chez nous is excellent choice for French 101
+- Modern, well-structured, proven effective
+- Chapters 1-9 perfectly align with A2 goals
+- Strong cultural component enriches learning
+- Digital platform robust for homework
+- Used at prestigious universities
+
+Our role: Enhance textbook with DELF prep, characters, and video integration
