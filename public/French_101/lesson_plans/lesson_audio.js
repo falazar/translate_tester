@@ -10,6 +10,7 @@ let selectedFrenchVoice = null;
 let englishSpeed = 0.9;
 let frenchSpeed = 0.9;
 let voicesReady = false;
+let isPaused = false;
 
 // Load saved settings from localStorage
 function loadSettings() {
@@ -134,8 +135,15 @@ function populateVoiceSelectors() {
 function loadVoices() {
     const voices = speechSynthesis.getVoices();
     if (voices.length > 0 && !voicesReady) {
-        populateVoiceSelectors();
-        voicesReady = true;
+        // Make sure the HTML is loaded first
+        const enSelect = document.getElementById('english-voice');
+        if (enSelect) {
+            populateVoiceSelectors();
+            voicesReady = true;
+        } else {
+            // HTML not loaded yet, retry
+            setTimeout(loadVoices, 100);
+        }
     }
 }
 
@@ -175,35 +183,55 @@ function playSection(button, sectionId) {
     const lang = section.getAttribute('data-lang');
     
     // If already playing this section, pause/resume it
-    if (currentButton === button && currentUtterance) {
-        if (speechSynthesis.paused) {
+    if (currentButton === button) {
+        console.log('Same button clicked. State:', {
+            speaking: speechSynthesis.speaking,
+            paused: speechSynthesis.paused,
+            isPaused: isPaused,
+            pending: speechSynthesis.pending
+        });
+        
+        if (isPaused) {
+            // Currently paused - resume it
+            console.log('Resuming speech');
             speechSynthesis.resume();
+            isPaused = false;
             button.textContent = '⏸';
             button.classList.add('playing');
+            return;
         } else if (speechSynthesis.speaking) {
+            // Currently playing - pause it
+            console.log('Pausing speech');
             speechSynthesis.pause();
+            isPaused = true;
             button.textContent = '▶';
             button.classList.remove('playing');
+            return;
         } else {
-            // Speech ended but button still tracked - restart
+            // Speech ended - will restart below
+            console.log('Speech ended, restarting');
+            speechSynthesis.cancel();
             currentButton = null;
             currentUtterance = null;
-            playSection(button, sectionId);
+            isPaused = false;
         }
-        return;
     }
 
-    // Stop any current playback
-    if (currentButton) {
+    // Stop any other current playback
+    if (currentButton && currentButton !== button) {
         speechSynthesis.cancel();
         currentButton.textContent = '▶';
         currentButton.classList.remove('playing');
+        currentButton = null;
+        currentUtterance = null;
+        isPaused = false;
     }
 
     // Update button state immediately
     button.textContent = '⏸';
     button.classList.add('playing');
     currentButton = button;
+    isPaused = false;
     
     // Read title first if it exists, then content
     if (titleElement && lang === 'mixed') {
@@ -308,6 +336,7 @@ function speakMixedContent(contentElement, button) {
             button.classList.remove('playing');
             currentButton = null;
             currentUtterance = null;
+            isPaused = false;
         };
         
         speechSynthesis.speak(utterance);
@@ -344,6 +373,7 @@ function speakSingleLanguage(text, lang, button) {
         button.classList.remove('playing');
         currentButton = null;
         currentUtterance = null;
+        isPaused = false;
     };
 
     utterance.onerror = () => {
@@ -351,6 +381,7 @@ function speakSingleLanguage(text, lang, button) {
         button.classList.remove('playing');
         currentButton = null;
         currentUtterance = null;
+        isPaused = false;
     };
     
     // Keep array size manageable
@@ -377,6 +408,34 @@ window.addEventListener('beforeunload', () => {
 });
 
 // Initialize settings on load
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+    await loadSettingsPanel();
     loadSettings();
 });
+
+// Load settings panel HTML
+async function loadSettingsPanel() {
+    const voiceControls = document.querySelector('.voice-controls');
+    if (!voiceControls) return;
+    
+    try {
+        const response = await fetch('settings_panel.html');
+        const html = await response.text();
+        voiceControls.innerHTML = html;
+    } catch (error) {
+        console.error('Failed to load settings panel:', error);
+    }
+}
+
+function toggleSettings() {
+    console.log('Toggling audio settings panel');
+    const panel = document.getElementById('audio-settings-panel');
+    console.log('Panel element:', panel);
+
+    const button = document.getElementById('settings-toggle-btn');
+    if (panel && button) {
+        panel.classList.toggle('open');
+        button.textContent = panel.classList.contains('open') ? '▲ Hide Audio Settings' : '▼ Show Audio Settings';
+        panel.style.display = panel.classList.contains('open') ? 'block' : 'none';
+    }
+}

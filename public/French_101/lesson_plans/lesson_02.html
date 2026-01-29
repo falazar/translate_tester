@@ -14,37 +14,7 @@
             <p>Tu vs. Vous & French Alphabet</p>
             <p style="font-size: 0.9em; margin-top: 10px;">Textbook Pages 4-9</p>
             <div class="voice-controls">
-                <button class="settings-toggle" onclick="document.querySelector('.settings-panel').classList.toggle('open'); this.textContent = this.textContent.includes('Show') ? '▲ Hide Audio Settings' : '▼ Show Audio Settings'">▼ Show Audio Settings</button>
-                
-                <div class="settings-panel">
-                    <div class="voice-control-row">
-                        <div class="voice-control-group">
-                            <label for="english-voice">🇺🇸 English Voice:</label>
-                            <select id="english-voice"></select>
-                        </div>
-                        <div class="voice-control-group">
-                            <label for="english-speed">Speed:</label>
-                            <div class="speed-control">
-                                <input type="range" id="english-speed" min="0.5" max="1.5" step="0.1" value="0.9">
-                                <span class="speed-value" id="english-speed-value">0.9x</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="voice-control-row">
-                        <div class="voice-control-group">
-                            <label for="french-voice">🇫🇷 French Voice:</label>
-                            <select id="french-voice"></select>
-                        </div>
-                        <div class="voice-control-group">
-                            <label for="french-speed">Speed:</label>
-                            <div class="speed-control">
-                                <input type="range" id="french-speed" min="0.5" max="1.5" step="0.1" value="0.9">
-                                <span class="speed-value" id="french-speed-value">0.9x</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Settings panel injected by lesson_audio.js -->
             </div>
         </div>
 
@@ -59,19 +29,20 @@
                     <span class="time-badge">10 minutes</span>
                 </div>
                 <div class="section-content" data-section="warmup" data-lang="mixed">
-                    <div class="content-block">
-                        <h4>Activity: Greetings Practice</h4>
-                        <p>Students practice with a partner:</p>
+                    <div class="activity-box">
+                        <h4>🎯 Activity: Greetings Practice<span class="time-badge">5 min</span></h4>
+                        <p><strong>Instructions:</strong> Everyone, I want you to find a partner and practice greeting each other in French. Use the phrases we just learned:</p>
                         <ul>
-                            <li><span class="french-phrase">Bonjour! Comment ça va?</span></li>
-                            <li><span class="french-phrase">Ça va bien, merci!</span></li>
-                            <li>Move around the room - greet at least 3 different classmates</li>
+                            <li>Start with <span class="french-phrase" lang="fr">Bonjour! Comment ça va?</span></li>
+                            <li>Respond with <span class="french-phrase" lang="fr">Ça va bien, merci!</span></li>
+                            <li>After 1 minute, I'll tell you to switch partners - move around the room and greet at least 3 different classmates</li>
+                            <li>Focus on pronunciation and making eye contact - remember, greetings are about connection!</li>
                         </ul>
                     </div>
 
                     <div class="character-intro">
                         <h4>📖 James's Story Continues:</h4>
-                        <p><span class="french-phrase">«James arrive à Paris aujourd'hui!»</span></p>
+                        <p><span class="french-phrase" lang="fr">James arrive à Paris aujourd'hui!</span></p>
                         <p style="margin-top: 10px;"><em>Translation:</em> James arrives in Paris today!</p>
                         <p style="margin-top: 10px;">Today we'll see how James meets different people and learns when to use tu and vous.</p>
                     </div>
@@ -89,7 +60,20 @@
                 </div>
                 <div class="section-content" data-section="tuvous" data-lang="mixed">
                     <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 4-5 - <span lang="fr">Vie et culture: Tu et vous</span>
+                        <strong>Textbook Reference:</strong> Pages 4-5 - <span class="french-phrase" lang="fr">Vie et culture: Tu et vous</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Teacher Lecture: Understanding Tu and Vous</h4>
+                        <p>Alright everyone, let's talk about one of the most important distinctions you'll make when speaking French - the difference between <span class="french-phrase" lang="fr">tu</span> and <span class="french-phrase" lang="fr">vous</span>. Both of these words mean "you" in English, but in French, they carry very different meanings and using the wrong one can actually be quite awkward or even insulting!</p>
+                        
+                        <p style="margin-top: 10px;">Think of <span class="french-phrase" lang="fr">tu</span> as the informal, friendly "you." You use it with people you're close to - your friends, your family members, children, and even your pets! It signals intimacy, familiarity, and equality. When you use <span class="french-phrase" lang="fr">tu</span> with someone, you're essentially saying, "We're on the same level, we're comfortable with each other."</p>
+                        
+                        <p style="margin-top: 10px;">Now <span class="french-phrase" lang="fr">vous</span> serves two purposes. First, it's the formal "you" - the respectful way to address someone you don't know well, someone older than you, someone in a position of authority like your professor or your boss, or anyone in a professional setting. It creates a certain distance, shows respect, and maintains social boundaries. Second, <span class="french-phrase" lang="fr">vous</span> is always used when addressing more than one person - even if they're all your best friends! So if you're talking to two or more people, it's always <span class="french-phrase" lang="fr">vous</span>, no matter how close you are.</p>
+                        
+                        <p style="margin-top: 10px;">Here's what's interesting about French culture - the French take this distinction very seriously. If you use <span class="french-phrase" lang="fr">tu</span> with someone you should address as <span class="french-phrase" lang="fr">vous</span>, you might come across as disrespectful or presumptuous. But if you use <span class="french-phrase" lang="fr">vous</span> with someone who expects <span class="french-phrase" lang="fr">tu</span>, you might seem cold or distant. There's even a verb for switching from <span class="french-phrase" lang="fr">vous</span> to <span class="french-phrase" lang="fr">tu</span> - <span class="french-phrase" lang="fr">tutoyer</span> - and sometimes people will explicitly suggest it: <span class="french-phrase" lang="fr">"On peut se tutoyer?"</span> meaning "Can we use tu with each other?"</p>
+                        
+                        <p style="margin-top: 10px;">My advice for you as beginners? When in doubt, start with <span class="french-phrase" lang="fr">vous</span>. It's better to be a little too formal than too familiar. Pay attention to how French people address you, and follow their lead. If someone switches to <span class="french-phrase" lang="fr">tu</span> with you, you can safely do the same. And remember - age matters! If someone is significantly older than you, stick with <span class="french-phrase" lang="fr">vous</span> until they tell you otherwise. Let's look at some specific examples now.</p>
                     </div>
 
                     <div class="content-block">
@@ -106,58 +90,58 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Friends</td>
-                                <td>Strangers</td>
-                            </tr>
-                            <tr>
-                                <td>Family members</td>
-                                <td>Older people you don't know well</td>
-                            </tr>
-                            <tr>
-                                <td>Children</td>
-                                <td>Professors, teachers</td>
-                            </tr>
-                            <tr>
-                                <td>Fellow students (usually)</td>
-                                <td>Work colleagues (initially)</td>
-                            </tr>
-                            <tr>
-                                <td>Pets!</td>
-                                <td>Multiple people (even if they're friends)</td>
+                                <td>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li>Friends</li>
+                                        <li>Family members</li>
+                                        <li>Children</li>
+                                        <li>Fellow students (usually)</li>
+                                        <li>Pets!</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li>Strangers</li>
+                                        <li>Older people you don't know well</li>
+                                        <li>Professors, teachers</li>
+                                        <li>Work colleagues (initially)</li>
+                                        <li>Multiple people (even if they're friends)</li>
+                                    </ul>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
 
                     <div class="cultural-note">
-                        <h4>🌍 Cultural Note: Handshakes & La Bise</h4>
+                        <h4>🌍 Cultural Note: Handshakes & <span class="french-phrase" lang="fr">La Bise</span></h4>
                         <p><strong>Handshake:</strong> Used in formal situations, business settings, or when meeting someone for the first time.</p>
-                        <p style="margin-top: 8px;"><strong>La bise:</strong> Cheek kisses (usually 2, but varies by region!) used among friends, family, and social acquaintances. You lean in and make a kissing sound near each cheek.</p>
+                        <p style="margin-top: 8px;"><strong><span class="french-phrase" lang="fr">La bise</span>:</strong> Cheek kisses (usually 2, but varies by region!) used among friends, family, and social acquaintances. You lean in and make a kissing sound near each cheek.</p>
                         <p style="margin-top: 8px;"><strong>When in doubt?</strong> Wait to see what the other person does, or stick with a handshake!</p>
                     </div>
 
                     <div class="activity-box">
-                        <h4>🎯 Activity - Role Play!</h4>
+                        <h4>🎯 Activity - Role Play!<span class="time-badge">8 min</span></h4>
                         <p><strong>Scenario 1:</strong> Student pairs practice greeting</p>
                         <ul style="margin-top: 10px;">
-                            <li>Partner A = Professor → Use <span lang="fr">vous</span></li>
+                            <li>Partner A = Professor → Use <span class="french-phrase" lang="fr">vous</span></li>
                             <li>Partner B = Student greeting professor</li>
-                            <li><span lang="fr">Bonjour, Madame/Monsieur. Comment allez-vous?</span></li>
+                            <li><span class="french-phrase" lang="fr">Bonjour, Madame/Monsieur. Comment allez-vous?</span></li>
                         </ul>
                         <p style="margin-top: 15px;"><strong>Scenario 2:</strong> Switch roles</p>
                         <ul style="margin-top: 10px;">
-                            <li>Both are classmates → Use <span lang="fr">tu</span></li>
-                            <li><span lang="fr">Salut! Comment ça va?</span></li>
+                            <li>Both are classmates → Use <span class="french-phrase" lang="fr">tu</span></li>
+                            <li><span class="french-phrase" lang="fr">Salut! Comment ça va?</span></li>
                         </ul>
                     </div>
 
                     <div class="character-intro">
                         <h4>📖 James's Encounters:</h4>
                         <p><strong>Meeting Pierre (roommate):</strong><br>
-                        <span class="french-phrase">«Salut! Je m'appelle James. Et toi?»</span><br>
+                        <span class="french-phrase" lang="fr">Salut! Je m'appelle James. Et toi?</span><br>
                         <em>Uses TU because Pierre is same age, will be friends</em></p>
                         
                         <p style="margin-top: 15px;"><strong>Meeting Madame Dubois (landlady):</strong><br>
-                        <span class="french-phrase">«Bonjour, Madame. Je m'appelle James.»</span><br>
+                        <span class="french-phrase" lang="fr">Bonjour, Madame. Je m'appelle James.</span><br>
                         <em>Uses VOUS because she's older, formal relationship</em></p>
                     </div>
                 </div>
@@ -174,40 +158,53 @@
                 </div>
                 <div class="section-content" data-section="responses" data-lang="mixed">
                     <div class="info-box">
-                        <strong>Textbook Reference:</strong> Page 4 - <span lang="fr">Pour saluer et répondre</span>
+                        <strong>Textbook Reference:</strong> Page 4 - <span class="french-phrase" lang="fr">Pour saluer et répondre</span>
                     </div>
 
                     <div class="content-block">
-                        <h4>How to Respond to <span lang="fr">Comment ça va?</span></h4>
+                        <h4>Teacher Lecture: The Art of Responding</h4>
+                        <p>Now that we've covered greetings, let's talk about how to actually respond when someone asks you <span class="french-phrase" lang="fr">Comment ça va?</span> or <span class="french-phrase" lang="fr">Comment allez-vous?</span> In English, we tend to have a pretty limited range of responses - "Good," "Fine," "Okay." But French offers you a much richer palette of expressions to describe how you're really feeling.</p>
+                        
+                        <p style="margin-top: 10px;">Let me explain the spectrum from best to worst. At the top, we have <span class="french-phrase" lang="fr">Très bien, merci</span> - "Very well, thanks." This is enthusiastic, positive, genuine happiness. Then <span class="french-phrase" lang="fr">Bien, merci</span> - just "Good, thanks" - this is your standard, everyday response when things are normal. Now here's where it gets interesting: <span class="french-phrase" lang="fr">Ça va</span> by itself can mean "I'm okay" or "It's going" - it's neutral, not particularly good or bad, just existing.</p>
+                        
+                        <p style="margin-top: 10px;">Moving down the scale, <span class="french-phrase" lang="fr">Pas mal</span> literally means "Not bad," and it's often used when things are actually pretty good! It's a very French expression - understated, avoiding too much enthusiasm. Then we have <span class="french-phrase" lang="fr">Comme ci, comme ça</span> - "So-so" - you're gesturing with your hand going back and forth, indicating things could be better, could be worse. And at the bottom, <span class="french-phrase" lang="fr">Ça ne va pas</span> - "Things aren't going well" or "I'm not okay." This is serious - you'd only say this if something is genuinely wrong.</p>
+                        
+                        <p style="margin-top: 10px">Here's a crucial cultural point: In French culture, it's completely acceptable - even expected - to give an honest answer! Unlike in English where "How are you?" is often just a greeting and "Fine" is the automatic response, French people actually want to know how you are. If you say <span class="french-phrase" lang="fr">Ça ne va pas</span>, they'll likely ask what's wrong and show genuine concern. This is part of French conversational culture - relationships matter, and people take the time to connect.</p>
+                        
+                        <p style="margin-top: 10px;">And here's the polite part - after you respond, you should always ask back! That's where <span class="french-phrase" lang="fr">Et toi?</span> (informal) or <span class="french-phrase" lang="fr">Et vous?</span> (formal) comes in. It means "And you?" This back-and-forth is the basic rhythm of French conversation. You'll say something like <span class="french-phrase" lang="fr">Ça va bien, merci. Et toi?</span> The conversation flows naturally this way, and it shows you care about the other person too. Let's practice these now with real emotion and expression!</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>How to Respond to <span class="french-phrase" lang="fr">Comment ça va?</span></h4>
                         <ul>
-                            <li><span lang="fr">Très bien, merci</span> - Very well, thanks</li>
-                            <li><span lang="fr">Bien, merci</span> - Good, thanks</li>
-                            <li><span lang="fr">Ça va</span> - I'm okay / It's going</li>
-                            <li><span lang="fr">Pas mal</span> - Not bad</li>
-                            <li><span lang="fr">Comme ci, comme ça</span> - So-so</li>
-                            <li><span lang="fr">Ça ne va pas</span> - Not well / Things aren't going well</li>
+                            <li><span class="french-phrase" lang="fr">Très bien, merci</span> - Very well, thanks</li>
+                            <li><span class="french-phrase" lang="fr">Bien, merci</span> - Good, thanks</li>
+                            <li><span class="french-phrase" lang="fr">Ça va</span> - I'm okay / It's going</li>
+                            <li><span class="french-phrase" lang="fr">Pas mal</span> - Not bad</li>
+                            <li><span class="french-phrase" lang="fr">Comme ci, comme ça</span> - So-so</li>
+                            <li><span class="french-phrase" lang="fr">Ça ne va pas</span> - Not well / Things aren't going well</li>
                         </ul>
                     </div>
 
                     <div class="content-block">
-                        <h4>Adding <span lang="fr">Et toi?</span> / <span lang="fr">Et vous?</span></h4>
+                        <h4>Adding <span class="french-phrase" lang="fr">Et toi?</span> / <span class="french-phrase" lang="fr">Et vous?</span></h4>
                         <p>After responding, it's polite to ask back:</p>
                         <ul>
-                            <li><span lang="fr">Ça va bien, merci. Et toi?</span> (informal)</li>
-                            <li><span lang="fr">Très bien, merci. Et vous?</span> (formal)</li>
+                            <li><span class="french-phrase" lang="fr">Ça va bien, merci. Et toi?</span> (informal)</li>
+                            <li><span class="french-phrase" lang="fr">Très bien, merci. Et vous?</span> (formal)</li>
                         </ul>
                     </div>
 
                     <div class="activity-box">
-                        <h4>🎯 Chain Drill Activity!</h4>
+                        <h4>🎯 Chain Drill Activity!<span class="time-badge">7 min</span></h4>
                         <ol>
                             <li>Students stand in a circle</li>
-                            <li>First student asks neighbor: <span lang="fr">Comment ça va?</span></li>
-                            <li>Neighbor responds with any response + <span lang="fr">Et toi?</span></li>
+                            <li>First student asks neighbor: <span class="french-phrase" lang="fr">Comment ça va?</span></li>
+                            <li>Neighbor responds with any response + <span class="french-phrase" lang="fr">Et toi?</span></li>
                             <li>Continue around the circle</li>
                             <li>Encourage different responses and emotional tone!</li>
                         </ol>
-                        <p style="margin-top: 15px;"><strong>Challenge:</strong> Add emotion! Say <span lang="fr">Très bien!</span> with enthusiasm, or <span lang="fr">Pas mal</span> with a shrug.</p>
+                        <p style="margin-top: 15px;"><strong>Challenge:</strong> Add emotion! Say <span class="french-phrase" lang="fr">Très bien!</span> with enthusiasm, or <span class="french-phrase" lang="fr">Pas mal</span> with a shrug.</p>
                     </div>
                 </div>
             </div>
@@ -223,51 +220,88 @@
                 </div>
                 <div class="section-content" data-section="alphabet" data-lang="mixed">
                     <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 8-9 - <span lang="fr">Sons et lettres: L'alphabet</span>
+                        <strong>Textbook Reference:</strong> Pages 8-9 - <span class="french-phrase" lang="fr">Sons et lettres: L'alphabet</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Teacher Lecture: Mastering French Pronunciation</h4>
+                        <p>Alright class, let's dive into the French alphabet! Now, you might be thinking, "It's just 26 letters, same as English, how hard can it be?" Well, here's the thing - while the letters look the same, they sound quite different! And mastering these sounds is absolutely crucial because French spelling and pronunciation have a very specific relationship.</p>
+                        
+                        <p style="margin-top: 10px;">First, let's talk about why this matters. In French, when you're on the phone, filling out forms, spelling your name at a hotel, or giving your email address, you need to be able to spell things out loud clearly. And unlike English where you might say "M as in Mike" or "B as in Boy," French speakers typically just say the letter names very clearly. So you need to know these sounds inside and out.</p>
+                        
+                        <p style="margin-top: 10px;">Let me point out the letters that trip up English speakers the most. First, the letter <span class="french-phrase" lang="fr">E</span> - in English we say "ee," but in French it's more like "euh," a very neutral vowel sound made in the middle of your mouth. The letter <span class="french-phrase" lang="fr">G</span> is "zhay" - notice that soft "zh" sound at the beginning, like the "s" in "pleasure." The letter <span class="french-phrase" lang="fr">H</span> is "ahsh" - and here's a fun fact: H is almost always silent in French words! You don't pronounce it when you're saying French words, but when spelling, you clearly say "ahsh."</p>
+                        
+                        <p style="margin-top: 10px;">Now the famous French <span class="french-phrase" lang="fr">R</span> - it sounds like "air" but with that distinctive French R sound in the middle, that guttural sound from the back of your throat. It's not rolled like Spanish; it's more like you're gently clearing your throat. Don't worry if it feels weird at first - it takes practice! The letter <span class="french-phrase" lang="fr">W</span> is fascinating - it's called "doo-bluh-vay," which literally means "double V." Why? Because when you look at the letter W, it's literally two V's! The French saw it that way, and the name stuck.</p>
+                        
+                        <p style="margin-top: 10px;">And finally <span class="french-phrase" lang="fr">Y</span> - we call it "ee-grek" meaning "Greek i," because it was borrowed from Greek and sounds like the letter <span class="french-phrase" lang="fr">I</span>. Speaking of which, <span class="french-phrase" lang="fr">I</span> in French sounds like our English "ee," while <span class="french-phrase" lang="fr">U</span> makes that very French "ew" sound where you round your lips tightly - it's the sound that makes French sound so distinctly French!</p>
+                        
+                        <p style="margin-top: 10px;">We also need to talk about accent marks - those little symbols above letters that completely change how words are pronounced and what they mean. French has five accent marks: the acute accent on <span class="french-phrase" lang="fr">é</span>, the grave accent on <span class="french-phrase" lang="fr">è</span>, the circumflex on <span class="french-phrase" lang="fr">ê</span>, the dieresis or <span class="french-phrase" lang="fr">tréma</span> on <span class="french-phrase" lang="fr">ë</span>, and the cedilla or <span class="french-phrase" lang="fr">cédille</span> under <span class="french-phrase" lang="fr">ç</span>. These aren't optional - they're part of correct spelling and they change pronunciation. We'll learn all of these today! Let's start by singing the alphabet together.</p>
                     </div>
 
                     <div class="pronunciation-box">
                         <h4>🎵 The French Alphabet Song</h4>
-                        <p>A B C D E F G - H I J K L M N O P - Q R S T U V W - X Y Z</p>
+                        <p><span class="french-phrase" lang="fr">A B C D E F G - H I J K L M N O P - Q R S T U V W - X Y Z</span></p>
                         <p style="margin-top: 10px;">Sing along with the class! Use the melody of the English alphabet song, but with French pronunciation.</p>
                     </div>
 
                     <div class="content-block">
-                        <h4>Letters That Sound Different:</h4>
-                        <ul>
-                            <li><strong>E:</strong> sounds like "euh" not "ee"</li>
-                            <li><strong>G:</strong> sounds like "zhay" not "jee"</li>
-                            <li><strong>H:</strong> sounds like "ahsh" (silent in words!)</li>
-                            <li><strong>I:</strong> sounds like "ee" not "eye"</li>
-                            <li><strong>J:</strong> sounds like "zhee"</li>
-                            <li><strong>R:</strong> the famous French R! (back of throat)</li>
-                            <li><strong>W:</strong> sounds like "doo-bluh-vay" (double V)</li>
-                            <li><strong>Y:</strong> sounds like "ee-grek" (Greek i)</li>
-                        </ul>
+                        <h4>Complete French Alphabet Pronunciation:</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <ul>
+                                <li><strong><span class="french-phrase" lang="fr">A</span>:</strong> sounds like "ah"</li>
+                                <li><strong><span class="french-phrase" lang="fr">B</span>:</strong> sounds like "bay"</li>
+                                <li><strong><span class="french-phrase" lang="fr">C</span>:</strong> sounds like "say"</li>
+                                <li><strong><span class="french-phrase" lang="fr">D</span>:</strong> sounds like "day"</li>
+                                <li><strong><span class="french-phrase" lang="fr">E</span>:</strong> sounds like "euh" (not "ee")</li>
+                                <li><strong><span class="french-phrase" lang="fr">F</span>:</strong> sounds like "eff"</li>
+                                <li><strong><span class="french-phrase" lang="fr">G</span>:</strong> sounds like "zhay" (not "jee")</li>
+                                <li><strong><span class="french-phrase" lang="fr">H</span>:</strong> sounds like "ahsh" (silent in words!)</li>
+                                <li><strong><span class="french-phrase" lang="fr">I</span>:</strong> sounds like "ee" (not "eye")</li>
+                                <li><strong><span class="french-phrase" lang="fr">J</span>:</strong> sounds like "zhee"</li>
+                                <li><strong><span class="french-phrase" lang="fr">K</span>:</strong> sounds like "kah"</li>
+                                <li><strong><span class="french-phrase" lang="fr">L</span>:</strong> sounds like "ell"</li>
+                                <li><strong><span class="french-phrase" lang="fr">M</span>:</strong> sounds like "emm"</li>
+                            </ul>
+                            <ul>
+                                <li><strong><span class="french-phrase" lang="fr">N</span>:</strong> sounds like "enn"</li>
+                                <li><strong><span class="french-phrase" lang="fr">O</span>:</strong> sounds like "oh"</li>
+                                <li><strong><span class="french-phrase" lang="fr">P</span>:</strong> sounds like "pay"</li>
+                                <li><strong><span class="french-phrase" lang="fr">Q</span>:</strong> sounds like "kew"</li>
+                                <li><strong><span class="french-phrase" lang="fr">R</span>:</strong> sounds like "air" (the famous French R! - back of throat)</li>
+                                <li><strong><span class="french-phrase" lang="fr">S</span>:</strong> sounds like "ess"</li>
+                                <li><strong><span class="french-phrase" lang="fr">T</span>:</strong> sounds like "tay"</li>
+                                <li><strong><span class="french-phrase" lang="fr">U</span>:</strong> sounds like "ew" (round your lips!)</li>
+                                <li><strong><span class="french-phrase" lang="fr">V</span>:</strong> sounds like "vay"</li>
+                                <li><strong><span class="french-phrase" lang="fr">W</span>:</strong> sounds like "doo-bluh-vay" (double V)</li>
+                                <li><strong><span class="french-phrase" lang="fr">X</span>:</strong> sounds like "eeks"</li>
+                                <li><strong><span class="french-phrase" lang="fr">Y</span>:</strong> sounds like "ee-grek" (Greek i)</li>
+                                <li><strong><span class="french-phrase" lang="fr">Z</span>:</strong> sounds like "zed"</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="content-block">
                         <h4>Accent Marks:</h4>
                         <ul>
-                            <li><span class="french-phrase">é</span> - accent aigu (acute) - "ay" sound</li>
-                            <li><span class="french-phrase">è</span> - accent grave - "eh" sound</li>
-                            <li><span class="french-phrase">ê</span> - accent circonflexe (circumflex)</li>
-                            <li><span class="french-phrase">ë</span> - tréma (dieresis) - separate syllables</li>
-                            <li><span class="french-phrase">ç</span> - cédille (cedilla) - makes "s" sound</li>
+                            <li><span class="french-phrase" lang="fr">é</span> - <span class="french-phrase" lang="fr">accent aigu</span> (acute) - "ay" sound</li>
+                            <li><span class="french-phrase" lang="fr">è</span> - <span class="french-phrase" lang="fr">accent grave</span> - "eh" sound</li>
+                            <li><span class="french-phrase" lang="fr">ê</span> - <span class="french-phrase" lang="fr">accent circonflexe</span> (circumflex)</li>
+                            <li><span class="french-phrase" lang="fr">ë</span> - <span class="french-phrase" lang="fr">tréma</span> (dieresis) - separate syllables</li>
+                            <li><span class="french-phrase" lang="fr">ç</span> - <span class="french-phrase" lang="fr">cédille</span> (cedilla) - makes "s" sound</li>
                         </ul>
                     </div>
 
                     <div class="activity-box">
-                        <h4>🎯 Spelling Practice!</h4>
+                        <h4>🎯 Spelling Practice!<span class="time-badge">10 min</span></h4>
                         <ol>
                             <li><strong>Spell your own name in French</strong> - go around the room</li>
                             <li><strong>Spell character names:</strong>
                                 <ul style="margin-top: 10px;">
-                                    <li>James → J-A-M-E-S</li>
-                                    <li>Sophie → S-O-P-H-I-E</li>
-                                    <li>Marcel → M-A-R-C-E-L</li>
-                                    <li>Chloé → C-H-L-O-É (with accent aigu)</li>
-                                    <li>Pierre → P-I-E-R-R-E</li>
+                                    <li>James → <span class="french-phrase" lang="fr">J-A-M-E-S</span></li>
+                                    <li>Sophie → <span class="french-phrase" lang="fr">S-O-P-H-I-E</span></li>
+                                    <li>Marcel → <span class="french-phrase" lang="fr">M-A-R-C-E-L</span></li>
+                                    <li>Chloé → <span class="french-phrase" lang="fr">C-H-L-O-É</span> (with accent aigu)</li>
+                                    <li>Pierre → <span class="french-phrase" lang="fr">P-I-E-R-R-E</span></li>
                                 </ul>
                             </li>
                             <li><strong>Spelling bee:</strong> Teacher spells simple French words, students write them down</li>
