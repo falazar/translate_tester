@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - French 101</title>
+    <link rel="stylesheet" href="lesson_styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lesson 3</h1>
+            <p>Numbers, Classroom Objects & Commands</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Textbook Pages 10-16</p>
+            <div class="voice-controls">
+                <!-- Settings panel injected by lesson_audio.js -->
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Warm-Up -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'warmup')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Warm-Up: Alphabet Practice</h2>
+                    <span class="time-badge">10 minutes</span>
+                </div>
+                <div class="section-content" data-section="warmup" data-lang="mixed">
+                    <div class="activity-box">
+                        <h4>🎯 Activity: Spelling Practice<span class="time-badge">5 min</span></h4>
+                        <p><strong>Instructions:</strong> Let's practice what we learned yesterday! I'm going to call on students randomly - when I point to you, please stand up and spell your name in French using the French alphabet. Remember, each letter has its own French pronunciation!</p>
+                        <p style="margin-top: 10px;">After we go around the room, I'll dictate some simple French words and you'll write them down. Listen carefully to each letter!</p>
+                    </div>
+
+                    <div class="character-intro">
+                        <h4>📖 James's Story Continues:</h4>
+                        <p><span class="french-phrase" lang="fr">James cherche son appartement</span></p>
+                        <p style="margin-top: 10px;"><em>Translation:</em> James is looking for his apartment</p>
+                        <p style="margin-top: 10px;">James has arrived in Paris and now he needs to find his apartment! Today we'll learn numbers so James can understand addresses and apartment numbers. His apartment is at <span class="french-phrase" lang="fr">numéro 25, rue Mouffetard</span> - number 25, Mouffetard Street.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 1: Numbers 0-30 -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'numbers')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Lesson: Numbers 0-30</h2>
+                    <span class="time-badge">20 minutes</span>
+                </div>
+                <div class="section-content" data-section="numbers" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Pages 10-11 - <span class="french-phrase" lang="fr">Points de départ: Les nombres de 0 à 100</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Teacher Lecture: Learning to Count in French</h4>
+                        <p>Alright class, today we're going to learn one of the most practical skills in any language - counting! You'll need numbers constantly in France: giving your phone number, asking prices, telling someone your age, reading addresses, catching the right bus or metro. So let's dive right in.</p>
+                        
+                        <p style="margin-top: 10px;">The good news is that French numbers from 0 to 20 are straightforward - you just need to memorize them. But I'll give you some tips to help. Notice that some numbers sound similar to English because both languages came from Latin roots. <span class="french-phrase" lang="fr">Six</span> sounds like "cease," <span class="french-phrase" lang="fr">sept</span> is "set," <span class="french-phrase" lang="fr">huit</span> is "wheat," <span class="french-phrase" lang="fr">neuf</span> is "nuff," and <span class="french-phrase" lang="fr">dix</span> is "deese." These associations can help!</p>
+                        
+                        <p style="margin-top: 10px;">Once you get to 21, French becomes very logical - you literally say the number as it appears. <span class="french-phrase" lang="fr">Vingt-et-un</span> is "twenty-and-one" which is 21, <span class="french-phrase" lang="fr">vingt-deux</span> is "twenty-two," and so on. That <span class="french-phrase" lang="fr">et</span> meaning "and" only appears in 21, 31, 41, 51, 61, and 71. For all other numbers, you just use a hyphen. Let's learn these systematically, and I want you to repeat after me - pronunciation is key!</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Numbers 0-20:</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <ul>
+                                <li><span class="french-phrase" lang="fr">0 - zéro</span></li>
+                                <li><span class="french-phrase" lang="fr">1 - un</span></li>
+                                <li><span class="french-phrase" lang="fr">2 - deux</span></li>
+                                <li><span class="french-phrase" lang="fr">3 - trois</span></li>
+                                <li><span class="french-phrase" lang="fr">4 - quatre</span></li>
+                                <li><span class="french-phrase" lang="fr">5 - cinq</span></li>
+                                <li><span class="french-phrase" lang="fr">6 - six</span></li>
+                                <li><span class="french-phrase" lang="fr">7 - sept</span></li>
+                                <li><span class="french-phrase" lang="fr">8 - huit</span></li>
+                                <li><span class="french-phrase" lang="fr">9 - neuf</span></li>
+                            </ul>
+                            <ul>
+                                <li><span class="french-phrase" lang="fr">10 - dix</span></li>
+                                <li><span class="french-phrase" lang="fr">11 - onze</span></li>
+                                <li><span class="french-phrase" lang="fr">12 - douze</span></li>
+                                <li><span class="french-phrase" lang="fr">13 - treize</span></li>
+                                <li><span class="french-phrase" lang="fr">14 - quatorze</span></li>
+                                <li><span class="french-phrase" lang="fr">15 - quinze</span></li>
+                                <li><span class="french-phrase" lang="fr">16 - seize</span></li>
+                                <li><span class="french-phrase" lang="fr">17 - dix-sept</span></li>
+                                <li><span class="french-phrase" lang="fr">18 - dix-huit</span></li>
+                                <li><span class="french-phrase" lang="fr">19 - dix-neuf</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Numbers 20-30:</h4>
+                        <ul>
+                            <li><span class="french-phrase" lang="fr">20 - vingt</span></li>
+                            <li><span class="french-phrase" lang="fr">21 - vingt-et-un</span> (notice the "et")</li>
+                            <li><span class="french-phrase" lang="fr">22 - vingt-deux</span></li>
+                            <li><span class="french-phrase" lang="fr">23 - vingt-trois</span></li>
+                            <li><span class="french-phrase" lang="fr">24 - vingt-quatre</span></li>
+                            <li><span class="french-phrase" lang="fr">25 - vingt-cinq</span></li>
+                            <li><span class="french-phrase" lang="fr">26 - vingt-six</span></li>
+                            <li><span class="french-phrase" lang="fr">27 - vingt-sept</span></li>
+                            <li><span class="french-phrase" lang="fr">28 - vingt-huit</span></li>
+                            <li><span class="french-phrase" lang="fr">29 - vingt-neuf</span></li>
+                            <li><span class="french-phrase" lang="fr">30 - trente</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 Counting Activity<span class="time-badge">8 min</span></h4>
+                        <p><strong>Instructions:</strong> Let's practice counting together!</p>
+                        <ol>
+                            <li><strong>Count Around the Room:</strong> Starting here, we'll count in order around the class. First person says <span class="french-phrase" lang="fr">un</span>, next person <span class="french-phrase" lang="fr">deux</span>, and so on up to 30.</li>
+                            <li><strong>Phone Numbers:</strong> Turn to your partner. Make up a French phone number using only numbers 0-30. Your partner will write down what they hear. Switch roles!</li>
+                            <li><strong>James's Apartment:</strong> James lives at <span class="french-phrase" lang="fr">numéro vingt-cinq, rue Mouffetard</span>. Practice saying this address!</li>
+                            <li><strong>Quick Math in French:</strong> I'll call out simple addition problems in French. You shout out the answer in French! For example: <span class="french-phrase" lang="fr">Deux plus trois égale...?</span> (Two plus three equals...?)</li>
+                        </ol>
+                    </div>
+
+                    <div class="pronunciation-box">
+                        <h4>💡 Pronunciation Tips</h4>
+                        <ul>
+                            <li>Final consonants are usually silent: <span class="french-phrase" lang="fr">vingt</span> sounds like "van" (the T is silent)</li>
+                            <li>But in <span class="french-phrase" lang="fr">six</span> and <span class="french-phrase" lang="fr">dix</span>, the X sounds like "s" when alone</li>
+                            <li><span class="french-phrase" lang="fr">Huit</span> - don't pronounce the H! It's "wheat"</li>
+                            <li><span class="french-phrase" lang="fr">Neuf</span> - sounds like "nuff" with rounded lips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Classroom Objects -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'classroom')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Lesson: Classroom Objects</h2>
+                    <span class="time-badge">15 minutes</span>
+                </div>
+                <div class="section-content" data-section="classroom" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Pages 14-15 - <span class="french-phrase" lang="fr">Dans la salle de classe</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Teacher Lecture: Objects Around Us</h4>
+                        <p>Now let's learn vocabulary for things you see every day in this classroom! These words are incredibly useful because I'll be using them constantly to give you instructions. When I say <span class="french-phrase" lang="fr">Ouvrez votre livre</span>, you need to know that <span class="french-phrase" lang="fr">livre</span> means "book." When I say <span class="french-phrase" lang="fr">Prenez un stylo</span>, you need to know that <span class="french-phrase" lang="fr">stylo</span> means "pen."</p>
+                        
+                        <p style="margin-top: 10px;">One important thing to notice: every French noun has a gender - either masculine or feminine. We show this with the articles <span class="french-phrase" lang="fr">un</span> (masculine) or <span class="french-phrase" lang="fr">une</span> (feminine). For example, <span class="french-phrase" lang="fr">un livre</span> (a book) is masculine, but <span class="french-phrase" lang="fr">une porte</span> (a door) is feminine. These genders don't always make logical sense - you just have to memorize them. Always learn the article with the noun!</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Common Classroom Vocabulary:</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <ul>
+                                <li><span class="french-phrase" lang="fr">un livre</span> - a book (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un cahier</span> - a notebook (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un stylo</span> - a pen (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un crayon</span> - a pencil (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un sac à dos</span> - a backpack (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un bureau</span> - a desk (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un tableau</span> - a board (m.)</li>
+                                <li><span class="french-phrase" lang="fr">un ordinateur</span> - a computer (m.)</li>
+                            </ul>
+                            <ul>
+                                <li><span class="french-phrase" lang="fr">une porte</span> - a door (f.)</li>
+                                <li><span class="french-phrase" lang="fr">une fenêtre</span> - a window (f.)</li>
+                                <li><span class="french-phrase" lang="fr">une chaise</span> - a chair (f.)</li>
+                                <li><span class="french-phrase" lang="fr">une table</span> - a table (f.)</li>
+                                <li><span class="french-phrase" lang="fr">une feuille de papier</span> - a sheet of paper (f.)</li>
+                                <li><span class="french-phrase" lang="fr">un étudiant</span> - a student (m.)</li>
+                                <li><span class="french-phrase" lang="fr">une étudiante</span> - a student (f.)</li>
+                                <li><span class="french-phrase" lang="fr">un professeur</span> - a teacher (m./f.)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Asking "What is it?"</h4>
+                        <ul>
+                            <li><span class="french-phrase" lang="fr">Qu'est-ce que c'est?</span> - What is it? / What is this?</li>
+                            <li><span class="french-phrase" lang="fr">C'est un livre.</span> - It's a book.</li>
+                            <li><span class="french-phrase" lang="fr">C'est une porte.</span> - It's a door.</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 Object Identification Game<span class="time-badge">7 min</span></h4>
+                        <p><strong>Instructions:</strong> Let's practice identifying objects!</p>
+                        <ol>
+                            <li><strong>Point and Name:</strong> I'll point to objects around the classroom. Raise your hand if you can name it in French!</li>
+                            <li><strong>"Qu'est-ce que c'est?" Game:</strong> Partners take turns. One person points to something, asks <span class="french-phrase" lang="fr">Qu'est-ce que c'est?</span> The other answers: <span class="french-phrase" lang="fr">C'est un/une...</span></li>
+                            <li><strong>James's Backpack:</strong> What does James have in his backpack? Let's list items: <span class="french-phrase" lang="fr">un livre, un cahier, un stylo, un ordinateur</span></li>
+                        </ol>
+                    </div>
+
+                    <div class="character-intro">
+                        <h4>📖 James at the University:</h4>
+                        <p>James has found his apartment and now he's preparing for class. In his <span class="french-phrase" lang="fr">sac à dos</span> (backpack), he has: <span class="french-phrase" lang="fr">trois livres, deux cahiers, quatre stylos, et un ordinateur</span> (three books, two notebooks, four pens, and one computer).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Classroom Commands -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'commands')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Lesson: Classroom Commands</h2>
+                    <span class="time-badge">10 minutes</span>
+                </div>
+                <div class="section-content" data-section="commands" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Page 16 - <span class="french-phrase" lang="fr">Expressions utiles en classe</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Teacher Lecture: Following Instructions in French</h4>
+                        <p>Starting today, I'm going to begin giving some of my classroom instructions in French! Don't worry - I'll use gestures and demonstrations so you understand. But it's important that you learn these common commands because you'll hear them every single day in this class. The more French you hear, the faster you'll learn. These are all in the <span class="french-phrase" lang="fr">vous</span> form because I'm addressing the whole class.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Essential Classroom Commands:</h4>
+                        <ul>
+                            <li><span class="french-phrase" lang="fr">Écoutez</span> - Listen</li>
+                            <li><span class="french-phrase" lang="fr">Répétez</span> - Repeat</li>
+                            <li><span class="french-phrase" lang="fr">Lisez</span> - Read</li>
+                            <li><span class="french-phrase" lang="fr">Écrivez</span> - Write</li>
+                            <li><span class="french-phrase" lang="fr">Ouvrez votre livre</span> - Open your book</li>
+                            <li><span class="french-phrase" lang="fr">Fermez le cahier</span> - Close the notebook</li>
+                            <li><span class="french-phrase" lang="fr">Levez la main</span> - Raise your hand</li>
+                            <li><span class="french-phrase" lang="fr">Regardez</span> - Look</li>
+                            <li><span class="french-phrase" lang="fr">Prenez un stylo</span> - Take a pen</li>
+                            <li><span class="french-phrase" lang="fr">Asseyez-vous</span> - Sit down</li>
+                            <li><span class="french-phrase" lang="fr">Levez-vous</span> - Stand up</li>
+                            <li><span class="french-phrase" lang="fr">Travaillez avec un partenaire</span> - Work with a partner</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 TPR Practice (Total Physical Response)<span class="time-badge">6 min</span></h4>
+                        <p><strong>Instructions:</strong> Everyone stand up! We're going to play a French version of Simon Says.</p>
+                        <p style="margin-top: 10px;">I'll give you commands in French, and you'll perform the actions. If I say <span class="french-phrase" lang="fr">Jacques a dit</span> (Jacques said - our French "Simon says") before the command, you do it. If I don't say <span class="french-phrase" lang="fr">Jacques a dit</span>, don't move! If you mess up, sit down. Let's see who the last person standing is!</p>
+                        <p style="margin-top: 10px;"><strong>Example commands:</strong></p>
+                        <ul style="margin-top: 5px;">
+                            <li><span class="french-phrase" lang="fr">Jacques a dit: Levez la main!</span></li>
+                            <li><span class="french-phrase" lang="fr">Jacques a dit: Ouvrez votre livre!</span></li>
+                            <li><span class="french-phrase" lang="fr">Fermez le livre!</span> (Don't do it - no "Jacques a dit"!)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Closing -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'closing')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Closing & Preview</h2>
+                    <span class="time-badge">5 minutes</span>
+                </div>
+                <div class="section-content" data-section="closing" data-lang="en">
+                    <div class="content-block">
+                        <h4>Quick Review - Can You:</h4>
+                        <ul>
+                            <li>Count from 0 to 30 in French?</li>
+                            <li>Name at least 5 classroom objects?</li>
+                            <li>Understand basic classroom commands?</li>
+                            <li>Say James's apartment number? (25)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Preview Thursday:</strong> We'll continue with numbers 31-100 (including the tricky 70s, 80s, and 90s!), learn how to ask questions, and explore the Francophone world. James will start classes at the university!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Homework -->
+            <div class="homework-box">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'homework')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h3>📚 Homework Due Thursday</h3>
+                </div>
+                <div data-section="homework" data-lang="en">
+                    <ul style="list-style-position: inside; padding-left: 20px;">
+                        <li><strong>Textbook Exercise:</strong> Complete exercises on pp. 10-11 (numbers practice)</li>
+                        <li><strong>Writing:</strong> Write numbers 0-30 three times each</li>
+                        <li><strong>Speaking Practice:</strong> Count aloud to 30 (record yourself if possible, send via email)</li>
+                        <li><strong>Math Worksheet:</strong> Complete French math problems: <span class="french-phrase" lang="fr">2+3=?, 10+5=?, 15-7=?</span> etc. (write answers in French!)</li>
+                        <li><strong>Video:</strong> Watch "Easy French - Counting in French" (8 minutes)</li>
+                        <li><strong>Flashcards:</strong> Create 15 flashcards - classroom vocabulary (include gender: un/une)</li>
+                        <li><strong>Practice:</strong> Quiz yourself - point to objects at home and name them in French</li>
+                    </ul>
+                    <div class="info-box" style="margin-top: 15px;">
+                        <strong>Reminder:</strong> Tomorrow we continue with higher numbers and you'll need to be comfortable counting to 30, so practice tonight!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn prev" onclick="window.location.href='lesson_02.html'">← Lesson 2</button>
+            <button class="nav-btn next" onclick="window.location.href='lesson_04.html'">Lesson 4 →</button>
+        </div>
+    </div>
+
+    <script src="lesson_audio.js"></script>
+</body>
+</html>
