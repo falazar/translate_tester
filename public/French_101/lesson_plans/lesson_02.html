@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 - French 101</title>
+    <link rel="stylesheet" href="lesson_styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lesson 2</h1>
+            <p>Tu vs. Vous & French Alphabet</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Textbook Pages 4-9</p>
+            <div class="voice-controls">
+                <button class="settings-toggle" onclick="document.querySelector('.settings-panel').classList.toggle('open'); this.textContent = this.textContent.includes('Show') ? '▲ Hide Audio Settings' : '▼ Show Audio Settings'">▼ Show Audio Settings</button>
+                
+                <div class="settings-panel">
+                    <div class="voice-control-row">
+                        <div class="voice-control-group">
+                            <label for="english-voice">🇺🇸 English Voice:</label>
+                            <select id="english-voice"></select>
+                        </div>
+                        <div class="voice-control-group">
+                            <label for="english-speed">Speed:</label>
+                            <div class="speed-control">
+                                <input type="range" id="english-speed" min="0.5" max="1.5" step="0.1" value="0.9">
+                                <span class="speed-value" id="english-speed-value">0.9x</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="voice-control-row">
+                        <div class="voice-control-group">
+                            <label for="french-voice">🇫🇷 French Voice:</label>
+                            <select id="french-voice"></select>
+                        </div>
+                        <div class="voice-control-group">
+                            <label for="french-speed">Speed:</label>
+                            <div class="speed-control">
+                                <input type="range" id="french-speed" min="0.5" max="1.5" step="0.1" value="0.9">
+                                <span class="speed-value" id="french-speed-value">0.9x</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Warm-Up -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'warmup')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Warm-Up: Review Greetings</h2>
+                    <span class="time-badge">10 minutes</span>
+                </div>
+                <div class="section-content" data-section="warmup" data-lang="mixed">
+                    <div class="content-block">
+                        <h4>Activity: Greetings Practice</h4>
+                        <p>Students practice with a partner:</p>
+                        <ul>
+                            <li><span class="french-phrase">Bonjour! Comment ça va?</span></li>
+                            <li><span class="french-phrase">Ça va bien, merci!</span></li>
+                            <li>Move around the room - greet at least 3 different classmates</li>
+                        </ul>
+                    </div>
+
+                    <div class="character-intro">
+                        <h4>📖 James's Story Continues:</h4>
+                        <p><span class="french-phrase">«James arrive à Paris aujourd'hui!»</span></p>
+                        <p style="margin-top: 10px;"><em>Translation:</em> James arrives in Paris today!</p>
+                        <p style="margin-top: 10px;">Today we'll see how James meets different people and learns when to use tu and vous.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 1: Tu vs Vous -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'tuvous')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Lesson: Tu vs. Vous</h2>
+                    <span class="time-badge">15 minutes</span>
+                </div>
+                <div class="section-content" data-section="tuvous" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Pages 4-5 - <span lang="fr">Vie et culture: Tu et vous</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>The Important Distinction:</h4>
+                        <p>French has two ways to say "you" - and choosing the right one is crucial!</p>
+                    </div>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>TU (informal)</th>
+                                <th>VOUS (formal/plural)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Friends</td>
+                                <td>Strangers</td>
+                            </tr>
+                            <tr>
+                                <td>Family members</td>
+                                <td>Older people you don't know well</td>
+                            </tr>
+                            <tr>
+                                <td>Children</td>
+                                <td>Professors, teachers</td>
+                            </tr>
+                            <tr>
+                                <td>Fellow students (usually)</td>
+                                <td>Work colleagues (initially)</td>
+                            </tr>
+                            <tr>
+                                <td>Pets!</td>
+                                <td>Multiple people (even if they're friends)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="cultural-note">
+                        <h4>🌍 Cultural Note: Handshakes & La Bise</h4>
+                        <p><strong>Handshake:</strong> Used in formal situations, business settings, or when meeting someone for the first time.</p>
+                        <p style="margin-top: 8px;"><strong>La bise:</strong> Cheek kisses (usually 2, but varies by region!) used among friends, family, and social acquaintances. You lean in and make a kissing sound near each cheek.</p>
+                        <p style="margin-top: 8px;"><strong>When in doubt?</strong> Wait to see what the other person does, or stick with a handshake!</p>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 Activity - Role Play!</h4>
+                        <p><strong>Scenario 1:</strong> Student pairs practice greeting</p>
+                        <ul style="margin-top: 10px;">
+                            <li>Partner A = Professor → Use <span lang="fr">vous</span></li>
+                            <li>Partner B = Student greeting professor</li>
+                            <li><span lang="fr">Bonjour, Madame/Monsieur. Comment allez-vous?</span></li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Scenario 2:</strong> Switch roles</p>
+                        <ul style="margin-top: 10px;">
+                            <li>Both are classmates → Use <span lang="fr">tu</span></li>
+                            <li><span lang="fr">Salut! Comment ça va?</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="character-intro">
+                        <h4>📖 James's Encounters:</h4>
+                        <p><strong>Meeting Pierre (roommate):</strong><br>
+                        <span class="french-phrase">«Salut! Je m'appelle James. Et toi?»</span><br>
+                        <em>Uses TU because Pierre is same age, will be friends</em></p>
+                        
+                        <p style="margin-top: 15px;"><strong>Meeting Madame Dubois (landlady):</strong><br>
+                        <span class="french-phrase">«Bonjour, Madame. Je m'appelle James.»</span><br>
+                        <em>Uses VOUS because she's older, formal relationship</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 2: Basic Responses -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'responses')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Lesson: Responding to Greetings</h2>
+                    <span class="time-badge">15 minutes</span>
+                </div>
+                <div class="section-content" data-section="responses" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Page 4 - <span lang="fr">Pour saluer et répondre</span>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>How to Respond to <span lang="fr">Comment ça va?</span></h4>
+                        <ul>
+                            <li><span lang="fr">Très bien, merci</span> - Very well, thanks</li>
+                            <li><span lang="fr">Bien, merci</span> - Good, thanks</li>
+                            <li><span lang="fr">Ça va</span> - I'm okay / It's going</li>
+                            <li><span lang="fr">Pas mal</span> - Not bad</li>
+                            <li><span lang="fr">Comme ci, comme ça</span> - So-so</li>
+                            <li><span lang="fr">Ça ne va pas</span> - Not well / Things aren't going well</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Adding <span lang="fr">Et toi?</span> / <span lang="fr">Et vous?</span></h4>
+                        <p>After responding, it's polite to ask back:</p>
+                        <ul>
+                            <li><span lang="fr">Ça va bien, merci. Et toi?</span> (informal)</li>
+                            <li><span lang="fr">Très bien, merci. Et vous?</span> (formal)</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 Chain Drill Activity!</h4>
+                        <ol>
+                            <li>Students stand in a circle</li>
+                            <li>First student asks neighbor: <span lang="fr">Comment ça va?</span></li>
+                            <li>Neighbor responds with any response + <span lang="fr">Et toi?</span></li>
+                            <li>Continue around the circle</li>
+                            <li>Encourage different responses and emotional tone!</li>
+                        </ol>
+                        <p style="margin-top: 15px;"><strong>Challenge:</strong> Add emotion! Say <span lang="fr">Très bien!</span> with enthusiasm, or <span lang="fr">Pas mal</span> with a shrug.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 3: French Alphabet -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'alphabet')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Pronunciation: French Alphabet</h2>
+                    <span class="time-badge">15 minutes</span>
+                </div>
+                <div class="section-content" data-section="alphabet" data-lang="mixed">
+                    <div class="info-box">
+                        <strong>Textbook Reference:</strong> Pages 8-9 - <span lang="fr">Sons et lettres: L'alphabet</span>
+                    </div>
+
+                    <div class="pronunciation-box">
+                        <h4>🎵 The French Alphabet Song</h4>
+                        <p>A B C D E F G - H I J K L M N O P - Q R S T U V W - X Y Z</p>
+                        <p style="margin-top: 10px;">Sing along with the class! Use the melody of the English alphabet song, but with French pronunciation.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Letters That Sound Different:</h4>
+                        <ul>
+                            <li><strong>E:</strong> sounds like "euh" not "ee"</li>
+                            <li><strong>G:</strong> sounds like "zhay" not "jee"</li>
+                            <li><strong>H:</strong> sounds like "ahsh" (silent in words!)</li>
+                            <li><strong>I:</strong> sounds like "ee" not "eye"</li>
+                            <li><strong>J:</strong> sounds like "zhee"</li>
+                            <li><strong>R:</strong> the famous French R! (back of throat)</li>
+                            <li><strong>W:</strong> sounds like "doo-bluh-vay" (double V)</li>
+                            <li><strong>Y:</strong> sounds like "ee-grek" (Greek i)</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>Accent Marks:</h4>
+                        <ul>
+                            <li><span class="french-phrase">é</span> - accent aigu (acute) - "ay" sound</li>
+                            <li><span class="french-phrase">è</span> - accent grave - "eh" sound</li>
+                            <li><span class="french-phrase">ê</span> - accent circonflexe (circumflex)</li>
+                            <li><span class="french-phrase">ë</span> - tréma (dieresis) - separate syllables</li>
+                            <li><span class="french-phrase">ç</span> - cédille (cedilla) - makes "s" sound</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-box">
+                        <h4>🎯 Spelling Practice!</h4>
+                        <ol>
+                            <li><strong>Spell your own name in French</strong> - go around the room</li>
+                            <li><strong>Spell character names:</strong>
+                                <ul style="margin-top: 10px;">
+                                    <li>James → J-A-M-E-S</li>
+                                    <li>Sophie → S-O-P-H-I-E</li>
+                                    <li>Marcel → M-A-R-C-E-L</li>
+                                    <li>Chloé → C-H-L-O-É (with accent aigu)</li>
+                                    <li>Pierre → P-I-E-R-R-E</li>
+                                </ul>
+                            </li>
+                            <li><strong>Spelling bee:</strong> Teacher spells simple French words, students write them down</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Closing -->
+            <div class="section">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'closing')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h2 class="section-title">Closing & Preview</h2>
+                    <span class="time-badge">5 minutes</span>
+                </div>
+                <div class="section-content" data-section="closing" data-lang="en">
+                    <div class="content-block">
+                        <h4>Quick Vocabulary Review:</h4>
+                        <ul>
+                            <li>Can you use tu or vous correctly?</li>
+                            <li>Can you respond to greetings in 3 different ways?</li>
+                            <li>Can you spell your name in French?</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Preview Wednesday:</strong> We'll learn numbers 0-30, classroom objects vocabulary, and classroom commands. James will be looking for his apartment! Don't forget your homework!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Homework -->
+            <div class="homework-box">
+                <div class="section-header">
+                    <button class="play-btn" onclick="playSection(this, 'homework')" title="Play audio (or press Space)">
+                        ▶
+                    </button>
+                    <h3>📚 Homework Due Thursday</h3>
+                </div>
+                <div data-section="homework" data-lang="en">
+                    <ul style="list-style-position: inside; padding-left: 20px;">
+                        <li><strong>Textbook Exercise:</strong> Complete exercises on p. 9 (alphabet practice)</li>
+                        <li><strong>Writing:</strong> Write out the entire French alphabet 2 times</li>
+                        <li><strong>Spelling Practice:</strong> Practice spelling 10 French names (list provided in class)</li>
+                        <li><strong>Video:</strong> Watch "Learn French with Alexa - French Alphabet" (10 minutes)</li>
+                        <li><strong>Flashcards:</strong> Create 10 flashcards for classroom vocabulary (list will be provided)</li>
+                    </ul>
+                    <div class="info-box" style="margin-top: 15px;">
+                        <strong>Reminder:</strong> Bring all written work to Thursday's class. We'll have a mini spelling bee!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn prev" onclick="window.location.href='lesson_01.html'">← Lesson 1</button>
+            <button class="nav-btn next" onclick="alert('Lesson 3 coming soon!')">Lesson 3 →</button>
+        </div>
+    </div>
+
+    <script src="lesson_audio.js"></script>
+</body>
+</html>

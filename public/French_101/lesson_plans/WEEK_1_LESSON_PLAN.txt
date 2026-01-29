@@ -42,9 +42,10 @@ PART 2: COURSE INTRODUCTION (20 minutes)
 - Welcome and syllabus overview
 - Course goals: Reach A2 / DELF A2 preparation
 - Grading breakdown explanation
-- Introduce MyLab French platform
-- Explain James character storyline: "American in Paris"
+- Textbook and resources overview (no online platform)
+- Introduce James character storyline: "American in Paris"
 - Show map of Francophone world
+- Explain homework submission process
 
 PART 3: FIRST FRENCH LESSON (20 minutes)
 Textbook: Page 3-4 - Leçon 1: Je me présente
@@ -61,10 +62,11 @@ Activity:
 - Introduce James: "Je m'appelle James. Je suis américain."
 
 HOMEWORK DUE WEDNESDAY:
-- MyLab: Complete Chapter Préliminaire intro exercises
-- Read textbook pp. 2-6
-- Practice alphabet at home
+- Textbook: Read pp. 2-6 (greetings and introductions)
+- Practice writing: Greet 5 people in French (write out dialogues)
+- Practice alphabet at home (sing/recite 3 times)
 - Journal: Write 50 words in English about why you're learning French
+- Create vocabulary flashcards: 10 greetings/responses
 
 ===========================
 TUESDAY - DAY 2
@@ -119,9 +121,11 @@ CLOSING (5 min):
 - Quick vocabulary review
 
 HOMEWORK DUE THURSDAY:
-- MyLab: Alphabet exercises
-- Practice spelling 10 French names
+- Textbook: Complete exercises on p. 9 (alphabet practice)
+- Write out French alphabet 2 times
+- Practice spelling 10 French names (from list provided)
 - Watch: Learn French with Alexa - "French Alphabet" (10 min)
+- Create flashcards: Classroom vocabulary (10 words)
 
 ===========================
 WEDNESDAY - DAY 3
@@ -179,10 +183,12 @@ Activity:
 CLOSING (5 min):
 - Quick review: Greet, count to 10, name 3 objects
 - Preview Thursday
-
-HOMEWORK DUE FRIDAY:
-- MyLab: Numbers 0-30 practice
-- Practice classroom vocabulary
+Textbook: Complete exercises on pp. 10-11 (numbers practice)
+- Write numbers 0-30 three times each
+- Practice counting aloud to 30 (record yourself if possible)
+- Worksheet: Math problems in French (2+3=?, 10+5=?, etc.)
+- Watch: Easy French Episode - "Counting in French" (8 min)
+- Study classroom vocabulary (quiz yourself with flashcards)
 - Count to 30 aloud 3 times
 - Watch: Easy French Episode - "Counting in French" (8 min)
 
@@ -241,10 +247,13 @@ CLOSING (5 min):
 - Preview Friday quiz
 - Any questions?
 
-HOMEWORK DUE MONDAY:
-- Study for Quiz 1 (greetings, alphabet, numbers, classroom vocab)
-- MyLab: Complete all Chapitre Préliminaire exercises
+HOMEWORK:
+  Textbook: Complete all exercises pp. 2-27 (any not done in class)
 - Journal Entry #1 (100 words in French): Introduce yourself
+  (Je m'appelle..., J'ai... ans, Je suis de..., J'étudie le français parce que...)
+- Watch: Learn French with Alexa - "Introducing Yourself in French" (15 min)
+- Practice worksheet: Fill-in-the-blank dialogues (provided in class)
+- Review all flashcards created this week
   (Je m'appelle..., J'ai... ans, Je suis de..., J'étudie le français parce que...)
 - Watch: Learn French with Alexa - "Introducing Yourself in French" (15 min)
 
@@ -339,15 +348,17 @@ Character Development:
 ===========================
 MATERIALS NEEDED
 ===========================
-
-Textbook Materials:
-- Chez nous pp. 2-27
-- Audio files for dialogues
+ (from textbook website if available)
 - Cultural video clips
 
 Supplementary Materials:
-- MyLab French exercises
 - Diagnostic test (create from textbook resources)
+- Custom homework worksheets:
+  * Greeting dialogues practice
+  * Alphabet practice sheet
+  * Numbers 0-100 worksheet with math problems
+  * Fill-in-the-blank conversation exercises
+  * Vocabulary lists for flashcard creation
 - Number bingo cards
 - Classroom object flashcards/realia
 - Francophone world map
@@ -355,6 +366,14 @@ Supplementary Materials:
 
 Video Resources:
 - Learn French with Alexa: "French Alphabet" (10 min)
+- Learn French with Alexa: "Introducing Yourself" (15 min)
+- Easy French: "Counting in French" (8 min)
+- Textbook cultural videos
+
+Homework Collection:
+- Create folder/system for collecting written homework
+- Establish digital submission if using online platform
+- Flashcard check system "French Alphabet" (10 min)
 - Learn French with Alexa: "Introducing Yourself" (15 min)
 - Easy French: "Counting in French" (8 min)
 - Textbook cultural videos
@@ -375,16 +394,8 @@ Engagement Strategies:
 - Keep it fun: games, movement, music
 - Make French "safe" - errors are learning
 
-Differentiation:
-- Students with prior French: Challenge with longer dialogues
-- True beginners: Extra practice time, peer support
-- Create buddy system early
-
-Common Challenges:
-- Tu/vous confusion: Use consistent examples
-- French R sound: Don't stress yet, model correctly
-- 70-90 numbers: Emphasize pattern, practice repeatedly
-- Shyness: Start with low-stakes pair work
+- No online platform: Need to create/distribute custom worksheets
+- Homework collection: Establish clear system early
 
 Success Markers:
 By end of Week 1, students should feel:
@@ -392,21 +403,43 @@ By end of Week 1, students should feel:
 - Able to say basic phrases in French
 - Excited about James's story
 - Understanding of course structure
-- Ready for more!
+- Clear on homework expectations (paper-based) examples
+- French R sound: Don't stress yet, model correctly
+- 70-90 numbers: Emphasize pattern, practice repeatedly
+- Shyness: Start with low-stakes pair work
 
-===========================
-HOMEWORK TRACKING
-===========================
-
-Due Wednesday:
-- MyLab intro exercises
+Success Markers:
+By end of Week 1, students should feel:
 - Read pp. 2-6
-- Alphabet practice
+- Write 5 greeting dialogues
+- Practice alphabet (3x)
+- English journal about learning French
+- Make 10 greeting flashcards
 
 Due Thursday:
-- MyLab alphabet exercises
-- Spell 10 names
-- Watch Alexa video
+- Complete textbook exercises p. 9
+- Write alphabet 2 times
+- Spell 10 French names
+- Watch Alexa alphabet video
+- Make 10 classroom vocab flashcards
+
+Due Friday:
+- Complete textbook exercises pp. 10-11
+- Write numbers 0-30 (3x each)
+- Practice counting aloud
+- Math worksheet in French
+- Watch Easy French counting video
+- Study classroom vocabulary
+
+Due Monday (Week 2):
+- Study for quiz
+- Complete all textbook exercises pp. 2-27
+- Journal Entry #1 (100 words in French)
+- Watch Alexa "Introducing Yourself" video
+- Practice dialogue worksheet
+- Review all flashcards
+
+Note: Create homework collection system (physical folder or digital submission)
 
 Due Friday:
 - MyLab numbers exercises
