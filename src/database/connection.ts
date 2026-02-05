@@ -6,9 +6,8 @@ let db: Database.Database | null = null;
 
 export function getDatabase(): Database.Database {
   if (!db) {
-    const dbPath = process.env.DATABASE_PATH 
-      || path.join(__dirname, '../../data/game.db');
-    
+    const dbPath = process.env.DATABASE_PATH || path.join(__dirname, '../../data/game.db');
+
     // Ensure data directory exists
     const dataDir = path.dirname(dbPath);
     if (!fs.existsSync(dataDir)) {
@@ -19,7 +18,7 @@ export function getDatabase(): Database.Database {
     db.pragma('journal_mode = WAL');
     db.pragma('foreign_keys = ON');
   }
-  
+
   return db;
 }
 
@@ -29,4 +28,3 @@ export function closeDatabase(): void {
     db = null;
   }
 }
-

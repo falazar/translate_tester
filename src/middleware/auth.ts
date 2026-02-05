@@ -6,14 +6,9 @@ export interface AuthRequest extends Request {
   username?: string;
 }
 
-export function authMiddleware(
-  req: AuthRequest, 
-  res: Response, 
-  next: NextFunction
-): void {
+export function authMiddleware(req: AuthRequest, res: Response, next: NextFunction): void {
   try {
-    const token = req.cookies.token || 
-                  req.headers.authorization?.replace('Bearer ', '');
+    const token = req.cookies.token || req.headers.authorization?.replace('Bearer ', '');
 
     if (!token) {
       res.status(401).json({ error: 'No token provided' });
@@ -29,4 +24,3 @@ export function authMiddleware(
     res.status(401).json({ error: 'Invalid token' });
   }
 }
-

@@ -5,8 +5,7 @@ import { authMiddleware, AuthRequest } from '../middleware/auth';
 const router = Router();
 
 // Get user's overall progress
-router.get('/', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.get('/', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const progress = ProgressService.getUserProgress(req.userId!);
     res.json(progress);
@@ -16,4 +15,3 @@ router.get('/', authMiddleware,
 });
 
 export default router;
-

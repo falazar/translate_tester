@@ -21,12 +21,12 @@ router.get('/user-progress', authMiddleware, (req: AuthRequest, res: Response) =
     const userId = req.userId!;
     const levels = LevelService.getAllLevels();
     const userLevels = UserLevelService.getUserLevels(userId);
-    
+
     // Combine levels with user progress
-    const levelsWithProgress = levels.map(level => {
-      const userLevel = userLevels.find(ul => ul.level_id === level.id);
+    const levelsWithProgress = levels.map((level) => {
+      const userLevel = userLevels.find((ul) => ul.level_id === level.id);
       const isUnlocked = UserLevelService.isLevelUnlocked(userId, level.level_number);
-      
+
       return {
         ...level,
         mastery: userLevel?.mastery || 0,
@@ -35,10 +35,10 @@ router.get('/user-progress', authMiddleware, (req: AuthRequest, res: Response) =
         mastery_hit: userLevel?.mastery_hit || null,
         days_to_beat: userLevel?.days_to_beat || null,
         last_practiced: userLevel?.last_practiced || null,
-        is_unlocked: isUnlocked
+        is_unlocked: isUnlocked,
       };
     });
-    
+
     res.json(levelsWithProgress);
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -46,8 +46,7 @@ router.get('/user-progress', authMiddleware, (req: AuthRequest, res: Response) =
 });
 
 // Get level by ID with words
-router.get('/:id', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.get('/:id', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const levelId = parseInt(req.params.id);
     const level = LevelService.getLevelById(levelId);
@@ -59,7 +58,7 @@ router.get('/:id', authMiddleware,
 
     // Get words with user progress
     const words = LevelService.getWordsWithExamples(levelId, req.userId);
-    
+
     res.json({ level, words });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -67,4 +66,3 @@ router.get('/:id', authMiddleware,
 });
 
 export default router;
-

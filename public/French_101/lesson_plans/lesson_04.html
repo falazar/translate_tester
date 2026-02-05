@@ -1,412 +1,1089 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 4 - French 101</title>
-    <link rel="stylesheet" href="lesson_styles.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="lesson_styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Lesson 4</h1>
-            <p>Numbers 31-100, Days, Time & Francophone World</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">Textbook Pages 11-13, 18-21</p>
-            <div class="voice-controls">
-                <!-- Settings panel injected by lesson_audio.js -->
+      <div class="header">
+        <h1>Lesson 4</h1>
+        <p>Numbers 31-100, Days, Time & Francophone World</p>
+        <p style="font-size: 0.9em; margin-top: 10px">Textbook Pages 11-13, 18-21</p>
+        <div class="voice-controls">
+          <!-- Settings panel injected by lesson_audio.js -->
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Warm-Up -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'warmup')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Warm-Up: Review Numbers & Objects</h2>
+            <span class="time-badge">10 minutes</span>
+          </div>
+          <div class="section-content" data-section="warmup" data-lang="mixed">
+            <div class="activity-box">
+              <h4>🎯 Rapid Review<span class="time-badge">5 min</span></h4>
+              <p><strong>Teacher Instructions:</strong></p>
+              <p style="margin-top: 10px">
+                Good morning everyone! Before we dive into new material, let's do a quick
+                five-minute review of everything we covered yesterday. I want to make sure those
+                numbers, classroom objects, and commands are really sticking with you because we're
+                going to build on them today.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 1: Speed Counting</strong> - Alright, here's what we're going to do.
+                We're all going to count together from 0 to 30 in French, and we're going to try to
+                do it as fast as we can while still pronouncing everything correctly. Ready?
+                Everyone together - <span class="french-phrase" lang="fr">Zéro!</span> Good!
+                <span class="french-phrase" lang="fr">Un, deux, trois, quatre, cinq...</span> Keep
+                going! Don't be shy! All the way to
+                <span class="french-phrase" lang="fr">trente!</span> Excellent work! Now let's do it
+                one more time, even faster!
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 2: Classroom Objects Quiz</strong> - Now I'm going to point to
+                different objects around our classroom, and I want you to shout out the French word
+                if you know it. Don't worry about being wrong - just give it a try! Remember to
+                include <span class="french-phrase" lang="fr">un</span> or
+                <span class="french-phrase" lang="fr">une</span> before the noun. Ready? [Teacher
+                points to door] What's this? Yes!
+                <span class="french-phrase" lang="fr">Une porte!</span> How about this? [Points to
+                window] Right! <span class="french-phrase" lang="fr">Une fenêtre!</span> And this
+                one? [Points to book] Perfect!
+                <span class="french-phrase" lang="fr">Un livre!</span> You're doing great!
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 3: Commands Review</strong> - Last part of our review. When I give you
+                a command in French, I want you to perform the action. This is like
+                <span class="french-phrase" lang="fr">Jacques a dit</span> but without the game part
+                - you do everything I say! Ready?
+                <span class="french-phrase" lang="fr">Levez-vous!</span> [Students stand] Good!
+                <span class="french-phrase" lang="fr">Asseyez-vous!</span> [Students sit] Nice!
+                <span class="french-phrase" lang="fr">Ouvrez votre livre!</span> [Students open
+                books] Wonderful!
+                <span class="french-phrase" lang="fr">Fermez votre livre!</span> [Students close
+                books] Perfect! You all remembered!
+              </p>
             </div>
+
+            <div class="character-intro">
+              <h4>📖 James's First Day at University:</h4>
+              <p><span class="french-phrase" lang="fr">James va à l'université</span></p>
+              <p style="margin-top: 10px"><em>Translation:</em> James goes to the university</p>
+              <p style="margin-top: 10px">
+                <strong>Teacher Narrative:</strong>
+              </p>
+              <p style="margin-top: 10px">
+                Alright everyone, let's check in with our friend James! Remember him from the past
+                few days? He found his apartment at
+                <span class="french-phrase" lang="fr">numéro vingt-cinq, rue Mouffetard</span>, he's
+                settled in with his roommate Pierre, and he's been practicing his greetings with
+                <span class="french-phrase" lang="fr">tu</span> and
+                <span class="french-phrase" lang="fr">vous</span>. Well, today is a big day for
+                James - it's his first official day of classes at the Sorbonne!
+              </p>
+              <p style="margin-top: 10px">
+                James is 22 years old - in French we say
+                <span class="french-phrase" lang="fr">Il a vingt-deux ans</span> (He has 22 years).
+                He's really excited but also a little nervous. Why? Well, think about it - he needs
+                to navigate a huge university campus in a foreign country! He needs to find
+                classroom numbers like <span class="french-phrase" lang="fr">Salle 47</span> (Room
+                47) or <span class="french-phrase" lang="fr">Amphi 92</span> (Lecture Hall 92). He
+                needs to understand his student ID number when someone asks for it. He needs to know
+                which bus to take - the <span class="french-phrase" lang="fr">38</span>, the
+                <span class="french-phrase" lang="fr">47</span>, or the
+                <span class="french-phrase" lang="fr">96</span>? And when people give him phone
+                numbers or addresses, they're using numbers way higher than what we've learned so
+                far.
+              </p>
+              <p style="margin-top: 10px">
+                So today, we're going to help James out by learning numbers from 31 all the way up
+                to 100! This way, when his professor says "<span class="french-phrase" lang="fr"
+                  >Ouvrez votre livre à la page soixante-quinze</span
+                >" (Open your book to page 75), James will know exactly where to go. And when he
+                needs to take bus number
+                <span class="french-phrase" lang="fr">quatre-vingt-six</span> (86) to get back home,
+                he'll be able to read the sign correctly. Let's make sure James has a successful
+                first day at university!
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="content">
-            <!-- Warm-Up -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'warmup')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Warm-Up: Review Numbers & Objects</h2>
-                    <span class="time-badge">10 minutes</span>
-                </div>
-                <div class="section-content" data-section="warmup" data-lang="mixed">
-                    <div class="activity-box">
-                        <h4>🎯 Rapid Review<span class="time-badge">5 min</span></h4>
-                        <p><strong>Instructions:</strong> Let's quickly review what we learned yesterday!</p>
-                        <ol>
-                            <li><strong>Speed Counting:</strong> We're going to count from 0 to 30 together as fast as we can! Ready? <span class="french-phrase" lang="fr">Zéro, un, deux...</span></li>
-                            <li><strong>Classroom Objects Quiz:</strong> I'll point to objects around the room - shout out the French word if you know it!</li>
-                            <li><strong>Commands Review:</strong> When I give you a command in French, perform the action: <span class="french-phrase" lang="fr">Levez-vous! Asseyez-vous! Ouvrez votre livre!</span></li>
-                        </ol>
-                    </div>
-
-                    <div class="character-intro">
-                        <h4>📖 James's First Day at University:</h4>
-                        <p><span class="french-phrase" lang="fr">James va à l'université</span></p>
-                        <p style="margin-top: 10px;"><em>Translation:</em> James goes to the university</p>
-                        <p style="margin-top: 10px;">Today is James's first day at the Sorbonne! He's 22 years old (<span class="french-phrase" lang="fr">Il a vingt-deux ans</span>) and very excited to start his classes. He needs to understand higher numbers for classroom numbers, student IDs, and bus routes. Let's help him learn!</p>
-                    </div>
-                </div>
+        <!-- Lesson 1: Numbers 31-100 -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'numbers')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Lesson: Numbers 31-100</h2>
+            <span class="time-badge">15 minutes</span>
+          </div>
+          <div class="section-content" data-section="numbers" data-lang="mixed">
+            <div class="info-box">
+              <strong>Textbook Reference:</strong> Pages 11-12 -
+              <span class="french-phrase" lang="fr">Les nombres de 0 à 100</span>
             </div>
 
-            <!-- Lesson 1: Numbers 31-100 -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'numbers')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Lesson: Numbers 31-100</h2>
-                    <span class="time-badge">15 minutes</span>
-                </div>
-                <div class="section-content" data-section="numbers" data-lang="mixed">
-                    <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 11-12 - <span class="french-phrase" lang="fr">Les nombres de 0 à 100</span>
-                    </div>
+            <div class="content-block">
+              <h4>Teacher Lecture: The French Counting System</h4>
+              <p>
+                Alright everyone, now we're getting into the interesting part of French numbers! The
+                pattern continues logically through the 30s, 40s, 50s, and 60s - you'll pick these
+                up quickly. But then something fascinating happens at 70. The French counting system
+                takes a unique turn that makes it different from most other languages.
+              </p>
 
-                    <div class="content-block">
-                        <h4>Teacher Lecture: The French Counting System</h4>
-                        <p>Alright everyone, now we're getting into the interesting part of French numbers! The pattern continues logically through the 30s, 40s, 50s, and 60s - you'll pick these up quickly. But then something fascinating happens at 70. The French counting system takes a unique turn that makes it different from most other languages.</p>
-                        
-                        <p style="margin-top: 10px;">Let me explain: In standard French (what we call "French from France"), instead of having a word for 70, they say <span class="french-phrase" lang="fr">soixante-dix</span> which literally means "sixty-ten." So 71 is "sixty-eleven" (<span class="french-phrase" lang="fr">soixante-et-onze</span>), 72 is "sixty-twelve" (<span class="french-phrase" lang="fr">soixante-douze</span>), and so on up to 79 which is "sixty-nineteen" (<span class="french-phrase" lang="fr">soixante-dix-neuf</span>).</p>
-                        
-                        <p style="margin-top: 10px;">Then at 80, instead of a single word, French uses <span class="french-phrase" lang="fr">quatre-vingts</span> - literally "four-twenties." This is a leftover from when people counted in groups of 20! So 81 is "four-twenties-one" (<span class="french-phrase" lang="fr">quatre-vingt-un</span>), 82 is "four-twenties-two," and so on. And here's the final twist: 90 is <span class="french-phrase" lang="fr">quatre-vingt-dix</span> - "four-twenties-ten!" So 99, the highest two-digit number, is <span class="french-phrase" lang="fr">quatre-vingt-dix-neuf</span> - "four-twenties-ten-nine."</p>
-                        
-                        <p style="margin-top: 10px;">Now, fun cultural note: In Belgium and Switzerland, they actually simplify this! They say <span class="french-phrase" lang="fr">septante</span> for 70, <span class="french-phrase" lang="fr">octante</span> or <span class="french-phrase" lang="fr">huitante</span> for 80, and <span class="french-phrase" lang="fr">nonante</span> for 90. Much more logical! But we'll learn the French system since that's what you'll encounter most often. Let's practice these step by step.</p>
-                    </div>
+              <p style="margin-top: 10px">
+                Let me explain: In standard French (what we call "French from France"), instead of
+                having a word for 70, they say
+                <span class="french-phrase" lang="fr">soixante-dix</span> which literally means
+                "sixty-ten." So 71 is "sixty-eleven" (<span class="french-phrase" lang="fr"
+                  >soixante-et-onze</span
+                >), 72 is "sixty-twelve" (<span class="french-phrase" lang="fr">soixante-douze</span
+                >), and so on up to 79 which is "sixty-nineteen" (<span
+                  class="french-phrase"
+                  lang="fr"
+                  >soixante-dix-neuf</span
+                >).
+              </p>
 
-                    <div class="content-block">
-                        <h4>Numbers by Tens:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">30 - trente</span></li>
-                            <li><span class="french-phrase" lang="fr">40 - quarante</span></li>
-                            <li><span class="french-phrase" lang="fr">50 - cinquante</span></li>
-                            <li><span class="french-phrase" lang="fr">60 - soixante</span></li>
-                            <li><span class="french-phrase" lang="fr">70 - soixante-dix</span> (sixty-ten)</li>
-                            <li><span class="french-phrase" lang="fr">80 - quatre-vingts</span> (four-twenties) - <em>Note: -s only when exactly 80!</em></li>
-                            <li><span class="french-phrase" lang="fr">90 - quatre-vingt-dix</span> (four-twenty-ten)</li>
-                            <li><span class="french-phrase" lang="fr">100 - cent</span></li>
-                        </ul>
-                    </div>
+              <p style="margin-top: 10px">
+                Then at 80, instead of a single word, French uses
+                <span class="french-phrase" lang="fr">quatre-vingts</span> - literally
+                "four-twenties." This is a leftover from when people counted in groups of 20! So 81
+                is "four-twenties-one" (<span class="french-phrase" lang="fr">quatre-vingt-un</span
+                >), 82 is "four-twenties-two," and so on. And here's the final twist: 90 is
+                <span class="french-phrase" lang="fr">quatre-vingt-dix</span> - "four-twenties-ten!"
+                So 99, the highest two-digit number, is
+                <span class="french-phrase" lang="fr">quatre-vingt-dix-neuf</span> -
+                "four-twenties-ten-nine."
+              </p>
 
-                    <div class="content-block">
-                        <h4>Examples of Tricky Numbers:</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                            <ul>
-                                <li><span class="french-phrase" lang="fr">71 - soixante-et-onze</span></li>
-                                <li><span class="french-phrase" lang="fr">72 - soixante-douze</span></li>
-                                <li><span class="french-phrase" lang="fr">75 - soixante-quinze</span></li>
-                                <li><span class="french-phrase" lang="fr">79 - soixante-dix-neuf</span></li>
-                                <li><span class="french-phrase" lang="fr">81 - quatre-vingt-un</span> (no -s!)</li>
-                            </ul>
-                            <ul>
-                                <li><span class="french-phrase" lang="fr">85 - quatre-vingt-cinq</span></li>
-                                <li><span class="french-phrase" lang="fr">91 - quatre-vingt-onze</span></li>
-                                <li><span class="french-phrase" lang="fr">95 - quatre-vingt-quinze</span></li>
-                                <li><span class="french-phrase" lang="fr">99 - quatre-vingt-dix-neuf</span></li>
-                                <li><span class="french-phrase" lang="fr">100 - cent</span></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Talking About Age:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Quel âge as-tu?</span> - How old are you? (informal)</li>
-                            <li><span class="french-phrase" lang="fr">Quel âge avez-vous?</span> - How old are you? (formal)</li>
-                            <li><span class="french-phrase" lang="fr">J'ai ___ ans</span> - I am ___ years old (literally: "I have ___ years")</li>
-                            <li><span class="french-phrase" lang="fr">Il a vingt-deux ans</span> - He is 22 years old</li>
-                            <li><span class="french-phrase" lang="fr">Elle a dix-neuf ans</span> - She is 19 years old</li>
-                        </ul>
-                    </div>
-
-                    <div class="activity-box">
-                        <h4>🎯 Numbers Practice<span class="time-badge">7 min</span></h4>
-                        <p><strong>Instructions:</strong> Let's master these tricky numbers!</p>
-                        <ol>
-                            <li><strong>Count by 10s:</strong> Everyone together - <span class="french-phrase" lang="fr">dix, vingt, trente, quarante, cinquante, soixante, soixante-dix, quatre-vingts, quatre-vingt-dix, cent!</span></li>
-                            <li><strong>Age Practice:</strong> Stand up and find 3 different classmates. Ask each person <span class="french-phrase" lang="fr">Quel âge as-tu?</span> and answer with your real age in French: <span class="french-phrase" lang="fr">J'ai ___ ans.</span></li>
-                            <li><strong>James's Age:</strong> James is 22. Everyone say together: <span class="french-phrase" lang="fr">James a vingt-deux ans.</span></li>
-                            <li><strong>Challenge Round:</strong> I'll say a number in English, you shout it in French! Ready? 77... 84... 93... 68...</li>
-                        </ol>
-                    </div>
-
-                    <div class="cultural-note">
-                        <h4>🌍 Cultural Note: Belgian & Swiss Numbers</h4>
-                        <p>In Belgium and Switzerland, they use more logical number words:</p>
-                        <ul style="margin-top: 5px;">
-                            <li><span class="french-phrase" lang="fr">70 - septante</span> (instead of soixante-dix)</li>
-                            <li><span class="french-phrase" lang="fr">80 - octante</span> or <span class="french-phrase" lang="fr">huitante</span> (instead of quatre-vingts)</li>
-                            <li><span class="french-phrase" lang="fr">90 - nonante</span> (instead of quatre-vingt-dix)</li>
-                        </ul>
-                        <p style="margin-top: 8px;">Both systems are correct! If you travel to Belgium or Switzerland, you might hear these versions.</p>
-                    </div>
-                </div>
+              <p style="margin-top: 10px">
+                Now, fun cultural note: In Belgium and Switzerland, they actually simplify this!
+                They say <span class="french-phrase" lang="fr">septante</span> for 70,
+                <span class="french-phrase" lang="fr">octante</span> or
+                <span class="french-phrase" lang="fr">huitante</span> for 80, and
+                <span class="french-phrase" lang="fr">nonante</span> for 90. Much more logical! But
+                we'll learn the French system since that's what you'll encounter most often. Let's
+                practice these step by step.
+              </p>
             </div>
 
-            <!-- Lesson 2: Days of the Week -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'days')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Lesson: Days of the Week</h2>
-                    <span class="time-badge">10 minutes</span>
-                </div>
-                <div class="section-content" data-section="days" data-lang="mixed">
-                    <div class="content-block">
-                        <h4>Teacher Lecture: The French Week</h4>
-                        <p>Let's learn the days of the week - you'll need these constantly for talking about your schedule, making plans, and understanding when things happen. Here's something interesting: in French, the days of the week are NOT capitalized unless they're at the beginning of a sentence. Also, notice that many French day names come from Latin and Roman gods, just like in English!</p>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Days of the Week (<span class="french-phrase" lang="fr">Les jours de la semaine</span>):</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">lundi</span> - Monday (from Latin "Luna" - Moon day)</li>
-                            <li><span class="french-phrase" lang="fr">mardi</span> - Tuesday (from Mars - Mars day)</li>
-                            <li><span class="french-phrase" lang="fr">mercredi</span> - Wednesday (from Mercury - Mercury day)</li>
-                            <li><span class="french-phrase" lang="fr">jeudi</span> - Thursday (from Jupiter - Jupiter day)</li>
-                            <li><span class="french-phrase" lang="fr">vendredi</span> - Friday (from Venus - Venus day)</li>
-                            <li><span class="french-phrase" lang="fr">samedi</span> - Saturday (from Saturn - Saturn day)</li>
-                            <li><span class="french-phrase" lang="fr">dimanche</span> - Sunday (from Latin "Dominicus" - Lord's day)</li>
-                        </ul>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Useful Expressions:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Quel jour sommes-nous?</span> - What day is it?</li>
-                            <li><span class="french-phrase" lang="fr">Nous sommes lundi.</span> - It's Monday.</li>
-                            <li><span class="french-phrase" lang="fr">Aujourd'hui, c'est mardi.</span> - Today is Tuesday.</li>
-                            <li><span class="french-phrase" lang="fr">Le lundi</span> - On Mondays (every Monday)</li>
-                            <li><span class="french-phrase" lang="fr">lundi prochain</span> - next Monday</li>
-                        </ul>
-                    </div>
-
-                    <div class="activity-box">
-                        <h4>🎯 Days Practice<span class="time-badge">4 min</span></h4>
-                        <p><strong>Instructions:</strong> Let's practice the days together!</p>
-                        <ol>
-                            <li><strong>Recite Together:</strong> The whole class will recite the days in order three times</li>
-                            <li><strong>James's Schedule:</strong> <span class="french-phrase" lang="fr">Le lundi, James a un cours de français. Le mercredi, il a un cours d'histoire. Le vendredi, il a un cours de littérature.</span> (On Mondays, James has French class. On Wednesdays, he has history class. On Fridays, he has literature class.)</li>
-                            <li><strong>Your Schedule:</strong> Tell your partner one thing you do each week using <span class="french-phrase" lang="fr">Le [jour], je...</span></li>
-                        </ol>
-                    </div>
-                </div>
+            <div class="content-block">
+              <h4>Numbers by Tens:</h4>
+              <ul>
+                <li>
+                  30 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">trente</span>
+                </li>
+                <li>
+                  40 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">quarante</span>
+                </li>
+                <li>
+                  50 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">cinquante</span>
+                </li>
+                <li>
+                  60 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">soixante</span>
+                </li>
+                <li>
+                  70 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">soixante-dix</span> (sixty-ten)
+                </li>
+                <li>
+                  80 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">quatre-vingts</span> (four-twenties) -
+                  <em>Note: -s only when exactly 80!</em>
+                </li>
+                <li>
+                  90 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">quatre-vingt-dix</span>
+                  (four-twenty-ten)
+                </li>
+                <li>
+                  100 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">cent</span>
+                </li>
+              </ul>
             </div>
 
-            <!-- Lesson 3: Asking Questions -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'questions')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Lesson: Essential Questions</h2>
-                    <span class="time-badge">10 minutes</span>
-                </div>
-                <div class="section-content" data-section="questions" data-lang="mixed">
-                    <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 18-19 - <span class="french-phrase" lang="fr">Pour se renseigner</span>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Teacher Lecture: Getting to Know People</h4>
-                        <p>When you meet someone new in France, there are some essential questions you'll want to ask to have a real conversation beyond just "hello." We've already learned <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> and <span class="french-phrase" lang="fr">Comment ça va?</span> - now let's add more questions so you can get to know someone properly. These questions are the foundation of every friendship and professional relationship you'll build in French!</p>
-                        
-                        <p style="margin-top: 10px;">Now, here's something important about French conversation culture: French people often ask quite direct personal questions early in a conversation - questions that might feel a bit forward in American culture. Asking someone's age, where they live, what they study or do for work - these are all normal questions within the first few minutes of meeting someone! It's not considered rude; it's how French people establish common ground and figure out if they might have shared interests or connections.</p>
-                        
-                        <p style="margin-top: 10px;">Remember from our tu/vous lesson that every single one of these questions has both an informal and formal version. When you're meeting another student your age, use <span class="french-phrase" lang="fr">tu</span>. When you're meeting a professor, your friend's parents, someone older, or anyone in a professional context, use <span class="french-phrase" lang="fr">vous</span>. The good news? The questions follow the same pattern - you just need to adjust the verb ending and the pronoun. Let's practice both versions so you're comfortable in any situation.</p>
-                        
-                        <p style="margin-top: 10px;">One more tip: when someone asks you these questions, they genuinely want to know the answer! French conversation style values depth and engagement. Give real answers, not just one-word responses. If someone asks where you're from, you might add a sentence about what it's like there. If they ask what you study, explain why you chose that subject. This back-and-forth, this exchange of real information, is how French friendships begin.</p>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Essential Questions:</h4>
-                        <table class="comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>Informal (tu)</th>
-                                    <th>Formal (vous)</th>
-                                    <th>English</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><span class="french-phrase" lang="fr">Comment tu t'appelles?</span></td>
-                                    <td><span class="french-phrase" lang="fr">Comment vous appelez-vous?</span></td>
-                                    <td>What's your name?</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="french-phrase" lang="fr">Tu es d'où?</span></td>
-                                    <td><span class="french-phrase" lang="fr">Vous êtes d'où?</span></td>
-                                    <td>Where are you from?</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="french-phrase" lang="fr">Quel âge as-tu?</span></td>
-                                    <td><span class="french-phrase" lang="fr">Quel âge avez-vous?</span></td>
-                                    <td>How old are you?</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="french-phrase" lang="fr">Qu'est-ce que tu études?</span></td>
-                                    <td><span class="french-phrase" lang="fr">Qu'est-ce que vous étudiez?</span></td>
-                                    <td>What do you study?</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="french-phrase" lang="fr">Tu habites où?</span></td>
-                                    <td><span class="french-phrase" lang="fr">Vous habitez où?</span></td>
-                                    <td>Where do you live?</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Sample Answers:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Je suis de New York.</span> - I'm from New York.</li>
-                            <li><span class="french-phrase" lang="fr">J'ai vingt ans.</span> - I'm 20 years old.</li>
-                            <li><span class="french-phrase" lang="fr">J'étudie le français.</span> - I study French.</li>
-                            <li><span class="french-phrase" lang="fr">J'habite à Boston.</span> - I live in Boston.</li>
-                        </ul>
-                    </div>
-
-                    <div class="activity-box">
-                        <h4>🎯 Information Exchange<span class="time-badge">5 min</span></h4>
-                        <p><strong>Instructions:</strong> Time to practice real conversations!</p>
-                        <p style="margin-top: 10px;"><strong>Partner Interview:</strong> Find a partner you haven't worked with yet. Take turns asking and answering these questions using the <span class="french-phrase" lang="fr">tu</span> form. Write down what your partner says - we'll share some answers with the class!</p>
-                        <ol style="margin-top: 10px;">
-                            <li><span class="french-phrase" lang="fr">Comment tu t'appelles?</span></li>
-                            <li><span class="french-phrase" lang="fr">Tu es d'où?</span></li>
-                            <li><span class="french-phrase" lang="fr">Quel âge as-tu?</span></li>
-                            <li><span class="french-phrase" lang="fr">Qu'est-ce que tu études?</span></li>
-                        </ol>
-                    </div>
-
-                    <div class="character-intro">
-                        <h4>📖 James's Friends:</h4>
-                        <p><strong>Sophie:</strong> <span class="french-phrase" lang="fr">Elle s'appelle Sophie. Elle est de Lyon. Elle a vingt-et-un ans. Elle étudie l'histoire de l'art.</span></p>
-                        <p style="margin-top: 10px;"><strong>Pierre:</strong> <span class="french-phrase" lang="fr">Il s'appelle Pierre. Il est de Marseille. Il a vingt-trois ans. Il étudie les sciences politiques.</span></p>
-                    </div>
-                </div>
+            <div class="content-block">
+              <h4>Examples of Tricky Numbers:</h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+                <ul>
+                  <li>
+                    71 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">soixante-et-onze</span>
+                  </li>
+                  <li>
+                    72 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">soixante-douze</span>
+                  </li>
+                  <li>
+                    75 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">soixante-quinze</span>
+                  </li>
+                  <li>
+                    79 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">soixante-dix-neuf</span>
+                  </li>
+                  <li>
+                    81 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">quatre-vingt-un</span> (no -s!)
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    85 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">quatre-vingt-cinq</span>
+                  </li>
+                  <li>
+                    91 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">quatre-vingt-onze</span>
+                  </li>
+                  <li>
+                    95 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">quatre-vingt-quinze</span>
+                  </li>
+                  <li>
+                    99 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">quatre-vingt-dix-neuf</span>
+                  </li>
+                  <li>
+                    100 <span class="no-speak">-</span>
+                    <span class="french-phrase" lang="fr">cent</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Lesson 4: Francophone World -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'francophone')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Cultural Topic: The Francophone World</h2>
-                    <span class="time-badge">10 minutes</span>
-                </div>
-                <div class="section-content" data-section="francophone" data-lang="en">
-                    <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 20-21 - <span class="french-phrase" lang="fr">Le monde francophone</span>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Teacher Lecture: French Around the World</h4>
-                        <p>I want to share something exciting with you: when you learn French, you're not just learning to communicate with people in France. French is spoken by over 300 million people across five continents! It's an official language in 29 countries and is the second most studied language in the world after English. Let me show you the incredible diversity of the French-speaking world.</p>
-                        
-                        <p style="margin-top: 10px;">In Europe, besides France, you have Belgium, Switzerland, Luxembourg, and Monaco. In North America, there's Quebec in Canada and parts of Louisiana in the United States, plus several Caribbean islands like Haiti, Martinique, and Guadeloupe. In Africa - this is huge - over 30 African countries speak French, including Senegal, Ivory Coast, Morocco, Algeria, Tunisia, Madagascar, and many more. In fact, Africa has more French speakers than Europe!</p>
-                        
-                        <p style="margin-top: 10px;">Then you have French territories in the Pacific like French Polynesia and New Caledonia, and in South America there's French Guiana. Each place has its own accent, its own expressions, its own culture - but they all share this beautiful language. The French-speaking world is called <span class="french-phrase" lang="fr">la Francophonie</span>, and it's incredibly diverse and vibrant. Learning French opens doors to all these cultures!</p>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Major Francophone Regions:</h4>
-                        <ul>
-                            <li><strong>Europe:</strong> France, Belgium, Switzerland, Luxembourg, Monaco</li>
-                            <li><strong>North America:</strong> Quebec (Canada), Haiti, Martinique, Guadeloupe</li>
-                            <li><strong>Africa:</strong> Senegal, Morocco, Algeria, Tunisia, Ivory Coast, Cameroon, Madagascar, and 20+ more countries</li>
-                            <li><strong>Asia & Middle East:</strong> Lebanon, Vietnam (historical influence)</li>
-                            <li><strong>Pacific:</strong> French Polynesia, New Caledonia</li>
-                        </ul>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Why is French So Global?</h4>
-                        <ul>
-                            <li>French colonial history (17th-20th centuries)</li>
-                            <li>French as a diplomatic language</li>
-                            <li>Official language of the United Nations, European Union, Olympics, and many international organizations</li>
-                            <li>Growing importance in Africa - projected to be 700+ million speakers by 2050</li>
-                        </ul>
-                    </div>
-
-                    <div class="character-intro">
-                        <h4>📖 James's Travel Dreams:</h4>
-                        <p>James is excited about learning French because he wants to travel! His goal is to visit:</p>
-                        <ul style="margin-top: 5px;">
-                            <li><strong>Quebec</strong> - to experience French culture in North America</li>
-                            <li><strong>Senegal</strong> - to see West African Francophone culture</li>
-                            <li><strong>Morocco</strong> - to explore North Africa and learn about Maghrebi French</li>
-                        </ul>
-                        <p style="margin-top: 10px;"><strong>Discussion:</strong> Where in the French-speaking world would YOU like to visit? Why?</p>
-                    </div>
-                </div>
+            <div class="content-block">
+              <h4>Talking About Age:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Quel âge as-tu?</span> - How old are you?
+                  (informal)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Quel âge avez-vous?</span> - How old are
+                  you? (formal)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'ai ___ ans</span> - I am ___ years old
+                  (literally: "I have ___ years")
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Il a vingt-deux ans</span> - He is 22 years
+                  old
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Elle a dix-neuf ans</span> - She is 19 years
+                  old
+                </li>
+              </ul>
             </div>
 
-            <!-- Closing -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'closing')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Closing & Week Review</h2>
-                    <span class="time-badge">5 minutes</span>
-                </div>
-                <div class="section-content" data-section="closing" data-lang="en">
-                    <div class="content-block">
-                        <h4>This Week We've Learned:</h4>
-                        <ul>
-                            <li>✓ All greetings and introductions</li>
-                            <li>✓ Tu vs. vous distinction</li>
-                            <li>✓ How to respond to "Comment ça va?"</li>
-                            <li>✓ The entire French alphabet</li>
-                            <li>✓ Numbers 0-100</li>
-                            <li>✓ Classroom objects and commands</li>
-                            <li>✓ Days of the week</li>
-                            <li>✓ Essential questions for meeting people</li>
-                            <li>✓ The Francophone world</li>
-                        </ul>
-                    </div>
-
-                    <div class="info-box">
-                        <strong>Preview Friday:</strong> Tomorrow we'll review everything from Week 1 with fun activities and games, discuss French culture in more depth, and practice conversations. Then you'll take Quiz 1 (last 15 minutes) covering: greetings, tu/vous, alphabet, numbers 0-30, and basic vocabulary. Study tonight!
-                    </div>
-                </div>
+            <div class="activity-box">
+              <h4>🎯 Numbers Practice<span class="time-badge">7 min</span></h4>
+              <p><strong>Instructions:</strong> Let's master these tricky numbers!</p>
+              <ol>
+                <li>
+                  <strong>Count by 10s:</strong> Everyone together -
+                  <span class="french-phrase" lang="fr">dix</span><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">vingt</span><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">trente</span><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">quarante</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">cinquante</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">soixante</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">soixante-dix</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">quatre-vingts</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">quatre-vingt-dix</span
+                  ><span class="no-speak">,</span>
+                  <span class="french-phrase" lang="fr">cent</span>!
+                </li>
+                <li>
+                  <strong>Age Practice:</strong> Stand up and find 3 different classmates. Ask each
+                  person <span class="french-phrase" lang="fr">Quel âge as-tu?</span> and answer
+                  with your real age in French:
+                  <span class="french-phrase" lang="fr">J'ai ___ ans.</span>
+                </li>
+                <li>
+                  <strong>James's Age:</strong> James is 22. Everyone say together:
+                  <span class="french-phrase" lang="fr">James a vingt-deux ans.</span>
+                </li>
+                <li>
+                  <strong>Challenge Round:</strong> I'll say a number in English, you shout it in
+                  French! Ready? 77... 84... 93... 68...
+                </li>
+              </ol>
             </div>
 
-            <!-- Homework -->
-            <div class="homework-box">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'homework')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h3>📚 Homework Due Friday</h3>
-                </div>
-                <div data-section="homework" data-lang="en">
-                    <ul style="list-style-position: inside; padding-left: 20px;">
-                        <li><strong>Textbook Reading:</strong> Review all of Chapitre Préliminaire (pp. 2-21)</li>
-                        <li><strong>Numbers Practice:</strong> Write out numbers 0-100 by tens, then practice 70s, 80s, and 90s</li>
-                        <li><strong>Days Memorization:</strong> Memorize all days of the week - be able to recite them in order</li>
-                        <li><strong>Question Practice:</strong> Write answers to all 5 essential questions about yourself in French</li>
-                        <li><strong>Study for Quiz:</strong> Review all vocabulary from this week - greetings, numbers 0-30, tu/vous rules, alphabet</li>
-                        <li><strong>Video:</strong> Watch "Geography Now - Francophone World" (15 minutes) - learn about French-speaking countries</li>
-                        <li><strong>Conversation Practice:</strong> Practice introducing yourself and asking the 5 essential questions - record yourself</li>
-                    </ul>
-                    <div class="info-box" style="margin-top: 15px;">
-                        <strong>Quiz 1 Tomorrow!</strong> The quiz will cover: basic greetings, tu vs. vous usage, spelling with French alphabet, counting 0-30, and identifying classroom objects. It's only 15 minutes - you've got this! Review your flashcards and notes tonight.
-                    </div>
-                </div>
+            <div class="cultural-note">
+              <h4>🌍 Cultural Note: Belgian & Swiss Numbers</h4>
+              <p>In Belgium and Switzerland, they use more logical number words:</p>
+              <ul style="margin-top: 5px">
+                <li>
+                  70 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">septante</span> (instead of
+                  <span class="french-phrase" lang="fr">soixante-dix</span>)
+                </li>
+                <li>
+                  80 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">octante</span> or
+                  <span class="french-phrase" lang="fr">huitante</span> (instead of
+                  <span class="french-phrase" lang="fr">quatre-vingts</span>)
+                </li>
+                <li>
+                  90 <span class="no-speak">-</span>
+                  <span class="french-phrase" lang="fr">nonante</span> (instead of
+                  <span class="french-phrase" lang="fr">quatre-vingt-dix</span>)
+                </li>
+              </ul>
+              <p style="margin-top: 8px">
+                Both systems are correct! If you travel to Belgium or Switzerland, you might hear
+                these versions.
+              </p>
             </div>
+          </div>
         </div>
 
-        <div class="nav-buttons">
-            <button class="nav-btn prev" onclick="window.location.href='lesson_03.html'">← Lesson 3</button>
-            <button class="nav-btn next" onclick="window.location.href='lesson_05.html'">Lesson 5 →</button>
+        <!-- Lesson 2: Days of the Week -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'days')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Lesson: Days of the Week</h2>
+            <span class="time-badge">10 minutes</span>
+          </div>
+          <div class="section-content" data-section="days" data-lang="mixed">
+            <div class="content-block">
+              <h4>Teacher Lecture: The French Week</h4>
+              <p>
+                Let's learn the days of the week - you'll need these constantly for talking about
+                your schedule, making plans, and understanding when things happen. Here's something
+                interesting: in French, the days of the week are NOT capitalized unless they're at
+                the beginning of a sentence. Also, notice that many French day names come from Latin
+                and Roman gods, just like in English!
+              </p>
+            </div>
+
+            <div class="content-block">
+              <h4>
+                Days of the Week <span class="no-speak">(</span
+                ><span class="french-phrase" lang="fr">Les jours de la semaine</span
+                ><span class="no-speak">):</span>
+              </h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">lundi</span> - Monday (from Latin "Luna" -
+                  Moon day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">mardi</span> - Tuesday (from Mars - Mars
+                  day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">mercredi</span> - Wednesday (from Mercury -
+                  Mercury day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">jeudi</span> - Thursday (from Jupiter -
+                  Jupiter day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">vendredi</span> - Friday (from Venus - Venus
+                  day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">samedi</span> - Saturday (from Saturn -
+                  Saturn day)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">dimanche</span> - Sunday (from Latin
+                  "Dominicus" - Lord's day)
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h4>Useful Expressions:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Quel jour sommes-nous?</span> - What day is
+                  it?
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Nous sommes lundi.</span> - It's Monday.
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Aujourd'hui, c'est mardi.</span> - Today is
+                  Tuesday.
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Le lundi</span> - On Mondays (every Monday)
+                </li>
+                <li><span class="french-phrase" lang="fr">lundi prochain</span> - next Monday</li>
+              </ul>
+            </div>
+
+            <div class="activity-box">
+              <h4>🎯 Days Practice<span class="time-badge">4 min</span></h4>
+              <p><strong>Teacher Instructions:</strong></p>
+              <p style="margin-top: 10px">
+                Alright everyone, now that we know the days of the week, let's practice saying them
+                until they become automatic! We're going to do three different activities to help
+                these stick in your memory.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 1: Recite Together</strong> - We're going to recite all seven days of
+                the week together as a class, and we're going to do it three times in a row. Ready?
+                All together now: <span class="french-phrase" lang="fr">Lundi</span
+                ><span class="no-speak">,</span> <span class="french-phrase" lang="fr">mardi</span
+                ><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">mercredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">jeudi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">vendredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">samedi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">dimanche</span>! Great! Let's do it again, a
+                little faster this time: <span class="french-phrase" lang="fr">Lundi</span
+                ><span class="no-speak">,</span> <span class="french-phrase" lang="fr">mardi</span
+                ><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">mercredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">jeudi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">vendredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">samedi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">dimanche</span>! Perfect! One more time, and
+                really nail those pronunciations: <span class="french-phrase" lang="fr">Lundi</span
+                ><span class="no-speak">,</span> <span class="french-phrase" lang="fr">mardi</span
+                ><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">mercredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">jeudi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">vendredi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">samedi</span><span class="no-speak">,</span>
+                <span class="french-phrase" lang="fr">dimanche</span>! Excellent work!
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 2: James's Schedule</strong> - Now let's look at James's university
+                schedule this semester. Listen carefully to when he has his classes.
+                <span class="french-phrase" lang="fr">Le lundi, James a un cours de français.</span>
+                On Mondays, James has French class.
+                <span class="french-phrase" lang="fr">Le mercredi, il a un cours d'histoire.</span>
+                On Wednesdays, he has history class.
+                <span class="french-phrase" lang="fr"
+                  >Le vendredi, il a un cours de littérature.</span
+                >
+                And on Fridays, he has literature class. Notice the pattern? We use
+                <span class="french-phrase" lang="fr">Le</span> before the day to mean "on Mondays"
+                or "every Monday." If it's just one specific Monday, we wouldn't use
+                <span class="french-phrase" lang="fr">le</span>.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Part 3: Your Schedule</strong> - Now it's your turn! I want you to turn to
+                your partner and tell them one thing you do every week using this pattern:
+                <span class="french-phrase" lang="fr">Le [jour], je...</span> For example, you might
+                say <span class="french-phrase" lang="fr">Le samedi, je travaille</span> (On
+                Saturdays, I work) or
+                <span class="french-phrase" lang="fr">Le lundi, je vais à l'université</span> (On
+                Mondays, I go to the university). Try to use vocabulary we've already learned! Your
+                partner will listen and then share their own schedule. You have two minutes - go!
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- Lesson 3: Asking Questions -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'questions')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Lesson: Essential Questions</h2>
+            <span class="time-badge">10 minutes</span>
+          </div>
+          <div class="section-content" data-section="questions" data-lang="mixed">
+            <div class="info-box">
+              <strong>Textbook Reference:</strong> Pages 18-19 -
+              <span class="french-phrase" lang="fr">Pour se renseigner</span>
+            </div>
+
+            <div class="content-block">
+              <h4>Teacher Lecture: Getting to Know People</h4>
+              <p>
+                When you meet someone new in France, there are some essential questions you'll want
+                to ask to have a real conversation beyond just "hello." We've already learned
+                <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> and
+                <span class="french-phrase" lang="fr">Comment ça va?</span> - now let's add more
+                questions so you can get to know someone properly. These questions are the
+                foundation of every friendship and professional relationship you'll build in French!
+              </p>
+
+              <p style="margin-top: 10px">
+                Now, here's something important about French conversation culture: French people
+                often ask quite direct personal questions early in a conversation - questions that
+                might feel a bit forward in American culture. Asking someone's age, where they live,
+                what they study or do for work - these are all normal questions within the first few
+                minutes of meeting someone! It's not considered rude; it's how French people
+                establish common ground and figure out if they might have shared interests or
+                connections.
+              </p>
+
+              <p style="margin-top: 10px">
+                Remember from our tu/vous lesson that every single one of these questions has both
+                an informal and formal version. When you're meeting another student your age, use
+                <span class="french-phrase" lang="fr">tu</span>. When you're meeting a professor,
+                your friend's parents, someone older, or anyone in a professional context, use
+                <span class="french-phrase" lang="fr">vous</span>. The good news? The questions
+                follow the same pattern - you just need to adjust the verb ending and the pronoun.
+                Let's practice both versions so you're comfortable in any situation.
+              </p>
+
+              <p style="margin-top: 10px">
+                One more tip: when someone asks you these questions, they genuinely want to know the
+                answer! French conversation style values depth and engagement. Give real answers,
+                not just one-word responses. If someone asks where you're from, you might add a
+                sentence about what it's like there. If they ask what you study, explain why you
+                chose that subject. This back-and-forth, this exchange of real information, is how
+                French friendships begin.
+              </p>
+            </div>
+
+            <div class="content-block">
+              <h4>Essential Questions:</h4>
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Informal (tu)</th>
+                    <th>Formal (vous)</th>
+                    <th>English</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="french-phrase" lang="fr">Comment tu t'appelles?</span></td>
+                    <td><span class="french-phrase" lang="fr">Comment vous appelez-vous?</span></td>
+                    <td>What's your name?</td>
+                  </tr>
+                  <tr>
+                    <td><span class="french-phrase" lang="fr">Tu es d'où?</span></td>
+                    <td><span class="french-phrase" lang="fr">Vous êtes d'où?</span></td>
+                    <td>Where are you from?</td>
+                  </tr>
+                  <tr>
+                    <td><span class="french-phrase" lang="fr">Quel âge as-tu?</span></td>
+                    <td><span class="french-phrase" lang="fr">Quel âge avez-vous?</span></td>
+                    <td>How old are you?</td>
+                  </tr>
+                  <tr>
+                    <td><span class="french-phrase" lang="fr">Qu'est-ce que tu études?</span></td>
+                    <td>
+                      <span class="french-phrase" lang="fr">Qu'est-ce que vous étudiez?</span>
+                    </td>
+                    <td>What do you study?</td>
+                  </tr>
+                  <tr>
+                    <td><span class="french-phrase" lang="fr">Tu habites où?</span></td>
+                    <td><span class="french-phrase" lang="fr">Vous habitez où?</span></td>
+                    <td>Where do you live?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="content-block">
+              <h4>Sample Answers:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Je suis de New York.</span> - I'm from New
+                  York.
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'ai vingt ans.</span> - I'm 20 years old.
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'étudie le français.</span> - I study
+                  French.
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'habite à Boston.</span> - I live in
+                  Boston.
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity-box">
+              <h4>🎯 Information Exchange<span class="time-badge">5 min</span></h4>
+              <p><strong>Teacher Instructions:</strong></p>
+              <p style="margin-top: 10px">
+                Alright everyone, now we're going to put all these question words together into real
+                conversations! This is your chance to practice having an actual exchange with a
+                classmate - asking questions and giving answers - just like James has been doing
+                with his new friends in Paris.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Partner Interview Activity:</strong> I want you to find a partner - someone
+                you haven't worked with yet today. Once you've found your partner, you're going to
+                take turns interviewing each other. One person asks all four questions first while
+                the other person answers, then you switch roles. And here's the important part:
+                write down what your partner says! At the end, I'm going to call on a few of you to
+                introduce your partner to the class in French.
+              </p>
+              <p style="margin-top: 10px">
+                Remember, you're using <span class="french-phrase" lang="fr">tu</span> because
+                you're talking to another student - someone your age, your peer. If you were
+                interviewing me, you'd use <span class="french-phrase" lang="fr">vous</span>, but
+                with your classmates, always <span class="french-phrase" lang="fr">tu</span>.
+              </p>
+              <p style="margin-top: 10px"><strong>The Four Questions:</strong></p>
+              <ol style="margin-top: 10px">
+                <li>
+                  <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> (What's your
+                  name?)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Tu es d'où?</span> (Where are you from?)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Quel âge as-tu?</span> (How old are you?)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Qu'est-ce que tu études?</span> (What do you
+                  study?)
+                </li>
+              </ol>
+              <p style="margin-top: 10px">
+                <strong>Example answers you might give:</strong>
+              </p>
+              <ul style="margin-top: 5px">
+                <li>
+                  <span class="french-phrase" lang="fr">Je m'appelle Maria.</span> (My name is
+                  Maria.)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Je suis de Chicago.</span> (I'm from
+                  Chicago.)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'ai dix-neuf ans.</span> (I'm 19 years
+                  old.)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">J'étudie la biologie.</span> (I study
+                  biology.)
+                </li>
+              </ul>
+              <p style="margin-top: 10px">
+                You have five minutes for this activity. Find your partner now and get started!
+                Remember to write down their answers - you might need to spell check with them!
+              </p>
+            </div>
+
+            <div class="character-intro">
+              <h4>📖 James's Friends:</h4>
+              <p style="margin-bottom: 15px">
+                Remember Sophie and Pierre from earlier this week? Let's learn more about them!
+                James has been getting to know his new friends better, and now he can tell us all
+                about them. Listen to how we describe other people in French - notice we use
+                <span class="french-phrase" lang="fr">il</span> (he) for Pierre and
+                <span class="french-phrase" lang="fr">elle</span> (she) for Sophie.
+              </p>
+
+              <div
+                style="
+                  background-color: #fff3e0;
+                  padding: 15px;
+                  border-radius: 5px;
+                  margin-bottom: 15px;
+                "
+              >
+                <h5 style="margin-top: 0; color: #e65100">Sophie - James's First Friend</h5>
+                <p>
+                  <span class="french-phrase" lang="fr">Elle s'appelle Sophie.</span> Her name is
+                  Sophie.
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Elle est de Lyon.</span> She's from Lyon
+                  (the second largest city in France, famous for its food!).
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Elle a vingt-et-un ans.</span> She's 21
+                  years old.
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Elle étudie l'histoire de l'art.</span> She
+                  studies art history.
+                </p>
+                <p style="margin-top: 10px">
+                  <strong>Bonus info:</strong> Sophie loves visiting museums and wants to work at
+                  the Louvre someday. She speaks English pretty well, which is why she was so
+                  friendly when she first met James!
+                </p>
+              </div>
+
+              <div
+                style="
+                  background-color: #e3f2fd;
+                  padding: 15px;
+                  border-radius: 5px;
+                  margin-bottom: 15px;
+                "
+              >
+                <h5 style="margin-top: 0; color: #1565c0">Pierre - James's Roommate</h5>
+                <p>
+                  <span class="french-phrase" lang="fr">Il s'appelle Pierre.</span> His name is
+                  Pierre.
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Il est de Marseille.</span> He's from
+                  Marseille (a port city in southern France on the Mediterranean coast).
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Il a vingt-trois ans.</span> He's 23 years
+                  old.
+                </p>
+                <p>
+                  <span class="french-phrase" lang="fr">Il étudie les sciences politiques.</span> He
+                  studies political science.
+                </p>
+                <p style="margin-top: 10px">
+                  <strong>Bonus info:</strong> Pierre is in his second year at the Sorbonne and
+                  knows the campus really well. That's why he's been so helpful showing James
+                  around! He wants to work in international relations.
+                </p>
+              </div>
+
+              <div style="background-color: #f3e5f5; padding: 10px; border-left: 4px solid #6a1b9a">
+                <p style="margin: 0">
+                  <strong>📝 Grammar Note:</strong> Notice the pattern?
+                  <span class="french-phrase" lang="fr">Il/Elle s'appelle...</span> (His/Her name
+                  is...), <span class="french-phrase" lang="fr">Il/Elle est de...</span> (He/She is
+                  from...), <span class="french-phrase" lang="fr">Il/Elle a ___ ans</span> (He/She
+                  is ___ years old),
+                  <span class="french-phrase" lang="fr">Il/Elle étudie...</span> (He/She
+                  studies...). You can use this exact pattern to describe anyone!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 4: Francophone World -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'francophone')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Cultural Topic: The Francophone World</h2>
+            <span class="time-badge">10 minutes</span>
+          </div>
+          <div class="section-content" data-section="francophone" data-lang="en">
+            <div class="info-box">
+              <strong>Textbook Reference:</strong> Pages 20-21 -
+              <span class="french-phrase" lang="fr">Le monde francophone</span>
+            </div>
+
+            <div class="content-block">
+              <h4>Teacher Lecture: French Around the World</h4>
+              <p>
+                I want to share something exciting with you: when you learn French, you're not just
+                learning to communicate with people in France. French is spoken by over 300 million
+                people across five continents! It's an official language in 29 countries and is the
+                second most studied language in the world after English. Let me show you the
+                incredible diversity of the French-speaking world.
+              </p>
+
+              <p style="margin-top: 10px">
+                In Europe, besides France, you have Belgium, Switzerland, Luxembourg, and Monaco. In
+                North America, there's Quebec in Canada and parts of Louisiana in the United States,
+                plus several Caribbean islands like Haiti, Martinique, and Guadeloupe. In Africa -
+                this is huge - over 30 African countries speak French, including Senegal, Ivory
+                Coast, Morocco, Algeria, Tunisia, Madagascar, and many more. In fact, Africa has
+                more French speakers than Europe!
+              </p>
+
+              <p style="margin-top: 10px">
+                Then you have French territories in the Pacific like French Polynesia and New
+                Caledonia, and in South America there's French Guiana. Each place has its own
+                accent, its own expressions, its own culture - but they all share this beautiful
+                language. The French-speaking world is called
+                <span class="french-phrase" lang="fr">la Francophonie</span>, and it's incredibly
+                diverse and vibrant. Learning French opens doors to all these cultures!
+              </p>
+            </div>
+
+            <div class="content-block">
+              <h4>Major Francophone Regions:</h4>
+              <ul>
+                <li><strong>Europe:</strong> France, Belgium, Switzerland, Luxembourg, Monaco</li>
+                <li>
+                  <strong>North America:</strong> Quebec (Canada), Haiti, Martinique, Guadeloupe
+                </li>
+                <li>
+                  <strong>Africa:</strong> Senegal, Morocco, Algeria, Tunisia, Ivory Coast,
+                  Cameroon, Madagascar, and 20+ more countries
+                </li>
+                <li>
+                  <strong>Asia & Middle East:</strong> Lebanon, Vietnam (historical influence)
+                </li>
+                <li><strong>Pacific:</strong> French Polynesia, New Caledonia</li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h4>Why is French So Global?</h4>
+              <p style="margin-bottom: 10px">
+                French isn't just spoken in France! It's a truly global language spoken on five
+                continents. Here's why French became so widespread:
+              </p>
+              <ul>
+                <li>
+                  <strong>French colonial history (17th-20th centuries)</strong> - France and
+                  Belgium established colonies across Africa, Southeast Asia, the Caribbean, and the
+                  Pacific, bringing the French language to these regions. While colonialism ended,
+                  French often remained as an official language.
+                </li>
+                <li>
+                  <strong>French as a diplomatic language</strong> - For centuries, French was
+                  <em>the</em> language of international diplomacy. Even today, diplomatic documents
+                  are often written in both English and French.
+                </li>
+                <li>
+                  <strong>Official language of major organizations</strong> - French is an official
+                  language of the United Nations, European Union, NATO, the Olympics, FIFA, and many
+                  other international organizations. This means all official documents must be
+                  available in French.
+                </li>
+                <li>
+                  <strong>Growing importance in Africa</strong> - Here's something surprising:
+                  Africa is now home to more French speakers than Europe! Countries like Democratic
+                  Republic of Congo, Ivory Coast, and Cameroon have huge French-speaking
+                  populations. By 2050, it's projected there will be over 700 million French
+                  speakers, with most living in Africa. This makes French an increasingly important
+                  language for business and development.
+                </li>
+              </ul>
+              <p style="margin-top: 10px">
+                <strong>Fun fact:</strong> French is the only language besides English spoken on all
+                five continents! Learning French opens doors to Europe, Africa, North America, Asia,
+                and Oceania.
+              </p>
+            </div>
+
+            <div class="character-intro">
+              <h4>📖 James's Travel Dreams:</h4>
+              <p>
+                James is excited about learning French because he wants to travel! One day at lunch,
+                he's talking with Sophie about where he wants to visit.
+              </p>
+              <p style="margin-top: 10px">
+                <strong><span class="french-phrase" lang="fr">Sophie:</span></strong>
+                <span class="french-phrase" lang="fr">James, tu veux voyager où?</span> (James,
+                where do you want to travel?)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">James:</span></strong>
+                <span class="french-phrase" lang="fr"
+                  >Oh, j'ai trois destinations! D'abord, je veux aller au Québec.</span
+                >
+                (Oh, I have three destinations! First, I want to go to Quebec.)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">Sophie:</span></strong>
+                <span class="french-phrase" lang="fr">Pourquoi le Québec?</span> (Why Quebec?)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">James:</span></strong>
+                <span class="french-phrase" lang="fr"
+                  >Je veux voir la culture française en Amérique du Nord. Et puis, je veux aller au
+                  Sénégal en Afrique!</span
+                >
+                (I want to see French culture in North America. And then, I want to go to Senegal in
+                Africa!)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">Sophie:</span></strong>
+                <span class="french-phrase" lang="fr"
+                  >Le Sénégal! C'est super! Et ta troisième destination?</span
+                >
+                (Senegal! That's great! And your third destination?)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">James:</span></strong>
+                <span class="french-phrase" lang="fr"
+                  >Le Maroc! Je veux explorer l'Afrique du Nord.</span
+                >
+                (Morocco! I want to explore North Africa.)
+              </p>
+              <p>
+                <strong><span class="french-phrase" lang="fr">Sophie:</span></strong>
+                <span class="french-phrase" lang="fr">Excellent! Tu vas adorer ces pays!</span>
+                (Excellent! You're going to love these countries!)
+              </p>
+              <p style="margin-top: 15px"><strong>James's three travel goals:</strong></p>
+              <ul style="margin-top: 5px">
+                <li>
+                  <strong><span class="french-phrase" lang="fr">Québec</span></strong> - to
+                  experience French culture in North America (Montreal, Quebec City - beautiful old
+                  French colonial architecture and unique Quebecois French)
+                </li>
+                <li>
+                  <strong><span class="french-phrase" lang="fr">Sénégal</span></strong> - to see
+                  West African Francophone culture (Dakar - vibrant music scene, delicious food, and
+                  warm hospitality)
+                </li>
+                <li>
+                  <strong><span class="french-phrase" lang="fr">Maroc</span></strong> - to explore
+                  North Africa and learn about Maghrebi French (Marrakech, Casablanca - amazing
+                  blend of Arabic, Berber, and French cultures)
+                </li>
+              </ul>
+              <p style="margin-top: 15px">
+                <strong>Class Discussion:</strong> Where in the French-speaking world would YOU like
+                to visit? Why? Some other great options: Belgium (Brussels, chocolate!), Switzerland
+                (Geneva, the Alps!), Haiti (Caribbean culture), Vietnam (French colonial
+                architecture), Madagascar (unique wildlife), or French Polynesia (Tahiti - tropical
+                paradise!).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'closing')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Closing & Week Review</h2>
+            <span class="time-badge">5 minutes</span>
+          </div>
+          <div class="section-content" data-section="closing" data-lang="en">
+            <div class="content-block">
+              <h4>This Week We've Learned:</h4>
+              <ul>
+                <li>✓ All greetings and introductions</li>
+                <li>✓ Tu vs. vous distinction</li>
+                <li>✓ How to respond to "Comment ça va?"</li>
+                <li>✓ The entire French alphabet</li>
+                <li>✓ Numbers 0-100</li>
+                <li>✓ Classroom objects and commands</li>
+                <li>✓ Days of the week</li>
+                <li>✓ Essential questions for meeting people</li>
+                <li>✓ The Francophone world</li>
+              </ul>
+            </div>
+
+            <div class="info-box">
+              <strong>Preview Friday:</strong> Tomorrow we'll review everything from Week 1 with fun
+              activities and games, discuss French culture in more depth, and practice
+              conversations. Then you'll take Quiz 1 (last 15 minutes) covering: greetings, tu/vous,
+              alphabet, numbers 0-30, and basic vocabulary. Study tonight!
+            </div>
+          </div>
+        </div>
+
+        <!-- Homework -->
+        <div class="homework-box">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'homework')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h3>📚 Homework Due Friday</h3>
+          </div>
+          <div data-section="homework" data-lang="en">
+            <ul style="list-style-position: inside; padding-left: 20px">
+              <li>
+                <strong>Textbook Reading:</strong> Review all of Chapitre Préliminaire (pp. 2-27)
+              </li>
+              <li>
+                <strong>Numbers Practice:</strong> Write out numbers 0-100 by tens, then practice
+                70s, 80s, and 90s
+              </li>
+              <li>
+                <strong>Days Memorization:</strong> Memorize all days of the week - be able to
+                recite them in order
+              </li>
+              <li>
+                <strong>Question Practice:</strong> Write answers to all 5 essential questions about
+                yourself in French
+              </li>
+              <li>
+                <strong>Study for Quiz:</strong> Review all vocabulary from this week - greetings,
+                numbers 0-30, tu/vous rules, alphabet
+              </li>
+              <li>
+                <strong>Video:</strong> Watch "Geography Now - Francophone World" (15 minutes) -
+                learn about French-speaking countries
+              </li>
+              <li>
+                <strong>Conversation Practice:</strong> Practice introducing yourself and asking the
+                5 essential questions - record yourself
+              </li>
+            </ul>
+            <div class="info-box" style="margin-top: 15px">
+              <strong>Quiz 1 Tomorrow!</strong> The quiz will cover: basic greetings, tu vs. vous
+              usage, spelling with French alphabet, counting 0-30, and identifying classroom
+              objects. It's only 15 minutes - you've got this! Review your flashcards and notes
+              tonight.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="nav-btn prev" onclick="window.location.href = 'lesson_03.html'">
+          ← Lesson 3
+        </button>
+        <button class="nav-btn next" onclick="window.location.href = 'lesson_05.html'">
+          Lesson 5 →
+        </button>
+      </div>
     </div>
 
     <script src="lesson_audio.js"></script>
-</body>
+  </body>
 </html>

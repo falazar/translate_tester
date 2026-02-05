@@ -140,4 +140,3 @@ export function createTables(db: Database.Database): void {
 
   console.log('Database tables created successfully');
 }
-

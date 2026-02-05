@@ -6,8 +6,7 @@ import { SessionService } from '../services/sessionService';
 const router = Router();
 
 // Start a new session
-router.post('/start', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.post('/start', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const { level_id } = req.body;
 
@@ -16,14 +15,8 @@ router.post('/start', authMiddleware,
       return;
     }
 
-    const session = SessionService.createSession(
-      req.userId!, 
-      level_id
-    );
-    const questions = SessionService.generateQuestions(
-      req.userId!, 
-      level_id
-    );
+    const session = SessionService.createSession(req.userId!, level_id);
+    const questions = SessionService.generateQuestions(req.userId!, level_id);
     const level = LevelService.getLevelById(level_id);
 
     res.json({
@@ -31,7 +24,7 @@ router.post('/start', authMiddleware,
       level_id: session.level_id,
       total_questions: session.total_questions,
       level,
-      questions
+      questions,
     });
   } catch (error: any) {
     console.error('Error starting session:', error);
@@ -40,18 +33,21 @@ router.post('/start', authMiddleware,
 });
 
 // Submit an answer
-router.post('/:sessionId/answer', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.post('/:sessionId/answer', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const sessionId = parseInt(req.params.sessionId);
-    const { word_id, question_type, question_text, user_answer, correct_answer } = 
-      req.body;
+    const { word_id, question_type, question_text, user_answer, correct_answer } = req.body;
 
-    if (!word_id || !question_type || !question_text || 
-        user_answer === undefined || !correct_answer) {
-      res.status(400).json({ 
-        error: 'word_id, question_type, question_text, user_answer, ' + 
-               'and correct_answer required' 
+    if (
+      !word_id ||
+      !question_type ||
+      !question_text ||
+      user_answer === undefined ||
+      !correct_answer
+    ) {
+      res.status(400).json({
+        error:
+          'word_id, question_type, question_text, user_answer, ' + 'and correct_answer required',
       });
       return;
     }
@@ -73,14 +69,10 @@ router.post('/:sessionId/answer', authMiddleware,
 });
 
 // Get session results
-router.get('/:sessionId/results', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.get('/:sessionId/results', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const sessionId = parseInt(req.params.sessionId);
-    const results = SessionService.getSessionResult(
-      sessionId, 
-      req.userId!
-    );
+    const results = SessionService.getSessionResult(sessionId, req.userId!);
 
     res.json(results);
   } catch (error: any) {
@@ -89,8 +81,7 @@ router.get('/:sessionId/results', authMiddleware,
 });
 
 // Get user's session history
-router.get('/history', authMiddleware, 
-  (req: AuthRequest, res: Response) => {
+router.get('/history', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const sessions = SessionService.getUserSessions(req.userId!);
     res.json(sessions);
@@ -100,4 +91,3 @@ router.get('/history', authMiddleware,
 });
 
 export default router;
-

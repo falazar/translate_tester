@@ -8,10 +8,10 @@ dotenv.config();
 function initializeDatabase() {
   console.log('Initializing database...');
   console.log('WARNING: This will drop all existing tables!');
-  
+
   try {
     const db = getDatabase();
-    
+
     // Drop existing tables to ensure clean schema
     // console.log('Dropping existing tables...');
     // db.exec('PRAGMA foreign_keys = OFF');
@@ -23,7 +23,7 @@ function initializeDatabase() {
     // db.exec('DROP TABLE IF EXISTS levels');
     // db.exec('DROP TABLE IF EXISTS users');
     // db.exec('PRAGMA foreign_keys = ON');
-    
+
     createTables(db);
     console.log('Database initialized successfully!');
     console.log('Run "npm run seed" to populate with sample data.');
@@ -41,4 +41,3 @@ if (require.main === module) {
 }
 
 export { initializeDatabase };
-

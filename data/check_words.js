@@ -9,7 +9,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
 const dbPath = path.join(__dirname, 'game.db');
 const allWordsPath = path.join(__dirname, 'all_words.txt');
 const nextWordsPath = path.join(__dirname, 'next_words.txt');
@@ -29,18 +28,29 @@ function fetchAllFrenchWordsSync() {
   const { execSync } = require('child_process');
   try {
     // Get all french words from words table
-    const resultWords = execSync(`sqlite3 "${dbPath}" "SELECT french FROM words;"`, { encoding: 'utf8' });
+    const resultWords = execSync(`sqlite3 "${dbPath}" "SELECT french FROM words;"`, {
+      encoding: 'utf8',
+    });
     // Get all french sentences from example_sentences table
-    const resultExamples = execSync(`sqlite3 "${dbPath}" "SELECT word_to_replace FROM example_sentences;"`, { encoding: 'utf8' });
+    const resultExamples = execSync(
+      `sqlite3 "${dbPath}" "SELECT word_to_replace FROM example_sentences;"`,
+      { encoding: 'utf8' }
+    );
 
     // Split, clean, and combine
-    const words = resultWords.split(/\r?\n/).map(w => stripTrailingPunctuation(stripNumberPrefix(w))).filter(Boolean);
-    const exampleWords = resultExamples.split(/\r?\n/)
-      .map(w => stripTrailingPunctuation(stripNumberPrefix(w)))
+    const words = resultWords
+      .split(/\r?\n/)
+      .map((w) => stripTrailingPunctuation(stripNumberPrefix(w)))
+      .filter(Boolean);
+    const exampleWords = resultExamples
+      .split(/\r?\n/)
+      .map((w) => stripTrailingPunctuation(stripNumberPrefix(w)))
       .filter(Boolean);
 
     // Combine and deduplicate
-    const all = Array.from(new Set([...words, ...exampleWords].map(w => w.trim()).filter(Boolean)));
+    const all = Array.from(
+      new Set([...words, ...exampleWords].map((w) => w.trim()).filter(Boolean))
+    );
     fs.writeFileSync(allWordsPath, all.join('\n'), 'utf8');
     return all;
   } catch (err) {
@@ -49,13 +59,14 @@ function fetchAllFrenchWordsSync() {
   }
 }
 
-
 function checkDuplicates(wordsToCheck, allWords) {
   console.log('Words tested:');
-  wordsToCheck.forEach(w => console.log('  ' + w));
+  wordsToCheck.forEach((w) => console.log('  ' + w));
 
   console.log(`\nTotal all_words count: ${allWords.length}\n`);
-  const lowerAll = new Set(allWords.map(w => stripTrailingPunctuation(stripNumberPrefix(w)).toLowerCase()));
+  const lowerAll = new Set(
+    allWords.map((w) => stripTrailingPunctuation(stripNumberPrefix(w)).toLowerCase())
+  );
   let found = false;
   const duplicates = [];
   for (const word of wordsToCheck) {
@@ -74,7 +85,7 @@ function checkDuplicates(wordsToCheck, allWords) {
   if (duplicates.length > 0) {
     const fileContent = fs.readFileSync(nextWordsPath, 'utf8');
     const lines = fileContent.split(/\r?\n/);
-    const markedLines = lines.map(line => {
+    const markedLines = lines.map((line) => {
       const trimmed = line.trim();
       if (duplicates.includes(trimmed)) {
         return line + ' *DUPLICATE*';
@@ -85,7 +96,6 @@ function checkDuplicates(wordsToCheck, allWords) {
     console.log('\nDuplicates marked in next_words.txt');
   }
 }
-
 
 function main() {
   const args = process.argv.slice(2);
@@ -98,10 +108,11 @@ function main() {
       console.error('next_words.txt not found.');
       process.exit(1);
     }
-    wordsToCheck = fs.readFileSync(nextWordsPath, 'utf8')
+    wordsToCheck = fs
+      .readFileSync(nextWordsPath, 'utf8')
       .split(/\r?\n/)
-      .filter(line => line.includes(' - ') && !line.startsWith('#'))
-      .map(w => stripTrailingPunctuation(stripNumberPrefix(w.split(' - ')[0].trim())))
+      .filter((line) => line.includes(' - ') && !line.startsWith('#'))
+      .map((w) => stripTrailingPunctuation(stripNumberPrefix(w.split(' - ')[0].trim())))
       .filter(Boolean);
   }
 

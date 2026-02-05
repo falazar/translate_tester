@@ -3,165 +3,498 @@
   "title": "Mixed E",
   "theme": "Vocabulary from Group 8",
   "words": [
-    { "french": "faisant", "english": "doing", "word_type": "verb", "root": "faire", "sentences": [
-      { "fr": "Je marche en faisant une pause.", "en": "I walk while taking a break.", "replace": "faisant" },
-      { "fr": "Tu viens en faisant du bruit.", "en": "You come while making noise.", "replace": "faisant" },
-      { "fr": "Il part en faisant signe.", "en": "He leaves while gesturing.", "replace": "faisant" },
-      { "fr": "Nous avançons en faisant attention.", "en": "We move forward while paying attention.", "replace": "faisant" },
-      { "fr": "Vous sortez en faisant vite.", "en": "You go out while doing it quickly.", "replace": "faisant" },
-      { "fr": "Ils entrent en faisant semblant.", "en": "They enter while pretending.", "replace": "faisant" }
-    ] },
-    { "french": "entendais", "english": "was hearing", "word_type": "verb", "root": "entendre", "sentences": [
-      { "fr": "J'entendais la pluie.", "en": "I was hearing the rain.", "replace": "entendais" },
-      { "fr": "Tu entendais les voix.", "en": "You were hearing voices.", "replace": "entendais" },
-      { "fr": "Il entendait le vent.", "en": "He was hearing the wind.", "replace": "entendait" },
-      { "fr": "Nous entendions des pas.", "en": "We were hearing footsteps.", "replace": "entendions" },
-      { "fr": "Vous entendiez la rivière.", "en": "You were hearing the river.", "replace": "entendiez" },
-      { "fr": "Ils entendaient des oiseaux.", "en": "They were hearing birds.", "replace": "entendaient" }
-    ] },
-    { "french": "remarquai", "english": "I noticed", "word_type": "verb", "root": "remarquer", "sentences": [
-      { "fr": "Je remarquai un détail caché.", "en": "I noticed a hidden detail.", "replace": "remarquai" },
-      { "fr": "Tu remarquas une différence subtile.", "en": "You noticed a subtle difference.", "replace": "remarquas" },
-      { "fr": "Il remarqua soudain le silence.", "en": "He suddenly noticed the silence.", "replace": "remarqua" },
-      { "fr": "Nous remarquâmes ensemble le changement.", "en": "We noticed the change together.", "replace": "remarquâmes" },
-      { "fr": "Vous remarquâtes tard l'erreur.", "en": "You noticed the mistake late.", "replace": "remarquâtes" },
-      { "fr": "Ils remarquèrent vite les signes.", "en": "They quickly noticed the signs.", "replace": "remarquèrent" }
-    ] },
-    { "french": "survivre", "english": "to survive", "word_type": "verb", "root": "survivre", "sentences": [
-      { "fr": "Je survis au froid.", "en": "I survive the cold.", "replace": "survis" },
-      { "fr": "Tu survis avec peu.", "en": "You survive with little.", "replace": "survis" },
-      { "fr": "Il survit ici.", "en": "He survives here.", "replace": "survit" },
-      { "fr": "Nous survivons dehors.", "en": "We survive outside.", "replace": "survivons" },
-      { "fr": "Vous survivez ensemble.", "en": "You survive together.", "replace": "survivez" },
-      { "fr": "Ils survivent malgré tout.", "en": "They survive despite everything.", "replace": "survivent" }
-    ] },
-    { "french": "la sorte", "english": "sort", "word_type": "noun", "sentences": [
-      { "fr": "La sorte change.", "en": "The sort changes.", "replace": "sorte" },
-      { "fr": "Une sorte simple.", "en": "A simple kind.", "replace": "sorte" },
-      { "fr": "Cette sorte plaît.", "en": "This kind pleases.", "replace": "sorte" },
-      { "fr": "Les sortes varient.", "en": "Kinds vary.", "replace": "sortes" },
-      { "fr": "Plusieurs sortes existent.", "en": "Several kinds exist.", "replace": "sortes" },
-      { "fr": "Toutes les sortes restent.", "en": "All kinds remain.", "replace": "sortes" }
-    ] },
-    { "french": "l'accident", "english": "accident", "word_type": "noun", "sentences": [
-      { "fr": "L'accident arrive.", "en": "The accident happens.", "replace": "accident" },
-      { "fr": "Un accident grave.", "en": "A serious accident.", "replace": "accident" },
-      { "fr": "Cet accident choque.", "en": "This accident shocks.", "replace": "accident" },
-      { "fr": "Les accidents cessent.", "en": "Accidents cease.", "replace": "accidents" },
-      { "fr": "Plusieurs accidents marquent.", "en": "Several accidents leave a mark.", "replace": "accidents" },
-      { "fr": "Tous les accidents passent.", "en": "All accidents pass.", "replace": "accidents" }
-    ] },
-    { "french": "la force", "english": "strength", "word_type": "noun", "sentences": [
-      { "fr": "La force augmente.", "en": "Strength increases.", "replace": "force" },
-      { "fr": "Une force brute.", "en": "Brute force.", "replace": "force" },
-      { "fr": "Cette force suffit.", "en": "This strength is enough.", "replace": "force" },
-      { "fr": "Les forces s'unissent.", "en": "Forces unite.", "replace": "forces" },
-      { "fr": "Plusieurs forces diminuent.", "en": "Several forces decrease.", "replace": "forces" },
-      { "fr": "Toutes les forces comptent.", "en": "All forces matter.", "replace": "forces" }
-    ] },
-    { "french": "le psychologue", "english": "psychologist", "word_type": "noun", "sentences": [
-      { "fr": "Le psychologue écoute.", "en": "The psychologist listens.", "replace": "psychologue" },
-      { "fr": "Un psychologue aide.", "en": "A psychologist helps.", "replace": "psychologue" },
-      { "fr": "Ce psychologue conseille.", "en": "This psychologist advises.", "replace": "psychologue" },
-      { "fr": "Les psychologues travaillent.", "en": "Psychologists work.", "replace": "psychologues" },
-      { "fr": "Plusieurs psychologues arrivent.", "en": "Several psychologists arrive.", "replace": "psychologues" },
-      { "fr": "Tous les psychologues parlent.", "en": "All psychologists speak.", "replace": "psychologues" }
-    ] },
-    { "french": "les cendres", "english": "ashes", "word_type": "noun", "sentences": [
-      { "fr": "Une cendre tombe.", "en": "An ash falls.", "replace": "cendre" },
-      { "fr": "La cendre vole.", "en": "The ash flies.", "replace": "cendre" },
-      { "fr": "Cette cendre reste.", "en": "This ash remains.", "replace": "cendre" },
-      { "fr": "Les cendres s'accumulent.", "en": "Ashes accumulate.", "replace": "cendres" },
-      { "fr": "Des cendres s'envolent.", "en": "Ashes fly away.", "replace": "cendres" },
-      { "fr": "Toutes les cendres refroidissent.", "en": "All ashes cool down.", "replace": "cendres" }
-    ] },
-    { "french": "voilà la pièce", "english": "here is the piece", "word_type": "phrase", "sentences": [
-      { "fr": "Voilà la pièce sur la table.", "en": "Here is the piece on the table.", "replace": "Voilà la pièce" },
-      { "fr": "Voilà la pièce que tu veux.", "en": "Here is the piece you want.", "replace": "Voilà la pièce" },
-      { "fr": "Voilà la pièce perdue.", "en": "Here is the lost piece.", "replace": "Voilà la pièce" },
-      { "fr": "Voilà les pièces trouvées.", "en": "Here are the found pieces.", "replace": "Voilà les pièces" },
-      { "fr": "Voilà les pièces manquantes.", "en": "Here are the missing pieces.", "replace": "Voilà les pièces" },
-      { "fr": "Voilà toutes les pièces.", "en": "Here are all the pieces.", "replace": "Voilà les pièces" }
-    ] },
-    { "french": "à la force", "english": "with force", "word_type": "phrase", "sentences": [
-      { "fr": "Il pousse à la force.", "en": "He pushes with force.", "replace": "à la force" },
-      { "fr": "Tu tiens à la force.", "en": "You hold with force.", "replace": "à la force" },
-      { "fr": "Je ferme à la force.", "en": "I close with force.", "replace": "à la force" },
-      { "fr": "Nous avançons à la force.", "en": "We move forward with force.", "replace": "à la force" },
-      { "fr": "Vous ouvrez à la force.", "en": "You open with force.", "replace": "à la force" },
-      { "fr": "Ils tirent à la force.", "en": "They pull with force.", "replace": "à la force" }
-    ] },
-    { "french": "s'étaient", "english": "had been (themselves)", "word_type": "verb", "root": "se être (plus-que-parfait)", "sentences": [
-      { "fr": "Je m'étais caché.", "en": "I had hidden.", "replace": "m'étais" },
-      { "fr": "Tu t'étais perdu.", "en": "You had gotten lost.", "replace": "t'étais" },
-      { "fr": "Il s'était blessé.", "en": "He had injured himself.", "replace": "s'était" },
-      { "fr": "Nous nous étions préparés.", "en": "We had prepared ourselves.", "replace": "nous étions" },
-      { "fr": "Vous vous étiez trompés.", "en": "You had made a mistake.", "replace": "vous étiez" },
-      { "fr": "Ils s'étaient cachés.", "en": "They had hidden themselves.", "replace": "s'étaient" }
-    ] },
-    { "french": "l'ingénieur", "english": "engineer", "word_type": "noun", "sentences": [
-      { "fr": "L'ingénieur arrive.", "en": "The engineer arrives.", "replace": "ingénieur" },
-      { "fr": "Un ingénieur aide.", "en": "An engineer helps.", "replace": "ingénieur" },
-      { "fr": "Cet ingénieur dirige.", "en": "This engineer leads.", "replace": "ingénieur" },
-      { "fr": "Les ingénieurs collaborent.", "en": "Engineers collaborate.", "replace": "ingénieurs" },
-      { "fr": "Plusieurs ingénieurs testent.", "en": "Several engineers test.", "replace": "ingénieurs" },
-      { "fr": "Tous les ingénieurs travaillent.", "en": "All engineers work.", "replace": "ingénieurs" }
-    ] },
-    { "french": "la thérapie", "english": "therapy", "word_type": "noun", "sentences": [
-      { "fr": "La thérapie aide.", "en": "Therapy helps.", "replace": "thérapie" },
-      { "fr": "Une thérapie longue.", "en": "A long therapy.", "replace": "thérapie" },
-      { "fr": "Cette thérapie change.", "en": "This therapy changes.", "replace": "thérapie" },
-      { "fr": "Les thérapies évoluent.", "en": "Therapies evolve.", "replace": "thérapies" },
-      { "fr": "Plusieurs thérapies cessent.", "en": "Several therapies cease.", "replace": "thérapies" },
-      { "fr": "Toutes les thérapies comptent.", "en": "All therapies matter.", "replace": "thérapies" }
-    ] },
-    { "french": "scientifiques", "english": "scientific", "word_type": "adjective", "sentences": [
-      { "fr": "Un rapport scientifique.", "en": "A scientific report.", "replace": "scientifique" },
-      { "fr": "Un article scientifique.", "en": "A scientific article.", "replace": "scientifique" },
-      { "fr": "Un débat scientifique.", "en": "A scientific debate.", "replace": "scientifique" },
-      { "fr": "Des preuves scientifiques.", "en": "Scientific evidence.", "replace": "scientifiques" },
-      { "fr": "Des recherches scientifiques.", "en": "Scientific research.", "replace": "scientifiques" },
-      { "fr": "Tous scientifiques ici.", "en": "All scientific here.", "replace": "scientifiques" }
-    ] },
-    { "french": "impossible", "english": "impossible", "word_type": "adjective", "sentences": [
-      { "fr": "Un choix impossible.", "en": "An impossible choice.", "replace": "impossible" },
-      { "fr": "Un défi impossible.", "en": "An impossible challenge.", "replace": "impossible" },
-      { "fr": "Un souhait impossible.", "en": "An impossible wish.", "replace": "impossible" },
-      { "fr": "Des tâches impossibles.", "en": "Impossible tasks.", "replace": "impossibles" },
-      { "fr": "Des objectifs impossibles.", "en": "Impossible goals.", "replace": "impossibles" },
-      { "fr": "Tous impossibles ici.", "en": "All impossible here.", "replace": "impossibles" }
-    ] },
-    { "french": "complexes", "english": "complex", "word_type": "adjective", "sentences": [
-      { "fr": "Un problème complexe.", "en": "A complex problem.", "replace": "complexe" },
-      { "fr": "Un système complexe.", "en": "A complex system.", "replace": "complexe" },
-      { "fr": "Un cas complexe.", "en": "A complex case.", "replace": "complexe" },
-      { "fr": "Des idées complexes.", "en": "Complex ideas.", "replace": "complexes" },
-      { "fr": "Des réseaux complexes.", "en": "Complex networks.", "replace": "complexes" },
-      { "fr": "Tous très complexes.", "en": "All very complex.", "replace": "complexes" }
-    ] },
-    { "french": "humain", "english": "human", "word_type": "adjective", "sentences": [
-      { "fr": "Un besoin humain.", "en": "A human need.", "replace": "humain" },
-      { "fr": "Un geste humain.", "en": "A human gesture.", "replace": "humain" },
-      { "fr": "Un lien humain.", "en": "A human bond.", "replace": "humain" },
-      { "fr": "Des valeurs humaines.", "en": "Human values.", "replace": "humaines" },
-      { "fr": "Des erreurs humaines.", "en": "Human errors.", "replace": "humaines" },
-      { "fr": "Toutes très humaines.", "en": "All very human.", "replace": "humaines" }
-    ] },
-    { "french": "accident très grave", "english": "very serious accident", "word_type": "phrase", "sentences": [
-      { "fr": "Un accident très grave survient.", "en": "A very serious accident occurs.", "replace": "accident très grave" },
-      { "fr": "Cet accident très grave choque.", "en": "This very serious accident shocks.", "replace": "accident très grave" },
-      { "fr": "L'accident très grave cesse.", "en": "The very serious accident ceases.", "replace": "accident très grave" },
-      { "fr": "Des accidents très graves arrivent.", "en": "Very serious accidents occur.", "replace": "accidents très graves" },
-      { "fr": "Plusieurs accidents très graves marquent.", "en": "Several very serious accidents leave a mark.", "replace": "accidents très graves" },
-      { "fr": "Tous les accidents très graves passent.", "en": "All very serious accidents pass.", "replace": "accidents très graves" }
-    ] },
-    { "french": "force brute", "english": "brute force", "word_type": "phrase", "sentences": [
-      { "fr": "Il pousse par force brute.", "en": "He pushes by brute force.", "replace": "force brute" },
-      { "fr": "Tu ouvres par force brute.", "en": "You open by brute force.", "replace": "force brute" },
-      { "fr": "Je ferme par force brute.", "en": "I close by brute force.", "replace": "force brute" },
-      { "fr": "Nous avançons par force brute.", "en": "We move forward by brute force.", "replace": "force brute" },
-      { "fr": "Vous tirez par force brute.", "en": "You pull by brute force.", "replace": "force brute" },
-      { "fr": "Ils déplacent par force brute.", "en": "They move by brute force.", "replace": "force brute" }
-    ] }
+    {
+      "french": "faisant",
+      "english": "doing",
+      "word_type": "verb",
+      "root": "faire",
+      "sentences": [
+        {
+          "fr": "Je marche en faisant une pause.",
+          "en": "I walk while taking a break.",
+          "replace": "faisant"
+        },
+        {
+          "fr": "Tu viens en faisant du bruit.",
+          "en": "You come while making noise.",
+          "replace": "faisant"
+        },
+        {
+          "fr": "Il part en faisant signe.",
+          "en": "He leaves while gesturing.",
+          "replace": "faisant"
+        },
+        {
+          "fr": "Nous avançons en faisant attention.",
+          "en": "We move forward while paying attention.",
+          "replace": "faisant"
+        },
+        {
+          "fr": "Vous sortez en faisant vite.",
+          "en": "You go out while doing it quickly.",
+          "replace": "faisant"
+        },
+        {
+          "fr": "Ils entrent en faisant semblant.",
+          "en": "They enter while pretending.",
+          "replace": "faisant"
+        }
+      ]
+    },
+    {
+      "french": "entendais",
+      "english": "was hearing",
+      "word_type": "verb",
+      "root": "entendre",
+      "sentences": [
+        { "fr": "J'entendais la pluie.", "en": "I was hearing the rain.", "replace": "entendais" },
+        {
+          "fr": "Tu entendais les voix.",
+          "en": "You were hearing voices.",
+          "replace": "entendais"
+        },
+        { "fr": "Il entendait le vent.", "en": "He was hearing the wind.", "replace": "entendait" },
+        {
+          "fr": "Nous entendions des pas.",
+          "en": "We were hearing footsteps.",
+          "replace": "entendions"
+        },
+        {
+          "fr": "Vous entendiez la rivière.",
+          "en": "You were hearing the river.",
+          "replace": "entendiez"
+        },
+        {
+          "fr": "Ils entendaient des oiseaux.",
+          "en": "They were hearing birds.",
+          "replace": "entendaient"
+        }
+      ]
+    },
+    {
+      "french": "remarquai",
+      "english": "I noticed",
+      "word_type": "verb",
+      "root": "remarquer",
+      "sentences": [
+        {
+          "fr": "Je remarquai un détail caché.",
+          "en": "I noticed a hidden detail.",
+          "replace": "remarquai"
+        },
+        {
+          "fr": "Tu remarquas une différence subtile.",
+          "en": "You noticed a subtle difference.",
+          "replace": "remarquas"
+        },
+        {
+          "fr": "Il remarqua soudain le silence.",
+          "en": "He suddenly noticed the silence.",
+          "replace": "remarqua"
+        },
+        {
+          "fr": "Nous remarquâmes ensemble le changement.",
+          "en": "We noticed the change together.",
+          "replace": "remarquâmes"
+        },
+        {
+          "fr": "Vous remarquâtes tard l'erreur.",
+          "en": "You noticed the mistake late.",
+          "replace": "remarquâtes"
+        },
+        {
+          "fr": "Ils remarquèrent vite les signes.",
+          "en": "They quickly noticed the signs.",
+          "replace": "remarquèrent"
+        }
+      ]
+    },
+    {
+      "french": "survivre",
+      "english": "to survive",
+      "word_type": "verb",
+      "root": "survivre",
+      "sentences": [
+        { "fr": "Je survis au froid.", "en": "I survive the cold.", "replace": "survis" },
+        { "fr": "Tu survis avec peu.", "en": "You survive with little.", "replace": "survis" },
+        { "fr": "Il survit ici.", "en": "He survives here.", "replace": "survit" },
+        { "fr": "Nous survivons dehors.", "en": "We survive outside.", "replace": "survivons" },
+        { "fr": "Vous survivez ensemble.", "en": "You survive together.", "replace": "survivez" },
+        {
+          "fr": "Ils survivent malgré tout.",
+          "en": "They survive despite everything.",
+          "replace": "survivent"
+        }
+      ]
+    },
+    {
+      "french": "la sorte",
+      "english": "sort",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La sorte change.", "en": "The sort changes.", "replace": "sorte" },
+        { "fr": "Une sorte simple.", "en": "A simple kind.", "replace": "sorte" },
+        { "fr": "Cette sorte plaît.", "en": "This kind pleases.", "replace": "sorte" },
+        { "fr": "Les sortes varient.", "en": "Kinds vary.", "replace": "sortes" },
+        { "fr": "Plusieurs sortes existent.", "en": "Several kinds exist.", "replace": "sortes" },
+        { "fr": "Toutes les sortes restent.", "en": "All kinds remain.", "replace": "sortes" }
+      ]
+    },
+    {
+      "french": "l'accident",
+      "english": "accident",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "L'accident arrive.", "en": "The accident happens.", "replace": "accident" },
+        { "fr": "Un accident grave.", "en": "A serious accident.", "replace": "accident" },
+        { "fr": "Cet accident choque.", "en": "This accident shocks.", "replace": "accident" },
+        { "fr": "Les accidents cessent.", "en": "Accidents cease.", "replace": "accidents" },
+        {
+          "fr": "Plusieurs accidents marquent.",
+          "en": "Several accidents leave a mark.",
+          "replace": "accidents"
+        },
+        { "fr": "Tous les accidents passent.", "en": "All accidents pass.", "replace": "accidents" }
+      ]
+    },
+    {
+      "french": "la force",
+      "english": "strength",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La force augmente.", "en": "Strength increases.", "replace": "force" },
+        { "fr": "Une force brute.", "en": "Brute force.", "replace": "force" },
+        { "fr": "Cette force suffit.", "en": "This strength is enough.", "replace": "force" },
+        { "fr": "Les forces s'unissent.", "en": "Forces unite.", "replace": "forces" },
+        {
+          "fr": "Plusieurs forces diminuent.",
+          "en": "Several forces decrease.",
+          "replace": "forces"
+        },
+        { "fr": "Toutes les forces comptent.", "en": "All forces matter.", "replace": "forces" }
+      ]
+    },
+    {
+      "french": "le psychologue",
+      "english": "psychologist",
+      "word_type": "noun",
+      "sentences": [
+        {
+          "fr": "Le psychologue écoute.",
+          "en": "The psychologist listens.",
+          "replace": "psychologue"
+        },
+        { "fr": "Un psychologue aide.", "en": "A psychologist helps.", "replace": "psychologue" },
+        {
+          "fr": "Ce psychologue conseille.",
+          "en": "This psychologist advises.",
+          "replace": "psychologue"
+        },
+        {
+          "fr": "Les psychologues travaillent.",
+          "en": "Psychologists work.",
+          "replace": "psychologues"
+        },
+        {
+          "fr": "Plusieurs psychologues arrivent.",
+          "en": "Several psychologists arrive.",
+          "replace": "psychologues"
+        },
+        {
+          "fr": "Tous les psychologues parlent.",
+          "en": "All psychologists speak.",
+          "replace": "psychologues"
+        }
+      ]
+    },
+    {
+      "french": "les cendres",
+      "english": "ashes",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Une cendre tombe.", "en": "An ash falls.", "replace": "cendre" },
+        { "fr": "La cendre vole.", "en": "The ash flies.", "replace": "cendre" },
+        { "fr": "Cette cendre reste.", "en": "This ash remains.", "replace": "cendre" },
+        { "fr": "Les cendres s'accumulent.", "en": "Ashes accumulate.", "replace": "cendres" },
+        { "fr": "Des cendres s'envolent.", "en": "Ashes fly away.", "replace": "cendres" },
+        {
+          "fr": "Toutes les cendres refroidissent.",
+          "en": "All ashes cool down.",
+          "replace": "cendres"
+        }
+      ]
+    },
+    {
+      "french": "voilà la pièce",
+      "english": "here is the piece",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Voilà la pièce sur la table.",
+          "en": "Here is the piece on the table.",
+          "replace": "Voilà la pièce"
+        },
+        {
+          "fr": "Voilà la pièce que tu veux.",
+          "en": "Here is the piece you want.",
+          "replace": "Voilà la pièce"
+        },
+        {
+          "fr": "Voilà la pièce perdue.",
+          "en": "Here is the lost piece.",
+          "replace": "Voilà la pièce"
+        },
+        {
+          "fr": "Voilà les pièces trouvées.",
+          "en": "Here are the found pieces.",
+          "replace": "Voilà les pièces"
+        },
+        {
+          "fr": "Voilà les pièces manquantes.",
+          "en": "Here are the missing pieces.",
+          "replace": "Voilà les pièces"
+        },
+        {
+          "fr": "Voilà toutes les pièces.",
+          "en": "Here are all the pieces.",
+          "replace": "Voilà les pièces"
+        }
+      ]
+    },
+    {
+      "french": "à la force",
+      "english": "with force",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Il pousse à la force.", "en": "He pushes with force.", "replace": "à la force" },
+        { "fr": "Tu tiens à la force.", "en": "You hold with force.", "replace": "à la force" },
+        { "fr": "Je ferme à la force.", "en": "I close with force.", "replace": "à la force" },
+        {
+          "fr": "Nous avançons à la force.",
+          "en": "We move forward with force.",
+          "replace": "à la force"
+        },
+        { "fr": "Vous ouvrez à la force.", "en": "You open with force.", "replace": "à la force" },
+        { "fr": "Ils tirent à la force.", "en": "They pull with force.", "replace": "à la force" }
+      ]
+    },
+    {
+      "french": "s'étaient",
+      "english": "had been (themselves)",
+      "word_type": "verb",
+      "root": "se être (plus-que-parfait)",
+      "sentences": [
+        { "fr": "Je m'étais caché.", "en": "I had hidden.", "replace": "m'étais" },
+        { "fr": "Tu t'étais perdu.", "en": "You had gotten lost.", "replace": "t'étais" },
+        { "fr": "Il s'était blessé.", "en": "He had injured himself.", "replace": "s'était" },
+        {
+          "fr": "Nous nous étions préparés.",
+          "en": "We had prepared ourselves.",
+          "replace": "nous étions"
+        },
+        {
+          "fr": "Vous vous étiez trompés.",
+          "en": "You had made a mistake.",
+          "replace": "vous étiez"
+        },
+        {
+          "fr": "Ils s'étaient cachés.",
+          "en": "They had hidden themselves.",
+          "replace": "s'étaient"
+        }
+      ]
+    },
+    {
+      "french": "l'ingénieur",
+      "english": "engineer",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "L'ingénieur arrive.", "en": "The engineer arrives.", "replace": "ingénieur" },
+        { "fr": "Un ingénieur aide.", "en": "An engineer helps.", "replace": "ingénieur" },
+        { "fr": "Cet ingénieur dirige.", "en": "This engineer leads.", "replace": "ingénieur" },
+        {
+          "fr": "Les ingénieurs collaborent.",
+          "en": "Engineers collaborate.",
+          "replace": "ingénieurs"
+        },
+        {
+          "fr": "Plusieurs ingénieurs testent.",
+          "en": "Several engineers test.",
+          "replace": "ingénieurs"
+        },
+        {
+          "fr": "Tous les ingénieurs travaillent.",
+          "en": "All engineers work.",
+          "replace": "ingénieurs"
+        }
+      ]
+    },
+    {
+      "french": "la thérapie",
+      "english": "therapy",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La thérapie aide.", "en": "Therapy helps.", "replace": "thérapie" },
+        { "fr": "Une thérapie longue.", "en": "A long therapy.", "replace": "thérapie" },
+        { "fr": "Cette thérapie change.", "en": "This therapy changes.", "replace": "thérapie" },
+        { "fr": "Les thérapies évoluent.", "en": "Therapies evolve.", "replace": "thérapies" },
+        {
+          "fr": "Plusieurs thérapies cessent.",
+          "en": "Several therapies cease.",
+          "replace": "thérapies"
+        },
+        {
+          "fr": "Toutes les thérapies comptent.",
+          "en": "All therapies matter.",
+          "replace": "thérapies"
+        }
+      ]
+    },
+    {
+      "french": "scientifiques",
+      "english": "scientific",
+      "word_type": "adjective",
+      "sentences": [
+        {
+          "fr": "Un rapport scientifique.",
+          "en": "A scientific report.",
+          "replace": "scientifique"
+        },
+        {
+          "fr": "Un article scientifique.",
+          "en": "A scientific article.",
+          "replace": "scientifique"
+        },
+        { "fr": "Un débat scientifique.", "en": "A scientific debate.", "replace": "scientifique" },
+        {
+          "fr": "Des preuves scientifiques.",
+          "en": "Scientific evidence.",
+          "replace": "scientifiques"
+        },
+        {
+          "fr": "Des recherches scientifiques.",
+          "en": "Scientific research.",
+          "replace": "scientifiques"
+        },
+        {
+          "fr": "Tous scientifiques ici.",
+          "en": "All scientific here.",
+          "replace": "scientifiques"
+        }
+      ]
+    },
+    {
+      "french": "impossible",
+      "english": "impossible",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un choix impossible.", "en": "An impossible choice.", "replace": "impossible" },
+        { "fr": "Un défi impossible.", "en": "An impossible challenge.", "replace": "impossible" },
+        { "fr": "Un souhait impossible.", "en": "An impossible wish.", "replace": "impossible" },
+        { "fr": "Des tâches impossibles.", "en": "Impossible tasks.", "replace": "impossibles" },
+        { "fr": "Des objectifs impossibles.", "en": "Impossible goals.", "replace": "impossibles" },
+        { "fr": "Tous impossibles ici.", "en": "All impossible here.", "replace": "impossibles" }
+      ]
+    },
+    {
+      "french": "complexes",
+      "english": "complex",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un problème complexe.", "en": "A complex problem.", "replace": "complexe" },
+        { "fr": "Un système complexe.", "en": "A complex system.", "replace": "complexe" },
+        { "fr": "Un cas complexe.", "en": "A complex case.", "replace": "complexe" },
+        { "fr": "Des idées complexes.", "en": "Complex ideas.", "replace": "complexes" },
+        { "fr": "Des réseaux complexes.", "en": "Complex networks.", "replace": "complexes" },
+        { "fr": "Tous très complexes.", "en": "All very complex.", "replace": "complexes" }
+      ]
+    },
+    {
+      "french": "humain",
+      "english": "human",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un besoin humain.", "en": "A human need.", "replace": "humain" },
+        { "fr": "Un geste humain.", "en": "A human gesture.", "replace": "humain" },
+        { "fr": "Un lien humain.", "en": "A human bond.", "replace": "humain" },
+        { "fr": "Des valeurs humaines.", "en": "Human values.", "replace": "humaines" },
+        { "fr": "Des erreurs humaines.", "en": "Human errors.", "replace": "humaines" },
+        { "fr": "Toutes très humaines.", "en": "All very human.", "replace": "humaines" }
+      ]
+    },
+    {
+      "french": "accident très grave",
+      "english": "very serious accident",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Un accident très grave survient.",
+          "en": "A very serious accident occurs.",
+          "replace": "accident très grave"
+        },
+        {
+          "fr": "Cet accident très grave choque.",
+          "en": "This very serious accident shocks.",
+          "replace": "accident très grave"
+        },
+        {
+          "fr": "L'accident très grave cesse.",
+          "en": "The very serious accident ceases.",
+          "replace": "accident très grave"
+        },
+        {
+          "fr": "Des accidents très graves arrivent.",
+          "en": "Very serious accidents occur.",
+          "replace": "accidents très graves"
+        },
+        {
+          "fr": "Plusieurs accidents très graves marquent.",
+          "en": "Several very serious accidents leave a mark.",
+          "replace": "accidents très graves"
+        },
+        {
+          "fr": "Tous les accidents très graves passent.",
+          "en": "All very serious accidents pass.",
+          "replace": "accidents très graves"
+        }
+      ]
+    },
+    {
+      "french": "force brute",
+      "english": "brute force",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Il pousse par force brute.",
+          "en": "He pushes by brute force.",
+          "replace": "force brute"
+        },
+        {
+          "fr": "Tu ouvres par force brute.",
+          "en": "You open by brute force.",
+          "replace": "force brute"
+        },
+        {
+          "fr": "Je ferme par force brute.",
+          "en": "I close by brute force.",
+          "replace": "force brute"
+        },
+        {
+          "fr": "Nous avançons par force brute.",
+          "en": "We move forward by brute force.",
+          "replace": "force brute"
+        },
+        {
+          "fr": "Vous tirez par force brute.",
+          "en": "You pull by brute force.",
+          "replace": "force brute"
+        },
+        {
+          "fr": "Ils déplacent par force brute.",
+          "en": "They move by brute force.",
+          "replace": "force brute"
+        }
+      ]
+    }
   ]
 }

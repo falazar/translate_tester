@@ -24,7 +24,13 @@ router.post('/parseText', authMiddleware, async (req: AuthRequest, res: Response
 
     // Analyze the processed text
     const analysis = TextService.analyzeText(processedText);
-    console.log('Analysis completed:', analysis.totalWords, 'words,', analysis.uniqueWords, 'unique');
+    console.log(
+      'Analysis completed:',
+      analysis.totalWords,
+      'words,',
+      analysis.uniqueWords,
+      'unique'
+    );
     console.log('Plain word frequencies count:', analysis.plainWordFrequencies?.length || 0);
     console.log('Level word frequencies count:', analysis.wordFrequencies?.length || 0);
     console.log('Percentage known:', analysis.percentageKnown + '%');
@@ -34,9 +40,8 @@ router.post('/parseText', authMiddleware, async (req: AuthRequest, res: Response
       originalText: text,
       processedText: processedText,
       analysis: analysis,
-      message: 'Text processed and analyzed successfully.'
+      message: 'Text processed and analyzed successfully.',
     });
-
   } catch (error) {
     console.error('Error in parseText:', error);
     res.status(500).json({ error: 'Internal server error' });

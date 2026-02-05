@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-               Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   color: #333;
@@ -246,11 +246,11 @@ body {
   overflow: hidden;
 }
 
-.frequency-content.collapsed .plain-frequency-item:nth-child(n+11) {
+.frequency-content.collapsed .plain-frequency-item:nth-child(n + 11) {
   display: none;
 }
 
-.frequency-content.expanded .plain-frequency-item:nth-child(n+11) {
+.frequency-content.expanded .plain-frequency-item:nth-child(n + 11) {
   display: block;
 }
 
@@ -283,7 +283,8 @@ body {
   font-weight: normal;
 }
 
-.word-frequency-item, .plain-frequency-item {
+.word-frequency-item,
+.plain-frequency-item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -304,14 +305,16 @@ body {
   background: rgba(255, 152, 0, 0.1);
 }
 
-.word-frequency-item .word-info, .plain-frequency-item .word-info {
+.word-frequency-item .word-info,
+.plain-frequency-item .word-info {
   display: flex;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
 }
 
-.word-frequency-item .word-number, .plain-frequency-item .word-number {
+.word-frequency-item .word-number,
+.plain-frequency-item .word-number {
   font-weight: bold;
   color: #666;
   min-width: 25px;
@@ -319,7 +322,8 @@ body {
   flex-shrink: 0;
 }
 
-.word-frequency-item .word-text, .plain-frequency-item .word-text {
+.word-frequency-item .word-text,
+.plain-frequency-item .word-text {
   font-weight: 500;
   max-width: 150px;
   flex-shrink: 0;
@@ -341,7 +345,8 @@ body {
   background: #ff9800;
 }
 
-.word-frequency-item .word-count, .plain-frequency-item .word-count {
+.word-frequency-item .word-count,
+.plain-frequency-item .word-count {
   background: #4caf50;
   color: white;
   padding: 4px 10px;
@@ -424,7 +429,9 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .btn-primary:hover {
@@ -576,7 +583,10 @@ body {
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, background 0.2s, border 0.2s;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    border 0.2s;
   border: 3px solid transparent;
 }
 
@@ -1127,4 +1137,3 @@ body {
   padding: 4px 0;
   line-height: 1.4;
 }
-

@@ -13,7 +13,8 @@ export class TextService {
 
     // Use regex to remove <p> tags with italic styling
     // This regex matches <p style="font-style: italic;" class="indent"> and </p> pairs
-    const italicParagraphRegex = /<p[^>]*style\s*=\s*["'][^"']*font-style\s*:\s*italic[^"']*["'][^>]*>[\s\S]*?<\/p>/gi;
+    const italicParagraphRegex =
+      /<p[^>]*style\s*=\s*["'][^"']*font-style\s*:\s*italic[^"']*["'][^>]*>[\s\S]*?<\/p>/gi;
 
     // Remove italic paragraphs
     let processedText = text.replace(italicParagraphRegex, '');
@@ -41,7 +42,16 @@ export class TextService {
   } {
     if (!text) {
       console.log('analyzeText: No text provided');
-      return { plainWordFrequencies: [], wordFrequencies: [], totalWords: 0, uniqueWords: 0, uniqueKnownWords: 0, unknownWords: 0, percentageKnown: 0, highlightedProcessedText: '' };
+      return {
+        plainWordFrequencies: [],
+        wordFrequencies: [],
+        totalWords: 0,
+        uniqueWords: 0,
+        uniqueKnownWords: 0,
+        unknownWords: 0,
+        percentageKnown: 0,
+        highlightedProcessedText: '',
+      };
     }
 
     // Normalize text to NFC to ensure consistent character representation.
@@ -50,11 +60,11 @@ export class TextService {
 
     // Clean and tokenize text
     const { textWithoutHtml, words } = TextService.cleanAndTokenizeText(text);
-    // if (false) console.log("DEBUG words =", words.slice(0, 20)); 
+    // if (false) console.log("DEBUG words =", words.slice(0, 20));
 
     // Step 3: Count word frequencies
     const wordCountMap = new Map<string, number>();
-    words.forEach(word => {
+    words.forEach((word) => {
       const lowerWord = word.toLowerCase();
       wordCountMap.set(lowerWord, (wordCountMap.get(lowerWord) || 0) + 1);
     });
@@ -95,14 +105,14 @@ export class TextService {
         } else {
           baseWordCounts.set(baseWord, {
             count,
-            level: wordMapping.level
+            level: wordMapping.level,
           });
         }
       } else {
         // This word is unknown - keep it as-is
         baseWordCounts.set(word, {
           count,
-          level: 'unknown'
+          level: 'unknown',
         });
       }
     });
@@ -111,7 +121,7 @@ export class TextService {
     const wordFrequencies = Array.from(baseWordCounts.entries()).map(([baseWord, data]) => ({
       word: baseWord,
       count: data.count,
-      level: data.level as number | 'unknown'
+      level: data.level as number | 'unknown',
     }));
 
     // Step 8: Sort by level (unknown last), then by frequency (descending)
@@ -129,15 +139,16 @@ export class TextService {
     });
 
     // Step 9: Count unknown words
-    const unknownWords = wordFrequencies.filter(item => item.level === 'unknown').length;
+    const unknownWords = wordFrequencies.filter((item) => item.level === 'unknown').length;
     const uniqueKnownWords = wordCountMap.size - unknownWords;
 
     // Step 10: Calculate percentage of known words
     const totalWordCount = wordFrequencies.reduce((sum, item) => sum + item.count, 0);
     const knownWordCount = wordFrequencies
-      .filter(item => item.level !== 'unknown')
+      .filter((item) => item.level !== 'unknown')
       .reduce((sum, item) => sum + item.count, 0);
-    const percentageKnown = totalWordCount > 0 ? Math.round((knownWordCount / totalWordCount) * 100) : 0;
+    const percentageKnown =
+      totalWordCount > 0 ? Math.round((knownWordCount / totalWordCount) * 100) : 0;
 
     // Step 10: Highlight known words in the processed text
     const knownWords = Array.from(wordLevels.keys());
@@ -151,7 +162,7 @@ export class TextService {
       uniqueKnownWords,
       unknownWords,
       percentageKnown,
-      highlightedProcessedText
+      highlightedProcessedText,
     };
   }
 
@@ -160,7 +171,7 @@ export class TextService {
    * @param text - Raw input text
    * @returns Object with cleaned text and array of words
    */
-  static cleanAndTokenizeText(text: string): { textWithoutHtml: string, words: string[] } {
+  static cleanAndTokenizeText(text: string): { textWithoutHtml: string; words: string[] } {
     // Step 1: Remove all HTML tags
     let textWithoutHtml = text.replace(/<[^>]*>/g, '');
 
@@ -168,7 +179,10 @@ export class TextService {
 
     // Remove all non-ASCII characters except French accented letters and common punctuation
     // Keeps: a-z, A-Z, 0-9, whitespace, . , ; : ! ? ' " ( ) - and French accented letters àâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ
-    textWithoutHtml = textWithoutHtml.replace(/[^a-zA-Z0-9\s.,;:!?'"()\-àâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]/g, '');
+    textWithoutHtml = textWithoutHtml.replace(
+      /[^a-zA-Z0-9\s.,;:!?'"()\-àâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]/g,
+      ''
+    );
 
     // Remove all line breaks (convert to space or remove)
     textWithoutHtml = textWithoutHtml.replace(/[\r\n]+/g, ' ');
@@ -177,7 +191,10 @@ export class TextService {
     let textForWords = textWithoutHtml.replace(/(^| )(j|l|n|d|m)'/gi, ' ');
 
     // Tokenize: match French words, including elisions and hyphens
-    let words = textForWords.match(/[a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+(?:['’-][a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+)*/g) || [];
+    let words =
+      textForWords.match(
+        /[a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+(?:['’-][a-zA-ZàâäéèêëïîôöùûüÿçÀÂÄÉÈÊËÏÎÔÖÙÛÜŸÇ]+)*/g
+      ) || [];
 
     return { textWithoutHtml, words };
   }
@@ -192,33 +209,46 @@ export class TextService {
       const wordLevels = new Map<string, { level: number; baseWord: string }>();
 
       // Step 1: Query all words with their level information
-      const words = db.prepare(`
+      const words = db
+        .prepare(
+          `
         SELECT w.french, l.level_number
         FROM words w
         JOIN levels l ON w.level_id = l.id
         ORDER BY l.level_number, w.french
-      `).all() as Array<{ french: string; level_number: number }>;
+      `
+        )
+        .all() as Array<{ french: string; level_number: number }>;
 
       // Query all replace words from example_sentences with their base word
-      const replaceWords = db.prepare(`
+      const replaceWords = db
+        .prepare(
+          `
         SELECT s.word_to_replace, w.french as base_word, l.level_number
         FROM example_sentences s
         JOIN words w ON s.word_id = w.id
         JOIN levels l ON w.level_id = l.id
         WHERE s.word_to_replace IS NOT NULL AND s.word_to_replace != ''
         ORDER BY l.level_number, s.word_to_replace
-      `).all() as Array<{ word_to_replace: string; base_word: string; level_number: number }>;
+      `
+        )
+        .all() as Array<{ word_to_replace: string; base_word: string; level_number: number }>;
 
       // Process main words
-      words.forEach(wordData => {
+      words.forEach((wordData) => {
         const cleanWord = this.cleanWord(wordData.french);
         this.addWordMapping(wordLevels, cleanWord, wordData.level_number, cleanWord);
       });
 
       // Step 2: Process replace words from sentences - map them to their base word
-      replaceWords.forEach(replaceData => {
+      replaceWords.forEach((replaceData) => {
         const cleanBaseWord = this.cleanWord(replaceData.base_word);
-        this.addWordMapping(wordLevels, replaceData.word_to_replace.toLowerCase(), replaceData.level_number, cleanBaseWord);
+        this.addWordMapping(
+          wordLevels,
+          replaceData.word_to_replace.toLowerCase(),
+          replaceData.level_number,
+          cleanBaseWord
+        );
       });
 
       return wordLevels;
@@ -248,7 +278,12 @@ export class TextService {
     const lowerWord = word.toLowerCase();
 
     // Common -er verbs conjugations
-    if (lowerWord.endsWith('e') && !lowerWord.endsWith('se') && !lowerWord.endsWith('le') && !lowerWord.endsWith('ne')) {
+    if (
+      lowerWord.endsWith('e') &&
+      !lowerWord.endsWith('se') &&
+      !lowerWord.endsWith('le') &&
+      !lowerWord.endsWith('ne')
+    ) {
       return lowerWord + 'r';
     }
     if (lowerWord.endsWith('es')) {
@@ -282,7 +317,12 @@ export class TextService {
     }
 
     // Common -re verbs conjugations
-    if (lowerWord.endsWith('s') && !lowerWord.endsWith('is') && !lowerWord.endsWith('as') && !lowerWord.endsWith('es')) {
+    if (
+      lowerWord.endsWith('s') &&
+      !lowerWord.endsWith('is') &&
+      !lowerWord.endsWith('as') &&
+      !lowerWord.endsWith('es')
+    ) {
       return lowerWord.slice(0, -1) + 're';
     }
     if (lowerWord.endsWith('ds')) {
@@ -330,7 +370,12 @@ export class TextService {
   /**
    * Add word mapping to map
    */
-  private static addWordMapping(wordLevels: Map<string, { level: number; baseWord: string }>, word: string, level: number, baseWord: string): void {
+  private static addWordMapping(
+    wordLevels: Map<string, { level: number; baseWord: string }>,
+    word: string,
+    level: number,
+    baseWord: string
+  ): void {
     wordLevels.set(word, { level, baseWord });
   }
 
@@ -361,7 +406,7 @@ export class TextService {
       const wordsToHighlight = new Set<string>(knownWords);
 
       // Add potential conjugated forms that would normalize to known infinitives
-      knownWords.forEach(word => {
+      knownWords.forEach((word) => {
         // For verbs, add common conjugated forms
         if (word.endsWith('er') || word.endsWith('ir') || word.endsWith('re')) {
           // Add some common conjugations
@@ -369,29 +414,29 @@ export class TextService {
 
           // -er verbs
           if (word.endsWith('er')) {
-            wordsToHighlight.add(stem + 'e');    // je mange
-            wordsToHighlight.add(stem + 'es');   // tu manges
-            wordsToHighlight.add(stem + 'ons');  // nous mangeons
-            wordsToHighlight.add(stem + 'ez');   // vous mangez
-            wordsToHighlight.add(stem + 'ent');  // ils mangent
+            wordsToHighlight.add(stem + 'e'); // je mange
+            wordsToHighlight.add(stem + 'es'); // tu manges
+            wordsToHighlight.add(stem + 'ons'); // nous mangeons
+            wordsToHighlight.add(stem + 'ez'); // vous mangez
+            wordsToHighlight.add(stem + 'ent'); // ils mangent
           }
 
           // -ir verbs
           if (word.endsWith('ir')) {
-            wordsToHighlight.add(stem + 'is');     // tu finis
-            wordsToHighlight.add(stem + 'it');     // il finit
+            wordsToHighlight.add(stem + 'is'); // tu finis
+            wordsToHighlight.add(stem + 'it'); // il finit
             wordsToHighlight.add(stem + 'issons'); // nous finissons
-            wordsToHighlight.add(stem + 'issez');  // vous finissez
+            wordsToHighlight.add(stem + 'issez'); // vous finissez
             wordsToHighlight.add(stem + 'issent'); // ils finissent
           }
 
           // -re verbs
           if (word.endsWith('re')) {
-            wordsToHighlight.add(stem + 's');    // tu vends
-            wordsToHighlight.add(stem + 'ds');   // il vend (some verbs)
-            wordsToHighlight.add(stem + 'ons');  // nous vendons
-            wordsToHighlight.add(stem + 'ez');   // vous vendez
-            wordsToHighlight.add(stem + 'ent');  // ils vendent
+            wordsToHighlight.add(stem + 's'); // tu vends
+            wordsToHighlight.add(stem + 'ds'); // il vend (some verbs)
+            wordsToHighlight.add(stem + 'ons'); // nous vendons
+            wordsToHighlight.add(stem + 'ez'); // vous vendez
+            wordsToHighlight.add(stem + 'ent'); // ils vendent
           }
         }
 
@@ -436,7 +481,7 @@ export class TextService {
 
       for (let i = 0; i < sortedKnownWords.length; i += CHUNK_SIZE) {
         const chunk = sortedKnownWords.slice(i, i + CHUNK_SIZE);
-        const escapedWords = chunk.map(word => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        const escapedWords = chunk.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
         const wordRegex = new RegExp(`\\b(${escapedWords.join('|')})\\b`, 'gi');
 
         result = result.replace(wordRegex, '<span class="highlighted-known">$1</span>');

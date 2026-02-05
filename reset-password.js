@@ -9,20 +9,23 @@ async function resetPassword(username, newPassword) {
     // Hash the new password
     const saltRounds = 10;
     const passwordHash = await bcrypt.hash(newPassword, saltRounds);
-    
+
     // Update the user's password
-    const result = db.prepare(`
+    const result = db
+      .prepare(
+        `
       UPDATE users 
       SET password_hash = ? 
       WHERE username = ?
-    `).run(passwordHash, username);
-    
+    `
+      )
+      .run(passwordHash, username);
+
     if (result.changes === 0) {
       console.log(`❌ User '${username}' not found`);
     } else {
       console.log(`✅ Password reset successfully for user '${username}'`);
     }
-    
   } catch (error) {
     console.error('Error resetting password:', error);
   }

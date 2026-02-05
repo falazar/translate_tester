@@ -53,10 +53,42 @@ describe('SessionService', () => {
   describe('selectWeightedWords', () => {
     it('should prioritize words with lower mastery levels', () => {
       const words = [
-        { id: 1, french: 'word1', english: 'word1', word_type: 'noun', gender: 'le', mastery: 0, attempts: 5 },
-        { id: 2, french: 'word2', english: 'word2', word_type: 'noun', gender: 'le', mastery: 50, attempts: 5 },
-        { id: 3, french: 'word3', english: 'word3', word_type: 'noun', gender: 'le', mastery: 80, attempts: 5 },
-        { id: 4, french: 'word4', english: 'word4', word_type: 'noun', gender: 'le', mastery: 95, attempts: 5 },
+        {
+          id: 1,
+          french: 'word1',
+          english: 'word1',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 0,
+          attempts: 5,
+        },
+        {
+          id: 2,
+          french: 'word2',
+          english: 'word2',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 50,
+          attempts: 5,
+        },
+        {
+          id: 3,
+          french: 'word3',
+          english: 'word3',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 80,
+          attempts: 5,
+        },
+        {
+          id: 4,
+          french: 'word4',
+          english: 'word4',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 95,
+          attempts: 5,
+        },
       ];
 
       const selectedWords = (SessionService as any).selectWeightedWords(words, 1000); // Use larger sample for better statistics
@@ -75,9 +107,33 @@ describe('SessionService', () => {
 
     it('should consider both mastery and attempts in weighting', () => {
       const words = [
-        { id: 1, french: 'word1', english: 'word1', word_type: 'noun', gender: 'le', mastery: 20, attempts: 10 }, // struggling word with some attempts
-        { id: 2, french: 'word2', english: 'word2', word_type: 'noun', gender: 'le', mastery: 95, attempts: 21 }, // well-mastered with many attempts
-        { id: 3, french: 'word3', english: 'word3', word_type: 'noun', gender: 'le', mastery: 0, attempts: 0 }, // new word
+        {
+          id: 1,
+          french: 'word1',
+          english: 'word1',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 20,
+          attempts: 10,
+        }, // struggling word with some attempts
+        {
+          id: 2,
+          french: 'word2',
+          english: 'word2',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 95,
+          attempts: 21,
+        }, // well-mastered with many attempts
+        {
+          id: 3,
+          french: 'word3',
+          english: 'word3',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 0,
+          attempts: 0,
+        }, // new word
       ];
 
       const selectedWords = (SessionService as any).selectWeightedWords(words, 1000);
@@ -96,9 +152,33 @@ describe('SessionService', () => {
 
     it('should return exactly the requested number of words', () => {
       const words = [
-        { id: 1, french: 'word1', english: 'word1', word_type: 'noun', gender: 'le', mastery: 50, attempts: 5 },
-        { id: 2, french: 'word2', english: 'word2', word_type: 'noun', gender: 'le', mastery: 50, attempts: 5 },
-        { id: 3, french: 'word3', english: 'word3', word_type: 'noun', gender: 'le', mastery: 50, attempts: 5 },
+        {
+          id: 1,
+          french: 'word1',
+          english: 'word1',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 50,
+          attempts: 5,
+        },
+        {
+          id: 2,
+          french: 'word2',
+          english: 'word2',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 50,
+          attempts: 5,
+        },
+        {
+          id: 3,
+          french: 'word3',
+          english: 'word3',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 50,
+          attempts: 5,
+        },
       ];
 
       const count = 15;
@@ -114,10 +194,42 @@ describe('SessionService', () => {
 
     it('should calculate weights correctly for edge cases', () => {
       const words = [
-        { id: 1, french: 'word1', english: 'word1', word_type: 'noun', gender: 'le', mastery: 0, attempts: 0 },   // 10 * 4 = 40
-        { id: 2, french: 'word2', english: 'word2', word_type: 'noun', gender: 'le', mastery: 100, attempts: 0 }, // 1 * 4 = 4
-        { id: 3, french: 'word3', english: 'word3', word_type: 'noun', gender: 'le', mastery: 0, attempts: 25 },  // 10 * 1 = 10
-        { id: 4, french: 'word4', english: 'word4', word_type: 'noun', gender: 'le', mastery: 100, attempts: 25 }, // 1 * 1 = 1
+        {
+          id: 1,
+          french: 'word1',
+          english: 'word1',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 0,
+          attempts: 0,
+        }, // 10 * 4 = 40
+        {
+          id: 2,
+          french: 'word2',
+          english: 'word2',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 100,
+          attempts: 0,
+        }, // 1 * 4 = 4
+        {
+          id: 3,
+          french: 'word3',
+          english: 'word3',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 0,
+          attempts: 25,
+        }, // 10 * 1 = 10
+        {
+          id: 4,
+          french: 'word4',
+          english: 'word4',
+          word_type: 'noun',
+          gender: 'le',
+          mastery: 100,
+          attempts: 25,
+        }, // 1 * 1 = 1
       ];
 
       // Test that we can call the method without errors
@@ -144,7 +256,7 @@ describe('SessionService', () => {
         score: 0,
         total_questions: 20,
         passed: 0,
-        created_at: '2024-01-01T00:00:00Z'
+        created_at: '2024-01-01T00:00:00Z',
       });
 
       const session = SessionService.createSession(1, 1);
@@ -174,9 +286,19 @@ describe('SessionService', () => {
             return [];
           } else {
             // This is likely the words query
-            return [{ id: 1, french: 'test', english: 'test', word_type: 'noun', gender: 'le', mastery: 50, attempts: 5 }];
+            return [
+              {
+                id: 1,
+                french: 'test',
+                english: 'test',
+                word_type: 'noun',
+                gender: 'le',
+                mastery: 50,
+                attempts: 5,
+              },
+            ];
           }
-        })
+        }),
       });
 
       const questions = SessionService.generateQuestions(1, 1);
@@ -191,10 +313,18 @@ describe('SessionService', () => {
     it('should record an answer and update progress', () => {
       const mockRun = vi.fn();
       mockDb.prepare.mockReturnValue({
-        run: mockRun
+        run: mockRun,
       });
 
-      const result = SessionService.recordAnswer(1, 1, 1, 'fr_to_en', 'Question', 'correct', 'correct');
+      const result = SessionService.recordAnswer(
+        1,
+        1,
+        1,
+        'fr_to_en',
+        'Question',
+        'correct',
+        'correct'
+      );
 
       expect(ProgressService.updateProgress).toHaveBeenCalledWith(1, 1, true);
       expect(result).toBe(true);
@@ -204,10 +334,18 @@ describe('SessionService', () => {
     it('should handle incorrect answers', () => {
       const mockRun = vi.fn();
       mockDb.prepare.mockReturnValue({
-        run: mockRun
+        run: mockRun,
       });
 
-      const result = SessionService.recordAnswer(1, 1, 1, 'fr_to_en', 'Question', 'Wrong', 'Correct');
+      const result = SessionService.recordAnswer(
+        1,
+        1,
+        1,
+        'fr_to_en',
+        'Question',
+        'Wrong',
+        'Correct'
+      );
 
       expect(ProgressService.updateProgress).toHaveBeenCalledWith(1, 1, false);
       expect(result).toBe(false);
@@ -217,7 +355,6 @@ describe('SessionService', () => {
 
   describe('getSessionResult', () => {
     it('should calculate session results correctly', () => {
-
       // Mock session data
       mockDb.prepare.mockReturnValueOnce({
         get: vi.fn().mockReturnValue({
@@ -225,22 +362,36 @@ describe('SessionService', () => {
           user_id: 1,
           level_id: 1,
           total_questions: 20,
-          created_at: '2024-01-01T00:00:00Z'
-        })
+          created_at: '2024-01-01T00:00:00Z',
+        }),
       });
 
       // Mock answers data
       mockDb.prepare.mockReturnValueOnce({
         all: vi.fn().mockReturnValue([
-          { correct: 1, word_id: 1, user_answer: 'correct', correct_answer: 'correct', question_type: 'fr_to_en', question_text: 'test' },
-          { correct: 0, word_id: 2, user_answer: 'wrong', correct_answer: 'correct', question_type: 'fr_to_en', question_text: 'test' }
-        ])
+          {
+            correct: 1,
+            word_id: 1,
+            user_answer: 'correct',
+            correct_answer: 'correct',
+            question_type: 'fr_to_en',
+            question_text: 'test',
+          },
+          {
+            correct: 0,
+            word_id: 2,
+            user_answer: 'wrong',
+            correct_answer: 'correct',
+            question_type: 'fr_to_en',
+            question_text: 'test',
+          },
+        ]),
       });
 
       // Mock update session score query
       const mockRun = vi.fn();
       mockDb.prepare.mockReturnValueOnce({
-        run: mockRun
+        run: mockRun,
       });
 
       // Mock word lookup
@@ -249,13 +400,13 @@ describe('SessionService', () => {
           id: 1,
           french: 'test',
           english: 'test',
-          word_type: 'noun'
-        })
+          word_type: 'noun',
+        }),
       });
 
       // Mock example sentences
       mockDb.prepare.mockReturnValueOnce({
-        all: vi.fn().mockReturnValue([])
+        all: vi.fn().mockReturnValue([]),
       });
 
       (UserLevelService.incrementAttempts as any).mockReturnValue(undefined);
@@ -286,9 +437,9 @@ describe('SessionService', () => {
             total_questions: 20,
             passed: 1,
             level_name: 'Level 1',
-            created_at: '2024-01-01T00:00:00Z'
-          }
-        ])
+            created_at: '2024-01-01T00:00:00Z',
+          },
+        ]),
       });
 
       const sessions = SessionService.getUserSessions(1) as any[];

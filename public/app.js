@@ -24,24 +24,23 @@ function speakText(text, language = targetLanguage) {
     console.log('Speech synthesis not available');
     return;
   }
-  
+
   // Cancel any ongoing speech
   speechSynthesis.cancel();
-  
+
   // Create new utterance
   speechUtterance = new SpeechSynthesisUtterance(text);
-  
+
   // Configure language based on target language
   speechUtterance.lang = getSpeechLanguageCode(language);
-  
+
   speechUtterance.rate = 0.8; // Slightly slower for learning
   speechUtterance.pitch = 1.0;
   speechUtterance.volume = 0.8;
-  
+
   // Speak
   speechSynthesis.speak(speechUtterance);
 }
-
 
 // Stop speech
 function stopSpeech() {
@@ -75,8 +74,8 @@ function levenshteinDistance(a, b) {
       } else {
         matrix[i][j] = Math.min(
           matrix[i - 1][j - 1] + 1, // substitution
-          matrix[i][j - 1] + 1,     // insertion
-          matrix[i - 1][j] + 1      // deletion
+          matrix[i][j - 1] + 1, // insertion
+          matrix[i - 1][j] + 1 // deletion
         );
       }
     }
@@ -121,7 +120,7 @@ async function generateLevelSetTabs() {
   try {
     const response = await fetch('/api/levels');
     const levels = await response.json();
-    const maxLevel = Math.max(...levels.map(l => l.level_number));
+    const maxLevel = Math.max(...levels.map((l) => l.level_number));
     const numSets = Math.ceil(maxLevel / 12);
     const levelTabs = document.getElementById('levelTabs');
     if (!levelTabs) return;
@@ -130,14 +129,15 @@ async function generateLevelSetTabs() {
       const btn = document.createElement('button');
       btn.className = 'tab-btn' + (i === activeLevelSet ? ' active' : '');
       btn.textContent = `Set ${i}`;
-      btn.onclick = function() { switchLevelSet(i); };
+      btn.onclick = function () {
+        switchLevelSet(i);
+      };
       levelTabs.appendChild(btn);
     }
   } catch (err) {
     console.error('Error generating level set tabs:', err);
   }
 }
-
 
 // Helper function to update the active state of level set tabs
 function updateTabState() {
@@ -163,7 +163,7 @@ function displayFilteredLevels(levelsWithProgress) {
   levelsGrid.innerHTML = '';
 
   // Filter levels based on active tab
-  const filteredLevels = levelsWithProgress.filter(level => {
+  const filteredLevels = levelsWithProgress.filter((level) => {
     const setStart = (activeLevelSet - 1) * 12 + 1;
     const setEnd = activeLevelSet * 12;
     return level.level_number >= setStart && level.level_number <= setEnd;
@@ -183,11 +183,11 @@ function switchLevelSet(setNumber) {
   generateLevelSetTabs();
   // Get current levels data and redisplay
   fetch('/api/levels/user-progress')
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       displayFilteredLevels(data);
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('Error switching level set:', error);
     });
 }
@@ -196,7 +196,9 @@ function switchLevelSet(setNumber) {
 function openTesting() {
   // Go back to regular learning flow - this is already the main dashboard
   // Maybe just show a confirmation or reset to current level
-  alert('You are already on the main testing/learning page. Start a practice session to test your knowledge!');
+  alert(
+    'You are already on the main testing/learning page. Start a practice session to test your knowledge!'
+  );
 }
 
 function openUploadText() {
@@ -254,7 +256,7 @@ async function login() {
     const response = await fetch('/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ username, password }),
     });
 
     if (response.ok) {
@@ -284,7 +286,7 @@ async function register() {
     const response = await fetch('/api/auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, email, password })
+      body: JSON.stringify({ username, email, password }),
     });
 
     if (response.ok) {
@@ -310,8 +312,7 @@ async function logout() {
 async function showDashboard() {
   showScreen('dashboardScreen');
 
-  document.getElementById('usernameDisplay').textContent =
-    currentUser.username;
+  document.getElementById('usernameDisplay').textContent = currentUser.username;
 
   // Add reminder button
   if (typeof window !== 'undefined' && window.notifications) {
@@ -322,23 +323,23 @@ async function showDashboard() {
     // Get all levels with user progress
     const response = await fetch('/api/levels/user-progress');
     const levelsWithProgress = await response.json();
-    
+
     // Calculate set for current level
     const currentLevelNum = currentUser.current_level || 1;
     const currentSet = Math.ceil(currentLevelNum / 12);
     activeLevelSet = currentSet;
     localStorage.setItem('activeLevelSet', currentSet.toString());
-    
+
     // Generate level set tabs
     await generateLevelSetTabs();
-    
+
     // Update tab visual state
     updateTabState();
-    
+
     // Check for newly unlocked levels
     const previouslyUnlocked = JSON.parse(localStorage.getItem('unlockedLevels') || '[]');
     const newlyUnlocked = [];
-    
+
     // Find newly unlocked levels
     for (const level of levelsWithProgress) {
       if (level.is_unlocked && !previouslyUnlocked.includes(level.level_number)) {
@@ -347,9 +348,10 @@ async function showDashboard() {
     }
 
     // Display current level (default selection)
-    const currentLevel = 
-      levelsWithProgress.find(l => l.level_number === currentUser.current_level);
-    
+    const currentLevel = levelsWithProgress.find(
+      (l) => l.level_number === currentUser.current_level
+    );
+
     if (currentLevel) {
       currentLevelId = currentLevel.id;
       selectedLevelId = currentLevel.id;
@@ -358,18 +360,17 @@ async function showDashboard() {
 
     // Display levels using helper function
     displayFilteredLevels(levelsWithProgress);
-    
+
     // Show popups for newly unlocked levels
     for (const levelNum of newlyUnlocked) {
       setTimeout(() => showLevelUnlockPopup(levelNum), 500);
     }
-    
+
     // Update localStorage with current unlocked levels
     const currentUnlocked = levelsWithProgress
-      .filter(level => level.is_unlocked)
-      .map(level => level.level_number);
+      .filter((level) => level.is_unlocked)
+      .map((level) => level.level_number);
     localStorage.setItem('unlockedLevels', JSON.stringify(currentUnlocked));
-    
   } catch (error) {
     console.error('Error loading dashboard:', error);
   }
@@ -393,62 +394,60 @@ function showLevelCard(level) {
 
   levelItem.className = cardClass;
   levelItem.dataset.levelId = level.id;
-  
+
   // Format date for display
   const formatDate = (dateString) => {
     if (!dateString) return '';
     const date = new Date(dateString);
     return date.toLocaleDateString();
   };
-  
+
   // Create HTML with mastery, date unlocked, and days to beat
   levelItem.innerHTML = `
     <h3>Level ${level.level_number}</h3>
     <h4>${level.name}</h4>
     <p>${level.description}</p>
-    <span class="level-status ${isCurrent ? 'current' : 
-      (isUnlocked ? 'unlocked' : 'locked')}">
-      ${isCurrent ? 'Current' : 
-        (isUnlocked ? 'Unlocked' : 'Locked')}
+    <span class="level-status ${isCurrent ? 'current' : isUnlocked ? 'unlocked' : 'locked'}">
+      ${isCurrent ? 'Current' : isUnlocked ? 'Unlocked' : 'Locked'}
       <span class="mastery-percentage">${mastery}%</span>
     </span>
-    ${isUnlocked ? `
+    ${
+      isUnlocked
+        ? `
       <div class="level-dates">
         <small>Unlocked: ${formatDate(level.unlocked_at)}</small>
         <small>Attempts: ${level.attempts}</small>
         ${level.days_to_beat ? `<small>Beat in: ${level.days_to_beat} days</small>` : ''}
       </div>
-    ` : ''}
+    `
+        : ''
+    }
   `;
-  
+
   // Add click handler for unlocked levels
   if (isUnlocked) {
     levelItem.style.cursor = 'pointer';
     levelItem.onclick = () => selectLevel(level);
   }
-  
+
   levelsGrid.appendChild(levelItem);
 }
 
 async function selectLevel(level) {
   // Update selected level
   selectedLevelId = level.id;
-  
+
   // Update display area
-  document.getElementById('currentLevelNum').textContent = 
-    level.level_number;
+  document.getElementById('currentLevelNum').textContent = level.level_number;
   document.getElementById('currentLevelName').textContent = level.name;
-  document.getElementById('currentLevelDesc').textContent = 
-    level.description;
-  
+  document.getElementById('currentLevelDesc').textContent = level.description;
+
   // Update visual selection
-  document.querySelectorAll('.level-item').forEach(item => {
+  document.querySelectorAll('.level-item').forEach((item) => {
     item.classList.remove('selected');
   });
-  
-  const selectedItem = document.querySelector(
-    `[data-level-id="${level.id}"]`
-  );
+
+  const selectedItem = document.querySelector(`[data-level-id="${level.id}"]`);
   if (selectedItem) {
     selectedItem.classList.add('selected');
   }
@@ -458,7 +457,7 @@ async function selectLevel(level) {
     const response = await fetch('/api/auth/update-current-level', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ level: level.level_number })
+      body: JSON.stringify({ level: level.level_number }),
     });
 
     if (response.ok) {
@@ -483,11 +482,11 @@ async function showWords() {
   try {
     // Fetch level with words data
     const response = await fetch(`/api/levels/${selectedLevelId}`);
-    
+
     if (!response.ok) {
       throw new Error('Failed to fetch level data');
     }
-    
+
     const data = await response.json();
     displayWordsScreen(data);
   } catch (error) {
@@ -498,26 +497,26 @@ async function showWords() {
 
 function displayWordsScreen(data) {
   showScreen('wordsScreen');
-  
+
   const { level, words } = data;
-  
-  document.getElementById('wordsLevelTitle').textContent = 
+
+  document.getElementById('wordsLevelTitle').textContent =
     `Level ${level.level_number}: ${level.name}`;
-  
+
   const wordsList = document.getElementById('wordsList');
   wordsList.innerHTML = '';
-  
+
   words.forEach((word, index) => {
     const wordItem = document.createElement('div');
     wordItem.className = 'word-item';
-    
+
     // Progress stats - always show, even if 0%
-    const progress = word.progress || { 
-      correct_count: 0, 
-      incorrect_count: 0, 
-      mastery_level: 0 
+    const progress = word.progress || {
+      correct_count: 0,
+      incorrect_count: 0,
+      mastery_level: 0,
     };
-    
+
     const progressHTML = `
       <div class="word-progress">
         <span class="progress-correct" 
@@ -534,13 +533,15 @@ function displayWordsScreen(data) {
         </span>
       </div>
     `;
-    
+
     let examplesHTML = '';
-    console.log("DEBUG: word.examples", JSON.stringify(word.examples, null, 2));
+    console.log('DEBUG: word.examples', JSON.stringify(word.examples, null, 2));
     if (word.examples && word.examples.length > 0) {
       examplesHTML = `
         <div class="word-examples">
-          ${word.examples.map(ex => `
+          ${word.examples
+            .map(
+              (ex) => `
             <div class="word-example">
               <span class="target-sentence">
                 ${ex[`${targetLanguage.toLowerCase()}_sentence`]}
@@ -550,11 +551,13 @@ function displayWordsScreen(data) {
               </span>
               → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
             </div>
-          `).join('')}
+          `
+            )
+            .join('')}
         </div>
       `;
     }
-    
+
     wordItem.innerHTML = `
       <div class="word-item-header">
         <div class="word-main">
@@ -572,7 +575,7 @@ function displayWordsScreen(data) {
       </div>
       ${examplesHTML}
     `;
-    
+
     wordsList.appendChild(wordItem);
   });
 }
@@ -590,27 +593,25 @@ async function startSession() {
     const response = await fetch('/api/sessions/start', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ level_id: selectedLevelId })
+      body: JSON.stringify({ level_id: selectedLevelId }),
     });
 
     if (response.ok) {
       const data = await response.json();
-      currentSession = { id: data.session_id, 
-                         level_id: data.level_id };
+      currentSession = { id: data.session_id, level_id: data.level_id };
       currentQuestions = data.questions;
       currentQuestionIndex = 0;
       currentScore = 0;
-      
+
       // Update level info display
       updateGameLevelInfo(data.level);
-      
+
       showScreen('gameScreen');
       displayQuestion();
     } else {
       const errorData = await response.json();
       console.error('Failed to start session:', errorData);
-      alert('Failed to start session: ' + 
-            (errorData.error || 'Unknown error'));
+      alert('Failed to start session: ' + (errorData.error || 'Unknown error'));
     }
   } catch (error) {
     console.error('Error starting session:', error);
@@ -620,28 +621,24 @@ async function startSession() {
 
 function displayQuestion() {
   const question = currentQuestions[currentQuestionIndex];
-  
+
   // Reset all multiple choice buttons for new question
-  document.querySelectorAll('.option-btn').forEach(btn => {
+  document.querySelectorAll('.option-btn').forEach((btn) => {
     btn.disabled = false;
     btn.style.opacity = '1';
     btn.classList.remove('selected');
   });
-  
+
   // Update progress
-  document.getElementById('currentQuestion').textContent = 
-    currentQuestionIndex + 1;
+  document.getElementById('currentQuestion').textContent = currentQuestionIndex + 1;
   document.getElementById('currentScore').textContent = currentScore;
-  
-  const progressPercent = 
-    ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
-  document.getElementById('progressFill').style.width = 
-    progressPercent + '%';
+
+  const progressPercent = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
+  document.getElementById('progressFill').style.width = progressPercent + '%';
 
   // Display question
-  document.getElementById('questionType').textContent = 
-    formatQuestionType(question.type);
-  
+  document.getElementById('questionType').textContent = formatQuestionType(question.type);
+
   // Add speaker button to target language text in questions and auto-play
   let questionHTML = question.question;
   if (question.type === `${targetLanguageCode}_to_${baseLanguageCode}`) {
@@ -665,7 +662,7 @@ function displayQuestion() {
       const targetText = questionMatch[1];
       const cleanText = targetText.replace(/_/g, ''); // Remove underscores once
       const escapedText = escapeForHtml(cleanText); // Escape once
-      
+
       questionHTML = question.question.replace(
         `<br>"${targetText}"`,
         `<br><span class="target-sentence">"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapedText}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span>`
@@ -679,7 +676,7 @@ function displayQuestion() {
     if (questionMatch) {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
-        `"${targetText}"`, 
+        `"${targetText}"`,
         `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`
       );
       // Auto-play the target language word when question loads
@@ -691,19 +688,19 @@ function displayQuestion() {
     if (questionMatch) {
       const targetText = questionMatch[1];
       questionHTML = question.question.replace(
-        `"${targetText}"`, 
+        `"${targetText}"`,
         `"${targetText}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(targetText)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button>`
       );
       // Auto-play the target language word when question loads
       setTimeout(() => speakText(targetText, targetLanguage), 500);
     }
   }
-  
+
   // Debug: log the question to see the format
   console.log('Question type:', question.type);
   console.log('Question text:', question.question);
   console.log('Final HTML:', questionHTML);
-  
+
   document.getElementById('questionText').innerHTML = questionHTML;
 
   // Clear previous answer area
@@ -714,15 +711,15 @@ function displayQuestion() {
   if (question.type === 'multiple_choice') {
     const optionsDiv = document.createElement('div');
     optionsDiv.className = 'options-grid';
-    
-    question.options.forEach(option => {
+
+    question.options.forEach((option) => {
       const button = document.createElement('button');
       button.className = 'option-btn';
       button.textContent = option;
       button.onclick = () => selectOption(button);
       optionsDiv.appendChild(button);
     });
-    
+
     answerArea.appendChild(optionsDiv);
   } else {
     const input = document.createElement('input');
@@ -738,7 +735,7 @@ function displayQuestion() {
     });
     answerArea.appendChild(input);
     input.focus();
-    
+
     // Reset input field styling (in case it was disabled from previous question)
     input.disabled = false;
     input.style.backgroundColor = '';
@@ -748,32 +745,32 @@ function displayQuestion() {
   // Reset buttons and feedback
   const submitBtn = document.getElementById('submitBtn');
   if (question.type === 'multiple_choice') {
-    submitBtn.style.display = 'none';  // Hide submit button for multiple choice
+    submitBtn.style.display = 'none'; // Hide submit button for multiple choice
   } else {
-    submitBtn.style.display = 'block';  // Show submit button for other question types
+    submitBtn.style.display = 'block'; // Show submit button for other question types
   }
-  submitBtn.disabled = false;  // Re-enable submit button
+  submitBtn.disabled = false; // Re-enable submit button
   document.getElementById('nextBtn').style.display = 'none';
   document.getElementById('feedback').classList.remove('active');
 }
 
 function selectOption(button) {
   // Deselect all options and re-enable them
-  document.querySelectorAll('.option-btn').forEach(btn => {
+  document.querySelectorAll('.option-btn').forEach((btn) => {
     btn.classList.remove('selected');
     btn.disabled = false;
     btn.style.opacity = '1';
   });
-  
+
   // Select clicked option
   button.classList.add('selected');
-  
+
   // Disable all other options
-  document.querySelectorAll('.option-btn:not(.selected)').forEach(btn => {
+  document.querySelectorAll('.option-btn:not(.selected)').forEach((btn) => {
     btn.disabled = true;
     btn.style.opacity = '0.5';
   });
-  
+
   // Auto-submit the answer immediately
   submitAnswer();
 }
@@ -782,8 +779,8 @@ function formatQuestionType(type) {
   const types = {
     [`${getLanguageCode(baseLanguage)}_to_${getLanguageCode(targetLanguage)}`]: `${baseLanguage} → ${targetLanguage}`,
     [`${getLanguageCode(targetLanguage)}_to_${getLanguageCode(baseLanguage)}`]: `${targetLanguage} → ${baseLanguage}`,
-    'fill_blank': 'Fill in the Blank',
-    'multiple_choice': 'Multiple Choice'
+    fill_blank: 'Fill in the Blank',
+    multiple_choice: 'Multiple Choice',
   };
   return types[type] || type;
 }
@@ -810,7 +807,7 @@ async function submitAnswer() {
 
   // Disable submit button and input field
   document.getElementById('submitBtn').disabled = true;
-  
+
   // Disable and style input field
   const inputField = document.getElementById('answerInput');
   if (inputField) {
@@ -820,29 +817,25 @@ async function submitAnswer() {
   }
 
   try {
-    const response = await fetch(
-      `/api/sessions/${currentSession.id}/answer`, 
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          word_id: question.word.id,
-          question_type: question.type,
-          question_text: question.question,
-          user_answer: userAnswer,
-          correct_answer: question.correct_answer
-        })
-      }
-    );
+    const response = await fetch(`/api/sessions/${currentSession.id}/answer`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        word_id: question.word.id,
+        question_type: question.type,
+        question_text: question.question,
+        user_answer: userAnswer,
+        correct_answer: question.correct_answer,
+      }),
+    });
 
     if (response.ok) {
       const result = await response.json();
       displayFeedback(result.correct, question.correct_answer, question, userAnswer);
-      
+
       if (result.correct) {
         currentScore++;
-        document.getElementById('currentScore').textContent = 
-          currentScore;
+        document.getElementById('currentScore').textContent = currentScore;
       }
     } else {
       alert('Failed to submit answer');
@@ -855,9 +848,8 @@ async function submitAnswer() {
 
 function displayFeedback(correct, correctAnswer, question, userAnswer = '') {
   const feedback = document.getElementById('feedback');
-  feedback.className = 'feedback active ' + 
-                       (correct ? 'correct' : 'incorrect');
-  
+  feedback.className = 'feedback active ' + (correct ? 'correct' : 'incorrect');
+
   // Always extract the English sentence if available
   let englishSentence = '';
   if (question.english_translation) {
@@ -881,11 +873,13 @@ function displayFeedback(correct, correctAnswer, question, userAnswer = '') {
         `;
       } else {
         const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
-        const rootWord = question.word.french;  // Root/base word
+        const rootWord = question.word.french; // Root/base word
         const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `<br>(${rootWord})` : '';
         // Check if user was very close (off by just 1 character)
         const closeMatch = isCloseMatch(userAnswer, correctAnswer);
-        const feedbackPrefix = closeMatch ? '🤏 So close! The correct answer is:' : '✗ Incorrect. The correct answer is:';
+        const feedbackPrefix = closeMatch
+          ? '🤏 So close! The correct answer is:'
+          : '✗ Incorrect. The correct answer is:';
         feedback.innerHTML = `${feedbackPrefix} ${correctAnswer}${mainTermHint}<br><br><strong>Complete sentence:</strong><br><span class="target-sentence">"${completeSentence}" <button class="speaker-btn-small" tabindex="-1" onclick="speakText('${escapeForHtml(completeSentence)}','${targetLanguage}')" title="Listen to pronunciation">🔊</button></span><br><span class="sentence-en">${englishSentence}</span>`;
       }
       // Auto-play the complete target language sentence
@@ -905,11 +899,13 @@ function displayFeedback(correct, correctAnswer, question, userAnswer = '') {
       }
     } else {
       const showMainTerm = question.type === 'fill_blank' || question.type === 'en_to_fr';
-      const rootWord = question.word.french;  // Root/base word
+      const rootWord = question.word.french; // Root/base word
       const mainTermHint = showMainTerm && correctAnswer !== rootWord ? `\n(${rootWord})` : '';
       // Check if user was very close (off by just 1 character)
       const closeMatch = isCloseMatch(userAnswer, correctAnswer);
-      const feedbackPrefix = closeMatch ? '🤏 So close! The correct answer is:' : '✗ Incorrect. The correct answer is:';
+      const feedbackPrefix = closeMatch
+        ? '🤏 So close! The correct answer is:'
+        : '✗ Incorrect. The correct answer is:';
       feedback.innerHTML = `${feedbackPrefix} ${correctAnswer}${mainTermHint}<br><span class="sentence-en">${englishSentence}</span>`;
       // Speak the correct answer in the appropriate language
       if (question.type === `${baseLanguageCode}_to_${targetLanguageCode}`) {
@@ -929,7 +925,7 @@ function displayFeedback(correct, correctAnswer, question, userAnswer = '') {
 
 function nextQuestion() {
   currentQuestionIndex++;
-  
+
   if (currentQuestionIndex < currentQuestions.length) {
     displayQuestion();
   } else {
@@ -941,10 +937,8 @@ async function showResults() {
   showScreen('resultsScreen');
 
   try {
-    const response = await fetch(
-      `/api/sessions/${currentSession.id}/results`
-    );
-    
+    const response = await fetch(`/api/sessions/${currentSession.id}/results`);
+
     if (response.ok) {
       const results = await response.json();
       displayResults(results);
@@ -957,23 +951,22 @@ async function showResults() {
   }
 }
 
-// Display results details for all tries. 
+// Display results details for all tries.
 function displayResults(results) {
   // Update title
-  document.getElementById('resultsTitle').textContent = 
-    results.passed ? '🎉 Congratulations!' : '📚 Keep Practicing!';
+  document.getElementById('resultsTitle').textContent = results.passed
+    ? '🎉 Congratulations!'
+    : '📚 Keep Practicing!';
 
   // Update score circle
   const scoreCircle = document.getElementById('scoreCircle');
-  scoreCircle.className = 'score-circle ' + 
-                          (results.passed ? 'passed' : 'failed');
-  document.getElementById('percentageDisplay').textContent = 
-    results.percentage + '%';
+  scoreCircle.className = 'score-circle ' + (results.passed ? 'passed' : 'failed');
+  document.getElementById('percentageDisplay').textContent = results.percentage + '%';
 
   // Update message
-  const message = results.passed 
+  const message = results.passed
     ? `You scored ${results.score}/${results.total_questions}! Great job!`
-    : results.percentage >= 70 
+    : results.percentage >= 70
       ? `You scored ${results.score}/${results.total_questions}. Good job!`
       : `You scored ${results.score}/${results.total_questions}. Try a bit harder!`;
   document.getElementById('resultsMessage').textContent = message;
@@ -983,19 +976,21 @@ function displayResults(results) {
   reviewItems.innerHTML = '';
 
   if (results.incorrect_words.length === 0) {
-    reviewItems.innerHTML = 
+    reviewItems.innerHTML =
       '<p style="text-align: center; color: #28a745; font-weight: 600;">Perfect score! No mistakes to review.</p>';
   } else {
-    results.incorrect_words.forEach(item => {
+    results.incorrect_words.forEach((item) => {
       const reviewItem = document.createElement('div');
       reviewItem.className = 'review-item';
-      
+
       let examplesHTML = '';
       if (item.examples && item.examples.length > 0) {
         examplesHTML = `
           <div class="examples">
             <h4>Example sentences:</h4>
-            ${item.examples.map(ex => `
+            ${item.examples
+              .map(
+                (ex) => `
               <div class="example">
                 <div class="example-line">
                   <span class="target-sentence">
@@ -1007,18 +1002,24 @@ function displayResults(results) {
                   → ${ex[`${baseLanguage.toLowerCase()}_translation`]}
                 </div>
               </div>
-            `).join('')}
+            `
+              )
+              .join('')}
           </div>
         `;
       }
-      
-      console.log("DEBUG: item", item);
+
+      console.log('DEBUG: item', item);
       const showMainTerm = item.question_type === 'fill_blank' || item.question_type === 'en_to_fr';
-      const rootWord = item.word?.french;  // This is the root/base word from the database
-      // const mainTermHint = showMainTerm && rootWord     
+      const rootWord = item.word?.french; // This is the root/base word from the database
+      // const mainTermHint = showMainTerm && rootWord
       // && item.correct_answer.toLowerCase() !== rootWord.toLowerCase() ? ` (${rootWord})` : '';
       let mainTermHint = '';
-      if (showMainTerm && rootWord && item.correct_answer.toLowerCase() !== rootWord.toLowerCase()) {
+      if (
+        showMainTerm &&
+        rootWord &&
+        item.correct_answer.toLowerCase() !== rootWord.toLowerCase()
+      ) {
         mainTermHint = ` (${rootWord})`;
       }
       reviewItem.innerHTML = `
@@ -1038,11 +1039,10 @@ function displayResults(results) {
         </div>
         ${examplesHTML}
       `;
-      
+
       reviewItems.appendChild(reviewItem);
     });
   }
-
 }
 
 function returnToDashboard() {
@@ -1055,7 +1055,7 @@ function retryLevel() {
 
 // Utility functions
 function showScreen(screenId) {
-  document.querySelectorAll('.screen').forEach(screen => {
+  document.querySelectorAll('.screen').forEach((screen) => {
     screen.classList.remove('active');
   });
   document.getElementById(screenId).classList.add('active');
@@ -1088,7 +1088,7 @@ function showLevelUnlockPopup(newLevel) {
     align-items: center;
     z-index: 1000;
   `;
-  
+
   // Create popup content
   const popup = document.createElement('div');
   popup.style.cssText = `
@@ -1100,7 +1100,7 @@ function showLevelUnlockPopup(newLevel) {
     max-width: 400px;
     margin: 20px;
   `;
-  
+
   popup.innerHTML = `
     <div style="font-size: 4em; margin-bottom: 20px;">🎉</div>
     <h2 style="color: #28a745; margin-bottom: 15px;">Level ${newLevel} Unlocked!</h2>
@@ -1114,10 +1114,10 @@ function showLevelUnlockPopup(newLevel) {
       Awesome!
     </button>
   `;
-  
+
   overlay.appendChild(popup);
   document.body.appendChild(overlay);
-  
+
   // Auto-close after 5 seconds
   setTimeout(() => {
     if (overlay.parentElement) {
@@ -1125,4 +1125,3 @@ function showLevelUnlockPopup(newLevel) {
     }
   }, 5000);
 }
-

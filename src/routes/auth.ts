@@ -11,22 +11,18 @@ router.post('/register', async (req: Request, res: Response) => {
     const { username, email, password } = req.body;
 
     if (!username || !email || !password) {
-      res.status(400).json({ 
-        error: 'Username, email, and password required' 
+      res.status(400).json({
+        error: 'Username, email, and password required',
       });
       return;
     }
 
-    const { user, token } = await AuthService.register(
-      username, 
-      email, 
-      password
-    );
+    const { user, token } = await AuthService.register(username, email, password);
 
     // Set cookie
     res.cookie('token', token, {
       httpOnly: true,
-      maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
     res.json({
@@ -34,9 +30,9 @@ router.post('/register', async (req: Request, res: Response) => {
         id: user.id,
         username: user.username,
         email: user.email,
-        current_level: user.current_level
+        current_level: user.current_level,
       },
-      token
+      token,
     });
   } catch (error: any) {
     res.status(400).json({ error: error.message });
@@ -49,8 +45,8 @@ router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
-      res.status(400).json({ 
-        error: 'Username and password required' 
+      res.status(400).json({
+        error: 'Username and password required',
       });
       return;
     }
@@ -60,7 +56,7 @@ router.post('/login', async (req: Request, res: Response) => {
     // Set cookie
     res.cookie('token', token, {
       httpOnly: true,
-      maxAge: 7 * 24 * 60 * 60 * 1000
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
     res.json({
@@ -68,9 +64,9 @@ router.post('/login', async (req: Request, res: Response) => {
         id: user.id,
         username: user.username,
         email: user.email,
-        current_level: user.current_level
+        current_level: user.current_level,
       },
-      token
+      token,
     });
   } catch (error: any) {
     res.status(401).json({ error: error.message });
@@ -87,7 +83,7 @@ router.post('/logout', (_req: Request, res: Response) => {
 router.get('/me', authMiddleware, (req: AuthRequest, res: Response) => {
   try {
     const user = AuthService.getUserById(req.userId!);
-    
+
     if (!user) {
       res.status(404).json({ error: 'User not found' });
       return;
@@ -97,7 +93,7 @@ router.get('/me', authMiddleware, (req: AuthRequest, res: Response) => {
       id: user.id,
       username: user.username,
       email: user.email,
-      current_level: user.current_level
+      current_level: user.current_level,
     });
   } catch (error: any) {
     res.status(500).json({ error: error.message });
@@ -116,11 +112,15 @@ router.post('/update-current-level', authMiddleware, async (req: AuthRequest, re
 
     // Update user's current level
     const db = getDatabase();
-    const updateResult = db.prepare(`
+    const updateResult = db
+      .prepare(
+        `
       UPDATE users 
       SET current_level = ?
       WHERE id = ?
-    `).run(level, userId);
+    `
+      )
+      .run(level, userId);
 
     if (updateResult.changes === 0) {
       return res.status(404).json({ error: 'User not found' });
@@ -133,4 +133,3 @@ router.post('/update-current-level', authMiddleware, async (req: AuthRequest, re
 });
 
 export default router;
-

@@ -45,4 +45,3 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log('French Learning Game is ready!');
 });
-

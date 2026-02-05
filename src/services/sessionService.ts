@@ -1,11 +1,5 @@
 import { getDatabase } from '../database/connection';
-import {
-  ExampleSentence,
-  Question,
-  Session,
-  SessionResult,
-  Word
-} from '../types';
+import { ExampleSentence, Question, Session, SessionResult, Word } from '../types';
 import { LevelService } from './levelService';
 import { ProgressService } from './progressService';
 import { UserLevelService } from './userLevelService';
@@ -15,16 +9,18 @@ export class SessionService {
 
   static createSession(userId: number, levelId: number): Session {
     const db = getDatabase();
-    
-    const result = db.prepare(`
+
+    const result = db
+      .prepare(
+        `
       INSERT INTO sessions 
       (user_id, level_id, score, total_questions, passed)
       VALUES (?, ?, 0, ${this.QUESTIONS_PER_SESSION}, 0)
-    `).run(userId, levelId);
+    `
+      )
+      .run(userId, levelId);
 
-    return db.prepare(
-      'SELECT * FROM sessions WHERE id = ?'
-    ).get(result.lastInsertRowid) as Session;
+    return db.prepare('SELECT * FROM sessions WHERE id = ?').get(result.lastInsertRowid) as Session;
   }
 
   /**
@@ -33,10 +29,7 @@ export class SessionService {
    * @param currentLevelId - Current level ID
    * @returns Array of questions
    */
-  static generateQuestions(
-    userId: number, 
-    currentLevelId: number
-  ): Question[] {
+  static generateQuestions(userId: number, currentLevelId: number): Question[] {
     const questions: Question[] = [];
 
     // Get words for the session (current level + max 3 from previous levels)
@@ -47,10 +40,10 @@ export class SessionService {
 
     // Generate questions of different types
     const questionTypes: Question['type'][] = [
-      'fr_to_en', 
-      'en_to_fr', 
-      'fill_blank', 
-      'multiple_choice'
+      'fr_to_en',
+      'en_to_fr',
+      'fill_blank',
+      'multiple_choice',
     ];
 
     // Generate questions for selected words.
@@ -63,7 +56,7 @@ export class SessionService {
       let word = selectedWords[i];
       let attempts = 0;
       const maxAttempts = 10;
-      
+
       // Ensure we don't use the same word twice in a row
       while (word.id === previousWordId && attempts < maxAttempts) {
         // Pick a random different word from the selected words
@@ -71,9 +64,9 @@ export class SessionService {
         word = selectedWords[randomIndex];
         attempts++;
       }
-      
+
       previousWordId = word.id;
-      
+
       // Give verbs 50% higher chance of fill-in-the-blank exercises
       let type: Question['type'];
       if (word.word_type === 'verb') {
@@ -122,18 +115,22 @@ export class SessionService {
     if (currentLevelWords.length === 0) {
       throw new Error(
         `No words found for level ${currentLevel.level_number}. ` +
-        `Please run 'npm run seed' to populate the database.`
+          `Please run 'npm run seed' to populate the database.`
       );
     }
 
     // STEP 2: Get previous level words with mastery and attempts (limited to 3)
-    const previousLevels = db.prepare(`
+    const previousLevels = db
+      .prepare(
+        `
       SELECT id FROM levels WHERE level_number < ?
-    `).all(currentLevel.level_number) as { id: number }[];
+    `
+      )
+      .all(currentLevel.level_number) as { id: number }[];
 
     let previousLevelWords: (Word & { mastery: number; attempts: number })[] = [];
     if (previousLevels.length > 0) {
-      const previousLevelIds = previousLevels.map(l => l.id);
+      const previousLevelIds = previousLevels.map((l) => l.id);
 
       // Get previous level words with attempts and mastery (limited to 3 lowest attempts)
       previousLevelWords = this.getWordsWithMastery(userId, previousLevelIds, 3);
@@ -180,12 +177,15 @@ export class SessionService {
       query += ` ORDER BY attempts ASC, mastery ASC LIMIT ${limit}`;
     }
 
-    return db.prepare(query).all(userId, userId, ...levelIds) as (Word & { mastery: number; attempts: number })[];
+    return db.prepare(query).all(userId, userId, ...levelIds) as (Word & {
+      mastery: number;
+      attempts: number;
+    })[];
   }
 
   private static createQuestion(
-    word: Word, 
-    type: Question['type'], 
+    word: Word,
+    type: Question['type'],
     allWords: Word[],
     levelMastery: number
   ): Question {
@@ -196,7 +196,7 @@ export class SessionService {
           word,
           type,
           question: `Translate to English: "${word.french}"`,
-          correct_answer: word.english
+          correct_answer: word.english,
         };
 
       case 'en_to_fr':
@@ -205,24 +205,21 @@ export class SessionService {
           word,
           type,
           question: `Translate to French: "${word.english}"`,
-          correct_answer: word.french
+          correct_answer: word.french,
         };
 
       case 'fill_blank':
         return this.createFillBlankQuestion(word, levelMastery);
 
       case 'multiple_choice':
-        const options = this.generateMultipleChoiceOptions(
-          word, 
-          allWords
-        );
+        const options = this.generateMultipleChoiceOptions(word, allWords);
         return {
           id: word.id,
           word,
           type,
           question: `What does "${word.french}" mean?`,
           correct_answer: word.english,
-          options
+          options,
         };
 
       default:
@@ -236,54 +233,52 @@ export class SessionService {
 
     // Get example sentences for this word
     // TEMP DEBUGS
-    const examples = db.prepare(`
+    const examples = db
+      .prepare(
+        `
       SELECT * FROM example_sentences 
       WHERE word_id = ? 
       ORDER BY id
-    `).all(word.id) as ExampleSentence[];
+    `
+      )
+      .all(word.id) as ExampleSentence[];
 
     let sentence: string;
     let correctAnswer: string;
     let english_translation: string = '';
-    
+
     if (examples.length > 0) {
       // Use a random example sentence
-      const example = 
-        examples[Math.floor(Math.random() * examples.length)];
-      
+      const example = examples[Math.floor(Math.random() * examples.length)];
+
       // Use word_to_replace if available, otherwise use the word
-      const wordToBlank = example.word_to_replace || 
-                          word.french.replace(/^(le|la|l') /, '');
-      
+      const wordToBlank = example.word_to_replace || word.french.replace(/^(le|la|l') /, '');
+
       // Escape special regex characters
-      const escapedWord = 
-        wordToBlank.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      
+      const escapedWord = wordToBlank.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
       // Create regex (handles accents, apostrophes)
       const wordPattern = new RegExp(
-        `(?<=\\s|^|'|[-])${escapedWord}(?=\\s|\\.|,|!|\\?|'|[-]|$)`, 
+        `(?<=\\s|^|'|[-])${escapedWord}(?=\\s|\\.|,|!|\\?|'|[-]|$)`,
         'gi'
       );
-      
+
       // Replace the word with blank
       sentence = example.french_sentence.replace(wordPattern, '___');
       correctAnswer = wordToBlank;
-      english_translation  = example.english_translation || '';
+      english_translation = example.english_translation || '';
     } else {
       // Fallback to simple sentence
       const article = word.gender || '';
-      sentence = 
-        `${article} ___ ${word.word_type === 'verb' ? 
-          'est important' : 'est beau'}`;
+      sentence = `${article} ___ ${word.word_type === 'verb' ? 'est important' : 'est beau'}`;
       correctAnswer = word.french.replace(/^(le|la|l') /, '');
     }
-    
+
     // Add root verb hint for verbs when level mastery is low
     let questionText = `Fill in the blank with "${word.english}":<br>"${sentence}"`;
     if (word.word_type === 'verb' && levelMastery < 60) {
       questionText = `Fill in the blank with "${word.english}" (${word.french}):<br>"${sentence}"`;
     }
-
 
     // a full question response.
     return {
@@ -293,40 +288,36 @@ export class SessionService {
       question: questionText,
       correct_answer: correctAnswer,
       sentence_context: sentence,
-      english_translation: english_translation
+      english_translation: english_translation,
     };
   }
 
   // Generate multiple choice options: correct answer + 3 wrong answers
-  private static generateMultipleChoiceOptions(
-    correctWord: Word, 
-    allWords: Word[]
-  ): string[] {
+  private static generateMultipleChoiceOptions(correctWord: Word, allWords: Word[]): string[] {
     const options: string[] = [correctWord.english];
-    
+
     // First try to find words of the same type
     let sameType = allWords.filter(
-      w => w.word_type === correctWord.word_type && 
-           w.id !== correctWord.id
+      (w) => w.word_type === correctWord.word_type && w.id !== correctWord.id
     );
-    
+
     // If not enough same-type words, expand to all words
     if (sameType.length < 3) {
-      sameType = allWords.filter(w => w.id !== correctWord.id);
+      sameType = allWords.filter((w) => w.id !== correctWord.id);
     }
-    
+
     // Add 3 random wrong answers
     while (options.length < 4 && sameType.length > 0) {
       const randomIndex = Math.floor(Math.random() * sameType.length);
       const wrongAnswer = sameType[randomIndex].english;
-      
+
       if (!options.includes(wrongAnswer)) {
         options.push(wrongAnswer);
       }
-      
+
       sameType.splice(randomIndex, 1);
     }
-    
+
     // If still not enough options, add generic options
     if (options.length < 4) {
       const genericOptions = ['house', 'car', 'book', 'water', 'food', 'time', 'place', 'thing'];
@@ -352,7 +343,7 @@ export class SessionService {
     correctAnswer: string
   ): boolean {
     const db = getDatabase();
-    
+
     // Only strip parentheses for French→English questions
     const shouldStripParens = questionType === 'fr_to_en';
     const normalizedUser = this.normalizeAnswer(userAnswer, shouldStripParens);
@@ -360,18 +351,20 @@ export class SessionService {
     const correct = normalizedUser === normalizedCorrect;
 
     // Record answer
-    db.prepare(`
+    db.prepare(
+      `
       INSERT INTO session_answers 
       (session_id, word_id, question_type, question_text, user_answer, 
        correct_answer, correct)
       VALUES (?, ?, ?, ?, ?, ?, ?)
-    `).run(
-      sessionId, 
-      wordId, 
-      questionType, 
+    `
+    ).run(
+      sessionId,
+      wordId,
+      questionType,
       questionText,
-      userAnswer, 
-      correctAnswer, 
+      userAnswer,
+      correctAnswer,
       correct ? 1 : 0
     );
 
@@ -387,72 +380,70 @@ export class SessionService {
    */
   private static normalizeAnswer(answer: string, shouldStripParens: boolean = false): string {
     let normalized = answer.trim();
-    
+
     // Convert œ to oe for easier typing (both "sœur" and "soeur" will be accepted)
     normalized = normalized.replace(/œ/g, 'oe');
-    
+
     if (shouldStripParens) {
       normalized = normalized
         .replace(/\s*\([^)]*\)/g, '') // Remove (formal/plural) etc
         .replace(/\s+/g, ' ') // Replace multiple spaces with single space
         .trim();
     }
-    
+
     return normalized.toLowerCase();
   }
 
-  static getSessionResult(
-    sessionId: number, 
-    userId: number
-  ): SessionResult {
+  static getSessionResult(sessionId: number, userId: number): SessionResult {
     const db = getDatabase();
 
     // Get session
-    const session = db.prepare(
-      'SELECT * FROM sessions WHERE id = ?'
-    ).get(sessionId) as Session;
+    const session = db.prepare('SELECT * FROM sessions WHERE id = ?').get(sessionId) as Session;
 
     // Get all answers
-    const answers = db.prepare(`
+    const answers = db
+      .prepare(
+        `
       SELECT * FROM session_answers WHERE session_id = ?
-    `).all(sessionId) as any[];
+    `
+      )
+      .all(sessionId) as any[];
 
     // Calculate score
-    const correctCount = answers.filter(a => a.correct === 1).length;
-    const percentage = Math.round(
-      (correctCount / session.total_questions) * 100
-    );
+    const correctCount = answers.filter((a) => a.correct === 1).length;
+    const percentage = Math.round((correctCount / session.total_questions) * 100);
     const passed = percentage >= 80;
 
     // Update session
-    db.prepare(`
+    db.prepare(
+      `
       UPDATE sessions 
       SET score = ?, passed = ?
       WHERE id = ?
-    `).run(correctCount, passed ? 1 : 0, sessionId);
+    `
+    ).run(correctCount, passed ? 1 : 0, sessionId);
 
     // Increment attempt count for this level when session is completed
     UserLevelService.incrementAttempts(userId, session.level_id);
 
     // Update mastery for all levels and check if session level newly hit 80%
-    const { newlyHitMastery } = UserLevelService.updateAllLevelMastery(
-      userId, 
-      session.level_id
-    );
+    const { newlyHitMastery } = UserLevelService.updateAllLevelMastery(userId, session.level_id);
 
     // Get incorrect words with examples and Google search links
     const incorrectWords = answers
-      .filter(a => a.correct === 0)
-      .map(answer => {
-        const word = db.prepare(
-          'SELECT * FROM words WHERE id = ?'
-        ).get(answer.word_id) as Word;
+      .filter((a) => a.correct === 0)
+      .map((answer) => {
+        const word = db.prepare('SELECT * FROM words WHERE id = ?').get(answer.word_id) as Word;
 
-        const examples = db.prepare(`
+        const examples = db
+          .prepare(
+            `
           SELECT * FROM example_sentences 
           WHERE word_id = ? 
           ORDER BY id
-        `).all(answer.word_id) as ExampleSentence[];
+        `
+          )
+          .all(answer.word_id) as ExampleSentence[];
 
         // Generate Google search links for feedback.
         const dictQuery = encodeURIComponent(`define french word ${word.french}`);
@@ -473,7 +464,7 @@ export class SessionService {
           question_type: answer.question_type,
           question_text: answer.question_text,
           examples,
-          google_links
+          google_links,
         };
       });
 
@@ -484,7 +475,7 @@ export class SessionService {
       passed,
       percentage,
       newlyHitMastery,
-      incorrect_words: incorrectWords
+      incorrect_words: incorrectWords,
     };
   }
 
@@ -493,7 +484,10 @@ export class SessionService {
    * Words with lower mastery get higher priority, then attempt count is considered.
    * This ensures struggling words appear more frequently than well-mastered ones.
    */
-  private static selectWeightedWords(words: (Word & { mastery: number; attempts: number })[], count: number): Word[] {
+  private static selectWeightedWords(
+    words: (Word & { mastery: number; attempts: number })[],
+    count: number
+  ): Word[] {
     if (words.length === 0) {
       return [];
     }
@@ -503,7 +497,7 @@ export class SessionService {
     for (const word of words) {
       // Base weight from mastery: lower mastery = higher weight (max 10x for 0% mastery)
       // 0% mastery = 10x, 50% = 5x, 90%+ = 1x
-      const masteryWeight = Math.max(1, Math.round(10 - (word.mastery / 10)));
+      const masteryWeight = Math.max(1, Math.round(10 - word.mastery / 10));
 
       // Additional weight from attempts: fewer attempts = higher weight (max 9x)
       // Words with 0 attempts get 9x weight, words with 8+ attempts get 1x weight
@@ -529,14 +523,16 @@ export class SessionService {
 
   static getUserSessions(userId: number): Session[] {
     const db = getDatabase();
-    return db.prepare(`
+    return db
+      .prepare(
+        `
       SELECT s.*, l.name as level_name 
       FROM sessions s
       JOIN levels l ON s.level_id = l.id
       WHERE s.user_id = ?
       ORDER BY s.created_at DESC
-    `).all(userId) as Session[];
+    `
+      )
+      .all(userId) as Session[];
   }
-
 }
-

@@ -1,215 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 1 - French 101</title>
-    <link rel="stylesheet" href="lesson_styles.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="lesson_styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Lesson 1</h1>
-            <p>First Day of Class - Introduction to French</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">Chapitre Préliminaire (pp. 2-27)</p>
-            <div class="voice-controls">
-                <!-- Settings panel injected by lesson_audio.js -->
+      <div class="header">
+        <h1>Lesson 1</h1>
+        <p>First Day of Class - Introduction to French</p>
+        <p style="font-size: 0.9em; margin-top: 10px">Chapitre Préliminaire (pp. 2-27)</p>
+        <div class="voice-controls">
+          <!-- Settings panel injected by lesson_audio.js -->
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Part 1: Diagnostic Test -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'part1')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Part 1: Diagnostic Test</h2>
+            <span class="time-badge">20 minutes</span>
+          </div>
+          <div class="section-content" data-section="part1" data-lang="en">
+            <div class="content-block">
+              <p>
+                Alright everyone, welcome to French 101! Before we dive into learning French
+                together, I need to understand where each of you is starting from. So we're going to
+                begin today with a short diagnostic test - and I want to emphasize right away that
+                this is not graded. This isn't about passing or failing; it's simply a tool to help
+                me assess your incoming knowledge of French so I can tailor our course to meet your
+                needs. Some of you might have studied French before, others might be complete
+                beginners, and that's perfectly fine. This test just helps me understand each
+                student's starting point so we can all make the most progress together this
+                semester.
+              </p>
             </div>
+            <div class="content-block">
+              <h4>Test Components:</h4>
+              <ul>
+                <li>Basic questions: alphabet, numbers, simple phrases</li>
+                <li>Listening comprehension (if students have any French exposure)</li>
+                <li>Results will be used to gauge overall class level</li>
+              </ul>
+            </div>
+            <div class="info-box">
+              <strong>Teacher Note:</strong> Emphasize this is diagnostic only - not graded. Creates
+              baseline for measuring progress throughout semester.
+            </div>
+            <div class="activity-box" style="margin-top: 15px">
+              <h4>📄 Diagnostic Test Materials</h4>
+              <p><strong>Click here to view/print the diagnostic test:</strong></p>
+              <p style="margin-top: 10px">
+                <button
+                  class="nav-btn"
+                  onclick="window.location.href = 'diagnostic_test.html'"
+                  style="display: inline-block; margin: 0"
+                >
+                  View Diagnostic Test →
+                </button>
+              </p>
+              <p style="margin-top: 10px">
+                <em>Print one copy per student before class begins.</em>
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="content">
-            <!-- Part 1: Diagnostic Test -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'part1')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Part 1: Diagnostic Test</h2>
-                    <span class="time-badge">20 minutes</span>
-                </div>
-                <div class="section-content" data-section="part1" data-lang="en">
-                    <div class="content-block">
-                        <p>Alright everyone, welcome to French 101! Before we dive into learning French together, I need to understand where each of you is starting from. So we're going to begin today with a short diagnostic test - and I want to emphasize right away that this is not graded. This isn't about passing or failing; it's simply a tool to help me assess your incoming knowledge of French so I can tailor our course to meet your needs. Some of you might have studied French before, others might be complete beginners, and that's perfectly fine. This test just helps me understand each student's starting point so we can all make the most progress together this semester.</p>
-                    </div>
-                    <div class="content-block">
-                        <h4>Test Components:</h4>
-                        <ul>
-                            <li>Basic questions: alphabet, numbers, simple phrases</li>
-                            <li>Listening comprehension (if students have any French exposure)</li>
-                            <li>Results will be used to gauge overall class level</li>
-                        </ul>
-                    </div>
-                    <div class="info-box">
-                        <strong>Teacher Note:</strong> Emphasize this is diagnostic only - not graded. Creates baseline for measuring progress throughout semester.
-                    </div>
-                    <div class="activity-box" style="margin-top: 15px;">
-                        <h4>📄 Diagnostic Test Materials</h4>
-                        <p><strong>Click here to view/print the diagnostic test:</strong></p>
-                        <p style="margin-top: 10px;">
-                            <button class="nav-btn" onclick="window.location.href='diagnostic_test.html'" style="display: inline-block; margin: 0;">View Diagnostic Test →</button>
-                        </p>
-                        <p style="margin-top: 10px;"><em>Print one copy per student before class begins.</em></p>
-                    </div>
-                </div>
+        <!-- Part 2: Course Introduction -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'part2')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Part 2: Course Introduction</h2>
+            <span class="time-badge">20 minutes</span>
+          </div>
+          <div class="section-content" data-section="part2" data-lang="en">
+            <div class="content-block">
+              <h4>Welcome & Syllabus Overview:</h4>
+              <p>
+                Now that we've completed the diagnostic test, let me officially welcome you to
+                French 101! I'm excited to be your guide on this journey into the French language
+                and francophone culture. Over the next 16 weeks, we're going to meet five days a
+                week for one hour each day - that's 80 contact hours total. This is an intensive
+                course, which means we'll be moving at a steady pace, but I promise you'll see real
+                progress quickly.
+              </p>
+
+              <p style="margin-top: 10px">
+                Our goal for this semester is to bring you to what's called the A2 level on the CEFR
+                scale - that's the Common European Framework of Reference for Languages. At A2,
+                you'll be able to communicate in simple, routine tasks, describe your background and
+                immediate environment, and express your needs in basic terms. Many of you will be
+                ready to take the DELF A2 exam by the end of this course if you choose to pursue
+                that certification. Let me walk you through how we'll get there.
+              </p>
+              <ul>
+                <li>
+                  <strong>Course Goal:</strong> Reach A2 level on CEFR scale / DELF A2 preparation
+                </li>
+                <li>
+                  <strong>Meeting Schedule:</strong> 5 days per week, 1 hour per day = 80 contact
+                  hours
+                </li>
+                <li>
+                  <strong>Textbook:</strong>
+                  <em>Chez nous: Branché sur le monde francophone</em> (5th Edition)
+                </li>
+              </ul>
             </div>
-
-            <!-- Part 2: Course Introduction -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'part2')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Part 2: Course Introduction</h2>
-                    <span class="time-badge">20 minutes</span>
-                </div>
-                <div class="section-content" data-section="part2" data-lang="en">
-                    <div class="content-block">
-                        <h4>Welcome & Syllabus Overview:</h4>
-                        <p>Now that we've completed the diagnostic test, let me officially welcome you to French 101! I'm excited to be your guide on this journey into the French language and francophone culture. Over the next 16 weeks, we're going to meet five days a week for one hour each day - that's 80 contact hours total. This is an intensive course, which means we'll be moving at a steady pace, but I promise you'll see real progress quickly.</p>
-                        
-                        <p style="margin-top: 10px;">Our goal for this semester is to bring you to what's called the A2 level on the CEFR scale - that's the Common European Framework of Reference for Languages. At A2, you'll be able to communicate in simple, routine tasks, describe your background and immediate environment, and express your needs in basic terms. Many of you will be ready to take the DELF A2 exam by the end of this course if you choose to pursue that certification. Let me walk you through how we'll get there.</p>
-                        <ul>
-                            <li><strong>Course Goal:</strong> Reach A2 level on CEFR scale / DELF A2 preparation</li>
-                            <li><strong>Meeting Schedule:</strong> 5 days per week, 1 hour per day = 80 contact hours</li>
-                            <li><strong>Textbook:</strong> <em>Chez nous: Branché sur le monde francophone</em> (5th Edition)</li>
-                        </ul>
-                    </div>
-                    <div class="content-block">
-                        <h4>Grading Breakdown:</h4>
-                        <ul>
-                            <li>Quizzes (weekly): 18%</li>
-                            <li>Midterm Exam: 22%</li>
-                            <li>Final Exam: 28%</li>
-                            <li>Oral Assessments (4 total): 12%</li>
-                            <li>Writing Assignments: 10%</li>
-                            <li>Participation & Homework: 10%</li>
-                        </ul>
-                    </div>
-                    <div class="character-intro">
-                        <h4>📖 Introducing: James - Our Character Guide!</h4>
-                        <p><strong>Meet James:</strong> An American student who just arrived in Paris to study abroad. Throughout the semester, we'll follow his adventures as he navigates life in France, makes friends, and learns French. His story will help us practice real-world situations!</p>
-                    </div>
-                    <div class="content-block">
-                        <h4>Resources Overview:</h4>
-                        <ul>
-                            <li>Textbook exercises (no online platform needed)</li>
-                            <li>Custom worksheets provided by instructor</li>
-                            <li>YouTube videos: Learn French with Alexa, Easy French</li>
-                            <li>Weekly journal entries</li>
-                            <li>Vocabulary flashcards (student-created)</li>
-                        </ul>
-                    </div>
-                    <div class="info-box">
-                        <strong>Homework Submission:</strong> Create a folder system for collecting written work. Establish clear deadlines. All homework due at start of class unless specified otherwise.
-                    </div>
-                </div>
+            <div class="content-block">
+              <h4>Grading Breakdown:</h4>
+              <ul>
+                <li>Quizzes (weekly): 18%</li>
+                <li>Midterm Exam: 22%</li>
+                <li>Final Exam: 28%</li>
+                <li>Oral Assessments (4 total): 12%</li>
+                <li>Writing Assignments: 10%</li>
+                <li>Participation & Homework: 10%</li>
+              </ul>
             </div>
-
-            <!-- Part 3: First French Lesson -->
-            <div class="section">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'part3')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h2 class="section-title">Part 3: First French Lesson</h2>
-                    <span class="time-badge">20 minutes</span>
-                </div>
-                <div class="section-content" data-section="part3" data-lang="mixed">
-                    <div class="info-box">
-                        <strong>Textbook Reference:</strong> Pages 3-5 - Leçon 1: Je me présente
-                    </div>
-                    
-                    <div class="content-block">
-                        <h4>Teacher Lecture: Your First French Words</h4>
-                        <p>Alright everyone, now comes the exciting part - we're going to start speaking French! Today we're focusing on the absolute essentials: how to greet someone, how to introduce yourself, and how to ask someone's name. These might seem like simple phrases, but they're the foundation of every conversation you'll ever have in French. Master these, and you'll be able to walk up to any French speaker in the world and start a conversation.</p>
-                        
-                        <p style="margin-top: 10px;">Let's start with greetings. The word <span class="french-phrase" lang="fr">Bonjour</span> is probably the most important word you'll learn today. It means "Hello" or "Good day," and you use it any time during daylight hours. In the evening, you switch to <span class="french-phrase" lang="fr">Bonsoir</span> - "Good evening." Notice the pattern? <span class="french-phrase" lang="fr">Bon</span> means "good," <span class="french-phrase" lang="fr">jour</span> means "day," and <span class="french-phrase" lang="fr">soir</span> means "evening." French builds words logically like this. Now <span class="french-phrase" lang="fr">Salut</span> is informal - use it with friends and people your own age, but never with professors or in professional settings. And when it's time to say goodbye, <span class="french-phrase" lang="fr">Au revoir</span> is your formal farewell - literally "until we see each other again."</p>
-                        
-                        <p style="margin-top: 10px;">For introductions, the phrase <span class="french-phrase" lang="fr">Je m'appelle</span> literally means "I call myself," but we translate it as "My name is." The beauty of French is that once you learn this pattern, you can introduce yourself anywhere. To ask someone's name, we have two versions: <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> for informal situations and <span class="french-phrase" lang="fr">Comment vous appelez-vous?</span> for formal. Don't worry about the grammar right now - just focus on the sounds and get comfortable saying these phrases. We'll break down the grammar later. For now, let's practice!</p>
-                    </div>
-                    
-                    <div class="content-block">
-                        <h4>Basic Greetings:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Bonjour</span> - Hello / Good morning (formal, daytime)</li>
-                            <li><span class="french-phrase" lang="fr">Salut</span> - Hi / Bye (informal)</li>
-                            <li><span class="french-phrase" lang="fr">Bonsoir</span> - Good evening</li>
-                            <li><span class="french-phrase" lang="fr">Bonne nuit</span> - Good night</li>
-                            <li><span class="french-phrase" lang="fr">Au revoir</span> - Goodbye (formal)</li>
-                        </ul>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>Basic Introductions:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Je m'appelle...</span> - My name is...</li>
-                            <li><span class="french-phrase" lang="fr">Comment tu t'appelles?</span> - What's your name? (informal)</li>
-                            <li><span class="french-phrase" lang="fr">Comment vous appelez-vous?</span> - What's your name? (formal)</li>
-                        </ul>
-                    </div>
-
-                    <div class="content-block">
-                        <h4>How Are You:</h4>
-                        <ul>
-                            <li><span class="french-phrase" lang="fr">Comment ça va?</span> - How are you? (informal)</li>
-                            <li><span class="french-phrase" lang="fr">Comment allez-vous?</span> - How are you? (formal)</li>
-                            <li><span class="french-phrase" lang="fr">Ça va?</span> - You okay? (very informal)</li>
-                        </ul>
-                    </div>
-
-                    <div class="activity-box">
-                        <h4>🎯 Activity - Let's Practice!<span class="time-badge">10 min</span></h4>
-                        <ol>
-                            <li><strong>Listen:</strong> Play textbook dialogue (p. 5)</li>
-                            <li><strong>Repeat:</strong> Class repeats after instructor - focus on pronunciation</li>
-                            <li><strong>Pair Practice:</strong> Turn to your neighbor
-                                <ul style="margin-top: 8px;">
-                                    <li>Greet each other</li>
-                                    <li>Introduce yourself using <span class="french-phrase" lang="fr">Je m'appelle...</span></li>
-                                    <li>Ask <span class="french-phrase" lang="fr">Comment ça va?</span></li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </div>
-
-                    <div class="character-intro">
-                        <h4>📖 James's Introduction:</h4>
-                        <p><span class="french-phrase" lang="fr">«Bonjour! Je m'appelle James. Je suis américain. Je suis étudiant.»</span></p>
-                        <p style="margin-top: 10px;"><em>Translation:</em> Hello! My name is James. I am American. I am a student.</p>
-                    </div>
-                </div>
+            <div class="character-intro">
+              <h4>📖 Introducing: James - Our Character Guide!</h4>
+              <p>
+                <strong>Meet James:</strong> An American student who just arrived in Paris to study
+                abroad. Throughout the semester, we'll follow his adventures as he navigates life in
+                France, makes friends, and learns French. His story will help us practice real-world
+                situations!
+              </p>
             </div>
-
-            <!-- Homework -->
-            <div class="homework-box">
-                <div class="section-header">
-                    <button class="play-btn" onclick="playSection(this, 'homework')" title="Play audio (or press Space)">
-                        ▶
-                    </button>
-                    <h3>📚 Homework Due Wednesday</h3>
-                </div>
-                <div data-section="homework" data-lang="en">
-                    <ul style="list-style-position: inside; padding-left: 20px;">
-                        <li><strong>Reading:</strong> Textbook pp. 2-7 (greetings and introductions)</li>
-                        <li><strong>Writing Practice:</strong> Create 5 different greeting dialogues in French (write them out)</li>
-                        <li><strong>Alphabet:</strong> Practice singing/reciting the French alphabet 3 times</li>
-                        <li><strong>Journal:</strong> Write 50 words in English about why you're learning French</li>
-                        <li><strong>Flashcards:</strong> Create 10 flashcards for greetings/responses we learned today</li>
-                    </ul>
-                    <div class="info-box" style="margin-top: 15px;">
-                        <strong>Reminder:</strong> All written homework should be brought to class on Wednesday. We'll review greetings before moving to the alphabet!
-                    </div>
-                </div>
+            <div class="content-block">
+              <h4>Resources Overview:</h4>
+              <ul>
+                <li>Textbook exercises (no online platform needed)</li>
+                <li>Custom worksheets provided by instructor</li>
+                <li>YouTube videos: Learn French with Alexa, Easy French</li>
+                <li>Weekly journal entries</li>
+                <li>Vocabulary flashcards (student-created)</li>
+              </ul>
             </div>
+            <div class="info-box">
+              <strong>Homework Submission:</strong> Create a folder system for collecting written
+              work. Establish clear deadlines. All homework due at start of class unless specified
+              otherwise.
+            </div>
+          </div>
         </div>
 
-        <div class="nav-buttons">
-            <button class="nav-btn prev" disabled>← Previous</button>
-            <button class="nav-btn next" onclick="window.location.href='lesson_02.html'">Lesson 2 →</button>
+        <!-- Part 3: First French Lesson -->
+        <div class="section">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'part3')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h2 class="section-title">Part 3: First French Lesson</h2>
+            <span class="time-badge">20 minutes</span>
+          </div>
+          <div class="section-content" data-section="part3" data-lang="mixed">
+            <div class="info-box">
+              <strong>Textbook Reference:</strong> Pages 3-5 - Leçon 1: Je me présente
+            </div>
+
+            <div class="content-block">
+              <h4>Teacher Lecture: Your First French Words</h4>
+              <p>
+                Alright everyone, now comes the exciting part - we're going to start speaking
+                French! Today we're focusing on the absolute essentials: how to greet someone, how
+                to introduce yourself, and how to ask someone's name. These might seem like simple
+                phrases, but they're the foundation of every conversation you'll ever have in
+                French. Master these, and you'll be able to walk up to any French speaker in the
+                world and start a conversation.
+              </p>
+
+              <p style="margin-top: 10px">
+                Let's start with greetings. The word
+                <span class="french-phrase" lang="fr">Bonjour</span> is probably the most important
+                word you'll learn today. It means "Hello" or "Good day," and you use it any time
+                during daylight hours. In the evening, you switch to
+                <span class="french-phrase" lang="fr">Bonsoir</span> - "Good evening." Notice the
+                pattern? <span class="french-phrase" lang="fr">Bon</span> means "good,"
+                <span class="french-phrase" lang="fr">jour</span> means "day," and
+                <span class="french-phrase" lang="fr">soir</span> means "evening." French builds
+                words logically like this. Now <span class="french-phrase" lang="fr">Salut</span> is
+                informal - use it with friends and people your own age, but never with professors or
+                in professional settings. And when it's time to say goodbye,
+                <span class="french-phrase" lang="fr">Au revoir</span> is your formal farewell -
+                literally "until we see each other again."
+              </p>
+
+              <p style="margin-top: 10px">
+                For introductions, the phrase
+                <span class="french-phrase" lang="fr">Je m'appelle</span> literally means "I call
+                myself," but we translate it as "My name is." The beauty of French is that once you
+                learn this pattern, you can introduce yourself anywhere. To ask someone's name, we
+                have two versions:
+                <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> for informal
+                situations and
+                <span class="french-phrase" lang="fr">Comment vous appelez-vous?</span> for formal.
+                Don't worry about the grammar right now - just focus on the sounds and get
+                comfortable saying these phrases. We'll break down the grammar later. For now, let's
+                practice!
+              </p>
+            </div>
+
+            <div class="content-block">
+              <h4>Basic Greetings:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Bonjour</span> - Hello / Good morning
+                  (formal, daytime)
+                </li>
+                <li><span class="french-phrase" lang="fr">Salut</span> - Hi / Bye (informal)</li>
+                <li><span class="french-phrase" lang="fr">Bonsoir</span> - Good evening</li>
+                <li><span class="french-phrase" lang="fr">Bonne nuit</span> - Good night</li>
+                <li><span class="french-phrase" lang="fr">Au revoir</span> - Goodbye (formal)</li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h4>Basic Introductions:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Je m'appelle...</span> - My name is...
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Comment tu t'appelles?</span> - What's your
+                  name? (informal)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Comment vous appelez-vous?</span> - What's
+                  your name? (formal)
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-block">
+              <h4>How Are You:</h4>
+              <ul>
+                <li>
+                  <span class="french-phrase" lang="fr">Comment ça va?</span> - How are you?
+                  (informal)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Comment allez-vous?</span> - How are you?
+                  (formal)
+                </li>
+                <li>
+                  <span class="french-phrase" lang="fr">Ça va?</span> - You okay? (very informal)
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity-box">
+              <h4>🎯 Activity - Let's Practice!<span class="time-badge">10 min</span></h4>
+              <ol>
+                <li><strong>Listen:</strong> Play textbook dialogue (p. 5)</li>
+                <li>
+                  <strong>Repeat:</strong> Class repeats after instructor - focus on pronunciation
+                </li>
+                <li>
+                  <strong>Pair Practice:</strong> Turn to your neighbor
+                  <ul style="margin-top: 8px">
+                    <li>Greet each other</li>
+                    <li>
+                      Introduce yourself using
+                      <span class="french-phrase" lang="fr">Je m'appelle...</span>
+                    </li>
+                    <li>Ask <span class="french-phrase" lang="fr">Comment ça va?</span></li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="character-intro">
+              <h4>📖 James's Introduction:</h4>
+              <p>
+                <span class="french-phrase" lang="fr"
+                  >«Bonjour! Je m'appelle James. Je suis américain. Je suis étudiant.»</span
+                >
+              </p>
+              <p style="margin-top: 10px">
+                <em>Translation:</em> Hello! My name is James. I am American. I am a student.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- Homework -->
+        <div class="homework-box">
+          <div class="section-header">
+            <button
+              class="play-btn"
+              onclick="playSection(this, 'homework')"
+              title="Play audio (or press Space)"
+            >
+              ▶
+            </button>
+            <h3>📚 Homework Due Wednesday</h3>
+          </div>
+          <div data-section="homework" data-lang="en">
+            <ul style="list-style-position: inside; padding-left: 20px">
+              <li><strong>Reading:</strong> Textbook pp. 2-7 (greetings and introductions)</li>
+              <li>
+                <strong>Writing Practice:</strong> Create 5 different greeting dialogues in French
+                (write them out)
+              </li>
+              <li>
+                <strong>Alphabet:</strong> Practice singing/reciting the French alphabet 3 times
+              </li>
+              <li>
+                <strong>Journal:</strong> Write 50 words in English about why you're learning French
+              </li>
+              <li>
+                <strong>Flashcards:</strong> Create 10 flashcards for greetings/responses we learned
+                today
+              </li>
+            </ul>
+            <div class="info-box" style="margin-top: 15px">
+              <strong>Reminder:</strong> All written homework should be brought to class on
+              Wednesday. We'll review greetings before moving to the alphabet!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="nav-btn prev" disabled>← Previous</button>
+        <button class="nav-btn next" onclick="window.location.href = 'lesson_02.html'">
+          Lesson 2 →
+        </button>
+      </div>
     </div>
 
     <script src="lesson_audio.js"></script>
-</body>
+  </body>
 </html>

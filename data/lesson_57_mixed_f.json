@@ -3,181 +3,512 @@
   "title": "Mixed F",
   "theme": "Vocabulary from Group 9",
   "words": [
-    { "french": "sauver", "english": "to save", "word_type": "verb", "root": "sauver", "sentences": [
-      { "fr": "Je sauve un chat.", "en": "I save a cat.", "replace": "sauve" },
-      { "fr": "Tu sauves la journée.", "en": "You save the day.", "replace": "sauves" },
-      { "fr": "Il sauve une vie.", "en": "He saves a life.", "replace": "sauve" },
-      { "fr": "Nous sauvons des gens.", "en": "We save people.", "replace": "sauvons" },
-      { "fr": "Vous sauvez des données.", "en": "You save data.", "replace": "sauvez" },
-      { "fr": "Ils sauvent des animaux.", "en": "They save animals.", "replace": "sauvent" }
-    ] },
-    { "french": "notre", "english": "our", "word_type": "determiner", "sentences": [
-      { "fr": "Notre maison.", "en": "Our house.", "replace": "Notre" },
-      { "fr": "Notre projet.", "en": "Our project.", "replace": "Notre" },
-      { "fr": "Notre plan.", "en": "Our plan.", "replace": "Notre" },
-      { "fr": "Nos idées.", "en": "Our ideas.", "replace": "Nos" },
-      { "fr": "Nos amis.", "en": "Our friends.", "replace": "Nos" },
-      { "fr": "Nos choix.", "en": "Our choices.", "replace": "Nos" }
-    ] },
-    { "french": "cet", "english": "this (masc.)", "word_type": "determiner", "sentences": [
-      { "fr": "Cet ami vient.", "en": "This friend comes.", "replace": "Cet" },
-      { "fr": "Cet homme reste.", "en": "This man stays.", "replace": "Cet" },
-      { "fr": "Cet enfant joue.", "en": "This child plays.", "replace": "Cet" },
-      { "fr": "Ces amis viennent.", "en": "These friends come.", "replace": "Ces" },
-      { "fr": "Ces hommes restent.", "en": "These men stay.", "replace": "Ces" },
-      { "fr": "Ces enfants jouent.", "en": "These children play.", "replace": "Ces" }
-    ] },
-    { "french": "là", "english": "there", "word_type": "adverb", "sentences": [
-      { "fr": "Je suis là.", "en": "I am there.", "replace": "là" },
-      { "fr": "Tu restes là.", "en": "You stay there.", "replace": "là" },
-      { "fr": "Il attend là.", "en": "He waits there.", "replace": "là" },
-      { "fr": "Nous restons là-bas.", "en": "We stay over there.", "replace": "là-bas" },
-      { "fr": "Vous allez là-bas.", "en": "You go over there.", "replace": "là-bas" },
-      { "fr": "Ils arrivent là-bas.", "en": "They arrive over there.", "replace": "là-bas" }
-    ] },
-    { "french": "donné", "english": "given", "word_type": "adjective", "sentences": [
-      { "fr": "Un exemple donné.", "en": "A given example.", "replace": "donné" },
-      { "fr": "Un cas donné.", "en": "A given case.", "replace": "donné" },
-      { "fr": "Un moment donné.", "en": "A given moment.", "replace": "donné" },
-      { "fr": "Des exemples donnés.", "en": "Given examples.", "replace": "donnés" },
-      { "fr": "Des cas donnés.", "en": "Given cases.", "replace": "donnés" },
-      { "fr": "Tous déjà donnés.", "en": "All already given.", "replace": "donnés" }
-    ] },
-    { "french": "pleine", "english": "full (fem.)", "word_type": "adjective", "sentences": [
-      { "fr": "Une boîte pleine.", "en": "A full box.", "replace": "pleine" },
-      { "fr": "Une valise pleine.", "en": "A full suitcase.", "replace": "pleine" },
-      { "fr": "Une salle pleine.", "en": "A full room.", "replace": "pleine" },
-      { "fr": "Des boîtes pleines.", "en": "Full boxes.", "replace": "pleines" },
-      { "fr": "Des valises pleines.", "en": "Full suitcases.", "replace": "pleines" },
-      { "fr": "Toutes bien pleines.", "en": "All very full.", "replace": "pleines" }
-    ] },
-    { "french": "potentiel", "english": "potential", "word_type": "noun", "sentences": [
-      { "fr": "Le potentiel augmente.", "en": "Potential increases.", "replace": "potentiel" },
-      { "fr": "Un potentiel énorme.", "en": "Huge potential.", "replace": "potentiel" },
-      { "fr": "Ce potentiel suffit.", "en": "This potential is enough.", "replace": "potentiel" },
-      { "fr": "Les potentiels varient.", "en": "Potentials vary.", "replace": "potentiels" },
-      { "fr": "Plusieurs potentiels existent.", "en": "Several potentials exist.", "replace": "potentiels" },
-      { "fr": "Tous les potentiels comptent.", "en": "All potentials matter.", "replace": "potentiels" }
-    ] },
-    { "french": "façon", "english": "way (manner)", "word_type": "noun", "sentences": [
-      { "fr": "La façon change.", "en": "The way changes.", "replace": "façon" },
-      { "fr": "Une façon simple.", "en": "A simple way.", "replace": "façon" },
-      { "fr": "Cette façon plaît.", "en": "This manner pleases.", "replace": "façon" },
-      { "fr": "Les façons varient.", "en": "Ways vary.", "replace": "façons" },
-      { "fr": "Plusieurs façons existent.", "en": "Several ways exist.", "replace": "façons" },
-      { "fr": "Toutes les façons restent.", "en": "All ways remain.", "replace": "façons" }
-    ] },
-    { "french": "là-bas", "english": "over there", "word_type": "adverb", "sentences": [
-      { "fr": "Je vais là-bas.", "en": "I am going over there.", "replace": "là-bas" },
-      { "fr": "Tu restes là-bas.", "en": "You stay over there.", "replace": "là-bas" },
-      { "fr": "Il attend là-bas.", "en": "He waits over there.", "replace": "là-bas" },
-      { "fr": "Nous sommes là-bas.", "en": "We are over there.", "replace": "là-bas" },
-      { "fr": "Vous allez là-bas demain.", "en": "You go over there tomorrow.", "replace": "là-bas" },
-      { "fr": "Ils arrivent là-bas bientôt.", "en": "They arrive over there soon.", "replace": "là-bas" }
-    ] },
-    { "french": "étrangement", "english": "strangely", "word_type": "adverb", "sentences": [
-      { "fr": "Étrangement, il sourit.", "en": "Strangely, he smiles.", "replace": "Étrangement" },
-      { "fr": "Étrangement, ça marche.", "en": "Strangely, it works.", "replace": "Étrangement" },
-      { "fr": "Étrangement, elle reste.", "en": "Strangely, she stays.", "replace": "Étrangement" },
-      { "fr": "Étrangement, ils partent.", "en": "Strangely, they leave.", "replace": "Étrangement" },
-      { "fr": "Étrangement, nous gagnons.", "en": "Strangely, we win.", "replace": "Étrangement" },
-      { "fr": "Étrangement, vous riez.", "en": "Strangely, you laugh.", "replace": "Étrangement" }
-    ] },
-    { "french": "suffisamment", "english": "sufficiently", "word_type": "adverb", "sentences": [
-      { "fr": "C'est suffisamment clair.", "en": "It's sufficiently clear.", "replace": "suffisamment" },
-      { "fr": "Il parle suffisamment.", "en": "He speaks sufficiently.", "replace": "suffisamment" },
-      { "fr": "Tu écris suffisamment.", "en": "You write sufficiently.", "replace": "suffisamment" },
-      { "fr": "Nous avançons suffisamment.", "en": "We advance sufficiently.", "replace": "suffisamment" },
-      { "fr": "Vous répondez suffisamment.", "en": "You answer sufficiently.", "replace": "suffisamment" },
-      { "fr": "Ils travaillent suffisamment.", "en": "They work sufficiently.", "replace": "suffisamment" }
-    ] },
-    { "french": "là-bas, aux côtés", "english": "over there, by the sides", "word_type": "phrase", "sentences": [
-      { "fr": "Là-bas, aux côtés du mur.", "en": "Over there, by the sides of the wall.", "replace": "Là-bas, aux côtés" },
-      { "fr": "Là-bas, aux côtés de la porte.", "en": "Over there, beside the door.", "replace": "Là-bas, aux côtés" },
-      { "fr": "Là-bas, aux côtés du jardin.", "en": "Over there, by the sides of the garden.", "replace": "Là-bas, aux côtés" },
-      { "fr": "Là-bas, aux côtés des murs.", "en": "Over there, by the sides of the walls.", "replace": "Là-bas, aux côtés" },
-      { "fr": "Là-bas, aux côtés des portes.", "en": "Over there, by the sides of the doors.", "replace": "Là-bas, aux côtés" },
-      { "fr": "Là-bas, aux côtés des jardins.", "en": "Over there, by the sides of the gardens.", "replace": "Là-bas, aux côtés" }
-    ] },
-    { "french": "de façon suffisante", "english": "in a sufficient way", "word_type": "phrase", "sentences": [
-      { "fr": "Parle de façon suffisante.", "en": "Speak in a sufficient way.", "replace": "de façon suffisante" },
-      { "fr": "Écris de façon suffisante.", "en": "Write sufficiently.", "replace": "de façon suffisante" },
-      { "fr": "Travaille de façon suffisante.", "en": "Work sufficiently.", "replace": "de façon suffisante" },
-      { "fr": "Agissez de façon suffisante.", "en": "Act sufficiently.", "replace": "de façon suffisante" },
-      { "fr": "Répondez de façon suffisante.", "en": "Answer sufficiently.", "replace": "de façon suffisante" },
-      { "fr": "Produisez de façon suffisante.", "en": "Produce sufficiently.", "replace": "de façon suffisante" }
-    ] },
-    { "french": "qu'un", "english": "than a (only a)", "word_type": "phrase", "sentences": [
-      { "fr": "Moins qu'un souhait.", "en": "Less than a wish.", "replace": "qu'un" },
-      { "fr": "Plus qu'un effort.", "en": "More than an effort.", "replace": "qu'un" },
-      { "fr": "Mieux qu'un plan.", "en": "Better than a plan.", "replace": "qu'un" },
-      { "fr": "Autres qu'un test.", "en": "Other than a test.", "replace": "qu'un" },
-      { "fr": "Rien qu'un doute.", "en": "Nothing but a doubt.", "replace": "qu'un" },
-      { "fr": "Peu qu'un cas.", "en": "Little more than a case.", "replace": "qu'un" }
-    ] },
-    { "french": "qu'une", "english": "than one (only one, fem)", "word_type": "phrase", "sentences": [
-      { "fr": "Moins qu'une minute.", "en": "Less than one minute.", "replace": "qu'une" },
-      { "fr": "Plus qu'une idée.", "en": "More than one idea.", "replace": "qu'une" },
-      { "fr": "Mieux qu'une solution.", "en": "Better than one solution.", "replace": "qu'une" },
-      { "fr": "Autre qu'une option.", "en": "Other than one option.", "replace": "qu'une" },
-      { "fr": "Rien qu'une chance.", "en": "Nothing but one chance.", "replace": "qu'une" },
-      { "fr": "Peu qu'une heure.", "en": "Little more than one hour.", "replace": "qu'une" }
-    ] },
-    { "french": "circonstances", "english": "circumstances", "word_type": "noun", "sentences": [
-      { "fr": "Une circonstance rare.", "en": "A rare circumstance.", "replace": "circonstance" },
-      { "fr": "La circonstance change.", "en": "The circumstance changes.", "replace": "circonstance" },
-      { "fr": "Cette circonstance suffit.", "en": "This circumstance is enough.", "replace": "circonstance" },
-      { "fr": "Les circonstances varient.", "en": "Circumstances vary.", "replace": "circonstances" },
-      { "fr": "Plusieurs circonstances reviennent.", "en": "Several circumstances return.", "replace": "circonstances" },
-      { "fr": "Toutes les circonstances comptent.", "en": "All circumstances matter.", "replace": "circonstances" }
-    ] },
-    { "french": "petits", "english": "small (masc. pl.)", "word_type": "adjective", "sentences": [
-      { "fr": "Un petit problème.", "en": "A small problem.", "replace": "petit" },
-      { "fr": "Un petit objet.", "en": "A small object.", "replace": "petit" },
-      { "fr": "Un petit détail.", "en": "A small detail.", "replace": "petit" },
-      { "fr": "Des petits problèmes.", "en": "Small problems.", "replace": "petits" },
-      { "fr": "Des petits objets.", "en": "Small objects.", "replace": "petits" },
-      { "fr": "Tous très petits.", "en": "All very small.", "replace": "petits" }
-    ] },
-    { "french": "nécessaires", "english": "necessary", "word_type": "adjective", "sentences": [
-      { "fr": "Un outil nécessaire.", "en": "A necessary tool.", "replace": "nécessaire" },
-      { "fr": "Un test nécessaire.", "en": "A necessary test.", "replace": "nécessaire" },
-      { "fr": "Un changement nécessaire.", "en": "A necessary change.", "replace": "nécessaire" },
-      { "fr": "Des outils nécessaires.", "en": "Necessary tools.", "replace": "nécessaires" },
-      { "fr": "Des tests nécessaires.", "en": "Necessary tests.", "replace": "nécessaires" },
-      { "fr": "Tous nécessaires ici.", "en": "All necessary here.", "replace": "nécessaires" }
-    ] },
-    { "french": "plus qu'une minute", "english": "more than one minute", "word_type": "phrase", "sentences": [
-      { "fr": "Plus qu'une minute reste.", "en": "More than one minute remains.", "replace": "Plus qu'une minute" },
-      { "fr": "Plus qu'une minute passe.", "en": "More than one minute passes.", "replace": "Plus qu'une minute" },
-      { "fr": "Plus qu'une minute suffit.", "en": "More than one minute suffices.", "replace": "Plus qu'une minute" },
-      { "fr": "Plus que des minutes passent.", "en": "More than minutes pass.", "replace": "Plus que des minutes" },
-      { "fr": "Plus que quelques minutes restent.", "en": "More than a few minutes remain.", "replace": "Plus que quelques minutes" },
-      { "fr": "Plus que toutes les minutes.", "en": "More than all the minutes.", "replace": "Plus que toutes les minutes" }
-    ] },
-    { "french": "plus qu'un cas", "english": "more than one case", "word_type": "phrase", "sentences": [
-      { "fr": "Plus qu'un cas apparaît.", "en": "More than one case appears.", "replace": "Plus qu'un cas" },
-      { "fr": "Plus qu'un cas suffit.", "en": "More than one case is enough.", "replace": "Plus qu'un cas" },
-      { "fr": "Plus qu'un cas manque.", "en": "More than one case is missing.", "replace": "Plus qu'un cas" },
-      { "fr": "Plus que des cas arrivent.", "en": "More than cases arrive.", "replace": "Plus que des cas" },
-      { "fr": "Plus que quelques cas restent.", "en": "More than a few cases remain.", "replace": "Plus que quelques cas" },
-      { "fr": "Plus que tous les cas.", "en": "More than all cases.", "replace": "Plus que tous les cas" }
-    ] },
-    { "french": "potentiel énorme", "english": "huge potential", "word_type": "phrase", "sentences": [
-      { "fr": "Un potentiel énorme apparaît.", "en": "Huge potential appears.", "replace": "potentiel énorme" },
-      { "fr": "Ce potentiel énorme dure.", "en": "This huge potential lasts.", "replace": "potentiel énorme" },
-      { "fr": "Le potentiel énorme suffit.", "en": "The huge potential is enough.", "replace": "potentiel énorme" },
-      { "fr": "Des potentiels énormes naissent.", "en": "Huge potentials arise.", "replace": "potentiels énormes" },
-      { "fr": "Plusieurs potentiels énormes changent.", "en": "Several huge potentials change.", "replace": "potentiels énormes" },
-      { "fr": "Tous les potentiels énormes comptent.", "en": "All huge potentials matter.", "replace": "potentiels énormes" }
-    ] },
-    { "french": "façon bizarre", "english": "weird way", "word_type": "phrase", "sentences": [
-      { "fr": "Une façon bizarre apparaît.", "en": "A weird way appears.", "replace": "façon bizarre" },
-      { "fr": "Cette façon bizarre change.", "en": "This weird way changes.", "replace": "façon bizarre" },
-      { "fr": "La façon bizarre s'impose.", "en": "The weird way prevails.", "replace": "façon bizarre" },
-      { "fr": "Des façons bizarres existent.", "en": "Weird ways exist.", "replace": "façons bizarres" },
-      { "fr": "Plusieurs façons bizarres passent.", "en": "Several weird ways pass.", "replace": "façons bizarres" },
-      { "fr": "Toutes les façons bizarres restent.", "en": "All weird ways remain.", "replace": "façons bizarres" }
-    ] }
+    {
+      "french": "sauver",
+      "english": "to save",
+      "word_type": "verb",
+      "root": "sauver",
+      "sentences": [
+        { "fr": "Je sauve un chat.", "en": "I save a cat.", "replace": "sauve" },
+        { "fr": "Tu sauves la journée.", "en": "You save the day.", "replace": "sauves" },
+        { "fr": "Il sauve une vie.", "en": "He saves a life.", "replace": "sauve" },
+        { "fr": "Nous sauvons des gens.", "en": "We save people.", "replace": "sauvons" },
+        { "fr": "Vous sauvez des données.", "en": "You save data.", "replace": "sauvez" },
+        { "fr": "Ils sauvent des animaux.", "en": "They save animals.", "replace": "sauvent" }
+      ]
+    },
+    {
+      "french": "notre",
+      "english": "our",
+      "word_type": "determiner",
+      "sentences": [
+        { "fr": "Notre maison.", "en": "Our house.", "replace": "Notre" },
+        { "fr": "Notre projet.", "en": "Our project.", "replace": "Notre" },
+        { "fr": "Notre plan.", "en": "Our plan.", "replace": "Notre" },
+        { "fr": "Nos idées.", "en": "Our ideas.", "replace": "Nos" },
+        { "fr": "Nos amis.", "en": "Our friends.", "replace": "Nos" },
+        { "fr": "Nos choix.", "en": "Our choices.", "replace": "Nos" }
+      ]
+    },
+    {
+      "french": "cet",
+      "english": "this (masc.)",
+      "word_type": "determiner",
+      "sentences": [
+        { "fr": "Cet ami vient.", "en": "This friend comes.", "replace": "Cet" },
+        { "fr": "Cet homme reste.", "en": "This man stays.", "replace": "Cet" },
+        { "fr": "Cet enfant joue.", "en": "This child plays.", "replace": "Cet" },
+        { "fr": "Ces amis viennent.", "en": "These friends come.", "replace": "Ces" },
+        { "fr": "Ces hommes restent.", "en": "These men stay.", "replace": "Ces" },
+        { "fr": "Ces enfants jouent.", "en": "These children play.", "replace": "Ces" }
+      ]
+    },
+    {
+      "french": "là",
+      "english": "there",
+      "word_type": "adverb",
+      "sentences": [
+        { "fr": "Je suis là.", "en": "I am there.", "replace": "là" },
+        { "fr": "Tu restes là.", "en": "You stay there.", "replace": "là" },
+        { "fr": "Il attend là.", "en": "He waits there.", "replace": "là" },
+        { "fr": "Nous restons là-bas.", "en": "We stay over there.", "replace": "là-bas" },
+        { "fr": "Vous allez là-bas.", "en": "You go over there.", "replace": "là-bas" },
+        { "fr": "Ils arrivent là-bas.", "en": "They arrive over there.", "replace": "là-bas" }
+      ]
+    },
+    {
+      "french": "donné",
+      "english": "given",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un exemple donné.", "en": "A given example.", "replace": "donné" },
+        { "fr": "Un cas donné.", "en": "A given case.", "replace": "donné" },
+        { "fr": "Un moment donné.", "en": "A given moment.", "replace": "donné" },
+        { "fr": "Des exemples donnés.", "en": "Given examples.", "replace": "donnés" },
+        { "fr": "Des cas donnés.", "en": "Given cases.", "replace": "donnés" },
+        { "fr": "Tous déjà donnés.", "en": "All already given.", "replace": "donnés" }
+      ]
+    },
+    {
+      "french": "pleine",
+      "english": "full (fem.)",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Une boîte pleine.", "en": "A full box.", "replace": "pleine" },
+        { "fr": "Une valise pleine.", "en": "A full suitcase.", "replace": "pleine" },
+        { "fr": "Une salle pleine.", "en": "A full room.", "replace": "pleine" },
+        { "fr": "Des boîtes pleines.", "en": "Full boxes.", "replace": "pleines" },
+        { "fr": "Des valises pleines.", "en": "Full suitcases.", "replace": "pleines" },
+        { "fr": "Toutes bien pleines.", "en": "All very full.", "replace": "pleines" }
+      ]
+    },
+    {
+      "french": "potentiel",
+      "english": "potential",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Le potentiel augmente.", "en": "Potential increases.", "replace": "potentiel" },
+        { "fr": "Un potentiel énorme.", "en": "Huge potential.", "replace": "potentiel" },
+        { "fr": "Ce potentiel suffit.", "en": "This potential is enough.", "replace": "potentiel" },
+        { "fr": "Les potentiels varient.", "en": "Potentials vary.", "replace": "potentiels" },
+        {
+          "fr": "Plusieurs potentiels existent.",
+          "en": "Several potentials exist.",
+          "replace": "potentiels"
+        },
+        {
+          "fr": "Tous les potentiels comptent.",
+          "en": "All potentials matter.",
+          "replace": "potentiels"
+        }
+      ]
+    },
+    {
+      "french": "façon",
+      "english": "way (manner)",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "La façon change.", "en": "The way changes.", "replace": "façon" },
+        { "fr": "Une façon simple.", "en": "A simple way.", "replace": "façon" },
+        { "fr": "Cette façon plaît.", "en": "This manner pleases.", "replace": "façon" },
+        { "fr": "Les façons varient.", "en": "Ways vary.", "replace": "façons" },
+        { "fr": "Plusieurs façons existent.", "en": "Several ways exist.", "replace": "façons" },
+        { "fr": "Toutes les façons restent.", "en": "All ways remain.", "replace": "façons" }
+      ]
+    },
+    {
+      "french": "là-bas",
+      "english": "over there",
+      "word_type": "adverb",
+      "sentences": [
+        { "fr": "Je vais là-bas.", "en": "I am going over there.", "replace": "là-bas" },
+        { "fr": "Tu restes là-bas.", "en": "You stay over there.", "replace": "là-bas" },
+        { "fr": "Il attend là-bas.", "en": "He waits over there.", "replace": "là-bas" },
+        { "fr": "Nous sommes là-bas.", "en": "We are over there.", "replace": "là-bas" },
+        {
+          "fr": "Vous allez là-bas demain.",
+          "en": "You go over there tomorrow.",
+          "replace": "là-bas"
+        },
+        {
+          "fr": "Ils arrivent là-bas bientôt.",
+          "en": "They arrive over there soon.",
+          "replace": "là-bas"
+        }
+      ]
+    },
+    {
+      "french": "étrangement",
+      "english": "strangely",
+      "word_type": "adverb",
+      "sentences": [
+        {
+          "fr": "Étrangement, il sourit.",
+          "en": "Strangely, he smiles.",
+          "replace": "Étrangement"
+        },
+        { "fr": "Étrangement, ça marche.", "en": "Strangely, it works.", "replace": "Étrangement" },
+        {
+          "fr": "Étrangement, elle reste.",
+          "en": "Strangely, she stays.",
+          "replace": "Étrangement"
+        },
+        {
+          "fr": "Étrangement, ils partent.",
+          "en": "Strangely, they leave.",
+          "replace": "Étrangement"
+        },
+        {
+          "fr": "Étrangement, nous gagnons.",
+          "en": "Strangely, we win.",
+          "replace": "Étrangement"
+        },
+        { "fr": "Étrangement, vous riez.", "en": "Strangely, you laugh.", "replace": "Étrangement" }
+      ]
+    },
+    {
+      "french": "suffisamment",
+      "english": "sufficiently",
+      "word_type": "adverb",
+      "sentences": [
+        {
+          "fr": "C'est suffisamment clair.",
+          "en": "It's sufficiently clear.",
+          "replace": "suffisamment"
+        },
+        {
+          "fr": "Il parle suffisamment.",
+          "en": "He speaks sufficiently.",
+          "replace": "suffisamment"
+        },
+        {
+          "fr": "Tu écris suffisamment.",
+          "en": "You write sufficiently.",
+          "replace": "suffisamment"
+        },
+        {
+          "fr": "Nous avançons suffisamment.",
+          "en": "We advance sufficiently.",
+          "replace": "suffisamment"
+        },
+        {
+          "fr": "Vous répondez suffisamment.",
+          "en": "You answer sufficiently.",
+          "replace": "suffisamment"
+        },
+        {
+          "fr": "Ils travaillent suffisamment.",
+          "en": "They work sufficiently.",
+          "replace": "suffisamment"
+        }
+      ]
+    },
+    {
+      "french": "là-bas, aux côtés",
+      "english": "over there, by the sides",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Là-bas, aux côtés du mur.",
+          "en": "Over there, by the sides of the wall.",
+          "replace": "Là-bas, aux côtés"
+        },
+        {
+          "fr": "Là-bas, aux côtés de la porte.",
+          "en": "Over there, beside the door.",
+          "replace": "Là-bas, aux côtés"
+        },
+        {
+          "fr": "Là-bas, aux côtés du jardin.",
+          "en": "Over there, by the sides of the garden.",
+          "replace": "Là-bas, aux côtés"
+        },
+        {
+          "fr": "Là-bas, aux côtés des murs.",
+          "en": "Over there, by the sides of the walls.",
+          "replace": "Là-bas, aux côtés"
+        },
+        {
+          "fr": "Là-bas, aux côtés des portes.",
+          "en": "Over there, by the sides of the doors.",
+          "replace": "Là-bas, aux côtés"
+        },
+        {
+          "fr": "Là-bas, aux côtés des jardins.",
+          "en": "Over there, by the sides of the gardens.",
+          "replace": "Là-bas, aux côtés"
+        }
+      ]
+    },
+    {
+      "french": "de façon suffisante",
+      "english": "in a sufficient way",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Parle de façon suffisante.",
+          "en": "Speak in a sufficient way.",
+          "replace": "de façon suffisante"
+        },
+        {
+          "fr": "Écris de façon suffisante.",
+          "en": "Write sufficiently.",
+          "replace": "de façon suffisante"
+        },
+        {
+          "fr": "Travaille de façon suffisante.",
+          "en": "Work sufficiently.",
+          "replace": "de façon suffisante"
+        },
+        {
+          "fr": "Agissez de façon suffisante.",
+          "en": "Act sufficiently.",
+          "replace": "de façon suffisante"
+        },
+        {
+          "fr": "Répondez de façon suffisante.",
+          "en": "Answer sufficiently.",
+          "replace": "de façon suffisante"
+        },
+        {
+          "fr": "Produisez de façon suffisante.",
+          "en": "Produce sufficiently.",
+          "replace": "de façon suffisante"
+        }
+      ]
+    },
+    {
+      "french": "qu'un",
+      "english": "than a (only a)",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Moins qu'un souhait.", "en": "Less than a wish.", "replace": "qu'un" },
+        { "fr": "Plus qu'un effort.", "en": "More than an effort.", "replace": "qu'un" },
+        { "fr": "Mieux qu'un plan.", "en": "Better than a plan.", "replace": "qu'un" },
+        { "fr": "Autres qu'un test.", "en": "Other than a test.", "replace": "qu'un" },
+        { "fr": "Rien qu'un doute.", "en": "Nothing but a doubt.", "replace": "qu'un" },
+        { "fr": "Peu qu'un cas.", "en": "Little more than a case.", "replace": "qu'un" }
+      ]
+    },
+    {
+      "french": "qu'une",
+      "english": "than one (only one, fem)",
+      "word_type": "phrase",
+      "sentences": [
+        { "fr": "Moins qu'une minute.", "en": "Less than one minute.", "replace": "qu'une" },
+        { "fr": "Plus qu'une idée.", "en": "More than one idea.", "replace": "qu'une" },
+        { "fr": "Mieux qu'une solution.", "en": "Better than one solution.", "replace": "qu'une" },
+        { "fr": "Autre qu'une option.", "en": "Other than one option.", "replace": "qu'une" },
+        { "fr": "Rien qu'une chance.", "en": "Nothing but one chance.", "replace": "qu'une" },
+        { "fr": "Peu qu'une heure.", "en": "Little more than one hour.", "replace": "qu'une" }
+      ]
+    },
+    {
+      "french": "circonstances",
+      "english": "circumstances",
+      "word_type": "noun",
+      "sentences": [
+        { "fr": "Une circonstance rare.", "en": "A rare circumstance.", "replace": "circonstance" },
+        {
+          "fr": "La circonstance change.",
+          "en": "The circumstance changes.",
+          "replace": "circonstance"
+        },
+        {
+          "fr": "Cette circonstance suffit.",
+          "en": "This circumstance is enough.",
+          "replace": "circonstance"
+        },
+        {
+          "fr": "Les circonstances varient.",
+          "en": "Circumstances vary.",
+          "replace": "circonstances"
+        },
+        {
+          "fr": "Plusieurs circonstances reviennent.",
+          "en": "Several circumstances return.",
+          "replace": "circonstances"
+        },
+        {
+          "fr": "Toutes les circonstances comptent.",
+          "en": "All circumstances matter.",
+          "replace": "circonstances"
+        }
+      ]
+    },
+    {
+      "french": "petits",
+      "english": "small (masc. pl.)",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un petit problème.", "en": "A small problem.", "replace": "petit" },
+        { "fr": "Un petit objet.", "en": "A small object.", "replace": "petit" },
+        { "fr": "Un petit détail.", "en": "A small detail.", "replace": "petit" },
+        { "fr": "Des petits problèmes.", "en": "Small problems.", "replace": "petits" },
+        { "fr": "Des petits objets.", "en": "Small objects.", "replace": "petits" },
+        { "fr": "Tous très petits.", "en": "All very small.", "replace": "petits" }
+      ]
+    },
+    {
+      "french": "nécessaires",
+      "english": "necessary",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "Un outil nécessaire.", "en": "A necessary tool.", "replace": "nécessaire" },
+        { "fr": "Un test nécessaire.", "en": "A necessary test.", "replace": "nécessaire" },
+        { "fr": "Un changement nécessaire.", "en": "A necessary change.", "replace": "nécessaire" },
+        { "fr": "Des outils nécessaires.", "en": "Necessary tools.", "replace": "nécessaires" },
+        { "fr": "Des tests nécessaires.", "en": "Necessary tests.", "replace": "nécessaires" },
+        { "fr": "Tous nécessaires ici.", "en": "All necessary here.", "replace": "nécessaires" }
+      ]
+    },
+    {
+      "french": "plus qu'une minute",
+      "english": "more than one minute",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Plus qu'une minute reste.",
+          "en": "More than one minute remains.",
+          "replace": "Plus qu'une minute"
+        },
+        {
+          "fr": "Plus qu'une minute passe.",
+          "en": "More than one minute passes.",
+          "replace": "Plus qu'une minute"
+        },
+        {
+          "fr": "Plus qu'une minute suffit.",
+          "en": "More than one minute suffices.",
+          "replace": "Plus qu'une minute"
+        },
+        {
+          "fr": "Plus que des minutes passent.",
+          "en": "More than minutes pass.",
+          "replace": "Plus que des minutes"
+        },
+        {
+          "fr": "Plus que quelques minutes restent.",
+          "en": "More than a few minutes remain.",
+          "replace": "Plus que quelques minutes"
+        },
+        {
+          "fr": "Plus que toutes les minutes.",
+          "en": "More than all the minutes.",
+          "replace": "Plus que toutes les minutes"
+        }
+      ]
+    },
+    {
+      "french": "plus qu'un cas",
+      "english": "more than one case",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Plus qu'un cas apparaît.",
+          "en": "More than one case appears.",
+          "replace": "Plus qu'un cas"
+        },
+        {
+          "fr": "Plus qu'un cas suffit.",
+          "en": "More than one case is enough.",
+          "replace": "Plus qu'un cas"
+        },
+        {
+          "fr": "Plus qu'un cas manque.",
+          "en": "More than one case is missing.",
+          "replace": "Plus qu'un cas"
+        },
+        {
+          "fr": "Plus que des cas arrivent.",
+          "en": "More than cases arrive.",
+          "replace": "Plus que des cas"
+        },
+        {
+          "fr": "Plus que quelques cas restent.",
+          "en": "More than a few cases remain.",
+          "replace": "Plus que quelques cas"
+        },
+        {
+          "fr": "Plus que tous les cas.",
+          "en": "More than all cases.",
+          "replace": "Plus que tous les cas"
+        }
+      ]
+    },
+    {
+      "french": "potentiel énorme",
+      "english": "huge potential",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Un potentiel énorme apparaît.",
+          "en": "Huge potential appears.",
+          "replace": "potentiel énorme"
+        },
+        {
+          "fr": "Ce potentiel énorme dure.",
+          "en": "This huge potential lasts.",
+          "replace": "potentiel énorme"
+        },
+        {
+          "fr": "Le potentiel énorme suffit.",
+          "en": "The huge potential is enough.",
+          "replace": "potentiel énorme"
+        },
+        {
+          "fr": "Des potentiels énormes naissent.",
+          "en": "Huge potentials arise.",
+          "replace": "potentiels énormes"
+        },
+        {
+          "fr": "Plusieurs potentiels énormes changent.",
+          "en": "Several huge potentials change.",
+          "replace": "potentiels énormes"
+        },
+        {
+          "fr": "Tous les potentiels énormes comptent.",
+          "en": "All huge potentials matter.",
+          "replace": "potentiels énormes"
+        }
+      ]
+    },
+    {
+      "french": "façon bizarre",
+      "english": "weird way",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Une façon bizarre apparaît.",
+          "en": "A weird way appears.",
+          "replace": "façon bizarre"
+        },
+        {
+          "fr": "Cette façon bizarre change.",
+          "en": "This weird way changes.",
+          "replace": "façon bizarre"
+        },
+        {
+          "fr": "La façon bizarre s'impose.",
+          "en": "The weird way prevails.",
+          "replace": "façon bizarre"
+        },
+        {
+          "fr": "Des façons bizarres existent.",
+          "en": "Weird ways exist.",
+          "replace": "façons bizarres"
+        },
+        {
+          "fr": "Plusieurs façons bizarres passent.",
+          "en": "Several weird ways pass.",
+          "replace": "façons bizarres"
+        },
+        {
+          "fr": "Toutes les façons bizarres restent.",
+          "en": "All weird ways remain.",
+          "replace": "façons bizarres"
+        }
+      ]
+    }
   ]
 }

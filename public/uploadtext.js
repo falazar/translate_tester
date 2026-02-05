@@ -42,7 +42,7 @@ function loadSavedText() {
 function setupTextAutoSave() {
   const textInput = document.getElementById('textInput');
   if (textInput) {
-    textInput.addEventListener('input', function() {
+    textInput.addEventListener('input', function () {
       localStorage.setItem('uploadTextContent', this.value);
     });
   }
@@ -98,72 +98,81 @@ function handleTextUpload(event) {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ text: textInput })
+    body: JSON.stringify({ text: textInput }),
   })
-  .then(response => {
-    if (!response.ok) {
-      // Handle non-200 responses
-      return response.text().then(text => {
-        throw new Error(`HTTP ${response.status}: ${text}`);
-      });
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Show processing result
-    const processingResult = document.getElementById('processingResult');
-    const highlightedText = document.getElementById('highlightedText');
+    .then((response) => {
+      if (!response.ok) {
+        // Handle non-200 responses
+        return response.text().then((text) => {
+          throw new Error(`HTTP ${response.status}: ${text}`);
+        });
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Show processing result
+      const processingResult = document.getElementById('processingResult');
+      const highlightedText = document.getElementById('highlightedText');
 
-    // Use highlighted text if available, otherwise fall back to processed text
-    const textToDisplay = data.analysis?.highlightedProcessedText || data.processedText || 'No text returned from server';
-    highlightedText.innerHTML = textToDisplay;
-    processingResult.style.display = 'block';
+      // Use highlighted text if available, otherwise fall back to processed text
+      const textToDisplay =
+        data.analysis?.highlightedProcessedText ||
+        data.processedText ||
+        'No text returned from server';
+      highlightedText.innerHTML = textToDisplay;
+      processingResult.style.display = 'block';
 
-    // Show word analysis if available
-    if (data.analysis) {
-      const wordAnalysis = document.getElementById('wordAnalysis');
-      const wordCount = document.getElementById('wordCount');
-      const uniqueWords = document.getElementById('uniqueWords');
-      const uniqueKnownWords = document.getElementById('uniqueKnownWords');
-      const unknownWords = document.getElementById('unknownWords');
-      const percentageKnown = document.getElementById('percentageKnown');
-      const knownWordCount = document.getElementById('knownWordCount');
-      const totalWordCount = document.getElementById('totalWordCount');
-      const plainWordFrequencies = document.getElementById('plainWordFrequencies');
+      // Show word analysis if available
+      if (data.analysis) {
+        const wordAnalysis = document.getElementById('wordAnalysis');
+        const wordCount = document.getElementById('wordCount');
+        const uniqueWords = document.getElementById('uniqueWords');
+        const uniqueKnownWords = document.getElementById('uniqueKnownWords');
+        const unknownWords = document.getElementById('unknownWords');
+        const percentageKnown = document.getElementById('percentageKnown');
+        const knownWordCount = document.getElementById('knownWordCount');
+        const totalWordCount = document.getElementById('totalWordCount');
+        const plainWordFrequencies = document.getElementById('plainWordFrequencies');
 
-      console.log('DOM elements found:', {
-        wordAnalysis: !!wordAnalysis,
-        plainWordFrequencies: !!plainWordFrequencies
-      });
+        console.log('DOM elements found:', {
+          wordAnalysis: !!wordAnalysis,
+          plainWordFrequencies: !!plainWordFrequencies,
+        });
 
-      wordCount.textContent = data.analysis.totalWords || '0';
-      uniqueWords.textContent = data.analysis.uniqueWords || '0';
-      uniqueKnownWords.textContent = data.analysis.uniqueKnownWords || '0';
-      unknownWords.textContent = data.analysis.unknownWords || '0';
-      percentageKnown.textContent = data.analysis.percentageKnown || '0';
+        wordCount.textContent = data.analysis.totalWords || '0';
+        uniqueWords.textContent = data.analysis.uniqueWords || '0';
+        uniqueKnownWords.textContent = data.analysis.uniqueKnownWords || '0';
+        unknownWords.textContent = data.analysis.unknownWords || '0';
+        percentageKnown.textContent = data.analysis.percentageKnown || '0';
 
-      // Calculate and display the math for percentage
-      const totalWords = data.analysis.wordFrequencies?.reduce((sum, item) => sum + item.count, 0) || 0;
-      const knownWords = data.analysis.wordFrequencies
-        ?.filter(item => item.level !== 'unknown')
-        .reduce((sum, item) => sum + item.count, 0) || 0;
+        // Calculate and display the math for percentage
+        const totalWords =
+          data.analysis.wordFrequencies?.reduce((sum, item) => sum + item.count, 0) || 0;
+        const knownWords =
+          data.analysis.wordFrequencies
+            ?.filter((item) => item.level !== 'unknown')
+            .reduce((sum, item) => sum + item.count, 0) || 0;
 
-      knownWordCount.textContent = knownWords.toString();
-      totalWordCount.textContent = totalWords.toString();
+        knownWordCount.textContent = knownWords.toString();
+        totalWordCount.textContent = totalWords.toString();
 
-      // Display plain word frequencies (by count)
-      console.log('Plain word frequencies:', data.analysis.plainWordFrequencies);
-      if (data.analysis.plainWordFrequencies && Array.isArray(data.analysis.plainWordFrequencies)) {
-        console.log('Plain word frequencies length:', data.analysis.plainWordFrequencies.length);
+        // Display plain word frequencies (by count)
+        console.log('Plain word frequencies:', data.analysis.plainWordFrequencies);
+        if (
+          data.analysis.plainWordFrequencies &&
+          Array.isArray(data.analysis.plainWordFrequencies)
+        ) {
+          console.log('Plain word frequencies length:', data.analysis.plainWordFrequencies.length);
 
-        // Show only first 10 items initially, add expand indicator if more exist
-        const displayItems = data.analysis.plainWordFrequencies.slice(0, 10);
-        const hasMoreItems = data.analysis.plainWordFrequencies.length > 10;
+          // Show only first 10 items initially, add expand indicator if more exist
+          const displayItems = data.analysis.plainWordFrequencies.slice(0, 10);
+          const hasMoreItems = data.analysis.plainWordFrequencies.length > 10;
 
-        let plainHtml = displayItems.map((item, index) => {
-          console.log('Plain item:', item);
-          const number = index + 1;
-          return `
+          let plainHtml = displayItems
+            .map((item, index) => {
+              console.log('Plain item:', item);
+              const number = index + 1;
+              return `
             <div class="plain-frequency-item">
               <div class="word-info">
                 <span class="word-number">${number}.</span>
@@ -172,46 +181,53 @@ function handleTextUpload(event) {
               <span class="word-count">${item.count}</span>
             </div>
           `;
-        }).join('');
+            })
+            .join('');
 
-        if (hasMoreItems) {
-          plainHtml += `
+          if (hasMoreItems) {
+            plainHtml += `
             <div class="expand-indicator">
               + ${data.analysis.plainWordFrequencies.length - 10} more words... Click header to expand
             </div>
           `;
+          }
+
+          console.log('Plain HTML generated:', plainHtml.substring(0, 200) + '...');
+          plainWordFrequencies.innerHTML = plainHtml || '<p>No plain frequencies to display</p>';
+          console.log('Plain HTML set to DOM');
+
+          // Set initial collapsed state if there are more than 10 items
+          if (hasMoreItems && !plainFrequenciesExpanded) {
+            plainWordFrequencies.classList.add('collapsed');
+            plainWordFrequencies.classList.remove('expanded');
+          }
+        } else {
+          console.log('Plain word frequencies not found or not an array');
         }
 
-        console.log('Plain HTML generated:', plainHtml.substring(0, 200) + '...');
-        plainWordFrequencies.innerHTML = plainHtml || '<p>No plain frequencies to display</p>';
-        console.log('Plain HTML set to DOM');
+        // Display known and unknown word frequencies by level
+        if (data.analysis.wordFrequencies && Array.isArray(data.analysis.wordFrequencies)) {
+          const knownWords = data.analysis.wordFrequencies.filter(
+            (item) => item.level !== 'unknown'
+          );
+          const unknownWords = data.analysis.wordFrequencies.filter(
+            (item) => item.level === 'unknown'
+          );
 
-        // Set initial collapsed state if there are more than 10 items
-        if (hasMoreItems && !plainFrequenciesExpanded) {
-          plainWordFrequencies.classList.add('collapsed');
-          plainWordFrequencies.classList.remove('expanded');
-        }
-      } else {
-        console.log('Plain word frequencies not found or not an array');
-      }
+          // Set header counts
+          document.getElementById('plainWordCount').textContent =
+            `(${data.analysis.plainWordFrequencies.length})`;
+          document.getElementById('knownLevelWordCount').textContent = `(${knownWords.length})`;
+          document.getElementById('unknownLevelWordCount').textContent = `(${unknownWords.length})`;
 
-      // Display known and unknown word frequencies by level
-      if (data.analysis.wordFrequencies && Array.isArray(data.analysis.wordFrequencies)) {
-        const knownWords = data.analysis.wordFrequencies.filter(item => item.level !== 'unknown');
-        const unknownWords = data.analysis.wordFrequencies.filter(item => item.level === 'unknown');
-
-        // Set header counts
-        document.getElementById('plainWordCount').textContent = `(${data.analysis.plainWordFrequencies.length})`;
-        document.getElementById('knownLevelWordCount').textContent = `(${knownWords.length})`;
-        document.getElementById('unknownLevelWordCount').textContent = `(${unknownWords.length})`;
-
-        // Display all known words
-        const knownWordFrequencies = document.getElementById('knownWordFrequencies');
-        if (knownWords.length > 0) {
-          const knownHtml = knownWords.map((item, index) => {
-            const levelText = `Level ${item.level}`;
-            const number = index + 1;
-            return `
+          // Display all known words
+          const knownWordFrequencies = document.getElementById('knownWordFrequencies');
+          if (knownWords.length > 0) {
+            const knownHtml = knownWords
+              .map((item, index) => {
+                const levelText = `Level ${item.level}`;
+                const number = index + 1;
+                return `
               <div class="word-frequency-item">
                 <div class="word-info">
                   <span class="word-number">${number}.</span>
@@ -221,19 +237,21 @@ function handleTextUpload(event) {
                 <span class="word-count">${item.count}</span>
               </div>
             `;
-          }).join('');
+              })
+              .join('');
 
-          knownWordFrequencies.innerHTML = knownHtml;
-        } else {
-          knownWordFrequencies.innerHTML = '<p>No known words found.</p>';
-        }
+            knownWordFrequencies.innerHTML = knownHtml;
+          } else {
+            knownWordFrequencies.innerHTML = '<p>No known words found.</p>';
+          }
 
-        // Display all unknown words
-        const unknownWordFrequencies = document.getElementById('unknownWordFrequencies');
-        if (unknownWords.length > 0) {
-          const unknownHtml = unknownWords.map((item, index) => {
-            const number = index + 1;
-            return `
+          // Display all unknown words
+          const unknownWordFrequencies = document.getElementById('unknownWordFrequencies');
+          if (unknownWords.length > 0) {
+            const unknownHtml = unknownWords
+              .map((item, index) => {
+                const number = index + 1;
+                return `
               <div class="word-frequency-item level-unknown">
                 <div class="word-info">
                   <span class="word-number">${number}.</span>
@@ -243,29 +261,30 @@ function handleTextUpload(event) {
                 <span class="word-count">${item.count}</span>
               </div>
             `;
-          }).join('');
+              })
+              .join('');
 
-          unknownWordFrequencies.innerHTML = unknownHtml;
-        } else {
-          unknownWordFrequencies.innerHTML = '<p>No unknown words found.</p>';
+            unknownWordFrequencies.innerHTML = unknownHtml;
+          } else {
+            unknownWordFrequencies.innerHTML = '<p>No unknown words found.</p>';
+          }
         }
+
+        wordAnalysis.style.display = 'block';
       }
 
-      wordAnalysis.style.display = 'block';
-    }
+      // Reset button
+      submitButton.textContent = 'Process Text';
+      submitButton.disabled = false;
+    })
+    .catch((error) => {
+      console.error('Error processing text:', error);
+      alert(`Error processing text: ${error.message}`);
 
-    // Reset button
-    submitButton.textContent = 'Process Text';
-    submitButton.disabled = false;
-  })
-  .catch(error => {
-    console.error('Error processing text:', error);
-    alert(`Error processing text: ${error.message}`);
-
-    // Reset button
-    submitButton.textContent = 'Process Text';
-    submitButton.disabled = false;
-  });
+      // Reset button
+      submitButton.textContent = 'Process Text';
+      submitButton.disabled = false;
+    });
 }
 
 function goBackToDashboard() {

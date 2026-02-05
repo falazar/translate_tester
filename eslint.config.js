@@ -41,12 +41,16 @@ export default [
       '@typescript-eslint': tseslint,
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': ['error', { 
-        'argsIgnorePattern': '^_',
-        'varsIgnorePattern': '^_',
-      }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
       'no-unused-vars': 'off',
       'no-case-declarations': 'off',
+      indent: ['error', 2],
     },
   },
 ];

@@ -4,155 +4,420 @@
   "description": "Vocabulary for Nature & Outdoors",
   "theme": "nature_and_outdoors",
   "words": [
-    { "french": "faisait", "english": "was doing", "word_type": "verb", "root": "faire", "sentences": [
-      { "fr": "Je faisais mes devoirs.", "en": "I was doing my homework.", "replace": "faisais" },
-      { "fr": "Tu faisais la cuisine.", "en": "You were cooking.", "replace": "faisais" },
-      { "fr": "Il faisait un dessin.", "en": "He was making a drawing.", "replace": "faisait" },
-      { "fr": "Nous faisions une promenade.", "en": "We were taking a walk.", "replace": "faisions" },
-      { "fr": "Vous faisiez le dîner.", "en": "You were making dinner.", "replace": "faisiez" },
-      { "fr": "Ils faisaient du sport.", "en": "They were doing sports.", "replace": "faisaient" }
-    ] },
-    { "french": "entendais", "english": "was hearing", "word_type": "verb", "root": "entendre", "sentences": [
-      { "fr": "J'entendais le vent.", "en": "I was hearing the wind.", "replace": "entendais" },
-      { "fr": "Tu entendais des oiseaux.", "en": "You were hearing birds.", "replace": "entendais" },
-      { "fr": "Il entendait des pas.", "en": "He was hearing footsteps.", "replace": "entendait" },
-      { "fr": "Nous entendions des voix.", "en": "We were hearing voices.", "replace": "entendions" },
-      { "fr": "Vous entendiez la rivière.", "en": "You were hearing the river.", "replace": "entendiez" },
-      { "fr": "Ils entendaient la pluie.", "en": "They were hearing the rain.", "replace": "entendaient" }
-    ] },
-    { "french": "réveiller", "english": "to wake (someone)", "word_type": "verb", "root": "réveiller", "sentences": [
-      { "fr": "Je réveille mon frère.", "en": "I wake my brother.", "replace": "réveille" },
-      { "fr": "Tu réveilles ta sœur.", "en": "You wake your sister.", "replace": "réveilles" },
-      { "fr": "Il réveille le chien.", "en": "He wakes the dog.", "replace": "réveille" },
-      { "fr": "Nous réveillons nos enfants.", "en": "We wake our children.", "replace": "réveillons" },
-      { "fr": "Vous réveillez tôt.", "en": "You wake early.", "replace": "réveillez" },
-      { "fr": "Ils réveillent tout le monde.", "en": "They wake everyone.", "replace": "réveillent" }
-    ] },
-    { "french": "remarquai", "english": "noticed", "word_type": "verb", "root": "remarquer", "sentences": [
-      { "fr": "Je remarquai une clairière.", "en": "I noticed a clearing.", "replace": "remarquai" },
-      { "fr": "Je remarquai la voisine.", "en": "I noticed the neighbor.", "replace": "remarquai" },
-      { "fr": "Je remarquai la rampe.", "en": "I noticed the ramp.", "replace": "remarquai" },
-      { "fr": "Je remarquai les coudes levés.", "en": "I noticed raised elbows.", "replace": "remarquai" },
-      { "fr": "Je remarquai la vue.", "en": "I noticed the view.", "replace": "remarquai" }
-    ] },
-    { "french": "la clairière", "english": "clearing", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La clairière est calme.", "en": "The clearing is calm.", "replace": "clairière" },
-      { "fr": "Nous traversons la clairière.", "en": "We cross the clearing.", "replace": "clairière" },
-      { "fr": "Des fleurs dans la clairière.", "en": "Flowers in the clearing.", "replace": "clairière" },
-      { "fr": "Ils campent dans la clairière.", "en": "They camp in the clearing.", "replace": "clairière" },
-      { "fr": "Une large clairière apparaît.", "en": "A wide clearing appears.", "replace": "clairière" }
-    ] },
-    { "french": "l'endroit", "english": "place", "word_type": "noun", "gender": "l'", "sentences": [
-      { "fr": "C'est l'endroit parfait.", "en": "It's the perfect place.", "replace": "endroit" },
-      { "fr": "Je connais cet endroit.", "en": "I know this place.", "replace": "endroit" },
-      { "fr": "Un endroit tranquille.", "en": "A quiet place.", "replace": "endroit" },
-      { "fr": "Nous cherchons un endroit.", "en": "We are looking for a place.", "replace": "endroit" },
-      { "fr": "Plusieurs endroits secrets.", "en": "Several secret places.", "replace": "endroits" }
-    ] },
-    { "french": "la rampe", "english": "ramp", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La rampe aide à monter.", "en": "The ramp helps to climb.", "replace": "rampe" },
-      { "fr": "Il tient la rampe.", "en": "He holds the ramp.", "replace": "rampe" },
-      { "fr": "Rampe étroite ici.", "en": "Narrow ramp here.", "replace": "rampe" },
-      { "fr": "Nous installons une rampe.", "en": "We install a ramp.", "replace": "rampe" },
-      { "fr": "Des rampes solides.", "en": "Solid ramps.", "replace": "rampes" }
-    ] },
-    { "french": "la bâche", "english": "tarp", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La bâche couvre le bois.", "en": "The tarp covers the wood.", "replace": "bâche" },
-      { "fr": "Il plie la bâche.", "en": "He folds the tarp.", "replace": "bâche" },
-      { "fr": "Bâche bleue au sol.", "en": "Blue tarp on the ground.", "replace": "bâche" },
-      { "fr": "Nous utilisons une bâche.", "en": "We use a tarp.", "replace": "bâche" },
-      { "fr": "Des bâches épaisses.", "en": "Thick tarps.", "replace": "bâches" }
-    ] },
-    { "french": "la colonne", "english": "column", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La colonne soutient le toit.", "en": "The column supports the roof.", "replace": "colonne" },
-      { "fr": "Une colonne en pierre.", "en": "A stone column.", "replace": "colonne" },
-      { "fr": "Colonne droite et solide.", "en": "Straight and solid column.", "replace": "colonne" },
-      { "fr": "Ils restaurent la colonne.", "en": "They restore the column.", "replace": "colonne" },
-      { "fr": "Deux colonnes anciennes.", "en": "Two ancient columns.", "replace": "colonnes" }
-    ] },
-    { "french": "le coude", "english": "elbow", "word_type": "noun", "gender": "le", "sentences": [
-      { "fr": "Le coude est plié.", "en": "The elbow is bent.", "replace": "coude" },
-      { "fr": "Il protège son coude.", "en": "He protects his elbow.", "replace": "coude" },
-      { "fr": "Douleur au coude.", "en": "Elbow pain.", "replace": "coude" },
-      { "fr": "Elle pose le coude sur la table.", "en": "She puts her elbow on the table.", "replace": "coude" },
-      { "fr": "Les coudes sont pliés.", "en": "The elbows are bent.", "replace": "coudes" }
-    ] },
-    { "french": "la vue", "english": "view", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La vue est belle.", "en": "The view is beautiful.", "replace": "vue" },
-      { "fr": "Nous admirons la vue.", "en": "We admire the view.", "replace": "vue" },
-      { "fr": "Belle vue sur la mer.", "en": "Beautiful view of the sea.", "replace": "vue" },
-      { "fr": "Vue dégagée ici.", "en": "Clear view here.", "replace": "vue" },
-      { "fr": "La vue change au soleil.", "en": "The view changes in the sun.", "replace": "vue" }
-    ] },
-    { "french": "la poitrine", "english": "chest", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La poitrine respire.", "en": "The chest breathes.", "replace": "poitrine" },
-      { "fr": "Il se frappe la poitrine.", "en": "He hits his chest.", "replace": "poitrine" },
-      { "fr": "Douleur à la poitrine.", "en": "Chest pain.", "replace": "poitrine" },
-      { "fr": "Poitrine forte et large.", "en": "Strong and broad chest.", "replace": "poitrine" },
-      { "fr": "Sa poitrine se soulève.", "en": "Her chest rises.", "replace": "poitrine" }
-    ] },
-    { "french": "les jours", "english": "days", "word_type": "noun", "gender": "les", "sentences": [
-      { "fr": "Les jours passent vite.", "en": "The days go by fast.", "replace": "jours" },
-      { "fr": "Longs jours d'été.", "en": "Long summer days.", "replace": "jours" },
-      { "fr": "Nous comptons les jours.", "en": "We count the days.", "replace": "jours" },
-      { "fr": "Ces jours sont calmes.", "en": "These days are calm.", "replace": "jours" },
-      { "fr": "Tous les jours ici.", "en": "Every day here.", "replace": "jours" }
-    ] },
-    { "french": "les semaines", "english": "weeks", "word_type": "noun", "gender": "les", "sentences": [
-      { "fr": "Les semaines sont chargées.", "en": "The weeks are busy.", "replace": "semaines" },
-      { "fr": "Deux semaines entières.", "en": "Two whole weeks.", "replace": "semaines" },
-      { "fr": "Nous planifions les semaines.", "en": "We plan the weeks.", "replace": "semaines" },
-      { "fr": "Semaines longues parfois.", "en": "Weeks are long sometimes.", "replace": "semaines" },
-      { "fr": "Plusieurs semaines passent.", "en": "Several weeks pass.", "replace": "semaines" }
-    ] },
-    { "french": "la douzaine", "english": "dozen", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "Une douzaine d'œufs.", "en": "A dozen eggs.", "replace": "douzaine" },
-      { "fr": "Il achète une douzaine.", "en": "He buys a dozen.", "replace": "douzaine" },
-      { "fr": "Deux douzaines aujourd'hui.", "en": "Two dozens today.", "replace": "douzaines" },
-      { "fr": "Petite douzaine seulement.", "en": "Small dozen only.", "replace": "douzaine" },
-      { "fr": "Trois douzaines au marché.", "en": "Three dozens at the market.", "replace": "douzaines" }
-    ] },
-    { "french": "la voisine", "english": "neighbor (female)", "word_type": "noun", "gender": "la", "sentences": [
-      { "fr": "La voisine salue.", "en": "The neighbor greets.", "replace": "voisine" },
-      { "fr": "Je parle à la voisine.", "en": "I talk to the neighbor.", "replace": "voisine" },
-      { "fr": "La voisine arrive tôt.", "en": "The neighbor arrives early.", "replace": "voisine" },
-      { "fr": "Nous aidons la voisine.", "en": "We help the neighbor.", "replace": "voisine" },
-      { "fr": "Deux voisines arrivent.", "en": "Two female neighbors arrive.", "replace": "voisines" }
-    ] },
-    { "french": "afin", "english": "in order to", "word_type": "phrase", "sentences": [
-      { "fr": "Nous partons afin d'éviter la pluie.", "en": "We leave in order to avoid the rain.", "replace": "afin" },
-      { "fr": "Je marche afin de penser.", "en": "I walk in order to think.", "replace": "afin" },
-      { "fr": "Afin de voir mieux.", "en": "In order to see better.", "replace": "afin" },
-      { "fr": "Parler afin d'apprendre.", "en": "Speak in order to learn.", "replace": "afin" },
-      { "fr": "Il écrit afin d'aider.", "en": "He writes in order to help.", "replace": "afin" }
-    ] },
-    { "french": "grâce", "english": "thanks to", "word_type": "phrase", "sentences": [
-      { "fr": "Grâce au soleil, il fait chaud.", "en": "Thanks to the sun, it is warm.", "replace": "Grâce" },
-      { "fr": "Tu réussis grâce à eux.", "en": "You succeed thanks to them.", "replace": "grâce" },
-      { "fr": "Grâce à la chance.", "en": "Thanks to luck.", "replace": "grâce" },
-      { "fr": "Ils avancent grâce à toi.", "en": "They move forward thanks to you.", "replace": "grâce" },
-      { "fr": "Nous gagnons grâce au travail.", "en": "We win thanks to work.", "replace": "grâce" }
-    ] },
-    { "french": "loin", "english": "far", "word_type": "adverb", "sentences": [
-      { "fr": "La montagne est loin.", "en": "The mountain is far.", "replace": "loin" },
-      { "fr": "Il marche loin d'ici.", "en": "He walks far from here.", "replace": "loin" },
-      { "fr": "Très loin maintenant.", "en": "Very far now.", "replace": "loin" },
-      { "fr": "Ils vivent loin de nous.", "en": "They live far from us.", "replace": "loin" },
-      { "fr": "Aller loin ensemble.", "en": "Go far together.", "replace": "loin" }
-    ] },
-    { "french": "proche", "english": "near", "word_type": "adjective", "sentences": [
-      { "fr": "La rivière est proche.", "en": "The river is near.", "replace": "proche" },
-      { "fr": "Un village proche.", "en": "A nearby village.", "replace": "proche" },
-      { "fr": "Très proche de nous.", "en": "Very close to us.", "replace": "proche" },
-      { "fr": "Proche du centre.", "en": "Near the center.", "replace": "proche" },
-      { "fr": "Rester proche des amis.", "en": "Stay close to friends.", "replace": "proche" }
-    ] },
-    { "french": "à la vue", "english": "at the sight", "word_type": "phrase", "sentences": [
-      { "fr": "À la vue du lac, ils sourient.", "en": "At the sight of the lake, they smile.", "replace": "À la vue" },
-      { "fr": "À la vue des montagnes.", "en": "At the sight of the mountains.", "replace": "À la vue" },
-      { "fr": "Elle pleure à la vue du souvenir.", "en": "She cries at the sight of the memory.", "replace": "à la vue" },
-      { "fr": "À la vue de la mer.", "en": "At the sight of the sea.", "replace": "À la vue" },
-      { "fr": "Rire à la vue des amis.", "en": "Laugh at the sight of friends.", "replace": "à la vue" }
-    ] }
+    {
+      "french": "faisait",
+      "english": "was doing",
+      "word_type": "verb",
+      "root": "faire",
+      "sentences": [
+        { "fr": "Je faisais mes devoirs.", "en": "I was doing my homework.", "replace": "faisais" },
+        { "fr": "Tu faisais la cuisine.", "en": "You were cooking.", "replace": "faisais" },
+        { "fr": "Il faisait un dessin.", "en": "He was making a drawing.", "replace": "faisait" },
+        {
+          "fr": "Nous faisions une promenade.",
+          "en": "We were taking a walk.",
+          "replace": "faisions"
+        },
+        { "fr": "Vous faisiez le dîner.", "en": "You were making dinner.", "replace": "faisiez" },
+        { "fr": "Ils faisaient du sport.", "en": "They were doing sports.", "replace": "faisaient" }
+      ]
+    },
+    {
+      "french": "entendais",
+      "english": "was hearing",
+      "word_type": "verb",
+      "root": "entendre",
+      "sentences": [
+        { "fr": "J'entendais le vent.", "en": "I was hearing the wind.", "replace": "entendais" },
+        {
+          "fr": "Tu entendais des oiseaux.",
+          "en": "You were hearing birds.",
+          "replace": "entendais"
+        },
+        {
+          "fr": "Il entendait des pas.",
+          "en": "He was hearing footsteps.",
+          "replace": "entendait"
+        },
+        {
+          "fr": "Nous entendions des voix.",
+          "en": "We were hearing voices.",
+          "replace": "entendions"
+        },
+        {
+          "fr": "Vous entendiez la rivière.",
+          "en": "You were hearing the river.",
+          "replace": "entendiez"
+        },
+        {
+          "fr": "Ils entendaient la pluie.",
+          "en": "They were hearing the rain.",
+          "replace": "entendaient"
+        }
+      ]
+    },
+    {
+      "french": "réveiller",
+      "english": "to wake (someone)",
+      "word_type": "verb",
+      "root": "réveiller",
+      "sentences": [
+        { "fr": "Je réveille mon frère.", "en": "I wake my brother.", "replace": "réveille" },
+        { "fr": "Tu réveilles ta sœur.", "en": "You wake your sister.", "replace": "réveilles" },
+        { "fr": "Il réveille le chien.", "en": "He wakes the dog.", "replace": "réveille" },
+        {
+          "fr": "Nous réveillons nos enfants.",
+          "en": "We wake our children.",
+          "replace": "réveillons"
+        },
+        { "fr": "Vous réveillez tôt.", "en": "You wake early.", "replace": "réveillez" },
+        {
+          "fr": "Ils réveillent tout le monde.",
+          "en": "They wake everyone.",
+          "replace": "réveillent"
+        }
+      ]
+    },
+    {
+      "french": "remarquai",
+      "english": "noticed",
+      "word_type": "verb",
+      "root": "remarquer",
+      "sentences": [
+        {
+          "fr": "Je remarquai une clairière.",
+          "en": "I noticed a clearing.",
+          "replace": "remarquai"
+        },
+        {
+          "fr": "Je remarquai la voisine.",
+          "en": "I noticed the neighbor.",
+          "replace": "remarquai"
+        },
+        { "fr": "Je remarquai la rampe.", "en": "I noticed the ramp.", "replace": "remarquai" },
+        {
+          "fr": "Je remarquai les coudes levés.",
+          "en": "I noticed raised elbows.",
+          "replace": "remarquai"
+        },
+        { "fr": "Je remarquai la vue.", "en": "I noticed the view.", "replace": "remarquai" }
+      ]
+    },
+    {
+      "french": "la clairière",
+      "english": "clearing",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La clairière est calme.", "en": "The clearing is calm.", "replace": "clairière" },
+        {
+          "fr": "Nous traversons la clairière.",
+          "en": "We cross the clearing.",
+          "replace": "clairière"
+        },
+        {
+          "fr": "Des fleurs dans la clairière.",
+          "en": "Flowers in the clearing.",
+          "replace": "clairière"
+        },
+        {
+          "fr": "Ils campent dans la clairière.",
+          "en": "They camp in the clearing.",
+          "replace": "clairière"
+        },
+        {
+          "fr": "Une large clairière apparaît.",
+          "en": "A wide clearing appears.",
+          "replace": "clairière"
+        }
+      ]
+    },
+    {
+      "french": "l'endroit",
+      "english": "place",
+      "word_type": "noun",
+      "gender": "l'",
+      "sentences": [
+        { "fr": "C'est l'endroit parfait.", "en": "It's the perfect place.", "replace": "endroit" },
+        { "fr": "Je connais cet endroit.", "en": "I know this place.", "replace": "endroit" },
+        { "fr": "Un endroit tranquille.", "en": "A quiet place.", "replace": "endroit" },
+        {
+          "fr": "Nous cherchons un endroit.",
+          "en": "We are looking for a place.",
+          "replace": "endroit"
+        },
+        {
+          "fr": "Plusieurs endroits secrets.",
+          "en": "Several secret places.",
+          "replace": "endroits"
+        }
+      ]
+    },
+    {
+      "french": "la rampe",
+      "english": "ramp",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La rampe aide à monter.", "en": "The ramp helps to climb.", "replace": "rampe" },
+        { "fr": "Il tient la rampe.", "en": "He holds the ramp.", "replace": "rampe" },
+        { "fr": "Rampe étroite ici.", "en": "Narrow ramp here.", "replace": "rampe" },
+        { "fr": "Nous installons une rampe.", "en": "We install a ramp.", "replace": "rampe" },
+        { "fr": "Des rampes solides.", "en": "Solid ramps.", "replace": "rampes" }
+      ]
+    },
+    {
+      "french": "la bâche",
+      "english": "tarp",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La bâche couvre le bois.", "en": "The tarp covers the wood.", "replace": "bâche" },
+        { "fr": "Il plie la bâche.", "en": "He folds the tarp.", "replace": "bâche" },
+        { "fr": "Bâche bleue au sol.", "en": "Blue tarp on the ground.", "replace": "bâche" },
+        { "fr": "Nous utilisons une bâche.", "en": "We use a tarp.", "replace": "bâche" },
+        { "fr": "Des bâches épaisses.", "en": "Thick tarps.", "replace": "bâches" }
+      ]
+    },
+    {
+      "french": "la colonne",
+      "english": "column",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        {
+          "fr": "La colonne soutient le toit.",
+          "en": "The column supports the roof.",
+          "replace": "colonne"
+        },
+        { "fr": "Une colonne en pierre.", "en": "A stone column.", "replace": "colonne" },
+        {
+          "fr": "Colonne droite et solide.",
+          "en": "Straight and solid column.",
+          "replace": "colonne"
+        },
+        {
+          "fr": "Ils restaurent la colonne.",
+          "en": "They restore the column.",
+          "replace": "colonne"
+        },
+        { "fr": "Deux colonnes anciennes.", "en": "Two ancient columns.", "replace": "colonnes" }
+      ]
+    },
+    {
+      "french": "le coude",
+      "english": "elbow",
+      "word_type": "noun",
+      "gender": "le",
+      "sentences": [
+        { "fr": "Le coude est plié.", "en": "The elbow is bent.", "replace": "coude" },
+        { "fr": "Il protège son coude.", "en": "He protects his elbow.", "replace": "coude" },
+        { "fr": "Douleur au coude.", "en": "Elbow pain.", "replace": "coude" },
+        {
+          "fr": "Elle pose le coude sur la table.",
+          "en": "She puts her elbow on the table.",
+          "replace": "coude"
+        },
+        { "fr": "Les coudes sont pliés.", "en": "The elbows are bent.", "replace": "coudes" }
+      ]
+    },
+    {
+      "french": "la vue",
+      "english": "view",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La vue est belle.", "en": "The view is beautiful.", "replace": "vue" },
+        { "fr": "Nous admirons la vue.", "en": "We admire the view.", "replace": "vue" },
+        { "fr": "Belle vue sur la mer.", "en": "Beautiful view of the sea.", "replace": "vue" },
+        { "fr": "Vue dégagée ici.", "en": "Clear view here.", "replace": "vue" },
+        { "fr": "La vue change au soleil.", "en": "The view changes in the sun.", "replace": "vue" }
+      ]
+    },
+    {
+      "french": "la poitrine",
+      "english": "chest",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La poitrine respire.", "en": "The chest breathes.", "replace": "poitrine" },
+        { "fr": "Il se frappe la poitrine.", "en": "He hits his chest.", "replace": "poitrine" },
+        { "fr": "Douleur à la poitrine.", "en": "Chest pain.", "replace": "poitrine" },
+        {
+          "fr": "Poitrine forte et large.",
+          "en": "Strong and broad chest.",
+          "replace": "poitrine"
+        },
+        { "fr": "Sa poitrine se soulève.", "en": "Her chest rises.", "replace": "poitrine" }
+      ]
+    },
+    {
+      "french": "les jours",
+      "english": "days",
+      "word_type": "noun",
+      "gender": "les",
+      "sentences": [
+        { "fr": "Les jours passent vite.", "en": "The days go by fast.", "replace": "jours" },
+        { "fr": "Longs jours d'été.", "en": "Long summer days.", "replace": "jours" },
+        { "fr": "Nous comptons les jours.", "en": "We count the days.", "replace": "jours" },
+        { "fr": "Ces jours sont calmes.", "en": "These days are calm.", "replace": "jours" },
+        { "fr": "Tous les jours ici.", "en": "Every day here.", "replace": "jours" }
+      ]
+    },
+    {
+      "french": "les semaines",
+      "english": "weeks",
+      "word_type": "noun",
+      "gender": "les",
+      "sentences": [
+        { "fr": "Les semaines sont chargées.", "en": "The weeks are busy.", "replace": "semaines" },
+        { "fr": "Deux semaines entières.", "en": "Two whole weeks.", "replace": "semaines" },
+        {
+          "fr": "Nous planifions les semaines.",
+          "en": "We plan the weeks.",
+          "replace": "semaines"
+        },
+        {
+          "fr": "Semaines longues parfois.",
+          "en": "Weeks are long sometimes.",
+          "replace": "semaines"
+        },
+        { "fr": "Plusieurs semaines passent.", "en": "Several weeks pass.", "replace": "semaines" }
+      ]
+    },
+    {
+      "french": "la douzaine",
+      "english": "dozen",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "Une douzaine d'œufs.", "en": "A dozen eggs.", "replace": "douzaine" },
+        { "fr": "Il achète une douzaine.", "en": "He buys a dozen.", "replace": "douzaine" },
+        { "fr": "Deux douzaines aujourd'hui.", "en": "Two dozens today.", "replace": "douzaines" },
+        { "fr": "Petite douzaine seulement.", "en": "Small dozen only.", "replace": "douzaine" },
+        {
+          "fr": "Trois douzaines au marché.",
+          "en": "Three dozens at the market.",
+          "replace": "douzaines"
+        }
+      ]
+    },
+    {
+      "french": "la voisine",
+      "english": "neighbor (female)",
+      "word_type": "noun",
+      "gender": "la",
+      "sentences": [
+        { "fr": "La voisine salue.", "en": "The neighbor greets.", "replace": "voisine" },
+        { "fr": "Je parle à la voisine.", "en": "I talk to the neighbor.", "replace": "voisine" },
+        {
+          "fr": "La voisine arrive tôt.",
+          "en": "The neighbor arrives early.",
+          "replace": "voisine"
+        },
+        { "fr": "Nous aidons la voisine.", "en": "We help the neighbor.", "replace": "voisine" },
+        {
+          "fr": "Deux voisines arrivent.",
+          "en": "Two female neighbors arrive.",
+          "replace": "voisines"
+        }
+      ]
+    },
+    {
+      "french": "afin",
+      "english": "in order to",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Nous partons afin d'éviter la pluie.",
+          "en": "We leave in order to avoid the rain.",
+          "replace": "afin"
+        },
+        { "fr": "Je marche afin de penser.", "en": "I walk in order to think.", "replace": "afin" },
+        { "fr": "Afin de voir mieux.", "en": "In order to see better.", "replace": "afin" },
+        { "fr": "Parler afin d'apprendre.", "en": "Speak in order to learn.", "replace": "afin" },
+        { "fr": "Il écrit afin d'aider.", "en": "He writes in order to help.", "replace": "afin" }
+      ]
+    },
+    {
+      "french": "grâce",
+      "english": "thanks to",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "Grâce au soleil, il fait chaud.",
+          "en": "Thanks to the sun, it is warm.",
+          "replace": "Grâce"
+        },
+        {
+          "fr": "Tu réussis grâce à eux.",
+          "en": "You succeed thanks to them.",
+          "replace": "grâce"
+        },
+        { "fr": "Grâce à la chance.", "en": "Thanks to luck.", "replace": "grâce" },
+        {
+          "fr": "Ils avancent grâce à toi.",
+          "en": "They move forward thanks to you.",
+          "replace": "grâce"
+        },
+        {
+          "fr": "Nous gagnons grâce au travail.",
+          "en": "We win thanks to work.",
+          "replace": "grâce"
+        }
+      ]
+    },
+    {
+      "french": "loin",
+      "english": "far",
+      "word_type": "adverb",
+      "sentences": [
+        { "fr": "La montagne est loin.", "en": "The mountain is far.", "replace": "loin" },
+        { "fr": "Il marche loin d'ici.", "en": "He walks far from here.", "replace": "loin" },
+        { "fr": "Très loin maintenant.", "en": "Very far now.", "replace": "loin" },
+        { "fr": "Ils vivent loin de nous.", "en": "They live far from us.", "replace": "loin" },
+        { "fr": "Aller loin ensemble.", "en": "Go far together.", "replace": "loin" }
+      ]
+    },
+    {
+      "french": "proche",
+      "english": "near",
+      "word_type": "adjective",
+      "sentences": [
+        { "fr": "La rivière est proche.", "en": "The river is near.", "replace": "proche" },
+        { "fr": "Un village proche.", "en": "A nearby village.", "replace": "proche" },
+        { "fr": "Très proche de nous.", "en": "Very close to us.", "replace": "proche" },
+        { "fr": "Proche du centre.", "en": "Near the center.", "replace": "proche" },
+        { "fr": "Rester proche des amis.", "en": "Stay close to friends.", "replace": "proche" }
+      ]
+    },
+    {
+      "french": "à la vue",
+      "english": "at the sight",
+      "word_type": "phrase",
+      "sentences": [
+        {
+          "fr": "À la vue du lac, ils sourient.",
+          "en": "At the sight of the lake, they smile.",
+          "replace": "À la vue"
+        },
+        {
+          "fr": "À la vue des montagnes.",
+          "en": "At the sight of the mountains.",
+          "replace": "À la vue"
+        },
+        {
+          "fr": "Elle pleure à la vue du souvenir.",
+          "en": "She cries at the sight of the memory.",
+          "replace": "à la vue"
+        },
+        { "fr": "À la vue de la mer.", "en": "At the sight of the sea.", "replace": "À la vue" },
+        {
+          "fr": "Rire à la vue des amis.",
+          "en": "Laugh at the sight of friends.",
+          "replace": "à la vue"
+        }
+      ]
+    }
   ]
 }

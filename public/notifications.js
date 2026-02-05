@@ -31,7 +31,7 @@ function showDailyReminder() {
       body: 'Time for your daily French lesson! Keep your streak going!',
       icon: '/favicon.ico',
       tag: 'daily-lesson',
-      requireInteraction: true
+      requireInteraction: true,
     });
   }
 }
@@ -40,7 +40,7 @@ function showDailyReminder() {
 function checkDailyReminder() {
   const lastReminder = localStorage.getItem('lastReminderDate');
   const today = new Date().toDateString();
-  
+
   if (lastReminder !== today) {
     showDailyReminder();
     localStorage.setItem('lastReminderDate', today);
@@ -50,11 +50,11 @@ function checkDailyReminder() {
 // Initialize the daily reminder system
 function setupDailyReminders() {
   // Request permission on first visit
-  requestNotificationPermission().then(hasPermission => {
+  requestNotificationPermission().then((hasPermission) => {
     if (hasPermission) {
       // Check if we should show reminder today
       checkDailyReminder();
-      
+
       // Set up daily check (every hour)
       setInterval(checkDailyReminder, 60 * 60 * 1000);
     }
@@ -65,7 +65,7 @@ function setupDailyReminders() {
 function addReminderButton() {
   const dashboard = document.getElementById('dashboard');
   if (!dashboard) return;
-  
+
   const reminderBtn = document.createElement('button');
   reminderBtn.id = 'reminderBtn';
   reminderBtn.textContent = '🔔 Enable Daily Reminders';
@@ -77,10 +77,12 @@ function addReminderButton() {
       reminderBtn.disabled = true;
       checkDailyReminder();
     } else {
-      alert('Notifications are required for daily reminders. Please enable them in your browser settings.');
+      alert(
+        'Notifications are required for daily reminders. Please enable them in your browser settings.'
+      );
     }
   };
-  
+
   // Add to dashboard
   const levelActions = document.querySelector('.level-actions-right');
   if (levelActions) {
@@ -93,5 +95,5 @@ window.notifications = {
   setupDailyReminders,
   addReminderButton,
   requestNotificationPermission,
-  checkDailyReminder
+  checkDailyReminder,
 };

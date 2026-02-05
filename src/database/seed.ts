@@ -14,36 +14,35 @@ const LEVELS_DATA = jsonData.levels.map((level: any) => ({
   level_number: level.level,
   name: level.title,
   description: level.description,
-  total_words: level.words?.length || 20
+  total_words: level.words?.length || 20,
 }));
 
 // Transform JSON words data
-const WORDS_DATA = jsonData.levels.flatMap((level: any) => 
+const WORDS_DATA = jsonData.levels.flatMap((level: any) =>
   level.words.map((word: any) => ({
     french: word.french,
     english: word.english,
     word_type: word.word_type,
     level: level.level,
-    gender: word.gender
+    gender: word.gender,
   }))
 );
 
 // Transform JSON sentences data - group by word
-const SENTENCES_DATA = jsonData.levels.flatMap((level: any) => 
+const SENTENCES_DATA = jsonData.levels.flatMap((level: any) =>
   level.words.map((word: any) => ({
     word: word.french,
     sentences: (word.sentences || []).map((sentence: any) => ({
       fr: sentence.fr,
       en: sentence.en,
-      replace: sentence.replace
-    }))
+      replace: sentence.replace,
+    })),
   }))
 );
 
-
 function seedDatabase() {
   console.log('Seeding database...');
-  
+
   try {
     const db = getDatabase();
 
@@ -64,12 +63,7 @@ function seedDatabase() {
     `);
 
     for (const level of LEVELS_DATA) {
-      upsertLevel.run(
-        level.level_number, 
-        level.name, 
-        level.description,
-        level.total_words || 20
-      );
+      upsertLevel.run(level.level_number, level.name, level.description, level.total_words || 20);
     }
 
     // Upsert words
@@ -84,23 +78,22 @@ function seedDatabase() {
     `);
 
     // Get level IDs for lookup
-    const getLevelId = db.prepare(
-      'SELECT id FROM levels WHERE level_number = ?'
-    );
+    const getLevelId = db.prepare('SELECT id FROM levels WHERE level_number = ?');
 
     for (const word of WORDS_DATA) {
-      const levelRow = getLevelId.get(word.level) as 
-        { id: number } | undefined;
+      const levelRow = getLevelId.get(word.level) as { id: number } | undefined;
       if (!levelRow) {
         throw new Error(`Level ${word.level} not found`);
       }
-      console.log(`Upserting word: ${word.french} - ${word.english} - ${word.word_type} - ${levelRow.id} - ${word.gender}`);
+      console.log(
+        `Upserting word: ${word.french} - ${word.english} - ${word.word_type} - ${levelRow.id} - ${word.gender}`
+      );
 
       upsertWord.run(
         word.french,
         word.english,
         word.word_type,
-        levelRow.id,  // Use actual level ID, not level number
+        levelRow.id, // Use actual level ID, not level number
         word.gender
       );
     }
@@ -108,7 +101,7 @@ function seedDatabase() {
     // Insert example sentences from JSON
     console.log('Inserting example sentences...');
     const exampleSentences = SENTENCES_DATA;
-        
+
     // Upsert example sentences
     console.log('Upserting example sentences...');
     const upsertExample = db.prepare(`
@@ -122,21 +115,13 @@ function seedDatabase() {
         difficulty = excluded.difficulty
     `);
 
-    const getWordId = db.prepare(
-      'SELECT id FROM words WHERE french = ?'
-    );
+    const getWordId = db.prepare('SELECT id FROM words WHERE french = ?');
 
     for (const item of exampleSentences) {
-      const wordRow = getWordId.get(item.word) as 
-        { id: number } | undefined;
+      const wordRow = getWordId.get(item.word) as { id: number } | undefined;
       if (wordRow) {
         for (const sentence of item.sentences) {
-          upsertExample.run(
-            wordRow.id, 
-            sentence.fr, 
-            sentence.en, 
-            sentence.replace
-          );
+          upsertExample.run(wordRow.id, sentence.fr, sentence.en, sentence.replace);
         }
       }
     }
@@ -146,7 +131,6 @@ function seedDatabase() {
     console.log('- 200 words added (20 per level)');
     console.log('- Example sentences added for key words');
     console.log('\nYou can now run: npm run dev');
-    
   } catch (error) {
     console.error('Error seeding database:', error);
     process.exit(1);
@@ -161,4 +145,3 @@ if (require.main === module) {
 }
 
 export { seedDatabase };
-

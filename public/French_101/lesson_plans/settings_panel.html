@@ -1,32 +1,33 @@
-<button class="settings-toggle" id="settings-toggle-btn" onclick="toggleSettings()">▼ Show Audio Settings</button>
+<button class="settings-toggle" id="settings-toggle-btn" onclick="toggleSettings()">
+  ▼ Show Audio Settings
+</button>
 
-<div class="settings-panel" style="display: none;" id="audio-settings-panel">
-    <div class="voice-control-row">
-        <div class="voice-control-group">
-            <label for="english-voice">🇺🇸 English Voice:</label>
-            <select id="english-voice"></select>
-        </div>
-        <div class="voice-control-group">
-            <label for="english-speed">Speed:</label>
-            <div class="speed-control">
-                <input type="range" id="english-speed" min="0.5" max="1.5" step="0.1" value="0.9">
-                <span class="speed-value" id="english-speed-value">0.9x</span>
-            </div>
-        </div>
+<div class="settings-panel" style="display: none" id="audio-settings-panel">
+  <div class="voice-control-row">
+    <div class="voice-control-group">
+      <label for="english-voice">🇺🇸 English Voice:</label>
+      <select id="english-voice"></select>
     </div>
-    
-    <div class="voice-control-row">
-        <div class="voice-control-group">
-            <label for="french-voice">🇫🇷 French Voice:</label>
-            <select id="french-voice"></select>
-        </div>
-        <div class="voice-control-group">
-            <label for="french-speed">Speed:</label>
-            <div class="speed-control">
-                <input type="range" id="french-speed" min="0.5" max="1.5" step="0.1" value="0.9">
-                <span class="speed-value" id="french-speed-value">0.9x</span>
-            </div>
-        </div>
+    <div class="voice-control-group">
+      <label for="english-speed">Speed:</label>
+      <div class="speed-control">
+        <input type="range" id="english-speed" min="0.5" max="1.5" step="0.1" value="0.9" />
+        <span class="speed-value" id="english-speed-value">0.9x</span>
+      </div>
     </div>
+  </div>
+
+  <div class="voice-control-row">
+    <div class="voice-control-group">
+      <label for="french-voice">🇫🇷 French Voice:</label>
+      <select id="french-voice"></select>
+    </div>
+    <div class="voice-control-group">
+      <label for="french-speed">Speed:</label>
+      <div class="speed-control">
+        <input type="range" id="french-speed" min="0.5" max="1.5" step="0.1" value="0.9" />
+        <span class="speed-value" id="french-speed-value">0.9x</span>
+      </div>
+    </div>
+  </div>
 </div>
-

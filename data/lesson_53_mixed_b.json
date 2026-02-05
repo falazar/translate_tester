@@ -27,8 +27,16 @@
         { "fr": "Tu aurais une idée.", "en": "You would have an idea.", "replace": "aurais" },
         { "fr": "Il aurait une solution.", "en": "He would have a solution.", "replace": "aurait" },
         { "fr": "Nous aurions des nouvelles.", "en": "We would have news.", "replace": "aurions" },
-        { "fr": "Vous auriez la réponse.", "en": "You would have the answer.", "replace": "auriez" },
-        { "fr": "Ils auraient un délai.", "en": "They would have a deadline.", "replace": "auraient" }
+        {
+          "fr": "Vous auriez la réponse.",
+          "en": "You would have the answer.",
+          "replace": "auriez"
+        },
+        {
+          "fr": "Ils auraient un délai.",
+          "en": "They would have a deadline.",
+          "replace": "auraient"
+        }
       ]
     },
     {
@@ -40,9 +48,17 @@
         { "fr": "J'ai tourné la page.", "en": "I turned the page.", "replace": "ai tourné" },
         { "fr": "Tu as tourné là.", "en": "You turned there.", "replace": "as tourné" },
         { "fr": "Il a tourné vite.", "en": "He turned quickly.", "replace": "a tourné" },
-        { "fr": "Nous avons tourné ensemble.", "en": "We turned together.", "replace": "avons tourné" },
+        {
+          "fr": "Nous avons tourné ensemble.",
+          "en": "We turned together.",
+          "replace": "avons tourné"
+        },
         { "fr": "Vous avez tourné à droite.", "en": "You turned right.", "replace": "avez tourné" },
-        { "fr": "Ils ont tourné soudainement.", "en": "They turned suddenly.", "replace": "ont tourné" }
+        {
+          "fr": "Ils ont tourné soudainement.",
+          "en": "They turned suddenly.",
+          "replace": "ont tourné"
+        }
       ]
     },
     {
@@ -54,9 +70,21 @@
         { "fr": "Je suis partie tôt.", "en": "I left early.", "replace": "suis partie" },
         { "fr": "Tu es partie hier.", "en": "You left yesterday.", "replace": "es partie" },
         { "fr": "Elle est partie vite.", "en": "She left quickly.", "replace": "est partie" },
-        { "fr": "Nous sommes parties ensemble.", "en": "We (fem.) left together.", "replace": "sommes parties" },
-        { "fr": "Vous êtes parties tard.", "en": "You (fem.) left late.", "replace": "êtes parties" },
-        { "fr": "Elles sont parties hier soir.", "en": "They (fem.) left last night.", "replace": "sont parties" }
+        {
+          "fr": "Nous sommes parties ensemble.",
+          "en": "We (fem.) left together.",
+          "replace": "sommes parties"
+        },
+        {
+          "fr": "Vous êtes parties tard.",
+          "en": "You (fem.) left late.",
+          "replace": "êtes parties"
+        },
+        {
+          "fr": "Elles sont parties hier soir.",
+          "en": "They (fem.) left last night.",
+          "replace": "sont parties"
+        }
       ]
     },
     {
@@ -66,10 +94,22 @@
       "sentences": [
         { "fr": "L'existence surprend.", "en": "Existence surprises.", "replace": "existence" },
         { "fr": "Une existence paisible.", "en": "A peaceful existence.", "replace": "existence" },
-        { "fr": "Cette existence change.", "en": "This existence changes.", "replace": "existence" },
+        {
+          "fr": "Cette existence change.",
+          "en": "This existence changes.",
+          "replace": "existence"
+        },
         { "fr": "Les existences varient.", "en": "Existences vary.", "replace": "existences" },
-        { "fr": "Plusieurs existences croisent.", "en": "Several existences cross.", "replace": "existences" },
-        { "fr": "Toutes les existences comptent.", "en": "All existences matter.", "replace": "existences" }
+        {
+          "fr": "Plusieurs existences croisent.",
+          "en": "Several existences cross.",
+          "replace": "existences"
+        },
+        {
+          "fr": "Toutes les existences comptent.",
+          "en": "All existences matter.",
+          "replace": "existences"
+        }
       ]
     },
     {
@@ -81,8 +121,16 @@
         { "fr": "Une histoire courte.", "en": "A short story.", "replace": "histoire" },
         { "fr": "Cette histoire plaît.", "en": "This story pleases.", "replace": "histoire" },
         { "fr": "Les histoires amusent.", "en": "Stories amuse.", "replace": "histoires" },
-        { "fr": "Plusieurs histoires reviennent.", "en": "Several stories return.", "replace": "histoires" },
-        { "fr": "Toutes les histoires finissent.", "en": "All stories end.", "replace": "histoires" }
+        {
+          "fr": "Plusieurs histoires reviennent.",
+          "en": "Several stories return.",
+          "replace": "histoires"
+        },
+        {
+          "fr": "Toutes les histoires finissent.",
+          "en": "All stories end.",
+          "replace": "histoires"
+        }
       ]
     },
     {
@@ -90,12 +138,28 @@
       "english": "command",
       "word_type": "noun",
       "sentences": [
-        { "fr": "Le commandement change.", "en": "The command changes.", "replace": "commandement" },
+        {
+          "fr": "Le commandement change.",
+          "en": "The command changes.",
+          "replace": "commandement"
+        },
         { "fr": "Un commandement clair.", "en": "A clear command.", "replace": "commandement" },
-        { "fr": "Ce commandement s'applique.", "en": "This command applies.", "replace": "commandement" },
+        {
+          "fr": "Ce commandement s'applique.",
+          "en": "This command applies.",
+          "replace": "commandement"
+        },
         { "fr": "Les commandements guident.", "en": "Commands guide.", "replace": "commandements" },
-        { "fr": "Plusieurs commandements existent.", "en": "Several commands exist.", "replace": "commandements" },
-        { "fr": "Tous les commandements restent.", "en": "All commands remain.", "replace": "commandements" }
+        {
+          "fr": "Plusieurs commandements existent.",
+          "en": "Several commands exist.",
+          "replace": "commandements"
+        },
+        {
+          "fr": "Tous les commandements restent.",
+          "en": "All commands remain.",
+          "replace": "commandements"
+        }
       ]
     },
     {
@@ -107,7 +171,11 @@
         { "fr": "Un ensemble vaste.", "en": "A vast ensemble.", "replace": "ensemble" },
         { "fr": "Cet ensemble fonctionne.", "en": "This ensemble works.", "replace": "ensemble" },
         { "fr": "Les ensembles diffèrent.", "en": "Ensembles differ.", "replace": "ensembles" },
-        { "fr": "Plusieurs ensembles manquent.", "en": "Several sets are missing.", "replace": "ensembles" },
+        {
+          "fr": "Plusieurs ensembles manquent.",
+          "en": "Several sets are missing.",
+          "replace": "ensembles"
+        },
         { "fr": "Tous les ensembles changent.", "en": "All sets change.", "replace": "ensembles" }
       ]
     },
@@ -116,11 +184,31 @@
       "english": "previous (fem.)",
       "word_type": "adjective",
       "sentences": [
-        { "fr": "La page précédente aide.", "en": "The previous page helps.", "replace": "précédente" },
-        { "fr": "La version précédente marche.", "en": "The previous version works.", "replace": "précédente" },
-        { "fr": "La question précédente revient.", "en": "The previous question returns.", "replace": "précédente" },
-        { "fr": "Les étapes précédentes comptent.", "en": "Previous steps matter.", "replace": "précédentes" },
-        { "fr": "Des lignes précédentes changent.", "en": "Previous lines change.", "replace": "précédentes" },
+        {
+          "fr": "La page précédente aide.",
+          "en": "The previous page helps.",
+          "replace": "précédente"
+        },
+        {
+          "fr": "La version précédente marche.",
+          "en": "The previous version works.",
+          "replace": "précédente"
+        },
+        {
+          "fr": "La question précédente revient.",
+          "en": "The previous question returns.",
+          "replace": "précédente"
+        },
+        {
+          "fr": "Les étapes précédentes comptent.",
+          "en": "Previous steps matter.",
+          "replace": "précédentes"
+        },
+        {
+          "fr": "Des lignes précédentes changent.",
+          "en": "Previous lines change.",
+          "replace": "précédentes"
+        },
         { "fr": "Toutes précédentes ici.", "en": "All previous here.", "replace": "précédentes" }
       ]
     },
@@ -145,7 +233,11 @@
         { "fr": "Un tissu respirant.", "en": "A breathable fabric.", "replace": "respirant" },
         { "fr": "Un masque respirant.", "en": "A breathable mask.", "replace": "respirant" },
         { "fr": "Un vêtement respirant.", "en": "A breathable garment.", "replace": "respirant" },
-        { "fr": "Des matériaux respirants.", "en": "Breathable materials.", "replace": "respirants" },
+        {
+          "fr": "Des matériaux respirants.",
+          "en": "Breathable materials.",
+          "replace": "respirants"
+        },
         { "fr": "Des tissus respirants.", "en": "Breathable fabrics.", "replace": "respirants" },
         { "fr": "Tous respirants ici.", "en": "All breathable here.", "replace": "respirants" }
       ]
@@ -168,12 +260,36 @@
       "english": "thanks to the whole",
       "word_type": "phrase",
       "sentences": [
-        { "fr": "Grâce à l'ensemble, on avance.", "en": "Thanks to the whole, we progress.", "replace": "Grâce à l'ensemble" },
-        { "fr": "Grâce à l'ensemble, tu réussis.", "en": "Thanks to the whole, you succeed.", "replace": "Grâce à l'ensemble" },
-        { "fr": "Grâce à l'ensemble, il reste.", "en": "Thanks to the whole, he stays.", "replace": "Grâce à l'ensemble" },
-        { "fr": "Grâce à l'ensemble, nous tenons.", "en": "Thanks to the whole, we hold on.", "replace": "Grâce à l'ensemble" },
-        { "fr": "Grâce à l'ensemble, vous gagnez.", "en": "Thanks to the whole, you win.", "replace": "Grâce à l'ensemble" },
-        { "fr": "Grâce à l'ensemble, ils passent.", "en": "Thanks to the whole, they pass.", "replace": "Grâce à l'ensemble" }
+        {
+          "fr": "Grâce à l'ensemble, on avance.",
+          "en": "Thanks to the whole, we progress.",
+          "replace": "Grâce à l'ensemble"
+        },
+        {
+          "fr": "Grâce à l'ensemble, tu réussis.",
+          "en": "Thanks to the whole, you succeed.",
+          "replace": "Grâce à l'ensemble"
+        },
+        {
+          "fr": "Grâce à l'ensemble, il reste.",
+          "en": "Thanks to the whole, he stays.",
+          "replace": "Grâce à l'ensemble"
+        },
+        {
+          "fr": "Grâce à l'ensemble, nous tenons.",
+          "en": "Thanks to the whole, we hold on.",
+          "replace": "Grâce à l'ensemble"
+        },
+        {
+          "fr": "Grâce à l'ensemble, vous gagnez.",
+          "en": "Thanks to the whole, you win.",
+          "replace": "Grâce à l'ensemble"
+        },
+        {
+          "fr": "Grâce à l'ensemble, ils passent.",
+          "en": "Thanks to the whole, they pass.",
+          "replace": "Grâce à l'ensemble"
+        }
       ]
     },
     {
@@ -181,12 +297,36 @@
       "english": "in order to breathe",
       "word_type": "phrase",
       "sentences": [
-        { "fr": "Je m'arrête afin de respirer.", "en": "I stop in order to breathe.", "replace": "afin de respirer" },
-        { "fr": "Tu restes afin de respirer.", "en": "You stay in order to breathe.", "replace": "afin de respirer" },
-        { "fr": "Il attend afin de respirer.", "en": "He waits in order to breathe.", "replace": "afin de respirer" },
-        { "fr": "Nous ouvrons afin de respirer.", "en": "We open in order to breathe.", "replace": "afin de respirer" },
-        { "fr": "Vous marchez afin de respirer.", "en": "You walk in order to breathe.", "replace": "afin de respirer" },
-        { "fr": "Ils sortent afin de respirer.", "en": "They go out in order to breathe.", "replace": "afin de respirer" }
+        {
+          "fr": "Je m'arrête afin de respirer.",
+          "en": "I stop in order to breathe.",
+          "replace": "afin de respirer"
+        },
+        {
+          "fr": "Tu restes afin de respirer.",
+          "en": "You stay in order to breathe.",
+          "replace": "afin de respirer"
+        },
+        {
+          "fr": "Il attend afin de respirer.",
+          "en": "He waits in order to breathe.",
+          "replace": "afin de respirer"
+        },
+        {
+          "fr": "Nous ouvrons afin de respirer.",
+          "en": "We open in order to breathe.",
+          "replace": "afin de respirer"
+        },
+        {
+          "fr": "Vous marchez afin de respirer.",
+          "en": "You walk in order to breathe.",
+          "replace": "afin de respirer"
+        },
+        {
+          "fr": "Ils sortent afin de respirer.",
+          "en": "They go out in order to breathe.",
+          "replace": "afin de respirer"
+        }
       ]
     },
     {
@@ -194,12 +334,36 @@
       "english": "really precise",
       "word_type": "phrase",
       "sentences": [
-        { "fr": "C'est vraiment précis.", "en": "It's really precise.", "replace": "vraiment précis" },
-        { "fr": "Ton plan est vraiment précis.", "en": "Your plan is really precise.", "replace": "vraiment précis" },
-        { "fr": "Ce point est vraiment précis.", "en": "This point is really precise.", "replace": "vraiment précis" },
-        { "fr": "Des détails vraiment précis.", "en": "Really precise details.", "replace": "vraiment précis" },
-        { "fr": "Des critères vraiment précis.", "en": "Really precise criteria.", "replace": "vraiment précis" },
-        { "fr": "Tout est vraiment précis.", "en": "Everything is really precise.", "replace": "vraiment précis" }
+        {
+          "fr": "C'est vraiment précis.",
+          "en": "It's really precise.",
+          "replace": "vraiment précis"
+        },
+        {
+          "fr": "Ton plan est vraiment précis.",
+          "en": "Your plan is really precise.",
+          "replace": "vraiment précis"
+        },
+        {
+          "fr": "Ce point est vraiment précis.",
+          "en": "This point is really precise.",
+          "replace": "vraiment précis"
+        },
+        {
+          "fr": "Des détails vraiment précis.",
+          "en": "Really precise details.",
+          "replace": "vraiment précis"
+        },
+        {
+          "fr": "Des critères vraiment précis.",
+          "en": "Really precise criteria.",
+          "replace": "vraiment précis"
+        },
+        {
+          "fr": "Tout est vraiment précis.",
+          "en": "Everything is really precise.",
+          "replace": "vraiment précis"
+        }
       ]
     },
     {
@@ -207,12 +371,36 @@
       "english": "very strange night",
       "word_type": "phrase",
       "sentences": [
-        { "fr": "Une nuit très étrange commence.", "en": "A very strange night begins.", "replace": "nuit très étrange" },
-        { "fr": "Cette nuit très étrange dure.", "en": "This very strange night lasts.", "replace": "nuit très étrange" },
-        { "fr": "La nuit très étrange finit.", "en": "The very strange night ends.", "replace": "nuit très étrange" },
-        { "fr": "Des nuits très étranges arrivent.", "en": "Very strange nights arrive.", "replace": "nuits très étranges" },
-        { "fr": "Plusieurs nuits très étranges passent.", "en": "Several very strange nights pass.", "replace": "nuits très étranges" },
-        { "fr": "Toutes les nuits très étranges marquent.", "en": "All very strange nights leave a mark.", "replace": "nuits très étranges" }
+        {
+          "fr": "Une nuit très étrange commence.",
+          "en": "A very strange night begins.",
+          "replace": "nuit très étrange"
+        },
+        {
+          "fr": "Cette nuit très étrange dure.",
+          "en": "This very strange night lasts.",
+          "replace": "nuit très étrange"
+        },
+        {
+          "fr": "La nuit très étrange finit.",
+          "en": "The very strange night ends.",
+          "replace": "nuit très étrange"
+        },
+        {
+          "fr": "Des nuits très étranges arrivent.",
+          "en": "Very strange nights arrive.",
+          "replace": "nuits très étranges"
+        },
+        {
+          "fr": "Plusieurs nuits très étranges passent.",
+          "en": "Several very strange nights pass.",
+          "replace": "nuits très étranges"
+        },
+        {
+          "fr": "Toutes les nuits très étranges marquent.",
+          "en": "All very strange nights leave a mark.",
+          "replace": "nuits très étranges"
+        }
       ]
     },
     {
@@ -251,7 +439,11 @@
         { "fr": "Un état stable.", "en": "A stable state.", "replace": "état" },
         { "fr": "Cet état est critique.", "en": "This state is critical.", "replace": "état" },
         { "fr": "Les états changent.", "en": "States change.", "replace": "états" },
-        { "fr": "Plusieurs états possibles.", "en": "Several possible states.", "replace": "états" },
+        {
+          "fr": "Plusieurs états possibles.",
+          "en": "Several possible states.",
+          "replace": "états"
+        },
         { "fr": "Tous les états varient.", "en": "All states vary.", "replace": "états" }
       ]
     },
