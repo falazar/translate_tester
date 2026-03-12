@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French 101 - Lesson Plans</title>
+    <link rel="stylesheet" href="lesson_styles.css" />
+    <style>
+      .lessons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .lesson-card {
+        background: white;
+        border: 2px solid #0066cc;
+        border-radius: 8px;
+        padding: 20px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        cursor: pointer;
+      }
+
+      .lesson-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+      }
+
+      .lesson-card h3 {
+        color: #0066cc;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .lesson-card .day {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .lesson-card .topics {
+        font-size: 0.95em;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .lesson-card .topics strong {
+        color: #0066cc;
+      }
+
+      .lesson-card a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .week-header {
+        background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .week-header h1 {
+        margin: 0 0 10px 0;
+      }
+
+      .week-header p {
+        margin: 5px 0;
+        opacity: 0.95;
+      }
+
+      .textbook-ref {
+        font-size: 0.9em;
+        font-style: italic;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="week-header">
+        <h1>French 101 - Lesson Plans</h1>
+      </div>
+
+      <div class="content">
+        <div class="lessons-grid">
+          <!-- Lesson 1 -->
+          <div class="lesson-card">
+            <a href="lesson_01.html">
+              <h3>Lesson 1: First Day of Class</h3>
+              <div class="topics">
+                Diagnostic test, course introduction, basic greetings, and introducing yourself
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 2 -->
+          <div class="lesson-card">
+            <a href="lesson_02.html">
+              <h3>Lesson 2: French Alphabet & Classroom</h3>
+              <div class="topics">
+                French alphabet, pronunciation practice, classroom vocabulary, and numbers 0-20
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 3 -->
+          <div class="lesson-card">
+            <a href="lesson_03.html">
+              <h3>Lesson 3: Tu vs. Vous & Introductions</h3>
+              <div class="topics">
+                Formal vs. informal greetings, numbers 21-30, and extended introductions
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 4 -->
+          <div class="lesson-card">
+            <a href="lesson_04.html">
+              <h3>Lesson 4: Numbers, Days & Francophone World</h3>
+              <div class="topics">
+                Numbers 31-100, days of the week, and overview of French-speaking countries
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 5 -->
+          <div class="lesson-card">
+            <a href="lesson_05.html">
+              <h3>Lesson 5: Week 1 Review & Quiz</h3>
+              <div class="topics">
+                Week 1 review, comprehensive quiz, and Chapter 1 preview with subject pronouns
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 6 -->
+          <div class="lesson-card">
+            <a href="lesson_06.html">
+              <h3>Lesson 6: Family Vocabulary & Verb Être</h3>
+              <div class="topics">
+                Complete conjugation of être, family members vocabulary, and James calls home
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 7 -->
+          <div class="lesson-card">
+            <a href="lesson_07.html">
+              <h3>Lesson 7: Verb Avoir & Physical Descriptions</h3>
+              <div class="topics">
+                Avoir conjugation, possessive adjectives, physical descriptions, and James meets his
+                host family
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 8 -->
+          <div class="lesson-card">
+            <a href="lesson_08.html">
+              <h3>Lesson 8: Adjective Agreement & Personality</h3>
+              <div class="topics">
+                Adjective agreement rules, BANGS rule, personality traits vocabulary, and French
+                family culture
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 9 -->
+          <div class="lesson-card">
+            <a href="lesson_09.html">
+              <h3>Lesson 9: Introduction to -ER Verbs</h3>
+              <div class="topics">
+                -ER verb conjugation pattern, common -ER verbs, leisure activities vocabulary, and
+                James meets new friends
+              </div>
+            </a>
+          </div>
+
+          <!-- Lesson 10 -->
+          <div class="lesson-card">
+            <a href="lesson_10.html">
+              <h3>Lesson 10: Review & Quiz 2</h3>
+              <div class="topics">
+                Week 2 review with preference verbs (aimer/adorer/détester/préférer), conversation
+                practice, "Deux vérités et un mensonge" game, and Quiz 2
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="section" style="margin-top: 40px">
+          <h2>Additional Resources</h2>
+          <div class="content-block">
+            <ul>
+              <li>
+                <strong>Audio Controls:</strong> Each lesson includes text-to-speech functionality
+                with adjustable voice settings
+              </li>
+              <li>
+                <strong>Interactive Elements:</strong> Lessons include input boxes for practice and
+                quizzes
+              </li>
+              <li>
+                <strong>Character Story:</strong> Follow James's journey as an American student in
+                Paris
+              </li>
+              <li>
+                <strong>Textbook Alignment:</strong> All lessons align with
+                <em>Chez nous</em> chapters
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Navigation Tips -->
+        <div class="info-box" style="margin-top: 30px">
+          <strong>Navigation Tips:</strong>
+          <ul>
+            <li>Click any lesson card to open that lesson</li>
+            <li>Use the play buttons (▶) within lessons to hear audio for each section</li>
+            <li>Adjust voice settings using the controls at the top of each lesson</li>
+            <li>Complete input boxes for practice and self-assessment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

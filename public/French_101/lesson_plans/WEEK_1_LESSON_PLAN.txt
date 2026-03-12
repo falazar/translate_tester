@@ -1,18 +1,19 @@
 WEEK 1 DETAILED LESSON PLAN
 ===========================
 French 101 - Introduction Week
-Textbook: Chez nous, Chapitre Préliminaire (pp. 2-27)
+Textbook: Chez nous, Chapitre Préliminaire (pp. 2-27) + Chapitre 1 intro (pp. 28-35)
 
 ===========================
 WEEK 1 OVERVIEW
 ===========================
-Theme: Greetings, Introductions, and French Basics
-Textbook Coverage: Chapitre Préliminaire - Présentons-nous!
+Theme: Greetings, Introductions, French Basics + Chapter 1 Preview
+Textbook Coverage: Chapitre Préliminaire - Présentons-nous! + Chapitre 1 - Ma famille et moi (first section)
 Character Introduction: Meet James, arriving in Paris
 
 Grammar Focus:
-- Subject pronouns (je, tu, vous)
+- Subject pronouns (je, tu, il/elle, nous, vous, ils/elles)
 - Present tense of s'appeler, être
+- Introduction to -ER verbs (parler)
 - Basic sentence structure
 
 Vocabulary Theme:
@@ -21,6 +22,8 @@ Vocabulary Theme:
 - Classroom vocabulary
 - Numbers 0-100
 - French alphabet
+- Days of the week
+- Basic family vocabulary
 
 Cultural Topic:
 - Tu vs. vous distinction
@@ -261,43 +264,45 @@ HOMEWORK:
 FRIDAY - DAY 5 (QUIZ DAY)
 ===========================
 Time: 60 minutes
+Textbook: Pages 2-27 (review) + Chapter 1 pp. 28-35 (preview)
 
-WARM-UP (10 min):
-- Final review Q&A
+WARM-UP (15 min):
+- Final review: Alphabet speed, number chain, object quiz
 - Practice activities: quick oral rounds
-- James meets his classmates: Role-play
-
-CULTURAL LESSON (15 min):
-Topic: French Greetings in Context
-
-Content:
-- Video: Examples of handshakes, la bise
-- When to use which greeting
-- Regional differences (2, 3, or 4 kisses?)
-- Personal space in French culture
-
-Activity:
-- Practice appropriate greetings
-- Role-play scenarios:
-  * Meeting professor on campus
-  * Running into friend at café
-  * Introducing friend to parents
+- James prepares for his test (narrative)
 
 CHARACTER STORY TIME (20 min):
 "James's First Day in Paris" - Reading
 
 Present short narrative:
-- James arrives at Charles de Gaulle airport
+- James arrives at Charles de Gaulle airport (9h30)
 - Takes RER to Paris
 - Meets his roommate Pierre
-- Gets lost finding the boulangerie
+- Goes to the boulangerie (number 43)
 - Uses his French: Bonjour! Je m'appelle James. Où est...?
 
 Activity:
 - Listen to story (read by instructor in simple French)
-- Identify vocabulary we've learned
+- Comprehension questions
 - Answer comprehension questions
 - Discuss: What would you do?
+
+CHAPTER 1 PREVIEW (15 min):
+Textbook: Chapter 1 pp. 28-30
+
+Introduction to Subject Pronouns:
+- je, tu, il/elle, nous, vous, ils/elles
+- Table showing all pronouns with English and usage
+
+First -ER Verb: parler (to speak):
+- Full conjugation table
+- Examples: Je parle français, Tu parles anglais
+- Quick practice activity
+
+Family Vocabulary Preview:
+- la famille, la mère, le père, les parents
+- le frère, la sœur, le fils, la fille
+- James talks about his family
 
 QUIZ 1 (15 min)
 Content:
@@ -309,7 +314,7 @@ Section 1: Listening (5 points)
 Section 2: Vocabulary (5 points)
 - Match greetings to responses
 - Label classroom objects (picture)
-- Write numbers 
+- Write numbers in French
 
 Section 3: Cultural (5 points)
 - Tu vs. vous scenarios
@@ -332,6 +337,9 @@ What Students Should Master:
 ✓ Identify basic classroom objects
 ✓ Understand basic classroom commands
 ✓ Awareness of Francophone world
+✓ Recognize all 8 subject pronouns
+✓ Introduction to -ER verb conjugation (parler)
+✓ Basic family vocabulary
 
 DELF A2 Skills Addressed:
 - Basic greetings and introductions ✓
